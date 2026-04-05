@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service -- FlightDecide</title>
+  <meta name="description" content="FlightDecide Terms of Service. Please read carefully before using the FlightDecide app." />
+  <link rel="canonical" href="https://flightdecide.app/terms.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0F172A;
+      --bg-card: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.08);
+      --accent-green: #22C55E;
+      --accent-blue: #3B82F6;
+      --accent-amber: #EAB308;
+      --text: #F0F0F5;
+      --text-muted: #94A3B8;
+      --text-dim: #44445a;
+      --max-content: 760px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      font-size: 17px;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(15,23,42,0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      height: 60px;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .nav-logo-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+    }
+    .nav-back {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--text); }
+    .page-wrap {
+      max-width: var(--max-content);
+      margin: 0 auto;
+      padding: 60px 40px 100px;
+    }
+    .page-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .page-date {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 48px;
+    }
+    .disclaimer-box {
+      background: rgba(234,179,8,0.08);
+      border: 1px solid rgba(234,179,8,0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .disclaimer-box strong {
+      color: var(--accent-amber);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-top: 48px;
+      margin-bottom: 14px;
+      color: var(--text);
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; border-top: none; padding-top: 0; }
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+    ul, ol {
+      color: var(--text-muted);
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+    strong { color: var(--text); }
+    a { color: var(--accent-blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+    .contact-card p { margin-bottom: 6px; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 40px;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      justify-content: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy { font-size: 13px; color: var(--text-dim); }
+    @media (max-width: 640px) {
+      .nav-inner { padding: 0 20px; }
+      .page-wrap { padding: 40px 20px 80px; }
+      h1 { font-size: 28px; }
+      h2 { font-size: 18px; }
+      footer { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">&#9992;</span>
+        FlightDecide
+      </a>
+      <a href="/" class="nav-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <span class="page-label">Legal</span>
+    <h1>Terms of Service</h1>
+    <p class="page-date">Last updated: April 2026</p>
+
+    <div class="disclaimer-box">
+      <strong>Important:</strong> FlightDecide is an advisory tool only. It is not a substitute for official FAA weather briefings, certified flight planning software, or the judgment of a qualified pilot in command. The pilot in command bears sole responsibility for all flight decisions. Read these terms carefully before use.
+    </div>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By downloading, installing, or using the FlightDecide mobile application ("App") or accessing any related services ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App or Service.</p>
+    <p>These Terms constitute a legally binding agreement between you and FlightDecide ("we," "us," or "our"). If you are using the App on behalf of a company or organization, you represent that you have the authority to bind that entity to these Terms.</p>
+
+    <h2>2. Nature of Service -- Advisory Tool Only</h2>
+    <p>FlightDecide is an informational and advisory tool designed to assist pilots in organizing and reviewing flight-relevant data. The App does not provide certified aeronautical information, official weather briefings, or FAA-approved flight planning services.</p>
+    <p><strong>FlightDecide is NOT:</strong></p>
+    <ul>
+      <li>An FAA-certified weather briefing service</li>
+      <li>A substitute for an official preflight weather briefing via 1800wxbrief.com, Leidos Flight Service, or any other authorized source</li>
+      <li>A certified performance or weight-and-balance calculator</li>
+      <li>Legal or regulatory compliance advice</li>
+      <li>A real-time air traffic control service</li>
+      <li>A safety-critical system of any kind</li>
+    </ul>
+    <p>All outputs, scores, verdicts, and AI-generated briefings are informational only and should be verified against official sources before any flight decision is made.</p>
+
+    <h2>3. Pilot in Command Responsibility</h2>
+    <p>Pursuant to 14 CFR Section 91.3, the pilot in command (PIC) of an aircraft is directly responsible for, and is the final authority as to, the operation of that aircraft. Nothing in the App or Service modifies, reduces, or transfers this responsibility.</p>
+    <p><strong>You, as the pilot in command, bear sole and complete responsibility for:</strong></p>
+    <ul>
+      <li>All flight decisions, including go/no-go determinations</li>
+      <li>Verifying weather conditions from official sources before flight</li>
+      <li>Confirming aircraft performance data against the actual Pilot's Operating Handbook</li>
+      <li>Computing weight and balance using approved methods for your specific aircraft</li>
+      <li>Ensuring legal compliance with all applicable FARs, NOTAMs, and airspace requirements</li>
+      <li>Obtaining official preflight weather briefings as required by regulation</li>
+    </ul>
+    <p>A GO verdict from FlightDecide does not authorize flight, confirm airworthiness, or substitute for any regulatory requirement. You must exercise independent judgment at all times.</p>
+
+    <h2>4. Data Sources and Limitations</h2>
+    <p>The App retrieves meteorological data from aviationweather.gov and related FAA/NOAA services. While we make reasonable efforts to display this data accurately, we cannot guarantee:</p>
+    <ul>
+      <li>The timeliness, accuracy, or completeness of any weather data</li>
+      <li>Uninterrupted availability of third-party data feeds</li>
+      <li>Correct parsing or display of METARs, TAFs, SIGMETs, or PIREPs</li>
+      <li>Coverage of all relevant weather phenomena for your specific route</li>
+    </ul>
+    <p>Data may be delayed, incomplete, or incorrect due to factors beyond our control including network issues, government service outages, or changes in data formats.</p>
+
+    <h2>5. Performance Data Disclaimer</h2>
+    <p>Aircraft performance figures included in the App are derived from publicly available Pilot's Operating Handbook (POH) data and are provided for informational and planning purposes only. These figures:</p>
+    <ul>
+      <li>May not reflect the performance characteristics of your specific aircraft</li>
+      <li>Do not account for aircraft age, airworthiness, modifications, or maintenance history</li>
+      <li>Are based on standard conditions unless otherwise noted</li>
+      <li>Should be verified against your aircraft's current POH and supplements</li>
+      <li>Are not approved data for flight planning under Part 121 or 135 operations</li>
+    </ul>
+    <p>Always use the actual POH for your specific aircraft registration when computing takeoff, landing, and climb performance for actual flight operations.</p>
+
+    <h2>6. AI-Generated Content Limitations</h2>
+    <p>The App uses large language model (LLM) AI technology to generate narrative briefings and analysis. AI-generated content:</p>
+    <ul>
+      <li>May contain errors, hallucinations, or inaccurate assessments</li>
+      <li>Is not reviewed by a certified meteorologist, flight dispatcher, or aviation authority</li>
+      <li>Does not constitute a legal weather briefing</li>
+      <li>May not identify all hazards relevant to your specific flight</li>
+      <li>Should be treated as a starting point for analysis, not a final determination</li>
+    </ul>
+    <p>The AI model may occasionally produce outputs that are confident-sounding but factually incorrect. You must independently verify any critical information before acting on it.</p>
+
+    <h2>7. Weather Data Disclaimer</h2>
+    <p>Weather information provided through the App is sourced from publicly available government data services. This data is provided as-is and may not reflect current or forecast conditions at your specific location. Always obtain an official FAA weather briefing from an authorized provider before flight. Conditions can change rapidly, and the App does not provide real-time updates during flight.</p>
+
+    <h2>8. Limitation of Liability</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, FLIGHTDECIDE AND ITS OWNERS, OFFICERS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE APP OR SERVICE, INCLUDING BUT NOT LIMITED TO:</p>
+    <ul>
+      <li>Aircraft accidents, incidents, or damage</li>
+      <li>Personal injury or death</li>
+      <li>Property damage</li>
+      <li>Flight diversion, cancellation, or delay</li>
+      <li>Regulatory violations or enforcement actions</li>
+      <li>Reliance on any verdict, score, or AI-generated content</li>
+    </ul>
+    <p>THIS LIMITATION APPLIES REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON WARRANTY, CONTRACT, TORT, STATUTE, OR ANY OTHER LEGAL THEORY, AND REGARDLESS OF WHETHER WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+    <p>In jurisdictions that do not allow the exclusion or limitation of certain damages, our liability is limited to the maximum extent permitted by law.</p>
+
+    <h2>9. No Warranty</h2>
+    <p>THE APP AND SERVICE ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. WE EXPRESSLY DISCLAIM ALL WARRANTIES INCLUDING, WITHOUT LIMITATION:</p>
+    <ul>
+      <li>IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</li>
+      <li>WARRANTIES THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE</li>
+      <li>WARRANTIES REGARDING THE ACCURACY OR COMPLETENESS OF ANY DATA</li>
+      <li>WARRANTIES THAT DEFECTS WILL BE CORRECTED</li>
+    </ul>
+
+    <h2>10. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless FlightDecide and its owners, officers, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to:</p>
+    <ul>
+      <li>Your use of or reliance on the App or Service</li>
+      <li>Your violation of these Terms</li>
+      <li>Any flight operations you conduct</li>
+      <li>Your violation of any applicable laws or regulations</li>
+      <li>Any third-party claims arising from your actions</li>
+    </ul>
+
+    <h2>11. Subscription Terms</h2>
+    <p><strong>Free Plan:</strong> The free plan provides a limited number of analyses per calendar month at no charge. FlightDecide reserves the right to modify the free plan terms with notice.</p>
+    <p><strong>Paid Subscriptions:</strong> Paid subscriptions are billed through Apple's App Store on a monthly recurring basis. Prices are listed in the App and may vary by region.</p>
+    <p><strong>Cancellation:</strong> You may cancel your subscription at any time through your Apple ID account settings. Cancellation takes effect at the end of the current billing period. No refunds are provided for partial periods.</p>
+    <p><strong>Refunds:</strong> All purchases are processed by Apple. Refund requests must be submitted through Apple's standard refund process. FlightDecide has no control over Apple's refund decisions.</p>
+    <p><strong>Price Changes:</strong> We reserve the right to change subscription pricing. We will provide reasonable advance notice of any price changes. Continued use after a price change takes effect constitutes acceptance of the new pricing.</p>
+
+    <h2>12. Acceptable Use</h2>
+    <p>You agree not to use the App or Service to:</p>
+    <ul>
+      <li>Violate any applicable law or regulation, including aviation regulations</li>
+      <li>Attempt to reverse engineer, decompile, or extract source code from the App</li>
+      <li>Circumvent, disable, or interfere with security features</li>
+      <li>Use automated systems to access the Service in a manner that exceeds normal usage</li>
+      <li>Resell or commercially exploit the Service without authorization</li>
+      <li>Misrepresent your identity or credentials</li>
+    </ul>
+
+    <h2>13. Intellectual Property</h2>
+    <p>The App, Service, and all related content, features, and functionality are and will remain the exclusive property of FlightDecide. Our trademarks, logos, and service marks may not be used without our prior written consent.</p>
+
+    <h2>14. Third-Party Services</h2>
+    <p>The App integrates with third-party services including Anthropic's Claude AI, aviationweather.gov, FAA data services, and Apple services. Your use of these services is subject to their respective terms of service and privacy policies. We are not responsible for the practices or content of third-party services.</p>
+
+    <h2>15. Changes to Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. We will provide notice of material changes by updating the "Last updated" date at the top of this page and, where appropriate, by in-app notification. Your continued use of the App after changes become effective constitutes acceptance of the revised Terms.</p>
+
+    <h2>16. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the Province of British Columbia, Canada, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in British Columbia, Canada.</p>
+
+    <h2>17. Severability</h2>
+    <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the remaining Terms will otherwise remain in full force and effect.</p>
+
+    <h2>18. Contact Information</h2>
+    <div class="contact-card">
+      <p><strong>FlightDecide</strong></p>
+      <p>For questions about these Terms of Service, please contact us at:</p>
+      <p><a href="mailto:support@flightdecide.app">support@flightdecide.app</a></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

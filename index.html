@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>FlightDecide -- AI-Powered Go/No-Go for Pilots</title>
+  <meta name="description" content="FlightDecide analyzes weather, performance, fuel, and weight in seconds. Get a scored GO, CAUTION, or NO GO verdict powered by AI, so you can make confident flight decisions." />
+  <meta name="keywords" content="pilot app, go no go, flight decision, aviation weather, flight planning, GA pilot, IFR VFR, weight and balance, fuel planning, AI pilot" />
+  <link rel="canonical" href="https://flightdecide.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flightdecide.app/" />
+  <meta property="og:title" content="FlightDecide -- AI-Powered Go/No-Go for Pilots" />
+  <meta property="og:description" content="Should you fly today? FlightDecide gives you a scored verdict in seconds." />
+  <meta property="og:site_name" content="FlightDecide" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FlightDecide",
+    "operatingSystem": "iOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "FlightDecide analyzes weather, performance, fuel, and weight in seconds. Get a scored GO, CAUTION, or NO GO verdict powered by AI.",
+    "url": "https://flightdecide.app",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FlightDecide"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0F172A;
+      --bg-card: rgba(255,255,255,0.04);
+      --bg-card-hover: rgba(255,255,255,0.07);
+      --border: rgba(255,255,255,0.08);
+      --border-bright: rgba(255,255,255,0.18);
+      --accent-green: #22C55E;
+      --accent-blue: #3B82F6;
+      --accent-amber: #EAB308;
+      --accent-red: #EF4444;
+      --text: #F0F0F5;
+      --text-muted: #94A3B8;
+      --text-dim: #44445a;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --max-content: 1200px;
+      --max-nav: 1280px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      font-size: 18px;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(15,23,42,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      height: 64px;
+    }
+
+    .nav-inner {
+      max-width: var(--max-nav);
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 16px;
+      z-index: 201;
+    }
+
+    .nav-logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      z-index: 201;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--text-muted);
+      position: absolute;
+      left: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-hamburger span:nth-child(1) { top: 12px; }
+    .nav-hamburger span:nth-child(2) { top: 19px; }
+    .nav-hamburger span:nth-child(3) { top: 26px; }
+
+    .nav-hamburger.active span:nth-child(1) { top: 19px; transform: rotate(45deg); background: var(--text); }
+    .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.active span:nth-child(3) { top: 19px; transform: rotate(-45deg); background: var(--text); }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 40px 100px;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 70% 80% at 20% 50%, rgba(34,197,94,0.09) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 60% at 85% 35%, rgba(59,130,246,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 50% at 60% 90%, rgba(34,197,94,0.05) 0%, transparent 60%),
+        var(--bg);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-nav);
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .hero-text { max-width: 640px; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34,197,94,0.08);
+      border: 1px solid rgba(34,197,94,0.22);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-green);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent-green);
+    }
+
+    h1 {
+      font-size: 58px;
+      font-weight: 800;
+      letter-spacing: -2.5px;
+      line-height: 1.05;
+      margin-bottom: 24px;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 540px;
+      line-height: 1.65;
+      margin-bottom: 44px;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 15px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 40px rgba(34,197,94,0.25), 0 4px 16px rgba(0,0,0,0.3);
+      animation: pulse-glow 3s ease-in-out infinite;
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 60px rgba(34,197,94,0.4), 0 8px 24px rgba(0,0,0,0.4);
+      animation: none;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-secondary:hover { color: var(--text); }
+
+    /* Hero visual: verdict card mockup */
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: fadeUp 0.6s 0.35s ease both;
+      flex-shrink: 0;
+    }
+
+    .verdict-mockup {
+      width: 300px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 28px 24px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.06),
+        0 0 80px rgba(34,197,94,0.2),
+        0 24px 60px rgba(0,0,0,0.5);
+    }
+
+    .verdict-header {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .verdict-badge-go {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34,197,94,0.15);
+      border: 1px solid rgba(34,197,94,0.35);
+      color: var(--accent-green);
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .verdict-scores {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .score-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    .score-label { color: var(--text-muted); }
+
+    .score-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .score-dot.green { background: var(--accent-green); box-shadow: 0 0 6px var(--accent-green); }
+    .score-dot.amber { background: var(--accent-amber); box-shadow: 0 0 6px var(--accent-amber); }
+    .score-dot.red { background: var(--accent-red); box-shadow: 0 0 6px var(--accent-red); }
+
+    .verdict-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+      margin: 16px 0;
+    }
+
+    .verdict-ai-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .verdict-ai-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* PROOF BAR */
+    .proof-bar {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 40px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .proof-inner {
+      max-width: var(--max-content);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .proof-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+    }
+
+    .proof-divider {
+      width: 1px;
+      height: 44px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+
+    .proof-number {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+    }
+
+    .proof-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    /* SECTIONS */
+    section { padding: 120px 40px; }
+
+    .section-inner {
+      max-width: var(--max-content);
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 580px;
+      line-height: 1.65;
+      margin-bottom: 64px;
+    }
+
+    /* FEATURES GRID */
+    #features { background: rgba(255,255,255,0.01); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(34,197,94,0.05) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    .feature-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(34,197,94,0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 24px rgba(34,197,94,0.08);
+    }
+
+    .feature-card:hover::before { opacity: 1; }
+
+    .feature-icon-wrap {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(34,197,94,0.12), rgba(59,130,246,0.12));
+      border: 1px solid rgba(34,197,94,0.18);
+      color: var(--accent-green);
+      margin-bottom: 18px;
+      flex-shrink: 0;
+      font-size: 22px;
+    }
+
+    .feature-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* HOW IT WORKS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 28px 32px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+
+    .step-card:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-2px);
+    }
+
+    .step-num {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: var(--bg);
+      background-image: linear-gradient(135deg, rgba(34,197,94,0.15), rgba(59,130,246,0.15));
+      border: 1px solid rgba(34,197,94,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 auto 24px;
+      color: var(--accent-green);
+    }
+
+    .step-icon {
+      font-size: 28px;
+      margin: 0 auto 24px;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: var(--bg);
+      background-image: linear-gradient(135deg, rgba(34,197,94,0.15), rgba(59,130,246,0.15));
+      border: 1px solid rgba(34,197,94,0.3);
+    }
+
+    .step-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+
+    .step-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* AIRCRAFT SECTION */
+    #aircraft {
+      background: rgba(59,130,246,0.02);
+      border-top: 1px solid rgba(59,130,246,0.08);
+      border-bottom: 1px solid rgba(59,130,246,0.08);
+    }
+
+    .aircraft-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .aircraft-group {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .aircraft-group:hover {
+      border-color: rgba(59,130,246,0.2);
+      transform: translateY(-2px);
+    }
+
+    .aircraft-group-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent-blue);
+      margin-bottom: 12px;
+    }
+
+    .aircraft-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .aircraft-list li {
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .aircraft-list li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      flex-shrink: 0;
+    }
+
+    /* PRICING */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      position: relative;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+
+    .pricing-card.featured {
+      border-color: rgba(34,197,94,0.35);
+      background: rgba(34,197,94,0.05);
+      transform: scale(1.03);
+    }
+
+    .pricing-card:hover {
+      border-color: rgba(34,197,94,0.25);
+      transform: translateY(-4px);
+    }
+
+    .pricing-card.featured:hover {
+      transform: scale(1.03) translateY(-4px);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 100px;
+    }
+
+    .pricing-tier {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .pricing-price {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .pricing-price span {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+      color: var(--text-muted);
+    }
+
+    .pricing-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .pricing-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .pricing-features li {
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.4;
+    }
+
+    .pricing-features li::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(34,197,94,0.15);
+      border: 1px solid rgba(34,197,94,0.3);
+      flex-shrink: 0;
+      margin-top: 1px;
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%2322C55E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .pricing-btn {
+      display: block;
+      text-align: center;
+      padding: 13px 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .pricing-btn-outline {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--text);
+    }
+
+    .pricing-btn-outline:hover {
+      border-color: rgba(34,197,94,0.4);
+      transform: translateY(-1px);
+    }
+
+    .pricing-btn-primary {
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff;
+      box-shadow: 0 0 24px rgba(34,197,94,0.25);
+    }
+
+    .pricing-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(34,197,94,0.4);
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      position: relative;
+      text-align: center;
+      padding: 120px 40px;
+      background:
+        radial-gradient(ellipse 60% 80% at 50% 0%, rgba(34,197,94,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 20% 100%, rgba(59,130,246,0.06) 0%, transparent 60%),
+        linear-gradient(180deg, rgba(34,197,94,0.03) 0%, transparent 100%);
+      border-top: 1px solid rgba(34,197,94,0.08);
+    }
+
+    .cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-section h2 { margin-bottom: 20px; }
+
+    .cta-sub {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+
+    .cta-btn-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .cta-req {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .appstore-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 10px 20px;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .appstore-badge:hover {
+      border-color: rgba(255,255,255,0.2);
+      color: var(--text);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 44px 40px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-content);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .footer-logo-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 5px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-dim);
+      text-align: right;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 40px rgba(34,197,94,0.25), 0 4px 16px rgba(0,0,0,0.3); }
+      50%       { box-shadow: 0 0 60px rgba(34,197,94,0.4), 0 4px 16px rgba(0,0,0,0.3); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* MOBILE NAV */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100%; height: 100%;
+      background: var(--bg);
+      z-index: 150;
+      overflow-y: auto;
+    }
+
+    .mobile-nav.open { display: block; }
+
+    .mobile-nav-inner {
+      min-height: 100%;
+      padding: 88px 32px 40px;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+    }
+
+    .mobile-nav-links { display: flex; flex-direction: column; }
+
+    .mobile-nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      padding: 16px 0;
+      display: block;
+    }
+
+    .mobile-nav-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+      margin: 20px 0;
+    }
+
+    .mobile-nav-secondary { display: flex; flex-direction: column; gap: 16px; }
+
+    .mobile-nav-secondary a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      font-size: 15px;
+      display: block;
+    }
+
+    .mobile-nav-bottom { margin-top: auto; padding-top: 32px; }
+
+    .mobile-nav-bottom a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 24px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .hero-inner { gap: 48px; }
+      .verdict-mockup { width: 240px; }
+      h1 { font-size: 44px; }
+      h2 { font-size: 34px; }
+    }
+
+    @media (max-width: 900px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .aircraft-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+      .pricing-card.featured { transform: none; }
+      .pricing-card.featured:hover { transform: translateY(-4px); }
+    }
+
+    @media (max-width: 820px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; }
+      .hero-text { max-width: 100%; }
+      .hero-sub { margin-left: auto; margin-right: auto; }
+      .hero-actions { justify-content: center; }
+      .hero-visual { display: none; }
+      .steps { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; text-align: center; gap: 16px; }
+      .footer-copy { text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+
+    @media (max-width: 640px) {
+      html, body { overflow-x: hidden; width: 100%; }
+      nav .nav-inner { padding: 0 16px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: block; }
+      .hero { padding: 96px 20px 64px; min-height: auto; }
+      h1 { font-size: 34px; letter-spacing: -1.5px; }
+      .hero-sub { font-size: 16px; }
+      .hero-visual { display: none; }
+      .proof-bar { padding: 24px 20px; }
+      .proof-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; justify-items: center; }
+      .proof-divider { display: none; }
+      .proof-number { font-size: 22px; }
+      .proof-text { font-size: 12px; }
+      section { padding: 72px 20px; }
+      .section-inner { max-width: 100%; }
+      h2 { font-size: 26px; letter-spacing: -0.8px; }
+      .section-sub { font-size: 16px; margin-bottom: 40px; }
+      .features-grid { grid-template-columns: 1fr; gap: 12px; }
+      .feature-card { padding: 20px; }
+      .steps { grid-template-columns: 1fr; gap: 12px; }
+      .step-card { padding: 24px 20px; }
+      .aircraft-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 100%; }
+      .cta-section { padding: 72px 20px; }
+      .cta-sub { font-size: 16px; }
+      footer { padding: 32px 20px; }
+      .footer-inner { grid-template-columns: 1fr; text-align: center; gap: 16px; }
+      .footer-copy { text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="FlightDecide home">
+        <span class="nav-logo-icon">&#9992;</span>
+        FlightDecide
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#aircraft">Aircraft</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="nav-hamburger" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#aircraft">Aircraft</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#download">Download</a>
+      </div>
+      <div class="mobile-nav-divider"></div>
+      <div class="mobile-nav-secondary">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a href="disclaimer.html">Aviation Disclaimer</a>
+      </div>
+      <div class="mobile-nav-bottom">
+        <a href="#download">Download for iPhone</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="hero-badge">Now available for iPhone</span>
+          <h1>Should you fly today?<br/><span class="gradient-text">AI knows.</span></h1>
+          <p class="hero-sub">
+            FlightDecide analyzes weather, performance, fuel, and weight in seconds. Get a scored GO, CAUTION, or NO GO verdict powered by AI, so you can make confident flight decisions.
+          </p>
+          <div class="hero-actions">
+            <a href="#download" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="currentColor" opacity="0.2"/>
+                <circle cx="12" cy="9" r="2.5" fill="currentColor"/>
+              </svg>
+              Download for iPhone
+            </a>
+            <a href="#features" class="btn-secondary">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Verdict Card Mockup -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="verdict-mockup">
+            <div class="verdict-header">Today's Flight Analysis</div>
+            <div class="verdict-badge-go">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M9 12l2 2 4-4" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="9" stroke="#22C55E" stroke-width="1.5"/>
+              </svg>
+              GO
+            </div>
+            <div class="verdict-scores">
+              <div class="score-row">
+                <span class="score-label">Weather</span>
+                <span class="score-dot green"></span>
+              </div>
+              <div class="score-row">
+                <span class="score-label">Performance</span>
+                <span class="score-dot green"></span>
+              </div>
+              <div class="score-row">
+                <span class="score-label">Fuel Planning</span>
+                <span class="score-dot green"></span>
+              </div>
+              <div class="score-row">
+                <span class="score-label">Weight &amp; Balance</span>
+                <span class="score-dot amber"></span>
+              </div>
+              <div class="score-row">
+                <span class="score-label">Airspace</span>
+                <span class="score-dot green"></span>
+              </div>
+              <div class="score-row">
+                <span class="score-label">Destination WX</span>
+                <span class="score-dot green"></span>
+              </div>
+              <div class="score-row">
+                <span class="score-label">En Route WX</span>
+                <span class="score-dot amber"></span>
+              </div>
+              <div class="score-row">
+                <span class="score-label">NOTAMs</span>
+                <span class="score-dot green"></span>
+              </div>
+            </div>
+            <div class="verdict-divider"></div>
+            <div class="verdict-ai-label">AI Briefing</div>
+            <div class="verdict-ai-text">Conditions are favorable. Monitor scattered MVFR at KSFO after 18Z. W&amp;B is within limits but near aft limit -- consider fuel load reduction.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF BAR -->
+    <div class="proof-bar" role="complementary" aria-label="Key stats">
+      <div class="proof-inner">
+        <div class="proof-item">
+          <div class="proof-number">18</div>
+          <div class="proof-text">Aircraft with real POH data</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <div class="proof-number">8</div>
+          <div class="proof-text">Risk categories scored</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <div class="proof-number">Live</div>
+          <div class="proof-text">METARs, TAFs, SIGMETs</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <div class="proof-number">AI</div>
+          <div class="proof-text">Narrative briefing every flight</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section id="features" aria-labelledby="features-heading">
+      <div class="section-inner">
+        <span class="section-label reveal">How FlightDecide Helps</span>
+        <h2 id="features-heading" class="reveal">Every pilot asks the same question<br/>before every flight. We help you answer it.</h2>
+        <p class="section-sub reveal">From student pilots to ATP holders, everyone needs a clear picture before departure. FlightDecide pulls together weather, performance, fuel, and weight data into one scored verdict.</p>
+
+        <div class="features-grid">
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap">&#128308;</div>
+            <h3 class="feature-title">8 Risk Categories</h3>
+            <p class="feature-desc">Weather, performance, fuel, weight and balance, airspace. Eight categories scored green, yellow, or red. See your risk at a glance before you ever touch the preflight checklist.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap">&#129504;</div>
+            <h3 class="feature-title">AI Powered Analysis</h3>
+            <p class="feature-desc">Claude AI reviews your complete flight picture and provides a detailed narrative briefing with specific mitigations. Not just data -- judgment, explained in plain language.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap">&#9992;</div>
+            <h3 class="feature-title">18 Aircraft Built In</h3>
+            <p class="feature-desc">From Cessna 150 to Citation CJ3. Trainers, cross-country singles, twins, turboprops, and jets. All with real POH performance data, not approximations.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap">&#127780;</div>
+            <h3 class="feature-title">Real Weather Data</h3>
+            <p class="feature-desc">Live METARs, TAFs, winds aloft, G-AIRMETs, SIGMETs, and PIREPs fetched directly from aviationweather.gov. The same data your dispatcher uses.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap">&#9981;</div>
+            <h3 class="feature-title">Part 91, 135, and 121</h3>
+            <p class="feature-desc">VFR and IFR fuel planning with the correct reserve requirements for your operation type. Fly private or professionally -- we have the right rules for your certificate.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon-wrap">&#128100;</div>
+            <h3 class="feature-title">Your Aircraft, Your Minimums</h3>
+            <p class="feature-desc">Set up your specific aircraft profile and personal weather minimums. Every analysis is tailored to you, your aircraft, and the way you fly.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" aria-labelledby="how-heading">
+      <div class="section-inner">
+        <span class="section-label reveal">Simple by design</span>
+        <h2 id="how-heading" class="reveal">A complete flight picture<br/>in three steps.</h2>
+        <p class="section-sub reveal">No dispatcher, no lengthy briefing calls, no juggling six different apps. Just open FlightDecide and go.</p>
+
+        <div class="steps">
+
+          <div class="step-card reveal">
+            <div class="step-icon">&#128747;</div>
+            <h3 class="step-title">Enter your route and aircraft</h3>
+            <p class="step-desc">Set your departure, destination, and alternates. Choose your aircraft from 18 built-in types or configure your own profile. Add passengers and fuel load.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-icon">&#9729;</div>
+            <h3 class="step-title">We fetch weather, check NOTAMs, compute performance</h3>
+            <p class="step-desc">FlightDecide pulls live METARs, TAFs, winds aloft, SIGMETs, and PIREPs. It computes weight and balance, takeoff and landing distances, and fuel burn using your aircraft's POH data.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-icon">&#9989;</div>
+            <h3 class="step-title">Get your GO / CAUTION / NO GO verdict with AI briefing</h3>
+            <p class="step-desc">Eight categories are scored and color-coded. Claude AI synthesizes everything into a narrative briefing with specific risk callouts and mitigations. You make the final call -- informed.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AIRCRAFT -->
+    <section id="aircraft" aria-labelledby="aircraft-heading">
+      <div class="section-inner">
+        <span class="section-label reveal">Fleet Coverage</span>
+        <h2 id="aircraft-heading" class="reveal">18 aircraft types,<br/>from trainer to jet.</h2>
+        <p class="section-sub reveal">Real performance data from the Pilot's Operating Handbook. Takeoff distances, climb rates, fuel burns, and weight limits -- all accurate to the airframe.</p>
+
+        <div class="aircraft-grid">
+
+          <div class="aircraft-group reveal">
+            <div class="aircraft-group-label">Trainers</div>
+            <ul class="aircraft-list">
+              <li>Cessna 150 / 152</li>
+              <li>Cessna 172 Skyhawk</li>
+              <li>Piper PA-28 Cherokee</li>
+            </ul>
+          </div>
+
+          <div class="aircraft-group reveal">
+            <div class="aircraft-group-label">Singles</div>
+            <ul class="aircraft-list">
+              <li>Cessna 182 Skylane</li>
+              <li>Cessna 206 Stationair</li>
+              <li>Piper PA-28-235 Dakota</li>
+            </ul>
+          </div>
+
+          <div class="aircraft-group reveal">
+            <div class="aircraft-group-label">High Performance</div>
+            <ul class="aircraft-list">
+              <li>Cirrus SR22</li>
+              <li>Mooney M20J</li>
+              <li>Beechcraft Bonanza A36</li>
+            </ul>
+          </div>
+
+          <div class="aircraft-group reveal">
+            <div class="aircraft-group-label">Twins</div>
+            <ul class="aircraft-list">
+              <li>Piper PA-34 Seneca</li>
+              <li>Beechcraft Baron 58</li>
+              <li>Cessna 310</li>
+            </ul>
+          </div>
+
+          <div class="aircraft-group reveal">
+            <div class="aircraft-group-label">Turboprop</div>
+            <ul class="aircraft-list">
+              <li>Piper PA-46 Meridian</li>
+              <li>Beechcraft King Air C90</li>
+              <li>Pilatus PC-12</li>
+            </ul>
+          </div>
+
+          <div class="aircraft-group reveal">
+            <div class="aircraft-group-label">Jet</div>
+            <ul class="aircraft-list">
+              <li>Cessna Citation CJ1+</li>
+              <li>Cessna Citation CJ3</li>
+              <li>Embraer Phenom 100</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" aria-labelledby="pricing-heading">
+      <div class="section-inner">
+        <span class="section-label reveal">Simple Pricing</span>
+        <h2 id="pricing-heading" class="reveal">Fly as much as you want.<br/>Pay for what you use.</h2>
+        <p class="section-sub reveal">Start free. Upgrade when you're ready.</p>
+
+        <div class="pricing-grid">
+
+          <div class="pricing-card reveal">
+            <div class="pricing-tier">Free</div>
+            <div class="pricing-price">$0</div>
+            <div class="pricing-desc">Get started with no commitment.</div>
+            <ul class="pricing-features">
+              <li>3 analyses per month</li>
+              <li>All 18 aircraft types</li>
+              <li>Live weather data</li>
+              <li>GO / CAUTION / NO GO verdict</li>
+              <li>8 category scoring</li>
+            </ul>
+            <a href="#download" class="pricing-btn pricing-btn-outline">Get Started</a>
+          </div>
+
+          <div class="pricing-card featured reveal">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-tier">Pilot</div>
+            <div class="pricing-price">$9.99<span>/mo</span></div>
+            <div class="pricing-desc">For active pilots flying regularly.</div>
+            <ul class="pricing-features">
+              <li>Unlimited analyses</li>
+              <li>All 18 aircraft types</li>
+              <li>Full AI narrative briefing</li>
+              <li>Custom aircraft profiles</li>
+              <li>Personal weather minimums</li>
+              <li>History and logbook integration</li>
+            </ul>
+            <a href="#download" class="pricing-btn pricing-btn-primary">Start Pilot Plan</a>
+          </div>
+
+          <div class="pricing-card reveal">
+            <div class="pricing-tier">Pro</div>
+            <div class="pricing-price">$19.99<span>/mo</span></div>
+            <div class="pricing-desc">For instructors, operators, and fleet managers.</div>
+            <ul class="pricing-features">
+              <li>Everything in Pilot</li>
+              <li>Fleet management</li>
+              <li>Multiple aircraft profiles</li>
+              <li>Priority AI processing</li>
+              <li>Part 135 / 121 fuel rules</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#download" class="pricing-btn pricing-btn-outline">Start Pro Plan</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="download" class="cta-section" aria-labelledby="cta-heading">
+      <div class="cta-inner">
+        <span class="section-label">Download</span>
+        <h2 id="cta-heading" class="reveal">Ready to fly<br/>with confidence?</h2>
+        <p class="cta-sub reveal">Download FlightDecide for iPhone. Start free. Make better go/no-go decisions starting with your next flight.</p>
+        <div class="cta-btn-wrap reveal">
+          <a href="#" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" fill="currentColor"/>
+            </svg>
+            Download on the App Store
+          </a>
+          <a href="#" class="appstore-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" fill="currentColor" opacity="0.6"/>
+            </svg>
+            Watch Overview
+          </a>
+          <p class="cta-req">Requires iOS 17 or later. Free to download.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo" aria-label="FlightDecide home">
+        <span class="footer-logo-icon">&#9992;</span>
+        FlightDecide
+      </a>
+      <ul class="footer-links" role="list">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+      <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    function toggleMobileNav() {
+      const isOpen = mobileNav.classList.toggle('open');
+      menuBtn.classList.toggle('active');
+      menuBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      menuBtn.classList.remove('active');
+      menuBtn.setAttribute('aria-expanded', false);
+      document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', toggleMobileNav);
+    document.querySelectorAll('.mobile-nav a').forEach(function(link) {
+      link.addEventListener('click', closeMobileNav);
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
