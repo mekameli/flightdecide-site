@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pilot Guide | FlightDecide</title>
-  <meta name="description" content="A pilot's guide to FlightDecide: how to set up your aircraft, run a preflight analysis, read the GO / CAUTION / NO GO verdict, interpret each category, and verify the briefing against raw METARs, TAFs, and NOTAMs." />
-  <meta name="keywords" content="FlightDecide pilot guide, how to use FlightDecide, preflight self-briefing, GA pilot app, go no go advisor, TAF interpretation, NOTAM summary, weight and balance" />
+  <meta name="description" content="How to use FlightDecide as your preflight second opinion: set up your aircraft, run an analysis, read the GO / CAUTION / NO GO verdict, check route weather, and verify against raw METARs, TAFs, and NOTAMs." />
+  <meta name="keywords" content="FlightDecide pilot guide, how to use FlightDecide, preflight self-briefing, GA pilot app, go no go advisor, route weather TAF, raw METAR NOTAM" />
   <link rel="canonical" href="https://flightdecide.com/guide.html" />
 
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://flightdecide.com/guide.html" />
   <meta property="og:title" content="Pilot Guide | FlightDecide" />
-  <meta property="og:description" content="How to use FlightDecide as your preflight second opinion: setup, analysis, verdict, and verification against raw data." />
+  <meta property="og:description" content="A task-by-task guide: set up an aircraft, run a preflight analysis, read the verdict, and verify against raw data." />
   <meta property="og:site_name" content="FlightDecide" />
 
   <style>
@@ -32,6 +32,7 @@
       --max-content: 880px;
     }
     html { scroll-behavior: smooth; }
+    html, body { overflow-x: hidden; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
       background: var(--bg);
@@ -39,12 +40,13 @@
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       font-size: 17px;
+      word-wrap: break-word;
     }
 
-    nav {
+    nav.site-nav {
       position: sticky;
       top: 0;
-      background: rgba(15,23,42,0.9);
+      background: rgba(15,23,42,0.92);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
@@ -91,7 +93,7 @@
     .nav-back:hover { color: var(--text); }
 
     .page-hero {
-      padding: 64px 40px 56px;
+      padding: 56px 24px 44px;
       text-align: center;
       background:
         radial-gradient(ellipse 60% 80% at 50% 0%, rgba(34,197,94,0.07) 0%, transparent 60%),
@@ -111,7 +113,7 @@
       margin-bottom: 12px;
     }
     h1 {
-      font-size: 40px;
+      font-size: 38px;
       font-weight: 800;
       letter-spacing: -1.5px;
       line-height: 1.1;
@@ -121,23 +123,56 @@
       font-size: 17px;
       color: var(--text-muted);
       max-width: 560px;
-      margin: 0 auto;
+      margin: 0 auto 8px;
       line-height: 1.6;
     }
 
     .page-wrap {
       max-width: var(--max-content);
       margin: 0 auto;
-      padding: 56px 40px 100px;
+      padding: 48px 24px 96px;
     }
 
-    /* TOC */
+    /* PIC banner — always visible reminder, compact, doesn't dominate */
+    .pic-banner {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: rgba(239,68,68,0.07);
+      border: 1px solid rgba(239,68,68,0.25);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 36px;
+    }
+    .pic-banner-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent-red);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .pic-banner p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    .pic-banner strong { color: var(--text); }
+
+    /* TABLE OF CONTENTS — flex column for layout robustness */
     .toc {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 20px 24px;
-      margin-bottom: 48px;
+      padding: 22px 26px;
+      margin-bottom: 56px;
+      overflow: hidden;
     }
     .toc h2 {
       font-size: 12px;
@@ -145,26 +180,27 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
       color: var(--text-muted);
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
     .toc ol {
       list-style: none;
       counter-reset: toc-counter;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px 24px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 24px;
     }
     .toc ol li {
       counter-increment: toc-counter;
       font-size: 14px;
-      padding-left: 22px;
+      padding-left: 26px;
       position: relative;
+      min-width: 0;
     }
     .toc ol li::before {
       content: counter(toc-counter, decimal-leading-zero);
       position: absolute;
       left: 0;
-      top: 1px;
+      top: 2px;
       font-size: 11px;
       color: var(--text-dim);
       font-weight: 700;
@@ -173,10 +209,17 @@
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.2s;
+      display: block;
+      overflow-wrap: break-word;
     }
     .toc ol li a:hover { color: var(--accent-green); }
 
-    section.doc-section { margin-bottom: 56px; scroll-margin-top: 80px; }
+    /* Sections sit BELOW the TOC, with hard separation */
+    section.doc-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 80px;
+      clear: both;
+    }
     .section-label {
       font-size: 11px;
       font-weight: 700;
@@ -184,14 +227,14 @@
       text-transform: uppercase;
       color: var(--text-muted);
       display: block;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     h2.doc-h {
       font-size: 26px;
       font-weight: 800;
       letter-spacing: -0.5px;
       line-height: 1.25;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       color: var(--text);
     }
     h3.doc-h {
@@ -235,6 +278,9 @@
       border-radius: 50%;
       background: var(--accent-green);
     }
+    .doc-list.checklist li {
+      padding-left: 28px;
+    }
     .doc-list.checklist li::before {
       content: '';
       width: 14px;
@@ -246,45 +292,48 @@
       background: transparent;
     }
 
-    .step-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 18px;
-    }
-    .step {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-    }
-    .step-num {
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
-      color: #fff;
-      font-weight: 800;
-      font-size: 14px;
+    /* Figure / screenshot frame */
+    figure.shot {
+      margin: 22px 0 8px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      margin-bottom: 12px;
+      gap: 12px;
     }
-    .step h4 {
-      font-size: 15px;
-      font-weight: 700;
-      margin-bottom: 6px;
+    figure.shot img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      display: block;
+      border-radius: 22px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06);
+      background: #000;
     }
-    .step p {
-      font-size: 14px;
+    figure.shot.wide img { max-width: 460px; border-radius: 14px; }
+    figure.shot figcaption {
+      font-size: 13px;
       color: var(--text-muted);
-      line-height: 1.6;
+      max-width: 360px;
+      text-align: center;
+      line-height: 1.55;
     }
 
+    /* Side-by-side: image + steps */
+    .step-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) 280px;
+      gap: 32px;
+      align-items: start;
+      margin: 8px 0 4px;
+    }
+    .step-card .step-body { min-width: 0; }
+    .step-card figure.shot { margin: 0; }
+    .step-card figure.shot img { max-width: 100%; }
+
+    /* Verdict pills */
     .verdict-row {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
       margin: 18px 0 22px;
     }
@@ -292,6 +341,7 @@
       border-radius: 12px;
       padding: 16px 18px;
       border: 1px solid var(--border);
+      min-width: 0;
     }
     .verdict-pill .badge {
       display: inline-block;
@@ -316,7 +366,7 @@
 
     .category-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
       margin-top: 8px;
     }
@@ -326,6 +376,7 @@
       border-radius: 12px;
       padding: 18px 20px;
       transition: border-color 0.2s;
+      min-width: 0;
     }
     .cat-card:hover { border-color: rgba(34,197,94,0.25); }
     .cat-card h4 {
@@ -415,7 +466,7 @@
 
     footer {
       border-top: 1px solid var(--border);
-      padding: 32px 40px;
+      padding: 32px 24px;
       text-align: center;
     }
     .footer-links {
@@ -435,24 +486,28 @@
     .footer-links a:hover { color: var(--text); }
     .footer-copy { font-size: 13px; color: var(--text-dim); }
 
-    @media (max-width: 720px) {
-      .nav-inner { padding: 0 20px; }
-      .page-hero { padding: 48px 20px 40px; }
-      h1 { font-size: 30px; }
-      .page-wrap { padding: 40px 20px 80px; }
-      .toc ol { grid-template-columns: 1fr; }
-      .step-grid { grid-template-columns: 1fr; }
+    @media (max-width: 760px) {
+      .nav-inner { padding: 0 16px; }
+      .page-hero { padding: 40px 18px 32px; }
+      h1 { font-size: 28px; letter-spacing: -1px; }
+      .page-sub { font-size: 15.5px; }
+      .page-wrap { padding: 36px 18px 72px; }
+      .toc { padding: 18px 18px; margin-bottom: 40px; }
+      .toc ol { grid-template-columns: 1fr; gap: 10px; }
+      .step-grid, .step-card { grid-template-columns: 1fr; gap: 18px; }
+      .step-card figure.shot img { max-width: 260px; }
       .verdict-row { grid-template-columns: 1fr; }
       .category-grid { grid-template-columns: 1fr; }
       h2.doc-h { font-size: 22px; }
-      .end-cta { padding: 24px 20px; }
-      footer { padding: 24px 20px; }
+      .end-cta { padding: 24px 18px; }
+      footer { padding: 24px 18px; }
+      .pic-banner { padding: 12px 14px; }
     }
   </style>
 </head>
 <body>
 
-  <nav aria-label="Navigation">
+  <nav class="site-nav" aria-label="Site navigation">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
         <span class="nav-logo-icon">
@@ -470,26 +525,31 @@
   </nav>
 
   <div class="page-hero">
-    <span class="page-label">Pilot Documentation</span>
-    <h1>Pilot Guide</h1>
-    <p class="page-sub">How to use FlightDecide as your preflight second opinion: set up your aircraft, run an analysis, read the verdict, and verify every interpretation against the raw data behind it.</p>
+    <span class="page-label">Pilot Guide</span>
+    <h1>How to fly a FlightDecide briefing</h1>
+    <p class="page-sub">A task-by-task walk-through: set up your aircraft, run an analysis, read the verdict, check route weather, verify against raw data, and act on a CAUTION or NO GO.</p>
   </div>
 
   <div class="page-wrap">
+
+    <div class="pic-banner" role="note">
+      <span class="pic-banner-icon" aria-hidden="true">!</span>
+      <p><strong>You are pilot in command.</strong> FlightDecide is an advisory self-briefing tool. It does not file flight plans, issue clearances, or replace an official weather briefing. The final go or no-go decision is always yours.</p>
+    </div>
 
     <!-- TABLE OF CONTENTS -->
     <nav class="toc" aria-label="Guide contents">
       <h2>In this guide</h2>
       <ol>
-        <li><a href="#what-it-is">What FlightDecide is, and isn't</a></li>
-        <li><a href="#quick-start">Quick start in three steps</a></li>
-        <li><a href="#aircraft-setup">Setting up your aircraft</a></li>
-        <li><a href="#run-analysis">Running an analysis</a></li>
-        <li><a href="#verdict">Reading the verdict</a></li>
-        <li><a href="#categories">Understanding each category</a></li>
-        <li><a href="#corrective">Corrective actions and Path to GO</a></li>
-        <li><a href="#verify">Verifying against raw data</a></li>
-        <li><a href="#before-fly">Before-you-fly checklist</a></li>
+        <li><a href="#what-it-is">What FlightDecide does</a></li>
+        <li><a href="#aircraft">Set up your aircraft</a></li>
+        <li><a href="#first-analysis">Run your first analysis</a></li>
+        <li><a href="#verdict">Read the verdict</a></li>
+        <li><a href="#categories">Drill into each category</a></li>
+        <li><a href="#route-weather">Check route weather + TAFs</a></li>
+        <li><a href="#raw-data">Verify against raw data</a></li>
+        <li><a href="#caution-nogo">Act on a CAUTION or NO GO</a></li>
+        <li><a href="#checklist">Before-you-fly checklist</a></li>
         <li><a href="#faq">Common questions</a></li>
         <li><a href="#limits">Limits and PIC responsibility</a></li>
       </ol>
@@ -498,103 +558,108 @@
     <!-- 1. WHAT IT IS -->
     <section id="what-it-is" class="doc-section">
       <span class="section-label">01 &middot; Overview</span>
-      <h2 class="doc-h">What FlightDecide is, and isn't</h2>
-      <p class="doc-p">FlightDecide is a <strong>preflight self-briefing assistant for general aviation pilots</strong>. You enter your route, aircraft, and planned departure time. The app pulls live aviation weather and NOTAMs for your route and flight window, computes weight and balance, fuel, and performance from your aircraft's published data, and gives you a scored <strong>GO</strong>, <strong>CAUTION</strong>, or <strong>NO GO</strong> verdict with a plain-language briefing that explains the risk.</p>
-      <p class="doc-p">Think of it as a structured second opinion. It is built around the same questions you already ask yourself before a flight, and it organises the answers so nothing important gets lost in a stack of tabs.</p>
+      <h2 class="doc-h">What FlightDecide does</h2>
+      <p class="doc-p">FlightDecide is a <strong>preflight self-briefing assistant for general aviation pilots</strong>. You enter a route, an aircraft, and a planned departure time. The app pulls live aviation weather and NOTAMs for your route and flight window, computes weight and balance, fuel, and performance from your aircraft profile, and returns a scored <strong>GO</strong>, <strong>CAUTION</strong>, or <strong>NO GO</strong> verdict with a plain-language briefing.</p>
+      <p class="doc-p">Behind every interpretation, the raw METAR, TAF, or NOTAM is one tap away. The app is built around the same questions you already ask yourself before a flight, organised so nothing important gets lost.</p>
+
+      <figure class="shot wide">
+        <img src="assets/guide/dashboard.png" alt="FlightDecide Dashboard showing a list of recent flight analyses for CYVR–KSEA with green GO badges." />
+        <figcaption>The Dashboard tab opens with your recent analyses. Tap one to re-run it or open the result, or use the bottom tab bar to start a new flight.</figcaption>
+      </figure>
+
       <h3 class="doc-h">What it does well</h3>
       <ul class="doc-list">
         <li><strong>Reads your flight window.</strong> Forecasts and NOTAMs are interpreted for your planned departure and arrival, not just "right now."</li>
-        <li><strong>Scores eight categories.</strong> Weather, en route weather, destination weather, performance, weight &amp; balance, fuel, airspace, and NOTAMs each get an independent verdict.</li>
-        <li><strong>Computes from your aircraft.</strong> Fuel, weight and balance, and takeoff and landing distances use real numbers from a published aircraft model, not generic estimates.</li>
-        <li><strong>Keeps the raw data one tap away.</strong> Every interpretation is paired with the source METAR, TAF, or NOTAM so you can verify it yourself.</li>
-        <li><strong>Tells you when data is missing.</strong> A coverage gap is shown as a gap, not as a silent "all clear."</li>
+        <li><strong>Scores each risk category.</strong> Departure weather, route weather, destination weather, performance, weight &amp; balance, fuel, airspace, and NOTAMs each get their own verdict.</li>
+        <li><strong>Uses your aircraft's numbers.</strong> Fuel, weight and balance, and takeoff/landing distances are computed against a published model, not generic estimates.</li>
+        <li><strong>Keeps the raw data one tap away.</strong> Every interpretation is paired with its source METAR, TAF, or NOTAM so you can verify it yourself.</li>
+        <li><strong>Reports coverage gaps as gaps.</strong> A missing data source is shown explicitly, never hidden behind a silent "all clear."</li>
       </ul>
-      <h3 class="doc-h">What it is not</h3>
-      <ul class="doc-list">
-        <li>It is <strong>not</strong> an official weather briefing, a dispatch release, or an air traffic control clearance.</li>
-        <li>It is <strong>not</strong> a replacement for your obligation under 14 CFR 91.103 (or your equivalent national rule) to become familiar with all available information concerning the flight.</li>
-        <li>It is <strong>not</strong> a substitute for talking to a Flight Service briefer when conditions warrant.</li>
-        <li>It does <strong>not</strong> file flight plans, request clearances, or release the aircraft.</li>
-      </ul>
-      <div class="callout safety">
-        <p><strong>Pilot in command.</strong> You remain the pilot in command. FlightDecide is advisory. The final go or no-go decision is always yours and must be informed by official sources and your own judgement.</p>
-      </div>
     </section>
 
-    <!-- 2. QUICK START -->
-    <section id="quick-start" class="doc-section">
-      <span class="section-label">02 &middot; Quick start</span>
-      <h2 class="doc-h">Three steps from open to verdict</h2>
-      <div class="step-grid">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h4>Pick or build your aircraft</h4>
-          <p>Choose a model from the built-in library, or build a profile with your own weights, arms, fuel arm, runway preferences, and personal minimums.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h4>Enter the flight</h4>
-          <p>Departure, destination, optional alternates, planned departure time, fuel load, passengers, and baggage. Choose VFR or IFR and the rule set you operate under.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h4>Read and verify</h4>
-          <p>Get a scored verdict and an AI briefing in seconds. Expand each category, scan the raw data, and decide.</p>
-        </div>
-      </div>
-      <div class="callout tip">
-        <p><strong>Tip.</strong> Run an analysis when you start planning, again the morning of the flight, and once more close to engine start. Conditions and NOTAMs change; the verdict can change with them.</p>
-      </div>
-    </section>
-
-    <!-- 3. AIRCRAFT SETUP -->
-    <section id="aircraft-setup" class="doc-section">
-      <span class="section-label">03 &middot; Aircraft setup</span>
-      <h2 class="doc-h">Setting up your aircraft</h2>
-      <p class="doc-p">Every analysis is computed against a specific aircraft profile. Pick the closest model from the library, or build a profile around the airplane you actually fly. You can keep more than one profile if you fly more than one airplane.</p>
+    <!-- 2. AIRCRAFT SETUP -->
+    <section id="aircraft" class="doc-section">
+      <span class="section-label">02 &middot; Step 1</span>
+      <h2 class="doc-h">Set up your aircraft</h2>
+      <p class="doc-p">Every analysis is computed against a specific aircraft profile. Before you run your first flight, open the <strong>Aircraft</strong> tab and either pick a model from the library or build one yourself.</p>
 
       <h3 class="doc-h">From the library</h3>
-      <p class="doc-p">The Aircraft tab includes a growing list of common general aviation models, from primary trainers through high-performance singles, twins, turboprops, and light jets. Each library entry carries published performance and weight numbers for the model. Pick one as a starting point, then tune the profile to match your tail number.</p>
+      <p class="doc-p">The library includes common general aviation models — primary trainers through high-performance singles, twins, turboprops, and light jets. Each entry carries published performance and weight numbers for the model. Pick a starting point, then tune the profile to match your tail number.</p>
 
       <h3 class="doc-h">Your custom profile</h3>
       <p class="doc-p">A profile holds the numbers FlightDecide needs to compute for your airplane:</p>
       <ul class="doc-list">
         <li><strong>Weights.</strong> Empty weight, maximum gross weight, maximum ramp weight, and maximum zero-fuel weight where applicable.</li>
-        <li><strong>Centre of gravity envelope.</strong> Forward and aft CG limits.</li>
-        <li><strong>Stations and arms.</strong> Fuel arm, baggage arms, and seat row arms used for the weight and balance calculation.</li>
-        <li><strong>Performance reference.</strong> Climb, cruise, and descent profiles tied to a published model so fuel and time numbers are real, not estimates.</li>
-        <li><strong>Personal minimums.</strong> Your own ceilings, visibility floors, crosswind limits, and runway preferences. The analysis flags conditions that exceed your personal minimums even when they meet the legal minimum.</li>
+        <li><strong>CG envelope.</strong> Forward and aft CG limits.</li>
+        <li><strong>Stations and arms.</strong> Fuel arm, baggage arms, and seat row arms used for weight and balance.</li>
+        <li><strong>Performance reference.</strong> Climb, cruise, and descent profiles tied to a published model so fuel and time numbers are real.</li>
+        <li><strong>Personal minimums.</strong> Ceilings, visibility floors, crosswind limits, and runway preferences. The analysis flags any condition that exceeds your minimums even when it meets the legal limit.</li>
       </ul>
       <div class="callout safety">
-        <p><strong>Weight and balance is manual entry only.</strong> Station arms, CG limits, maximum weights, and fuel arm are values you confirm yourself against the aircraft documents. FlightDecide does not derive these from uploaded files. You own the numbers; FlightDecide does the arithmetic around them.</p>
+        <p><strong>Weight and balance is manual entry.</strong> Station arms, CG limits, maximum weights, and fuel arm are values you confirm yourself against your aircraft documents. You own the numbers; FlightDecide does the arithmetic around them.</p>
       </div>
     </section>
 
-    <!-- 4. RUNNING AN ANALYSIS -->
-    <section id="run-analysis" class="doc-section">
-      <span class="section-label">04 &middot; Running an analysis</span>
-      <h2 class="doc-h">Running an analysis</h2>
-      <p class="doc-p">On the Analyze tab, fill in the flight you plan to make:</p>
-      <ul class="doc-list">
-        <li><strong>Route.</strong> Departure, destination, and any alternates you intend to file or carry fuel to.</li>
-        <li><strong>Planned departure time.</strong> Forecasts and NOTAMs are interpreted against this window, so make it realistic.</li>
-        <li><strong>Aircraft.</strong> Pick the profile that matches the tail number you are flying today.</li>
-        <li><strong>Flight rules and operation type.</strong> VFR or IFR. The right reserve rule and alternate logic follow from this choice.</li>
-        <li><strong>Loading.</strong> Fuel quantity, passenger weights, and baggage. Seat by seat where the airplane needs it.</li>
-        <li><strong>Personal minimums.</strong> Override the profile defaults for this flight if you want to be more conservative than usual.</li>
-      </ul>
-      <p class="doc-p">When you submit, the app pulls live data, runs each scored category, generates an AI briefing, and shows the result. You can rerun at any time; recent analyses stay accessible so you can compare a morning briefing against a late-afternoon one and see what changed.</p>
+    <!-- 3. FIRST ANALYSIS -->
+    <section id="first-analysis" class="doc-section">
+      <span class="section-label">03 &middot; Step 2</span>
+      <h2 class="doc-h">Run your first analysis</h2>
+      <p class="doc-p">Open the <strong>Analyze</strong> tab and fill in the flight you plan to make. The form is designed so you can run a fresh briefing in under a minute.</p>
+
+      <div class="step-card">
+        <div class="step-body">
+          <h3 class="doc-h">Top of the form</h3>
+          <ul class="doc-list">
+            <li><strong>Route.</strong> Departure, destination, and optional waypoints. Tap <em>Parse Route</em> if you have a full route string.</li>
+            <li><strong>Operation.</strong> Part 91 VFR or IFR (or your national equivalent). The right reserve rule and alternate logic follow from this choice.</li>
+            <li><strong>Use Previous Inputs.</strong> If you flew this trip recently, one tap restores the route, aircraft, and loading.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/guide/analyze-form.png" alt="The top of the New Analysis form on iPhone: New Analysis title, Use Previous Inputs shortcut card, route input field, and Operation selector." />
+          <figcaption>The Analyze tab — top of the New Analysis form.</figcaption>
+        </figure>
+      </div>
+
+      <div class="step-card">
+        <div class="step-body">
+          <h3 class="doc-h">Aircraft, loading, and departure</h3>
+          <ul class="doc-list">
+            <li><strong>Aircraft.</strong> Pick the profile that matches the tail number you are flying today.</li>
+            <li><strong>Loading.</strong> Seat-by-seat weights, baggage, and fuel on board. The form shows estimated gross weight against max as you type, so a heavy loading is caught before you fly.</li>
+            <li><strong>Cruise settings.</strong> Cruise altitude and power; the app pre-fills sensible defaults from your aircraft class.</li>
+            <li><strong>Departure date and time.</strong> Make it realistic — forecasts and NOTAMs are interpreted against this window.</li>
+            <li><strong>Personal minimums (optional).</strong> Override the profile defaults if you want to be more conservative than usual.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/guide/analyze-form-fuel.png" alt="Lower half of the New Analysis form: Fuel on Board, Estimated Gross Weight, Cruise Altitude, RPM, and Departure Date and Time." />
+          <figcaption>Loading, cruise, and departure inputs — gross weight margin is shown live.</figcaption>
+        </figure>
+      </div>
+
+      <p class="doc-p" style="margin-top: 28px;">Tap <strong>Analyze Flight</strong>. The app pulls live data, runs each scored category, generates the briefing, and shows the result. You can rerun at any time — recent analyses stay on the Dashboard so you can compare a morning briefing against a late-afternoon one and see what changed.</p>
+
+      <div class="callout tip">
+        <p><strong>Tip.</strong> Run an analysis when you start planning, again the morning of the flight, and once more close to engine start. Conditions and NOTAMs change; the verdict can change with them.</p>
+      </div>
     </section>
 
-    <!-- 5. VERDICT -->
+    <!-- 4. VERDICT -->
     <section id="verdict" class="doc-section">
-      <span class="section-label">05 &middot; Reading the verdict</span>
-      <h2 class="doc-h">Reading the verdict</h2>
-      <p class="doc-p">The top of the result page is a single advisory verdict for the whole flight. It comes in three colours.</p>
+      <span class="section-label">04 &middot; Step 3</span>
+      <h2 class="doc-h">Read the verdict</h2>
+      <p class="doc-p">The top of the result page is a single advisory verdict for the whole flight, with the headline conditions underneath.</p>
+
+      <figure class="shot">
+        <img src="assets/guide/verdict.png" alt="Analysis Result screen on iPhone: large green GO badge with route KSEA KPDX, an Airspace and NOTAMs caution, and a Bottom line summary." />
+        <figcaption>A GO result — the verdict header carries the route, the headline risk, and a one-line bottom line.</figcaption>
+      </figure>
+
       <div class="verdict-row">
         <div class="verdict-pill vp-go">
           <span class="badge">GO</span>
-          <p>No category is in the red, and no required corrective action is outstanding. The flight as planned fits within both the legal envelope and your personal minimums.</p>
+          <p>No category is in the red and no required corrective action is outstanding. The flight as planned fits within the legal envelope and your personal minimums.</p>
         </div>
         <div class="verdict-pill vp-caution">
           <span class="badge">CAUTION</span>
@@ -605,22 +670,24 @@
           <p>One or more categories are red, or a required corrective action has not been resolved. The flight as planned does not fit. Path to GO suggests the smallest set of changes that would flip the verdict.</p>
         </div>
       </div>
-      <p class="doc-p">Underneath the verdict, you will see the eight category scores. Each carries its own colour, an interpreted summary, and the raw inputs that produced the call. The verdict is the headline; the categories are how you understand it.</p>
+
+      <p class="doc-p">Below the verdict header you'll see the category disclosures. Each carries its own colour, an interpreted summary, and the raw inputs that produced the call. <strong>The verdict is the headline; the categories are how you understand it.</strong></p>
+
       <div class="callout">
         <p><strong>The verdict is an advisor, not a clearance.</strong> A GO does not mean you must fly, and a NO GO does not mean you are forbidden from flying. It means the planned flight fits, or does not fit, the rules and minimums you told the app about.</p>
       </div>
     </section>
 
-    <!-- 6. CATEGORIES -->
+    <!-- 5. CATEGORIES -->
     <section id="categories" class="doc-section">
-      <span class="section-label">06 &middot; Categories</span>
-      <h2 class="doc-h">Understanding each category</h2>
-      <p class="doc-p">Each category is scored independently and explained in its own card on the result page. Tap a card to expand the detail. Here is what to look for.</p>
+      <span class="section-label">05 &middot; Step 4</span>
+      <h2 class="doc-h">Drill into each category</h2>
+      <p class="doc-p">Tap any category disclosure to expand its detail. Here is what to look for in each.</p>
 
       <div class="category-grid">
         <div class="cat-card">
           <h4>Departure weather</h4>
-          <p>The METAR for your departure airport interpreted for your planned takeoff time, plus the trend from the latest TAF for the next few hours. Flagged categories include VFR, MVFR, IFR, LIFR, low-level wind shear, thunderstorms, icing, and reported turbulence.</p>
+          <p>The departure METAR interpreted for your planned takeoff time, plus the next-few-hours trend from the latest TAF. Flagged states include VFR, MVFR, IFR, LIFR, low-level wind shear, thunderstorms, icing, and reported turbulence.</p>
         </div>
         <div class="cat-card">
           <h4>Destination weather</h4>
@@ -632,11 +699,11 @@
         </div>
         <div class="cat-card">
           <h4>En route hazards</h4>
-          <p>Winds aloft at candidate cruise altitudes, freezing levels, active G-AIRMETs and SIGMETs, and recent PIREPs along your route. If coverage is missing for an area, the gap is shown rather than hidden.</p>
+          <p>Winds aloft at candidate cruise altitudes, freezing levels, active G-AIRMETs and SIGMETs, and recent PIREPs along your route. Coverage gaps are shown, not hidden.</p>
         </div>
         <div class="cat-card">
           <h4>Performance</h4>
-          <p>Takeoff and landing distances at the planned weights, runway, density altitude, and wind component. Margin against the available runway is computed and a CAUTION is raised when the margin is thin.</p>
+          <p>Takeoff and landing distances at the planned weights, runway, density altitude, and wind component. Margin against the available runway is computed; a thin margin raises a CAUTION.</p>
         </div>
         <div class="cat-card">
           <h4>Weight &amp; balance</h4>
@@ -644,52 +711,88 @@
         </div>
         <div class="cat-card">
           <h4>Fuel plan</h4>
-          <p>One worked fuel plan for the flight: climb fuel, cruise fuel, descent fuel, taxi, and legal reserve added on top. You see fuel on board, fuel required, reserve minutes available, and whether the rule for your operation is met. Extra fuel beyond legal reserve is shown explicitly.</p>
+          <p>A worked fuel plan for the flight: climb, cruise, descent, taxi, plus legal reserve. You see fuel on board, fuel required, reserve minutes available, and whether your operation's reserve rule is met. Extra fuel is shown explicitly.</p>
         </div>
         <div class="cat-card">
           <h4>Airspace &amp; NOTAMs</h4>
-          <p>Every relevant NOTAM gets a plain-language summary and a window-impact line: in effect during your flight, starts after you land, or ended before takeoff. Raw NOTAM text stays available. Coverage gaps are reported as gaps, never as zero.</p>
+          <p>Every relevant NOTAM gets a plain-language summary and a window-impact line: in effect during your flight, starts after you land, or ended before takeoff. Raw NOTAM text stays available.</p>
         </div>
       </div>
-
-      <h3 class="doc-h">Optimal cruise altitude</h3>
-      <p class="doc-p">For en route flights, FlightDecide also scores each candidate cruise altitude for winds, icing potential, turbulence, and clearance below cloud ceilings, and constrains the recommendation to the hemispheric cruise rule for your direction of flight. The suggestion is a starting point for your altitude selection, not a clearance.</p>
     </section>
 
-    <!-- 7. CORRECTIVE ACTIONS -->
-    <section id="corrective" class="doc-section">
-      <span class="section-label">07 &middot; Corrective actions</span>
-      <h2 class="doc-h">Corrective actions and Path to GO</h2>
-      <p class="doc-p">When a category is amber or red, FlightDecide does not stop at the warning. Each card lists ranked Required and Recommended corrective actions with specific numbers you can act on, for example:</p>
+    <!-- 6. ROUTE WEATHER -->
+    <section id="route-weather" class="doc-section">
+      <span class="section-label">06 &middot; Step 5</span>
+      <h2 class="doc-h">Check route weather and TAFs</h2>
+      <p class="doc-p">The dedicated <strong>Weather</strong> tab is for ad-hoc lookups outside an analysis. Type an ICAO or a route — single airport for a station view, multi-airport for an en route view.</p>
+
+      <div class="step-card">
+        <div class="step-body">
+          <ul class="doc-list">
+            <li><strong>Type and Go.</strong> Enter an ICAO code, or a space-separated route like <em>KBLI KSEA</em>.</li>
+            <li><strong>Recent codes</strong> are saved so the next lookup is one tap.</li>
+            <li><strong>Active watches</strong> show route-level monitoring you have set up from an analysis result.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/guide/weather-tab.png" alt="The Weather tab on iPhone: search field 'Enter ICAO or route', a Recent KSEA chip, and an Active Watches section showing a CYVR CYLW watch." />
+          <figcaption>Weather tab — search by ICAO or route. Recent codes and active route watches are right there.</figcaption>
+        </figure>
+      </div>
+
+      <div class="step-card">
+        <div class="step-body">
+          <h3 class="doc-h">A route view, broken down</h3>
+          <ul class="doc-list">
+            <li>The <strong>Route weather</strong> header summarises the leg.</li>
+            <li>Each airport card shows the <strong>raw METAR</strong> and the parsed line: wind, visibility, ceiling, temp/dew, altimeter, category (VFR/MVFR/IFR/LIFR).</li>
+            <li>The <strong>Forecast (TAF)</strong> block lists FM/TEMPO/PROB groups with the validity window and a per-group category badge.</li>
+            <li>Scroll to see additional airports in the route stack.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="assets/guide/route-weather.png" alt="A route weather result for KBLI KSEA on iPhone: KBLI METAR with wind 040 at 6kt, visibility 10 SM, ceiling FEW 25000, VFR. A TAF block follows with a NOW FM group." />
+          <figcaption>A route lookup renders the METAR and the TAF for each airport, with the active forecast group highlighted.</figcaption>
+        </figure>
+      </div>
+
+      <p class="doc-p">Inside an analysis, the <strong>Route Weather Planning</strong> category surfaces the same data interpreted against your planned overhead times — pre-checked, with any coverage gaps labelled.</p>
+    </section>
+
+    <!-- 7. VERIFY -->
+    <section id="raw-data" class="doc-section">
+      <span class="section-label">07 &middot; Step 6</span>
+      <h2 class="doc-h">Verify against raw data</h2>
+      <p class="doc-p">A briefing you cannot verify is not a briefing. FlightDecide is built so you can always cross-check.</p>
+      <ul class="doc-list">
+        <li><strong>Raw METARs and TAFs.</strong> Each weather card has a <em>Show raw</em> disclosure that reveals the source text, the observation or forecast time, and the issuing station. Read the raw before you fly.</li>
+        <li><strong>Raw NOTAMs.</strong> Every NOTAM summary is paired with a <em>Show raw NOTAM</em> disclosure so you can read the unaltered text.</li>
+        <li><strong>Time stamps.</strong> Each piece of data is stamped with the time it was retrieved. If you ran an analysis well before your departure, re-run it closer to the time.</li>
+        <li><strong>Coverage gaps.</strong> If a data source did not respond for one of your airports, the relevant card says so. Treat it as a missing data flag and obtain the data another way before flight.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>Cross-check with an official briefing.</strong> Supplement the FlightDecide result with an official weather briefing and the current NOTAM source for your jurisdiction. FlightDecide makes verification easier; it does not replace it.</p>
+      </div>
+    </section>
+
+    <!-- 8. CAUTION / NO GO -->
+    <section id="caution-nogo" class="doc-section">
+      <span class="section-label">08 &middot; Step 7</span>
+      <h2 class="doc-h">Act on a CAUTION or NO GO</h2>
+      <p class="doc-p">When a category is amber or red, FlightDecide does not stop at the warning. Each card lists ranked <strong>Required</strong> and <strong>Recommended</strong> corrective actions with specific numbers you can act on, for example:</p>
       <ul class="doc-list">
         <li>Shift a specific weight forward or aft to bring CG inside the envelope.</li>
-        <li>Add fuel to meet a reserve requirement or your personal extra fuel target.</li>
+        <li>Add fuel to meet a reserve requirement or your personal extra-fuel target.</li>
         <li>Request a different cruise altitude where winds aloft, icing potential, or turbulence improve.</li>
         <li>Delay departure until a forecast trend has cleared.</li>
         <li>Reduce payload to meet a takeoff or landing distance margin.</li>
       </ul>
-      <p class="doc-p">For CAUTION and NO GO flights, the <strong>Path to GO</strong> summary highlights the smallest set of changes that would flip the verdict to GO. It is not a promise: applying the changes still requires you to re-verify the underlying data has not moved against you.</p>
-    </section>
-
-    <!-- 8. VERIFICATION -->
-    <section id="verify" class="doc-section">
-      <span class="section-label">08 &middot; Verify</span>
-      <h2 class="doc-h">Verifying against raw data</h2>
-      <p class="doc-p">A briefing you cannot verify is not a briefing. FlightDecide is built so you can always cross-check.</p>
-      <ul class="doc-list">
-        <li><strong>Raw METARs and TAFs.</strong> Each weather card has a Show raw disclosure that reveals the source text, the observation or forecast time, and the issuing station. Read the raw before you fly.</li>
-        <li><strong>Raw NOTAMs.</strong> Every NOTAM summary is paired with a Show raw NOTAM disclosure so you can read the unaltered text.</li>
-        <li><strong>Time stamps.</strong> Each piece of data is stamped with the time it was retrieved. If you are running an analysis well before your departure, re-run it closer to the time.</li>
-        <li><strong>Coverage gaps.</strong> If a data source did not respond for one of your airports, the relevant card says so explicitly. Treat it as a missing data flag and obtain the data another way before flight.</li>
-      </ul>
-      <div class="callout">
-        <p><strong>Cross-check with an official briefing.</strong> Before any flight, supplement the FlightDecide result with an official weather briefing and the current NOTAM source for your jurisdiction. FlightDecide makes verification easier; it does not replace it.</p>
-      </div>
+      <p class="doc-p">For CAUTION and NO GO flights, the <strong>Path to GO</strong> summary highlights the smallest set of changes that would flip the verdict. Apply the change, re-run the analysis, and confirm the underlying data has not moved against you.</p>
     </section>
 
     <!-- 9. CHECKLIST -->
-    <section id="before-fly" class="doc-section">
-      <span class="section-label">09 &middot; Checklist</span>
+    <section id="checklist" class="doc-section">
+      <span class="section-label">09 &middot; Before you fly</span>
       <h2 class="doc-h">Before-you-fly checklist</h2>
       <p class="doc-p">A short list to run through after the verdict and before you walk to the airplane.</p>
       <ul class="doc-list checklist">
@@ -700,28 +803,28 @@
         <li>I have obtained an official weather briefing and the current NOTAMs through my normal preflight source.</li>
         <li>Personal minimums are honoured, not just legal minimums.</li>
         <li>An alternate plan exists: wait, divert, change route, change altitude, or cancel.</li>
-        <li>The pilot in command, me, agrees with the verdict.</li>
+        <li>The pilot in command — me — agrees with the verdict.</li>
       </ul>
     </section>
 
     <!-- 10. FAQ -->
     <section id="faq" class="doc-section">
-      <span class="section-label">10 &middot; Common questions</span>
+      <span class="section-label">10 &middot; FAQ</span>
       <h2 class="doc-h">Common questions</h2>
 
       <div class="faq-mini">
         <h4>Why does my analysis show fewer en route TAF checkpoints than I expected?</h4>
-        <p>Forecast coverage is not uniform. On a route with sparse forecast stations, fewer checkpoints will appear. You will see what is available, and gaps are labelled rather than filled with assumptions.</p>
+        <p>Forecast coverage is not uniform. On a route with sparse forecast stations, fewer checkpoints will appear. You see what is available, and gaps are labelled rather than filled with assumptions.</p>
       </div>
 
       <div class="faq-mini">
         <h4>Why does the verdict say "verify timing" or show a coverage gap?</h4>
-        <p>It means a data source did not return information for one of your airports or for part of your route. The app reports the gap instead of pretending it is an "all clear." Treat it as a missing data flag and verify through an official source before flight.</p>
+        <p>A data source did not return information for one of your airports or part of your route. The app reports the gap instead of pretending it is an "all clear." Treat it as a missing-data flag and verify through an official source before flight.</p>
       </div>
 
       <div class="faq-mini">
-        <h4>What does the app mean by "recommend waiting" or "recommend a different altitude"?</h4>
-        <p>It means an amber or red category has a forecast trend or wind profile that would improve under a different departure time or cruise altitude. The corrective action lists the specific change that would clear the flag.</p>
+        <h4>What does "recommend waiting" or "recommend a different altitude" mean?</h4>
+        <p>An amber or red category has a forecast trend or wind profile that would improve under a different departure time or cruise altitude. The corrective action lists the specific change that would clear the flag.</p>
       </div>
 
       <div class="faq-mini">
@@ -736,12 +839,7 @@
 
       <div class="faq-mini">
         <h4>Why did the verdict change between two analyses for the same flight?</h4>
-        <p>Weather, NOTAMs, and forecast trends move. A morning briefing and an afternoon briefing for the same flight can produce different verdicts. That is the point of re-running close to departure.</p>
-      </div>
-
-      <div class="faq-mini">
-        <h4>The app asked me to sign in again. Why?</h4>
-        <p>Sign-in is designed for the real preflight rhythm, where a single session can span planning, weather updates, and engine start. Occasional re-prompts are routine; they do not lose any analysis you have already saved.</p>
+        <p>Weather, NOTAMs, and forecast trends move. A morning and an afternoon briefing for the same flight can produce different verdicts. That is the point of re-running close to departure.</p>
       </div>
 
       <p class="doc-p" style="margin-top: 28px;">More questions? Browse <a href="support.html" class="inline-link">Support</a> or write to <a href="mailto:support@flightdecide.com" class="inline-link">support@flightdecide.com</a>.</p>
@@ -751,7 +849,7 @@
     <section id="limits" class="doc-section">
       <span class="section-label">11 &middot; Limits</span>
       <h2 class="doc-h">Limits and pilot in command responsibility</h2>
-      <p class="doc-p">FlightDecide is informational. It supports your preflight self-briefing in the same spirit as FAA Advisory Circular 91-92, <em>Pilot's Guide to a Preflight Briefing</em>, which describes the self-briefing as a structured way to plan, interpret weather, and identify and mitigate risk. The Advisory Circular is also clear that technology and third-party tools are aids, not substitutes for pilot judgement or for contacting Flight Service when conditions require it.</p>
+      <p class="doc-p">FlightDecide is informational. It supports your preflight self-briefing in the spirit of FAA Advisory Circular 91-92, <em>Pilot's Guide to a Preflight Briefing</em>, which describes the self-briefing as a structured way to plan, interpret weather, and identify and mitigate risk. The Advisory Circular is also clear that technology and third-party tools are aids — not substitutes for pilot judgement or for contacting Flight Service when conditions require it.</p>
       <p class="doc-p">FlightDecide does not:</p>
       <ul class="doc-list">
         <li>Issue official weather briefings or NOTAM products.</li>
