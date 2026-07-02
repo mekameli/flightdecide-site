@@ -8,11 +8,23 @@
   <meta name="keywords" content="FlightDecide pilot guide, how to use FlightDecide, preflight self-briefing, GA pilot app, go no go advisor, route weather TAF, raw METAR NOTAM" />
   <link rel="canonical" href="https://flightdecide.com/guide.html" />
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://flightdecide.com/guide.html" />
   <meta property="og:title" content="Pilot Guide | FlightDecide" />
-  <meta property="og:description" content="A task-by-task guide: set up an aircraft, run a preflight analysis, read the verdict, and verify against raw data." />
+  <meta property="og:description" content="How to use FlightDecide as your preflight second opinion: set up your aircraft, run an analysis, read the GO / CAUTION / NO GO verdict, check route weather, and verify against raw METARs, TAFs, and NOTAMs." />
   <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide app showing a scored go/no-go advisory for a GA flight." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pilot Guide | FlightDecide" />
+  <meta name="twitter:description" content="How to use FlightDecide as your preflight second opinion: set up your aircraft, run an analysis, read the GO / CAUTION / NO GO verdict, check route weather, and verify against raw METARs, TAFs, and NOTAMs." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -562,8 +574,17 @@
       <p class="doc-p">FlightDecide is a <strong>preflight self-briefing assistant for general aviation pilots</strong>. You enter a route, an aircraft, and a planned departure time. The app pulls live aviation weather and NOTAMs for your route and flight window, computes weight and balance, fuel, and performance from your aircraft profile, and returns a scored <strong>GO</strong>, <strong>CAUTION</strong>, or <strong>NO GO</strong> verdict with a plain-language briefing.</p>
       <p class="doc-p">Behind every interpretation, the raw METAR, TAF, or NOTAM is one tap away. The app is built around the same questions you already ask yourself before a flight, organised so nothing important gets lost.</p>
 
+      <p class="doc-p">The first time you open FlightDecide, before you create an account, the app shows a built-in <strong>sample briefing</strong>: a worked KSEA &rarr; KPDX example with a scored GO verdict and a plain-language summary, so you can see the kind of advisory result FlightDecide produces before you sign up.</p>
+
+      <figure class="shot">
+        <img src="assets/guide/sample-briefing.png" width="331" height="720" loading="lazy" decoding="async" alt="FlightDecide sample briefing shown before sign-in: a KSEA to KPDX example with a green GO verdict and a plain-language advisory summary." />
+        <figcaption>Before you sign in, a built-in sample briefing (KSEA &rarr; KPDX) shows the kind of scored, advisory result FlightDecide produces.</figcaption>
+      </figure>
+
+      <p class="doc-p">Prefer to try it in your browser first? <a href="demo.html" class="inline-link">Open the interactive demo.</a></p>
+
       <figure class="shot wide">
-        <img src="assets/guide/dashboard.png" alt="FlightDecide Dashboard showing a list of recent flight analyses for CYVR–KSEA with green GO badges." />
+        <img src="assets/guide/dashboard.png" width="331" height="720" loading="lazy" decoding="async" alt="FlightDecide Dashboard showing a list of recent flight analyses for CYVR–KSEA with green GO badges." />
         <figcaption>The Dashboard tab opens with your recent analyses. Tap one to re-run it or open the result, or use the bottom tab bar to start a new flight.</figcaption>
       </figure>
 
@@ -616,7 +637,7 @@
           </ul>
         </div>
         <figure class="shot">
-          <img src="assets/guide/analyze-form.png" alt="The top of the New Analysis form on iPhone: New Analysis title, Use Previous Inputs shortcut card, route input field, and Operation selector." />
+          <img src="assets/guide/analyze-form.png" width="629" height="720" loading="lazy" decoding="async" alt="The top of the New Analysis form on iPhone: New Analysis title, Use Previous Inputs shortcut card, route input field, and Operation selector." />
           <figcaption>The Analyze tab, top of the New Analysis form.</figcaption>
         </figure>
       </div>
@@ -633,7 +654,7 @@
           </ul>
         </div>
         <figure class="shot">
-          <img src="assets/guide/analyze-form-fuel.png" alt="Lower half of the New Analysis form: Fuel on Board, Estimated Gross Weight, Cruise Altitude, RPM, and Departure Date and Time." />
+          <img src="assets/guide/analyze-form-fuel.png" width="331" height="720" loading="lazy" decoding="async" alt="Lower half of the New Analysis form: Fuel on Board, Estimated Gross Weight, Cruise Altitude, RPM, and Departure Date and Time." />
           <figcaption>Loading, cruise, and departure inputs. Gross weight margin is shown live.</figcaption>
         </figure>
       </div>
@@ -652,7 +673,7 @@
       <p class="doc-p">The top of the result page is a single advisory verdict for the whole flight, with the headline conditions underneath.</p>
 
       <figure class="shot">
-        <img src="assets/guide/verdict.png" alt="Analysis Result screen on iPhone: large green GO badge with route KSEA KPDX, an Airspace and NOTAMs caution, and a Bottom line summary." />
+        <img src="assets/guide/verdict.png" width="331" height="720" loading="lazy" decoding="async" alt="Analysis Result screen on iPhone: large green GO badge with route KSEA KPDX, an Airspace and NOTAMs caution, and a Bottom line summary." />
         <figcaption>A GO result. The verdict header carries the route, the headline risk, and a one-line bottom line.</figcaption>
       </figure>
 
@@ -735,7 +756,7 @@
           </ul>
         </div>
         <figure class="shot">
-          <img src="assets/guide/weather-tab.png" alt="The Weather tab on iPhone: search field 'Enter ICAO or route', a Recent KSEA chip, and an Active Watches section showing a CYVR CYLW watch." />
+          <img src="assets/guide/weather-tab.png" width="331" height="720" loading="lazy" decoding="async" alt="The Weather tab on iPhone: search field 'Enter ICAO or route', a Recent KSEA chip, and an Active Watches section showing a CYVR CYLW watch." />
           <figcaption>Weather tab. Search by ICAO or route. Recent codes and active route watches are right there.</figcaption>
         </figure>
       </div>
@@ -751,7 +772,7 @@
           </ul>
         </div>
         <figure class="shot">
-          <img src="assets/guide/route-weather.png" alt="A route weather result for KBLI KSEA on iPhone: KBLI METAR with wind 040 at 6kt, visibility 10 SM, ceiling FEW 25000, VFR. A TAF block follows with a NOW FM group." />
+          <img src="assets/guide/route-weather.png" width="331" height="720" loading="lazy" decoding="async" alt="A route weather result for KBLI KSEA on iPhone: KBLI METAR with wind 040 at 6kt, visibility 10 SM, ceiling FEW 25000, VFR. A TAF block follows with a NOW FM group." />
           <figcaption>A route lookup renders the METAR and the TAF for each airport, with the active forecast group highlighted.</figcaption>
         </figure>
       </div>
@@ -862,8 +883,9 @@
 
     <div class="end-cta">
       <h3>Ready to fly with a second opinion?</h3>
-      <p>Download FlightDecide for iPhone and run your next preflight with structure behind it.</p>
-      <a href="/#download" class="btn">Download for iPhone</a>
+      <p>FlightDecide is coming to iPhone. Get early access and run your next preflight with structure behind it.</p>
+      <!-- Launch day: js-appstore-link href flips to the App Store URL; restore label to "Download for iPhone". -->
+      <a href="/#download" class="btn js-appstore-link">Get early access</a>
       <a href="support.html" class="btn btn-secondary">Visit Support</a>
     </div>
 

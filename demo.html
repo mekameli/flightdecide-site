@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>FlightDecide Interactive Demo — See a Go/No-Go Briefing</title>
+  <meta name="description" content="Try FlightDecide right in your browser. Pick a sample flight and get a scored GO, CAUTION, or NO-GO decision-support briefing with plain-language reasoning, raw METAR/TAF/NOTAM data, and a Path to GO for marginal conditions. Decision support only — the final call is always yours." />
+  <meta name="keywords" content="flightdecide demo, go no go advisor, preflight briefing demo, aviation weather, TAF interpretation, NOTAM, weight and balance, fuel planning, GA pilot, personal minimums" />
+  <link rel="canonical" href="https://flightdecide.com/demo.html" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flightdecide.com/demo.html" />
+  <meta property="og:title" content="FlightDecide Interactive Demo — See a Go/No-Go Briefing" />
+  <meta property="og:description" content="Pick a sample flight and watch FlightDecide score it GO, CAUTION, or NO-GO — with reasoning you can verify against the raw METAR, TAF, and NOTAM, and a Path to GO when it's marginal." />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide — Should you fly today? App showing a GO verdict for a GA flight" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FlightDecide Interactive Demo — See a Go/No-Go Briefing" />
+  <meta name="twitter:description" content="Pick a sample flight and watch FlightDecide score it GO, CAUTION, or NO-GO — with reasoning you can verify against the raw METAR, TAF, and NOTAM." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FlightDecide Interactive Demo",
+    "description": "An interactive, in-browser sample of FlightDecide's go/no-go decision-support briefing for general-aviation pilots.",
+    "url": "https://flightdecide.com/demo.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "FlightDecide",
+      "url": "https://flightdecide.com"
+    },
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "FlightDecide",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0F172A;
+      --bg-card: rgba(255,255,255,0.04);
+      --bg-card-hover: rgba(255,255,255,0.07);
+      --border: rgba(255,255,255,0.08);
+      --border-bright: rgba(255,255,255,0.18);
+      --accent-green: #22C55E;
+      --accent-blue: #3B82F6;
+      --accent-amber: #EAB308;
+      --accent-red: #EF4444;
+      --accent-purple: #A855F7;
+      --accent-cyan: #06B6D4;
+      --text: #F0F0F5;
+      --text-muted: #94A3B8;
+      --text-dim: #44445a;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --max-content: 1200px;
+      --max-nav: 1280px;
+      --mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      font-size: 18px;
+    }
+
+    a { color: inherit; }
+
+    :focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* NAV (shared with index.html) */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(15,23,42,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      height: 64px;
+    }
+
+    .nav-inner {
+      max-width: var(--max-nav);
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 16px;
+      z-index: 201;
+    }
+
+    .nav-logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a[aria-current="page"] { color: var(--text); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      z-index: 201;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--text-muted);
+      position: absolute;
+      left: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-hamburger span:nth-child(1) { top: 12px; }
+    .nav-hamburger span:nth-child(2) { top: 19px; }
+    .nav-hamburger span:nth-child(3) { top: 26px; }
+
+    .nav-hamburger.active span:nth-child(1) { top: 19px; transform: rotate(45deg); background: var(--text); }
+    .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.active span:nth-child(3) { top: 19px; transform: rotate(-45deg); background: var(--text); }
+
+    /* MOBILE NAV (shared) */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100%; height: 100%;
+      background: var(--bg);
+      z-index: 150;
+      overflow-y: auto;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-nav-inner {
+      min-height: 100%;
+      padding: 88px 32px 40px;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+    }
+    .mobile-nav-links { display: flex; flex-direction: column; }
+    .mobile-nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      padding: 16px 0;
+      display: block;
+    }
+    .mobile-nav-divider { height: 1px; background: rgba(255,255,255,0.08); margin: 20px 0; }
+    .mobile-nav-secondary { display: flex; flex-direction: column; gap: 16px; }
+    .mobile-nav-secondary a { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 15px; display: block; }
+    .mobile-nav-bottom { margin-top: auto; padding-top: 32px; }
+    .mobile-nav-bottom a {
+      display: flex; align-items: center; justify-content: center;
+      padding: 18px 24px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff; border-radius: 14px; font-weight: 700; font-size: 17px; text-decoration: none;
+    }
+
+    /* DEMO HERO */
+    .demo-hero {
+      position: relative;
+      padding: 120px 40px 40px;
+      text-align: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 70% 70% at 50% 0%, rgba(34,197,94,0.09) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 85% 20%, rgba(59,130,246,0.07) 0%, transparent 60%),
+        var(--bg);
+    }
+
+    .demo-hero-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+
+    .demo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34,197,94,0.08);
+      border: 1px solid rgba(34,197,94,0.22);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-green);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .demo-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent-green);
+    }
+
+    .demo-hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .demo-hero p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .sample-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 14px;
+    }
+    .sample-note svg { flex-shrink: 0; opacity: 0.7; }
+
+    /* SCENARIO PICKER */
+    .demo-stage-wrap { padding: 8px 40px 40px; }
+    .demo-stage-inner { max-width: var(--max-content); margin: 0 auto; }
+
+    .picker-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .scenario-picker {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .scenario-card {
+      position: relative;
+      text-align: left;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 20px 18px;
+      cursor: pointer;
+      color: var(--text);
+      font-family: inherit;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .scenario-card:hover { background: var(--bg-card-hover); transform: translateY(-2px); }
+    .scenario-card[aria-pressed="true"] {
+      border-color: var(--sc-accent, var(--accent-green));
+      box-shadow: 0 0 0 1px var(--sc-accent, var(--accent-green)), 0 10px 30px rgba(0,0,0,0.35);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .scenario-card .sc-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .sc-name { font-size: 15px; font-weight: 700; letter-spacing: -0.2px; }
+
+    .sc-verdict-pill {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      padding: 4px 10px;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .sc-verdict-pill.go     { color: var(--accent-green); background: rgba(34,197,94,0.14); border: 1px solid rgba(34,197,94,0.35); }
+    .sc-verdict-pill.caution{ color: #FBBF24; background: rgba(234,179,8,0.14); border: 1px solid rgba(234,179,8,0.35); }
+    .sc-verdict-pill.nogo   { color: var(--accent-red); background: rgba(239,68,68,0.14); border: 1px solid rgba(239,68,68,0.35); }
+
+    .sc-route {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text);
+      letter-spacing: 0.3px;
+      margin-bottom: 4px;
+    }
+    .sc-meta { font-size: 12.5px; color: var(--text-muted); }
+    .sc-tap { font-size: 11px; color: var(--text-dim); margin-top: 10px; display: block; }
+    .scenario-card[aria-pressed="true"] .sc-tap { color: var(--sc-accent); }
+
+    /* STAGE LAYOUT */
+    .stage {
+      display: grid;
+      grid-template-columns: minmax(320px, 380px) 1fr;
+      gap: 40px;
+      align-items: start;
+      justify-content: center;
+    }
+    .stage.solo { grid-template-columns: minmax(320px, 380px); }
+
+    .phone-col { display: flex; justify-content: center; }
+    .side-col { display: flex; flex-direction: column; gap: 20px; padding-top: 8px; }
+
+    /* PHONE FRAME */
+    .phone-frame {
+      width: 380px;
+      max-width: 100%;
+      background: #05070D;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 46px;
+      padding: 12px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.04),
+        0 30px 70px rgba(0,0,0,0.55),
+        var(--phone-glow, 0 0 70px rgba(34,197,94,0.16));
+      transition: box-shadow 0.5s ease;
+    }
+    .phone-frame.go     { --phone-glow: 0 0 70px rgba(34,197,94,0.20); }
+    .phone-frame.caution{ --phone-glow: 0 0 70px rgba(234,179,8,0.18); }
+    .phone-frame.nogo   { --phone-glow: 0 0 70px rgba(239,68,68,0.18); }
+
+    .phone-screen {
+      position: relative;
+      background: #0B1120;
+      border-radius: 36px;
+      overflow: hidden;
+      height: 660px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* status bar */
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 26px 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .status-icons { display: flex; align-items: center; gap: 5px; }
+
+    /* app header */
+    .app-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 16px 10px;
+      flex-shrink: 0;
+    }
+    .app-header .hdr-btn {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: rgba(59,130,246,0.12);
+      border: 1px solid rgba(59,130,246,0.25);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent-green);
+    }
+    .app-header .hdr-title { font-size: 16px; font-weight: 700; color: #fff; }
+
+    /* scrollable content */
+    .phone-scroll {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 4px 14px 14px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.18) transparent;
+    }
+    .phone-scroll::-webkit-scrollbar { width: 6px; }
+    .phone-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+
+    /* verdict banner */
+    .verdict-banner {
+      border-radius: 20px;
+      padding: 20px 20px 18px;
+      margin-bottom: 12px;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      color: #fff;
+      transition: background 0.5s ease, box-shadow 0.5s ease;
+      overflow: hidden;
+    }
+    .verdict-banner.go {
+      background: linear-gradient(135deg, #16A34A 0%, #22C55E 100%);
+      box-shadow: 0 0 34px rgba(34,197,94,0.35);
+    }
+    .verdict-banner.caution {
+      background: linear-gradient(135deg, #B45309 0%, #D97706 100%);
+      box-shadow: 0 0 34px rgba(217,119,6,0.30);
+    }
+    .verdict-banner.nogo {
+      background: linear-gradient(135deg, #B91C1C 0%, #DC2626 100%);
+      box-shadow: 0 0 34px rgba(220,38,38,0.32);
+    }
+    .verdict-left { min-width: 0; }
+    .verdict-word {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .verdict-word .vw-icon { flex-shrink: 0; }
+    .verdict-sub { font-size: 14.5px; font-weight: 600; line-height: 1.35; opacity: 0.97; }
+    .verdict-route {
+      font-family: var(--mono);
+      font-size: 12.5px;
+      opacity: 0.9;
+      margin-top: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    /* score gauge */
+    .gauge-wrap { position: relative; width: 66px; height: 66px; flex-shrink: 0; }
+    .gauge { transform: rotate(-90deg); display: block; }
+    .gauge-track { fill: none; stroke: rgba(255,255,255,0.28); stroke-width: 6; }
+    .gauge-fill {
+      fill: none; stroke: #fff; stroke-width: 6; stroke-linecap: round;
+      stroke-dasharray: 163.36; stroke-dashoffset: 163.36;
+    }
+    .gauge-num {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      line-height: 1;
+    }
+    .gauge-num b { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+    .gauge-num span { font-size: 8px; font-weight: 700; opacity: 0.8; letter-spacing: 0.5px; margin-top: 1px; }
+
+    /* disclaimer chip */
+    .disclaimer-chip {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .disclaimer-chip svg { flex-shrink: 0; margin-top: 1px; opacity: 0.8; }
+
+    /* bottom line */
+    .bottom-line {
+      display: flex;
+      gap: 10px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--bl-accent, var(--accent-green));
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+    }
+    .bottom-line.go { --bl-accent: var(--accent-green); }
+    .bottom-line.caution { --bl-accent: var(--accent-amber); }
+    .bottom-line.nogo { --bl-accent: var(--accent-red); }
+    .bottom-line .bl-body { min-width: 0; }
+    .bottom-line .bl-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 3px;
+    }
+    .bottom-line .bl-text { font-size: 13.5px; color: var(--text); line-height: 1.45; }
+
+    /* risk list */
+    .risk-hint {
+      font-size: 11.5px;
+      color: var(--text-dim);
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .risk-list { display: flex; flex-direction: column; gap: 8px; }
+
+    .risk-row {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+    .risk-row.flash {
+      border-color: rgba(255,255,255,0.28);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.18), 0 0 22px rgba(255,255,255,0.10);
+    }
+    .risk-btn {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 12px 13px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      color: var(--text);
+      font-family: inherit;
+    }
+    .risk-dot {
+      width: 11px; height: 11px; border-radius: 50%;
+      flex-shrink: 0; margin-top: 4px;
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+    .risk-dot.green { background: var(--accent-green); box-shadow: 0 0 7px rgba(34,197,94,0.7); }
+    .risk-dot.amber { background: var(--accent-amber); box-shadow: 0 0 7px rgba(234,179,8,0.7); }
+    .risk-dot.red   { background: var(--accent-red);   box-shadow: 0 0 7px rgba(239,68,68,0.7); }
+    .risk-main { flex: 1; min-width: 0; }
+    .risk-cat { display: block; font-size: 14px; font-weight: 700; letter-spacing: -0.2px; margin-bottom: 3px; }
+    .risk-reason { display: block; font-size: 12.5px; color: var(--text-muted); line-height: 1.4; }
+    .risk-chevron {
+      flex-shrink: 0; margin-top: 3px; color: var(--text-muted);
+      transition: transform 0.25s ease;
+    }
+    .risk-btn[aria-expanded="true"] .risk-chevron { transform: rotate(180deg); }
+
+    .risk-raw {
+      display: none;
+      padding: 0 13px 13px 35px;
+    }
+    .risk-raw.open { display: block; }
+    .risk-raw pre {
+      font-family: var(--mono);
+      font-size: 11px;
+      line-height: 1.55;
+      color: #B8C4D8;
+      background: rgba(0,0,0,0.35);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 11px 12px;
+      white-space: pre;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+    .raw-src {
+      font-size: 10.5px;
+      color: var(--text-dim);
+      margin-top: 7px;
+      letter-spacing: 0.2px;
+    }
+
+    .scroll-foot {
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-dim);
+      padding: 14px 8px 4px;
+    }
+
+    /* tab bar */
+    .tab-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 8px 8px 12px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      background: rgba(11,17,32,0.9);
+      flex-shrink: 0;
+    }
+    .tab {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      font-size: 9.5px;
+      font-weight: 600;
+      color: var(--text-dim);
+    }
+    .tab.active { color: var(--accent-green); }
+
+    /* analyzing overlay */
+    .analyze-overlay {
+      position: absolute;
+      inset: 0;
+      background: #0B1120;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      padding: 40px;
+      text-align: center;
+    }
+    .analyze-overlay[hidden] { display: none; }
+    .analyze-title { font-size: 15px; font-weight: 700; color: #fff; letter-spacing: -0.2px; }
+    .analyze-route { font-family: var(--mono); font-size: 12px; color: var(--text-muted); margin-top: -14px; }
+    .analyze-steps { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 260px; }
+    .analyze-step {
+      display: flex; align-items: center; gap: 11px;
+      font-size: 13px; color: var(--text-dim);
+      transition: color 0.3s ease;
+    }
+    .analyze-step .as-mark {
+      width: 18px; height: 18px; border-radius: 50%;
+      border: 2px solid var(--text-dim);
+      flex-shrink: 0; position: relative;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+    .analyze-step.active { color: var(--text); }
+    .analyze-step.active .as-mark { border-color: var(--accent-blue); }
+    .analyze-step.active .as-mark::after {
+      content: ''; position: absolute; inset: 2px; border-radius: 50%;
+      border: 2px solid transparent; border-top-color: var(--accent-blue);
+      animation: spin 0.7s linear infinite;
+    }
+    .analyze-step.done { color: var(--text-muted); }
+    .analyze-step.done .as-mark { border-color: var(--accent-green); background: var(--accent-green); }
+    .analyze-step.done .as-mark::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 9.2L7.6 11.8L13 6' stroke='%230B1120' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: center;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* PATH TO GO panel */
+    .side-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .side-panel h3 {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .side-panel h3 .p2g-icon { color: var(--accent-green); }
+    .side-panel .panel-sub { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin-bottom: 18px; }
+
+    .p2g-meter {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+    }
+    .p2g-meter-num {
+      font-size: 30px; font-weight: 800; letter-spacing: -1px; line-height: 1;
+      min-width: 58px;
+      transition: color 0.4s ease;
+    }
+    .p2g-meter-num.go { color: var(--accent-green); }
+    .p2g-meter-num.caution { color: #FBBF24; }
+    .p2g-meter-num.nogo { color: var(--accent-red); }
+    .p2g-meter-body { flex: 1; }
+    .p2g-verdict-line { font-size: 13.5px; font-weight: 700; margin-bottom: 6px; }
+    .p2g-track {
+      position: relative;
+      height: 7px; border-radius: 4px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
+    }
+    .p2g-bar {
+      position: absolute; left: 0; top: 0; bottom: 0;
+      border-radius: 4px;
+      transition: width 0.6s ease, background 0.4s ease;
+    }
+    .p2g-bar.go { background: var(--accent-green); }
+    .p2g-bar.caution { background: var(--accent-amber); }
+    .p2g-bar.nogo { background: var(--accent-red); }
+    .p2g-threshold {
+      position: absolute; top: -3px; bottom: -3px; width: 2px;
+      background: rgba(255,255,255,0.5);
+      left: 80%;
+    }
+    .p2g-threshold-label { font-size: 10.5px; color: var(--text-dim); margin-top: 6px; text-align: right; }
+
+    .p2g-items { display: flex; flex-direction: column; gap: 10px; }
+    .p2g-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .p2g-item:hover { background: var(--bg-card-hover); }
+    .p2g-item.on { border-color: rgba(34,197,94,0.4); background: rgba(34,197,94,0.06); }
+
+    .p2g-switch {
+      width: 42px; height: 25px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid var(--border);
+      position: relative;
+      flex-shrink: 0;
+      margin-top: 1px;
+      transition: background 0.25s;
+    }
+    .p2g-switch::after {
+      content: ''; position: absolute; top: 2px; left: 2px;
+      width: 19px; height: 19px; border-radius: 50%;
+      background: #fff;
+      transition: transform 0.25s;
+    }
+    .p2g-item.on .p2g-switch { background: var(--accent-green); }
+    .p2g-item.on .p2g-switch::after { transform: translateX(17px); }
+
+    .p2g-item-body { flex: 1; min-width: 0; }
+    .p2g-item-label {
+      font-size: 14px; font-weight: 700; letter-spacing: -0.2px;
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    }
+    .p2g-delta { font-family: var(--mono); font-size: 12px; color: var(--accent-green); font-weight: 700; flex-shrink: 0; }
+    .p2g-item-detail { font-size: 12.5px; color: var(--text-muted); line-height: 1.4; margin-top: 3px; }
+
+    .p2g-foot {
+      font-size: 11.5px; color: var(--text-dim); line-height: 1.5;
+      margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border);
+    }
+
+    /* NO-GO "what it takes" static panel */
+    .takes-panel {
+      background: rgba(239,68,68,0.05);
+      border: 1px solid rgba(239,68,68,0.22);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .takes-panel h3 {
+      font-size: 20px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .takes-panel h3 .tp-icon { color: var(--accent-red); }
+    .takes-panel p { font-size: 14.5px; color: var(--text-muted); line-height: 1.6; }
+    .takes-panel .tp-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 16px 0 4px; }
+    .takes-panel .tp-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 13.5px; color: var(--text); line-height: 1.45;
+    }
+    .takes-panel .tp-list li::before {
+      content: ''; width: 16px; height: 16px; border-radius: 4px; flex-shrink: 0; margin-top: 2px;
+      background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.4);
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L8 8M8 2L2 8' stroke='%23EF4444' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: center;
+    }
+
+    .side-explainer {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+    }
+    .side-explainer h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .side-explainer p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+    .side-explainer .verify-row {
+      display: flex; align-items: center; gap: 9px;
+      margin-top: 14px; font-size: 12.5px; color: var(--text-muted);
+      padding-top: 14px; border-top: 1px solid var(--border);
+    }
+    .side-explainer .verify-row svg { color: var(--accent-green); flex-shrink: 0; }
+
+    /* SECTIONS below */
+    section { padding: 90px 40px; }
+    .section-inner { max-width: var(--max-content); margin: 0 auto; }
+    .section-label {
+      font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      display: block; margin-bottom: 16px;
+    }
+    h2 { font-size: 36px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.12; margin-bottom: 16px; }
+    .section-sub { font-size: 18px; color: var(--text-muted); max-width: 580px; line-height: 1.6; margin-bottom: 56px; }
+
+    #flow { background: rgba(255,255,255,0.01); border-top: 1px solid var(--border); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .step-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 32px 26px; position: relative; transition: border-color 0.25s, transform 0.25s;
+    }
+    .step-card:hover { border-color: var(--border-bright); transform: translateY(-2px); }
+    .step-num {
+      width: 44px; height: 44px; border-radius: 50%;
+      background-color: var(--bg);
+      background-image: linear-gradient(135deg, rgba(34,197,94,0.15), rgba(59,130,246,0.15));
+      border: 1px solid rgba(34,197,94,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 800; color: var(--accent-green); margin-bottom: 20px;
+    }
+    .step-title { font-size: 17px; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.3px; }
+    .step-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+    /* CTA */
+    .cta-section {
+      position: relative; text-align: center; padding: 100px 40px;
+      background:
+        radial-gradient(ellipse 60% 80% at 50% 0%, rgba(34,197,94,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 20% 100%, rgba(59,130,246,0.06) 0%, transparent 60%),
+        linear-gradient(180deg, rgba(34,197,94,0.03) 0%, transparent 100%);
+      border-top: 1px solid rgba(34,197,94,0.08);
+    }
+    .cta-inner { max-width: 640px; margin: 0 auto; }
+    .cta-section h2 { margin-bottom: 18px; }
+    .cta-sub { font-size: 18px; color: var(--text-muted); margin-bottom: 40px; line-height: 1.6; }
+    .cta-btn-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff; font-weight: 700; font-size: 16px; padding: 15px 32px;
+      border-radius: 12px; text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 40px rgba(34,197,94,0.25), 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 60px rgba(34,197,94,0.4), 0 8px 24px rgba(0,0,0,0.4); }
+    .cta-links { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--text-muted); font-size: 15px; font-weight: 500; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .btn-secondary:hover { color: var(--text); }
+    .cta-req { font-size: 13px; color: var(--text-dim); }
+
+    /* FOOTER (shared) */
+    footer { border-top: 1px solid var(--border); padding: 44px 40px; }
+    .footer-inner {
+      max-width: var(--max-content); margin: 0 auto;
+      display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px;
+    }
+    .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: var(--text); text-decoration: none; }
+    .footer-logo-icon {
+      width: 22px; height: 22px; border-radius: 5px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex; align-items: center; justify-content: center; font-size: 12px;
+    }
+    .footer-links { display: flex; gap: 28px; list-style: none; justify-content: center; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy { font-size: 13px; color: var(--text-dim); text-align: right; }
+
+    /* reveal */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .stage { grid-template-columns: 1fr; justify-items: center; gap: 28px; }
+      .stage.solo { grid-template-columns: 1fr; }
+      .side-col { width: 100%; max-width: 520px; padding-top: 0; }
+      .demo-hero h1 { font-size: 40px; }
+      h2 { font-size: 30px; }
+    }
+    @media (max-width: 820px) {
+      .steps { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; text-align: center; gap: 16px; }
+      .footer-copy { text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+    @media (max-width: 640px) {
+      html, body { overflow-x: hidden; width: 100%; }
+      nav .nav-inner { padding: 0 16px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: block; }
+      .demo-hero { padding: 96px 20px 32px; }
+      .demo-hero h1 { font-size: 30px; letter-spacing: -1px; }
+      .demo-hero p { font-size: 16px; }
+      .demo-stage-wrap { padding: 8px 16px 32px; }
+      .scenario-picker { grid-template-columns: 1fr; gap: 10px; }
+      .phone-frame { width: 100%; max-width: 380px; border-radius: 40px; padding: 10px; }
+      .phone-screen { height: 620px; border-radius: 32px; }
+      .side-panel, .takes-panel, .side-explainer { padding: 20px; }
+      section { padding: 64px 20px; }
+      h2 { font-size: 26px; letter-spacing: -0.8px; }
+      .section-sub { font-size: 16px; margin-bottom: 40px; }
+      .cta-section { padding: 64px 20px; }
+      footer { padding: 32px 20px; }
+      .footer-links { flex-wrap: wrap; gap: 16px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="FlightDecide home">
+        <span class="nav-logo-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2a1.5 1.5 0 0 0-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="white"/></svg>
+        </span>
+        FlightDecide
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="demo.html" aria-current="page">Demo</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="guide.html">Pilot Guide</a></li>
+        <li><a href="index.html#download" class="nav-cta">Get early access</a></li>
+      </ul>
+      <button class="nav-hamburger" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="demo.html">Demo</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="guide.html">Pilot Guide</a>
+        <a href="index.html#download">Get early access</a>
+      </div>
+      <div class="mobile-nav-divider"></div>
+      <div class="mobile-nav-secondary">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a href="disclaimer.html">Aviation Disclaimer</a>
+      </div>
+      <div class="mobile-nav-bottom">
+        <a href="index.html#download">Get early access</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <header class="demo-hero">
+      <div class="demo-hero-inner">
+        <span class="demo-badge">Interactive Demo</span>
+        <h1>See a go/no-go briefing<br/><span class="gradient-text">in under a minute.</span></h1>
+        <p>Pick one of three real-world sample flights below. FlightDecide scores it GO, CAUTION, or NO-GO, explains the risk in plain language, and lets you open the raw METAR, TAF, and NOTAM behind every call. When a flight is marginal, try the Path to GO.</p>
+        <span class="sample-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 11v5M12 8h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Sample data for illustration. Decision support only — not a weather briefing.
+        </span>
+      </div>
+    </header>
+
+    <!-- INTERACTIVE STAGE -->
+    <div class="demo-stage-wrap">
+      <div class="demo-stage-inner">
+        <p class="picker-label">Choose a sample flight</p>
+        <div class="scenario-picker" role="group" aria-label="Sample flight scenarios" id="picker">
+          <button class="scenario-card" id="btn-vfr" data-key="vfr" aria-pressed="true" style="--sc-accent: var(--accent-green);">
+            <div class="sc-top">
+              <span class="sc-name">Clear VFR hop</span>
+              <span class="sc-verdict-pill go">GO</span>
+            </div>
+            <div class="sc-route">KSEA &rarr; KPDX</div>
+            <div class="sc-meta">Cessna 172S &middot; 145 NM</div>
+            <span class="sc-tap">Solid VFR, light winds &mdash; a clean go.</span>
+          </button>
+
+          <button class="scenario-card" id="btn-marginal" data-key="marginal" aria-pressed="false" style="--sc-accent: var(--accent-amber);">
+            <div class="sc-top">
+              <span class="sc-name">Marginal ceilings</span>
+              <span class="sc-verdict-pill caution">CAUTION</span>
+            </div>
+            <div class="sc-route">KPAO &rarr; KMRY</div>
+            <div class="sc-meta">Cessna 182T &middot; 65 NM</div>
+            <span class="sc-tap">Coastal stratus &amp; gusty crosswind &mdash; try Path to GO.</span>
+          </button>
+
+          <button class="scenario-card" id="btn-notam" data-key="notam" aria-pressed="false" style="--sc-accent: var(--accent-red);">
+            <div class="sc-top">
+              <span class="sc-name">NOTAM catch</span>
+              <span class="sc-verdict-pill nogo">NO-GO</span>
+            </div>
+            <div class="sc-route">KBED &rarr; KLEB</div>
+            <div class="sc-meta">Piper PA-28 &middot; 78 NM</div>
+            <span class="sc-tap">A closed runway most pilots would miss.</span>
+          </button>
+        </div>
+
+        <div class="stage" id="stage">
+          <!-- PHONE -->
+          <div class="phone-col">
+            <div class="phone-frame go" id="phoneFrame">
+              <div class="phone-screen">
+
+                <!-- analyzing overlay -->
+                <div class="analyze-overlay" id="analyzeOverlay" hidden aria-live="polite">
+                  <div class="analyze-title">Analyzing your flight</div>
+                  <div class="analyze-route" id="analyzeRoute">KSEA &rarr; KPDX</div>
+                  <div class="analyze-steps" id="analyzeSteps"></div>
+                </div>
+
+                <!-- status bar -->
+                <div class="status-bar" aria-hidden="true">
+                  <span>9:41</span>
+                  <span class="status-icons">
+                    <svg width="17" height="11" viewBox="0 0 17 11" fill="none"><rect x="0" y="7" width="3" height="4" rx="1" fill="#fff"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#fff"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#fff"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#fff"/></svg>
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"><path d="M8 10.5 1 3.5a9.9 9.9 0 0 1 14 0L8 10.5Z" stroke="#fff" stroke-width="1.2" fill="none" opacity="0.35"/><path d="M8 10.5 4.2 6.7a5.4 5.4 0 0 1 7.6 0L8 10.5Z" fill="#fff"/></svg>
+                    <svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="0.5" y="0.5" width="21" height="11" rx="3" stroke="#fff" opacity="0.5"/><rect x="2" y="2" width="17" height="8" rx="1.5" fill="#22C55E"/><rect x="22.5" y="3.5" width="1.8" height="5" rx="0.9" fill="#fff" opacity="0.5"/></svg>
+                  </span>
+                </div>
+
+                <!-- app header -->
+                <div class="app-header">
+                  <span class="hdr-btn" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span class="hdr-title">Analysis Result</span>
+                  <span class="hdr-btn" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 15V4m0 0L8 8m4-4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 12v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </div>
+
+                <!-- scrollable result -->
+                <div class="phone-scroll" id="phoneScroll"></div>
+
+                <!-- tab bar -->
+                <div class="tab-bar" aria-hidden="true">
+                  <span class="tab active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-8Z" fill="currentColor"/></svg>
+                    Dashboard
+                  </span>
+                  <span class="tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z" fill="currentColor"/></svg>
+                    Analyze
+                  </span>
+                  <span class="tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17 15a4 4 0 0 0-1-7.87A5 5 0 0 0 6.5 8.5 3.5 3.5 0 0 0 7 15h10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                    Weather
+                  </span>
+                  <span class="tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M18 13v-1.3l-4.5-2.8V6a1.5 1.5 0 0 0-3 0v2.9L6 11.7V13l4.5-1.4V15l-1 .8V17l2-.6 2 .6v-1.2l-1-.8v-3.4L18 13Z" fill="currentColor"/></svg>
+                    Aircraft
+                  </span>
+                  <span class="tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.5-6.5-1.4 1.4M7.9 16.1l-1.4 1.4m11 0-1.4-1.4M7.9 7.9 6.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    Settings
+                  </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDE COLUMN (Path to GO / explainer) -->
+          <div class="side-col" id="sideCol"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REAL APP FLOW -->
+    <section id="flow" aria-labelledby="flow-heading">
+      <div class="section-inner">
+        <span class="section-label reveal">This is the real app flow</span>
+        <h2 id="flow-heading" class="reveal">What you just tried is what<br/>the app does on every flight.</h2>
+        <p class="section-sub reveal">The demo above uses fixed sample data. In the app, the same three steps run on live weather and NOTAMs for the exact route, aircraft, and departure time you enter.</p>
+        <div class="steps">
+          <div class="step-card reveal">
+            <div class="step-num">1</div>
+            <h3 class="step-title">Enter your route, aircraft, and departure</h3>
+            <p class="step-desc">Departure, destination, alternates, and planned departure time. Pick your aircraft from the library or build a profile around the one you fly, with your own personal minimums.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num">2</div>
+            <h3 class="step-title">We pull the data and compute the numbers</h3>
+            <p class="step-desc">Live METARs, TAFs, winds aloft, and AIRMETs; NOTAMs filtered to your window; weight and balance, takeoff and landing distances, and the full fuel plan from your aircraft's POH data.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num">3</div>
+            <h3 class="step-title">Read the verdict, then verify the raw data</h3>
+            <p class="step-desc">A scored GO, CAUTION, or NO-GO with an AI briefing in plain language. Every interpretation links back to the raw METAR, TAF, or NOTAM so you can check it yourself. You make the final call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="cta-inner">
+        <span class="section-label">Get the app</span>
+        <h2 id="cta-heading" class="reveal">Fly your next flight<br/>better informed.</h2>
+        <p class="cta-sub reveal">This demo is a taste. In the app you get live data for your real flight, a full eight-category analysis, and the raw sources one tap away. Start free, no commitment.</p>
+        <div class="cta-btn-wrap reveal">
+          <a href="index.html#download" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" fill="currentColor"/>
+            </svg>
+            Get early access
+          </a>
+          <div class="cta-links">
+            <a href="guide.html" class="btn-secondary">
+              Read the Pilot Guide
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="index.html#how-it-works" class="btn-secondary">
+              How it works
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <p class="cta-req">Free to start. Requires iOS 17 or later.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo" aria-label="FlightDecide home">
+        <span class="footer-logo-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2a1.5 1.5 0 0 0-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="white"/></svg>
+        </span>
+        FlightDecide
+      </a>
+      <ul class="footer-links" role="list">
+        <li><a href="guide.html">Pilot Guide</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+      <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ---------- shared nav ---------- */
+    (function () {
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      function toggleMobileNav() {
+        const isOpen = mobileNav.classList.toggle('open');
+        menuBtn.classList.toggle('active');
+        menuBtn.setAttribute('aria-expanded', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      }
+      function closeMobileNav() {
+        mobileNav.classList.remove('open');
+        menuBtn.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', false);
+        document.body.style.overflow = '';
+      }
+      menuBtn.addEventListener('click', toggleMobileNav);
+      document.querySelectorAll('.mobile-nav a').forEach(l => l.addEventListener('click', closeMobileNav));
+    })();
+
+    /* ---------- reveal on scroll ---------- */
+    (function () {
+      const observer = new IntersectionObserver(
+        (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+        { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+      );
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    })();
+
+    /* ================= DEMO ENGINE ================= */
+    const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const GAUGE_C = 2 * Math.PI * 26; // gauge circumference
+
+    const DISCLAIMER = 'Decision support only. Always complete a standard weather briefing and PIC review.';
+
+    // Fixed rows for the GO scenario
+    const VFR_ROWS = [
+      { cat: 'Weather', dot: 'green',
+        reason: 'VFR at both ends — ceilings 10,000+ ft, 10 SM visibility, and no adverse trend in the TAFs.',
+        raw: 'METAR KSEA 021953Z 28008KT 10SM FEW250 19/09 A3001\nMETAR KPDX 021953Z 32006KT 10SM FEW200 21/11 A3002\nTAF   KSEA 021740Z 0218/0324 28009KT P6SM FEW250\nTAF   KPDX 021732Z 0218/0324 33007KT P6SM SCT200',
+        src: 'Aviation Weather Center · METAR + TAF' },
+      { cat: 'Winds', dot: 'green',
+        reason: 'Surface winds 6–8 kt; crosswind component under 3 kt at both runways.',
+        raw: 'Winds aloft (FB SEA)\n  6000 ft   2610+09\n  9000 ft   2712+04\nSurface   KSEA 280°/08     KPDX 320°/06\nMax crosswind component ~3 kt (both ends)',
+        src: 'Winds aloft (FB) · surface METAR' },
+      { cat: 'NOTAMs & Airspace', dot: 'green',
+        reason: 'No route-affecting NOTAMs and no active TFRs in your window.',
+        raw: 'NOTAM query: KSEA, KPDX, route corridor\nSource: FAA NOTAM API — 0 results for 021800Z–022100Z\nQueried and empty (not a coverage gap).\nNo active TFRs along the route.',
+        src: 'FAA NOTAM API · queried, 0 results' },
+      { cat: 'Fuel', dot: 'green',
+        reason: '40 gal usable; ~20 gal required with a 45-min reserve — about 20 gal to spare.',
+        raw: 'Cessna 172S (180 hp)\nUsable fuel                        40.0 gal\nTaxi + climb                        2.5 gal\nEnroute 145 NM @ 110 kt (8.4 gph)  ~11.0 gal\n45-min reserve                      6.3 gal\nTotal required                     ~19.8 gal\nMargin                             ~20.2 gal',
+        src: 'Computed from POH performance data' },
+      { cat: 'Weight & Balance', dot: 'green',
+        reason: '2,280 lb of 2,550 lb max gross; CG stays within the envelope for the whole flight.',
+        raw: 'Cessna 172S · Max gross 2,550 lb\nEmpty               1,690 lb @ 39.1 in\nPilot + front pax     320 lb @ 37.0 in\nBaggage area 1         30 lb @ 95.0 in\nFuel (40 gal)         240 lb @ 48.0 in\nTakeoff weight      2,280 lb · CG 40.6 in\nEnvelope 35.0–47.3 in — within limits',
+        src: 'Your saved aircraft profile (manual W&B entry)' },
+      { cat: 'Pilot Minimums', dot: 'green',
+        reason: 'Every value clears the personal minimums saved in your profile.',
+        raw: 'Your personal minimums   Planned       Status\nCeiling     ≥ 2,500 ft   10,000+ ft    OK\nVisibility  ≥ 5 SM       10 SM         OK\nCrosswind   ≤ 15 kt      ~3 kt         OK\nGust        ≤ 25 kt      8 kt          OK\nDaylight    Day only     Day flight    OK',
+        src: 'Your saved personal minimums' }
+    ];
+
+    // Fixed rows for the NO-GO scenario
+    const NOTAM_ROWS = [
+      { cat: 'Weather', dot: 'red',
+        reason: 'Departure is VFR, but AIRMET ZULU shows moderate icing above ~6,000 ft on the route — the PA-28 is not approved for known icing.',
+        raw: 'METAR KBED 021951Z 33015G23KT 6SM OVC060 03/M02 A2989\nMETAR KLEB 021948Z 34016G24KT 8SM FEW070 SCT090 02/M04 A2990\nAIRMET ZULU  MOD ICE BTN FRZLVL AND FL200.  FRZLVL 060–080.\nRoute MEA over terrain ~6,500 ft → inside the icing layer.\nPiper PA-28 — not approved for flight into known icing.',
+        src: 'Aviation Weather Center · METAR + G-AIRMET' },
+      { cat: 'Winds', dot: 'red',
+        reason: 'KLEB 340° at 16 kt gusting 24. With RWY 18/36 closed, only RWY 07/25 is usable — a ~24 kt crosswind, past the PA-28’s 17 kt demonstrated limit.',
+        raw: 'KLEB wind 340° 16 kt, gust 24 kt\nRWY 18/36 CLOSED (NOTAM) → only RWY 07/25 (070/250) open\nWind is 90° to 07/25  →  crosswind ~16 kt, gust ~24 kt\nPA-28 max demonstrated crosswind: 17 kt\nRWY 36 would be nearly into wind — but it is closed.',
+        src: 'Surface METAR · runway geometry · POH limit' },
+      { cat: 'NOTAMs & Airspace', dot: 'red',
+        reason: 'KLEB RWY 18/36 is closed by NOTAM through 08 Jul — and that is the runway aligned with today’s wind.',
+        raw: '!LEB 10/014 LEB RWY 18/36 CLSD 2610221200-2610291200\nEffect: KLEB’s primary, into-wind runway is closed through\n        08 Jul.  Only RWY 07/25 remains — a strong crosswind.\nSource: FAA NOTAM API — 1 result for KLEB.',
+        src: 'FAA NOTAM API · 1 result for KLEB' },
+      { cat: 'Fuel', dot: 'green',
+        reason: '48 gal usable; ~21 gal required with a 45-min reserve — well within range.',
+        raw: 'Piper PA-28-181 Archer\nUsable fuel                        48.0 gal\nEnroute 78 NM @ 115 kt (10 gph)    ~8.0 gal\nTaxi + climb + 45-min reserve     ~13.0 gal\nTotal required                    ~21.0 gal\nMargin                            ~27.0 gal',
+        src: 'Computed from POH performance data' },
+      { cat: 'Weight & Balance', dot: 'green',
+        reason: '2,150 lb of 2,440 lb max gross; CG within the envelope.',
+        raw: 'Piper PA-28-181 · Max gross 2,440 lb\nTakeoff weight   2,150 lb · CG 88.9 in\nEnvelope 82.0–93.0 in — within limits.',
+        src: 'Your saved aircraft profile (manual W&B entry)' },
+      { cat: 'Pilot Minimums', dot: 'red',
+        reason: 'Crosswind and icing exposure both exceed your limits and the aircraft’s capability.',
+        raw: 'Your personal minimums   Planned         Status\nCrosswind   ≤ 12 kt      ~24 kt gust      EXCEEDS\nIcing       None         AIRMET ZULU      EXCEEDS\nCeiling     ≥ 3,000 ft   6,000 ft dep     OK',
+        src: 'Your saved personal minimums' }
+    ];
+
+    // Marginal scenario is computed from the active Path-to-GO toggles.
+    function marginalRows(t) {
+      const altNote = t.alt ? ' Alternate KSNS filed (forecast VFR all day).' : '';
+      return [
+        { cat: 'Weather', dot: t.delay ? 'green' : 'amber',
+          reason: (t.delay
+            ? 'Departing after 1900Z: ceilings forecast BKN035 and 6 SM — VFR at KMRY.'
+            : 'Destination MVFR now — BKN012 and 4 SM in mist at KMRY. TAF improves to BKN035 after 1900Z.') + altNote,
+          raw: 'METAR KPAO 021950Z 31012KT 9SM FEW015 SCT025 18/12 A3001\nMETAR KMRY 021954Z 33014G22KT 4SM BR BKN012 15/13 A3000\nTAF   KMRY 021130Z 0212/0312 33013G20KT 4SM BR BKN012\n        FM021900 31008KT 6SM SCT035 BKN060\n        FM030100 30006KT P6SM SKC\nKMRY now: MVFR.  Forecast VFR after 1900Z.',
+          src: 'Aviation Weather Center · METAR + TAF' },
+        { cat: 'Winds', dot: t.delay ? 'green' : 'amber',
+          reason: t.delay
+            ? 'After 1900Z winds ease to 310° at 8 kt — crosswind ~5 kt.'
+            : 'KMRY 330° at 14 kt gusting 22 — crosswind gusts ~17 kt on RWY 28L, above your 15 kt limit.',
+          raw: 'KMRY wind 330° 14 kt, gust 22 kt   ·   RWY 28L (280°)\nWind angle 50° off runway\n  Crosswind  steady ~11 kt   gust ~17 kt\nYour personal crosswind limit: 15 kt\nAfter 1900Z  310°/08  →  crosswind ~5 kt',
+          src: 'Surface METAR + TAF · runway geometry' },
+        { cat: 'NOTAMs & Airspace', dot: 'green',
+          reason: 'No route-affecting NOTAMs and no active TFRs in your window.',
+          raw: 'NOTAM query: KPAO, KMRY, KSNS, route corridor\nSource: FAA NOTAM API — 0 results for your window\nQueried and empty (not a coverage gap).',
+          src: 'FAA NOTAM API · queried, 0 results' },
+        { cat: 'Fuel', dot: t.fuel ? 'green' : 'amber',
+          reason: t.fuel
+            ? '44 gal onboard after top-off; ~24 gal required for KMRY, a diversion to an alternate, and a 45-min reserve — a comfortable 20 gal margin.'
+            : '28 gal onboard; ~24 gal needed for KMRY, a diversion to an alternate, and a 45-min reserve — a thin 4 gal margin.',
+          raw: 'Cessna 182T\nUsable fuel (' + (t.fuel ? 'topped off)          44.0 gal' : 'as loaded)          28.0 gal') + '\nEnroute KPAO→KMRY (65 NM)         ~10.0 gal\nDivert to alternate KSNS (13 NM)   ~4.0 gal\n45-min reserve                    ~10.0 gal\nTotal required                    ~24.0 gal   ·   margin ~' + (t.fuel ? '20' : '4') + ' gal',
+          src: 'Computed from POH performance data' },
+        { cat: 'Weight & Balance', dot: 'green',
+          reason: '2,780 lb of 2,950 lb max gross; CG within the envelope.',
+          raw: 'Cessna 182T · Max gross 2,950 lb\nTakeoff weight   2,780 lb · CG 41.2 in\nEnvelope 33.0–48.4 in — within limits.',
+          src: 'Your saved aircraft profile (manual W&B entry)' },
+        { cat: 'Pilot Minimums', dot: t.delay ? 'green' : 'amber',
+          reason: t.delay
+            ? 'Revised timing brings ceilings and crosswind within your personal minimums.'
+            : 'Ceiling (1,200 ft) and crosswind (~17 kt gust) sit at or below your personal minimums.',
+          raw: 'Your personal minimums   Now             After 1900Z\nCeiling     ≥ 2,000 ft   1,200 ft (—)   3,500 ft (OK)\nCrosswind   ≤ 15 kt      ~17 kt (—)      ~5 kt (OK)\nVisibility  ≥ 4 SM       4 SM (OK)       6 SM (OK)',
+          src: 'Your saved personal minimums' }
+      ];
+    }
+
+    const SCENARIOS = {
+      vfr: {
+        route: 'KSEA → KPDX', ac: 'Cessna 172S', dist: '145 NM', frame: 'go',
+        score: () => 92,
+        bottom: () => ({ cls: 'go', text: 'Conditions support departure. Review the primary reasons before flight.' }),
+        rows: () => VFR_ROWS
+      },
+      marginal: {
+        route: 'KPAO → KMRY', ac: 'Cessna 182T', dist: '65 NM', frame: 'caution',
+        score: (t) => 61 + (t.delay ? 17 : 0) + (t.alt ? 9 : 0) + (t.fuel ? 7 : 0),
+        bottom: (t, score) => score >= 80
+          ? { cls: 'go', text: 'With these changes, the analysis supports departure. Verify each item against official sources and your own judgment.' }
+          : { cls: 'caution', text: 'Coastal stratus and a gusty crosswind at KMRY sit near your minimums. The Path to GO shows what moves the verdict.' },
+        rows: (t) => marginalRows(t)
+      },
+      notam: {
+        route: 'KBED → KLEB', ac: 'Piper PA-28', dist: '78 NM', frame: 'nogo',
+        score: () => 38,
+        bottom: () => ({ cls: 'nogo', text: 'A closed runway and icing on the route put this flight below limits. Here is exactly why.' }),
+        rows: () => NOTAM_ROWS
+      }
+    };
+
+    const PATH_ITEMS = [
+      { id: 'delay', label: 'Delay departure to after 1900Z', detail: 'TAF clears to BKN035 and winds ease to 08 kt — the biggest single lever.', delta: 17 },
+      { id: 'alt',   label: 'File alternate KSNS (Salinas)', detail: 'Forecast VFR all day — a legal, weather-solid bolt-hole.', delta: 9 },
+      { id: 'fuel',  label: 'Top off for a 45-min reserve', detail: 'Adds ~16 gal of margin to cover a diversion comfortably.', delta: 7 }
+    ];
+
+    const GO_THRESHOLD = 80;
+
+    function verdictFromScore(s) {
+      if (s >= GO_THRESHOLD) return { word: 'GO', cls: 'go', sub: 'Conditions support departure' };
+      if (s >= 45) return { word: 'CAUTION', cls: 'caution', sub: 'Marginal conditions — review the items below before departure' };
+      return { word: 'NO-GO', cls: 'nogo', sub: 'Analysis does not support departure' };
+    }
+
+    const VERDICT_ICONS = {
+      go: '<svg class="vw-icon" width="30" height="30" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="1.6"/><path d="M8 12.2l2.6 2.6L16 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      caution: '<svg class="vw-icon" width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 3.2 22 20H2L12 3.2Z" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 10v4.5M12 17.2h.01" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/></svg>',
+      nogo: '<svg class="vw-icon" width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M8 3h8l5 5v8l-5 5H8l-5-5V8l5-5Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 9l6 6M15 9l-6 6" stroke="#fff" stroke-width="2.1" stroke-linecap="round"/></svg>'
+    };
+
+    const CHEVRON = '<svg class="risk-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+    /* ------- DOM refs & state ------- */
+    const state = { key: 'vfr', toggles: { delay: false, alt: false, fuel: false }, expanded: new Set(), lastReasons: {} };
+
+    const phoneFrame = document.getElementById('phoneFrame');
+    const phoneScroll = document.getElementById('phoneScroll');
+    const sideCol = document.getElementById('sideCol');
+    const stage = document.getElementById('stage');
+    const analyzeOverlay = document.getElementById('analyzeOverlay');
+    const analyzeSteps = document.getElementById('analyzeSteps');
+    const analyzeRoute = document.getElementById('analyzeRoute');
+    const pickerButtons = Array.from(document.querySelectorAll('.scenario-card'));
+
+    let currentDisplayScore = 0;
+    let scoreRAF = null;
+
+    function esc(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    /* ------- render the phone result ------- */
+    function computeScore() {
+      const sc = SCENARIOS[state.key];
+      return Math.min(100, Math.max(0, sc.score(state.toggles)));
+    }
+
+    function renderResult(opts) {
+      opts = opts || {};
+      const sc = SCENARIOS[state.key];
+      const score = computeScore();
+      const v = verdictFromScore(score);
+      const rows = sc.rows(state.toggles);
+      const bl = sc.bottom(state.toggles, score);
+
+      // frame glow
+      phoneFrame.className = 'phone-frame ' + v.cls;
+
+      // detect changed rows for flash (only when re-scoring same scenario)
+      const changed = new Set();
+      if (opts.flash) {
+        rows.forEach(r => { if (state.lastReasons[r.cat] !== undefined && state.lastReasons[r.cat] !== r.reason) changed.add(r.cat); });
+      }
+      state.lastReasons = {};
+      rows.forEach(r => { state.lastReasons[r.cat] = r.reason; });
+
+      let html = '';
+      // verdict banner
+      html += '<div class="verdict-banner ' + v.cls + '">';
+      html += '<div class="verdict-left">';
+      html += '<div class="verdict-word">' + VERDICT_ICONS[v.cls] + '<span>' + v.word + '</span></div>';
+      html += '<div class="verdict-sub">' + v.sub + '</div>';
+      html += '<div class="verdict-route">' + sc.route + '  ·  ' + sc.dist + '</div>';
+      html += '</div>';
+      html += '<div class="gauge-wrap"><svg class="gauge" width="66" height="66" viewBox="0 0 66 66">' +
+              '<circle class="gauge-track" cx="33" cy="33" r="26"/>' +
+              '<circle class="gauge-fill" id="gaugeFill" cx="33" cy="33" r="26"/></svg>' +
+              '<span class="gauge-num"><b id="gaugeNum">0</b><span>SCORE</span></span></div>';
+      html += '</div>';
+
+      // disclaimer chip
+      html += '<div class="disclaimer-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 11v5M12 8h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>' + DISCLAIMER + '</span></div>';
+
+      // bottom line
+      html += '<div class="bottom-line ' + bl.cls + '"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="9" stroke="var(--bl-accent)" stroke-width="1.6"/><path d="M12 8v5M12 16h.01" stroke="var(--bl-accent)" stroke-width="1.9" stroke-linecap="round"/></svg><div class="bl-body"><div class="bl-label">Bottom line</div><div class="bl-text">' + bl.text + '</div></div></div>';
+
+      // risk list
+      html += '<div class="risk-hint">Tap any category to see the raw data behind it.</div>';
+      html += '<div class="risk-list">';
+      rows.forEach((r, i) => {
+        const open = state.expanded.has(r.cat);
+        const panelId = 'raw-' + state.key + '-' + i;
+        html += '<div class="risk-row' + (changed.has(r.cat) ? ' flash' : '') + '">';
+        html += '<button class="risk-btn" aria-expanded="' + (open ? 'true' : 'false') + '" aria-controls="' + panelId + '" data-cat="' + esc(r.cat) + '">';
+        html += '<span class="risk-dot ' + r.dot + '" aria-hidden="true"></span>';
+        html += '<span class="risk-main"><span class="risk-cat">' + esc(r.cat) + '</span><span class="risk-reason">' + r.reason + '</span></span>';
+        html += CHEVRON;
+        html += '</button>';
+        html += '<div class="risk-raw' + (open ? ' open' : '') + '" id="' + panelId + '" role="region" aria-label="' + esc(r.cat) + ' raw data"><pre>' + esc(r.raw) + '</pre><div class="raw-src">Source: ' + esc(r.src) + '</div></div>';
+        html += '</div>';
+      });
+      html += '</div>';
+
+      html += '<div class="scroll-foot">Advisory analysis — the pilot in command makes the final decision.</div>';
+
+      phoneScroll.innerHTML = html;
+
+      // wire up expand/collapse
+      phoneScroll.querySelectorAll('.risk-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.getAttribute('data-cat');
+          const panel = document.getElementById(btn.getAttribute('aria-controls'));
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!isOpen));
+          panel.classList.toggle('open', !isOpen);
+          if (isOpen) state.expanded.delete(cat); else state.expanded.add(cat);
+        });
+      });
+
+      // prime the fresh gauge to the previous value, then animate to the new score
+      setGauge(currentDisplayScore);
+      animateScore(score, opts.animate !== false);
+
+      // clear flash
+      if (changed.size && !REDUCE) {
+        setTimeout(() => phoneScroll.querySelectorAll('.risk-row.flash').forEach(el => el.classList.remove('flash')), 750);
+      }
+    }
+
+    function setGauge(score) {
+      const fill = document.getElementById('gaugeFill');
+      const num = document.getElementById('gaugeNum');
+      if (fill) fill.style.strokeDashoffset = GAUGE_C * (1 - score / 100);
+      if (num) num.textContent = score;
+    }
+
+    function animateScore(target, animate) {
+      if (scoreRAF) cancelAnimationFrame(scoreRAF);
+      const num = document.getElementById('gaugeNum');
+      const fill = document.getElementById('gaugeFill');
+      if (!num || !fill) return;
+      if (REDUCE || !animate) { currentDisplayScore = target; setGauge(target); return; }
+      const from = currentDisplayScore;
+      const start = performance.now();
+      const dur = 650;
+      function tick(now) {
+        const p = Math.min(1, (now - start) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = from + (target - from) * eased;
+        num.textContent = Math.round(val);
+        fill.style.strokeDashoffset = GAUGE_C * (1 - val / 100);
+        if (p < 1) { scoreRAF = requestAnimationFrame(tick); }
+        else { currentDisplayScore = target; setGauge(target); }
+      }
+      scoreRAF = requestAnimationFrame(tick);
+    }
+
+    /* ------- side column ------- */
+    function renderSide() {
+      const key = state.key;
+      if (key === 'marginal') {
+        stage.classList.remove('solo');
+        sideCol.innerHTML = buildPathPanel();
+        wirePathPanel();
+        updatePathMeter();
+      } else if (key === 'notam') {
+        stage.classList.remove('solo');
+        sideCol.innerHTML = buildTakesPanel();
+      } else {
+        stage.classList.remove('solo');
+        sideCol.innerHTML = buildGoExplainer();
+      }
+    }
+
+    function buildGoExplainer() {
+      return '<div class="side-explainer">' +
+        '<h4>Why this is a clean GO</h4>' +
+        '<p>Every one of the six categories comes back green: solid VFR at both ends, light winds, no NOTAMs in the window, and fuel and weight &amp; balance comfortably inside limits. Nothing needs a second look before you go.</p>' +
+        '<p style="margin-top:12px">A GO here means the analysis found nothing above advisory — not that the flight is authorized. Open any category on the left to read the exact METAR, TAF, or NOTAM behind it.</p>' +
+        '<div class="verify-row"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 12.2l2.6 2.6L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/></svg>Every interpretation is backed by raw source data.</div>' +
+        '</div>' +
+        '<div class="side-explainer"><h4>Want to see it break?</h4><p>Try <strong>Marginal ceilings</strong> above to watch the verdict move as you change the plan, or <strong>NOTAM catch</strong> to see the app surface a closed runway a tired pilot could miss.</p></div>';
+    }
+
+    function buildTakesPanel() {
+      return '<div class="takes-panel">' +
+        '<h3><svg class="tp-icon" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M8 3h8l5 5v8l-5 5H8l-5-5V8l5-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 9l6 6M15 9l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Why this one won’t flip today</h3>' +
+        '<p>Unlike a marginal call, none of these clear with a change you can make now:</p>' +
+        '<ul class="tp-list">' +
+        '<li>RWY 18/36 — the runway aligned with the wind — is closed by NOTAM through 08 Jul.</li>' +
+        '<li>The only open runway gives a ~24 kt crosswind, past the PA-28’s 17 kt demonstrated limit.</li>' +
+        '<li>AIRMET ZULU has moderate icing above ~6,000 ft, and the PA-28 isn’t approved for known ice.</li>' +
+        '</ul>' +
+        '<p style="margin-top:14px">That closed-runway line is exactly the kind a quick glance can miss. Surfacing it — and holding the analysis at NO-GO — is the point.</p>' +
+        '</div>' +
+        '<div class="side-explainer"><h4>The takeaway</h4><p>FlightDecide won’t wave a flight through. When the data says no, it says so plainly and shows the raw NOTAM and METAR so you can confirm it yourself — then you make the final call.</p></div>';
+    }
+
+    function buildPathPanel() {
+      let html = '<div class="side-panel">';
+      html += '<h3><svg class="p2g-icon" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Path to GO</h3>';
+      html += '<p class="panel-sub">This flight is marginal, not a no-go. Toggle changes below to see how each one moves the analysis. These are modeled adjustments — verify each against official sources and your own judgment.</p>';
+      // meter
+      html += '<div class="p2g-meter">' +
+        '<div class="p2g-meter-num caution" id="p2gNum">61</div>' +
+        '<div class="p2g-meter-body">' +
+        '<div class="p2g-verdict-line" id="p2gVerdict">CAUTION — marginal</div>' +
+        '<div class="p2g-track"><div class="p2g-bar caution" id="p2gBar" style="width:61%"></div><div class="p2g-threshold"></div></div>' +
+        '<div class="p2g-threshold-label">GO at ' + GO_THRESHOLD + '</div>' +
+        '</div></div>';
+      // items
+      html += '<div class="p2g-items">';
+      PATH_ITEMS.forEach(item => {
+        html += '<button class="p2g-item" data-id="' + item.id + '" aria-pressed="false">' +
+          '<span class="p2g-switch" aria-hidden="true"></span>' +
+          '<span class="p2g-item-body">' +
+          '<span class="p2g-item-label">' + item.label + '<span class="p2g-delta">+' + item.delta + '</span></span>' +
+          '<span class="p2g-item-detail">' + item.detail + '</span>' +
+          '</span></button>';
+      });
+      html += '</div>';
+      html += '<p class="p2g-foot">Notice that fixing fuel and filing an alternate alone won’t reach GO — the ceilings and crosswind have to actually improve. FlightDecide models the interplay; it never tells you the flight is authorized. The final call is always yours.</p>';
+      html += '</div>';
+      return html;
+    }
+
+    function wirePathPanel() {
+      sideCol.querySelectorAll('.p2g-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-id');
+          state.toggles[id] = !state.toggles[id];
+          const on = state.toggles[id];
+          btn.classList.toggle('on', on);
+          btn.setAttribute('aria-pressed', String(on));
+          renderResult({ flash: true, animate: true });
+          updatePathMeter();
+        });
+      });
+    }
+
+    function updatePathMeter() {
+      const score = computeScore();
+      const v = verdictFromScore(score);
+      const num = document.getElementById('p2gNum');
+      const bar = document.getElementById('p2gBar');
+      const line = document.getElementById('p2gVerdict');
+      if (!num) return;
+      num.textContent = score;
+      num.className = 'p2g-meter-num ' + v.cls;
+      bar.className = 'p2g-bar ' + v.cls;
+      bar.style.width = score + '%';
+      line.textContent = v.cls === 'go' ? 'GO — supports departure'
+        : v.cls === 'caution' ? 'CAUTION — marginal'
+        : 'NO-GO — below limits';
+    }
+
+    /* ------- analyzing sequence ------- */
+    const ANALYZE_STEPS = ['Fetching METARs & TAFs…', 'Checking NOTAMs & airspace…', 'Computing weight & balance…', 'Scoring risk…'];
+    let analyzeToken = 0;
+
+    function buildAnalyzeSteps() {
+      analyzeSteps.innerHTML = ANALYZE_STEPS.map(s =>
+        '<div class="analyze-step"><span class="as-mark"></span><span>' + s + '</span></div>').join('');
+    }
+
+    function runAnalyze(done) {
+      const token = ++analyzeToken;
+      analyzeRoute.innerHTML = SCENARIOS[state.key].route;
+      buildAnalyzeSteps();
+      analyzeOverlay.hidden = false;
+      const steps = Array.from(analyzeSteps.children);
+
+      if (REDUCE) {
+        steps.forEach(s => s.classList.add('done'));
+        setTimeout(() => { if (token === analyzeToken) { analyzeOverlay.hidden = true; done(); } }, 120);
+        return;
+      }
+
+      let i = 0;
+      const per = 300;
+      function next() {
+        if (token !== analyzeToken) return;
+        if (i > 0) steps[i - 1].classList.remove('active'), steps[i - 1].classList.add('done');
+        if (i < steps.length) {
+          steps[i].classList.add('active');
+          i++;
+          setTimeout(next, per);
+        } else {
+          analyzeOverlay.hidden = true;
+          done();
+        }
+      }
+      next();
+    }
+
+    /* ------- scenario selection ------- */
+    function selectScenario(key, opts) {
+      opts = opts || {};
+      state.key = key;
+      state.toggles = { delay: false, alt: false, fuel: false };
+      state.expanded = new Set();
+      state.lastReasons = {};
+      currentDisplayScore = 0;
+
+      pickerButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.key === key)));
+
+      renderSide();
+
+      if (opts.skipAnalyze) {
+        renderResult({ animate: true });
+      } else {
+        // hide any stale content behind the overlay for a clean reveal
+        runAnalyze(() => renderResult({ animate: true }));
+      }
+    }
+
+    pickerButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Re-selecting the active scenario replays the analyze + reveal.
+        selectScenario(btn.dataset.key, { skipAnalyze: false });
+      });
+    });
+
+    /* ------- initial load ------- */
+    // Show the default scenario. Non-reduced-motion visitors see the analyze
+    // sequence play once so the staged reveal is on display immediately.
+    renderSide();
+    if (REDUCE) {
+      renderResult({ animate: false });
+    } else {
+      runAnalyze(() => renderResult({ animate: true }));
+    }
+  </script>
+
+</body>
+</html>

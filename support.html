@@ -6,6 +6,21 @@
   <title>Support | FlightDecide</title>
   <meta name="description" content="FlightDecide support and frequently asked questions. Get help with flight analysis, aircraft setup, and account questions." />
   <link rel="canonical" href="https://flightdecide.com/support.html" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Support | FlightDecide" />
+  <meta property="og:description" content="FlightDecide support and frequently asked questions. Get help with flight analysis, aircraft setup, and account questions." />
+  <meta property="og:url" content="https://flightdecide.com/support.html" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide — an advisory go/no-go second opinion for GA pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Support | FlightDecide" />
+  <meta name="twitter:description" content="FlightDecide support and frequently asked questions. Get help with flight analysis, aircraft setup, and account questions." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -314,7 +329,7 @@
               <li>Fetches live weather data (METARs, TAFs, winds aloft, SIGMETs, PIREPs) from aviationweather.gov</li>
               <li>Retrieves current NOTAMs for your airports</li>
               <li>Computes weight and balance and takeoff/landing performance using your aircraft's POH data</li>
-              <li>Calculates fuel requirements based on your route and operation type (Part 91, 135, or 121)</li>
+              <li>Calculates fuel requirements for your route, applying VFR or IFR reserve rules under Part 91</li>
               <li>Scores all of this across 8 risk categories: green, amber, or red</li>
               <li>Sends the complete picture to our AI engine, which generates a narrative briefing with specific callouts and mitigations</li>
             </ul>
@@ -377,14 +392,13 @@
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>Yes. FlightDecide supports both VFR and IFR flight planning. The app applies the correct fuel reserve requirements for your flight rules selection:</p>
+            <p>Yes. FlightDecide supports both VFR and IFR flight planning under Part 91. The app applies the correct Part 91 fuel reserve rules for your flight rules selection:</p>
             <ul>
-              <li><strong>VFR:</strong> FAR 91 day and night reserves</li>
-              <li><strong>IFR:</strong> FAR 91.167 alternate and missed approach fuel requirements</li>
-              <li><strong>Part 135/121:</strong> Extended reserve requirements for commercial operations</li>
+              <li><strong>VFR:</strong> 14 CFR 91.151 day and night reserves</li>
+              <li><strong>IFR:</strong> 14 CFR 91.167 alternate and missed-approach fuel requirements</li>
             </ul>
             <p>The AI briefing also considers IFR-specific factors like ceiling and visibility at your destination and alternate, approach minimums (based on published limits), and icing conditions at altitude.</p>
-            <p>However, FlightDecide is not a replacement for a full IFR flight plan, ATC clearance, or official dispatch release under Part 121 or 135 operations.</p>
+            <p>FlightDecide is a Part 91 decision-support tool. It is not a replacement for a full IFR flight plan or ATC clearance, and it is not approved for use in Part 135 or Part 121 commercial operations.</p>
           </div>
         </div>
       </div>
