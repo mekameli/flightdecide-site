@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["N7NQ4P6ZN9.com.flightdecide.app"],
+        "components": [
+          { "/": "/reset", "comment": "FD-073 password-reset universal link" }
+        ]
+      }
+    ]
+  }
+}
