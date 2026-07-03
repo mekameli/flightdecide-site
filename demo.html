@@ -944,8 +944,14 @@
     .footer-copy { font-size: 13px; color: var(--text-dim); text-align: right; }
 
     /* reveal */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal { transition: opacity 0.6s ease, transform 0.6s ease; }
+    /* Hide only when JS is running to un-hide it and motion is allowed;
+       no-JS and reduced-motion visitors see everything. The show rule must
+       outrank the hide rule (html.js .reveal = 0-2-1). */
+    @media (prefers-reduced-motion: no-preference) {
+      html.js .reveal { opacity: 0; transform: translateY(24px); }
+    }
+    html.js .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* RESPONSIVE */
     @media (max-width: 1024px) {
@@ -1258,11 +1264,17 @@
 
     /* ---------- reveal on scroll ---------- */
     (function () {
-      const observer = new IntersectionObserver(
-        (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-        { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-      );
-      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      document.documentElement.classList.add('js');
+      try {
+        const observer = new IntersectionObserver(
+          (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+          { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+        );
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      } catch (err) {
+        // If reveal-on-scroll can't run, never leave content hidden.
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      }
     })();
 
     /* ================= DEMO ENGINE ================= */

@@ -1284,7 +1284,9 @@
       }
     }
 
-    .reveal.visible {
+    /* Must outrank the `html.js .reveal` hide rule above (0-2-1), or revealed
+       sections stay invisible after the observer fires. */
+    html.js .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
@@ -2101,11 +2103,16 @@
       link.addEventListener('click', closeMobileNav);
     });
 
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-    );
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    try {
+      const observer = new IntersectionObserver(
+        (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+        { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+      );
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    } catch (err) {
+      // If reveal-on-scroll can't run, never leave content hidden.
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
   </script>
 
   <!--
