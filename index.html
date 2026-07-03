@@ -1073,21 +1073,6 @@
     /* SEE IT IN ACTION (demo) */
     #demo { background: rgba(255,255,255,0.02); }
 
-    .demo-video-wrap {
-      max-width: min(720px, 100%);
-      margin: 0 auto 16px;
-    }
-
-    .demo-video-wrap video {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: #000;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.4);
-    }
-
     .demo-advisory {
       text-align: center;
       font-size: 13px;
@@ -1769,16 +1754,8 @@
     <section id="demo" aria-labelledby="demo-heading">
       <div class="section-inner">
         <span class="section-label reveal">See it in action</span>
-        <h2 id="demo-heading" class="reveal">Watch a real preflight,<br/>start to verdict.</h2>
-        <p class="section-sub reveal">A 75-second walkthrough of one marginal-day analysis: enter the flight, pull the live data, read the scored advisory, and verify it against the raw METAR, TAF, and NOTAM.</p>
-
-        <div class="demo-video-wrap reveal">
-          <video controls preload="none" poster="/assets/demo/flightdecide-demo-poster.jpg" width="720">
-            <source src="/assets/demo/flightdecide-demo.mp4" type="video/mp4" />
-            <track kind="captions" src="/assets/demo/flightdecide-demo.vtt" srclang="en" label="English" default />
-            Your browser doesn't support embedded video. <a href="/assets/demo/flightdecide-demo.mp4">Download the demo (MP4)</a>.
-          </video>
-        </div>
+        <h2 id="demo-heading" class="reveal">Try a real briefing,<br/>right in your browser.</h2>
+        <p class="section-sub reveal">Pick a sample flight and get the scored advisory FlightDecide produces — clear GO, marginal with a Path to GO, or a NO-GO built on the one NOTAM a tired pilot would miss. Then open the raw METAR, TAF, and NOTAM behind every call.</p>
         <p class="demo-advisory reveal">Decision support only — always complete a standard weather briefing and PIC review.</p>
 
         <div class="demo-shots reveal">
@@ -2064,11 +2041,11 @@
             </svg>
             Get notified at launch
           </a>
-          <a href="#demo" class="appstore-badge">
+          <a href="demo.html" class="appstore-badge">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" fill="currentColor" opacity="0.6"/>
             </svg>
-            Watch the demo
+            Try the interactive demo
           </a>
           <p class="cta-req">Free to start. Requires iOS 17 or later. FlightDecide is advisory only and complements, never replaces, an official briefing.</p>
         </div>
