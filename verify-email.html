@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Email | FlightDecide</title>
+  <meta name="description" content="Verify your FlightDecide email address." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0F172A;
+      --bg-card: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.08);
+      --accent-green: #22C55E;
+      --accent-blue: #3B82F6;
+      --text: #F0F0F5;
+      --text-muted: #94A3B8;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse 70% 90% at 50% 0%, rgba(34,197,94,0.08) 0%, transparent 60%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      display: inline-flex; align-items: center; gap: 8px;
+      text-decoration: none; color: var(--text);
+      font-weight: 700; font-size: 15px; margin-bottom: 28px;
+    }
+    .logo-icon {
+      width: 28px; height: 28px; border-radius: 7px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 15px;
+    }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+    p { color: var(--text-muted); font-size: 15px; margin-bottom: 16px; }
+    a.button {
+      display: inline-block; margin-top: 8px; padding: 14px 28px;
+      border-radius: 12px; text-decoration: none;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff; font-size: 16px; font-weight: 600;
+    }
+    .fine { font-size: 13px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <a class="logo" href="/"><span class="logo-icon">✈︎</span> FlightDecide</a>
+    <h1>Verify your email</h1>
+    <p>Email verification finishes inside the FlightDecide app on your iPhone, while you're signed in to your account.</p>
+    <p>If the app didn't open automatically, tap the button below on the iPhone that has FlightDecide installed.</p>
+    <a class="button" id="open-app" href="flightdecide://verify-email">Open in FlightDecide</a>
+    <p class="fine">Verification links expire after 30 minutes. You can request a new one from the banner on the app's home screen. Need help? <a href="mailto:support@flightdecide.com" style="color:#3B82F6">support@flightdecide.com</a></p>
+  </main>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var token = params.get("token");
+      if (token) {
+        document.getElementById("open-app").href =
+          "flightdecide://verify-email?token=" + encodeURIComponent(token);
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password | FlightDecide</title>
+  <meta name="description" content="Choose a new FlightDecide password." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0F172A;
+      --bg-card: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.08);
+      --accent-green: #22C55E;
+      --accent-blue: #3B82F6;
+      --danger: #F87171;
+      --text: #F0F0F5;
+      --text-muted: #94A3B8;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse 70% 90% at 50% 0%, rgba(34,197,94,0.08) 0%, transparent 60%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      max-width: 480px;
+      width: 100%;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+    .logo-icon {
+      width: 28px; height: 28px; border-radius: 7px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 15px;
+    }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+    p.sub { color: var(--text-muted); font-size: 15px; margin-bottom: 24px; }
+    label { display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 6px; margin-top: 16px; }
+    input[type="password"] {
+      width: 100%; padding: 12px 14px; border-radius: 10px;
+      border: 1px solid var(--border); background: rgba(255,255,255,0.06);
+      color: var(--text); font-size: 16px; outline: none;
+    }
+    input[type="password"]:focus { border-color: var(--accent-blue); }
+    button.primary {
+      width: 100%; margin-top: 24px; padding: 14px;
+      border: none; border-radius: 12px; cursor: pointer;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      color: #fff; font-size: 16px; font-weight: 600;
+    }
+    button.primary:disabled { opacity: 0.5; cursor: default; }
+    .error { color: var(--danger); font-size: 14px; margin-top: 14px; display: none; }
+    .hint { color: var(--text-muted); font-size: 13px; margin-top: 8px; }
+    .app-link {
+      display: block; text-align: center; margin-top: 20px;
+      color: var(--accent-blue); font-size: 14px; text-decoration: none;
+    }
+    .success { display: none; text-align: center; }
+    .success .check {
+      width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 50%;
+      background: rgba(34,197,94,0.15); color: var(--accent-green);
+      display: flex; align-items: center; justify-content: center; font-size: 28px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <a class="logo" href="/"><span class="logo-icon">✈︎</span> FlightDecide</a>
+
+    <div id="form-state">
+      <h1>Choose a new password</h1>
+      <p class="sub">Reset links expire 30 minutes after they're requested.</p>
+
+      <form id="reset-form" autocomplete="off">
+        <label for="pw1">New password</label>
+        <input id="pw1" type="password" autocomplete="new-password" required minlength="8" />
+        <p class="hint">At least 8 characters. Avoid passwords you've used elsewhere.</p>
+
+        <label for="pw2">Confirm new password</label>
+        <input id="pw2" type="password" autocomplete="new-password" required minlength="8" />
+
+        <p class="error" id="error"></p>
+        <button class="primary" id="submit" type="submit">Set new password</button>
+      </form>
+
+      <a class="app-link" id="open-app" href="#">Have FlightDecide installed? Open this link in the app</a>
+    </div>
+
+    <div class="success" id="success-state">
+      <div class="check">✓</div>
+      <h1>Password updated</h1>
+      <p class="sub">You can now sign in to the FlightDecide app with your new password. All other sessions were signed out.</p>
+    </div>
+
+    <div class="success" id="no-token-state">
+      <h1>Link incomplete</h1>
+      <p class="sub">This page needs the reset link from your email. Open the most recent "Reset your FlightDecide password" email and tap the link again — or request a new one from the app's sign-in screen.</p>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var API = "https://flightdecide-api.thankfulrock-c175e9be.canadacentral.azurecontainerapps.io/api/v1/auth/reset-password";
+      var params = new URLSearchParams(window.location.search);
+      var token = params.get("token");
+
+      var formState = document.getElementById("form-state");
+      var successState = document.getElementById("success-state");
+      var noTokenState = document.getElementById("no-token-state");
+      var form = document.getElementById("reset-form");
+      var errorEl = document.getElementById("error");
+      var submitBtn = document.getElementById("submit");
+
+      if (!token) {
+        formState.style.display = "none";
+        noTokenState.style.display = "block";
+        return;
+      }
+
+      document.getElementById("open-app").href =
+        "flightdecide://reset?token=" + encodeURIComponent(token);
+
+      function showError(msg) {
+        errorEl.textContent = msg;
+        errorEl.style.display = "block";
+      }
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        errorEl.style.display = "none";
+        var pw1 = document.getElementById("pw1").value;
+        var pw2 = document.getElementById("pw2").value;
+        if (pw1.length < 8) { showError("Password must be at least 8 characters."); return; }
+        if (pw1 !== pw2) { showError("Passwords don't match."); return; }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Updating…";
+
+        fetch(API, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ token: token, new_password: pw1 })
+        }).then(function (resp) {
+          return resp.json().catch(function () { return {}; }).then(function (data) {
+            if (resp.ok) {
+              formState.style.display = "none";
+              successState.style.display = "block";
+              return;
+            }
+            var detail = (data && typeof data.detail === "string")
+              ? data.detail
+              : "Something went wrong. Request a new reset link from the app and try again.";
+            showError(detail);
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Set new password";
+          });
+        }).catch(function () {
+          showError("Couldn't reach the server. Check your connection and try again.");
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Set new password";
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
