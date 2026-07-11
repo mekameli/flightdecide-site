@@ -1,16 +1,21 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.flightdecide.app",
       "sha256_cert_fingerprints": [
-        "F7:F0:B0:6C:B2:CD:7C:82:A3:8E:B3:CF:5A:0E:77:C8:6B:EF:D5:3C:56:2A:92:7D:C8:33:51:1C:D1:4A:57:FD"
+        "F7:F0:B0:6C:B2:CD:7C:82:A3:8E:B3:CF:5A:0E:77:C8:6B:EF:D5:3C:56:2A:92:7D:C8:33:51:1C:D1:4A:57:FD",
+        "3D:39:BA:25:D9:D1:86:87:2E:E7:9D:4F:14:D0:88:17:9E:65:19:4B:86:47:30:C4:C0:E5:5F:EB:BA:99:29:75"
       ]
     }
   },
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.flightdecide.app.debug",
