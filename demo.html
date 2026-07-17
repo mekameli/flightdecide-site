@@ -701,6 +701,36 @@
     }
     .fp-phase i { display: block; font-style: normal; font-size: 9.5px; color: var(--text-dim); margin-top: 2px; }
     .fp-note { font-size: 11.5px; color: var(--text-muted); line-height: 1.45; margin-top: 9px; }
+    .fp-chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 2px; }
+    .fp-chipbtn {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-family: inherit; font-size: 10px; font-weight: 700;
+      color: var(--text-muted);
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 8px;
+      cursor: pointer;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .fp-chipbtn[aria-pressed="true"] { color: #86EFAC; border-color: rgba(34,197,94,0.45); }
+    .fp-chipbtn .fpc-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.85; }
+    .fp-svg { touch-action: none; cursor: crosshair; }
+    .fp-caption { font-size: 10px; color: var(--text-dim); text-align: center; margin-top: 2px; }
+    .fp-details { margin-top: 10px; border-top: 1px solid var(--border); padding-top: 9px; }
+    .fp-details-h {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase;
+      color: var(--text-dim); margin-bottom: 6px;
+    }
+    .fp-det { display: flex; align-items: flex-start; gap: 7px; padding: 3px 0; }
+    .fp-det span.dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 3.5px;
+    }
+    .fp-det span.dot.green { background: var(--accent-green); box-shadow: 0 0 5px rgba(34,197,94,0.6); }
+    .fp-det span.dot.amber { background: var(--accent-amber); box-shadow: 0 0 5px rgba(234,179,8,0.6); }
+    .fp-det span.dot.red   { background: var(--accent-red);   box-shadow: 0 0 5px rgba(239,68,68,0.6); }
+    .fp-det span.dot.info  { background: rgba(148,163,184,0.6); box-shadow: none; }
+    .fp-det .t { font-size: 11px; color: var(--text-muted); line-height: 1.4; min-width: 0; }
 
     /* tab bar */
     .tab-bar {
@@ -1472,24 +1502,168 @@
     const CHEVRON = '<svg class="risk-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
     /* ------- flight profile card -------
-       Vertical profile like the app's Flight Profile screen: terrain, the
-       climb/cruise/descent path, and the hazard layers (icing, ceilings,
-       freezing level) drawn at altitude. y = 128 - alt_ft/1000 * 12. */
-    function fpScaffold(dep, dest, inner, aria) {
-      return '<svg class="fp-svg" viewBox="0 0 320 152" role="img" aria-label="' + aria + '">' +
-        '<line x1="34" y1="32" x2="312" y2="32" stroke="rgba(255,255,255,0.07)"/>' +
-        '<line x1="34" y1="80" x2="312" y2="80" stroke="rgba(255,255,255,0.07)"/>' +
-        '<text x="30" y="35" text-anchor="end" font-size="8.5" fill="rgba(148,163,184,0.7)" font-family="var(--mono)">8k</text>' +
-        '<text x="30" y="83" text-anchor="end" font-size="8.5" fill="rgba(148,163,184,0.7)" font-family="var(--mono)">4k</text>' +
-        inner +
-        '<line x1="34" y1="128" x2="312" y2="128" stroke="rgba(255,255,255,0.14)"/>' +
-        '<text x="34" y="143" font-size="9.5" fill="rgba(148,163,184,0.9)" font-family="var(--mono)">' + dep + '</text>' +
-        '<text x="312" y="143" text-anchor="end" font-size="9.5" fill="rgba(148,163,184,0.9)" font-family="var(--mono)">' + dest + '</text>' +
-        '</svg>';
+       Modeled on the app's Flight Profile screen (FlightProfileView /
+       FlightProfilePresenter): toggleable layers (terrain, winds, ceilings,
+       freezing level, icing/turb, airspace), wind arrows per column x level,
+       station ceiling marks, route-risk spans, TOC/TOD markers, a
+       drag-to-inspect crosshair, phase stats, and a Profile Details list.
+       Geometry: x = 34..312 over route distance, y = 140 - ft/1000*13. */
+    const FP_LAYERS = [
+      { key: 'terrain', label: 'Terrain' },
+      { key: 'winds', label: 'Winds' },
+      { key: 'ceilings', label: 'Ceilings' },
+      { key: 'freezing', label: 'Freezing Lvl' },
+      { key: 'hazards', label: 'Icing/Turb' },
+      { key: 'airspace', label: 'Airspace/TFR' }
+    ];
+    const fpLayerState = { terrain: true, winds: true, ceilings: true, freezing: true, hazards: true, airspace: true };
+    let fpModel = null; // { dist, path } for the crosshair readout
+
+    function fpX(nm, dist) { return 34 + (nm / dist) * 278; }
+    function fpY(ft) { return 140 - (ft / 1000) * 13; }
+
+    function fpPolyline(pts, dist, attrs) {
+      return '<polyline points="' + pts.map(p => fpX(p[0], dist).toFixed(1) + ',' + fpY(p[1]).toFixed(1)).join(' ') + '" fill="none" ' + attrs + '/>';
     }
 
-    function fpTerrain(points) {
-      return '<polygon points="' + points + ' 312,128 34,128" fill="rgba(52,211,153,0.10)"/>';
+    function fpTerrainPoly(pts, dist) {
+      const line = pts.map(p => fpX(p[0], dist).toFixed(1) + ',' + fpY(p[1]).toFixed(1)).join(' ');
+      return '<polygon points="' + line + ' 312,140 34,140" fill="rgba(52,211,153,0.12)"/>';
+    }
+
+    function fpWindArrow(nm, ft, dir, kt, dist) {
+      const x = fpX(nm, dist).toFixed(1), y = fpY(ft).toFixed(1);
+      return '<g transform="translate(' + x + ' ' + y + ')" opacity="0.9">' +
+        '<g transform="rotate(' + ((dir + 180) % 360) + ')" stroke="#7DD3FC" stroke-width="1" stroke-linecap="round">' +
+        '<line y1="4.5" y2="-4.5"/><path d="M0 -4.5 l2.4 3 M0 -4.5 l-2.4 3" fill="none"/></g>' +
+        '<text x="6.5" y="2.8" font-size="7" fill="#7DD3FC" font-family="var(--mono)">' + kt + '</text></g>';
+    }
+
+    function fpCeilingMark(nm, ft, label, color, dist) {
+      const x = fpX(nm, dist), y = fpY(ft);
+      const anchor = nm / dist > 0.72 ? 'end' : (nm / dist < 0.28 ? 'start' : 'middle');
+      return '<g><line x1="' + (x - 7).toFixed(1) + '" y1="' + y.toFixed(1) + '" x2="' + (x + 7).toFixed(1) + '" y2="' + y.toFixed(1) + '" stroke="' + color + '" stroke-width="2" stroke-linecap="round"/>' +
+        '<text x="' + x.toFixed(1) + '" y="' + (y - 3.5).toFixed(1) + '" text-anchor="' + anchor + '" font-size="7" fill="' + color + '" font-family="var(--mono)">' + label + '</text></g>';
+    }
+
+    function fpBand(x0nm, x1nm, loFt, hiFt, dist, fill, stroke, label, labelFill, dashed) {
+      const x = fpX(x0nm, dist), w = fpX(x1nm, dist) - x;
+      const y = fpY(hiFt), h = fpY(loFt) - y;
+      let out = '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + w.toFixed(1) + '" height="' + h.toFixed(1) + '" fill="' + fill + '" stroke="' + stroke + '"' + (dashed ? ' stroke-dasharray="4 3"' : '') + '/>';
+      if (label) out += '<text x="' + (x + 4).toFixed(1) + '" y="' + (y + 9).toFixed(1) + '" font-size="7" fill="' + labelFill + '" font-family="var(--mono)">' + label + '</text>';
+      return out;
+    }
+
+    function fpMarker(nm, ft, dist, color) {
+      const x = fpX(nm, dist), y = fpY(ft);
+      return '<path d="M' + x.toFixed(1) + ' ' + (y - 8).toFixed(1) + ' l5.5 9 h-11 Z" fill="' + color + '"/>';
+    }
+
+    function fpTocTod(nm, ft, dist, label) {
+      return '<text x="' + fpX(nm, dist).toFixed(1) + '" y="' + (fpY(ft) - 4).toFixed(1) + '" text-anchor="middle" font-size="6.5" fill="#94A3B8" font-family="var(--mono)">' + label + '</text>';
+    }
+
+    /* per-scenario profile models */
+    function fpData(key, t) {
+      if (key === 'vfr') {
+        const dist = 145;
+        return {
+          dep: 'KSEA', dest: 'KPDX', dist: dist, chip: 'Cruise 6,500 ft',
+          path: [[0, 0], [18, 6500], [125, 6500], [145, 0]],
+          pathSvg: fpPolyline([[0, 0], [18, 6500], [125, 6500], [145, 0]], dist,
+            'stroke="#FBBF24" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"') +
+            fpTocTod(18, 6500, dist, 'TOC') + fpTocTod(125, 6500, dist, 'TOD') +
+            '<circle cx="34" cy="140" r="3" fill="#22C55E"/><circle cx="312" cy="140" r="3" fill="#22C55E"/>' +
+            '<text x="173" y="51" text-anchor="middle" font-size="7.5" fill="rgba(148,163,184,0.85)" font-family="var(--mono)">6,500 ft</text>',
+          terrain: fpTerrainPoly([[0, 0], [25, 900], [45, 1400], [70, 1100], [95, 1900], [120, 1000], [145, 0]], dist),
+          winds: [fpWindArrow(48, 3000, 260, 8, dist), fpWindArrow(48, 6000, 260, 10, dist),
+                  fpWindArrow(97, 3000, 270, 9, dist), fpWindArrow(97, 6000, 270, 12, dist)].join(''),
+          ceilings: fpCeilingMark(4, 9500, 'KSEA FEW250', '#22C55E', dist) +
+                    fpCeilingMark(141, 9500, 'KPDX FEW200', '#22C55E', dist),
+          freezing: '',
+          hazards: '',
+          airspace: fpBand(0, 14, 3000, 9700, dist, 'rgba(96,165,250,0.06)', 'rgba(96,165,250,0.45)', 'B', '#93C5FD') +
+                    fpBand(132, 145, 0, 4000, dist, 'rgba(96,165,250,0.06)', 'rgba(96,165,250,0.45)', 'C', '#93C5FD'),
+          phases: [['Climb', '11 min', 'to 6,500 ft'], ['Cruise', '57 min', '110 kt GS'], ['Descent', '11 min', '500 fpm']],
+          details: [
+            ['green', 'No route risks — the path stays clear of terrain, ceilings, icing, and turbulence.'],
+            ['info', 'Climb: 11 min · top of climb at 18 NM, 6,500 ft'],
+            ['info', 'Cruise: 57 min · 110 kt groundspeed'],
+            ['info', 'Descent: 11 min · 500 fpm from 125 NM']
+          ],
+          note: 'Climb, cruise, and descent stay clear the whole way — the picture matches the six green categories below.'
+        };
+      }
+      if (key === 'marginal') {
+        const dist = 65;
+        const deck = t.delay
+          ? fpBand(52, 65, 3400, 3600, dist, 'rgba(148,163,184,0.18)', 'none') +
+            fpCeilingMark(61, 3500, 'KMRY 3,500 ft', '#22C55E', dist)
+          : fpBand(52, 65, 0, 1200, dist, 'rgba(148,163,184,0.30)', 'none') +
+            fpCeilingMark(61, 1200, 'KMRY 1,200 ft', '#60A5FA', dist);
+        return {
+          dep: 'KPAO', dest: 'KMRY', dist: dist, chip: 'Cruise 4,500 ft',
+          path: [[0, 0], [10, 4500], [52, 4500], [65, 0]],
+          pathSvg: fpPolyline([[0, 0], [10, 4500], [52, 4500], [65, 0]], dist,
+            'stroke="#FBBF24" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"') +
+            fpTocTod(10, 4500, dist, 'TOC') + fpTocTod(52, 4500, dist, 'TOD') +
+            (t.delay ? '' : fpMarker(60, 1000, dist, '#EAB308')) +
+            '<circle cx="34" cy="140" r="3" fill="#22C55E"/><circle cx="312" cy="140" r="3" fill="' + (t.delay ? '#22C55E' : '#EAB308') + '"/>' +
+            '<text x="160" y="76" text-anchor="middle" font-size="7.5" fill="rgba(148,163,184,0.85)" font-family="var(--mono)">4,500 ft</text>',
+          terrain: fpTerrainPoly([[0, 0], [10, 700], [20, 2200], [30, 2600], [40, 1800], [52, 600], [65, 0]], dist),
+          winds: [fpWindArrow(22, 3000, 310, 12, dist), fpWindArrow(22, 6000, 300, 15, dist),
+                  fpWindArrow(45, 3000, 320, 14, dist), fpWindArrow(45, 6000, 310, 16, dist)].join(''),
+          ceilings: deck,
+          freezing: '',
+          hazards: fpBand(18, 36, 1500, 3500, dist, 'rgba(234,179,8,0.08)', 'rgba(234,179,8,0.4)', 'TURB (LOW)', '#FDE68A', true),
+          airspace: fpBand(0, 10, 6000, 9700, dist, 'rgba(96,165,250,0.06)', 'rgba(96,165,250,0.45)', 'B SHELF', '#93C5FD') +
+                    fpBand(58, 65, 0, 2500, dist, 'rgba(96,165,250,0.06)', 'rgba(96,165,250,0.45)', 'D', '#93C5FD'),
+          phases: [['Climb', '8 min', 'to 4,500 ft'], ['Cruise', '15 min', '135 kt GS'], ['Descent', '7 min', '500 fpm']],
+          details: t.delay ? [
+            ['amber', 'Route risk (Caution): Turbulence (low) · 18–36 NM along the flight path'],
+            ['green', 'KMRY deck lifts to SCT035 after 1900Z — descent segment clear'],
+            ['info', 'Climb: 8 min · top of climb at 10 NM, 4,500 ft'],
+            ['info', 'Cruise: 15 min · 135 kt groundspeed']
+          ] : [
+            ['amber', 'Route risk (Caution): Turbulence (low) · 18–36 NM along the flight path'],
+            ['amber', 'Route risk (Caution): Ceiling 1,200 ft at KMRY · descent segment'],
+            ['info', 'Climb: 8 min · top of climb at 10 NM, 4,500 ft'],
+            ['info', 'Cruise: 15 min · 135 kt groundspeed']
+          ],
+          note: t.delay
+            ? 'After 1900Z the deck lifts to scattered 3,500 — your descent into KMRY is clear of it.'
+            : 'The KMRY stratus deck (BKN012) sits right across your descent. Toggle “Delay departure” in the Path to GO and watch it lift.'
+        };
+      }
+      const dist = 78;
+      return {
+        dep: 'KBED', dest: 'KLEB', dist: dist, chip: 'MEA 6,500 ft',
+        path: [[0, 0], [13, 6500], [62, 6500], [78, 600]],
+        pathSvg: fpPolyline([[0, 0], [13, 6500]], dist, 'stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"') +
+          fpPolyline([[13, 6500], [62, 6500]], dist, 'stroke="#EF4444" stroke-width="2.2" stroke-linecap="round"') +
+          fpPolyline([[62, 6500], [78, 600]], dist, 'stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"') +
+          fpTocTod(13, 6500, dist, 'TOC') +
+          fpMarker(30, 6500, dist, '#EF4444') + fpMarker(48, 6500, dist, '#EF4444') +
+          '<circle cx="34" cy="140" r="3" fill="#22C55E"/><circle cx="312" cy="' + fpY(600).toFixed(1) + '" r="3" fill="#EF4444"/>',
+        terrain: fpTerrainPoly([[0, 0], [12, 800], [25, 1600], [38, 2600], [50, 3200], [60, 2800], [70, 1500], [78, 600]], dist),
+        winds: [fpWindArrow(26, 3000, 330, 18, dist), fpWindArrow(26, 6000, 340, 24, dist),
+                fpWindArrow(55, 3000, 330, 16, dist), fpWindArrow(55, 6000, 340, 22, dist)].join(''),
+        ceilings: fpCeilingMark(4, 6000, 'KBED 6,000 ft', '#22C55E', dist) +
+                  fpCeilingMark(74, 7000, 'KLEB 7,000 ft', '#22C55E', dist),
+        freezing: '<line x1="34" y1="' + fpY(6000).toFixed(1) + '" x2="312" y2="' + fpY(6000).toFixed(1) + '" stroke="#22D3EE" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>' +
+                  '<text x="308" y="' + (fpY(6000) + 9).toFixed(1) + '" text-anchor="end" font-size="7.5" fill="#22D3EE" font-family="var(--mono)">0°C</text>',
+        hazards: fpBand(0, 78, 6000, 9700, dist, 'rgba(59,130,246,0.13)', 'rgba(59,130,246,0.4)', 'ICING (MOD) · 6,000 FT–FL200', '#93C5FD', true),
+        airspace: fpBand(0, 10, 7000, 9700, dist, 'rgba(96,165,250,0.06)', 'rgba(96,165,250,0.45)', 'B SHELF', '#93C5FD') +
+                  fpBand(72, 78, 600, 3100, dist, 'rgba(96,165,250,0.06)', 'rgba(96,165,250,0.45)', 'D', '#93C5FD'),
+        phases: [['Climb', '10 min', 'to 6,500 ft'], ['Cruise', '22 min', '115 kt GS'], ['Descent', '9 min', '500 fpm']],
+        details: [
+          ['red', 'Route risk (High): Icing · cruise inside the AIRMET ZULU band · 13–62 NM along the flight path'],
+          ['red', 'Route risk (High): KLEB crosswind ~24 kt gust · only RWY 07/25 open'],
+          ['info', 'Climb: 10 min · top of climb at 13 NM, 6,500 ft'],
+          ['info', 'Cruise: 22 min · 115 kt groundspeed']
+        ],
+        note: 'Terrain forces a 6,500 ft cruise — and that altitude sits inside the AIRMET ZULU icing band. The profile makes the NO-GO visible at a glance.'
+      };
     }
 
     function fpPhases(list) {
@@ -1498,64 +1672,112 @@
     }
 
     function buildFlightProfile(key, t) {
-      let chip, svg, phases, note;
+      const d = fpData(key, t);
+      fpModel = { dist: d.dist, path: d.path };
 
-      if (key === 'vfr') {
-        chip = 'Cruise 6,500 ft';
-        svg = fpScaffold('KSEA', 'KPDX',
-          fpTerrain('34,128 62,121 88,116 116,119 146,110 176,114 206,106 236,116 268,122') +
-          '<text x="174" y="44" text-anchor="middle" font-size="8.5" fill="rgba(148,163,184,0.85)" font-family="var(--mono)">6,500 ft</text>' +
-          '<polyline points="34,128 96,50 252,50 312,128" fill="none" stroke="#FBBF24" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>' +
-          '<circle cx="34" cy="128" r="3" fill="#22C55E"/><circle cx="312" cy="128" r="3" fill="#22C55E"/>',
-          'Flight profile KSEA to KPDX: climb, cruise at 6,500 feet, and descent, all clear of terrain and hazards.');
-        phases = fpPhases([['Climb', '11 min', 'to 6,500 ft'], ['Cruise', '57 min', '110 kt GS'], ['Descent', '11 min', '500 fpm']]);
-        note = 'Climb, cruise, and descent stay clear of terrain, ceilings, and icing the whole way — the picture matches the six green categories below.';
+      const layerContent = {
+        terrain: d.terrain, winds: d.winds, ceilings: d.ceilings,
+        freezing: d.freezing, hazards: d.hazards, airspace: d.airspace
+      };
 
-      } else if (key === 'marginal') {
-        const deck = t.delay
-          ? '<rect x="238" y="84" width="74" height="4" fill="rgba(148,163,184,0.18)"/>' +
-            '<text x="275" y="79" text-anchor="middle" font-size="8" fill="#86EFAC" font-family="var(--mono)">SCT035</text>'
-          : '<rect x="238" y="113" width="74" height="15" fill="rgba(148,163,184,0.30)"/>' +
-            '<text x="275" y="109" text-anchor="middle" font-size="8" fill="#CBD5E1" font-family="var(--mono)">BKN012</text>' +
-            '<path d="M291 110 l5.5 9 h-11 Z" fill="#EAB308"/>';
-        chip = 'Cruise 4,500 ft';
-        svg = fpScaffold('KPAO', 'KMRY',
-          fpTerrain('34,128 60,120 96,104 128,98 158,102 196,114 240,122') +
-          deck +
-          '<text x="170" y="68" text-anchor="middle" font-size="8.5" fill="rgba(148,163,184,0.85)" font-family="var(--mono)">4,500 ft</text>' +
-          '<polyline points="34,128 104,74 236,74 312,128" fill="none" stroke="#FBBF24" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>' +
-          '<circle cx="34" cy="128" r="3" fill="#22C55E"/><circle cx="312" cy="128" r="3" fill="' + (t.delay ? '#22C55E' : '#EAB308') + '"/>',
-          t.delay
-            ? 'Flight profile KPAO to KMRY after the 1900Z delay: the stratus deck lifts to scattered 3,500 feet and the descent is clear.'
-            : 'Flight profile KPAO to KMRY: the descent into KMRY passes through a broken 1,200-foot stratus deck.');
-        phases = fpPhases([['Climb', '8 min', 'to 4,500 ft'], ['Cruise', '15 min', '135 kt GS'], ['Descent', '7 min', '500 fpm']]);
-        note = t.delay
-          ? 'After 1900Z the deck lifts to scattered 3,500 — your descent into KMRY is clear of it.'
-          : 'The KMRY stratus deck (BKN012) sits right across your descent. Toggle “Delay departure” in the Path to GO and watch it lift.';
+      let chips = '<div class="fp-chips" role="group" aria-label="Profile layers">';
+      FP_LAYERS.forEach(l => {
+        if (!layerContent[l.key]) return; // chip only when the scenario has that layer
+        chips += '<button type="button" class="fp-chipbtn" data-layer="' + l.key + '" aria-pressed="' + fpLayerState[l.key] + '"><span class="fpc-dot" aria-hidden="true"></span>' + l.label + '</button>';
+      });
+      chips += '</div>';
 
-      } else {
-        chip = 'MEA 6,500 ft';
-        svg = fpScaffold('KBED', 'KLEB',
-          '<rect x="34" y="32" width="278" height="24" fill="rgba(59,130,246,0.13)" stroke="rgba(59,130,246,0.4)" stroke-dasharray="4 3"/>' +
-          '<text x="40" y="44" font-size="8" fill="#93C5FD" font-family="var(--mono)">ICING (MOD) · 6,000 FT–FL200</text>' +
-          '<line x1="34" y1="56" x2="312" y2="56" stroke="#22D3EE" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>' +
-          '<text x="308" y="66" text-anchor="end" font-size="8" fill="#22D3EE" font-family="var(--mono)">0°C</text>' +
-          fpTerrain('34,128 70,120 108,110 148,97 188,90 226,96 266,112') +
-          '<polyline points="34,128 100,50" fill="none" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"/>' +
-          '<polyline points="100,50 250,50" fill="none" stroke="#EF4444" stroke-width="2.2" stroke-linecap="round"/>' +
-          '<polyline points="250,50 312,128" fill="none" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round"/>' +
-          '<path d="M150 43 l6 10 h-12 Z" fill="#EF4444"/><path d="M205 43 l6 10 h-12 Z" fill="#EF4444"/>' +
-          '<circle cx="34" cy="128" r="3" fill="#22C55E"/><circle cx="312" cy="128" r="3" fill="#EF4444"/>',
-          'Flight profile KBED to KLEB: the terrain-driven cruise at 6,500 feet sits inside the moderate icing band between 6,000 feet and flight level 200.');
-        phases = fpPhases([['Climb', '10 min', 'to 6,500 ft'], ['Cruise', '22 min', '115 kt GS'], ['Descent', '9 min', '500 fpm']]);
-        note = 'Terrain forces a 6,500 ft cruise — and that altitude sits inside the AIRMET ZULU icing band. The profile makes the NO-GO visible at a glance.';
-      }
+      let svg = '<svg class="fp-svg" viewBox="0 0 320 164" role="img" aria-label="Vertical flight profile ' + d.dep + ' to ' + d.dest + '">';
+      svg += '<line x1="34" y1="' + fpY(8000).toFixed(1) + '" x2="312" y2="' + fpY(8000).toFixed(1) + '" stroke="rgba(255,255,255,0.07)"/>';
+      svg += '<line x1="34" y1="' + fpY(4000).toFixed(1) + '" x2="312" y2="' + fpY(4000).toFixed(1) + '" stroke="rgba(255,255,255,0.07)"/>';
+      svg += '<text x="30" y="' + (fpY(8000) + 3).toFixed(1) + '" text-anchor="end" font-size="8" fill="rgba(148,163,184,0.7)" font-family="var(--mono)">8k</text>';
+      svg += '<text x="30" y="' + (fpY(4000) + 3).toFixed(1) + '" text-anchor="end" font-size="8" fill="rgba(148,163,184,0.7)" font-family="var(--mono)">4k</text>';
+      // layers under the path, in app z-order: airspace, hazards, terrain, ceilings, freezing, winds
+      ['airspace', 'hazards', 'terrain', 'ceilings', 'freezing', 'winds'].forEach(k => {
+        if (layerContent[k]) svg += '<g class="fpl-' + k + '"' + (fpLayerState[k] ? '' : ' display="none"') + '>' + layerContent[k] + '</g>';
+      });
+      svg += d.pathSvg;
+      svg += '<line x1="34" y1="140" x2="312" y2="140" stroke="rgba(255,255,255,0.14)"/>';
+      svg += '<text x="34" y="155" font-size="9" fill="rgba(148,163,184,0.9)" font-family="var(--mono)">' + d.dep + '</text>';
+      svg += '<text x="312" y="155" text-anchor="end" font-size="9" fill="rgba(148,163,184,0.9)" font-family="var(--mono)">' + d.dest + '</text>';
+      // crosshair (drag to inspect)
+      svg += '<g class="fp-cross" style="display:none" aria-hidden="true">' +
+        '<line class="fpx-line" x1="0" x2="0" y1="14" y2="140" stroke="rgba(255,255,255,0.35)" stroke-dasharray="2 2"/>' +
+        '<circle class="fpx-dot" r="3" fill="#fff"/>' +
+        '<rect class="fpx-bg" y="16" width="86" height="13" rx="4" fill="rgba(0,0,0,0.75)" stroke="rgba(255,255,255,0.18)"/>' +
+        '<text class="fpx-txt" y="25.5" font-size="7.5" fill="#E2E8F0" font-family="var(--mono)" text-anchor="middle"></text>' +
+        '</g>';
+      svg += '</svg>';
+
+      let details = '<div class="fp-details"><div class="fp-details-h">Profile Details</div>';
+      d.details.forEach(row => {
+        details += '<div class="fp-det"><span class="dot ' + row[0] + '"></span><span class="t">' + row[1] + '</span></div>';
+      });
+      details += '</div>';
 
       return '<div class="fp-card">' +
-        '<div class="fp-head"><span class="fp-title">Flight Profile</span><span class="fp-chip">' + chip + '</span></div>' +
-        svg + phases +
-        '<div class="fp-note">' + note + '</div>' +
+        '<div class="fp-head"><span class="fp-title">Flight Profile</span><span class="fp-chip">' + d.chip + '</span></div>' +
+        chips + svg +
+        '<div class="fp-caption">Drag to inspect any point along the route.</div>' +
+        fpPhases(d.phases) + details +
+        '<div class="fp-note">' + d.note + '</div>' +
         '</div>';
+    }
+
+    /* layer chips + drag-to-inspect wiring (called after each render) */
+    function wireFlightProfile() {
+      const card = phoneScroll.querySelector('.fp-card');
+      if (!card) return;
+      const svg = card.querySelector('.fp-svg');
+
+      card.querySelectorAll('.fp-chipbtn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const k = btn.getAttribute('data-layer');
+          fpLayerState[k] = !fpLayerState[k];
+          btn.setAttribute('aria-pressed', String(fpLayerState[k]));
+          const g = svg.querySelector('.fpl-' + k);
+          if (g) { if (fpLayerState[k]) g.removeAttribute('display'); else g.setAttribute('display', 'none'); }
+        });
+      });
+
+      // crosshair: pointer x -> NM -> interpolated path altitude
+      const cross = svg.querySelector('.fp-cross');
+      const xLine = cross.querySelector('.fpx-line');
+      const xDot = cross.querySelector('.fpx-dot');
+      const xBg = cross.querySelector('.fpx-bg');
+      const xTxt = cross.querySelector('.fpx-txt');
+
+      function altAt(nm) {
+        const p = fpModel.path;
+        if (nm <= p[0][0]) return p[0][1];
+        for (let i = 1; i < p.length; i++) {
+          if (nm <= p[i][0]) {
+            const f = (nm - p[i - 1][0]) / (p[i][0] - p[i - 1][0]);
+            return p[i - 1][1] + f * (p[i][1] - p[i - 1][1]);
+          }
+        }
+        return p[p.length - 1][1];
+      }
+
+      function show(evt) {
+        const rect = svg.getBoundingClientRect();
+        const vx = ((evt.clientX - rect.left) / rect.width) * 320;
+        const x = Math.max(34, Math.min(312, vx));
+        const nm = ((x - 34) / 278) * fpModel.dist;
+        const alt = altAt(nm);
+        const y = fpY(alt);
+        cross.style.display = '';
+        xLine.setAttribute('x1', x.toFixed(1)); xLine.setAttribute('x2', x.toFixed(1));
+        xDot.setAttribute('cx', x.toFixed(1)); xDot.setAttribute('cy', y.toFixed(1));
+        const bx = Math.max(36, Math.min(312 - 88, x - 43));
+        xBg.setAttribute('x', bx.toFixed(1));
+        xTxt.setAttribute('x', (bx + 43).toFixed(1));
+        xTxt.textContent = Math.round(nm) + ' NM · ' + Math.round(alt).toLocaleString('en-US') + ' ft';
+      }
+      svg.addEventListener('pointerdown', e => { try { svg.setPointerCapture(e.pointerId); } catch (err) {} show(e); });
+      svg.addEventListener('pointermove', e => { if (e.buttons || e.pointerType === 'mouse') show(e); });
+      svg.addEventListener('pointerleave', () => { cross.style.display = 'none'; });
+      svg.addEventListener('pointerup', () => { setTimeout(() => { cross.style.display = 'none'; }, 900); });
     }
 
     /* ------- DOM refs & state ------- */
@@ -1645,6 +1867,9 @@
       html += '<div class="scroll-foot">Advisory analysis — the pilot in command makes the final decision.</div>';
 
       phoneScroll.innerHTML = html;
+
+      // wire up the flight profile layer chips + crosshair
+      wireFlightProfile();
 
       // wire up expand/collapse
       phoneScroll.querySelectorAll('.risk-btn').forEach(btn => {
