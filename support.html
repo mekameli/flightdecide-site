@@ -283,6 +283,107 @@
       footer { padding: 24px 20px; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://flightdecide.com/support.html#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does FlightDecide work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You enter your departure airport, destination, alternates, aircraft type, fuel load, and passenger weight. FlightDecide fetches live weather (METARs, TAFs, winds aloft, SIGMETs, PIREPs) from aviationweather.gov, retrieves current NOTAMs, computes weight and balance and takeoff/landing performance from your aircraft's POH data, calculates Part 91 VFR/IFR fuel requirements, and scores everything across 8 risk categories. The result is a GO, CAUTION, or NO GO verdict with a scored breakdown and a plain-language AI briefing you can verify against the raw data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What aircraft are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FlightDecide includes a growing library of aircraft with real POH performance data: trainers (Cessna 150/152, Cessna 172 Skyhawk, Piper PA-28 Cherokee), singles (Cessna 182 Skylane, Cessna 206 Stationair, Piper Dakota), high performance (Cirrus SR22, Mooney M20J, Beechcraft Bonanza A36), twins (Piper Seneca, Baron 58, Cessna 310), turboprops (Piper Meridian, King Air C90, Pilatus PC-12), and jets (Citation CJ1+/CJ3, Phenom 100). Pilot plan subscribers can also add custom aircraft profiles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the weather data real-time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Weather is fetched live from aviationweather.gov at the time of each analysis: current METARs, TAFs, winds aloft forecasts, active G-AIRMETs and SIGMETs, and recent PIREPs along your route. Because conditions change, re-run your analysis close to departure and obtain an official weather briefing before every flight."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use FlightDecide for IFR flights?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. FlightDecide supports both VFR and IFR planning under Part 91, applying 14 CFR 91.151 VFR reserves or 14 CFR 91.167 IFR alternate and fuel rules. The AI briefing also considers ceiling and visibility at destination and alternate, approach minimums, and icing at altitude. It is a Part 91 decision-support tool, not a replacement for a full IFR flight plan or ATC clearance, and is not approved for Part 135 or Part 121 operations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is the AI analysis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When given accurate input data the AI produces well-reasoned briefings for typical GA scenarios, but AI models can occasionally produce plausible-sounding errors, have a training cutoff, and cannot observe actual conditions at the airport. Treat the AI briefing as a thorough starting point, not a final answer, and verify any claim that will influence your decision against authoritative sources."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add my specific aircraft?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Custom aircraft profiles are available on the Pilot and Pro plans. In Settings, open Aircraft Profiles, tap Add Aircraft, and choose Custom or a built-in template. Enter basic empty weight, usable fuel, CG envelope, V-speeds, cruise speed and fuel burn, and POH takeoff/landing distances. You can save multiple profiles, each with personal weather minimums and typical loading."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What data sources does FlightDecide use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "aviationweather.gov for METARs, TAFs, winds aloft, G-AIRMETs, SIGMETs, and PIREPs; the FAA NOTAM system for departure, destination, and alternate airports; built-in aircraft performance data compiled from publicly available Pilot's Operating Handbooks; and an AI analysis engine for the narrative briefing. All weather data comes directly from government services."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your flight data is used only to generate your analysis, is never sold or shared with advertisers, and flight history is stored securely and accessible only to you. Analysis data is processed by our AI partner's API under their privacy policy. You can delete your account and all associated data at any time. See the FlightDecide Privacy Policy for details."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I contact support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Email support@flightdecide.com; we typically respond within 1-2 business days. For billing and subscription issues, purchases are processed through the App Store, so Apple support can also help."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://flightdecide.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Support",
+        "item": "https://flightdecide.com/support.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

@@ -1,0 +1,41 @@
+# FlightDecide
+
+> FlightDecide is an AI-assisted go/no-go preflight decision-support app for
+> general aviation pilots (iOS; Android coming soon). It reads live METARs,
+> TAFs, winds aloft, SIGMETs, PIREPs, and NOTAMs for the planned flight
+> window, computes fuel requirements (14 CFR Part 91 VFR/IFR reserves),
+> weight and balance, and takeoff/landing performance from curated POH data,
+> then produces a scored GO / CAUTION / NO GO advisory across 8 risk
+> categories plus a plain-language AI briefing that pilots can verify
+> against the raw data. It is advisory decision support, not an official
+> weather briefing; the pilot in command retains final authority (14 CFR
+> 91.3). Not for Part 135/121 operations.
+
+Key facts:
+- Platform: iPhone (iOS 17+). App Store: https://apps.apple.com/app/flightdecide/id6761793626
+- Pricing: Free (3 analyses/month), Pilot $9.99/mo (unlimited, custom
+  aircraft profiles), Pro $19.99/mo (adds fleet management).
+- Weather/NOTAM sources: aviationweather.gov and the FAA NOTAM system
+  (government sources only; NAV CANADA data for Canadian coverage).
+- NOTAM honesty: FlightDecide distinguishes "queried, zero NOTAMs" from
+  "coverage gap" — it never claims "no NOTAMs" without evidence the source
+  was queried.
+- Aircraft library: trainers through jets (C150/152, C172, PA-28, C182,
+  C206, SR22, M20J, A36, Seneca, Baron 58, C310, Meridian, King Air C90,
+  PC-12, CJ1+, CJ3, Phenom 100, and more), plus custom profiles with
+  personal minimums.
+
+## Pages
+
+- [Home](https://flightdecide.com/): product overview, features, pricing.
+- [Pilot Guide](https://flightdecide.com/guide.html): full walkthrough from
+  onboarding to daily go/no-go habits.
+- [Interactive Demo](https://flightdecide.com/demo.html): in-browser sample
+  briefing showing a scored verdict.
+- [Support / FAQ](https://flightdecide.com/support.html): how it works,
+  supported aircraft, data sources, IFR use, privacy.
+- [Press Kit](https://flightdecide.com/press.html): brand assets and facts.
+- [Disclaimer](https://flightdecide.com/disclaimer.html): advisory-only
+  scope and pilot-in-command responsibility.
+
+Contact: support@flightdecide.com

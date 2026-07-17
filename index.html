@@ -36,24 +36,63 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "FlightDecide",
-    "operatingSystem": "iOS",
-    "applicationCategory": "UtilitiesApplication",
-    "description": "FlightDecide reads your TAFs, NOTAMs, fuel, and weight and balance for the planned flight window, then gives you a scored go/no-go advisor and an AI briefing you can verify against raw data.",
-    "url": "https://flightdecide.com",
-    "installUrl": "https://apps.apple.com/app/flightdecide/id6761793626",
-    "image": "https://flightdecide.com/assets/brand/og-image.png",
-    "screenshot": "https://flightdecide.com/assets/brand/og-image.png",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "FlightDecide"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://flightdecide.com/#organization",
+        "name": "FlightDecide",
+        "url": "https://flightdecide.com",
+        "logo": "https://flightdecide.com/assets/brand/icon-512.png",
+        "email": "support@flightdecide.com",
+        "sameAs": [
+          "https://apps.apple.com/app/flightdecide/id6761793626"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://flightdecide.com/#website",
+        "name": "FlightDecide",
+        "url": "https://flightdecide.com",
+        "publisher": { "@id": "https://flightdecide.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://flightdecide.com/#app",
+        "name": "FlightDecide",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "FlightDecide is an AI-assisted go/no-go preflight decision-support app for general aviation pilots. It reads your TAFs, NOTAMs, fuel, and weight and balance for the planned flight window, then gives you a scored go/no-go advisor and an AI briefing you can verify against raw data. Advisory only — not an official weather briefing.",
+        "url": "https://flightdecide.com",
+        "installUrl": "https://apps.apple.com/app/flightdecide/id6761793626",
+        "image": "https://flightdecide.com/assets/brand/og-image.png",
+        "screenshot": "https://flightdecide.com/assets/brand/og-image.png",
+        "featureList": "Route weather analysis for a time window; scored GO/CAUTION/NO GO advisory; AI preflight briefing verifiable against raw METAR/TAF/NOTAM; NOTAM analysis filtered by flight window; fuel planning with Part 91 VFR/IFR reserves; weight and balance; enroute winds aloft, freezing levels, and PIREPs; customizable aircraft profiles and personal minimums",
+        "publisher": { "@id": "https://flightdecide.com/#organization" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "3 flight analyses per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot",
+            "price": "9.99",
+            "priceCurrency": "USD",
+            "description": "Unlimited analyses and custom aircraft profiles, per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "19.99",
+            "priceCurrency": "USD",
+            "description": "Everything in Pilot plus fleet management, per month"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -1509,7 +1548,7 @@
           <span class="hero-badge">Now on the App Store &middot; Android coming soon</span>
           <h1>Should you fly today?<br/><span class="gradient-text">Get a second opinion.</span></h1>
           <p class="hero-sub">
-            Ceilings at 2,800 and forecast to lift. Gusts near your crosswind limit. It's been six weeks since you flew. Those are the days FlightDecide is for: a scored GO / CAUTION / NO GO advisory against your aircraft, your minimums, and the live data, with every interpretation verifiable against the raw METAR, TAF, and NOTAM. The final call is always yours.
+            FlightDecide is an AI-assisted go/no-go decision-support app for general aviation pilots, free to try on iPhone. Ceilings at 2,800 and forecast to lift. Gusts near your crosswind limit. It's been six weeks since you flew. Those are the days FlightDecide is for: a scored GO / CAUTION / NO GO advisory against your aircraft, your minimums, and the live data, with every interpretation verifiable against the raw METAR, TAF, and NOTAM. The final call is always yours.
           </p>
           <div class="hero-actions">
             <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary js-appstore-link">
