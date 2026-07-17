@@ -50,6 +50,21 @@ Key facts:
 - [What NOTAMs to Check](https://flightdecide.com/learn/what-notams-to-check/):
   NOTAM types, a practical triage order, TFRs, and the "no NOTAMs" trap.
 
+## Comparisons (honest, we-build-FlightDecide disclosed)
+
+- [Comparisons hub](https://flightdecide.com/compare/)
+- [Best Preflight Briefing & Go/No-Go Apps 2026](https://flightdecide.com/compare/best-preflight-briefing-apps/):
+  ranked by use case — 1800wxbrief (official, free), GoNoGo (best free),
+  FlightDecide (AI second opinion vs your aircraft + minimums), PlaneWX
+  (long-range planning), WeatherSpork (weather education), ForeFlight /
+  Garmin Pilot (full EFBs).
+- [FlightDecide vs ForeFlight](https://flightdecide.com/compare/flightdecide-vs-foreflight/):
+  complement, not replacement — EFB for flying, FlightDecide for the
+  go/no-go decision; many pilots run both.
+- [FlightDecide vs an Official Briefing](https://flightdecide.com/compare/flightdecide-vs-official-briefing/):
+  FlightDecide is NOT an official briefing; 91.103 / AC 91-92 self-brief
+  context and a recommended combined workflow.
+
 ## Pages
 
 - [Home](https://flightdecide.com/): product overview, features, pricing.
