@@ -174,7 +174,7 @@
             }
             var detail = (data && typeof data.detail === "string")
               ? data.detail
-              : "Something went wrong. Request a new reset link from the app and try again.";
+              : "That reset link didn't work — it may have expired. Request a new one from the app's sign-in screen and try again.";
             showError(detail);
             submitBtn.disabled = false;
             submitBtn.textContent = "Set new password";
