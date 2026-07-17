@@ -3,13 +3,13 @@
   "affiliates": [
     {
       "slug": "launch50",
-      "display_name": "FlightDecide Launch Offer",
+      "display_name": "the FlightDecide team",
       "code": "FLYDECIDE50",
       "discount_label": "50% off your first year of Pilot \u2014 first 50 pilots"
     },
     {
       "slug": "save30",
-      "display_name": "FlightDecide",
+      "display_name": "the FlightDecide team",
       "code": "FLYDECIDE30",
       "discount_label": "30% off your first year of Pilot"
     }
