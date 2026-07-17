@@ -25,6 +25,31 @@ Key facts:
   PC-12, CJ1+, CJ3, Phenom 100, and more), plus custom profiles with
   personal minimums.
 
+## Free Pilot Tools (browser-based, no sign-up)
+
+- [Tools hub](https://flightdecide.com/tools/)
+- [Crosswind Calculator](https://flightdecide.com/tools/crosswind-calculator/):
+  headwind/crosswind components with gust handling, demonstrated-crosswind
+  guidance, clock rule of thumb.
+- [Density Altitude Calculator](https://flightdecide.com/tools/density-altitude-calculator/):
+  pressure altitude, ISA deviation, and density altitude from field
+  elevation, altimeter, and temperature.
+- [Personal Minimums Worksheet](https://flightdecide.com/tools/personal-minimums-worksheet/):
+  printable worksheet for setting ceiling/visibility/wind/performance
+  minimums, based on the FAA approach.
+
+## Pilot Guides (educational articles)
+
+- [Guides hub](https://flightdecide.com/learn/)
+- [The Go/No-Go Decision Framework](https://flightdecide.com/learn/go-no-go-decision-framework/):
+  PAVE-based structure for preflight decisions, continuation-bias traps.
+- [Personal Minimums](https://flightdecide.com/learn/personal-minimums/):
+  how to set, adjust, and keep honest personal weather/wind minimums.
+- [How to Read a TAF](https://flightdecide.com/learn/how-to-read-a-taf/):
+  line-by-line TAF decoding — FM, TEMPO, BECMG, PROB30 — and go/no-go use.
+- [What NOTAMs to Check](https://flightdecide.com/learn/what-notams-to-check/):
+  NOTAM types, a practical triage order, TFRs, and the "no NOTAMs" trap.
+
 ## Pages
 
 - [Home](https://flightdecide.com/): product overview, features, pricing.

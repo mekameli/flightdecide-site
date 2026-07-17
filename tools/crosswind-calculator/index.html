@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crosswind Calculator — Headwind &amp; Crosswind Component | FlightDecide</title>
+  <meta name="description" content="Free crosswind component calculator for pilots. Enter runway heading, wind direction, speed, and gusts to get headwind and crosswind components instantly — plus the formula, the clock rule of thumb, and demonstrated crosswind guidance." />
+  <link rel="canonical" href="https://flightdecide.com/tools/crosswind-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Crosswind Calculator — Headwind &amp; Crosswind Component" />
+  <meta property="og:description" content="Free crosswind component calculator for pilots: instant headwind and crosswind components with gust handling, plus the formula and demonstrated-crosswind guidance." />
+  <meta property="og:url" content="https://flightdecide.com/tools/crosswind-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide crosswind component calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crosswind Calculator — Headwind &amp; Crosswind Component" />
+  <meta name="twitter:description" content="Free crosswind component calculator for pilots: instant headwind and crosswind components with gust handling." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/crosswind-calculator/#app",
+        "name": "Crosswind Component Calculator",
+        "url": "https://flightdecide.com/tools/crosswind-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free crosswind and headwind component calculator for pilots. Enter runway heading, wind direction, wind speed, and gusts to get steady and gust crosswind components instantly.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/crosswind-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate the crosswind component?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Crosswind component = wind speed × sin(angle between the wind direction and the runway heading). Headwind component = wind speed × cos(that same angle). For example, a 20-knot wind at 40° off the runway gives a crosswind of 20 × sin(40°) ≈ 13 knots and a headwind of 20 × cos(40°) ≈ 15 knots."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the demonstrated crosswind component a limitation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The demonstrated crosswind component published in the POH is the highest crosswind a test pilot actually demonstrated during certification — it is not an aircraft limitation unless your POH explicitly states it as one. Your real limit is your own proficiency; most instructors recommend setting a personal crosswind maximum below the demonstrated value and raising it gradually with recent practice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I use magnetic or true wind direction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Match the reference of your wind source to the runway. Runway numbers are magnetic. Winds in a METAR or TAF are given in degrees true, while winds from ATIS, AWOS/ASOS voice broadcasts, and tower controllers are magnetic. So winds heard over the radio compare directly to the runway number; winds read from a written METAR should be corrected for magnetic variation where variation is large."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should gusts factor into a crosswind decision?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Compute the crosswind component at the gust speed, not just the steady wind — the gust value is what will hit you in the flare. A common technique is to carry half the gust factor as extra approach speed, and to compare the gust crosswind component against your personal maximum. If the gust component exceeds your limit, treat it as exceeding your limit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a reasonable personal crosswind limit for a student pilot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most instructors start student pilots with a personal crosswind maximum around 5–8 knots and raise it as landings in wind become consistent. A newly certificated private pilot commonly uses something near half to two-thirds of the aircraft's demonstrated component, increasing it only with recent, deliberate crosswind practice."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Crosswind Calculator", "item": "https://flightdecide.com/tools/crosswind-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Crosswind Calculator</h1>
+    <p class="page-sub">Enter your runway, wind direction, speed, and gusts. Get the headwind and crosswind components instantly — including the gust component that actually matters in the flare.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Crosswind Calculator</p>
+
+    <p class="lede"><strong>Crosswind component = wind speed × sin(angle between wind and runway); headwind component = wind speed × cos(angle).</strong> A 20-knot wind 40° off the runway is a 13-knot crosswind and a 15-knot headwind. Use the calculator below with the gust value to see the worst case, then compare it against your personal maximum — not the POH's demonstrated number.</p>
+
+    <div class="calc-card" id="calculator">
+      <div class="calc-grid">
+        <div class="calc-field">
+          <label for="rwy">Runway heading (°)</label>
+          <input type="number" id="rwy" inputmode="numeric" min="0" max="360" step="1" value="270" />
+          <p class="calc-hint">Runway number × 10 (Runway 27 → 270)</p>
+        </div>
+        <div class="calc-field">
+          <label for="wdir">Wind direction (°)</label>
+          <input type="number" id="wdir" inputmode="numeric" min="0" max="360" step="1" value="310" />
+          <p class="calc-hint">Direction the wind is <em>from</em></p>
+        </div>
+        <div class="calc-field">
+          <label for="wspd">Wind speed (kt)</label>
+          <input type="number" id="wspd" inputmode="numeric" min="0" max="150" step="1" value="15" />
+        </div>
+        <div class="calc-field">
+          <label for="wgst">Gusting to (kt, optional)</label>
+          <input type="number" id="wgst" inputmode="numeric" min="0" max="200" step="1" placeholder="—" />
+        </div>
+      </div>
+      <div class="calc-results">
+        <div class="result-tile" id="tile-head">
+          <span class="result-label" id="head-label">Headwind</span>
+          <span class="result-value" id="head-val">–</span>
+          <span class="result-note">steady</span>
+        </div>
+        <div class="result-tile result-blue">
+          <span class="result-label" id="cross-label">Crosswind</span>
+          <span class="result-value" id="cross-val">–</span>
+          <span class="result-note" id="cross-note">steady</span>
+        </div>
+        <div class="result-tile result-amber" id="tile-gust" style="display:none">
+          <span class="result-label">Gust crosswind</span>
+          <span class="result-value" id="gust-val">–</span>
+          <span class="result-note">compare this to your limit</span>
+        </div>
+      </div>
+      <p class="calc-hint" style="margin-top:14px" id="angle-note"></p>
+    </div>
+
+    <h2>How the crosswind component is calculated</h2>
+    <p>The wind is split into two right-angle pieces relative to the runway centerline:</p>
+    <ul>
+      <li><strong>Crosswind component</strong> = wind speed × sin(θ)</li>
+      <li><strong>Headwind component</strong> = wind speed × cos(θ)</li>
+    </ul>
+    <p>where θ is the angle between the wind direction and the runway heading. At 90° off the runway the whole wind is crosswind; directly down the runway it is all headwind. A negative headwind is a tailwind — which affects landing distance far more than most pilots expect.</p>
+
+    <h2>The clock rule of thumb (no calculator needed)</h2>
+    <p>Picture the angle off the runway as minutes on a clock face:</p>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Wind angle off runway</th><th>Crosswind ≈</th></tr></thead>
+      <tbody>
+        <tr><td>15° ("15 minutes = quarter")</td><td>¼ of wind speed</td></tr>
+        <tr><td>30° ("half past")</td><td>½ of wind speed</td></tr>
+        <tr><td>45° ("three quarters")</td><td>¾ of wind speed</td></tr>
+        <tr><td>60° or more ("top of the hour")</td><td>all of it</td></tr>
+      </tbody>
+    </table></div>
+    <p>It slightly overestimates — which is the right direction to err for a go/no-go call on the runway.</p>
+
+    <h2>Demonstrated crosswind is not a limit — but it is a reference</h2>
+    <p>The "maximum demonstrated crosswind component" in your POH is what a certification test pilot actually flew, typically about 0.2 × V<sub>S0</sub>. Unless your POH lists it as a limitation, exceeding it is legal — but the airplane has not been shown to be controllable there, and you are the test pilot. Typical published values (always verify in <em>your</em> POH, they vary by model year):</p>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Aircraft</th><th>Typical demonstrated crosswind</th></tr></thead>
+      <tbody>
+        <tr><td>Cessna 152</td><td>12 kt</td></tr>
+        <tr><td>Cessna 172S Skyhawk</td><td>15 kt</td></tr>
+        <tr><td>Piper PA-28-181 Archer</td><td>17 kt</td></tr>
+        <tr><td>Cessna 182 Skylane</td><td>15 kt</td></tr>
+        <tr><td>Cirrus SR22</td><td>20–21 kt</td></tr>
+      </tbody>
+    </table></div>
+    <p>What matters day to day is your <strong>personal crosswind maximum</strong> — a number you set below the demonstrated value based on how recently you have practiced. Our <a href="/tools/personal-minimums-worksheet/">personal minimums worksheet</a> walks you through setting one, and <a href="/learn/personal-minimums/">this guide</a> explains how to keep it honest.</p>
+
+    <h2>Gusts: calculate the component at the gust speed</h2>
+    <p>A "15 gusting 25" report is not a 15-knot problem. Run the calculation at 25 knots: that is the crosswind that will arrive, without notice, at 20 feet. Two working habits:</p>
+    <ul>
+      <li>Add roughly <strong>half the gust factor</strong> to your approach speed (the difference between steady and gust, divided by two).</li>
+      <li>Judge the <strong>gust crosswind component</strong> against your personal maximum. If the gust component is over your limit, the wind is over your limit.</li>
+    </ul>
+
+    <h2>Magnetic vs. true: use matching references</h2>
+    <p>Runway numbers are magnetic headings. Winds from ATIS, AWOS/ASOS, and the tower are magnetic too — compare those directly. Winds printed in a METAR or TAF are in degrees <em>true</em>; where magnetic variation is large (the U.S. Pacific Northwest, much of Canada), correct them before computing a component that matters. "Written true, spoken magnetic" is the memory aid.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is the demonstrated crosswind component a limitation?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>No — it is the highest crosswind demonstrated during certification, not a limit, unless your POH explicitly lists it as one. Your operative limit should be a personal maximum you set below it and raise only with recent practice.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is a reasonable crosswind limit for a student pilot?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Most instructors start students around 5–8 knots and raise the number as wind landings become consistent. A new private pilot commonly flies with a personal max near half to two-thirds of the demonstrated component.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does this calculator handle tailwinds?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Yes. If the wind is behind the runway heading, the headwind tile flips to a tailwind and turns red. Even a few knots of tailwind meaningfully increases landing distance — check your POH's tailwind performance limits (many are certified only to 10 knots).</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>How hot-and-high conditions change the runway your airplane thinks it's on.</p></a>
+      <a class="card-link" href="/tools/personal-minimums-worksheet/"><h3>Personal Minimums Worksheet</h3><p>Set your own ceiling, visibility, and wind numbers — before the pressure to fly shows up.</p></a>
+      <a class="card-link" href="/learn/go-no-go-decision-framework/"><h3>The Go/No-Go Decision Framework</h3><p>A repeatable structure for the decision this calculator feeds into.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Winds are one of eight risk categories</h2>
+      <p>FlightDecide scores winds alongside ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B for your specific flight window and aircraft — then gives you a GO / CAUTION / NO GO advisory you can verify against the raw data.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Airplane Flying Handbook</em> (FAA-H-8083-3C), Ch. 9; 14 CFR §23.2165. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const rad = (d) => d * Math.PI / 180;
+
+      function compute() {
+        const rwy = parseFloat($('rwy').value);
+        const wdir = parseFloat($('wdir').value);
+        const wspd = parseFloat($('wspd').value);
+        const wgst = parseFloat($('wgst').value);
+        if (isNaN(rwy) || isNaN(wdir) || isNaN(wspd)) return;
+
+        // Signed angle wind-from relative to runway, in (-180, 180]
+        const diff = ((wdir - rwy + 540) % 360) - 180;
+        const cross = wspd * Math.sin(rad(Math.abs(diff)));
+        const head = wspd * Math.cos(rad(diff));
+        const side = Math.abs(diff) < 0.5 || Math.abs(Math.abs(diff) - 180) < 0.5
+          ? '' : (diff > 0 ? 'from the right' : 'from the left');
+
+        const headTile = $('tile-head');
+        if (head >= 0) {
+          $('head-label').textContent = 'Headwind';
+          $('head-val').textContent = Math.round(head) + ' kt';
+          headTile.className = 'result-tile result-green';
+        } else {
+          $('head-label').textContent = 'Tailwind';
+          $('head-val').textContent = Math.round(-head) + ' kt';
+          headTile.className = 'result-tile result-red';
+        }
+
+        $('cross-val').textContent = Math.round(cross) + ' kt';
+        $('cross-note').textContent = side ? 'steady, ' + side : 'steady';
+
+        const gustTile = $('tile-gust');
+        if (!isNaN(wgst) && wgst > wspd) {
+          gustTile.style.display = '';
+          $('gust-val').textContent = Math.round(wgst * Math.sin(rad(Math.abs(diff)))) + ' kt';
+        } else {
+          gustTile.style.display = 'none';
+        }
+
+        $('angle-note').textContent = 'Wind is ' + Math.round(Math.abs(diff)) +
+          '° off the runway heading' + (side ? ' ' + side : '') + '.';
+      }
+
+      ['rwy', 'wdir', 'wspd', 'wgst'].forEach((id) => $(id).addEventListener('input', compute));
+      compute();
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

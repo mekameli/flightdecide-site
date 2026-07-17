@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Minimums Worksheet for Pilots | FlightDecide</title>
+  <meta name="description" content="Free printable personal minimums worksheet for pilots. Set your own ceiling, visibility, wind, and performance numbers using the FAA approach — fill it in, save it in your browser, and print it." />
+  <link rel="canonical" href="https://flightdecide.com/tools/personal-minimums-worksheet/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Personal Minimums Worksheet for Pilots" />
+  <meta property="og:description" content="Free printable personal minimums worksheet: set your own ceiling, visibility, wind, and performance numbers using the FAA approach, then print it for your kneeboard." />
+  <meta property="og:url" content="https://flightdecide.com/tools/personal-minimums-worksheet/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide personal minimums worksheet for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Personal Minimums Worksheet for Pilots" />
+  <meta name="twitter:description" content="Free printable personal minimums worksheet: set your own ceiling, visibility, wind, and performance numbers, then print it for your kneeboard." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <style>
+    .calc-field-cell {
+      width: 100%;
+      min-width: 90px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-bright);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 15px;
+      padding: 7px 10px;
+      font-family: inherit;
+    }
+    .calc-field-cell:focus { outline: none; border-color: var(--accent-blue); }
+    .adj-list { list-style: none; margin-left: 0; }
+    .adj-list label { display: flex; gap: 10px; align-items: baseline; cursor: pointer; }
+    .btn-secondary {
+      background: none;
+      border: 1px solid var(--border-bright);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 650;
+      padding: 12px 22px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .btn-secondary:hover { color: var(--text); border-color: var(--text-muted); }
+    @media print {
+      .calc-field-cell { background: #fff; color: #111; border-color: #999; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/personal-minimums-worksheet/#app",
+        "name": "Personal Minimums Worksheet",
+        "url": "https://flightdecide.com/tools/personal-minimums-worksheet/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free printable personal minimums worksheet for pilots. Fill in your own ceiling, visibility, wind, and performance minimums following the FAA personal minimums development approach; entries save in your browser and the page prints cleanly.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/personal-minimums-worksheet/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are personal minimums?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Personal minimums are your own pre-set numbers — ceiling, visibility, wind, runway performance, fuel reserve — below which you will not fly, decided calmly on the ground rather than under pressure at the airport. They sit above the legal minimums and below the aircraft's demonstrated capability, at the level where you are genuinely comfortable and proficient."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are personal minimums different from legal minimums?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Legal minimums (basic VFR weather minimums, IFR approach minima, fuel reserves in 14 CFR 91.151/91.167) are the floor for everyone and assume nothing about your recency or experience. Personal minimums are stricter numbers you set for yourself that account for your actual proficiency, your aircraft, and your typical missions. Flying at legal minimums is legal; whether it is smart depends on the pilot — that gap is exactly what personal minimums manage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should I update my personal minimums?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Review them every 6 to 12 months, after a flight review or new rating, after moving to a new aircraft or region, and after any flight that scared you. Follow the raise-slowly, lower-quickly rule: loosen a minimum only in small steps backed by recent deliberate practice, but tighten it immediately when you lose currency or comfort."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should a new private pilot's minimums look like?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A common starting point for a newly certificated private pilot is day-VFR ceilings around 3,000 ft and visibility around 5 statute miles, crosswinds near half the aircraft's demonstrated component, night minimums noticeably higher than day, runway at least 1.5 times the POH takeoff or landing distance, and an hour of fuel on landing. There is no official table — pick numbers that feel conservative today and earn your way down with experience."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Personal Minimums Worksheet", "item": "https://flightdecide.com/tools/personal-minimums-worksheet/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Personal Minimums Worksheet</h1>
+    <p class="page-sub">Set your own ceiling, visibility, wind, and performance numbers — on the ground, before the pressure to fly shows up. Fill it in, it saves in your browser, and it prints cleanly for your kneeboard.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Personal Minimums Worksheet</p>
+
+    <p class="lede"><strong>Personal minimums are your own pre-set weather, wind, and performance numbers — decided calmly on the ground, set above the legal minimums and below the aircraft's demonstrated values — that turn a fuzzy "should I go?" into a number you either meet or don't.</strong> The worksheet below follows the FAA's personal minimums development approach: start from your experience, set the numbers, then subtract margin when today's flight carries extra risk factors.</p>
+
+    <div class="calc-card" id="worksheet">
+
+      <h3 style="margin-top:0">1 · Certification and experience baseline</h3>
+      <p class="calc-hint" style="margin-bottom:14px">Your minimums should reflect who you are as a pilot today, not who you were at your checkride.</p>
+      <div class="calc-grid">
+        <div class="calc-field">
+          <label for="pm-cert">Certificate &amp; ratings</label>
+          <input type="text" id="pm-cert" placeholder="e.g. Private ASEL, instrument" />
+        </div>
+        <div class="calc-field">
+          <label for="pm-total">Total hours</label>
+          <input type="number" id="pm-total" inputmode="numeric" min="0" step="1" placeholder="—" />
+        </div>
+        <div class="calc-field">
+          <label for="pm-90">Hours in last 90 days</label>
+          <input type="number" id="pm-90" inputmode="numeric" min="0" step="1" placeholder="—" />
+        </div>
+        <div class="calc-field">
+          <label for="pm-type">Hours in type</label>
+          <input type="number" id="pm-type" inputmode="numeric" min="0" step="1" placeholder="—" />
+        </div>
+      </div>
+
+      <h3>2 · Weather minimums</h3>
+      <p class="calc-hint" style="margin-bottom:14px">Set night numbers higher than day. The IFR column is for instrument-rated, instrument-current pilots — leave it blank otherwise.</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Minimum</th><th>Day VFR</th><th>Night VFR</th><th>IFR (approach)</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Ceiling (ft)</strong></td>
+            <td><input class="calc-field-cell" type="text" id="pm-ceil-day" inputmode="numeric" placeholder="e.g. 3000" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-ceil-night" inputmode="numeric" placeholder="e.g. 5000" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-ceil-ifr" placeholder="e.g. mins + 500" /></td>
+          </tr>
+          <tr>
+            <td><strong>Visibility (sm)</strong></td>
+            <td><input class="calc-field-cell" type="text" id="pm-vis-day" inputmode="numeric" placeholder="e.g. 5" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-vis-night" inputmode="numeric" placeholder="e.g. 7" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-vis-ifr" placeholder="e.g. mins + 1" /></td>
+          </tr>
+          <tr>
+            <td><strong>Crosswind (kt)</strong></td>
+            <td><input class="calc-field-cell" type="text" id="pm-xwind-day" inputmode="numeric" placeholder="e.g. 8" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-xwind-night" inputmode="numeric" placeholder="e.g. 6" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-xwind-ifr" placeholder="—" /></td>
+          </tr>
+          <tr>
+            <td><strong>Total wind / gust (kt)</strong></td>
+            <td><input class="calc-field-cell" type="text" id="pm-wind-day" inputmode="numeric" placeholder="e.g. 20G25" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-wind-night" inputmode="numeric" placeholder="e.g. 15G20" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-wind-ifr" placeholder="—" /></td>
+          </tr>
+        </tbody>
+      </table></div>
+      <p class="calc-hint" style="margin-bottom:20px">Not sure where your crosswind number should sit? Run today's wind through the <a href="/tools/crosswind-calculator/">crosswind calculator</a> and compare it against what you have actually practiced recently.</p>
+
+      <h3>3 · Performance margins</h3>
+      <div class="calc-grid">
+        <div class="calc-field">
+          <label for="pm-rwy">Minimum runway (× POH distance)</label>
+          <input type="text" id="pm-rwy" placeholder="e.g. 1.5× book takeoff/landing distance" />
+          <p class="calc-hint">The FAA-suggested starting factor is 1.5 × the POH figure</p>
+        </div>
+        <div class="calc-field">
+          <label for="pm-fuel">Fuel reserve on landing</label>
+          <input type="text" id="pm-fuel" placeholder="e.g. 60 min" />
+          <p class="calc-hint">Beyond the legal 30 min day / 45 min night (14 CFR 91.151)</p>
+        </div>
+        <div class="calc-field">
+          <label for="pm-da">Max density altitude (ft)</label>
+          <input type="text" id="pm-da" inputmode="numeric" placeholder="e.g. 7000" />
+          <p class="calc-hint">Check today's number with the <a href="/tools/density-altitude-calculator/">density altitude calculator</a></p>
+        </div>
+        <div class="calc-field">
+          <label for="pm-notes">Other margins / notes</label>
+          <input type="text" id="pm-notes" placeholder="e.g. no strange-field night landings" />
+        </div>
+      </div>
+
+      <h3>4 · Adjustments — subtract from your minimums when…</h3>
+      <p class="calc-hint" style="margin-bottom:14px">When any of these apply to today's flight, tighten the numbers above (for example: add 500 ft of ceiling, 1 sm of visibility, subtract 5 kt of wind). Never loosen them on the day of the flight.</p>
+      <ul class="adj-list">
+        <li><label><input type="checkbox" id="pm-adj-unfam" /> <span>Unfamiliar airport or unfamiliar terrain</span></label></li>
+        <li><label><input type="checkbox" id="pm-adj-landings" /> <span>Fewer than 3 landings in the last 30 days</span></label></li>
+        <li><label><input type="checkbox" id="pm-adj-gap" /> <span>First flight after more than 30 days out of the cockpit</span></label></li>
+        <li><label><input type="checkbox" id="pm-adj-newtype" /> <span>Fewer than 10 hours in this make and model</span></label></li>
+        <li><label><input type="checkbox" id="pm-adj-pressure" /> <span>Passengers, a schedule, or an event creating pressure to go</span></label></li>
+        <li><label><input type="checkbox" id="pm-adj-nightterrain" /> <span>Night flight over terrain or water with few landing options</span></label></li>
+        <li><label><input type="checkbox" id="pm-adj-marginal" /> <span>Forecast trending worse, or conditions already near your numbers</span></label></li>
+        <li><label><input type="checkbox" id="pm-adj-imsafe" /> <span>Tired, stressed, medicated, or otherwise not 100% (IMSAFE)</span></label></li>
+      </ul>
+
+      <div class="calc-grid" style="margin-top:18px">
+        <div class="calc-field">
+          <label for="pm-signed">Completed by</label>
+          <input type="text" id="pm-signed" placeholder="Your name" />
+        </div>
+        <div class="calc-field">
+          <label for="pm-date">Date / next review</label>
+          <input type="text" id="pm-date" placeholder="e.g. Jul 2026, review Jan 2027" />
+        </div>
+      </div>
+
+      <div class="no-print" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:22px">
+        <button class="btn-primary" type="button" onclick="window.print()">Print this worksheet</button>
+        <button type="button" id="pm-clear" class="btn-secondary">Clear worksheet</button>
+      </div>
+      <p class="calc-hint no-print" style="margin-top:10px">Entries save automatically in this browser (nothing is uploaded anywhere). Print a copy and keep it with your kneeboard or flight bag.</p>
+    </div>
+
+    <h2>Why set the numbers before the pressure shows up</h2>
+    <p>Every marginal-weather accident report reads the same way in hindsight: the pilot made the go decision at the airport, with passengers loaded, a schedule slipping, and the weather "probably good enough." Under that kind of pressure, human judgment reliably bends toward go. Personal minimums move the decision to a moment when nothing is at stake — your kitchen table, months in advance. On the day of the flight the question stops being "do I feel okay about this?" and becomes "is the ceiling above my number or not?" A number cannot be negotiated with by a disappointed passenger.</p>
+    <p>They also close the gap between what is legal and what is smart for <em>you</em>. Basic VFR minimums make no promise that a 1,200-ft ceiling and 3 miles of haze are flyable by a 90-hour private pilot who hasn't flown in six weeks. Your worksheet numbers should sit well above the regulatory floor and below the airplane's demonstrated capability, at the level of your actual recent proficiency.</p>
+
+    <h2>How to review and adjust them</h2>
+    <p>Personal minimums are a living document, not a plaque. Review the worksheet every 6 to 12 months, and re-open it whenever something material changes: a flight review or new rating, a new aircraft type, a move to different terrain or weather patterns, or a flight that genuinely scared you. When conditions on a given day carry the extra risk factors in Section 4, tighten the numbers for that flight — decide the specific adjustment (say, +500 ft of ceiling, +1 sm of visibility, −5 kt of wind) before you look at the forecast, not after.</p>
+    <p>The governing habit is <strong>"raise slowly, lower quickly."</strong> Loosen a minimum only in small increments, each backed by recent deliberate practice — a few dual crosswind sessions before your crosswind number goes from 8 to 10 knots. But tighten immediately and without ceremony the moment you lose currency, change aircraft, or notice your comfort eroding. Minimums that only ever ratchet looser are not minimums; they are a record of luck.</p>
+    <p>For the decision process these numbers plug into, read <a href="/learn/go-no-go-decision-framework/">the go/no-go decision framework</a>. For a deeper treatment of setting and keeping honest minimums, see <a href="/learn/personal-minimums/">the full personal minimums guide</a>.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What are personal minimums?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Your own pre-set numbers — ceiling, visibility, wind, runway performance, fuel reserve — below which you will not fly, decided calmly on the ground rather than under pressure at the airport. They sit above the legal minimums and below the aircraft's demonstrated capability, at the level where you are genuinely comfortable and proficient.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How are personal minimums different from legal minimums?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Legal minimums — basic VFR weather minimums, IFR approach minima, the fuel reserves in 14 CFR 91.151 and 91.167 — are the floor for everyone and assume nothing about your recency or experience. Personal minimums are stricter numbers you set for yourself that account for your actual proficiency, your aircraft, and your typical missions. Flying at legal minimums is legal; whether it is smart depends on the pilot — that gap is exactly what personal minimums manage.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How often should I update my personal minimums?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Review them every 6 to 12 months, after a flight review or new rating, after moving to a new aircraft or region, and after any flight that scared you. Follow the raise-slowly, lower-quickly rule: loosen a minimum only in small steps backed by recent deliberate practice, but tighten it immediately when you lose currency or comfort.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What should a new private pilot's minimums look like?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>A common starting point: day-VFR ceilings around 3,000 ft and visibility around 5 statute miles, crosswinds near half the aircraft's demonstrated component, night minimums noticeably higher than day, runway at least 1.5 × the POH takeoff or landing distance, and an hour of fuel on landing. There is no official table — pick numbers that feel conservative today and earn your way down with experience.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/learn/personal-minimums/"><h3>Personal Minimums: The Full Guide</h3><p>Where the numbers come from, how to keep them honest, and how to say no gracefully.</p></a>
+      <a class="card-link" href="/tools/crosswind-calculator/"><h3>Crosswind Calculator</h3><p>Turn today's wind into a component you can compare against your Section 2 number.</p></a>
+      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>Check today's density altitude against your Section 3 maximum.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Your minimums, checked automatically</h2>
+      <p>FlightDecide compares the actual forecast for your flight window against risk thresholds across eight categories — winds, ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B — and gives you a GO / CAUTION / NO GO advisory you can verify against the raw data.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational worksheet for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Risk Management Handbook</em> (FAA-H-8083-2A); FAA Personal Minimums Worksheet and "Getting the Maximum from Personal Minimums" (<em>FAA Safety Briefing</em>). Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const KEY = 'fd-personal-minimums-v1';
+      const fields = Array.from(document.querySelectorAll('#worksheet input'));
+
+      function save() {
+        const data = {};
+        fields.forEach(function (el) {
+          data[el.id] = el.type === 'checkbox' ? el.checked : el.value;
+        });
+        try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { /* storage unavailable */ }
+      }
+
+      function restore() {
+        let data;
+        try { data = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { return; }
+        fields.forEach(function (el) {
+          if (!(el.id in data)) return;
+          if (el.type === 'checkbox') { el.checked = !!data[el.id]; }
+          else { el.value = data[el.id]; }
+        });
+      }
+
+      fields.forEach(function (el) {
+        el.addEventListener('input', save);
+        el.addEventListener('change', save);
+      });
+      restore();
+
+      document.getElementById('pm-clear').addEventListener('click', function () {
+        fields.forEach(function (el) {
+          if (el.type === 'checkbox') { el.checked = false; } else { el.value = ''; }
+        });
+        try { localStorage.removeItem(KEY); } catch (e) { /* storage unavailable */ }
+      });
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

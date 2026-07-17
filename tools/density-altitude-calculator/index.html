@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Density Altitude Calculator for Pilots | FlightDecide</title>
+  <meta name="description" content="Free density altitude calculator for pilots. Enter field elevation, altimeter setting, and temperature to get pressure altitude and density altitude instantly — plus the formula, a worked example, and rules of thumb." />
+  <link rel="canonical" href="https://flightdecide.com/tools/density-altitude-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Density Altitude Calculator for Pilots" />
+  <meta property="og:description" content="Free density altitude calculator: instant pressure altitude and density altitude from field elevation, altimeter setting, and temperature — plus the formula and a worked example." />
+  <meta property="og:url" content="https://flightdecide.com/tools/density-altitude-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide density altitude calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Density Altitude Calculator for Pilots" />
+  <meta name="twitter:description" content="Free density altitude calculator: instant pressure altitude and density altitude from field elevation, altimeter setting, and temperature." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/density-altitude-calculator/#app",
+        "name": "Density Altitude Calculator",
+        "url": "https://flightdecide.com/tools/density-altitude-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free density altitude calculator for pilots. Enter field elevation, altimeter setting, and outside air temperature to get pressure altitude, ISA temperature, and density altitude instantly.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/density-altitude-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is density altitude in simple terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Density altitude is the altitude your airplane thinks it is at. It is pressure altitude corrected for temperature: on a hot day the air is thinner than the field elevation suggests, so the wing, propeller, and engine all perform as if the airport were sitting thousands of feet higher. A 5,000-foot airport at 30 °C performs like an airport near 8,000 feet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate density altitude from a METAR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Take the altimeter setting and temperature from the METAR and the field elevation from the chart supplement or your EFB. Pressure altitude = field elevation + (29.92 − altimeter setting) × 1,000. Then density altitude ≈ pressure altitude + 120 × (OAT in °C − ISA temperature), where ISA temperature = 15 − 2 × (pressure altitude ÷ 1,000). Many AWOS/ASOS stations also broadcast density altitude directly when it is well above field elevation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does humidity affect density altitude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, but less than temperature does. Water vapor is lighter than dry air, so humid air is slightly less dense — high humidity adds a few hundred feet of effective density altitude on a hot day and measurably reduces engine power. The standard rule-of-thumb formula (and this calculator) does not include humidity, so on hot, muggy days treat the computed number as slightly optimistic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "At what density altitude should I be concerned?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no single regulatory threshold — it depends on your aircraft, weight, and runway. As working guidance, start paying close attention whenever density altitude is several thousand feet above field elevation or above roughly 5,000 to 6,000 feet at your weight, and run actual POH takeoff and climb numbers rather than estimating. Many mountain-flying instructors treat high density altitude plus a heavy airplane plus a short runway as a no-go until at least one of the three improves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my airplane climb so poorly at high density altitude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three things degrade at once: a normally aspirated engine makes less power in thinner air, the propeller produces less thrust, and the wing needs a higher true airspeed to generate the same lift. The result is a longer takeoff roll and a climb rate that can shrink to a fraction of the sea-level book number — while indicated airspeeds and technique feel deceptively normal."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Density Altitude Calculator", "item": "https://flightdecide.com/tools/density-altitude-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Density Altitude Calculator</h1>
+    <p class="page-sub">Enter field elevation, altimeter setting, and temperature. Get pressure altitude and density altitude instantly — and see how much runway performance you're really working with.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Density Altitude Calculator</p>
+
+    <p class="lede"><strong>Pressure altitude = field elevation + (29.92 − altimeter setting) × 1,000. Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft — your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
+
+    <div class="calc-card" id="calculator">
+      <div class="calc-grid">
+        <div class="calc-field">
+          <label for="elev">Field elevation (ft)</label>
+          <input type="number" id="elev" inputmode="numeric" min="-1000" max="15000" step="1" value="5000" />
+          <p class="calc-hint">From the chart supplement or your EFB</p>
+        </div>
+        <div class="calc-field">
+          <label for="altim">Altimeter setting (inHg)</label>
+          <input type="number" id="altim" inputmode="decimal" min="27" max="32" step="0.01" value="29.92" />
+          <p class="calc-hint">From the METAR / AWOS ("A2992" → 29.92)</p>
+        </div>
+        <div class="calc-field">
+          <label for="oat">Temperature (°C)</label>
+          <input type="number" id="oat" inputmode="numeric" min="-60" max="60" step="1" value="30" />
+          <p class="calc-hint">Outside air temperature at the field</p>
+        </div>
+        <div class="calc-field">
+          <label for="dew">Dew point (°C, optional)</label>
+          <input type="number" id="dew" inputmode="numeric" min="-60" max="40" step="1" placeholder="—" />
+          <p class="calc-hint">Used only to flag high humidity</p>
+        </div>
+      </div>
+      <div class="calc-results">
+        <div class="result-tile">
+          <span class="result-label">Pressure altitude</span>
+          <span class="result-value" id="pa-val">–</span>
+          <span class="result-note">ft</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">ISA temp at that altitude</span>
+          <span class="result-value" id="isa-val">–</span>
+          <span class="result-note">standard temperature</span>
+        </div>
+        <div class="result-tile result-blue" id="tile-da">
+          <span class="result-label">Density altitude</span>
+          <span class="result-value" id="da-val">–</span>
+          <span class="result-note">ft — use this for performance</span>
+        </div>
+        <div class="result-tile" id="tile-perf">
+          <span class="result-label">Performance note</span>
+          <span class="result-value" id="perf-val">–</span>
+          <span class="result-note" id="perf-note">vs. field elevation</span>
+        </div>
+      </div>
+      <p class="calc-hint" style="margin-top:14px" id="humid-note"></p>
+    </div>
+
+    <h2>What density altitude actually is</h2>
+    <p>Density altitude is pressure altitude corrected for non-standard temperature — the altitude in the standard atmosphere at which the air would be as thin as it is right now at your airport. Your wing, propeller, and normally aspirated engine do not care about the number painted on the airport sign; they care about air density. When the air is hot, the airplane performs as if the airport were much higher, even though your altimeter still reads field elevation on the ramp.</p>
+    <p>Two steps get you the number:</p>
+    <ul>
+      <li><strong>Pressure altitude</strong> = field elevation + (29.92 − altimeter setting) × 1,000. A low-pressure day (29.42) adds 500 ft; a high-pressure day (30.42) subtracts 500 ft.</li>
+      <li><strong>Density altitude</strong> ≈ pressure altitude + 120 × (OAT − ISA temp), where <strong>ISA temp</strong> = 15 − 2 × (pressure altitude ÷ 1,000) °C. Every degree warmer than standard adds roughly 120 ft.</li>
+    </ul>
+    <p>This is the standard rule-of-thumb formula from the FAA handbooks. A Koch chart, E6B, or your EFB may read slightly higher because they model the atmosphere more exactly — treat the rule of thumb as a floor, not a precise answer.</p>
+
+    <h2>Worked example: 5,000 ft and 30 °C</h2>
+    <p>Say you're departing a 5,000-ft-elevation airport on a summer afternoon: altimeter 29.92, temperature 30 °C.</p>
+    <ul>
+      <li>Pressure altitude = 5,000 + (29.92 − 29.92) × 1,000 = <strong>5,000 ft</strong></li>
+      <li>ISA temp at 5,000 ft = 15 − 2 × 5 = <strong>+5 °C</strong></li>
+      <li>Density altitude ≈ 5,000 + 120 × (30 − 5) = 5,000 + 3,000 ≈ <strong>8,000 ft</strong></li>
+    </ul>
+    <p>The airplane you flight-planned for a 5,000-ft airport is actually operating around 8,000 ft — and a chart or E6B will put it a few hundred feet higher still. If your POH takeoff table stops looking comfortable at that line, that is your answer.</p>
+
+    <h2>Why hot, high, and humid kills climb performance</h2>
+    <p>Thin air hits you three ways at once. The engine develops less power because each intake stroke pulls in fewer air molecules (a normally aspirated engine loses power on the order of a few percent per 1,000 ft of density altitude). The propeller is a rotating wing, so it produces less thrust in the same thin air. And the wing needs a higher true airspeed — meaning a longer ground roll — to produce the same lift. Humidity piles on quietly: water vapor is lighter than dry air, so muggy air is less dense still and the engine loses additional power. The rule-of-thumb formula ignores humidity entirely, which is one more reason to leave margin on hot, humid days.</p>
+    <p>The insidious part is that nothing feels wrong. Indicated airspeeds for rotation and climb are the same as always; the airplane simply accelerates slower, uses more runway, and climbs at a fraction of the book sea-level rate.</p>
+
+    <h2>The classic accident pattern</h2>
+    <p>Density altitude accidents follow a script the NTSB has documented for decades: a high-elevation airport on a hot afternoon, an airplane loaded to (or past) gross weight, a runway that would be fine on a cool morning, and rising terrain off the departure end. The takeoff roll is long but the airplane flies off — then it won't climb out of ground effect, or climbs at 150 fpm toward terrain that rises faster. Each factor alone is manageable; stacked together they close the escape routes. The standard outs are equally well known: depart in the cool of early morning, offload fuel or people, use the longest runway, and lean the mixture for maximum power per the POH before takeoff at high density altitude.</p>
+
+    <h2>Finding density altitude from an AWOS or METAR</h2>
+    <p>Many AWOS/ASOS broadcasts announce density altitude directly ("density altitude two thousand eight hundred") whenever it is well above field elevation — listen for it at the end of the broadcast. If it isn't announced, pull the two numbers you need from the METAR: the altimeter setting (the group starting with "A", so <code>A2992</code> is 29.92 inHg) and the temperature (the first half of the temperature/dew-point group, so <code>25/12</code> is 25 °C). Combine those with field elevation in the calculator above and you have it in seconds.</p>
+
+    <h2>Rules of thumb per 1,000 ft of density altitude</h2>
+    <p>Exact numbers belong to your POH, but these directional effects hold for typical normally aspirated GA airplanes:</p>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Per ~1,000 ft of density altitude</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr><td>Engine power (normally aspirated)</td><td>Drops roughly 3%</td></tr>
+        <tr><td>Takeoff ground roll</td><td>Grows meaningfully — check the POH table, and add the FAA's 50% safety margin on top</td></tr>
+        <tr><td>Rate of climb</td><td>Shrinks steadily; many trainers lose most of their sea-level climb by 8,000–10,000 ft DA</td></tr>
+        <tr><td>True airspeed at rotation</td><td>Higher for the same indicated speed — the ground roll is longer even before the power loss</td></tr>
+      </tbody>
+    </table></div>
+    <p>The FAA's <strong>Koch chart</strong> (in the Density Altitude pamphlet) makes the compounding vivid: its classic example — a 6,000-ft airport at 100 °F — shows takeoff distance increasing by roughly 230% and rate of climb decreasing by roughly 75% versus sea-level standard. If a chart tells you your climb rate drops by three quarters, believe it before the runway does.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is density altitude in simple terms?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>It is the altitude your airplane thinks it is at — pressure altitude corrected for temperature. On a hot day the air is thinner than the field elevation suggests, so the wing, propeller, and engine perform as if the airport were sitting thousands of feet higher. A 5,000-foot airport at 30 °C performs like an airport near 8,000 feet.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How do I calculate density altitude from a METAR?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Take the altimeter setting and temperature from the METAR and the field elevation from the chart supplement or your EFB. Pressure altitude = field elevation + (29.92 − altimeter setting) × 1,000. Then density altitude ≈ pressure altitude + 120 × (OAT − ISA temp), where ISA temp = 15 − 2 × (pressure altitude ÷ 1,000). Many AWOS/ASOS stations also broadcast density altitude directly when it is well above field elevation.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does humidity affect density altitude?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Yes, but less than temperature does. Water vapor is lighter than dry air, so humid air is slightly less dense — high humidity adds a few hundred feet of effective density altitude on a hot day and measurably cuts engine power. The rule-of-thumb formula (and this calculator) does not include humidity, so on hot, muggy days treat the computed number as slightly optimistic.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">At what density altitude should I be concerned?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>There is no single regulatory threshold — it depends on your aircraft, weight, and runway. As working guidance, start paying close attention whenever density altitude sits several thousand feet above field elevation or above roughly 5,000–6,000 ft at your weight, and run actual POH takeoff and climb numbers instead of estimating. Many mountain-flying instructors treat high DA + heavy airplane + short runway as a no-go until at least one of the three improves.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why does my airplane climb so poorly at high density altitude?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Three things degrade at once: the engine makes less power in thinner air, the propeller produces less thrust, and the wing needs a higher true airspeed for the same lift. The result is a longer takeoff roll and a climb rate that can shrink to a fraction of the sea-level book number — while indicated airspeeds and technique feel deceptively normal.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/crosswind-calculator/"><h3>Crosswind Calculator</h3><p>Headwind and crosswind components from runway, wind, and gusts — instantly.</p></a>
+      <a class="card-link" href="/tools/personal-minimums-worksheet/"><h3>Personal Minimums Worksheet</h3><p>Set your own ceiling, visibility, wind, and density-altitude numbers before the pressure to fly shows up.</p></a>
+      <a class="card-link" href="/learn/go-no-go-decision-framework/"><h3>The Go/No-Go Decision Framework</h3><p>A repeatable structure for the decision this calculator feeds into.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Performance is one of eight risk categories</h2>
+      <p>FlightDecide computes density altitude and runway performance for your specific aircraft and flight window — alongside winds, ceilings, visibility, NOTAMs, fuel, and W&amp;B — then gives you a GO / CAUTION / NO GO advisory you can verify against the raw data.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 4 &amp; 11; FAA <em>Density Altitude</em> pamphlet (FAA-P-8740-2). Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+
+      function compute() {
+        const elev = parseFloat($('elev').value);
+        const altim = parseFloat($('altim').value);
+        const oat = parseFloat($('oat').value);
+        const dew = parseFloat($('dew').value);
+        if (isNaN(elev) || isNaN(altim) || isNaN(oat)) return;
+
+        const pa = elev + (29.92 - altim) * 1000;
+        const isa = 15 - 2 * (pa / 1000);
+        const da = pa + 120 * (oat - isa);
+        const delta = da - elev;
+
+        const fmt = (n) => Math.round(n).toLocaleString('en-US');
+
+        $('pa-val').textContent = fmt(pa);
+        $('isa-val').textContent = (isa >= 0 ? '+' : '−') + Math.abs(isa).toFixed(1) + ' °C';
+        $('da-val').textContent = fmt(da);
+
+        const perfTile = $('tile-perf');
+        if (delta > 0) {
+          $('perf-val').textContent = '+' + fmt(delta) + ' ft';
+          $('perf-note').textContent = 'above field elevation — plan performance at ' + fmt(da) + ' ft';
+          perfTile.className = 'result-tile ' + (delta >= 3000 ? 'result-red' : delta >= 1500 ? 'result-amber' : 'result-green');
+        } else {
+          $('perf-val').textContent = fmt(delta) + ' ft';
+          $('perf-note').textContent = 'at or below field elevation — cool/dense air is working for you';
+          perfTile.className = 'result-tile result-green';
+        }
+
+        if (!isNaN(dew) && dew <= oat && (oat - dew) <= 4 && oat >= 15) {
+          $('humid-note').textContent = 'Dew point is within ' + Math.round(oat - dew) +
+            ' °C of the temperature — humid air is slightly less dense than this dry-air estimate assumes, so expect the true density altitude (and the performance hit) to be a bit worse.';
+        } else if (!isNaN(dew)) {
+          $('humid-note').textContent = 'Humidity is not included in this estimate; on warm, humid days the true density altitude runs somewhat higher than the dry-air number shown.';
+        } else {
+          $('humid-note').textContent = '';
+        }
+      }
+
+      ['elev', 'altim', 'oat', 'dew'].forEach((id) => $(id).addEventListener('input', compute));
+      compute();
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
