@@ -4,8 +4,8 @@
     {
       "slug": "demo",
       "display_name": "FlightDecide Demo Partner",
-      "code": "DEMO30",
-      "discount_label": "30% off"
+      "code": "FDTEST30",
+      "discount_label": "30% off your first year of Pilot"
     }
   ]
 }
