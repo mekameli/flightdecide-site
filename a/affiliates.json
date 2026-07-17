@@ -1,0 +1,11 @@
+{
+  "_comment": "FD-339 affiliate link-page registry. Human-edited. After changing, run `python3 scripts/gen_affiliate_pages.py` from the repo root and commit the regenerated website/a/<slug>/ pages. Each slug/code pair must match the backend affiliate row (POST /subscriptions/affiliates, FD-338) and the ASC custom offer code (FD-337) exactly.",
+  "affiliates": [
+    {
+      "slug": "demo",
+      "display_name": "FlightDecide Demo Partner",
+      "code": "DEMO30",
+      "discount_label": "30% off"
+    }
+  ]
+}
