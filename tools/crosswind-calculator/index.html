@@ -112,7 +112,6 @@
       </a>
     </div>
   </nav>
-
   <div class="page-hero">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Crosswind Calculator</h1>
@@ -126,44 +125,87 @@
     <p class="lede"><strong>Crosswind component = wind speed × sin(angle between wind and runway); headwind component = wind speed × cos(angle).</strong> A 20-knot wind 40° off the runway is a 13-knot crosswind and a 15-knot headwind. Use the calculator below with the gust value to see the worst case, then compare it against your personal maximum, not the POH's demonstrated number.</p>
 
     <div class="calc-card" id="calculator">
-      <div class="calc-grid">
-        <div class="calc-field">
-          <label for="rwy">Runway heading (°)</label>
-          <input type="number" id="rwy" inputmode="numeric" min="0" max="360" step="1" value="270" />
-          <p class="calc-hint">Runway number × 10 (Runway 27 → 270)</p>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="rwy">Runway heading (°)</label>
+            <div class="field-row">
+              <input type="number" id="rwy" inputmode="numeric" min="0" max="360" step="1" value="270" />
+              <input type="range" id="rwy-r" min="0" max="360" step="5" value="270" aria-label="Runway heading slider" />
+            </div>
+            <p class="calc-hint">Runway number × 10 (Runway 27 → 270)</p>
+          </div>
+          <div class="calc-field">
+            <label for="wdir">Wind direction (°)</label>
+            <div class="field-row">
+              <input type="number" id="wdir" inputmode="numeric" min="0" max="360" step="1" value="310" />
+              <input type="range" id="wdir-r" min="0" max="360" step="5" value="310" aria-label="Wind direction slider" />
+            </div>
+            <p class="calc-hint">Direction the wind is <em>from</em></p>
+          </div>
+          <div class="calc-field">
+            <label for="wspd">Wind speed (kt)</label>
+            <div class="field-row">
+              <input type="number" id="wspd" inputmode="numeric" min="0" max="150" step="1" value="15" />
+              <input type="range" id="wspd-r" min="0" max="60" step="1" value="15" aria-label="Wind speed slider" />
+            </div>
+          </div>
+          <div class="calc-field">
+            <label for="wgst">Gusting to (kt, optional)</label>
+            <div class="field-row">
+              <input type="number" id="wgst" inputmode="numeric" min="0" max="200" step="1" placeholder="&ndash;" />
+              <input type="range" id="wgst-r" min="0" max="80" step="1" value="0" aria-label="Gust speed slider" />
+            </div>
+          </div>
+          <div class="calc-field">
+            <label for="xmax">Your personal crosswind max (kt)</label>
+            <div class="field-row">
+              <input type="number" id="xmax" inputmode="numeric" min="0" max="50" step="1" value="15" />
+              <input type="range" id="xmax-r" min="0" max="35" step="1" value="15" aria-label="Personal crosswind maximum slider" />
+            </div>
+            <p class="calc-hint">Saved on this device. Set it with the <a href="/tools/personal-minimums-worksheet/">personal minimums worksheet</a>.</p>
+          </div>
         </div>
-        <div class="calc-field">
-          <label for="wdir">Wind direction (°)</label>
-          <input type="number" id="wdir" inputmode="numeric" min="0" max="360" step="1" value="310" />
-          <p class="calc-hint">Direction the wind is <em>from</em></p>
-        </div>
-        <div class="calc-field">
-          <label for="wspd">Wind speed (kt)</label>
-          <input type="number" id="wspd" inputmode="numeric" min="0" max="150" step="1" value="15" />
-        </div>
-        <div class="calc-field">
-          <label for="wgst">Gusting to (kt, optional)</label>
-          <input type="number" id="wgst" inputmode="numeric" min="0" max="200" step="1" placeholder="—" />
+        <div class="tool-visual">
+          <svg id="compass" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Runway and wind direction diagram">
+            <circle cx="150" cy="150" r="140" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+            <g id="ticks" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"></g>
+            <text x="150" y="30" text-anchor="middle" fill="#94A3B8" font-size="14" font-weight="700">N</text>
+            <text x="273" y="155" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">E</text>
+            <text x="150" y="284" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">S</text>
+            <text x="27" y="155" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">W</text>
+            <g id="rwyGroup">
+              <rect x="136" y="45" width="28" height="210" rx="4" fill="#1E293B" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+              <line x1="150" y1="62" x2="150" y2="238" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-dasharray="10 8"/>
+              <text id="rwyNumFar" x="150" y="60" text-anchor="middle" fill="#F0F0F5" font-size="12" font-weight="800" transform="rotate(180 150 56)">09</text>
+              <text id="rwyNumNear" x="150" y="248" text-anchor="middle" fill="#F0F0F5" font-size="12" font-weight="800">27</text>
+            </g>
+            <g id="windGroup">
+              <line x1="150" y1="14" x2="150" y2="72" stroke="#EAB308" stroke-width="4" stroke-linecap="round"/>
+              <polygon points="150,88 141,68 159,68" fill="#EAB308"/>
+            </g>
+          </svg>
+          <p class="calc-hint" id="angle-note" style="margin-top:10px"></p>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter the wind to see your components.</div>
         </div>
       </div>
-      <div class="calc-results">
+      <div class="calc-results" aria-live="polite">
         <div class="result-tile" id="tile-head">
           <span class="result-label" id="head-label">Headwind</span>
-          <span class="result-value" id="head-val">–</span>
+          <span class="result-value" id="head-val">&ndash;</span>
           <span class="result-note">steady</span>
         </div>
-        <div class="result-tile result-blue">
+        <div class="result-tile result-blue" id="tile-cross">
           <span class="result-label" id="cross-label">Crosswind</span>
-          <span class="result-value" id="cross-val">–</span>
+          <span class="result-value" id="cross-val">&ndash;</span>
           <span class="result-note" id="cross-note">steady</span>
         </div>
         <div class="result-tile result-amber" id="tile-gust" style="display:none">
           <span class="result-label">Gust crosswind</span>
-          <span class="result-value" id="gust-val">–</span>
-          <span class="result-note">compare this to your limit</span>
+          <span class="result-value" id="gust-val">&ndash;</span>
+          <span class="result-note">what arrives in the flare</span>
         </div>
       </div>
-      <p class="calc-hint" style="margin-top:14px" id="angle-note"></p>
     </div>
 
     <h2>How the crosswind component is calculated</h2>
@@ -275,12 +317,53 @@
       const $ = (id) => document.getElementById(id);
       const rad = (d) => d * Math.PI / 180;
 
+      // build compass tick marks every 30 degrees
+      (function () {
+        let t = '';
+        for (let a = 0; a < 360; a += 30) {
+          const r1 = 132, r2 = 140, cx = 150, cy = 150, ar = rad(a);
+          t += '<line x1="' + (cx + r1 * Math.sin(ar)).toFixed(1) + '" y1="' + (cy - r1 * Math.cos(ar)).toFixed(1) +
+               '" x2="' + (cx + r2 * Math.sin(ar)).toFixed(1) + '" y2="' + (cy - r2 * Math.cos(ar)).toFixed(1) + '"/>';
+        }
+        $('ticks').innerHTML = t;
+      })();
+
+      // pair each number input with its slider
+      [['rwy', 360], ['wdir', 360], ['wspd', null], ['wgst', null], ['xmax', null]].forEach(function (pair) {
+        const n = $(pair[0]), r = $(pair[0] + '-r');
+        r.addEventListener('input', function () { n.value = r.value; compute(); });
+        n.addEventListener('input', function () { r.value = n.value; compute(); });
+      });
+
+      // personal max persists on this device
+      try {
+        const saved = localStorage.getItem('fd-crosswind-max');
+        if (saved) { $('xmax').value = saved; $('xmax-r').value = saved; }
+      } catch (e) {}
+
+      function severity(kt, max) {
+        if (!max || max <= 0) return null;
+        if (kt > max) return 'red';
+        if (kt >= 0.7 * max) return 'amber';
+        return 'green';
+      }
+
       function compute() {
         const rwy = parseFloat($('rwy').value);
         const wdir = parseFloat($('wdir').value);
         const wspd = parseFloat($('wspd').value);
         const wgst = parseFloat($('wgst').value);
+        const xmax = parseFloat($('xmax').value);
+        try { if (!isNaN(xmax)) localStorage.setItem('fd-crosswind-max', xmax); } catch (e) {}
         if (isNaN(rwy) || isNaN(wdir) || isNaN(wspd)) return;
+
+        // rotate the diagram
+        $('rwyGroup').setAttribute('transform', 'rotate(' + (rwy % 360) + ' 150 150)');
+        $('windGroup').setAttribute('transform', 'rotate(' + (wdir % 360) + ' 150 150)');
+        let num = Math.round((rwy % 360) / 10) % 36; if (num === 0) num = 36;
+        let rec = (num + 18) % 36; if (rec === 0) rec = 36;
+        $('rwyNumNear').textContent = String(num).padStart(2, '0');
+        $('rwyNumFar').textContent = String(rec).padStart(2, '0');
 
         // Signed angle wind-from relative to runway, in (-180, 180]
         const diff = ((wdir - rwy + 540) % 360) - 180;
@@ -302,20 +385,49 @@
 
         $('cross-val').textContent = Math.round(cross) + ' kt';
         $('cross-note').textContent = side ? 'steady, ' + side : 'steady';
+        const sev = severity(cross, xmax);
+        $('tile-cross').className = 'result-tile ' + (sev ? 'result-' + sev : 'result-blue');
 
         const gustTile = $('tile-gust');
-        if (!isNaN(wgst) && wgst > wspd) {
+        const hasGust = !isNaN(wgst) && wgst > wspd;
+        let gustCross = 0;
+        if (hasGust) {
+          gustCross = wgst * Math.sin(rad(Math.abs(diff)));
           gustTile.style.display = '';
-          $('gust-val').textContent = Math.round(wgst * Math.sin(rad(Math.abs(diff)))) + ' kt';
+          $('gust-val').textContent = Math.round(gustCross) + ' kt';
+          const gsev = severity(gustCross, xmax);
+          gustTile.className = 'result-tile ' + (gsev ? 'result-' + gsev : 'result-amber');
         } else {
           gustTile.style.display = 'none';
         }
 
         $('angle-note').textContent = 'Wind is ' + Math.round(Math.abs(diff)) +
-          '° off the runway heading' + (side ? ' ' + side : '') + '.';
+          '\u00B0 off the runway heading' + (side ? ' ' + side : '') + '.';
+
+        const v = $('verdict');
+        const worst = hasGust ? gustCross : cross;
+        const label = hasGust ? 'Gust crosswind' : 'Crosswind';
+        if (isNaN(xmax) || xmax <= 0) {
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Set your personal crosswind max to get a verdict.';
+        } else if (worst > xmax) {
+          v.className = 'verdict-line v-red';
+          v.textContent = label + ' ' + Math.round(worst) + ' kt exceeds your ' + Math.round(xmax) + ' kt maximum.';
+        } else if (worst >= 0.7 * xmax) {
+          v.className = 'verdict-line v-amber';
+          v.textContent = label + ' ' + Math.round(worst) + ' kt is within ' + Math.round(xmax) + ' kt, but close. Fly the gust speed.';
+        } else {
+          v.className = 'verdict-line v-green';
+          v.textContent = label + ' ' + Math.round(worst) + ' kt is comfortably inside your ' + Math.round(xmax) + ' kt maximum.';
+        }
+
+        if (head < 0) {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'Tailwind component ' + Math.round(-head) + ' kt. Consider the opposite runway.';
+        }
       }
 
-      ['rwy', 'wdir', 'wspd', 'wgst'].forEach((id) => $(id).addEventListener('input', compute));
+      ['rwy', 'wdir', 'wspd', 'wgst', 'xmax'].forEach((id) => $(id).addEventListener('input', compute));
       compute();
     })();
 

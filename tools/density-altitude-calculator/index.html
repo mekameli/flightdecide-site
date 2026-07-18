@@ -112,7 +112,6 @@
       </a>
     </div>
   </nav>
-
   <div class="page-hero">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Density Altitude Calculator</h1>
@@ -126,47 +125,74 @@
     <p class="lede"><strong>Pressure altitude = field elevation + (29.92 − altimeter setting) × 1,000. Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft. Your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
 
     <div class="calc-card" id="calculator">
-      <div class="calc-grid">
-        <div class="calc-field">
-          <label for="elev">Field elevation (ft)</label>
-          <input type="number" id="elev" inputmode="numeric" min="-1000" max="15000" step="1" value="5000" />
-          <p class="calc-hint">From the chart supplement or your EFB</p>
+      <div class="calc-field paste-box" style="margin-bottom:18px">
+        <label for="metar">Paste a METAR to prefill (optional)</label>
+        <textarea id="metar" rows="2" spellcheck="false" placeholder="KAPA 172053Z 17008KT 10SM SCT100 32/07 A3012"></textarea>
+        <p class="calc-hint" id="metar-note">Reads the temperature/dew point group and altimeter setting. Elevation still comes from you.</p>
+      </div>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="elev">Field elevation (ft)</label>
+            <div class="field-row">
+              <input type="number" id="elev" inputmode="numeric" min="-1000" max="15000" step="1" value="5000" />
+              <input type="range" id="elev-r" min="0" max="12000" step="100" value="5000" aria-label="Field elevation slider" />
+            </div>
+            <p class="calc-hint">From the chart supplement or your EFB</p>
+          </div>
+          <div class="calc-field">
+            <label for="altim">Altimeter setting (inHg)</label>
+            <div class="field-row">
+              <input type="number" id="altim" inputmode="decimal" min="27" max="32" step="0.01" value="29.92" />
+              <input type="range" id="altim-r" min="28.5" max="31.0" step="0.01" value="29.92" aria-label="Altimeter setting slider" />
+            </div>
+            <p class="calc-hint">From the METAR / AWOS ("A2992" &rarr; 29.92)</p>
+          </div>
+          <div class="calc-field">
+            <label for="oat">Temperature (&deg;C)</label>
+            <div class="field-row">
+              <input type="number" id="oat" inputmode="numeric" min="-60" max="60" step="1" value="30" />
+              <input type="range" id="oat-r" min="-30" max="50" step="1" value="30" aria-label="Temperature slider" />
+            </div>
+            <p class="calc-hint">Outside air temperature at the field</p>
+          </div>
+          <div class="calc-field">
+            <label for="dew">Dew point (&deg;C, optional)</label>
+            <div class="field-row">
+              <input type="number" id="dew" inputmode="numeric" min="-60" max="40" step="1" placeholder="&ndash;" />
+              <input type="range" id="dew-r" min="-30" max="35" step="1" value="0" aria-label="Dew point slider" />
+            </div>
+            <p class="calc-hint">Used only to flag high humidity</p>
+          </div>
         </div>
-        <div class="calc-field">
-          <label for="altim">Altimeter setting (inHg)</label>
-          <input type="number" id="altim" inputmode="decimal" min="27" max="32" step="0.01" value="29.92" />
-          <p class="calc-hint">From the METAR / AWOS ("A2992" → 29.92)</p>
-        </div>
-        <div class="calc-field">
-          <label for="oat">Temperature (°C)</label>
-          <input type="number" id="oat" inputmode="numeric" min="-60" max="60" step="1" value="30" />
-          <p class="calc-hint">Outside air temperature at the field</p>
-        </div>
-        <div class="calc-field">
-          <label for="dew">Dew point (°C, optional)</label>
-          <input type="number" id="dew" inputmode="numeric" min="-60" max="40" step="1" placeholder="—" />
-          <p class="calc-hint">Used only to flag high humidity</p>
+        <div class="tool-visual">
+          <svg id="dachart" viewBox="0 0 300 260" width="300" height="260" role="img" aria-label="Field elevation, pressure altitude, and density altitude compared as bars">
+            <line x1="40" y1="220" x2="285" y2="220" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+            <g id="bars"></g>
+            <g id="barlabels" font-size="12" fill="#94A3B8" text-anchor="middle" font-weight="650"></g>
+          </svg>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter conditions to see the picture.</div>
         </div>
       </div>
-      <div class="calc-results">
+      <div class="calc-results" aria-live="polite">
         <div class="result-tile">
           <span class="result-label">Pressure altitude</span>
-          <span class="result-value" id="pa-val">–</span>
+          <span class="result-value" id="pa-val">&ndash;</span>
           <span class="result-note">ft</span>
         </div>
         <div class="result-tile">
           <span class="result-label">ISA temp at that altitude</span>
-          <span class="result-value" id="isa-val">–</span>
+          <span class="result-value" id="isa-val">&ndash;</span>
           <span class="result-note">standard temperature</span>
         </div>
         <div class="result-tile result-blue" id="tile-da">
           <span class="result-label">Density altitude</span>
-          <span class="result-value" id="da-val">–</span>
+          <span class="result-value" id="da-val">&ndash;</span>
           <span class="result-note">ft (use this for performance)</span>
         </div>
         <div class="result-tile" id="tile-perf">
           <span class="result-label">Performance note</span>
-          <span class="result-value" id="perf-val">–</span>
+          <span class="result-value" id="perf-val">&ndash;</span>
           <span class="result-note" id="perf-note">vs. field elevation</span>
         </div>
       </div>
@@ -293,6 +319,67 @@
     (function () {
       const $ = (id) => document.getElementById(id);
 
+      // pair number inputs with sliders
+      ['elev', 'altim', 'oat', 'dew'].forEach(function (id) {
+        const n = $(id), r = $(id + '-r');
+        r.addEventListener('input', function () { n.value = r.value; compute(); });
+        n.addEventListener('input', function () { r.value = n.value; compute(); });
+      });
+
+      // METAR prefill: temperature/dew point group (e.g. 32/07, M02/M05) + altimeter (A3012 or Q1013)
+      $('metar').addEventListener('input', function () {
+        const s = $('metar').value.toUpperCase();
+        let hit = [];
+        const td = s.match(/(?:^|\s)(M?\d{2})\/(M?\d{2})(?:\s|$)/);
+        if (td) {
+          const t = parseInt(td[1].replace('M', '-'), 10);
+          const d = parseInt(td[2].replace('M', '-'), 10);
+          $('oat').value = t; $('oat-r').value = t;
+          $('dew').value = d; $('dew-r').value = d;
+          hit.push('temperature ' + t + ' \u00B0C, dew point ' + d + ' \u00B0C');
+        }
+        const a = s.match(/(?:^|\s)A(\d{4})(?:\s|$)/);
+        const q = s.match(/(?:^|\s)Q(\d{4})(?:\s|$)/);
+        if (a) {
+          const inhg = (parseInt(a[1], 10) / 100).toFixed(2);
+          $('altim').value = inhg; $('altim-r').value = inhg;
+          hit.push('altimeter ' + inhg + ' inHg');
+        } else if (q) {
+          const inhg = (parseInt(q[1], 10) * 0.02953).toFixed(2);
+          $('altim').value = inhg; $('altim-r').value = inhg;
+          hit.push('altimeter ' + inhg + ' inHg (from Q' + q[1] + ')');
+        }
+        $('metar-note').textContent = hit.length
+          ? 'Prefilled ' + hit.join(' and ') + '. Elevation still comes from you.'
+          : 'Reads the temperature/dew point group and altimeter setting. Elevation still comes from you.';
+        compute();
+      });
+
+      function drawBars(elev, pa, da) {
+        const svg = { x0: 55, w: 58, gap: 26, base: 220, top: 30 };
+        const vals = [
+          { v: elev, label: 'Field', color: '#3B82F6' },
+          { v: pa, label: 'Pressure', color: '#94A3B8' },
+          { v: da, label: 'Density', color: da - elev >= 3000 ? '#EF4444' : da - elev >= 1500 ? '#EAB308' : '#22C55E' }
+        ];
+        const maxV = Math.max(2000, ...vals.map(b => b.v));
+        const minV = Math.min(0, ...vals.map(b => b.v));
+        const span = maxV - minV || 1;
+        let bars = '', labels = '';
+        vals.forEach(function (b, i) {
+          const x = svg.x0 + i * (svg.w + svg.gap);
+          const hpx = Math.max(4, (b.v - minV) / span * (svg.base - svg.top));
+          const y = svg.base - hpx;
+          bars += '<rect x="' + x + '" y="' + y.toFixed(1) + '" width="' + svg.w + '" height="' + hpx.toFixed(1) +
+                  '" rx="6" fill="' + b.color + '" fill-opacity="0.75"/>';
+          labels += '<text x="' + (x + svg.w / 2) + '" y="238">' + b.label + '</text>';
+          labels += '<text x="' + (x + svg.w / 2) + '" y="' + Math.max(20, y - 8).toFixed(1) +
+                    '" fill="#F0F0F5" font-size="13">' + Math.round(b.v).toLocaleString('en-US') + '</text>';
+        });
+        $('bars').innerHTML = bars;
+        $('barlabels').innerHTML = labels;
+      }
+
       function compute() {
         const elev = parseFloat($('elev').value);
         const altim = parseFloat($('altim').value);
@@ -308,23 +395,38 @@
         const fmt = (n) => Math.round(n).toLocaleString('en-US');
 
         $('pa-val').textContent = fmt(pa);
-        $('isa-val').textContent = (isa >= 0 ? '+' : '−') + Math.abs(isa).toFixed(1) + ' °C';
+        $('isa-val').textContent = (isa >= 0 ? '+' : '\u2212') + Math.abs(isa).toFixed(1) + ' \u00B0C';
         $('da-val').textContent = fmt(da);
 
+        drawBars(elev, pa, da);
+
+        const v = $('verdict');
         const perfTile = $('tile-perf');
         if (delta > 0) {
           $('perf-val').textContent = '+' + fmt(delta) + ' ft';
           $('perf-note').textContent = 'above field elevation; plan performance at ' + fmt(da) + ' ft';
           perfTile.className = 'result-tile ' + (delta >= 3000 ? 'result-red' : delta >= 1500 ? 'result-amber' : 'result-green');
+          if (delta >= 3000) {
+            v.className = 'verdict-line v-red';
+            v.textContent = 'Your airplane thinks this field is at ' + fmt(da) + ' ft. Run the POH numbers before you commit.';
+          } else if (delta >= 1500) {
+            v.className = 'verdict-line v-amber';
+            v.textContent = 'Meaningful performance hit: plan takeoff, climb, and landing at ' + fmt(da) + ' ft, not ' + fmt(elev) + ' ft.';
+          } else {
+            v.className = 'verdict-line v-green';
+            v.textContent = 'Mild conditions: density altitude is close to field elevation.';
+          }
         } else {
           $('perf-val').textContent = fmt(delta) + ' ft';
           $('perf-note').textContent = 'at or below field elevation; cool/dense air is working for you';
           perfTile.className = 'result-tile result-green';
+          v.className = 'verdict-line v-green';
+          v.textContent = 'Denser than standard: the airplane performs better than book field-elevation numbers.';
         }
 
         if (!isNaN(dew) && dew <= oat && (oat - dew) <= 4 && oat >= 15) {
           $('humid-note').textContent = 'Dew point is within ' + Math.round(oat - dew) +
-            ' °C of the temperature; humid air is slightly less dense than this dry-air estimate assumes, so expect the true density altitude (and the performance hit) to be a bit worse.';
+            ' \u00B0C of the temperature; humid air is slightly less dense than this dry-air estimate assumes, so expect the true density altitude (and the performance hit) to be a bit worse.';
         } else if (!isNaN(dew)) {
           $('humid-note').textContent = 'Humidity is not included in this estimate; on warm, humid days the true density altitude runs somewhat higher than the dry-air number shown.';
         } else {

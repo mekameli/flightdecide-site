@@ -283,6 +283,136 @@ nav.site-nav {
 .result-red .result-value { color: var(--accent-red); }
 .result-blue .result-value { color: var(--accent-blue); }
 
+/* CALCULATOR v2 — slider-paired inputs, visual panel, severity */
+.tool-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+.tool-inputs { display: flex; flex-direction: column; gap: 16px; }
+.calc-field .field-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.calc-field .field-row input[type="number"] { width: 96px; flex: none; }
+.calc-field input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(59,130,246,0.55), rgba(34,197,94,0.55));
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.calc-field input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: #F0F0F5;
+  border: 3px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  cursor: grab;
+}
+.calc-field input[type="range"]::-moz-range-thumb {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #F0F0F5;
+  border: 3px solid var(--accent-blue);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  cursor: grab;
+}
+.calc-field input[type="range"]:focus-visible::-webkit-slider-thumb { border-color: var(--accent-green); }
+.tool-visual {
+  background: rgba(0,0,0,0.25);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+}
+.tool-visual svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.verdict-line {
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 650;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+}
+.verdict-line.v-green { color: var(--accent-green); background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.3); }
+.verdict-line.v-amber { color: var(--accent-amber); background: rgba(234,179,8,0.08); border-color: rgba(234,179,8,0.3); }
+.verdict-line.v-red { color: var(--accent-red); background: rgba(239,68,68,0.10); border-color: rgba(239,68,68,0.35); }
+.verdict-line.v-dim { color: var(--text-muted); }
+.paste-box textarea {
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 14px;
+  padding: 10px 12px;
+  resize: vertical;
+  min-height: 52px;
+}
+.paste-box textarea:focus { outline: none; border-color: var(--accent-blue); }
+.tool-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.btn-secondary-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-bright);
+  color: var(--text);
+  font-family: inherit;
+  font-weight: 650;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.btn-secondary-sm:hover { background: var(--bg-card-hover); border-color: var(--accent-blue); }
+.save-status {
+  font-size: 13px;
+  color: var(--text-dim);
+  transition: color 0.3s;
+}
+.save-status.saved { color: var(--accent-green); }
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+  color: #052e16;
+  font-size: 13px;
+  font-weight: 800;
+  margin-right: 10px;
+  flex: none;
+}
+.section-head {
+  display: flex;
+  align-items: center;
+  margin: 36px 0 6px;
+}
+@media (max-width: 760px) {
+  .tool-layout { grid-template-columns: 1fr; }
+}
+
 /* FAQ (matches support.html behavior) */
 .faq-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 8px; }
 .faq-item {
