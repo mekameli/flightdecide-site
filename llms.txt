@@ -27,6 +27,10 @@ Key facts:
 
 ## Free Pilot Tools (browser-based, no sign-up)
 
+A free online E6B flight computer and preflight planning suite: browser-based
+flight-planning calculators covering the calculations pilots run before every
+flight. No sign-up; everything runs locally.
+
 - [Tools hub](https://flightdecide.com/tools/)
 - [Crosswind Calculator](https://flightdecide.com/tools/crosswind-calculator/):
   headwind/crosswind components with gust handling, demonstrated-crosswind
