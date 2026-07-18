@@ -495,6 +495,63 @@ nav.tool-switcher {
 .calc-field.is-output input { opacity: 0.45; pointer-events: none; }
 .calc-field.is-output label::after { content: " (solved)"; color: var(--accent-green); text-transform: none; }
 
+/* DYNAMIC ROW CARDS (trip legs, W&B items) */
+.row-card {
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+.row-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.row-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.row-title input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed var(--border-bright);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  padding: 2px 4px;
+  width: 150px;
+}
+.row-title input:focus { outline: none; border-bottom-color: var(--accent-blue); }
+.row-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px 12px;
+}
+.row-grid .calc-field input { font-size: 15px; padding: 8px 10px; }
+.btn-remove {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.btn-remove:hover { color: var(--accent-red); border-color: rgba(239,68,68,0.4); }
+.results-table { font-variant-numeric: tabular-nums; }
+.results-table td.num, .results-table th.num { text-align: right; }
+.results-table tr.total-row td { border-top: 2px solid var(--border-bright); font-weight: 700; color: var(--text); }
+
 /* FAQ (matches support.html behavior) */
 .faq-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 8px; }
 .faq-item {

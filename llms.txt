@@ -46,6 +46,12 @@ Key facts:
 - [Wind Correction Angle Calculator](https://flightdecide.com/tools/wind-correction-calculator/):
   the wind triangle: WCA, true/magnetic heading, and groundspeed from
   course, TAS, and winds aloft.
+- [Cross-Country Trip Planner](https://flightdecide.com/tools/flight-plan-calculator/):
+  multi-leg nav log solver: compass heading, groundspeed, leg time,
+  ETA, and fuel per leg plus trip totals, saved locally.
+- [Weight & Balance Calculator](https://flightdecide.com/tools/weight-balance-calculator/):
+  gross weight, total moment, and CG from itemized loading, envelope
+  check against user-entered limits, weight-shift solver.
 - [Personal Minimums Worksheet](https://flightdecide.com/tools/personal-minimums-worksheet/):
   printable worksheet for setting ceiling/visibility/wind/performance
   minimums, based on the FAA approach.

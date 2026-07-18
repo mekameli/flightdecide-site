@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weight &amp; Balance Calculator: Gross Weight &amp; CG | FlightDecide</title>
+  <meta name="description" content="Free aircraft weight and balance calculator. Enter each item's weight and arm (or moment) to get gross weight, total moment, and center of gravity, check them against your limits, and solve weight-shift problems, with the method explained underneath." />
+  <link rel="canonical" href="https://flightdecide.com/tools/weight-balance-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Weight &amp; Balance Calculator: Gross Weight &amp; CG" />
+  <meta property="og:description" content="Gross weight, total moment, and CG from your loading, checked against your limits, plus a weight-shift solver." />
+  <meta property="og:url" content="https://flightdecide.com/tools/weight-balance-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide weight and balance calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Weight &amp; Balance Calculator: Gross Weight &amp; CG" />
+  <meta name="twitter:description" content="Gross weight, total moment, and CG from your loading, checked against your limits, plus a weight-shift solver." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/weight-balance-calculator/#app",
+        "name": "Weight and Balance Calculator",
+        "url": "https://flightdecide.com/tools/weight-balance-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free aircraft weight and balance calculator. Enter each item's weight and arm or moment to get gross weight, total moment, and center of gravity, and check them against your aircraft's limits.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/weight-balance-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate center of gravity for an aircraft?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For each item (empty aircraft, occupants, fuel, baggage), multiply its weight by its arm (distance from the datum) to get its moment. Add all the weights, add all the moments, then CG = total moment ÷ total weight. Compare the result against the CG envelope in your POH at both takeoff and landing weights."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do the arms come from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From your aircraft's POH loading section and the aircraft-specific weight-and-balance report. The empty weight and empty-weight moment come from the most recent weighing or equipment-change record in the aircraft's papers, not from a generic table: two airplanes of the same model rarely match."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does fuel weigh?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avgas weighs 6.0 pounds per US gallon, jet fuel 6.84, and oil 7.5 (four quarts to the gallon). Forty gallons of avgas is 240 pounds, which is most of a passenger, and it burns off in flight, so check the CG at landing fuel as well as at takeoff."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Weight and Balance Calculator", "item": "https://flightdecide.com/tools/weight-balance-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Weight &amp; Balance Calculator</h1>
+    <p class="page-sub">Enter each item's weight and arm (or moment). Get gross weight, total moment, and CG, checked against your limits, with a weight-shift solver for fixing an out-of-envelope load.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Weight &amp; Balance Calculator</p>
+
+    <p class="lede"><strong>Moment = weight × arm. CG = total moment ÷ total weight.</strong> That is the entire method: every item in the airplane multiplied by its distance from the datum, summed, and divided. What matters is what you do with the answer: check it against the envelope at takeoff <em>and</em> at landing fuel, and move weight, not hope, when it falls outside. Arms and limits come from <em>your</em> aircraft's papers. Entries stay on this device.</p>
+
+    <div class="calc-card" id="calculator">
+      <span class="section-label" style="margin-bottom:12px">Loading</span>
+      <div id="items"></div>
+      <div class="tool-toolbar">
+        <button type="button" class="btn-secondary-sm" id="add-item">+ Add item</button>
+        <button type="button" class="btn-secondary-sm" id="load-example">Load the worked example</button>
+        <span class="save-status" id="save-status"></span>
+      </div>
+      <p class="calc-hint" style="margin-bottom:20px">Enter weight plus either arm or moment; the third value fills in. Fuel: avgas 6.0 lb/gal, jet fuel 6.84, oil 7.5.</p>
+
+      <span class="section-label" style="margin-bottom:12px">Limits (from your POH, optional)</span>
+      <div class="calc-grid" style="margin-bottom:20px">
+        <div class="calc-field">
+          <label for="lim-gw">Max gross weight (lb)</label>
+          <input type="number" id="lim-gw" inputmode="numeric" min="0" step="1" placeholder="&ndash;" />
+        </div>
+        <div class="calc-field">
+          <label for="lim-fwd">Forward CG limit (in)</label>
+          <input type="number" id="lim-fwd" inputmode="decimal" step="0.1" placeholder="&ndash;" />
+        </div>
+        <div class="calc-field">
+          <label for="lim-aft">Aft CG limit (in)</label>
+          <input type="number" id="lim-aft" inputmode="decimal" step="0.1" placeholder="&ndash;" />
+        </div>
+      </div>
+
+      <div class="tool-visual" style="margin-bottom:18px">
+        <svg id="cgbar" viewBox="0 0 300 90" width="300" height="90" role="img" aria-label="CG position relative to the forward and aft limits">
+          <g id="cg-els"></g>
+        </svg>
+        <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter your loading to see the CG.</div>
+      </div>
+
+      <div class="calc-results" aria-live="polite">
+        <div class="result-tile" id="tile-gw">
+          <span class="result-label">Gross weight</span>
+          <span class="result-value" id="gw-val">&ndash;</span>
+          <span class="result-note">lb</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Total moment</span>
+          <span class="result-value" id="mom-val">&ndash;</span>
+          <span class="result-note">lb-in</span>
+        </div>
+        <div class="result-tile result-blue" id="tile-cg">
+          <span class="result-label">Center of gravity</span>
+          <span class="result-value" id="cg-val">&ndash;</span>
+          <span class="result-note">inches aft of datum</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>How the calculation works</h2>
+    <p>Everything hangs on a lever. The datum is an imaginary reference plane (often the firewall or the tip of the spinner; your POH says where); each item's <strong>arm</strong> is its distance aft of that plane. Weight × arm = <strong>moment</strong>, the twisting force the item applies. Sum the weights, sum the moments, divide: <strong>CG = Σ moment ÷ Σ weight</strong>. The POH publishes an envelope of acceptable CG positions per weight; inside it the airplane was certified to be controllable and recoverable, outside it nobody has promised you anything.</p>
+    <p>Some POHs use a <strong>reduction factor</strong> (moments divided by 100 or 1,000 to keep the numbers small); enter moments here at face value, or stay consistent and read the total the same way.</p>
+
+    <h2>How pilots use it</h2>
+    <ul>
+      <li><strong>Before any full-cabin or full-fuel flight.</strong> Trainers fly most lessons well inside the envelope, which breeds the habit of not checking. The habit breaks the day four adults and bags show up. Run the numbers whenever the loading is unusual for you.</li>
+      <li><strong>Check takeoff and landing.</strong> Fuel burn moves the CG (which way depends on where the tanks sit relative to the CG). A load legal at takeoff can be out of limits after three hours of burn: compute both ends.</li>
+      <li><strong>What-if in seconds:</strong> move a passenger, shed a bag, or cap the fuel and watch the CG move. That is exactly the negotiation pilots do on the ramp, and doing it numerically beats doing it by feel.</li>
+      <li><strong>Aft CG is the dangerous direction.</strong> Forward-heavy is nose-heavy and lands flat; aft-heavy degrades pitch stability and can make a stall unrecoverable. Respect the aft limit most.</li>
+    </ul>
+
+    <h2>The worked example (a real CX-3 manual problem)</h2>
+    <p>Load it with the button above:</p>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Item</th><th>Weight (lb)</th><th>Arm (in)</th><th>Moment (lb-in)</th></tr></thead>
+      <tbody>
+        <tr><td>Empty aircraft</td><td>1,495</td><td>101.4 (computed)</td><td>151,593 (given)</td></tr>
+        <tr><td>Front seats</td><td>380</td><td>64</td><td>24,320</td></tr>
+        <tr><td>Rear seat</td><td>150</td><td>75</td><td>11,250</td></tr>
+        <tr><td>Fuel (30 gal)</td><td>180</td><td>96</td><td>17,280</td></tr>
+      </tbody>
+    </table></div>
+    <p>Totals: <strong>2,205 lb</strong>, <strong>204,443 lb-in</strong>, <strong>CG 92.72 in</strong>. Now the what-if from the same manual page: the rear passenger gets out and 50 lb of fuel goes in → 2,105 lb, CG 94.06 in. Two edits, four seconds, new answer.</p>
+
+    <h2>Weight-shift solver</h2>
+    <p>When the CG lands outside the envelope, the fix is moving something. The formula: <strong>weight to move = total weight × required CG change ÷ distance the weight moves</strong>.</p>
+    <div class="calc-card">
+      <div class="calc-grid">
+        <div class="calc-field">
+          <label for="ws-tw">Total weight (lb)</label>
+          <input type="number" id="ws-tw" inputmode="numeric" min="1" step="1" value="7500" />
+        </div>
+        <div class="calc-field">
+          <label for="ws-dcg">CG change needed (in)</label>
+          <input type="number" id="ws-dcg" inputmode="decimal" step="0.1" value="1" />
+        </div>
+        <div class="calc-field">
+          <label for="ws-darm">Distance the item moves (in)</label>
+          <input type="number" id="ws-darm" inputmode="decimal" step="1" value="120" />
+          <p class="calc-hint">e.g., baggage compartment A to compartment B</p>
+        </div>
+        <div class="calc-field">
+          <label>Weight to move</label>
+          <div class="result-tile result-blue" style="padding:10px">
+            <span class="result-value" id="ws-out" style="font-size:24px">&ndash;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>Example: at 7,500 lb total, moving the CG 1 inch by relocating cargo 120 inches means moving 7,500 × 1 ÷ 120 = <strong>62.5 lb</strong>.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I use average passenger weights?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>For private GA flying, use real weights: ask, and add winter clothing. Standard-average weights belong to air-carrier programs with big cabins where errors average out. In a four-seat airplane one optimistic guess is 5% of gross weight.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What if I'm over max gross but inside the CG limits?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Still no. Max gross weight is a structural and performance limitation: takeoff distance, climb rate, and stall speed were all certified at or below it. The usual fix is fuel: fly with partial tanks and add a stop. The <a href="/tools/fuel-burn-calculator/">fuel calculator</a> tells you what the shorter fuel load does to endurance.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why does my club's spreadsheet disagree slightly?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Usually a stale empty weight. Every equipment change (new avionics, repainting) updates the empty weight and moment in the aircraft records; a spreadsheet built years ago drifts from the papers. The current weight-and-balance report in the aircraft binder wins over any tool, including this one.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/fuel-burn-calculator/"><h3>Fuel Burn &amp; Endurance Calculator</h3><p>Fuel weight is the load you can actually negotiate; see what partial tanks cost in endurance.</p></a>
+      <a class="card-link" href="/tools/flight-plan-calculator/"><h3>Cross-Country Trip Planner</h3><p>The other half of the preflight math: headings, times, and fuel per leg.</p></a>
+      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>Heavy and hot compound each other; check both before a full-load summer takeoff.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>W&amp;B is one of eight risk categories</h2>
+      <p>FlightDecide carries your aircraft's real station arms and limits in its profile and checks every flight's loading automatically, alongside weather, NOTAMs, fuel, and performance.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, your aircraft's current weight-and-balance report, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Weight-Shift and Balance Handbook</em> (FAA-H-8083-1B); <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 10. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const STORE = 'fd-wb';
+      let items = [];
+
+      const EXAMPLE = [
+        { name: 'Empty aircraft', wt: 1495, mom: 151593, last: 'mom' },
+        { name: 'Front seats', wt: 380, arm: 64, last: 'arm' },
+        { name: 'Rear seat', wt: 150, arm: 75, last: 'arm' },
+        { name: 'Fuel (30 gal)', wt: 180, arm: 96, last: 'arm' }
+      ];
+
+      function rowHTML(i, it) {
+        const arm = it.last === 'mom'
+          ? (it.wt > 0 && isFinite(it.mom) ? (it.mom / it.wt) : NaN)
+          : it.arm;
+        const mom = it.last === 'mom' ? it.mom
+          : (isFinite(it.wt) && isFinite(it.arm) ? it.wt * it.arm : NaN);
+        return '<div class="row-head">' +
+          '<span class="row-title"><input type="text" value="' + (it.name || 'Item ' + (i + 1)).replace(/"/g, '') + '" data-i="' + i + '" data-k="name" aria-label="Item name" /></span>' +
+          '<button type="button" class="btn-remove" data-remove="' + i + '">Remove</button></div>' +
+          '<div class="row-grid">' +
+          '<div class="calc-field"><label>Weight (lb)</label><input type="number" inputmode="decimal" step="1" value="' + (isFinite(it.wt) ? it.wt : '') + '" data-i="' + i + '" data-k="wt" /></div>' +
+          '<div class="calc-field"><label>Arm (in)</label><input type="number" inputmode="decimal" step="0.1" value="' + (isFinite(arm) ? Math.round(arm * 100) / 100 : '') + '" data-i="' + i + '" data-k="arm" /></div>' +
+          '<div class="calc-field"><label>Moment (lb-in)</label><input type="number" inputmode="decimal" step="1" value="' + (isFinite(mom) ? Math.round(mom) : '') + '" data-i="' + i + '" data-k="mom" /></div>' +
+          '</div>';
+      }
+
+      function render() {
+        const wrap = $('items');
+        wrap.innerHTML = items.map(function (it, i) {
+          return '<div class="row-card">' + rowHTML(i, it) + '</div>';
+        }).join('');
+        wrap.querySelectorAll('input').forEach(function (inp) {
+          inp.addEventListener('input', function () {
+            const i = +inp.dataset.i, k = inp.dataset.k;
+            if (k === 'name') { items[i].name = inp.value; }
+            else {
+              items[i][k] = parseFloat(inp.value);
+              if (k === 'arm') items[i].last = 'arm';
+              if (k === 'mom') items[i].last = 'mom';
+              // update the sibling derived field without re-rendering (keeps focus)
+              const it = items[i];
+              const card = inp.closest('.row-card');
+              if (isFinite(it.wt)) {
+                if (it.last === 'arm' && isFinite(it.arm)) {
+                  card.querySelector('input[data-k="mom"]').value = Math.round(it.wt * it.arm);
+                } else if (it.last === 'mom' && isFinite(it.mom) && it.wt > 0) {
+                  card.querySelector('input[data-k="arm"]').value = Math.round(it.mom / it.wt * 100) / 100;
+                } else if (inp.dataset.k === 'wt') {
+                  if (it.last === 'arm' && isFinite(it.arm)) card.querySelector('input[data-k="mom"]').value = Math.round(it.wt * it.arm);
+                  if (it.last === 'mom' && isFinite(it.mom) && it.wt > 0) card.querySelector('input[data-k="arm"]').value = Math.round(it.mom / it.wt * 100) / 100;
+                }
+              }
+            }
+            compute();
+          });
+        });
+        wrap.querySelectorAll('[data-remove]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            items.splice(+btn.dataset.remove, 1);
+            render(); compute();
+          });
+        });
+      }
+
+      function itemMoment(it) {
+        if (!isFinite(it.wt)) return NaN;
+        if (it.last === 'mom') return isFinite(it.mom) ? it.mom : NaN;
+        return isFinite(it.arm) ? it.wt * it.arm : NaN;
+      }
+
+      function compute() {
+        try {
+          localStorage.setItem(STORE, JSON.stringify({ items: items,
+            gw: $('lim-gw').value, fwd: $('lim-fwd').value, aft: $('lim-aft').value }));
+          $('save-status').textContent = 'Saved on this device';
+          $('save-status').className = 'save-status saved';
+        } catch (e) {}
+
+        let W = 0, M = 0, complete = items.length > 0;
+        items.forEach(function (it) {
+          const m = itemMoment(it);
+          if (!isFinite(m) || !isFinite(it.wt)) { complete = false; return; }
+          W += it.wt; M += m;
+        });
+        const v = $('verdict');
+        if (!complete || W <= 0) {
+          $('gw-val').textContent = '–'; $('mom-val').textContent = '–'; $('cg-val').textContent = '–';
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Fill in weight plus arm or moment for every item.';
+          $('cg-els').innerHTML = '';
+          return;
+        }
+        const cg = M / W;
+        $('gw-val').textContent = Math.round(W).toLocaleString('en-US');
+        $('mom-val').textContent = Math.round(M).toLocaleString('en-US');
+        $('cg-val').textContent = (Math.round(cg * 100) / 100).toFixed(2);
+
+        const gwLim = parseFloat($('lim-gw').value);
+        const fwd = parseFloat($('lim-fwd').value);
+        const aft = parseFloat($('lim-aft').value);
+        const overGW = isFinite(gwLim) && W > gwLim;
+        $('tile-gw').className = 'result-tile ' + (!isFinite(gwLim) ? '' : overGW ? 'result-red' : W > 0.97 * gwLim ? 'result-amber' : 'result-green');
+
+        // CG bar
+        let bar = '';
+        if (isFinite(fwd) && isFinite(aft) && aft > fwd) {
+          const pad = (aft - fwd) * 0.25;
+          const lo = fwd - pad, hi = aft + pad;
+          const X = (val) => 10 + 280 * (val - lo) / (hi - lo);
+          const inCG = cg >= fwd && cg <= aft;
+          bar =
+            '<rect x="10" y="38" width="280" height="18" rx="4" fill="rgba(255,255,255,0.06)"/>' +
+            '<rect x="' + X(fwd).toFixed(1) + '" y="38" width="' + (X(aft) - X(fwd)).toFixed(1) + '" height="18" rx="4" fill="rgba(34,197,94,0.25)" stroke="rgba(34,197,94,0.5)"/>' +
+            '<line x1="' + X(cg).toFixed(1) + '" y1="28" x2="' + X(cg).toFixed(1) + '" y2="66" stroke="' + (inCG ? '#22C55E' : '#EF4444') + '" stroke-width="3"/>' +
+            '<text x="' + X(fwd).toFixed(1) + '" y="80" text-anchor="middle" fill="#64748B" font-size="11">' + fwd + '</text>' +
+            '<text x="' + X(aft).toFixed(1) + '" y="80" text-anchor="middle" fill="#64748B" font-size="11">' + aft + '</text>' +
+            '<text x="' + X(cg).toFixed(1) + '" y="20" text-anchor="middle" fill="' + (inCG ? '#22C55E' : '#EF4444') + '" font-size="12" font-weight="700">CG ' + (Math.round(cg * 100) / 100) + '</text>';
+          $('tile-cg').className = 'result-tile ' + (inCG ? 'result-green' : 'result-red');
+          if (!inCG || overGW) {
+            v.className = 'verdict-line v-red';
+            v.textContent = (!inCG ? 'CG ' + (Math.round(cg * 100) / 100) + ' in is outside ' + fwd + '–' + aft + ' in. ' : '') +
+              (overGW ? Math.round(W - gwLim) + ' lb over max gross. ' : '') + 'Move or remove weight, then recheck.';
+          } else {
+            v.className = 'verdict-line v-green';
+            v.textContent = 'Inside the envelope: ' + Math.round(W).toLocaleString('en-US') + ' lb, CG ' + (Math.round(cg * 100) / 100) +
+              ' in. Recheck at landing fuel before you call it done.';
+          }
+        } else {
+          $('tile-cg').className = 'result-tile result-blue';
+          bar = '<text x="150" y="50" text-anchor="middle" fill="#64748B" font-size="12">Enter your CG limits to see the envelope check</text>';
+          v.className = 'verdict-line ' + (overGW ? 'v-red' : 'v-dim');
+          v.textContent = overGW ? Math.round(W - gwLim) + ' lb over max gross weight. Shed load or fuel.' :
+            'CG ' + (Math.round(cg * 100) / 100) + ' in at ' + Math.round(W).toLocaleString('en-US') + ' lb. Check it against your POH envelope.';
+        }
+        $('cg-els').innerHTML = bar;
+      }
+
+      ['lim-gw', 'lim-fwd', 'lim-aft'].forEach(function (id) { $(id).addEventListener('input', compute); });
+      $('add-item').addEventListener('click', function () {
+        items.push({ name: 'Item ' + (items.length + 1), last: 'arm' });
+        render(); compute();
+      });
+      $('load-example').addEventListener('click', function () {
+        items = EXAMPLE.map(function (r) { return Object.assign({}, r); });
+        $('lim-gw').value = ''; $('lim-fwd').value = ''; $('lim-aft').value = '';
+        render(); compute();
+      });
+
+      // weight-shift solver
+      function shift() {
+        const tw = parseFloat($('ws-tw').value);
+        const dcg = parseFloat($('ws-dcg').value);
+        const darm = parseFloat($('ws-darm').value);
+        $('ws-out').textContent = (isFinite(tw) && isFinite(dcg) && isFinite(darm) && darm !== 0)
+          ? (Math.round(tw * dcg / darm * 10) / 10) + ' lb' : '–';
+      }
+      ['ws-tw', 'ws-dcg', 'ws-darm'].forEach(function (id) { $(id).addEventListener('input', shift); });
+      shift();
+
+      // restore
+      let saved = null;
+      try { saved = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
+      if (saved && saved.items && saved.items.length) {
+        items = saved.items;
+        if (saved.gw) $('lim-gw').value = saved.gw;
+        if (saved.fwd) $('lim-fwd').value = saved.fwd;
+        if (saved.aft) $('lim-aft').value = saved.aft;
+      } else {
+        items = [
+          { name: 'Empty aircraft', last: 'mom' },
+          { name: 'Front seats', last: 'arm' },
+          { name: 'Rear seats', last: 'arm' },
+          { name: 'Fuel', last: 'arm' },
+          { name: 'Baggage', last: 'arm' }
+        ];
+      }
+      render(); compute();
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
