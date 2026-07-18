@@ -119,7 +119,7 @@
 
     <div class="success" id="no-token-state">
       <h1>Link incomplete</h1>
-      <p class="sub">This page needs the reset link from your email. Open the most recent "Reset your FlightDecide password" email and tap the link again — or request a new one from the app's sign-in screen.</p>
+      <p class="sub">This page needs the reset link from your email. Open the most recent "Reset your FlightDecide password" email and tap the link again, or request a new one from the app's sign-in screen.</p>
     </div>
   </main>
 
@@ -174,7 +174,7 @@
             }
             var detail = (data && typeof data.detail === "string")
               ? data.detail
-              : "That reset link didn't work — it may have expired. Request a new one from the app's sign-in screen and try again.";
+              : "That reset link didn't work; it may have expired. Request a new one from the app's sign-in screen and try again.";
             showError(detail);
             submitBtn.disabled = false;
             submitBtn.textContent = "Set new password";

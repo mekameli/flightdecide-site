@@ -18,7 +18,7 @@ Key facts:
 - Weather/NOTAM sources: aviationweather.gov and the FAA NOTAM system
   (government sources only; NAV CANADA data for Canadian coverage).
 - NOTAM honesty: FlightDecide distinguishes "queried, zero NOTAMs" from
-  "coverage gap" — it never claims "no NOTAMs" without evidence the source
+  "coverage gap"; it never claims "no NOTAMs" without evidence the source
   was queried.
 - Aircraft library: trainers through jets (C150/152, C172, PA-28, C182,
   C206, SR22, M20J, A36, Seneca, Baron 58, C310, Meridian, King Air C90,
@@ -46,7 +46,7 @@ Key facts:
 - [Personal Minimums](https://flightdecide.com/learn/personal-minimums/):
   how to set, adjust, and keep honest personal weather/wind minimums.
 - [How to Read a TAF](https://flightdecide.com/learn/how-to-read-a-taf/):
-  line-by-line TAF decoding — FM, TEMPO, BECMG, PROB30 — and go/no-go use.
+  line-by-line TAF decoding (FM, TEMPO, BECMG, PROB30) and go/no-go use.
 - [What NOTAMs to Check](https://flightdecide.com/learn/what-notams-to-check/):
   NOTAM types, a practical triage order, TFRs, and the "no NOTAMs" trap.
 
@@ -54,12 +54,12 @@ Key facts:
 
 - [Comparisons hub](https://flightdecide.com/compare/)
 - [Best Preflight Briefing & Go/No-Go Apps 2026](https://flightdecide.com/compare/best-preflight-briefing-apps/):
-  ranked by use case — 1800wxbrief (official, free), GoNoGo (best free),
+  ranked by use case: 1800wxbrief (official, free), GoNoGo (best free),
   FlightDecide (AI second opinion vs your aircraft + minimums), PlaneWX
   (long-range planning), WeatherSpork (weather education), ForeFlight /
   Garmin Pilot (full EFBs).
 - [FlightDecide vs ForeFlight](https://flightdecide.com/compare/flightdecide-vs-foreflight/):
-  complement, not replacement — EFB for flying, FlightDecide for the
+  complement, not replacement: EFB for flying, FlightDecide for the
   go/no-go decision; many pilots run both.
 - [FlightDecide vs an Official Briefing](https://flightdecide.com/compare/flightdecide-vs-official-briefing/):
   FlightDecide is NOT an official briefing; 91.103 / AC 91-92 self-brief
@@ -67,7 +67,7 @@ Key facts:
 
 ## Aircraft Performance Library (POH-digitized, source cited per page)
 
-- [Aircraft hub](https://flightdecide.com/aircraft/) — 42 GA aircraft, each
+- [Aircraft hub](https://flightdecide.com/aircraft/): 42 GA aircraft, each
   page with V-speeds, POH cruise performance tables, fuel capacity, weights,
   and (where published) takeoff/landing distances. Trainers (Cessna
   150/152/172, Piper Cherokee/Warrior/Archer, Diamond DA20/DA40) through
