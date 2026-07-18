@@ -65,6 +65,20 @@ Key facts:
   FlightDecide is NOT an official briefing; 91.103 / AC 91-92 self-brief
   context and a recommended combined workflow.
 
+## Aircraft Performance Library (POH-digitized, source cited per page)
+
+- [Aircraft hub](https://flightdecide.com/aircraft/) — 42 GA aircraft, each
+  page with V-speeds, POH cruise performance tables, fuel capacity, weights,
+  and (where published) takeoff/landing distances. Trainers (Cessna
+  150/152/172, Piper Cherokee/Warrior/Archer, Diamond DA20/DA40) through
+  singles (182, 206, SR20/SR22/SR22T, Bonanza), twins (Baron 58, Seneca,
+  Seminole, DA42/DA62, 310R), turboprops (King Air 200, 1900D) and jets
+  (Citation CJ3, SF50 Vision Jet). URL pattern:
+  https://flightdecide.com/aircraft/<manufacturer-model>/ (e.g.
+  /aircraft/cessna-172s-skyhawk/, /aircraft/cirrus-sr22/).
+- Data is approximate reference material from the FlightDecide curated
+  library; the FAA-approved AFM/POH for a specific serial number governs.
+
 ## Pages
 
 - [Home](https://flightdecide.com/): product overview, features, pricing.
