@@ -127,56 +127,66 @@
     </div>
   </nav>
 
-  <div class="page-hero">
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Crosswind Calculator</h1>
     <p class="page-sub">Enter your runway, wind direction, speed, and gusts. Get the headwind and crosswind components instantly, including the gust component that matters in the flare.</p>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
-    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Crosswind Calculator</p>
 
-    <p class="lede"><strong>Crosswind component = wind speed × sin(angle between wind and runway); headwind component = wind speed × cos(angle).</strong> A 20-knot wind 40° off the runway is a 13-knot crosswind and a 15-knot headwind. Use the calculator below with the gust value to see the worst case, then compare it against your personal maximum, not the POH's demonstrated number.</p>
 
     <div class="calc-card" id="calculator">
+      <div class="calc-field paste-box" style="margin-bottom:18px">
+        <label for="metar">Paste a METAR to prefill the wind (optional)</label>
+        <textarea id="metar" rows="2" spellcheck="false" placeholder="KBFI 172053Z 31015G22KT 10SM FEW045 22/09 A3005"></textarea>
+        <p class="calc-hint" id="metar-note">Reads the wind group. METAR winds are degrees true; runways are magnetic, so expect a small offset where variation is large.</p>
+      </div>
       <div class="tool-layout">
         <div class="tool-inputs">
           <div class="calc-field">
             <label for="rwy">Runway heading (°)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="rwy" inputmode="numeric" min="0" max="360" step="1" value="270" />
-              <input type="range" id="rwy-r" min="0" max="360" step="5" value="270" aria-label="Runway heading slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Runway number × 10 (Runway 27 → 270)</p>
           </div>
           <div class="calc-field">
             <label for="wdir">Wind direction (°)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="10">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="wdir" inputmode="numeric" min="0" max="360" step="1" value="310" />
-              <input type="range" id="wdir-r" min="0" max="360" step="5" value="310" aria-label="Wind direction slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Direction the wind is <em>from</em></p>
           </div>
           <div class="calc-field">
             <label for="wspd">Wind speed (kt)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="wspd" inputmode="numeric" min="0" max="150" step="1" value="15" />
-              <input type="range" id="wspd-r" min="0" max="60" step="1" value="15" aria-label="Wind speed slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
           </div>
           <div class="calc-field">
             <label for="wgst">Gusting to (kt, optional)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="wgst" inputmode="numeric" min="0" max="200" step="1" placeholder="&ndash;" />
-              <input type="range" id="wgst-r" min="0" max="80" step="1" value="0" aria-label="Gust speed slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
           </div>
           <div class="calc-field">
             <label for="xmax">Your personal crosswind max (kt)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="xmax" inputmode="numeric" min="0" max="50" step="1" value="15" />
-              <input type="range" id="xmax-r" min="0" max="35" step="1" value="15" aria-label="Personal crosswind maximum slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Saved on this device. Set it with the <a href="/tools/personal-minimums-worksheet/">personal minimums worksheet</a>.</p>
           </div>
@@ -196,11 +206,13 @@
               <text id="rwyNumNear" x="150" y="248" text-anchor="middle" fill="#F0F0F5" font-size="12" font-weight="800">27</text>
             </g>
             <g id="windGroup">
+              <line x1="150" y1="8" x2="150" y2="95" stroke="transparent" stroke-width="34"/>
               <line x1="150" y1="14" x2="150" y2="72" stroke="#EAB308" stroke-width="4" stroke-linecap="round"/>
               <polygon points="150,88 141,68 159,68" fill="#EAB308"/>
             </g>
           </svg>
-          <p class="calc-hint" id="angle-note" style="margin-top:10px"></p>
+          <p class="dial-hint" style="margin-top:8px">Drag the wind arrow or the runway to rotate them.</p>
+          <p class="calc-hint" id="angle-note" style="margin-top:4px"></p>
           <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter the wind to see your components.</div>
         </div>
       </div>
@@ -222,6 +234,8 @@
         </div>
       </div>
     </div>
+
+    <p class="lede"><strong>Crosswind component = wind speed × sin(angle between wind and runway); headwind component = wind speed × cos(angle).</strong> A 20-knot wind 40° off the runway is a 13-knot crosswind and a 15-knot headwind. Use the calculator below with the gust value to see the worst case, then compare it against your personal maximum, not the POH's demonstrated number.</p>
 
     <h2>How the crosswind component is calculated</h2>
     <p>The wind is split into two right-angle pieces relative to the runway centerline:</p>
@@ -327,6 +341,7 @@
     <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
   </footer>
 
+  <script src="/assets/tools.js"></script>
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
@@ -343,17 +358,10 @@
         $('ticks').innerHTML = t;
       })();
 
-      // pair each number input with its slider
-      [['rwy', 360], ['wdir', 360], ['wspd', null], ['wgst', null], ['xmax', null]].forEach(function (pair) {
-        const n = $(pair[0]), r = $(pair[0] + '-r');
-        r.addEventListener('input', function () { n.value = r.value; compute(); });
-        n.addEventListener('input', function () { r.value = n.value; compute(); });
-      });
-
       // personal max persists on this device
       try {
         const saved = localStorage.getItem('fd-crosswind-max');
-        if (saved) { $('xmax').value = saved; $('xmax-r').value = saved; }
+        if (saved) { $('xmax').value = saved; }
       } catch (e) {}
 
       function severity(kt, max) {
@@ -373,8 +381,8 @@
         if (isNaN(rwy) || isNaN(wdir) || isNaN(wspd)) return;
 
         // rotate the diagram
-        $('rwyGroup').setAttribute('transform', 'rotate(' + (rwy % 360) + ' 150 150)');
-        $('windGroup').setAttribute('transform', 'rotate(' + (wdir % 360) + ' 150 150)');
+        $('rwyGroup').style.transform = 'rotate(' + (rwy % 360) + 'deg)';
+        $('windGroup').style.transform = 'rotate(' + (wdir % 360) + 'deg)';
         let num = Math.round((rwy % 360) / 10) % 36; if (num === 0) num = 36;
         let rec = (num + 18) % 36; if (rec === 0) rec = 36;
         $('rwyNumNear').textContent = String(num).padStart(2, '0');
@@ -444,22 +452,24 @@
 
       ['rwy', 'wdir', 'wspd', 'wgst', 'xmax'].forEach((id) => $(id).addEventListener('input', compute));
       compute();
+
+      // direct manipulation: drag the arrows on the dial
+      FD.dial($('compass'), $('windGroup'), $('wdir'), 5);
+      FD.dial($('compass'), $('rwyGroup'), $('rwy'), 5);
+
+      // METAR prefill: wind group (e.g. 31015G22KT)
+      $('metar').addEventListener('input', function () {
+        const w = FD.parseMetarWind($('metar').value);
+        if (!w) return;
+        if (w.dir !== null) $('wdir').value = w.dir;
+        $('wspd').value = w.speed;
+        if (w.gust) $('wgst').value = w.gust;
+        $('metar-note').textContent = 'Wind set to ' + (w.dir === null ? 'variable' : w.dir + '\u00B0') +
+          ' at ' + w.speed + (w.gust ? ' gusting ' + w.gust : '') + ' kt. Remember: METAR direction is true.';
+        compute();
+      });
     })();
 
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (el) {
-          el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
   </script>
 
 </body>

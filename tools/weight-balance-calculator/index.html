@@ -111,17 +111,17 @@
     </div>
   </nav>
 
-  <div class="page-hero">
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Weight &amp; Balance Calculator</h1>
     <p class="page-sub">Enter each item's weight and arm (or moment). Get gross weight, total moment, and CG, checked against your limits, with a weight-shift solver for fixing an out-of-envelope load.</p>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
-    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Weight &amp; Balance Calculator</p>
 
-    <p class="lede"><strong>Moment = weight × arm. CG = total moment ÷ total weight.</strong> That is the entire method: every item in the airplane multiplied by its distance from the datum, summed, and divided. What matters is what you do with the answer: check it against the envelope at takeoff <em>and</em> at landing fuel, and move weight, not hope, when it falls outside. Arms and limits come from <em>your</em> aircraft's papers. Entries stay on this device.</p>
 
     <div class="calc-card" id="calculator">
       <span class="section-label" style="margin-bottom:12px">Loading</span>
@@ -137,15 +137,27 @@
       <div class="calc-grid" style="margin-bottom:20px">
         <div class="calc-field">
           <label for="lim-gw">Max gross weight (lb)</label>
-          <input type="number" id="lim-gw" inputmode="numeric" min="0" step="1" placeholder="&ndash;" />
+          <div class="stepper" data-step="50">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="lim-gw" inputmode="numeric" min="0" step="1" placeholder="&ndash;" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
         <div class="calc-field">
           <label for="lim-fwd">Forward CG limit (in)</label>
-          <input type="number" id="lim-fwd" inputmode="decimal" step="0.1" placeholder="&ndash;" />
+          <div class="stepper" data-step="0.5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="lim-fwd" inputmode="decimal" step="0.1" placeholder="&ndash;" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
         <div class="calc-field">
           <label for="lim-aft">Aft CG limit (in)</label>
-          <input type="number" id="lim-aft" inputmode="decimal" step="0.1" placeholder="&ndash;" />
+          <div class="stepper" data-step="0.5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="lim-aft" inputmode="decimal" step="0.1" placeholder="&ndash;" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
       </div>
 
@@ -174,6 +186,8 @@
         </div>
       </div>
     </div>
+
+    <p class="lede"><strong>Moment = weight × arm. CG = total moment ÷ total weight.</strong> That is the entire method: every item in the airplane multiplied by its distance from the datum, summed, and divided. What matters is what you do with the answer: check it against the envelope at takeoff <em>and</em> at landing fuel, and move weight, not hope, when it falls outside. Arms and limits come from <em>your</em> aircraft's papers. Entries stay on this device.</p>
 
     <h2>How the calculation works</h2>
     <p>Everything hangs on a lever. The datum is an imaginary reference plane (often the firewall or the tip of the spinner; your POH says where); each item's <strong>arm</strong> is its distance aft of that plane. Weight × arm = <strong>moment</strong>, the twisting force the item applies. Sum the weights, sum the moments, divide: <strong>CG = Σ moment ÷ Σ weight</strong>. The POH publishes an envelope of acceptable CG positions per weight; inside it the airplane was certified to be controllable and recoverable, outside it nobody has promised you anything.</p>
@@ -206,15 +220,27 @@
       <div class="calc-grid">
         <div class="calc-field">
           <label for="ws-tw">Total weight (lb)</label>
-          <input type="number" id="ws-tw" inputmode="numeric" min="1" step="1" value="7500" />
+          <div class="stepper" data-step="100">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="ws-tw" inputmode="numeric" min="1" step="1" value="7500" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
         <div class="calc-field">
           <label for="ws-dcg">CG change needed (in)</label>
-          <input type="number" id="ws-dcg" inputmode="decimal" step="0.1" value="1" />
+          <div class="stepper" data-step="0.5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="ws-dcg" inputmode="decimal" step="0.1" value="1" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
         <div class="calc-field">
           <label for="ws-darm">Distance the item moves (in)</label>
-          <input type="number" id="ws-darm" inputmode="decimal" step="1" value="120" />
+          <div class="stepper" data-step="5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="ws-darm" inputmode="decimal" step="1" value="120" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
           <p class="calc-hint">e.g., baggage compartment A to compartment B</p>
         </div>
         <div class="calc-field">
@@ -286,6 +312,7 @@
     <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
   </footer>
 
+  <script src="/assets/tools.js"></script>
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
@@ -468,20 +495,6 @@
       render(); compute();
     })();
 
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (el) {
-          el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
   </script>
 
 </body>

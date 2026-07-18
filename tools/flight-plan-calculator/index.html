@@ -111,38 +111,54 @@
     </div>
   </nav>
 
-  <div class="page-hero">
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Cross-Country Trip Planner</h1>
     <p class="page-sub">Enter each leg's distance, course, and winds. Get the heading to fly, groundspeed, leg time, ETA, and fuel for every leg, and the totals your fuel decision runs on.</p>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
-    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Cross-Country Trip Planner</p>
 
-    <p class="lede"><strong>A nav log is the wind triangle solved once per leg, chained in time.</strong> Each leg turns distance, true course, TAS, and the winds aloft into a magnetic heading, a groundspeed, a leg time, and a fuel burn; the departure time threads them into ETAs. This planner does what an E6-B or CX-3 trip function does, with every leg visible at once. Your entries stay on this device.</p>
 
     <div class="calc-card" id="calculator">
       <span class="section-label" style="margin-bottom:12px">Aircraft &amp; route constants</span>
       <div class="calc-grid" style="margin-bottom:20px">
         <div class="calc-field">
           <label for="g-tas">True airspeed (kt)</label>
-          <input type="number" id="g-tas" inputmode="numeric" min="30" max="500" step="1" value="110" />
+          <div class="stepper" data-step="1">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-tas" inputmode="numeric" min="30" max="500" step="1" value="110" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
           <p class="calc-hint">From the <a href="/tools/true-airspeed-calculator/">TAS calculator</a> or POH</p>
         </div>
         <div class="calc-field">
           <label for="g-rate">Fuel burn (GPH)</label>
-          <input type="number" id="g-rate" inputmode="decimal" min="1" max="200" step="0.1" value="9.5" />
+          <div class="stepper" data-step="0.5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-rate" inputmode="decimal" min="1" max="200" step="0.1" value="9.5" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
         <div class="calc-field">
           <label for="g-var">Magnetic variation (°)</label>
-          <input type="number" id="g-var" inputmode="numeric" min="-40" max="40" step="1" value="0" />
+          <div class="stepper" data-step="1">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-var" inputmode="numeric" min="-40" max="40" step="1" value="0" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
           <p class="calc-hint">West positive, east negative</p>
         </div>
         <div class="calc-field">
           <label for="g-dev">Compass deviation (°)</label>
-          <input type="number" id="g-dev" inputmode="numeric" min="-15" max="15" step="1" value="0" />
+          <div class="stepper" data-step="1">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-dev" inputmode="numeric" min="-15" max="15" step="1" value="0" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
           <p class="calc-hint">From the deviation card (optional)</p>
         </div>
         <div class="calc-field">
@@ -169,6 +185,8 @@
       </table></div>
       <div class="verdict-line v-dim" id="verdict" aria-live="polite">Add legs to build the nav log.</div>
     </div>
+
+    <p class="lede"><strong>A nav log is the wind triangle solved once per leg, chained in time.</strong> Each leg turns distance, true course, TAS, and the winds aloft into a magnetic heading, a groundspeed, a leg time, and a fuel burn; the departure time threads them into ETAs. This planner does what an E6-B or CX-3 trip function does, with every leg visible at once. Your entries stay on this device.</p>
 
     <h2>What happens on each line</h2>
     <p>Every leg runs the same five steps a flight computer does:</p>
@@ -258,6 +276,7 @@
     <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
   </footer>
 
+  <script src="/assets/tools.js"></script>
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
@@ -420,20 +439,6 @@
       render(); compute();
     })();
 
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (el) {
-          el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
   </script>
 
 </body>

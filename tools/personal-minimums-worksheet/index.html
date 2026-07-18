@@ -150,15 +150,16 @@
     </div>
   </nav>
 
-  <div class="page-hero">
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Personal Minimums Worksheet</h1>
     <p class="page-sub">Set your own ceiling, visibility, wind, and performance numbers on the ground, before the pressure to fly shows up. Fill it in, it saves in your browser, and it prints cleanly for your kneeboard.</p>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
-    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Personal Minimums Worksheet</p>
 
     <p class="lede"><strong>Personal minimums are your own pre-set weather, wind, and performance numbers: decided calmly on the ground, above the legal minimums, and below the aircraft's demonstrated values. They turn a fuzzy "should I go?" into a number you either meet or don't.</strong> The worksheet below follows the FAA's personal minimums development approach: start from your experience, set the numbers, then subtract margin when today's flight carries extra risk factors.</p>
 
@@ -348,6 +349,7 @@
     <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
   </footer>
 
+  <script src="/assets/tools.js"></script>
   <script>
     (function () {
       const KEY = 'fd-personal-minimums-v1';
@@ -385,20 +387,6 @@
       });
     })();
 
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (el) {
-          el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
   </script>
 
 </body>

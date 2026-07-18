@@ -111,57 +111,62 @@
     </div>
   </nav>
 
-  <div class="page-hero">
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Heading &amp; Groundspeed Calculator</h1>
     <p class="page-sub">Enter your course, true airspeed, and the winds aloft. Get the wind correction angle, the heading to fly, and the groundspeed your leg times depend on.</p>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
-    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Heading &amp; Groundspeed Calculator</p>
 
-    <p class="lede"><strong>Wind correction angle = arcsin(wind speed × sin(wind angle) ÷ TAS); groundspeed = TAS × cos(WCA) − wind speed × cos(wind angle).</strong> This is the wind triangle, the calculation at the heart of every E6-B and every nav log line: point the nose into the wind just enough that your track stays on course, then accept whatever groundspeed is left.</p>
 
     <div class="calc-card" id="calculator">
       <div class="tool-layout">
         <div class="tool-inputs">
           <div class="calc-field">
             <label for="tc">True course (°)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="tc" inputmode="numeric" min="0" max="360" step="1" value="288" />
-              <input type="range" id="tc-r" min="0" max="360" step="1" value="288" aria-label="True course slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Measured on the chart, in degrees true</p>
           </div>
           <div class="calc-field">
             <label for="tas">True airspeed (kt)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="tas" inputmode="numeric" min="30" max="500" step="1" value="110" />
-              <input type="range" id="tas-r" min="60" max="250" step="1" value="110" aria-label="True airspeed slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">From the <a href="/tools/true-airspeed-calculator/">true airspeed calculator</a> or your POH</p>
           </div>
           <div class="calc-field">
             <label for="wd">Wind direction (° true)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="wd" inputmode="numeric" min="0" max="360" step="1" value="350" />
-              <input type="range" id="wd-r" min="0" max="360" step="5" value="350" aria-label="Wind direction slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Direction the wind is from, per the winds aloft forecast (already true)</p>
           </div>
           <div class="calc-field">
             <label for="ws">Wind speed (kt)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="ws" inputmode="numeric" min="0" max="200" step="1" value="15" />
-              <input type="range" id="ws-r" min="0" max="80" step="1" value="15" aria-label="Wind speed slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
           </div>
           <div class="calc-field">
             <label for="mvar">Magnetic variation (°, optional)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="mvar" inputmode="numeric" min="-40" max="40" step="1" placeholder="&ndash;" />
-              <input type="range" id="mvar-r" min="-25" max="25" step="1" value="0" aria-label="Magnetic variation slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">West positive, east negative ("east is least"). From the isogonic line on your chart</p>
           </div>
@@ -175,6 +180,7 @@
             <text x="150" y="284" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">S</text>
             <text x="27" y="155" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">W</text>
             <g id="courseGroup">
+              <line x1="150" y1="150" x2="150" y2="28" stroke="transparent" stroke-width="30"/>
               <line x1="150" y1="150" x2="150" y2="34" stroke="#3B82F6" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round"/>
               <text x="158" y="48" fill="#93C5FD" font-size="11" font-weight="700">CRS</text>
             </g>
@@ -183,11 +189,13 @@
               <polygon points="150,28 142,46 158,46" fill="#22C55E"/>
             </g>
             <g id="windGroup">
+              <line x1="150" y1="8" x2="150" y2="90" stroke="transparent" stroke-width="34"/>
               <line x1="150" y1="14" x2="150" y2="66" stroke="#EAB308" stroke-width="4" stroke-linecap="round"/>
               <polygon points="150,82 141,62 159,62" fill="#EAB308"/>
             </g>
           </svg>
-          <p class="calc-hint" style="margin-top:8px"><span style="color:#93C5FD">&#9644; course</span> &nbsp;<span style="color:#22C55E">&#9644; heading</span> &nbsp;<span style="color:#EAB308">&#9644; wind</span></p>
+          <p class="dial-hint" style="margin-top:8px">Drag the wind arrow or the course line to rotate them.</p>
+          <p class="calc-hint" style="margin-top:4px"><span style="color:#93C5FD">&#9644; course</span> &nbsp;<span style="color:#22C55E">&#9644; heading</span> &nbsp;<span style="color:#EAB308">&#9644; wind</span></p>
           <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter the wind to solve the triangle.</div>
         </div>
       </div>
@@ -214,6 +222,8 @@
         </div>
       </div>
     </div>
+
+    <p class="lede"><strong>Wind correction angle = arcsin(wind speed × sin(wind angle) ÷ TAS); groundspeed = TAS × cos(WCA) − wind speed × cos(wind angle).</strong> This is the wind triangle, the calculation at the heart of every E6-B and every nav log line: point the nose into the wind just enough that your track stays on course, then accept whatever groundspeed is left.</p>
 
     <h2>How the wind triangle works</h2>
     <p>Three vectors close a triangle: your airspeed vector (where the nose points, at TAS), the wind vector, and the resulting track over the ground. Planning solves it backwards: you know the track you want (the course), the TAS you will fly, and the forecast wind; you need the heading and the groundspeed that fall out.</p>
@@ -249,20 +259,36 @@
       <div class="calc-grid">
         <div class="calc-field">
           <label for="i-th">True heading flown (°)</label>
-          <input type="number" id="i-th" inputmode="numeric" min="0" max="360" step="1" value="350" />
+          <div class="stepper" data-step="5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="i-th" inputmode="numeric" min="0" max="360" step="1" value="350" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
         <div class="calc-field">
           <label for="i-tas">True airspeed (kt)</label>
-          <input type="number" id="i-tas" inputmode="numeric" min="30" max="600" step="1" value="500" />
+          <div class="stepper" data-step="5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="i-tas" inputmode="numeric" min="30" max="600" step="1" value="500" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
         <div class="calc-field">
           <label for="i-tc">Actual track (°)</label>
-          <input type="number" id="i-tc" inputmode="numeric" min="0" max="360" step="1" value="355" />
+          <div class="stepper" data-step="5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="i-tc" inputmode="numeric" min="0" max="360" step="1" value="355" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
           <p class="calc-hint">"TRK" on your GPS</p>
         </div>
         <div class="calc-field">
           <label for="i-gs">Groundspeed (kt)</label>
-          <input type="number" id="i-gs" inputmode="numeric" min="0" max="800" step="1" value="478" />
+          <div class="stepper" data-step="5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="i-gs" inputmode="numeric" min="0" max="800" step="1" value="478" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
         </div>
       </div>
       <div class="calc-results" aria-live="polite">
@@ -343,6 +369,7 @@
     <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
   </footer>
 
+  <script src="/assets/tools.js"></script>
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
@@ -358,12 +385,6 @@
         $('ticks').innerHTML = t;
       })();
 
-      [['tc'], ['tas'], ['wd'], ['ws'], ['mvar']].forEach(function (pair) {
-        const n = $(pair[0]), r = $(pair[0] + '-r');
-        r.addEventListener('input', function () { n.value = r.value; compute(); });
-        n.addEventListener('input', function () { r.value = n.value; compute(); });
-      });
-
       function norm360(d) { d = d % 360; if (d <= 0) d += 360; return Math.round(d); }
 
       function compute() {
@@ -374,8 +395,8 @@
         const mvar = parseFloat($('mvar').value);
         if (isNaN(tc) || isNaN(tas) || isNaN(wd) || isNaN(ws) || tas <= 0) return;
 
-        $('courseGroup').setAttribute('transform', 'rotate(' + (tc % 360) + ' 150 150)');
-        $('windGroup').setAttribute('transform', 'rotate(' + (wd % 360) + ' 150 150)');
+        $('courseGroup').style.transform = 'rotate(' + (tc % 360) + 'deg)';
+        $('windGroup').style.transform = 'rotate(' + (wd % 360) + 'deg)';
 
         const beta = rad(wd - tc);
         const s = ws * Math.sin(beta) / tas;
@@ -392,7 +413,7 @@
         const gs = tas * Math.cos(wca) - ws * Math.cos(beta);
         const headComp = ws * Math.cos(beta); // + = headwind along course
 
-        $('hdgGroup').setAttribute('transform', 'rotate(' + (th % 360) + ' 150 150)');
+        $('hdgGroup').style.transform = 'rotate(' + (th % 360) + 'deg)';
 
         $('wca-val').textContent = (wcaDeg >= 0 ? '+' : '−') + Math.abs(Math.round(wcaDeg)) + '°';
         $('wca-note').textContent = Math.abs(wcaDeg) < 0.5 ? 'no crab needed' : 'crab ' + (wcaDeg > 0 ? 'right' : 'left');
@@ -426,6 +447,10 @@
 
       compute();
 
+      // direct manipulation: drag the arrows on the dial
+      FD.dial($('compass'), $('windGroup'), $('wd'), 5);
+      FD.dial($('compass'), $('courseGroup'), $('tc'), 5);
+
       // inverse solver: heading + TAS + track + GS -> wind
       function inverse() {
         const th = parseFloat($('i-th').value);
@@ -450,20 +475,6 @@
       inverse();
     })();
 
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (el) {
-          el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
   </script>
 
 </body>

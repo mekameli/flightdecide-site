@@ -111,17 +111,17 @@
     </div>
   </nav>
 
-  <div class="page-hero">
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Time-Speed-Distance Calculator</h1>
     <p class="page-sub">Enter any two of distance, groundspeed, and time; get the third, plus an ETA from your departure time. The E6-B function pilots use on every leg.</p>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
-    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Time-Speed-Distance Calculator</p>
 
-    <p class="lede"><strong>Time = distance ÷ groundspeed. Groundspeed = distance ÷ time. Distance = groundspeed × time.</strong> One relationship, three directions, and it runs the whole nav log: leg times before takeoff, groundspeed checks between fixes in flight, and the revised ETA when the forecast wind turns out to be fiction. Pick what to solve for below.</p>
 
     <div class="calc-card" id="calculator">
       <div class="solve-pills" role="group" aria-label="Choose which value to solve for">
@@ -134,25 +134,28 @@
         <div class="tool-inputs">
           <div class="calc-field" id="field-dist">
             <label for="dist">Distance (NM)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="dist" inputmode="decimal" min="0" max="3000" step="0.1" value="92.3" />
-              <input type="range" id="dist-r" min="0" max="400" step="1" value="92" aria-label="Distance slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Leg or trip length from your chart or EFB</p>
           </div>
           <div class="calc-field" id="field-gs">
             <label for="gs">Groundspeed (kt)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="gs" inputmode="decimal" min="1" max="600" step="1" value="108" />
-              <input type="range" id="gs-r" min="40" max="250" step="1" value="108" aria-label="Groundspeed slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">TAS corrected for wind. Get it from the <a href="/tools/wind-correction-calculator/">heading &amp; groundspeed calculator</a></p>
           </div>
           <div class="calc-field is-output" id="field-dur">
             <label for="dur">Time (minutes)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="dur" inputmode="decimal" min="0" max="1440" step="1" value="51" />
-              <input type="range" id="dur-r" min="0" max="360" step="1" value="51" aria-label="Time slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint" id="dur-hint">Shown as h:mm in the results</p>
           </div>
@@ -195,6 +198,8 @@
         </div>
       </div>
     </div>
+
+    <p class="lede"><strong>Time = distance ÷ groundspeed. Groundspeed = distance ÷ time. Distance = groundspeed × time.</strong> One relationship, three directions, and it runs the whole nav log: leg times before takeoff, groundspeed checks between fixes in flight, and the revised ETA when the forecast wind turns out to be fiction. Pick what to solve for below.</p>
 
     <h2>One formula, three questions</h2>
     <p>Everything on a nav log is the same relationship rearranged:</p>
@@ -276,6 +281,7 @@
     <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
   </footer>
 
+  <script src="/assets/tools.js"></script>
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
@@ -286,12 +292,6 @@
         const h = Math.floor(min / 60), m = Math.round(min % 60);
         return h > 0 ? h + ':' + String(m).padStart(2, '0') : m + ' min';
       }
-
-      [['dist'], ['gs'], ['dur']].forEach(function (pair) {
-        const n = $(pair[0]), r = $(pair[0] + '-r');
-        r.addEventListener('input', function () { n.value = r.value; compute(); });
-        n.addEventListener('input', function () { r.value = n.value; compute(); });
-      });
       $('dep').addEventListener('input', compute);
 
       const pills = { dur: $('pill-dur'), gs: $('pill-gs'), dist: $('pill-dist') };
@@ -315,15 +315,12 @@
         if (solve === 'dur' && !isNaN(dist) && !isNaN(gs) && gs > 0) {
           dur = dist / gs * 60;
           $('dur').value = Math.round(dur * 10) / 10;
-          $('dur-r').value = Math.round(dur);
         } else if (solve === 'gs' && !isNaN(dist) && !isNaN(dur) && dur > 0) {
           gs = dist / (dur / 60);
           $('gs').value = Math.round(gs * 10) / 10;
-          $('gs-r').value = Math.round(gs);
         } else if (solve === 'dist' && !isNaN(gs) && !isNaN(dur)) {
           dist = gs * (dur / 60);
           $('dist').value = Math.round(dist * 10) / 10;
-          $('dist-r').value = Math.round(dist);
         }
         if (isNaN(dist) || isNaN(gs) || isNaN(dur) || gs <= 0) return;
 
@@ -371,20 +368,6 @@
       compute();
     })();
 
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (el) {
-          el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
   </script>
 
 </body>

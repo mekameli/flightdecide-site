@@ -127,17 +127,17 @@
     </div>
   </nav>
 
-  <div class="page-hero">
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
     <span class="page-label">Free Pilot Tools</span>
     <h1>Density Altitude Calculator</h1>
     <p class="page-sub">Enter field elevation, altimeter setting, and temperature. Get pressure altitude and density altitude instantly, and see how much runway performance you're really working with.</p>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
-    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Density Altitude Calculator</p>
 
-    <p class="lede"><strong>Pressure altitude = field elevation + (29.92 − altimeter setting) × 1,000. Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft. Your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
 
     <div class="calc-card" id="calculator">
       <div class="calc-field paste-box" style="margin-bottom:18px">
@@ -149,33 +149,37 @@
         <div class="tool-inputs">
           <div class="calc-field">
             <label for="elev">Field elevation (ft)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="100">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="elev" inputmode="numeric" min="-1000" max="15000" step="1" value="5000" />
-              <input type="range" id="elev-r" min="0" max="12000" step="100" value="5000" aria-label="Field elevation slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">From the chart supplement or your EFB</p>
           </div>
           <div class="calc-field">
             <label for="altim">Altimeter setting (inHg)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="0.01">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="altim" inputmode="decimal" min="27" max="32" step="0.01" value="29.92" />
-              <input type="range" id="altim-r" min="28.5" max="31.0" step="0.01" value="29.92" aria-label="Altimeter setting slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">From the METAR / AWOS ("A2992" &rarr; 29.92)</p>
           </div>
           <div class="calc-field">
             <label for="oat">Temperature (&deg;C)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="oat" inputmode="numeric" min="-60" max="60" step="1" value="30" />
-              <input type="range" id="oat-r" min="-30" max="50" step="1" value="30" aria-label="Temperature slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Outside air temperature at the field</p>
           </div>
           <div class="calc-field">
             <label for="dew">Dew point (&deg;C, optional)</label>
-            <div class="field-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="dew" inputmode="numeric" min="-60" max="40" step="1" placeholder="&ndash;" />
-              <input type="range" id="dew-r" min="-30" max="35" step="1" value="0" aria-label="Dew point slider" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">Used only to flag high humidity</p>
           </div>
@@ -213,6 +217,8 @@
       </div>
       <p class="calc-hint" style="margin-top:14px" id="humid-note"></p>
     </div>
+
+    <p class="lede"><strong>Pressure altitude = field elevation + (29.92 − altimeter setting) × 1,000. Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft. Your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
 
     <h2>What density altitude actually is</h2>
     <p>Density altitude is pressure altitude corrected for non-standard temperature: the altitude in the standard atmosphere at which the air would be as thin as it is right now at your airport. Your wing, propeller, and normally aspirated engine do not care about the number painted on the airport sign; they care about air density. When the air is hot, the airplane performs as if the airport were much higher, even though your altimeter still reads field elevation on the ramp.</p>
@@ -330,16 +336,10 @@
     <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
   </footer>
 
+  <script src="/assets/tools.js"></script>
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
-
-      // pair number inputs with sliders
-      ['elev', 'altim', 'oat', 'dew'].forEach(function (id) {
-        const n = $(id), r = $(id + '-r');
-        r.addEventListener('input', function () { n.value = r.value; compute(); });
-        n.addEventListener('input', function () { r.value = n.value; compute(); });
-      });
 
       // METAR prefill: temperature/dew point group (e.g. 32/07, M02/M05) + altimeter (A3012 or Q1013)
       $('metar').addEventListener('input', function () {
@@ -349,19 +349,19 @@
         if (td) {
           const t = parseInt(td[1].replace('M', '-'), 10);
           const d = parseInt(td[2].replace('M', '-'), 10);
-          $('oat').value = t; $('oat-r').value = t;
-          $('dew').value = d; $('dew-r').value = d;
+          $('oat').value = t;
+          $('dew').value = d;
           hit.push('temperature ' + t + ' \u00B0C, dew point ' + d + ' \u00B0C');
         }
         const a = s.match(/(?:^|\s)A(\d{4})(?:\s|$)/);
         const q = s.match(/(?:^|\s)Q(\d{4})(?:\s|$)/);
         if (a) {
           const inhg = (parseInt(a[1], 10) / 100).toFixed(2);
-          $('altim').value = inhg; $('altim-r').value = inhg;
+          $('altim').value = inhg;
           hit.push('altimeter ' + inhg + ' inHg');
         } else if (q) {
           const inhg = (parseInt(q[1], 10) * 0.02953).toFixed(2);
-          $('altim').value = inhg; $('altim-r').value = inhg;
+          $('altim').value = inhg;
           hit.push('altimeter ' + inhg + ' inHg (from Q' + q[1] + ')');
         }
         $('metar-note').textContent = hit.length
@@ -453,20 +453,6 @@
       compute();
     })();
 
-    document.querySelectorAll('.faq-question').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function (el) {
-          el.classList.remove('open');
-          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
   </script>
 
 </body>
