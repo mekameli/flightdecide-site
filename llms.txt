@@ -34,6 +34,18 @@ Key facts:
 - [Density Altitude Calculator](https://flightdecide.com/tools/density-altitude-calculator/):
   pressure altitude, ISA deviation, and density altitude from field
   elevation, altimeter, and temperature.
+- [True Airspeed Calculator](https://flightdecide.com/tools/true-airspeed-calculator/):
+  CAS to TAS, Mach, pressure altitude, and density altitude from altitude
+  and temperature, with the 2% rule of thumb.
+- [Time-Speed-Distance Calculator](https://flightdecide.com/tools/flight-time-calculator/):
+  solve flight time, groundspeed, or distance from the other two, plus
+  ETA and checkpoint groundspeed-check technique.
+- [Fuel Burn & Endurance Calculator](https://flightdecide.com/tools/fuel-burn-calculator/):
+  gallons burned, endurance to dry tanks, and margin over the FAA
+  reserve, with plan-in-time fuel habits.
+- [Wind Correction Angle Calculator](https://flightdecide.com/tools/wind-correction-calculator/):
+  the wind triangle: WCA, true/magnetic heading, and groundspeed from
+  course, TAS, and winds aloft.
 - [Personal Minimums Worksheet](https://flightdecide.com/tools/personal-minimums-worksheet/):
   printable worksheet for setting ceiling/visibility/wind/performance
   minimums, based on the FAA approach.

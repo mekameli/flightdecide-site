@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wind Correction Angle Calculator: Heading &amp; Groundspeed | FlightDecide</title>
+  <meta name="description" content="Free wind correction angle calculator for pilots. Enter course, true airspeed, and winds aloft to get the wind correction angle, true and magnetic heading, and groundspeed: the wind triangle solved instantly, with how it works underneath." />
+  <link rel="canonical" href="https://flightdecide.com/tools/wind-correction-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Wind Correction Angle Calculator: Heading &amp; Groundspeed" />
+  <meta property="og:description" content="The wind triangle solved instantly: wind correction angle, true and magnetic heading, and groundspeed from course, TAS, and winds aloft." />
+  <meta property="og:url" content="https://flightdecide.com/tools/wind-correction-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide wind correction angle calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wind Correction Angle Calculator: Heading &amp; Groundspeed" />
+  <meta name="twitter:description" content="The wind triangle solved instantly: wind correction angle, heading, and groundspeed from course, TAS, and winds aloft." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/wind-correction-calculator/#app",
+        "name": "Wind Correction Angle Calculator",
+        "url": "https://flightdecide.com/tools/wind-correction-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free wind triangle calculator for pilots. Enter true course, true airspeed, and winds aloft to get wind correction angle, true heading, magnetic heading, and groundspeed.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/wind-correction-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate the wind correction angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wind correction angle = arcsin(wind speed × sin(wind angle) ÷ true airspeed), where the wind angle is the difference between the wind direction and your course. Flying a 288° course at 110 knots TAS with wind from 350° at 3 knots gives a WCA of about +1°, a true heading of 289°, and a groundspeed of 109 knots."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between course and heading?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Course is the path over the ground you want to fly, measured on the chart. Heading is where you point the nose to stay on that path despite the wind. Heading = course + wind correction angle. Apply magnetic variation to true heading to get magnetic heading, and compass deviation to get the compass heading you actually fly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are winds aloft given in true or magnetic direction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Winds aloft forecasts are in degrees true, which matches the true course you measure on a chart, so use them together directly. Only surface winds spoken over the radio (ATIS, AWOS, tower) are magnetic. The memory aid is: written true, spoken magnetic."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Wind Correction Angle Calculator", "item": "https://flightdecide.com/tools/wind-correction-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Heading &amp; Groundspeed Calculator</h1>
+    <p class="page-sub">Enter your course, true airspeed, and the winds aloft. Get the wind correction angle, the heading to fly, and the groundspeed your leg times depend on.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Heading &amp; Groundspeed Calculator</p>
+
+    <p class="lede"><strong>Wind correction angle = arcsin(wind speed × sin(wind angle) ÷ TAS); groundspeed = TAS × cos(WCA) − wind speed × cos(wind angle).</strong> This is the wind triangle, the calculation at the heart of every E6-B and every nav log line: point the nose into the wind just enough that your track stays on course, then accept whatever groundspeed is left.</p>
+
+    <div class="calc-card" id="calculator">
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="tc">True course (°)</label>
+            <div class="field-row">
+              <input type="number" id="tc" inputmode="numeric" min="0" max="360" step="1" value="288" />
+              <input type="range" id="tc-r" min="0" max="360" step="1" value="288" aria-label="True course slider" />
+            </div>
+            <p class="calc-hint">Measured on the chart, in degrees true</p>
+          </div>
+          <div class="calc-field">
+            <label for="tas">True airspeed (kt)</label>
+            <div class="field-row">
+              <input type="number" id="tas" inputmode="numeric" min="30" max="500" step="1" value="110" />
+              <input type="range" id="tas-r" min="60" max="250" step="1" value="110" aria-label="True airspeed slider" />
+            </div>
+            <p class="calc-hint">From the <a href="/tools/true-airspeed-calculator/">true airspeed calculator</a> or your POH</p>
+          </div>
+          <div class="calc-field">
+            <label for="wd">Wind direction (° true)</label>
+            <div class="field-row">
+              <input type="number" id="wd" inputmode="numeric" min="0" max="360" step="1" value="350" />
+              <input type="range" id="wd-r" min="0" max="360" step="5" value="350" aria-label="Wind direction slider" />
+            </div>
+            <p class="calc-hint">Direction the wind is from, per the winds aloft forecast (already true)</p>
+          </div>
+          <div class="calc-field">
+            <label for="ws">Wind speed (kt)</label>
+            <div class="field-row">
+              <input type="number" id="ws" inputmode="numeric" min="0" max="200" step="1" value="15" />
+              <input type="range" id="ws-r" min="0" max="80" step="1" value="15" aria-label="Wind speed slider" />
+            </div>
+          </div>
+          <div class="calc-field">
+            <label for="mvar">Magnetic variation (°, optional)</label>
+            <div class="field-row">
+              <input type="number" id="mvar" inputmode="numeric" min="-40" max="40" step="1" placeholder="&ndash;" />
+              <input type="range" id="mvar-r" min="-25" max="25" step="1" value="0" aria-label="Magnetic variation slider" />
+            </div>
+            <p class="calc-hint">West positive, east negative ("east is least"). From the isogonic line on your chart</p>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <svg id="compass" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Course, heading, and wind direction diagram">
+            <circle cx="150" cy="150" r="140" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+            <g id="ticks" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"></g>
+            <text x="150" y="30" text-anchor="middle" fill="#94A3B8" font-size="14" font-weight="700">N</text>
+            <text x="273" y="155" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">E</text>
+            <text x="150" y="284" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">S</text>
+            <text x="27" y="155" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600">W</text>
+            <g id="courseGroup">
+              <line x1="150" y1="150" x2="150" y2="34" stroke="#3B82F6" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round"/>
+              <text x="158" y="48" fill="#93C5FD" font-size="11" font-weight="700">CRS</text>
+            </g>
+            <g id="hdgGroup">
+              <line x1="150" y1="150" x2="150" y2="40" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round"/>
+              <polygon points="150,28 142,46 158,46" fill="#22C55E"/>
+            </g>
+            <g id="windGroup">
+              <line x1="150" y1="14" x2="150" y2="66" stroke="#EAB308" stroke-width="4" stroke-linecap="round"/>
+              <polygon points="150,82 141,62 159,62" fill="#EAB308"/>
+            </g>
+          </svg>
+          <p class="calc-hint" style="margin-top:8px"><span style="color:#93C5FD">&#9644; course</span> &nbsp;<span style="color:#22C55E">&#9644; heading</span> &nbsp;<span style="color:#EAB308">&#9644; wind</span></p>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter the wind to solve the triangle.</div>
+        </div>
+      </div>
+      <div class="calc-results" aria-live="polite">
+        <div class="result-tile">
+          <span class="result-label">Wind correction</span>
+          <span class="result-value" id="wca-val">&ndash;</span>
+          <span class="result-note" id="wca-note">crab angle</span>
+        </div>
+        <div class="result-tile result-blue">
+          <span class="result-label">True heading</span>
+          <span class="result-value" id="th-val">&ndash;</span>
+          <span class="result-note">course + WCA</span>
+        </div>
+        <div class="result-tile" id="tile-mh" style="display:none">
+          <span class="result-label">Magnetic heading</span>
+          <span class="result-value" id="mh-val">&ndash;</span>
+          <span class="result-note">what you fly on the DG</span>
+        </div>
+        <div class="result-tile" id="tile-gs">
+          <span class="result-label">Groundspeed</span>
+          <span class="result-value" id="gs-val">&ndash;</span>
+          <span class="result-note" id="gs-note">use for leg times</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>How the wind triangle works</h2>
+    <p>Three vectors close a triangle: your airspeed vector (where the nose points, at TAS), the wind vector, and the resulting track over the ground. Planning solves it backwards: you know the track you want (the course), the TAS you will fly, and the forecast wind; you need the heading and the groundspeed that fall out.</p>
+    <ul>
+      <li><strong>Wind angle</strong> = wind direction − course (how far off the nose the wind is from).</li>
+      <li><strong>WCA</strong> = arcsin(wind speed × sin(wind angle) ÷ TAS). Positive means crab right, negative crab left.</li>
+      <li><strong>True heading</strong> = course + WCA.</li>
+      <li><strong>Groundspeed</strong> = TAS × cos(WCA) − wind speed × cos(wind angle). A quartering headwind steals speed twice: once as headwind, once because your crab points some of your TAS sideways.</li>
+    </ul>
+    <p>Then convert to what the panel shows: <strong>magnetic heading = true heading + westerly variation</strong> (subtract easterly: "east is least, west is best"), and compass heading adds the deviation card correction.</p>
+
+    <h2>How pilots use it</h2>
+    <ul>
+      <li><strong>Filling the nav log:</strong> one triangle per leg turns chart courses and forecast winds into the heading column and the groundspeed column; groundspeed then drives ETE and fuel. This is exactly what a CX-3's trip planner or an EFB does per leg.</li>
+      <li><strong>Sanity-checking the magic:</strong> when the EFB says "fly 289°," a pilot who can see that a light quartering tailwind means a small left-or-right crab and a couple of knots gained will catch a fat-fingered wind entry instantly.</li>
+      <li><strong>In flight, in reverse:</strong> if you know your heading, TAS, track, and groundspeed (GPS gives you the last two), the same triangle run backwards reveals the actual wind at altitude, which is worth knowing before descending toward a gusty runway.</li>
+      <li><strong>The quick mental version:</strong> maximum drift (wind speed ÷ TAS in NM per minute × 60) scaled by the clock rule. At 120 knots TAS, a 20-knot direct crosswind needs about 10° of crab; half the angle off the nose, half the crab.</li>
+    </ul>
+
+    <h2>Worked example, from an actual nav log</h2>
+    <p>Course 288° true, TAS 110 knots, winds aloft 350° at 3 knots (a calm Pacific Northwest morning):</p>
+    <ul>
+      <li>Wind angle = 350 − 288 = 62° off the right nose</li>
+      <li>WCA = arcsin(3 × sin 62° ÷ 110) ≈ <strong>+1°</strong> (crab right)</li>
+      <li>True heading = <strong>289°</strong>; with 17° east variation, magnetic heading = <strong>272°</strong></li>
+      <li>Groundspeed = 110 × cos 1° − 3 × cos 62° ≈ <strong>109 knots</strong></li>
+    </ul>
+    <p>Now stiffen the wind to 350° at 25 knots: the crab grows to 12° and groundspeed drops to 96 knots, a 12% longer leg with the same fuel flow. That is why the triangle gets re-run whenever the forecast changes.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why does a direct crosswind still slow me down?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Because you have to crab into it. The component of your TAS that points into the wind is spent holding the track, not moving you along it, so groundspeed is TAS × cos(WCA) even with zero headwind component. A 90°, 30-knot wind on a 100-knot airplane costs about 5 knots of groundspeed purely from the 17° crab.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">When is there no solution to the wind triangle?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>When the crosswind component of the wind exceeds your TAS, no heading can hold the course; the calculator will tell you. Short of that, a strong tailwind-quartering wind can also produce a groundspeed near zero into a strong headwind. If your trainer flies 90 knots and the winds aloft say 60, the triangle still solves, but the fuel math may not.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do I apply variation before or after the wind correction?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>After. Work the whole triangle in true (chart course and winds aloft are both true), then convert: true course → apply WCA → true heading → apply variation → magnetic heading → apply deviation → compass heading. The classic memory aid is "True Virgins Make Dull Company" (True, Variation, Magnetic, Deviation, Compass).</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/true-airspeed-calculator/"><h3>True Airspeed Calculator</h3><p>The TAS input for this triangle, from CAS, altitude, and temperature.</p></a>
+      <a class="card-link" href="/tools/flight-time-calculator/"><h3>Time-Speed-Distance Calculator</h3><p>Turn the groundspeed into leg times and an ETA.</p></a>
+      <a class="card-link" href="/tools/crosswind-calculator/"><h3>Crosswind Calculator</h3><p>The same wind, resolved against a runway instead of a course.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Winds aloft, checked automatically</h2>
+      <p>FlightDecide pulls the forecast winds for your route and window and scores them with ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B, with the raw data one tap away.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 16. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const rad = (d) => d * Math.PI / 180;
+
+      (function () {
+        let t = '';
+        for (let a = 0; a < 360; a += 30) {
+          const r1 = 132, r2 = 140, cx = 150, cy = 150, ar = rad(a);
+          t += '<line x1="' + (cx + r1 * Math.sin(ar)).toFixed(1) + '" y1="' + (cy - r1 * Math.cos(ar)).toFixed(1) +
+               '" x2="' + (cx + r2 * Math.sin(ar)).toFixed(1) + '" y2="' + (cy - r2 * Math.cos(ar)).toFixed(1) + '"/>';
+        }
+        $('ticks').innerHTML = t;
+      })();
+
+      [['tc'], ['tas'], ['wd'], ['ws'], ['mvar']].forEach(function (pair) {
+        const n = $(pair[0]), r = $(pair[0] + '-r');
+        r.addEventListener('input', function () { n.value = r.value; compute(); });
+        n.addEventListener('input', function () { r.value = n.value; compute(); });
+      });
+
+      function norm360(d) { d = d % 360; if (d <= 0) d += 360; return Math.round(d); }
+
+      function compute() {
+        const tc = parseFloat($('tc').value);
+        const tas = parseFloat($('tas').value);
+        const wd = parseFloat($('wd').value);
+        const ws = parseFloat($('ws').value);
+        const mvar = parseFloat($('mvar').value);
+        if (isNaN(tc) || isNaN(tas) || isNaN(wd) || isNaN(ws) || tas <= 0) return;
+
+        $('courseGroup').setAttribute('transform', 'rotate(' + (tc % 360) + ' 150 150)');
+        $('windGroup').setAttribute('transform', 'rotate(' + (wd % 360) + ' 150 150)');
+
+        const beta = rad(wd - tc);
+        const s = ws * Math.sin(beta) / tas;
+        const v = $('verdict');
+        if (Math.abs(s) >= 1) {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'The crosswind component exceeds your TAS. No heading holds this course.';
+          $('wca-val').textContent = '–'; $('th-val').textContent = '–'; $('gs-val').textContent = '–';
+          return;
+        }
+        const wca = Math.asin(s);
+        const wcaDeg = wca * 180 / Math.PI;
+        const th = tc + wcaDeg;
+        const gs = tas * Math.cos(wca) - ws * Math.cos(beta);
+        const headComp = ws * Math.cos(beta); // + = headwind along course
+
+        $('hdgGroup').setAttribute('transform', 'rotate(' + (th % 360) + ' 150 150)');
+
+        $('wca-val').textContent = (wcaDeg >= 0 ? '+' : '−') + Math.abs(Math.round(wcaDeg)) + '°';
+        $('wca-note').textContent = Math.abs(wcaDeg) < 0.5 ? 'no crab needed' : 'crab ' + (wcaDeg > 0 ? 'right' : 'left');
+        $('th-val').textContent = norm360(th) + '°';
+        $('gs-val').textContent = Math.round(gs) + ' kt';
+        $('gs-note').textContent = headComp > 0.5 ? Math.round(headComp) + ' kt headwind component'
+          : headComp < -0.5 ? Math.round(-headComp) + ' kt tailwind component' : 'no head/tailwind component';
+        $('tile-gs').className = 'result-tile ' + (gs < tas - 1 ? 'result-amber' : gs > tas + 1 ? 'result-green' : '');
+
+        const mhTile = $('tile-mh');
+        if (!isNaN(mvar)) {
+          mhTile.style.display = '';
+          $('mh-val').textContent = norm360(th + mvar) + '°';
+        } else {
+          mhTile.style.display = 'none';
+        }
+
+        if (gs <= 0) {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'Groundspeed is zero or negative. You are not getting there at this TAS.';
+        } else {
+          const delta = gs - tas;
+          v.className = 'verdict-line ' + (delta < -10 ? 'v-amber' : 'v-green');
+          v.textContent = 'Fly ' + norm360(th) + '° true' +
+            (!isNaN(mvar) ? ' (' + norm360(th + mvar) + '° magnetic)' : '') +
+            ' and expect ' + Math.round(gs) + ' kt over the ground, ' +
+            (delta < -0.5 ? Math.round(-delta) + ' kt below' : delta > 0.5 ? Math.round(delta) + ' kt above' : 'right at') +
+            ' your TAS.';
+        }
+      }
+
+      compute();
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

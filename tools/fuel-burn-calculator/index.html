@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuel Burn &amp; Endurance Calculator for Pilots | FlightDecide</title>
+  <meta name="description" content="Free fuel burn and endurance calculator for pilots. Enter fuel flow, usable fuel, and leg time to get gallons burned, total endurance, and what lands in your tanks after the legal reserve, with the fuel-planning habits behind the numbers." />
+  <link rel="canonical" href="https://flightdecide.com/tools/fuel-burn-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Fuel Burn &amp; Endurance Calculator for Pilots" />
+  <meta property="og:description" content="Gallons burned, total endurance, and fuel remaining after the reserve, from fuel flow, usable fuel, and leg time." />
+  <meta property="og:url" content="https://flightdecide.com/tools/fuel-burn-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide fuel burn and endurance calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fuel Burn &amp; Endurance Calculator for Pilots" />
+  <meta name="twitter:description" content="Gallons burned, total endurance, and fuel remaining after the reserve, from fuel flow, usable fuel, and leg time." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/fuel-burn-calculator/#app",
+        "name": "Fuel Burn and Endurance Calculator",
+        "url": "https://flightdecide.com/tools/fuel-burn-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free fuel burn and endurance calculator for pilots. Enter fuel flow, usable fuel, and leg time to get gallons burned, total endurance, and margin over the required reserve.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/fuel-burn-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate fuel endurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Endurance = usable fuel ÷ fuel flow. With 38 gallons usable and a burn rate of 9.5 gallons per hour, endurance is 38 ÷ 9.5 = 4 hours to dry tanks. Subtract the required reserve (30 minutes day VFR, 45 minutes night VFR or IFR) to get your real planning endurance of about 3 hours 15 to 30 minutes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the FAA fuel reserve requirements?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "14 CFR 91.151 requires enough fuel to fly to the first point of intended landing plus 30 minutes at cruise power by day, or 45 minutes at night, for VFR. IFR under 91.167 requires fuel to the destination, then to the alternate if one is required, plus 45 minutes at normal cruise. Many pilots plan a personal reserve of a full hour."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What fuel flow number should I use for planning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the POH cruise-performance figure for your planned power setting and altitude, and verify it against what your airplane actually burns (from fill-ups or a totalizer). Real-world burn commonly runs higher than the book because of climbs, richer leaning, and pattern work. If your measured number and the book disagree, plan with the higher one."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Fuel Burn and Endurance Calculator", "item": "https://flightdecide.com/tools/fuel-burn-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Fuel Burn &amp; Endurance Calculator</h1>
+    <p class="page-sub">Enter fuel flow, usable fuel, and your leg time. See gallons burned, endurance to dry tanks, and what actually lands in your tanks after the reserve.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Fuel Burn &amp; Endurance Calculator</p>
+
+    <p class="lede"><strong>Endurance = usable fuel ÷ fuel flow. Leg burn = fuel flow × time.</strong> 38 gallons at 9.5 GPH is 4 hours to dry tanks; after a 45-minute reserve it is a 3:15 airplane, and a 2:30 leg lands with 45 minutes above the reserve. Fuel exhaustion still makes the NTSB reports every month, and almost every case had this arithmetic available before takeoff.</p>
+
+    <div class="calc-card" id="calculator">
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="rate">Fuel flow (GPH)</label>
+            <div class="field-row">
+              <input type="number" id="rate" inputmode="decimal" min="1" max="200" step="0.1" value="9.5" />
+              <input type="range" id="rate-r" min="4" max="30" step="0.5" value="9.5" aria-label="Fuel flow slider" />
+            </div>
+            <p class="calc-hint">POH cruise figure for your power setting, or your measured burn if higher</p>
+          </div>
+          <div class="calc-field">
+            <label for="fuel">Usable fuel on board (US gal)</label>
+            <div class="field-row">
+              <input type="number" id="fuel" inputmode="decimal" min="0" max="500" step="0.5" value="38" />
+              <input type="range" id="fuel-r" min="0" max="120" step="1" value="38" aria-label="Usable fuel slider" />
+            </div>
+            <p class="calc-hint">Usable, not total: check the POH fuel-system section</p>
+          </div>
+          <div class="calc-field">
+            <label for="leg">Leg time (minutes, optional)</label>
+            <div class="field-row">
+              <input type="number" id="leg" inputmode="numeric" min="0" max="900" step="1" value="150" />
+              <input type="range" id="leg-r" min="0" max="360" step="5" value="150" aria-label="Leg time slider" />
+            </div>
+            <p class="calc-hint">ETE from the <a href="/tools/flight-time-calculator/">time-speed-distance calculator</a>, plus taxi and climb allowance</p>
+          </div>
+          <div class="calc-field">
+            <label for="resv">Required reserve</label>
+            <div class="field-row">
+              <select id="resv" style="flex:1">
+                <option value="30">VFR day: 30 min (91.151)</option>
+                <option value="45" selected>VFR night / IFR: 45 min</option>
+                <option value="60">Personal: 60 min</option>
+              </select>
+            </div>
+            <p class="calc-hint">At normal cruise consumption</p>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <svg id="fuelbar" viewBox="0 0 300 150" width="300" height="150" role="img" aria-label="Fuel on board split into leg burn, margin, and reserve">
+            <g id="fbars"></g>
+            <g id="flabels" font-size="12" fill="#94A3B8" font-weight="650"></g>
+          </svg>
+          <p class="calc-hint" id="weight-note" style="margin-top:10px"></p>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter your numbers to see the margin.</div>
+        </div>
+      </div>
+      <div class="calc-results" aria-live="polite">
+        <div class="result-tile">
+          <span class="result-label">Endurance (dry tanks)</span>
+          <span class="result-value" id="end-val">&ndash;</span>
+          <span class="result-note">never plan to this number</span>
+        </div>
+        <div class="result-tile result-blue">
+          <span class="result-label">Planning endurance</span>
+          <span class="result-value" id="plan-val">&ndash;</span>
+          <span class="result-note" id="plan-note">after reserve</span>
+        </div>
+        <div class="result-tile" id="tile-burn">
+          <span class="result-label">Leg burn</span>
+          <span class="result-value" id="burn-val">&ndash;</span>
+          <span class="result-note">US gal</span>
+        </div>
+        <div class="result-tile" id="tile-margin">
+          <span class="result-label">Margin at landing</span>
+          <span class="result-value" id="margin-val">&ndash;</span>
+          <span class="result-note">flight time beyond the reserve</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>The three fuel questions, one relationship</h2>
+    <p>Volume = rate × time, rearranged three ways, exactly as on an E6-B or CX-3:</p>
+    <ul>
+      <li><strong>Burn:</strong> how much does a 1:15 leg take at 9.5 GPH? 9.5 × 1.25 ≈ 11.9 gallons.</li>
+      <li><strong>Endurance:</strong> how long will 38 gallons last at 9.5 GPH? 38 ÷ 9.5 = 4 hours.</li>
+      <li><strong>Rate:</strong> what am I really burning if the last 2:30 took 25 gallons? 25 ÷ 2.5 = 10 GPH. Measured rate beats book rate every time they disagree.</li>
+    </ul>
+
+    <h2>How pilots use it: plan in time, not gallons</h2>
+    <p>Experienced fuel planning runs on the clock, not the gauges. The habit pattern:</p>
+    <ul>
+      <li><strong>Before takeoff:</strong> compute endurance from known fuel and honest burn rate. Write down the time the tanks run dry ("wheels-up 14:10, dry tanks 18:10"). That number does not drift the way gauge needles do.</li>
+      <li><strong>Set a personal landing floor:</strong> the FAA minimum reserve (30 min day VFR, 45 night/IFR) is a legal floor, not a plan. A common personal rule is to be on the ground with at least an hour in the tanks.</li>
+      <li><strong>In flight:</strong> at each checkpoint compare planned burn with the totalizer or clock. A stronger-than-forecast headwind shows up here as a later ETA against a fixed dry-tanks time, and that comparison is what triggers a fuel stop while the options are still open.</li>
+      <li><strong>Groundspeed changes everything:</strong> endurance is fixed by fuel flow, but range is endurance × groundspeed. Rerun your reachable-airports thinking whenever measured groundspeed drops.</li>
+    </ul>
+
+    <h2>Worked example</h2>
+    <p>A 172 with 38 gallons usable, burning 9.5 GPH, on a 2:30 leg with a 45-minute reserve:</p>
+    <ul>
+      <li>Endurance to dry tanks: 38 ÷ 9.5 = <strong>4:00</strong></li>
+      <li>Planning endurance after reserve: 4:00 − 0:45 = <strong>3:15</strong></li>
+      <li>Leg burn: 9.5 × 2.5 = <strong>23.8 gallons</strong>, landing with 14.2 gallons</li>
+      <li>Margin at landing: 3:15 − 2:30 = <strong>45 minutes</strong> beyond the reserve</li>
+    </ul>
+    <p>Legal, and reasonable by day. Add an unforecast 15-knot headwind and a 20-minute reroute, and the margin is gone; that is why the calculator flags anything under an hour.</p>
+
+    <h2>Fuel weight for W&amp;B</h2>
+    <p>Standard aviation weights: <strong>avgas 6.0 lb/gal</strong>, jet fuel 6.84 lb/gal, oil 7.5 lb/gal. This calculator shows the weight of your fuel load so you can carry it straight into a weight-and-balance problem.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is the legal reserve enough?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>It is a floor, not a plan. Thirty minutes at cruise power is one missed approach and a short hold, or one closed runway with the next airport 40 miles away. NTSB fuel-exhaustion reports are full of flights that were legal at takeoff. An hour on the ground is a common personal minimum, and this calculator lets you select it.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why usable fuel instead of total capacity?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Some fuel in every tank cannot reach the engine in flight attitudes; the POH lists it as unusable. A "40-gallon" airplane may have 38 usable. Plan on usable only, and remember that visually checking tanks tells you more than gauges, which are only required to read accurately when empty.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Should I add anything to the leg time?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Yes: start, taxi, run-up, and climb burn more than cruise numbers suggest. A common allowance is an extra 1 to 1.5 gallons for start-taxi-takeoff in a trainer, plus climb fuel from the POH time-fuel-distance-to-climb table. Enter your leg time with those minutes included, or just treat the first gallon as gone before wheels-up.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/flight-time-calculator/"><h3>Time-Speed-Distance Calculator</h3><p>Where the leg time comes from: distance and groundspeed.</p></a>
+      <a class="card-link" href="/tools/wind-correction-calculator/"><h3>Heading &amp; Groundspeed Calculator</h3><p>The wind triangle that decides how long you are airborne.</p></a>
+      <a class="card-link" href="/learn/go-no-go-decision-framework/"><h3>The Go/No-Go Decision Framework</h3><p>Fuel margin is one of the eight questions; here is the whole structure.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Fuel is one of eight risk categories</h2>
+      <p>FlightDecide checks your fuel plan alongside winds, ceilings, visibility, NOTAMs, performance, and W&amp;B for your specific flight window and aircraft, and flags a thin margin before you commit.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: 14 CFR §§91.151, 91.167; FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 7. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+
+      function fmtHM(min) {
+        if (!isFinite(min)) return '–';
+        const neg = min < 0;
+        min = Math.abs(min);
+        const h = Math.floor(min / 60), m = Math.round(min % 60);
+        return (neg ? '-' : '') + h + ':' + String(m).padStart(2, '0');
+      }
+
+      [['rate'], ['fuel'], ['leg']].forEach(function (pair) {
+        const n = $(pair[0]), r = $(pair[0] + '-r');
+        r.addEventListener('input', function () { n.value = r.value; compute(); });
+        n.addEventListener('input', function () { r.value = n.value; compute(); });
+      });
+      $('resv').addEventListener('change', compute);
+
+      function compute() {
+        const rate = parseFloat($('rate').value);
+        const fuel = parseFloat($('fuel').value);
+        const leg = parseFloat($('leg').value);
+        const resv = parseFloat($('resv').value);
+        if (isNaN(rate) || isNaN(fuel) || rate <= 0) return;
+
+        const endMin = fuel / rate * 60;
+        const planMin = endMin - resv;
+        $('end-val').textContent = fmtHM(endMin);
+        $('plan-val').textContent = fmtHM(planMin);
+        $('plan-note').textContent = 'after the ' + resv + '-min reserve';
+        $('weight-note').textContent = 'That fuel weighs ' + Math.round(fuel * 6) + ' lb (avgas at 6.0 lb/gal) for your W&B.';
+
+        const hasLeg = !isNaN(leg) && leg > 0;
+        const burn = hasLeg ? rate * leg / 60 : NaN;
+        const marginMin = hasLeg ? planMin - leg : NaN;
+        $('burn-val').textContent = hasLeg ? (Math.round(burn * 10) / 10) : '–';
+        $('margin-val').textContent = hasLeg ? fmtHM(marginMin) : '–';
+        $('tile-margin').className = 'result-tile ' + (!hasLeg ? '' :
+          marginMin < 0 ? 'result-red' : marginMin < 60 ? 'result-amber' : 'result-green');
+
+        // fuel bar: leg burn | margin | reserve (of total usable)
+        const resGal = rate * resv / 60;
+        const burnGal = hasLeg ? Math.min(burn, fuel) : 0;
+        const marginGal = Math.max(fuel - burnGal - resGal, 0);
+        const scale = 280 / Math.max(fuel, burnGal + resGal, 1);
+        let x = 10, bars = '', labels = '';
+        [[burnGal, '#3B82F6', 'leg'], [marginGal, '#22C55E', 'margin'], [Math.min(resGal, fuel), '#EAB308', 'reserve']].forEach(function (seg) {
+          const w = seg[0] * scale;
+          if (w > 1) {
+            bars += '<rect x="' + x.toFixed(1) + '" y="55" width="' + Math.max(w - 2, 1).toFixed(1) + '" height="40" rx="4" fill="' + seg[1] + '" opacity="0.85"/>';
+            if (w > 34) labels += '<text x="' + (x + w / 2).toFixed(1) + '" y="115" text-anchor="middle">' + seg[2] + '</text>';
+          }
+          x += w;
+        });
+        const overGal = hasLeg ? Math.max(burn + resGal - fuel, 0) : 0;
+        if (overGal > 0.1) {
+          const w = Math.min(overGal * scale, 290 - x);
+          bars += '<rect x="' + x.toFixed(1) + '" y="55" width="' + Math.max(w, 2).toFixed(1) + '" height="40" rx="4" fill="#EF4444"/>';
+        }
+        $('fbars').innerHTML = bars +
+          '<rect x="10" y="55" width="280" height="40" rx="6" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>';
+        $('flabels').innerHTML = labels +
+          '<text x="10" y="40" fill="#F0F0F5">' + fuel + ' gal usable = ' + fmtHM(endMin) + ' at ' + rate + ' GPH</text>';
+
+        const v = $('verdict');
+        if (!hasLeg) {
+          v.className = 'verdict-line v-green';
+          v.textContent = 'Endurance ' + fmtHM(endMin) + ' to dry tanks; plan on ' + fmtHM(planMin) + '. Add a leg time to check the margin.';
+        } else if (marginMin < 0) {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'This leg lands ' + fmtHM(-marginMin) + ' inside your reserve. Add fuel or add a stop.';
+        } else if (marginMin < 60) {
+          v.className = 'verdict-line v-amber';
+          v.textContent = 'Legal, but only ' + fmtHM(marginMin) + ' beyond the reserve at landing. One headwind or reroute eats that.';
+        } else {
+          v.className = 'verdict-line v-green';
+          v.textContent = 'Lands with ' + fmtHM(marginMin) + ' of flying beyond the reserve (' + Math.round((fuel - burn) * 10) / 10 + ' gal in the tanks).';
+        }
+      }
+
+      compute();
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

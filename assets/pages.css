@@ -413,6 +413,88 @@ nav.site-nav {
   .tool-layout { grid-template-columns: 1fr; }
 }
 
+/* TOOL SWITCHER (cross-tool nav strip, sticky under the main nav) */
+nav.tool-switcher {
+  position: sticky;
+  top: 60px;
+  z-index: 90;
+  background: rgba(15,23,42,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+.tool-switcher-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+  padding: 10px 40px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tool-switcher-inner::-webkit-scrollbar { display: none; }
+.tool-pill {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.tool-pill:hover { color: var(--text); border-color: var(--border-bright); background: var(--bg-card-hover); }
+.tool-pill.active {
+  color: #052e16;
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+  border-color: transparent;
+  font-weight: 700;
+}
+@media (max-width: 640px) { .tool-switcher-inner { padding: 8px 16px; } }
+@media print { nav.tool-switcher { display: none !important; } }
+
+/* SOLVE-FOR PILLS (segmented control inside a calculator) */
+.solve-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.solve-pills .solve-label {
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+.solve-pills button {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border-bright);
+  border-radius: 999px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.solve-pills button:hover { color: var(--text); background: var(--bg-card-hover); }
+.solve-pills button.active {
+  color: #052e16;
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+  border-color: transparent;
+}
+.calc-field.is-output input { opacity: 0.45; pointer-events: none; }
+.calc-field.is-output label::after { content: " (solved)"; color: var(--accent-green); text-transform: none; }
+
 /* FAQ (matches support.html behavior) */
 .faq-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 8px; }
 .faq-item {

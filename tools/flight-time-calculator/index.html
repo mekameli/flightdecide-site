@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time-Speed-Distance Calculator: Flight Time, Groundspeed &amp; ETA | FlightDecide</title>
+  <meta name="description" content="Free time-speed-distance calculator for pilots. Solve flight time, groundspeed, or distance from the other two, get an ETA from your departure time, and learn the checkpoint math pilots use to stay ahead of the airplane." />
+  <link rel="canonical" href="https://flightdecide.com/tools/flight-time-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Time-Speed-Distance Calculator: Flight Time, Groundspeed &amp; ETA" />
+  <meta property="og:description" content="Solve flight time, groundspeed, or distance from the other two, plus ETA from your departure time. The E6-B time-speed-distance function, in your browser." />
+  <meta property="og:url" content="https://flightdecide.com/tools/flight-time-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide time-speed-distance calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Time-Speed-Distance Calculator: Flight Time, Groundspeed &amp; ETA" />
+  <meta name="twitter:description" content="Solve flight time, groundspeed, or distance from the other two, plus ETA from your departure time." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/flight-time-calculator/#app",
+        "name": "Time-Speed-Distance Calculator",
+        "url": "https://flightdecide.com/tools/flight-time-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free time-speed-distance calculator for pilots. Solve flight time, groundspeed, or distance from the other two values, and get an ETA from your departure time.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/flight-time-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate flight time from speed and distance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Flight time = distance ÷ groundspeed. A 92 NM leg at 108 knots groundspeed takes 92 ÷ 108 = 0.85 hours, about 51 minutes. Use groundspeed (true airspeed corrected for wind), not indicated or true airspeed, or headwinds will make every leg run long."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do pilots check groundspeed in flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Time yourself between two checkpoints a known distance apart, then compute groundspeed = distance ÷ time. Flying 5 NM in 2 minutes 32 seconds works out to 118 knots. Comparing that against the planned groundspeed on each leg tells you early whether the winds aloft forecast was right and whether your fuel plan still holds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 1-in-60 style mental math for leg times?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Divide groundspeed by 60 to get nautical miles per minute: 120 knots is 2 NM per minute, 90 knots is 1.5 NM per minute. Then a 15 NM leg at 120 knots is 7.5 minutes. Working in miles-per-minute is faster in the cockpit than dividing by groundspeed."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Time-Speed-Distance Calculator", "item": "https://flightdecide.com/tools/flight-time-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Time-Speed-Distance Calculator</h1>
+    <p class="page-sub">Enter any two of distance, groundspeed, and time; get the third, plus an ETA from your departure time. The E6-B function pilots use on every leg.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › Time-Speed-Distance Calculator</p>
+
+    <p class="lede"><strong>Time = distance ÷ groundspeed. Groundspeed = distance ÷ time. Distance = groundspeed × time.</strong> One relationship, three directions, and it runs the whole nav log: leg times before takeoff, groundspeed checks between fixes in flight, and the revised ETA when the forecast wind turns out to be fiction. Pick what to solve for below.</p>
+
+    <div class="calc-card" id="calculator">
+      <div class="solve-pills" role="group" aria-label="Choose which value to solve for">
+        <span class="solve-label">Solve for:</span>
+        <button type="button" id="pill-dur" class="active" aria-pressed="true">Time</button>
+        <button type="button" id="pill-gs" aria-pressed="false">Groundspeed</button>
+        <button type="button" id="pill-dist" aria-pressed="false">Distance</button>
+      </div>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field" id="field-dist">
+            <label for="dist">Distance (NM)</label>
+            <div class="field-row">
+              <input type="number" id="dist" inputmode="decimal" min="0" max="3000" step="0.1" value="92.3" />
+              <input type="range" id="dist-r" min="0" max="400" step="1" value="92" aria-label="Distance slider" />
+            </div>
+            <p class="calc-hint">Leg or trip length from your chart or EFB</p>
+          </div>
+          <div class="calc-field" id="field-gs">
+            <label for="gs">Groundspeed (kt)</label>
+            <div class="field-row">
+              <input type="number" id="gs" inputmode="decimal" min="1" max="600" step="1" value="108" />
+              <input type="range" id="gs-r" min="40" max="250" step="1" value="108" aria-label="Groundspeed slider" />
+            </div>
+            <p class="calc-hint">TAS corrected for wind. Get it from the <a href="/tools/wind-correction-calculator/">heading &amp; groundspeed calculator</a></p>
+          </div>
+          <div class="calc-field is-output" id="field-dur">
+            <label for="dur">Time (minutes)</label>
+            <div class="field-row">
+              <input type="number" id="dur" inputmode="decimal" min="0" max="1440" step="1" value="51" />
+              <input type="range" id="dur-r" min="0" max="360" step="1" value="51" aria-label="Time slider" />
+            </div>
+            <p class="calc-hint" id="dur-hint">Shown as h:mm in the results</p>
+          </div>
+          <div class="calc-field">
+            <label for="dep">Departure time (optional, for ETA)</label>
+            <div class="field-row">
+              <input type="time" id="dep" value="" style="width:140px;flex:none" />
+            </div>
+            <p class="calc-hint">Local or Zulu; the ETA uses the same clock</p>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <svg id="legbar" viewBox="0 0 300 120" width="300" height="120" role="img" aria-label="Leg diagram with distance and time">
+            <line x1="20" y1="60" x2="280" y2="60" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+            <circle cx="20" cy="60" r="6" fill="#22C55E"/>
+            <circle cx="280" cy="60" r="6" fill="#3B82F6"/>
+            <text id="leg-dist" x="150" y="40" text-anchor="middle" fill="#F0F0F5" font-size="14" font-weight="700"></text>
+            <text id="leg-time" x="150" y="88" text-anchor="middle" fill="#94A3B8" font-size="13" font-weight="600"></text>
+            <polygon id="leg-plane" points="0,-7 12,0 0,7 3,0" fill="#F0F0F5" transform="translate(140 60)"/>
+          </svg>
+          <ul style="list-style:none;margin:14px 0 0;text-align:left;font-size:14px;color:var(--text-muted)" id="pace-list"></ul>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter two values to solve the third.</div>
+        </div>
+      </div>
+      <div class="calc-results" aria-live="polite">
+        <div class="result-tile result-blue" id="tile-solved">
+          <span class="result-label" id="solved-label">Time</span>
+          <span class="result-value" id="solved-val">&ndash;</span>
+          <span class="result-note" id="solved-note"></span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Pace</span>
+          <span class="result-value" id="pace-val">&ndash;</span>
+          <span class="result-note">NM per minute</span>
+        </div>
+        <div class="result-tile" id="tile-eta" style="display:none">
+          <span class="result-label">ETA</span>
+          <span class="result-value" id="eta-val">&ndash;</span>
+          <span class="result-note">departure + time enroute</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>One formula, three questions</h2>
+    <p>Everything on a nav log is the same relationship rearranged:</p>
+    <ul>
+      <li><strong>Before takeoff:</strong> distance ÷ planned groundspeed = leg time. Add the legs, add the climb, and you have your ETE and fuel requirement.</li>
+      <li><strong>In flight:</strong> distance between two checkpoints ÷ timed minutes = actual groundspeed. This is the number that catches a bad wind forecast an hour before your fuel gauge does.</li>
+      <li><strong>Diverting:</strong> groundspeed × remaining fuel time = how far you can still go. That range circle is the whole point of knowing your groundspeed precisely.</li>
+    </ul>
+
+    <h2>How pilots actually use it in flight</h2>
+    <p>The classic technique is the <strong>checkpoint groundspeed check</strong>. Pick two features on your chart a known distance apart (5 to 10 NM works well), start a timer over the first, stop it over the second. Five nautical miles in 2:32 is 118 knots. Do this on the first leg of every cross-country: if planned groundspeed was 125 and you measure 108, your ETA, your fuel reserve, and possibly your daylight all just moved, and it is far better to renegotiate the plan over the first checkpoint than over the last one.</p>
+    <p>The cockpit shortcut is <strong>miles per minute</strong>: groundspeed ÷ 60. At 90 knots you cover 1.5 NM a minute; at 120, 2 NM a minute. A 14 NM leg at 2 NM per minute is 7 minutes, no calculator needed. This calculator shows the pace figure for exactly that reason.</p>
+
+    <h2>Worked example</h2>
+    <p>Leg from Renton to Forks, 92.3 NM. The wind triangle gives a groundspeed of 108 knots.</p>
+    <ul>
+      <li>Time = 92.3 ÷ 108 = 0.85 hr ≈ <strong>51 minutes</strong></li>
+      <li>Departing 12:00Z gives an ETA of <strong>12:51Z</strong></li>
+      <li>Pace: 108 ÷ 60 = <strong>1.8 NM per minute</strong></li>
+    </ul>
+    <p>At 9.5 GPH that leg also burns about 8.1 gallons, which is the other half of the story: run the time through the <a href="/tools/fuel-burn-calculator/">fuel &amp; endurance calculator</a>.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Should I use true airspeed or groundspeed for leg times?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Groundspeed. TAS is your speed through the air; the ground does not care. A 120-knot TAS into a 25-knot headwind is a 95-knot groundspeed, and a leg planned on TAS will run 25% long. Compute groundspeed from TAS and the winds aloft with the <a href="/tools/wind-correction-calculator/">heading &amp; groundspeed calculator</a>, then bring it here.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How accurate does a planned groundspeed need to be?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Within about 5 knots is fine for planning, because you verify it against reality at the first checkpoint anyway. The discipline that matters is the in-flight check: measured groundspeed replaces planned groundspeed the moment you have it, and every downstream ETA and fuel figure gets revised with it.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why do my GPS and this calculator disagree?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>The GPS reads your instantaneous groundspeed right now; the calculator averages over a leg. Climbs, descents, and wind changes along the route make the two differ. For ETAs, the averaged number over a known distance is the more honest one, which is why the checkpoint timing technique survives in the GPS era.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/wind-correction-calculator/"><h3>Heading &amp; Groundspeed Calculator</h3><p>Where the groundspeed number comes from: TAS plus the winds aloft.</p></a>
+      <a class="card-link" href="/tools/fuel-burn-calculator/"><h3>Fuel Burn &amp; Endurance Calculator</h3><p>Turn the leg time into gallons, and gallons into endurance.</p></a>
+      <a class="card-link" href="/learn/go-no-go-decision-framework/"><h3>The Go/No-Go Decision Framework</h3><p>A repeatable structure for the decision these numbers feed into.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Your whole route, checked in one pass</h2>
+      <p>FlightDecide runs winds, ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B for your specific flight window and aircraft, and shows the raw data behind every call.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 16. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      let solve = 'dur'; // 'dur' | 'gs' | 'dist'
+
+      function fmtHM(min) {
+        if (!isFinite(min) || min < 0) return '–';
+        const h = Math.floor(min / 60), m = Math.round(min % 60);
+        return h > 0 ? h + ':' + String(m).padStart(2, '0') : m + ' min';
+      }
+
+      [['dist'], ['gs'], ['dur']].forEach(function (pair) {
+        const n = $(pair[0]), r = $(pair[0] + '-r');
+        r.addEventListener('input', function () { n.value = r.value; compute(); });
+        n.addEventListener('input', function () { r.value = n.value; compute(); });
+      });
+      $('dep').addEventListener('input', compute);
+
+      const pills = { dur: $('pill-dur'), gs: $('pill-gs'), dist: $('pill-dist') };
+      Object.keys(pills).forEach(function (key) {
+        pills[key].addEventListener('click', function () {
+          solve = key;
+          Object.keys(pills).forEach(function (k) {
+            pills[k].classList.toggle('active', k === key);
+            pills[k].setAttribute('aria-pressed', String(k === key));
+            $('field-' + k).classList.toggle('is-output', k === key);
+          });
+          compute();
+        });
+      });
+
+      function compute() {
+        let dist = parseFloat($('dist').value);
+        let gs = parseFloat($('gs').value);
+        let dur = parseFloat($('dur').value); // minutes
+
+        if (solve === 'dur' && !isNaN(dist) && !isNaN(gs) && gs > 0) {
+          dur = dist / gs * 60;
+          $('dur').value = Math.round(dur * 10) / 10;
+          $('dur-r').value = Math.round(dur);
+        } else if (solve === 'gs' && !isNaN(dist) && !isNaN(dur) && dur > 0) {
+          gs = dist / (dur / 60);
+          $('gs').value = Math.round(gs * 10) / 10;
+          $('gs-r').value = Math.round(gs);
+        } else if (solve === 'dist' && !isNaN(gs) && !isNaN(dur)) {
+          dist = gs * (dur / 60);
+          $('dist').value = Math.round(dist * 10) / 10;
+          $('dist-r').value = Math.round(dist);
+        }
+        if (isNaN(dist) || isNaN(gs) || isNaN(dur) || gs <= 0) return;
+
+        const labels = { dur: 'Time', gs: 'Groundspeed', dist: 'Distance' };
+        $('solved-label').textContent = labels[solve];
+        if (solve === 'dur') {
+          $('solved-val').textContent = fmtHM(dur);
+          $('solved-note').textContent = Math.round(dur) + ' minutes enroute';
+        } else if (solve === 'gs') {
+          $('solved-val').textContent = Math.round(gs) + ' kt';
+          $('solved-note').textContent = 'measured over ' + dist + ' NM';
+        } else {
+          $('solved-val').textContent = Math.round(dist * 10) / 10 + ' NM';
+          $('solved-note').textContent = 'covered in ' + fmtHM(dur);
+        }
+
+        const pace = gs / 60;
+        $('pace-val').textContent = pace.toFixed(1);
+        $('leg-dist').textContent = (Math.round(dist * 10) / 10) + ' NM';
+        $('leg-time').textContent = fmtHM(dur) + ' at ' + Math.round(gs) + ' kt';
+        $('pace-list').innerHTML =
+          '<li>· ' + pace.toFixed(1) + ' NM every minute</li>' +
+          '<li>· 10 NM every ' + fmtHM(10 / pace) + '</li>' +
+          '<li>· 1 NM every ' + Math.round(3600 / gs) + ' seconds</li>';
+
+        // ETA
+        const dep = $('dep').value;
+        const etaTile = $('tile-eta');
+        const v = $('verdict');
+        if (dep) {
+          const parts = dep.split(':');
+          const total = (parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10) + dur) % 1440;
+          const eta = String(Math.floor(total / 60)).padStart(2, '0') + ':' + String(Math.round(total % 60)).padStart(2, '0');
+          etaTile.style.display = '';
+          $('eta-val').textContent = eta;
+          v.className = 'verdict-line v-green';
+          v.textContent = dist + ' NM at ' + Math.round(gs) + ' kt: ' + fmtHM(dur) + ' enroute, ETA ' + eta + '.';
+        } else {
+          etaTile.style.display = 'none';
+          v.className = 'verdict-line v-green';
+          v.textContent = dist + ' NM at ' + Math.round(gs) + ' kt takes ' + fmtHM(dur) + '.';
+        }
+      }
+
+      compute();
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

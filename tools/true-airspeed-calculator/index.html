@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True Airspeed Calculator: CAS to TAS &amp; Mach | FlightDecide</title>
+  <meta name="description" content="Free true airspeed calculator for pilots. Enter calibrated airspeed, altitude, altimeter setting, and temperature to get TAS, Mach number, pressure altitude, and density altitude, plus the 2% rule and how pilots use TAS in flight planning." />
+  <link rel="canonical" href="https://flightdecide.com/tools/true-airspeed-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="True Airspeed Calculator: CAS to TAS &amp; Mach" />
+  <meta property="og:description" content="Free true airspeed calculator: TAS, Mach, pressure altitude, and density altitude from calibrated airspeed, altitude, and temperature." />
+  <meta property="og:url" content="https://flightdecide.com/tools/true-airspeed-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide true airspeed calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="True Airspeed Calculator: CAS to TAS &amp; Mach" />
+  <meta name="twitter:description" content="Free true airspeed calculator: TAS, Mach, pressure altitude, and density altitude from calibrated airspeed, altitude, and temperature." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/true-airspeed-calculator/#app",
+        "name": "True Airspeed Calculator",
+        "url": "https://flightdecide.com/tools/true-airspeed-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free true airspeed calculator for pilots. Enter calibrated airspeed, indicated altitude, altimeter setting, and outside air temperature to get TAS, Mach number, pressure altitude, and density altitude.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/true-airspeed-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate true airspeed from calibrated airspeed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "True airspeed = calibrated airspeed corrected for air density. TAS = CAS ÷ √σ, where σ is the density ratio computed from pressure altitude and outside air temperature. As a rule of thumb, TAS is about 2% higher than CAS for every 1,000 feet of altitude. For example, 125 knots CAS at 8,500 feet pressure altitude and 23 °F works out to about 141 knots TAS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 2% rule for true airspeed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Add roughly 2% of your calibrated airspeed per 1,000 feet of altitude. At 8,000 feet, TAS is about 16% higher than CAS: 120 knots indicated becomes roughly 139 knots true. The rule assumes near-standard temperature; on a hot day TAS is higher still, which is why the exact calculation uses temperature."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do pilots need true airspeed instead of indicated airspeed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Indicated airspeed measures dynamic pressure, which falls with air density, so the indicator under-reads your real speed through the air as you climb. True airspeed is your actual speed through the air mass. It is the speed you file in a flight plan, the input to every wind-triangle groundspeed calculation, and the number POH cruise tables publish."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "True Airspeed Calculator", "item": "https://flightdecide.com/tools/true-airspeed-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>True Airspeed Calculator</h1>
+    <p class="page-sub">Enter calibrated airspeed, altitude, altimeter setting, and temperature. Get TAS, Mach, pressure altitude, and density altitude: the numbers your flight plan actually runs on.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/tools/">Free Pilot Tools</a> › True Airspeed Calculator</p>
+
+    <p class="lede"><strong>True airspeed = calibrated airspeed corrected for air density (TAS = CAS ÷ √σ), roughly 2% higher per 1,000 ft of altitude.</strong> At 8,500 ft and 23 °F, 125 knots CAS is 141 knots TAS. Your airspeed indicator under-reads more the higher and hotter it gets; TAS is the speed you file, the speed the POH cruise table promises, and the input every groundspeed calculation needs.</p>
+
+    <div class="calc-card" id="calculator">
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="cas">Calibrated airspeed (kt)</label>
+            <div class="field-row">
+              <input type="number" id="cas" inputmode="numeric" min="40" max="400" step="1" value="125" />
+              <input type="range" id="cas-r" min="60" max="250" step="1" value="125" aria-label="Calibrated airspeed slider" />
+            </div>
+            <p class="calc-hint">Indicated airspeed corrected per the POH airspeed calibration table (close to IAS in cruise)</p>
+          </div>
+          <div class="calc-field">
+            <label for="ialt">Indicated altitude (ft)</label>
+            <div class="field-row">
+              <input type="number" id="ialt" inputmode="numeric" min="-1000" max="45000" step="100" value="8500" />
+              <input type="range" id="ialt-r" min="0" max="18000" step="500" value="8500" aria-label="Indicated altitude slider" />
+            </div>
+            <p class="calc-hint">What the altimeter reads at your cruise altitude</p>
+          </div>
+          <div class="calc-field">
+            <label for="baro">Altimeter setting (inHg)</label>
+            <div class="field-row">
+              <input type="number" id="baro" inputmode="decimal" min="27" max="32" step="0.01" value="29.92" />
+              <input type="range" id="baro-r" min="28.5" max="31.0" step="0.01" value="29.92" aria-label="Altimeter setting slider" />
+            </div>
+            <p class="calc-hint">Leave at 29.92 to enter pressure altitude directly</p>
+          </div>
+          <div class="calc-field">
+            <label for="oat">Outside air temperature (&deg;C)</label>
+            <div class="field-row">
+              <input type="number" id="oat" inputmode="numeric" min="-60" max="50" step="1" value="-5" />
+              <input type="range" id="oat-r" min="-40" max="45" step="1" value="-5" aria-label="Outside air temperature slider" />
+            </div>
+            <p class="calc-hint">At cruise altitude, from the winds/temps aloft forecast or your OAT probe</p>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <svg id="speedbars" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Calibrated airspeed and true airspeed compared as bars">
+            <g id="bars"></g>
+            <g id="barlabels" font-size="12" fill="#94A3B8" text-anchor="start" font-weight="650"></g>
+          </svg>
+          <p class="calc-hint" id="isa-note" style="margin-top:10px"></p>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter your cruise numbers to see TAS.</div>
+        </div>
+      </div>
+      <div class="calc-results" aria-live="polite">
+        <div class="result-tile result-blue">
+          <span class="result-label">True airspeed</span>
+          <span class="result-value" id="tas-val">&ndash;</span>
+          <span class="result-note">use for flight plans &amp; wind triangle</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Mach</span>
+          <span class="result-value" id="mach-val">&ndash;</span>
+          <span class="result-note">fraction of the speed of sound</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Pressure altitude</span>
+          <span class="result-value" id="pa-val">&ndash;</span>
+          <span class="result-note">ft</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Density altitude</span>
+          <span class="result-value" id="da-val">&ndash;</span>
+          <span class="result-note">ft (what the airplane feels)</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>How true airspeed is calculated</h2>
+    <p>Your airspeed indicator measures dynamic pressure: how hard the air pushes into the pitot tube. Thin air pushes less, so the same true speed reads lower and lower as you climb. Converting back takes three steps:</p>
+    <ul>
+      <li><strong>Pressure altitude</strong> from indicated altitude and the altimeter setting (about 1,000 ft per inch of mercury away from 29.92).</li>
+      <li><strong>Density ratio σ</strong> from pressure altitude and outside air temperature: how dense the air is compared with sea level on a standard day.</li>
+      <li><strong>TAS = CAS ÷ √σ.</strong> This calculator uses the full compressible-flow equations (the same math inside an E6-B or CX-3), so the result matches the flight-computer answer to a fraction of a knot. Mach is TAS divided by the local speed of sound, which depends only on temperature.</li>
+    </ul>
+
+    <h2>The 2% rule of thumb</h2>
+    <p>For mental math in the cockpit: <strong>TAS ≈ CAS + 2% per 1,000 ft</strong>. At 6,000 ft add 12%; at 10,000 ft add 20%. So a 110-knot indicated cruise at 9,500 ft is really about 131 knots through the air. The rule assumes standard temperature; hot days push TAS higher, cold days pull it back. When the answer matters (fuel planning on a long leg), use the exact calculation above.</p>
+
+    <h2>How pilots use TAS</h2>
+    <ul>
+      <li><strong>Flight plans file TAS.</strong> The cruise speed box on a VFR or IFR flight plan is true airspeed, not indicated.</li>
+      <li><strong>The wind triangle starts with TAS.</strong> Groundspeed, heading, and leg time all come from TAS plus the winds aloft. Run this calculator first, then take the TAS to the <a href="/tools/wind-correction-calculator/">heading &amp; groundspeed calculator</a>.</li>
+      <li><strong>POH cruise tables publish TAS.</strong> If the book says 65% power gives 114 knots at 8,000 ft, that is a true airspeed. Comparing it against your indicated airspeed without converting is comparing two different quantities.</li>
+      <li><strong>Cross-checking in cruise.</strong> Compute TAS from what you see (CAS, altitude, OAT) and compare with the book number for your power setting. A TAS that comes up persistently short can be a rigging issue, a tired engine, or ice you have not noticed.</li>
+    </ul>
+
+    <h2>Worked example, straight off a flight computer</h2>
+    <p>Plan: 125 knots CAS at 8,500 ft pressure altitude with an OAT of -5 °C (23 °F).</p>
+    <ul>
+      <li>Density ratio σ at 8,500 ft and -5 °C ≈ 0.78</li>
+      <li>TAS = 125 ÷ √0.78 ≈ <strong>141 knots</strong></li>
+      <li>Mach = 141 ÷ 638 (speed of sound at -5 °C) ≈ <strong>0.22</strong></li>
+    </ul>
+    <p>That 16-knot difference is not academic: over a 300 NM leg it changes the no-wind time by about 20 minutes, which is fuel you either have or do not.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is the difference between IAS, CAS, and TAS?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Indicated airspeed (IAS) is what the needle shows. Calibrated airspeed (CAS) is IAS corrected for known instrument and pitot-static position errors using the POH table; in cruise the two are usually within a knot or two. True airspeed (TAS) is CAS corrected for air density, and it is your real speed through the air mass. Add wind and you get groundspeed.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Should I enter OAT at the surface or at altitude?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>At altitude. Use the temperature from the winds and temperatures aloft forecast for your cruise level when planning, or your OAT gauge in flight. Surface temperature belongs in the <a href="/tools/density-altitude-calculator/">density altitude calculator</a> for takeoff performance, not here.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does Mach number matter in a piston airplane?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Not operationally; a 140-knot cruise is around Mach 0.22 and compressibility effects are negligible. It starts to matter above roughly Mach 0.4 (fast turboprops and jets), where indicated-to-true conversions need the compressibility correction this calculator already includes. We show it because knowledge-test questions and flight computers do.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/wind-correction-calculator/"><h3>Heading &amp; Groundspeed Calculator</h3><p>Take this TAS into the wind triangle: wind correction angle, heading, and groundspeed.</p></a>
+      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>The same air-density math applied to takeoff and climb performance.</p></a>
+      <a class="card-link" href="/tools/flight-time-calculator/"><h3>Time-Speed-Distance Calculator</h3><p>Turn groundspeed into leg times and an ETA.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Performance is one of eight risk categories</h2>
+      <p>FlightDecide checks performance alongside winds, ceilings, visibility, NOTAMs, fuel, and W&amp;B for your specific flight window and aircraft, using curated POH cruise data for 40+ types.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 8 and 16; ICAO Standard Atmosphere. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const A0 = 661.4788, P0 = 29.92126, T0 = 288.15;
+
+      [['cas'], ['ialt'], ['baro'], ['oat']].forEach(function (pair) {
+        const n = $(pair[0]), r = $(pair[0] + '-r');
+        r.addEventListener('input', function () { n.value = r.value; compute(); });
+        n.addEventListener('input', function () { r.value = n.value; compute(); });
+      });
+
+      function compute() {
+        const cas = parseFloat($('cas').value);
+        const ialt = parseFloat($('ialt').value);
+        const baro = parseFloat($('baro').value);
+        const oat = parseFloat($('oat').value);
+        if (isNaN(cas) || isNaN(ialt) || isNaN(baro) || isNaN(oat)) return;
+
+        // pressure altitude (exact standard-atmosphere form)
+        const palt = ialt + 145442.16 * (1 - Math.pow(baro / P0, 0.190263));
+        // pressure ratio, density ratio, density altitude
+        const delta = Math.pow(1 - 6.87535e-6 * palt, 5.2559);
+        const T = oat + 273.15;
+        const sigma = delta / (T / T0);
+        const dalt = 145442.16 * (1 - Math.pow(sigma, 0.234969));
+        // compressible CAS -> Mach -> TAS
+        const qc = P0 * (Math.pow(1 + 0.2 * Math.pow(cas / A0, 2), 3.5) - 1);
+        const mach = Math.sqrt(5 * (Math.pow(qc / (delta * P0) + 1, 2 / 7) - 1));
+        const tas = mach * A0 * Math.sqrt(T / T0);
+
+        $('tas-val').textContent = Math.round(tas) + ' kt';
+        $('mach-val').textContent = mach.toFixed(3);
+        $('pa-val').textContent = Math.round(palt).toLocaleString('en-US');
+        $('da-val').textContent = Math.round(dalt).toLocaleString('en-US');
+
+        // ISA note
+        const isaC = 15 - 2 * (palt / 1000);
+        const dev = oat - isaC;
+        $('isa-note').textContent = 'ISA at this altitude is ' + Math.round(isaC) + ' °C; you are ' +
+          (Math.abs(dev) < 0.5 ? 'right on standard.' :
+            Math.abs(Math.round(dev)) + ' °C ' + (dev > 0 ? 'warmer' : 'colder') + ' than standard.');
+
+        // bars: CAS vs TAS
+        const maxV = Math.max(cas, tas) * 1.15;
+        const w1 = 240 * cas / maxV, w2 = 240 * tas / maxV;
+        $('bars').innerHTML =
+          '<rect x="10" y="42" width="' + w1.toFixed(1) + '" height="34" rx="6" fill="rgba(148,163,184,0.45)"/>' +
+          '<rect x="10" y="118" width="' + w2.toFixed(1) + '" height="34" rx="6" fill="#3B82F6"/>';
+        $('barlabels').innerHTML =
+          '<text x="10" y="32">CAS ' + Math.round(cas) + ' kt</text>' +
+          '<text x="10" y="108" fill="#93C5FD">TAS ' + Math.round(tas) + ' kt</text>' +
+          '<text x="10" y="172" fill="#64748B" font-weight="500">+' + Math.round((tas / cas - 1) * 100) + '% over indicated</text>';
+
+        const v = $('verdict');
+        const pct = (tas / cas - 1) * 100;
+        v.className = 'verdict-line v-green';
+        v.textContent = 'File ' + Math.round(tas) + ' kt TAS. Your indicator under-reads by ' + Math.round(pct) +
+          '% up here' + (dev > 10 ? ', more than usual because of the warm air.' : '.');
+        if (sigma <= 0 || !isFinite(tas)) {
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Those inputs are outside the standard-atmosphere model.';
+        }
+      }
+
+      compute();
+    })();
+
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
