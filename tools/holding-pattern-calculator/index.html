@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holding Pattern Entry Calculator: Direct, Teardrop or Parallel | FlightDecide</title>
+  <meta name="description" content="Free holding pattern entry calculator. Enter your heading and the holding radial to get the recommended entry (direct, teardrop, or parallel), the inbound course, and what to fly next, with the 70° sector rule drawn for you." />
+  <link rel="canonical" href="https://flightdecide.com/tools/holding-pattern-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Holding Pattern Entry Calculator: Direct, Teardrop or Parallel" />
+  <meta property="og:description" content="Recommended holding entry, inbound course, and what to fly next, with the AIM entry sectors drawn around your heading." />
+  <meta property="og:url" content="https://flightdecide.com/tools/holding-pattern-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide holding pattern entry calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Holding Pattern Entry Calculator: Direct, Teardrop or Parallel" />
+  <meta name="twitter:description" content="Recommended holding entry, inbound course, and what to fly next, with the AIM entry sectors drawn around your heading." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/holding-pattern-calculator/#app",
+        "name": "Holding Pattern Entry Calculator",
+        "url": "https://flightdecide.com/tools/holding-pattern-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free holding pattern entry calculator for pilots. Enter aircraft heading, holding radial, and turn direction to get the recommended entry (direct, teardrop, or parallel) and the inbound course.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/holding-pattern-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you determine which holding pattern entry to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Compare your heading at the fix with the inbound holding course. For standard right turns: within about 110° either side of the inbound course toward the direct sector, fly a direct entry; approaching within the 70° wedge on the holding side of the outbound course, fly a teardrop; approaching within the 110° wedge on the non-holding side, fly a parallel entry. The sectors come from AIM 5-3-8, and within about 5° of a boundary either adjacent entry is acceptable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the inbound course if I'm told to hold on a radial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The reciprocal of the radial. Radials point outward from the VOR, and the inbound leg flies toward the fix, so holding on the 270 radial means the inbound course is 090. This calculator does that conversion for you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are entry procedures mandatory?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The AIM entries are recommended, not regulatory; you must stay within protected airspace. In practice examiners and controllers expect the recommended entry, and near a sector boundary you may use whichever adjacent entry keeps you on the protected side. The mandatory parts are the clearance itself: fix, radial or course, direction of turns, and EFC time."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Holding Pattern Entry Calculator", "item": "https://flightdecide.com/tools/holding-pattern-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
+      <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/holding-pattern-calculator/">Holding Entry</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Holding Pattern Entry Calculator</h1>
+    <p class="page-sub">Enter your heading and the holding radial. Get the recommended entry, the inbound course, and what to fly next, with the entry sectors drawn around your airplane.</p>
+    </div>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <div class="calc-card" id="calculator">
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="hdg">Your heading at the fix (°)</label>
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="hdg" inputmode="numeric" min="0" max="360" step="1" value="155" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">The direction you'll be flying when you cross the fix</p>
+          </div>
+          <div class="calc-field">
+            <label for="radial">Holding radial (°)</label>
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="radial" inputmode="numeric" min="0" max="360" step="1" value="270" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">"Hold on the 270 radial" &rarr; enter 270. The inbound course is its reciprocal.</p>
+          </div>
+          <div class="calc-field">
+            <label for="turns">Turns</label>
+            <select id="turns" style="max-width:196px">
+              <option value="R" selected>Standard (right)</option>
+              <option value="L">Nonstandard (left)</option>
+            </select>
+            <p class="calc-hint">Left turns only when the clearance or chart says so</p>
+          </div>
+          <div class="verdict-line v-dim" id="next-steps" style="margin-top:6px">&nbsp;</div>
+        </div>
+        <div class="tool-visual">
+          <svg id="compass" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Holding pattern entry sector diagram">
+            <circle cx="150" cy="150" r="140" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+            <g id="sectors" opacity="0.85"></g>
+            <g id="ticks" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"></g>
+            <text x="150" y="26" text-anchor="middle" fill="#94A3B8" font-size="13" font-weight="700">N</text>
+            <g id="raceGroup">
+              <path id="racetrack" d="" fill="none" stroke="rgba(240,240,245,0.85)" stroke-width="2.5"/>
+              <polygon id="race-arrow" points="0,0" fill="rgba(240,240,245,0.85)"/>
+            </g>
+            <g id="hdgGroup">
+              <line x1="150" y1="150" x2="150" y2="60" stroke="transparent" stroke-width="30"/>
+              <line x1="150" y1="150" x2="150" y2="66" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round"/>
+              <polygon points="150,54 142,72 158,72" fill="#22C55E"/>
+            </g>
+            <circle cx="150" cy="150" r="5" fill="#F0F0F5"/>
+          </svg>
+          <p class="dial-hint" style="margin-top:8px">Drag the green arrow to your heading. Sectors: <span style="color:#4ADE80">direct</span> · <span style="color:#FBBF24">teardrop</span> · <span style="color:#F87171">parallel</span></p>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter your heading and the radial.</div>
+        </div>
+      </div>
+      <div class="calc-results" aria-live="polite">
+        <div class="result-tile result-blue">
+          <span class="result-label">Entry</span>
+          <span class="result-value" id="entry-val">&ndash;</span>
+          <span class="result-note" id="entry-note"></span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Inbound course</span>
+          <span class="result-value" id="inbound-val">&ndash;</span>
+          <span class="result-note">reciprocal of the radial</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Outbound heading</span>
+          <span class="result-value" id="outbound-val">&ndash;</span>
+          <span class="result-note" id="outbound-note">after crossing the fix</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="lede"><strong>Holding entries follow the AIM 70° sector rule: direct from the 180° sector facing the hold, teardrop from the 70° wedge on the holding side, parallel from the 110° wedge on the other.</strong> The CX-3 flight computer's holding function does exactly this; here it is with the sectors drawn around your heading so the geometry finally makes sense.</p>
+
+    <h2>How the sectors work</h2>
+    <p>Everything is measured between your heading crossing the fix and the <strong>inbound course</strong> (the reciprocal of the radial you hold on). For standard right turns:</p>
+    <ul>
+      <li><strong>Direct (180° sector):</strong> cross the fix and turn right straight onto the outbound leg. Used whenever you approach roughly facing the pattern.</li>
+      <li><strong>Teardrop (70° sector):</strong> cross the fix, fly outbound offset 30° toward the holding side for one minute, then turn right to intercept the inbound course.</li>
+      <li><strong>Parallel (110° sector):</strong> cross the fix, fly the outbound heading parallel to the course on the non-holding side for one minute, then turn left (toward the pattern) more than 180° to rejoin the inbound.</li>
+    </ul>
+    <p>For left-turn holds the picture mirrors. Within about 5° of a boundary, either adjacent entry is fine; pick the one that keeps you on the protected side.</p>
+
+    <h2>The cockpit shortcut pilots actually use</h2>
+    <p>The pencil trick: on your heading indicator, imagine a line from the 70°-right point of the top of the dial through the center to the 110°-left point at the bottom (mirror for left turns). Where the outbound course falls relative to that line names the entry. This calculator is that trick, drawn accurately: rotate the heading arrow with the stepper (or drag it) and watch which colored sector it sits in.</p>
+
+    <h2>Worked example (from the CX-3 manual)</h2>
+    <p>Heading 155°, cleared to hold on the 270 radial, standard right turns:</p>
+    <ul>
+      <li>Inbound course = reciprocal of 270 = <strong>090°</strong></li>
+      <li>Heading 155° sits 65° right of the inbound course: inside the direct sector</li>
+      <li>Entry: <strong>direct</strong>. Cross the fix, turn right to the outbound heading of 270°, time one minute, turn right again and fly 090° back to the fix.</li>
+    </ul>
+
+    <h2>What to have ready before the fix</h2>
+    <ul>
+      <li><strong>The five Ts</strong> at the fix: Turn, Time, Twist (set the inbound course), Throttle, Talk.</li>
+      <li><strong>Timing:</strong> one-minute inbound legs at or below 14,000 ft (1.5 above); adjust the outbound time so the inbound works out.</li>
+      <li><strong>Wind:</strong> triple your inbound drift correction on the outbound leg, since you only fly it once each way per circuit. The <a href="/tools/wind-correction-calculator/">wind calculator</a> tells you the inbound correction.</li>
+      <li><strong>Fuel:</strong> holding is minutes at cruise burn with no distance made good. The EFC time plus the <a href="/tools/fuel-burn-calculator/">fuel calculator</a> tells you how long you can afford to accept.</li>
+    </ul>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What if I'm told to hold on a bearing or a course instead of a radial?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>If the clearance gives an inbound course directly (GPS holds, "hold north on the 360 course inbound"), enter its reciprocal in the radial box, since this tool converts radial to inbound for you. For NDB holds, bearings TO the station are already inbound courses; enter the reciprocal the same way.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do examiners care which entry I pick near a boundary?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Within roughly 5° of a sector line either adjacent entry is accepted; what matters is that you commit to one, fly it accurately, and stay on the protected side. Announcing "heading 155, inbound course 090, that's a direct entry" before the fix is what a smooth hold sounds like.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why do modern GPS units still show entries?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>The box flies the geometry, but you still have to recognize whether what it's drawing is reasonable, brief the entry for the examiner, and fly it raw-data when the checkride (or the equipment) demands it. Knowing the sectors is what lets you catch a mis-programmed hold before it turns you the wrong way.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/wind-correction-calculator/"><h3>Heading &amp; Groundspeed Calculator</h3><p>The drift correction you'll triple on the outbound leg.</p></a>
+      <a class="card-link" href="/tools/fuel-burn-calculator/"><h3>Fuel Burn &amp; Endurance Calculator</h3><p>How long you can afford to hold before the EFC becomes a diversion.</p></a>
+      <a class="card-link" href="/tools/descent-glide-calculator/"><h3>Descent &amp; Glide Calculator</h3><p>Plan the descent that usually follows the hold.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Brief the whole flight, not just the hold</h2>
+      <p>FlightDecide checks weather, NOTAMs, fuel, performance, and W&amp;B for your specific route and window, and scores the flight GO, CAUTION, or NO GO with the data behind every call.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for current charts, the AIM, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: AIM 5-3-8; FAA <em>Instrument Flying Handbook</em> (FAA-H-8083-15B), Ch. 10. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/tools.js"></script>
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const rad = (d) => d * Math.PI / 180;
+
+      (function () {
+        let t = '';
+        for (let a = 0; a < 360; a += 30) {
+          const r1 = 132, r2 = 140, cx = 150, cy = 150, ar = rad(a);
+          t += '<line x1="' + (cx + r1 * Math.sin(ar)).toFixed(1) + '" y1="' + (cy - r1 * Math.cos(ar)).toFixed(1) +
+               '" x2="' + (cx + r2 * Math.sin(ar)).toFixed(1) + '" y2="' + (cy - r2 * Math.cos(ar)).toFixed(1) + '"/>';
+        }
+        $('ticks').innerHTML = t;
+      })();
+
+      function norm360(d) { d = Math.round(d) % 360; if (d <= 0) d += 360; return d; }
+
+      // pie wedge from angle a1 to a2 (compass degrees, clockwise), radius r
+      function wedge(a1, a2, r, color) {
+        const cx = 150, cy = 150;
+        let sweep = ((a2 - a1) % 360 + 360) % 360;
+        const large = sweep > 180 ? 1 : 0;
+        const x1 = cx + r * Math.sin(rad(a1)), y1 = cy - r * Math.cos(rad(a1));
+        const x2 = cx + r * Math.sin(rad(a2)), y2 = cy - r * Math.cos(rad(a2));
+        return '<path d="M' + cx + ' ' + cy + ' L' + x1.toFixed(1) + ' ' + y1.toFixed(1) +
+          ' A' + r + ' ' + r + ' 0 ' + large + ' 1 ' + x2.toFixed(1) + ' ' + y2.toFixed(1) +
+          ' Z" fill="' + color + '"/>';
+      }
+
+      // racetrack path for the hold: inbound leg arrives at the fix (center) on `inb`
+      function drawRacetrack(inb, right) {
+        const cx = 150, cy = 150, leg = 62, rr = 20;
+        const a = rad(inb);
+        // unit vector along inbound direction of flight, and its right-hand normal
+        const ux = Math.sin(a), uy = -Math.cos(a);
+        const side = right ? 1 : -1;
+        const nx = -uy * side, ny = ux * side; // normal toward the holding side
+        // inbound leg: from P1 (leg behind fix) to fix
+        const p1x = cx - ux * leg, p1y = cy - uy * leg;
+        // outbound leg offset 2*rr toward the holding side, flown opposite
+        const q1x = cx + nx * 2 * rr, q1y = cy + ny * 2 * rr;
+        const q2x = p1x + nx * 2 * rr, q2y = p1y + ny * 2 * rr;
+        const sweep = right ? 1 : 0;
+        const d = 'M' + p1x.toFixed(1) + ' ' + p1y.toFixed(1) +
+          ' L' + cx + ' ' + cy +
+          ' A' + rr + ' ' + rr + ' 0 0 ' + sweep + ' ' + q1x.toFixed(1) + ' ' + q1y.toFixed(1) +
+          ' L' + q2x.toFixed(1) + ' ' + q2y.toFixed(1) +
+          ' A' + rr + ' ' + rr + ' 0 0 ' + sweep + ' ' + p1x.toFixed(1) + ' ' + p1y.toFixed(1);
+        $('racetrack').setAttribute('d', d);
+        // arrowhead midway along the inbound leg, pointing along inbound
+        const mx = cx - ux * leg * 0.45, my = cy - uy * leg * 0.45;
+        const s = 7;
+        const tipx = mx + ux * s, tipy = my + uy * s;
+        const b1x = mx - nx * s * 0.8 * side, b1y = my - ny * s * 0.8 * side;
+        const b2x = mx + nx * s * 0.8 * side, b2y = my + ny * s * 0.8 * side;
+        $('race-arrow').setAttribute('points',
+          tipx.toFixed(1) + ',' + tipy.toFixed(1) + ' ' + b1x.toFixed(1) + ',' + b1y.toFixed(1) + ' ' + b2x.toFixed(1) + ',' + b2y.toFixed(1));
+      }
+
+      function compute() {
+        const hdg = parseFloat($('hdg').value);
+        const radial = parseFloat($('radial').value);
+        const right = $('turns').value === 'R';
+        if (isNaN(hdg) || isNaN(radial)) return;
+
+        const inb = norm360(radial + 180);
+        const outb = norm360(radial);
+
+        // heading relative to the inbound course, 0..360, measured clockwise
+        let r = ((hdg - inb) % 360 + 360) % 360;
+        if (!right) r = (360 - r) % 360; // mirror for left turns
+
+        let entry, note, steps;
+        if (r > 110 && r <= 180) {
+          entry = 'Teardrop';
+          const tear = norm360(outb + (right ? -30 : 30));
+          note = '70° sector, holding side';
+          steps = 'Cross the fix, fly heading ' + String(tear).padStart(3, '0') + '° (30° into the holding side) for 1 minute, then turn ' + (right ? 'right' : 'left') + ' to intercept the ' + String(inb).padStart(3, '0') + '° inbound.';
+        } else if (r > 180 && r < 290) {
+          entry = 'Parallel';
+          note = '110° sector, non-holding side';
+          steps = 'Cross the fix, fly the outbound heading ' + String(outb).padStart(3, '0') + '° parallel to the course for 1 minute, then turn ' + (right ? 'left' : 'right') + ' through more than 180° to rejoin the ' + String(inb).padStart(3, '0') + '° inbound.';
+        } else {
+          entry = 'Direct';
+          note = '180° sector';
+          steps = 'Cross the fix and turn ' + (right ? 'right' : 'left') + ' to the outbound heading ' + String(outb).padStart(3, '0') + '°. Time 1 minute, turn back to the ' + String(inb).padStart(3, '0') + '° inbound.';
+        }
+        const nearBoundary = [110, 180, 290].some(function (b) {
+          const d = Math.abs(((r - b + 540) % 360) - 180);
+          return d <= 5;
+        });
+
+        $('entry-val').textContent = entry;
+        $('entry-note').textContent = note;
+        $('inbound-val').textContent = String(inb).padStart(3, '0') + '°';
+        $('outbound-val').textContent = String(outb).padStart(3, '0') + '°';
+
+        const v = $('verdict');
+        v.className = 'verdict-line v-green';
+        v.textContent = entry + ' entry. Inbound ' + String(inb).padStart(3, '0') + '°, ' + (right ? 'right' : 'left') + ' turns.' +
+          (nearBoundary ? ' You are near a sector boundary; either adjacent entry works.' : '');
+        const ns = $('next-steps');
+        ns.className = 'verdict-line v-dim';
+        ns.textContent = steps;
+
+        // draw sectors in absolute compass terms (sectors rotate with the inbound course)
+        // For right turns: direct = inb-70 .. inb+110 going clockwise THROUGH inb? Sectors around heading space:
+        // heading in (inb+110, inb+180] -> teardrop; (inb+180, inb+290) -> parallel; else direct.
+        const m = right ? 1 : -1;
+        function A(off) { return norm360(inb + m * off); }
+        const sect = right
+          ? wedge(A(290), A(110), 140, 'rgba(34,197,94,0.16)') +   // direct: inb+290 -> inb+110 (through inb)
+            wedge(A(110), A(180), 140, 'rgba(234,179,8,0.18)') +    // teardrop
+            wedge(A(180), A(290), 140, 'rgba(239,68,68,0.15)')      // parallel
+          : wedge(A(110), A(290), 140, 'rgba(34,197,94,0.16)') +
+            wedge(A(180), A(110), 140, 'rgba(234,179,8,0.18)') +
+            wedge(A(290), A(180), 140, 'rgba(239,68,68,0.15)');
+        $('sectors').innerHTML = sect;
+
+        $('hdgGroup').style.transform = 'rotate(' + (hdg % 360) + 'deg)';
+        drawRacetrack(inb, right);
+      }
+
+      ['hdg', 'radial'].forEach(function (id) { $(id).addEventListener('input', compute); });
+      $('turns').addEventListener('change', compute);
+      FD.dial($('compass'), $('hdgGroup'), $('hdg'), 5);
+      compute();
+    })();
+  </script>
+
+</body>
+</html>

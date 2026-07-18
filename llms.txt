@@ -52,6 +52,12 @@ Key facts:
 - [Weight & Balance Calculator](https://flightdecide.com/tools/weight-balance-calculator/):
   gross weight, total moment, and CG from itemized loading, envelope
   check against user-entered limits, weight-shift solver.
+- [Descent & Glide Calculator](https://flightdecide.com/tools/descent-glide-calculator/):
+  top of descent and required rate (3-degree rule) plus still-air
+  glide range and time from glide ratio and height.
+- [Holding Pattern Entry Calculator](https://flightdecide.com/tools/holding-pattern-calculator/):
+  direct/teardrop/parallel entry from heading + radial + turn
+  direction, AIM 70-degree sectors drawn on a compass, next steps.
 - [Personal Minimums Worksheet](https://flightdecide.com/tools/personal-minimums-worksheet/):
   printable worksheet for setting ceiling/visibility/wind/performance
   minimums, based on the FAA approach.

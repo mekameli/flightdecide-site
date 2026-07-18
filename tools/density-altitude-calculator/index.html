@@ -123,6 +123,8 @@
       <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
       <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
       <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
+      <a class="tool-pill" href="/tools/holding-pattern-calculator/">Holding Entry</a>
       <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
     </div>
   </nav>
@@ -181,7 +183,7 @@
               <input type="number" id="dew" inputmode="numeric" min="-60" max="40" step="1" placeholder="&ndash;" />
               <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
-            <p class="calc-hint">Used only to flag high humidity</p>
+            <p class="calc-hint">Adds the estimated cloud base and flags high humidity</p>
           </div>
         </div>
         <div class="tool-visual">
@@ -213,6 +215,11 @@
           <span class="result-label">Performance note</span>
           <span class="result-value" id="perf-val">&ndash;</span>
           <span class="result-note" id="perf-note">vs. field elevation</span>
+        </div>
+        <div class="result-tile" id="tile-cloud" style="display:none">
+          <span class="result-label">Est. cumulus cloud base</span>
+          <span class="result-value" id="cloud-val">&ndash;</span>
+          <span class="result-note">ft AGL, from the temp/dew-point spread</span>
         </div>
       </div>
       <p class="calc-hint" style="margin-top:14px" id="humid-note"></p>
@@ -247,6 +254,9 @@
 
     <h2>Finding density altitude from an AWOS or METAR</h2>
     <p>Many AWOS/ASOS broadcasts announce density altitude directly ("density altitude two thousand eight hundred") whenever it is well above field elevation. Listen for it at the end of the broadcast. If it isn't announced, pull the two numbers you need from the METAR: the altimeter setting (the group starting with "A", so <code>A2992</code> is 29.92 inHg) and the temperature (the first half of the temperature/dew-point group, so <code>25/12</code> is 25 °C). Combine those with field elevation in the calculator above and you have it in seconds.</p>
+
+    <h2>Bonus: the cloud base estimate</h2>
+    <p>Because this calculator already has the temperature and dew point, it shows the classic cumulus cloud-base estimate when you enter both: rising air cools toward its dew point at about 2.5 &deg;C per 1,000 ft, so <strong>base AGL &asymp; spread &divide; 2.5 &times; 1,000</strong>. A 25 &deg;C day with a 13 &deg;C dew point suggests bases near 4,800 ft AGL. It only works for convective (cumuliform) cloud, and it is an estimate; the METARs and PIREPs win.</p>
 
     <h2>Rules of thumb per 1,000 ft of density altitude</h2>
     <p>Exact numbers belong to your POH, but these directional effects hold for typical normally aspirated GA airplanes:</p>
@@ -437,6 +447,15 @@
           perfTile.className = 'result-tile result-green';
           v.className = 'verdict-line v-green';
           v.textContent = 'Denser than standard: the airplane performs better than book field-elevation numbers.';
+        }
+
+        const cloudTile = $('tile-cloud');
+        if (!isNaN(dew) && dew <= oat) {
+          // convective cloud base: spread converges ~2.5 °C per 1,000 ft (the CX-3 uses 4.4 °F)
+          cloudTile.style.display = '';
+          $('cloud-val').textContent = fmt(Math.max((oat - dew) / 2.5 * 1000, 0));
+        } else {
+          cloudTile.style.display = 'none';
         }
 
         if (!isNaN(dew) && dew <= oat && (oat - dew) <= 4 && oat >= 15) {

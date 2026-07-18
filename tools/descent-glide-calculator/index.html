@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descent &amp; Glide Calculator: Top of Descent, Rate &amp; Glide Range | FlightDecide</title>
+  <meta name="description" content="Free descent and glide calculator for pilots. Find when to start down and what rate to fly (with the 3-degree rule), and how far your airplane glides from any altitude, with the math and the habits explained underneath." />
+  <link rel="canonical" href="https://flightdecide.com/tools/descent-glide-calculator/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Descent &amp; Glide Calculator: Top of Descent, Rate &amp; Glide Range" />
+  <meta property="og:description" content="When to start down, what rate to fly, and how far you can glide, with the 3-degree rule and best-glide numbers." />
+  <meta property="og:url" content="https://flightdecide.com/tools/descent-glide-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide descent and glide calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Descent &amp; Glide Calculator: Top of Descent, Rate &amp; Glide Range" />
+  <meta name="twitter:description" content="When to start down, what rate to fly, and how far you can glide, with the 3-degree rule and best-glide numbers." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/descent-glide-calculator/#app",
+        "name": "Descent and Glide Calculator",
+        "url": "https://flightdecide.com/tools/descent-glide-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free descent planning and glide range calculator for pilots. Computes top of descent, required descent rate, descent gradient and angle, and glide distance from altitude and glide ratio.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/descent-glide-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate top of descent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 3-degree rule: distance in NM = altitude to lose in thousands of feet × 3, and required rate = groundspeed × 5. Losing 6,000 feet means starting down about 18 NM out; at 120 knots groundspeed that takes roughly 600 feet per minute. The exact math is time = altitude ÷ rate, distance = groundspeed × time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What descent rate should I plan in a light airplane?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Around 500 feet per minute keeps passengers' ears comfortable and stays well within cruise-power descent capability for most GA airplanes. Use the calculator's required-rate mode: if the distance remaining demands much more than 700–1,000 fpm, you started down late; add track miles or slow down rather than diving."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far can an airplane glide from altitude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Glide distance = glide ratio × height. A typical trainer's 9:1 ratio from 5,000 feet AGL gives 45,000 feet, about 7.4 NM in still air. Best-glide speed and the ratio come from your POH; headwind, a windmilling propeller, and turns all shorten it, so treat the still-air circle as an outer bound."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Descent and Glide Calculator", "item": "https://flightdecide.com/tools/descent-glide-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
+      <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
+      <a class="tool-pill" href="/tools/holding-pattern-calculator/">Holding Entry</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Descent &amp; Glide Calculator</h1>
+    <p class="page-sub">When to start down and what rate to fly, plus how far your airplane glides if the engine stops asking politely.</p>
+    </div>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <div class="calc-card" id="calculator">
+      <div class="solve-pills" role="group" aria-label="Choose what to solve for">
+        <span class="solve-label">Solve for:</span>
+        <button type="button" id="pill-tod" class="active" aria-pressed="true">When to start down</button>
+        <button type="button" id="pill-rate" aria-pressed="false">Required rate</button>
+      </div>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="alt">Altitude to lose (ft)</label>
+            <div class="stepper" data-step="500">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="alt" inputmode="numeric" min="0" max="45000" step="100" value="6000" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Cruise altitude minus pattern altitude (or the crossing restriction)</p>
+          </div>
+          <div class="calc-field">
+            <label for="gs">Groundspeed in the descent (kt)</label>
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="gs" inputmode="numeric" min="30" max="600" step="1" value="120" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Descents usually run faster than cruise; check the GPS on the way down</p>
+          </div>
+          <div class="calc-field" id="field-rate">
+            <label for="rate">Descent rate (fpm)</label>
+            <div class="stepper" data-step="50">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="rate" inputmode="numeric" min="100" max="4000" step="50" value="500" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">500 fpm is the comfortable GA standard</p>
+          </div>
+          <div class="calc-field is-output" id="field-dist">
+            <label for="dist">Distance available (NM)</label>
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="dist" inputmode="decimal" min="1" max="500" step="1" value="20" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Track miles to the airport or the fix</p>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <svg id="profile" viewBox="0 0 300 170" width="300" height="170" role="img" aria-label="Descent profile from cruise to the airport">
+            <line x1="10" y1="150" x2="290" y2="150" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+            <polygon points="278,150 290,150 284,142" fill="#94A3B8"/>
+            <line id="prof-cruise" x1="10" y1="40" x2="110" y2="40" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+            <line id="prof-desc" x1="110" y1="40" x2="270" y2="148" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
+            <circle id="prof-tod" cx="110" cy="40" r="5" fill="#F0F0F5"/>
+            <text id="prof-tod-label" x="110" y="26" text-anchor="middle" fill="#F0F0F5" font-size="12" font-weight="700">TOD</text>
+            <text id="prof-angle" x="200" y="120" fill="#94A3B8" font-size="12" font-weight="600"></text>
+          </svg>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter the descent to see the profile.</div>
+        </div>
+      </div>
+      <div class="calc-results" aria-live="polite">
+        <div class="result-tile result-blue" id="tile-main">
+          <span class="result-label" id="main-label">Start down</span>
+          <span class="result-value" id="main-val">&ndash;</span>
+          <span class="result-note" id="main-note"></span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Time in descent</span>
+          <span class="result-value" id="time-val">&ndash;</span>
+          <span class="result-note">minutes</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Gradient</span>
+          <span class="result-value" id="grad-val">&ndash;</span>
+          <span class="result-note" id="grad-note">ft per NM</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="lede"><strong>The 3° rule: start down at 3 NM per 1,000 ft to lose, and fly groundspeed × 5 as your rate.</strong> Losing 6,000 ft means a top of descent 18 NM out; at 120 kt that is 600 fpm. It is the same geometry an ILS glideslope uses, and it is the difference between a descent you planned and a dive you apologized for.</p>
+
+    <h2>How descent planning works</h2>
+    <ul>
+      <li><strong>Time</strong> = altitude to lose ÷ rate. 6,000 ft at 500 fpm is 12 minutes.</li>
+      <li><strong>Distance</strong> = groundspeed × time. 12 minutes at 120 kt is 24 NM: that is your top of descent.</li>
+      <li><strong>Required rate</strong> (when the distance is fixed, like a crossing restriction) = altitude ÷ time available. The moment that number gets big, you are negotiating with physics.</li>
+      <li><strong>Gradient</strong> = altitude ÷ distance, in ft/NM; ÷ 100 gives roughly the descent angle in degrees (a 318 ft/NM path is the standard 3°).</li>
+    </ul>
+    <p>Two cockpit shortcuts worth memorizing: <strong>3 × altitude-in-thousands = distance</strong>, and <strong>groundspeed × 5 = the 3° rate</strong>. This calculator is those rules with the rounding removed.</p>
+
+    <h2>Glide range</h2>
+    <p>Same triangle, engine out. Distance = glide ratio × height. Enter your POH numbers:</p>
+    <div class="calc-card" id="glide">
+      <div class="calc-grid">
+        <div class="calc-field">
+          <label for="g-ratio">Best glide ratio (X : 1)</label>
+          <div class="stepper" data-step="0.5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-ratio" inputmode="decimal" min="1" max="60" step="0.1" value="9" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
+          <p class="calc-hint">From the POH; ~9:1 for a typical trainer</p>
+        </div>
+        <div class="calc-field">
+          <label for="g-agl">Height above terrain (ft AGL)</label>
+          <div class="stepper" data-step="500">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-agl" inputmode="numeric" min="0" max="45000" step="100" value="5000" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label>Still-air glide distance</label>
+          <div class="result-tile result-blue" style="padding:10px">
+            <span class="result-value" id="g-dist" style="font-size:24px">&ndash;</span>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label>Time to the ground (at ~70 kt)</label>
+          <div class="result-tile" style="padding:10px">
+            <span class="result-value" id="g-time" style="font-size:24px">&ndash;</span>
+          </div>
+        </div>
+      </div>
+      <p class="calc-hint" style="margin-top:10px">Still air, wings level, best-glide speed, propeller as tested. Headwind, turns, and a windmilling prop all shorten it; treat this as the outer edge of the circle, not the middle.</p>
+    </div>
+    <p>Typical POH best-glide figures (verify in <em>your</em> POH; weight and configuration matter): Cessna 152 and 172 around 9:1 at 60–68 KIAS, Piper Archer about 10:1, Cirrus SR22 roughly 9:1 at 88 KIAS, Diamond DA40 up to 11:1. From 5,000 ft AGL that is a 7 to 9 NM circle in still air.</p>
+
+    <h2>How pilots use these numbers</h2>
+    <ul>
+      <li><strong>Every arrival:</strong> compute the top of descent before engine start (altitude to lose × 3 NM). Starting down there at 500 fpm arrives at pattern altitude 2 to 3 miles out, no diving, no shock cooling, no ear complaints.</li>
+      <li><strong>Crossing restrictions:</strong> "cross 10 west at 4,000" turns into a required rate in one calculation. If it comes out over about 1,000 fpm, ask for lower now or add track miles.</li>
+      <li><strong>The glide circle habit:</strong> knowing your AGL height and ratio means always having a radius in mind. Route selection over hostile terrain (water, mountains, forest at night) is choosing altitudes that keep a landable spot inside that circle.</li>
+      <li><strong>Engine-out drill:</strong> height ÷ 1,000 × ratio ÷ 6 ≈ NM of glide. Practicing that mental math is what makes the real one calm.</li>
+    </ul>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why plan descents at 500 fpm instead of just diving down late?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>A late, steep descent stacks problems: airspeed creeping toward the yellow arc in bumps, engine temperatures dropping fast, ears hurting, and arriving at the pattern high and fast, which is how overruns and go-arounds start. The 3° profile costs nothing but a decision made 20 miles earlier.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does wind change the top of descent?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Yes, through groundspeed: a tailwind on the way down means more track miles for the same rate, so start earlier; a headwind compresses it. Use the groundspeed you expect in the descent (usually cruise GS plus a few knots), and re-check against the GPS once established.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is the glide ratio the same at any weight?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>The ratio barely changes with weight, but the best-glide <em>speed</em> does: heavier means a faster best-glide speed for the same angle. What really costs distance is flying the wrong speed; a trainer glided 10 knots off best-glide can lose a quarter of its range. Nail the speed, then the ratio takes care of itself.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/flight-time-calculator/"><h3>Time-Speed-Distance Calculator</h3><p>The groundspeed your top of descent depends on.</p></a>
+      <a class="card-link" href="/tools/holding-pattern-calculator/"><h3>Holding Pattern Entry</h3><p>The hold that sometimes comes before the descent.</p></a>
+      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>What the airport's thin air does to the other end of the flight.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Plan the whole arrival, not just the slope</h2>
+      <p>FlightDecide checks weather, NOTAMs, fuel, performance, and W&amp;B for your specific route and window, and scores the flight GO, CAUTION, or NO GO with the data behind every call.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, current charts, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Airplane Flying Handbook</em> (FAA-H-8083-3C), Ch. 4 and 18; <em>Instrument Procedures Handbook</em> (FAA-H-8083-16B), Ch. 3. Last reviewed: July 17, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/tools.js"></script>
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      let solve = 'tod'; // 'tod' (distance) | 'rate'
+
+      const pills = { tod: $('pill-tod'), rate: $('pill-rate') };
+      Object.keys(pills).forEach(function (key) {
+        pills[key].addEventListener('click', function () {
+          solve = key;
+          Object.keys(pills).forEach(function (k) {
+            pills[k].classList.toggle('active', k === key);
+            pills[k].setAttribute('aria-pressed', String(k === key));
+          });
+          $('field-dist').classList.toggle('is-output', key === 'tod');
+          $('field-rate').classList.toggle('is-output', key === 'rate');
+          compute();
+        });
+      });
+
+      function compute() {
+        const alt = parseFloat($('alt').value);
+        const gs = parseFloat($('gs').value);
+        let rate = parseFloat($('rate').value);
+        let dist = parseFloat($('dist').value);
+        if (isNaN(alt) || isNaN(gs) || alt <= 0 || gs <= 0) return;
+
+        let mins;
+        if (solve === 'tod') {
+          if (isNaN(rate) || rate <= 0) return;
+          mins = alt / rate;
+          dist = gs * mins / 60;
+          $('dist').value = Math.round(dist * 10) / 10;
+          $('main-label').textContent = 'Start down';
+          $('main-val').textContent = Math.round(dist * 10) / 10 + ' NM';
+          $('main-note').textContent = 'before the airport or fix, at ' + Math.round(rate) + ' fpm';
+        } else {
+          if (isNaN(dist) || dist <= 0) return;
+          mins = dist / gs * 60;
+          rate = alt / mins;
+          $('rate').value = Math.round(rate / 10) * 10;
+          $('main-label').textContent = 'Required rate';
+          $('main-val').textContent = Math.round(rate) + ' fpm';
+          $('main-note').textContent = 'to lose ' + Math.round(alt).toLocaleString('en-US') + ' ft in ' + Math.round(dist * 10) / 10 + ' NM';
+        }
+        const grad = alt / dist;
+        const angle = Math.atan(grad / 6076.1) * 180 / Math.PI;
+        $('time-val').textContent = Math.round(mins * 10) / 10;
+        $('grad-val').textContent = Math.round(grad);
+        $('grad-note').textContent = 'ft per NM (~' + (Math.round(angle * 10) / 10) + '°)';
+
+        // profile drawing: TOD position scales with distance vs a 40 NM window
+        const win = Math.max(dist * 1.3, 10);
+        const todX = 270 - (dist / win) * 250;
+        $('prof-cruise').setAttribute('x2', todX.toFixed(1));
+        $('prof-desc').setAttribute('x1', todX.toFixed(1));
+        $('prof-tod').setAttribute('cx', todX.toFixed(1));
+        $('prof-tod-label').setAttribute('x', todX.toFixed(1));
+        $('prof-angle').textContent = Math.round(grad) + ' ft/NM';
+
+        const v = $('verdict');
+        if (rate > 1000) {
+          v.className = 'verdict-line v-red';
+          v.textContent = Math.round(rate) + ' fpm needed. That is a dive, not a descent: ask for lower earlier or add track miles.';
+        } else if (rate > 700) {
+          v.className = 'verdict-line v-amber';
+          v.textContent = Math.round(rate) + ' fpm needed. Doable, but late; passengers and engine temps will notice.';
+        } else {
+          v.className = 'verdict-line v-green';
+          v.textContent = 'Start down ' + Math.round(dist * 10) / 10 + ' NM out: ' + Math.round(mins) + ' minutes at ' + Math.round(rate) + ' fpm, a ' + (Math.round(angle * 10) / 10) + '° path.';
+        }
+      }
+
+      ['alt', 'gs', 'rate', 'dist'].forEach(function (id) { $(id).addEventListener('input', compute); });
+      compute();
+
+      // glide
+      function glide() {
+        const ratio = parseFloat($('g-ratio').value);
+        const agl = parseFloat($('g-agl').value);
+        if (isNaN(ratio) || isNaN(agl) || ratio <= 0 || agl < 0) return;
+        const nm = ratio * agl / 6076.1;
+        $('g-dist').textContent = (Math.round(nm * 10) / 10) + ' NM';
+        // time at ~70 kt best glide along the slope ≈ ground distance / 70
+        const min = nm / 70 * 60;
+        $('g-time').textContent = (Math.round(min * 10) / 10) + ' min';
+      }
+      ['g-ratio', 'g-agl'].forEach(function (id) { $(id).addEventListener('input', glide); });
+      glide();
+    })();
+  </script>
+
+</body>
+</html>
