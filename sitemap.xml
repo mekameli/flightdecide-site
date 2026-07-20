@@ -121,6 +121,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flightdecide.com/learn/canadian-weather-briefing/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/learn/canadian-notams/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/learn/cya-cyr-cyd-airspace/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flightdecide.com/compare/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>

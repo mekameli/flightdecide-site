@@ -77,6 +77,15 @@ flight. No sign-up; everything runs locally.
   line-by-line TAF decoding (FM, TEMPO, BECMG, PROB30) and go/no-go use.
 - [What NOTAMs to Check](https://flightdecide.com/learn/what-notams-to-check/):
   NOTAM types, a practical triage order, TFRs, and the "no NOTAMs" trap.
+- [Canadian Weather Briefing](https://flightdecide.com/learn/canadian-weather-briefing/):
+  plan.navcanada.ca (CFPS), FIC phone briefings (1-866-WX-BRIEF), the GFA,
+  and US-vs-Canada briefing differences.
+- [Canadian NOTAMs Explained](https://flightdecide.com/learn/canadian-notams/):
+  ICAO format since 2019, Q-line decoding, geo-referenced filtering, CFPS
+  retrieval.
+- [CYA, CYR, CYD Airspace](https://flightdecide.com/learn/cya-cyr-cyd-airspace/):
+  Canadian Class F special use airspace: advisory/restricted/danger entry
+  rules, DAH 56-day cycle, activation by NOTAM.
 
 ## Comparisons (honest, we-build-FlightDecide disclosed)
 

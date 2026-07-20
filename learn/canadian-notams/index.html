@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canadian NOTAMs Explained: ICAO Format, Q-Lines, CFPS</title>
+  <meta name="description" content="Canadian NOTAMs decoded: the ICAO format NAV CANADA adopted in 2019, how to read the Q-line, a realistic example walked through line by line, and where to get NOTAMs via CFPS." />
+  <link rel="canonical" href="https://flightdecide.com/learn/canadian-notams/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Canadian NOTAMs Explained: ICAO Format, Q-Lines, CFPS" />
+  <meta property="og:description" content="The ICAO NOTAM format NAV CANADA adopted in 2019, decoded line by line: Q-lines, item letters, EST and PERM, and where to pull a Canadian NOTAM briefing." />
+  <meta property="og:url" content="https://flightdecide.com/learn/canadian-notams/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide pilot guide: Canadian NOTAMs and the ICAO format explained" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Canadian NOTAMs Explained: ICAO Format, Q-Lines, CFPS" />
+  <meta name="twitter:description" content="The ICAO NOTAM format decoded line by line: Q-lines, item letters, EST and PERM, plus where to pull a Canadian NOTAM briefing." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://flightdecide.com/learn/canadian-notams/#article",
+        "headline": "Canadian NOTAMs Explained: ICAO Format, Q-Lines, CFPS",
+        "description": "Canadian NOTAMs decoded: the ICAO format NAV CANADA adopted in 2019, how to read the Q-line, a realistic example walked through line by line, and where to get NOTAMs via CFPS.",
+        "url": "https://flightdecide.com/learn/canadian-notams/",
+        "datePublished": "2026-07-20",
+        "dateModified": "2026-07-20",
+        "author": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/learn/canadian-notams/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What format are Canadian NOTAMs in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Since October 10, 2019, all Canadian domestic NOTAMs use the ICAO format: a NOTAM number and series letter, a NOTAMN/NOTAMR/NOTAMC type indicator, a coded Q-line, and lettered items A) through G) covering location, validity, schedule, text, and altitude limits. NAV CANADA's transition aligned Canada with the international standard. The United States still uses its own domestic format for many NOTAMs, so pilots crossing the border read both."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Q-line in a NOTAM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Q-line is the qualifier line of an ICAO NOTAM: the FIR it applies to, a five-letter Q-code identifying the subject and its condition, a traffic qualifier (I, V, or IV), a purpose qualifier (letters such as N, B, O, M), a scope qualifier (A for aerodrome, E for en route, W for warning), lower and upper altitude limits in hundreds of feet, and coordinates with a radius in nautical miles. It exists mainly so briefing systems can filter and sort NOTAMs automatically by location, altitude, and relevance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do I get NOTAMs for a flight in Canada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The primary self-serve source is NAV CANADA's Collaborative Flight Planning Services (CFPS) at plan.navcanada.ca, which provides NOTAM briefings by aerodrome or along a route. For a briefing from a specialist, call a NAV CANADA Flight Information Centre at 1-866-WX-BRIEF within Canada. Most EFB apps also carry Canadian NOTAMs, but verify how yours sources and filters them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Canada have TFRs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not as a distinct product with that name. The TFR is a US construct. In Canada, temporary airspace restrictions are issued as NOTAMs, and Class F restricted areas (CYR zones) can be activated or modified by NOTAM. The practical effect is similar: airspace you must stay out of, published on short notice. The difference is where you find it: in the NOTAM briefing itself rather than on a separate graphical TFR list."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Pilot Guides", "item": "https://flightdecide.com/learn/" },
+          { "@type": "ListItem", "position": 3, "name": "Canadian NOTAMs Explained", "item": "https://flightdecide.com/learn/canadian-notams/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/learn/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Guides
+      </a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Pilot Guides</span>
+    <h1>Canadian NOTAMs Explained</h1>
+    <p class="page-sub">The ICAO format decoded line by line: the Q-line, the lettered items, EST and PERM, and where a Canadian NOTAM briefing actually comes from.</p>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <p class="crumbs"><a href="/">Home</a> › <a href="/learn/">Pilot Guides</a> › Canadian NOTAMs</p>
+
+    <p class="lede"><strong>Canadian NOTAMs are written in the ICAO format: a numbered header, a coded Q-line, and lettered items A) through G).</strong> NAV CANADA completed the switch on October 10, 2019, aligning Canada with the international standard, and they are geographically referenced (coordinates plus a radius) so briefing tools can filter by where your route actually goes. Get them from CFPS at plan.navcanada.ca or a Flight Information Centre at 1-866-WX-BRIEF. Once you can read the Q-line and the A) through G) items, the rest is vocabulary.</p>
+
+    <h2>What format are Canadian NOTAMs in?</h2>
+    <p>Since October 10, 2019, every Canadian domestic NOTAM has been published in the ICAO format. Before that date, Canada ran its own domestic style, organized around NOTAM files. NAV CANADA's transition replaced both the format and the distribution model in one move: NOTAMs are now coded to the international standard, and each one carries its own coordinates and radius instead of living in a regional file.</p>
+    <p>That second change matters as much as the first. Under the old NOTAM-file system, you pulled the file for a region and read everything in it, relevant or not. A geographically referenced NOTAM can be matched against your actual route: a briefing tool draws your track, buffers it, and keeps only the NOTAMs whose circles intersect it. The format looks more cryptic than plain text, but it exists precisely so machines can do that filtering for you.</p>
+    <p>One wrinkle for cross-border pilots: the United States still uses its own domestic format for many NOTAMs. Fly from Vancouver to Seattle and you will read ICAO-format NOTAMs for the Canadian half and US-domestic-format NOTAMs for the American half of the same flight. The content categories are the same; the packaging is not. (For what to prioritize once you have the list, see <a href="/learn/what-notams-to-check/">what NOTAMs to check before a flight</a>.)</p>
+
+    <h2>Anatomy of an ICAO NOTAM, with a real-shaped example</h2>
+    <p>Here is a realistic (fictional) Canadian NOTAM for a runway closure at Victoria:</p>
+    <pre>H2537/26 NOTAMN
+Q) CZVR/QMRLC/IV/NBO/A/000/999/4839N12325W005
+A) CYYJ  B) 2607221300  C) 2607230100
+D) DAILY 1300-0100
+E) RWY 09/27 CLSD DUE TO CONSTRUCTION</pre>
+    <p>Line by line:</p>
+    <ul>
+      <li><strong>H2537/26 NOTAMN</strong>: series letter H, NOTAM number 2537, year 2026. The suffix tells you what kind of message this is: <strong>NOTAMN</strong> is a new NOTAM, <strong>NOTAMR</strong> replaces an earlier one (the replaced number follows), and <strong>NOTAMC</strong> cancels one. If you see a NOTAMR, stop using the NOTAM it names.</li>
+      <li><strong>Q) CZVR/QMRLC/IV/NBO/A/000/999/4839N12325W005</strong>: the qualifier line, decoded in the next section.</li>
+      <li><strong>A) CYYJ</strong>: the location the NOTAM applies to, as an ICAO identifier (an aerodrome, or an FIR for en route items).</li>
+      <li><strong>B) 2607221300</strong>: start of validity, in YYMMDDHHMM format, UTC. Here: July 22, 2026, at 1300Z.</li>
+      <li><strong>C) 2607230100</strong>: end of validity, same format. Two flags to watch: <strong>EST</strong> after the time means the end is estimated and the NOTAM stays in force until replaced or cancelled, and <strong>PERM</strong> means the change is permanent and will migrate into the publications.</li>
+      <li><strong>D) DAILY 1300-0100</strong>: the schedule, present only when the condition is intermittent within the B) to C) window. This is where "closed, but only during working hours" lives, and skipping it is how pilots avoid runways that are actually open.</li>
+      <li><strong>E) RWY 09/27 CLSD DUE TO CONSTRUCTION</strong>: the text of the NOTAM, in heavily abbreviated but more or less readable English.</li>
+      <li><strong>F) and G)</strong> (not present here): lower and upper altitude limits, used when the NOTAM describes airspace, such as a restricted area activation or an obstacle.</li>
+    </ul>
+    <p>So this NOTAM reads: new NOTAM for Victoria; runway 09/27 is closed for construction each day from 1300Z to 0100Z, from July 22 to July 23, 2026. If you land at 0300Z, it does not apply to you. That is the time-window filtering that makes NOTAM briefings survivable.</p>
+
+    <h2>How do you read the Q-line?</h2>
+    <p>The Q-line is the machine-readable summary. Taking <code>Q) CZVR/QMRLC/IV/NBO/A/000/999/4839N12325W005</code> field by field:</p>
+    <ul>
+      <li><strong>CZVR</strong>: the FIR (here, Vancouver).</li>
+      <li><strong>QMRLC</strong>: the five-letter Q-code. The first letter is always Q; the next two identify the subject (MR is a runway) and the final two the condition (LC is closed). You do not need to memorize the code tables; you need to recognize that this pair is the fastest possible triage. A briefing full of QMRs and QFAs (aerodrome status) reads differently from one full of QRRs (restricted areas).</li>
+      <li><strong>IV</strong>: traffic qualifier. I for IFR, V for VFR, IV for both.</li>
+      <li><strong>NBO</strong>: purpose qualifiers. N flags it for the immediate attention of operators, B marks it for inclusion in pre-flight briefings, O means it concerns flight operations. M marks miscellaneous items that briefings may not display by default.</li>
+      <li><strong>A</strong>: scope. A for aerodrome, E for en route, W for a warning (and combinations such as AE).</li>
+      <li><strong>000/999</strong>: lower and upper limits in hundreds of feet (flight levels). 000/999 is the default when altitude does not usefully bound the item.</li>
+      <li><strong>4839N12325W005</strong>: the coordinates and radius in nautical miles. This is the geographic reference that lets a briefing system decide whether the NOTAM intersects your route at all.</li>
+    </ul>
+    <p>In day-to-day reading, the Q-code and the scope letter are the two fields worth a glance before you commit to reading item E). Everything else in the Q-line mostly serves the software.</p>
+
+    <h2>How is the Canadian NOTAM system different from the FAA's?</h2>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Aspect</th><th>Canada (NAV CANADA)</th><th>United States (FAA)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Format</strong></td><td>ICAO format for all domestic NOTAMs since October 2019</td><td>US domestic format still used for many NOTAMs, alongside ICAO-format output</td></tr>
+        <tr><td><strong>Temporary restrictions</strong></td><td>No TFR product: airspace restrictions issued via NOTAM, including activation of CYR restricted areas</td><td>The TFR, an FDC NOTAM with its own graphical list at tfr.faa.gov</td></tr>
+        <tr><td><strong>Retrieval</strong></td><td>CFPS at plan.navcanada.ca, or a Flight Information Centre at 1-866-WX-BRIEF</td><td>FAA NOTAM Search, or a Leidos briefing at 1800wxbrief.com / 1-800-WX-BRIEF</td></tr>
+      </tbody>
+    </table></div>
+    <p>The traps run in both directions. A US pilot heading north may look for a TFR map that does not exist and miss a CYR activation buried in the NOTAM text; a Canadian pilot heading south may skim past US keyword formatting (RWY, NAV, OBST headers without a Q-line) expecting ICAO items. If your flight crosses the border, brief each side from its own system, or use a tool that queries both.</p>
+
+    <h2>Where do you get Canadian NOTAMs?</h2>
+    <ul>
+      <li><strong>CFPS</strong> (<a href="https://plan.navcanada.ca">plan.navcanada.ca</a>): NAV CANADA's Collaborative Flight Planning Services. Free account, NOTAM briefings by aerodrome or along a route, alongside weather. This is the authoritative self-serve source.</li>
+      <li><strong>A Flight Information Centre</strong>: 1-866-WX-BRIEF within Canada connects you to a NAV CANADA FIC specialist for an interpreted briefing, useful when the picture is complicated or you want a second opinion.</li>
+      <li><strong>Your EFB</strong>: most apps carry Canadian NOTAMs, but coverage and filtering vary by app; know where yours gets them and whether it applies your flight window.</li>
+    </ul>
+    <p>NOTAMs are one leg of a Canadian preflight; the <a href="/learn/canadian-weather-briefing/">Canadian weather briefing guide</a> covers the other, and both feed the same <a href="/learn/go-no-go-decision-framework/">go/no-go decision</a>.</p>
+
+    <h2>The empty-briefing caveat</h2>
+    <p>One habit worth keeping on either side of the border: an empty NOTAM list is only meaningful if the source was actually queried. A tool that fails to reach the NOTAM system and a tool that queried it and got zero results can render the same blank screen. FlightDecide handles this explicitly for Canadian aerodromes: it queries NAV CANADA's CFPS NOTAM data directly, filters to your flight window, and if the source cannot be reached it reports a coverage gap instead of a falsely clean list. It never claims "no NOTAMs" without evidence the source was queried. Whatever tool you use, make sure you know which of those two states an empty list represents.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What format are Canadian NOTAMs in?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Since October 10, 2019, all Canadian domestic NOTAMs use the ICAO format: numbered header, NOTAMN/NOTAMR/NOTAMC type, a coded Q-line, and lettered items A) through G). The US still uses its own domestic format for many NOTAMs, so cross-border pilots read both.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is the Q-line in a NOTAM?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>The qualifier line: FIR, a five-letter Q-code for the subject and condition, traffic (I/V/IV), purpose (N, B, O, M), scope (A/E/W), lower and upper altitude limits, and coordinates with a radius. It mostly exists so briefing systems can filter NOTAMs automatically by location and relevance.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Where do I get NOTAMs for a flight in Canada?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>CFPS at plan.navcanada.ca for self-serve briefings by aerodrome or route, or call a NAV CANADA Flight Information Centre at 1-866-WX-BRIEF within Canada for an interpreted briefing. EFB apps also carry Canadian NOTAMs; verify how yours sources and filters them.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does Canada have TFRs?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Not as a named product. Temporary restrictions in Canada are issued as NOTAMs, including activation of CYR restricted areas. The effect is similar to a TFR, but there is no separate graphical TFR list: you find them in the NOTAM briefing itself.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/learn/what-notams-to-check/"><h3>What NOTAMs to Check Before a Flight</h3><p>The triage order once you have the list: TFR-class items, runway status, approaches, obstacles.</p></a>
+      <a class="card-link" href="/learn/cya-cyr-cyd-airspace/"><h3>CYA, CYR, CYD: Canadian Class F Airspace</h3><p>The zones that CYR-activation NOTAMs switch on, decoded.</p></a>
+      <a class="card-link" href="/learn/canadian-weather-briefing/"><h3>Canadian Weather Briefing</h3><p>The weather half of a Canadian preflight: GFAs, METARs, TAFs, and where to get them.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Canadian NOTAMs, queried at the source</h2>
+      <p>FlightDecide pulls NOTAMs for Canadian aerodromes directly from NAV CANADA's CFPS data, filters them to your flight window, and tells you plainly when a source could not be checked. A coverage gap is reported as a coverage gap, never as a clean list.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational guide for flight-planning practice. It is advisory only and not a substitute for an official briefing or your own judgment as pilot in command (<a href="/disclaimer.html">see disclaimer</a>). Sources: NAV CANADA ICAO NOTAM transition materials (navcanada.ca); Transport Canada AIM, MAP chapter; CFPS (plan.navcanada.ca). Last reviewed: July 20, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
