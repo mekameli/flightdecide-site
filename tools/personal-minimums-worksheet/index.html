@@ -170,7 +170,7 @@
 
     <div class="calc-card" id="worksheet">
 
-      <h3 style="margin-top:0">1 · Certification and experience baseline</h3>
+      <h3 class="section-head" style="margin-top:0"><span class="step-badge">1</span>Certification and experience baseline</h3>
       <p class="calc-hint" style="margin-bottom:14px">Your minimums should reflect who you are as a pilot today, not who you were at your checkride.</p>
       <div class="calc-grid">
         <div class="calc-field">
@@ -191,7 +191,7 @@
         </div>
       </div>
 
-      <h3>2 · Weather minimums</h3>
+      <h3 class="section-head"><span class="step-badge">2</span>Weather minimums</h3>
       <p class="calc-hint" style="margin-bottom:14px">Set night numbers higher than day. The IFR column is for instrument-rated, instrument-current pilots. Leave it blank otherwise.</p>
       <div class="table-scroll"><table>
         <thead><tr><th>Minimum</th><th>Day VFR</th><th>Night VFR</th><th>IFR (approach)</th></tr></thead>
@@ -224,7 +224,7 @@
       </table></div>
       <p class="calc-hint" style="margin-bottom:20px">Not sure where your crosswind number should sit? Run today's wind through the <a href="/tools/crosswind-calculator/">crosswind calculator</a> and compare it against what you have actually practiced recently.</p>
 
-      <h3>3 · Performance margins</h3>
+      <h3 class="section-head"><span class="step-badge">3</span>Performance margins</h3>
       <div class="calc-grid">
         <div class="calc-field">
           <label for="pm-rwy">Minimum runway (× POH distance)</label>
@@ -247,7 +247,7 @@
         </div>
       </div>
 
-      <h3>4 · Adjustments: subtract from your minimums when…</h3>
+      <h3 class="section-head"><span class="step-badge">4</span>Adjustments: subtract from your minimums when…</h3>
       <p class="calc-hint" style="margin-bottom:14px">When any of these apply to today's flight, tighten the numbers above (for example: add 500 ft of ceiling, 1 sm of visibility, subtract 5 kt of wind). Never loosen them on the day of the flight.</p>
       <ul class="adj-list">
         <li><label><input type="checkbox" id="pm-adj-unfam" /> <span>Unfamiliar airport or unfamiliar terrain</span></label></li>
@@ -271,9 +271,13 @@
         </div>
       </div>
 
-      <div class="no-print" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:22px">
-        <button class="btn-primary" type="button" onclick="window.print()">Print this worksheet</button>
-        <button type="button" id="pm-clear" class="btn-secondary">Clear worksheet</button>
+      <div class="tool-toolbar no-print" style="margin-top:22px">
+        <button class="btn-primary" type="button" onclick="window.print()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6v-7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Print this worksheet
+        </button>
+        <button type="button" id="pm-clear" class="btn-secondary-sm">Clear worksheet</button>
+        <span class="save-status" id="pm-status"></span>
       </div>
       <p class="calc-hint no-print" style="margin-top:10px">Entries save automatically in this browser (nothing is uploaded anywhere). Print a copy and keep it with your kneeboard or flight bag.</p>
     </div>
@@ -365,7 +369,19 @@
         fields.forEach(function (el) {
           data[el.id] = el.type === 'checkbox' ? el.checked : el.value;
         });
-        try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { /* storage unavailable */ }
+        try {
+          localStorage.setItem(KEY, JSON.stringify(data));
+          const st = document.getElementById('pm-status');
+          if (st) {
+            st.textContent = 'Saved on this device \u2713';
+            st.classList.add('saved');
+            clearTimeout(st._t);
+            st._t = setTimeout(function () {
+              st.classList.remove('saved');
+              st.textContent = '';
+            }, 1600);
+          }
+        } catch (e) { /* storage unavailable */ }
       }
 
       function restore() {
