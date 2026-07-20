@@ -10,6 +10,11 @@
   --accent-blue: #3B82F6;
   --accent-amber: #EAB308;
   --accent-red: #EF4444;
+  /* Inline text links: a softer, more luminous sky blue than --accent-blue,
+     tuned to sit with the body text on the dark navy (~7.3:1 contrast). */
+  --link: #6EA8FA;
+  --link-hover: #9BC1FF;
+  --link-underline: rgba(110,168,250,0.4);
   --text: #F0F0F5;
   --text-muted: #94A3B8;
   --text-dim: #64748B;
@@ -161,8 +166,18 @@ nav.site-nav {
 }
 .prose ul, .prose ol { margin: 0 0 16px 24px; }
 .prose li { margin-bottom: 8px; }
-.prose a { color: var(--accent-blue); text-decoration: none; }
-.prose a:hover { text-decoration: underline; }
+.prose a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: var(--link-underline);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.prose a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
 .prose strong { font-weight: 650; }
 .prose table {
   width: 100%;

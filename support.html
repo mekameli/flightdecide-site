@@ -34,6 +34,9 @@
       --border-bright: rgba(255,255,255,0.15);
       --accent-green: #22C55E;
       --accent-blue: #3B82F6;
+      --link: #6EA8FA;
+      --link-hover: #9BC1FF;
+      --link-underline: rgba(110,168,250,0.4);
       --accent-amber: #EAB308;
       --text: #F0F0F5;
       --text-muted: #94A3B8;
@@ -205,8 +208,18 @@
     .faq-answer-inner li { margin-bottom: 5px; }
     .faq-item.open .faq-answer { max-height: 600px; }
     strong { color: var(--text); }
-    a { color: var(--accent-blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-color: var(--link-underline);
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+    a:hover {
+      color: var(--link-hover);
+      text-decoration-color: currentColor;
+    }
     /* Contact card */
     .contact-section { margin-top: 48px; }
     .contact-cards {

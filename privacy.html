@@ -32,6 +32,9 @@
       --border: rgba(255,255,255,0.08);
       --accent-green: #22C55E;
       --accent-blue: #3B82F6;
+      --link: #6EA8FA;
+      --link-hover: #9BC1FF;
+      --link-underline: rgba(110,168,250,0.4);
       --text: #F0F0F5;
       --text-muted: #94A3B8;
       --text-dim: #44445a;
@@ -156,8 +159,18 @@
       line-height: 1.7;
     }
     strong { color: var(--text); }
-    a { color: var(--accent-blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-color: var(--link-underline);
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+    a:hover {
+      color: var(--link-hover);
+      text-decoration-color: currentColor;
+    }
     .third-party-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
