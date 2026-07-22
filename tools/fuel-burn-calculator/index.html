@@ -299,11 +299,13 @@
     (function () {
       const $ = (id) => document.getElementById(id);
 
+      const TOOLID = 'fuel-endurance', TOOLNAME = 'Fuel & Endurance';
+
       function fmtHM(min) {
         if (!isFinite(min)) return '–';
         const neg = min < 0;
-        min = Math.abs(min);
-        const h = Math.floor(min / 60), m = Math.round(min % 60);
+        const t = Math.round(Math.abs(min));
+        const h = Math.floor(t / 60), m = t % 60;
         return (neg ? '-' : '') + h + ':' + String(m).padStart(2, '0');
       }
       $('resv').addEventListener('change', compute);
@@ -356,8 +358,13 @@
 
         const v = $('verdict');
         if (!hasLeg) {
-          v.className = 'verdict-line v-green';
-          v.textContent = 'Endurance ' + fmtHM(endMin) + ' to dry tanks; plan on ' + fmtHM(planMin) + '. Add a leg time to check the margin.';
+          if (planMin < 0) {
+            v.className = 'verdict-line v-red';
+            v.textContent = 'Fuel on board is already ' + fmtHM(-planMin) + ' below the ' + resv + '-min reserve before any leg. Add fuel.';
+          } else {
+            v.className = 'verdict-line v-green';
+            v.textContent = 'Endurance ' + fmtHM(endMin) + ' to dry tanks; plan on ' + fmtHM(planMin) + '. Add a leg time to check the margin.';
+          }
         } else if (marginMin < 0) {
           v.className = 'verdict-line v-red';
           v.textContent = 'This leg lands ' + fmtHM(-marginMin) + ' inside your reserve. Add fuel or add a stop.';
@@ -371,6 +378,11 @@
       }
 
       compute();
+
+      $('rate').addEventListener('input', function () {
+        FD.shared.publish('fuelFlowGph', parseFloat($('rate').value), TOOLID, TOOLNAME);
+      });
+      FD.attachPrefill($('rate'), 'fuelFlowGph', TOOLID, TOOLNAME);
     })();
 
   </script>

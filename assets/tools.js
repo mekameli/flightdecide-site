@@ -111,6 +111,86 @@
     };
   };
 
+  /* Cross-tool value sharing: a value computed or entered on one tool page is
+     offered as a one-tap prefill on another. Nothing is auto-applied; the pilot
+     taps the chip to accept. Persisted in localStorage so it survives the
+     navigation between separate tool pages (mirrors the iOS ToolInputStore). */
+  FD.shared = (function () {
+    const KEY = 'fd.tools.shared.v1';
+    // quantity -> display + tolerance. `deg` quantities render "310" with a
+    // trailing degree sign and no space.
+    const META = {
+      tasKt: { unit: 'kt', dec: 0, tol: 0.5 },
+      groundspeedKt: { unit: 'kt', dec: 0, tol: 0.5 },
+      altimeterInHg: { unit: 'inHg', dec: 2, tol: 0.005 },
+      oatC: { unit: '°C', dec: 0, tol: 0.5 },
+      windDirDeg: { unit: '°', dec: 0, tol: 0.5, deg: true },
+      windSpeedKt: { unit: 'kt', dec: 0, tol: 0.5 },
+      magVarDeg: { unit: '°', dec: 0, tol: 0.5, deg: true },
+      fuelFlowGph: { unit: 'gph', dec: 1, tol: 0.05 },
+      distanceNm: { unit: 'NM', dec: 0, tol: 0.5 }
+    };
+    function load() { try { return JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { return {}; } }
+    function save(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
+    function match(q, a, b) { return isFinite(a) && isFinite(b) && Math.abs(a - b) <= META[q].tol; }
+    function round(q, v) { const p = Math.pow(10, META[q].dec); return Math.round(v * p) / p; }
+    function fmt(q, v) {
+      const m = META[q];
+      const n = m.dec > 0 ? v.toFixed(m.dec) : String(Math.round(v));
+      return m.deg ? n + m.unit : n + ' ' + m.unit;
+    }
+    return {
+      meta: META, fmt: fmt, round: round,
+      // Record a value produced by `toolId`. No-ops on non-finite / unchanged.
+      publish: function (q, value, toolId, toolName) {
+        if (!META[q] || !isFinite(value)) return;
+        const o = load(), e = o[q];
+        if (e && e.t === toolId && match(q, e.v, value)) return;
+        o[q] = { v: value, t: toolId, n: toolName, at: Date.now() };
+        save(o);
+      },
+      // The value another tool could adopt: present, from a different tool, and
+      // meaningfully different from `current`. Returns {v,t,n} or null.
+      suggest: function (q, current, toolId) {
+        const o = load(), e = o[q];
+        if (!e || e.t === toolId) return null;
+        if (match(q, e.v, current)) return null;
+        return e;
+      }
+    };
+  })();
+
+  /* Render a subtle "Use 142 kt (from True Airspeed)" chip under an input when a
+     fresher value from another tool exists. Tapping it fills the field. */
+  FD.attachPrefill = function (input, quantity, toolId, toolName) {
+    if (!input || !FD.shared.meta[quantity]) return;
+    const host = input.closest('.calc-field') || input.parentElement;
+    if (!host) return;
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'prefill-chip';
+    chip.hidden = true;
+    host.appendChild(chip);
+    function refresh() {
+      const s = FD.shared.suggest(quantity, parseFloat(input.value), toolId);
+      if (s) {
+        chip.hidden = false;
+        chip.textContent = '↓ Use ' + FD.shared.fmt(quantity, s.v) + ' (from ' + s.n + ')';
+      } else {
+        chip.hidden = true;
+      }
+    }
+    chip.addEventListener('click', function () {
+      const s = FD.shared.suggest(quantity, parseFloat(input.value), toolId);
+      if (!s) return;
+      input.value = FD.shared.round(quantity, s.v);
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      refresh();
+    });
+    input.addEventListener('input', refresh);
+    refresh();
+  };
+
   /* FAQ accordion (shared) */
   document.querySelectorAll('.faq-question').forEach(function (btn) {
     btn.addEventListener('click', function () {

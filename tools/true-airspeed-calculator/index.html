@@ -315,6 +315,8 @@
         const mach = Math.sqrt(5 * (Math.pow(qc / (delta * P0) + 1, 2 / 7) - 1));
         const tas = mach * A0 * Math.sqrt(T / T0);
 
+        if (isFinite(tas)) { FD.shared.publish('tasKt', tas, 'true-airspeed', 'True Airspeed'); }
+
         $('tas-val').textContent = Math.round(tas) + ' kt';
         $('mach-val').textContent = mach.toFixed(3);
         $('pa-val').textContent = Math.round(palt).toLocaleString('en-US');
@@ -350,6 +352,14 @@
       }
 
       compute();
+
+      // Ambient input publishers (publish only on user interaction, not on page load)
+      $('oat').addEventListener('input', function () { FD.shared.publish('oatC', parseFloat($('oat').value), 'true-airspeed', 'True Airspeed'); });
+      $('baro').addEventListener('input', function () { FD.shared.publish('altimeterInHg', parseFloat($('baro').value), 'true-airspeed', 'True Airspeed'); });
+
+      // Prefill chips: consume shared values from other tools
+      FD.attachPrefill($('oat'), 'oatC', 'true-airspeed', 'True Airspeed');
+      FD.attachPrefill($('baro'), 'altimeterInHg', 'true-airspeed', 'True Airspeed');
     })();
 
   </script>

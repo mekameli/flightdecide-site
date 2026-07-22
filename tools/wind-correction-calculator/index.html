@@ -418,6 +418,8 @@
         const gs = tas * Math.cos(wca) - ws * Math.cos(beta);
         const headComp = ws * Math.cos(beta); // + = headwind along course
 
+        if (isFinite(gs)) FD.shared.publish('groundspeedKt', gs, 'heading-groundspeed', 'Heading & Groundspeed');
+
         $('hdgGroup').style.transform = 'rotate(' + (th % 360) + 'deg)';
 
         $('wca-val').textContent = (wcaDeg >= 0 ? '+' : '−') + Math.abs(Math.round(wcaDeg)) + '°';
@@ -478,6 +480,17 @@
       }
       ['i-th', 'i-tas', 'i-tc', 'i-gs'].forEach(function (id) { $(id).addEventListener('input', inverse); });
       inverse();
+
+      // ambient inputs: broadcast user-typed values for other tools
+      $('wd').addEventListener('input', function () { FD.shared.publish('windDirDeg', parseFloat($('wd').value), 'heading-groundspeed', 'Heading & Groundspeed'); });
+      $('ws').addEventListener('input', function () { FD.shared.publish('windSpeedKt', parseFloat($('ws').value), 'heading-groundspeed', 'Heading & Groundspeed'); });
+      $('mvar').addEventListener('input', function () { FD.shared.publish('magVarDeg', parseFloat($('mvar').value), 'heading-groundspeed', 'Heading & Groundspeed'); });
+
+      // prefill chips: reuse values other tools produced
+      FD.attachPrefill($('tas'), 'tasKt', 'heading-groundspeed', 'Heading & Groundspeed');
+      FD.attachPrefill($('wd'), 'windDirDeg', 'heading-groundspeed', 'Heading & Groundspeed');
+      FD.attachPrefill($('ws'), 'windSpeedKt', 'heading-groundspeed', 'Heading & Groundspeed');
+      FD.attachPrefill($('mvar'), 'magVarDeg', 'heading-groundspeed', 'Heading & Groundspeed');
     })();
 
   </script>

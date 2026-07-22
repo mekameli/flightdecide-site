@@ -228,16 +228,16 @@
       <p class="calc-hint" style="margin-top:14px" id="humid-note"></p>
     </div>
 
-    <p class="lede"><strong>Pressure altitude = field elevation + (29.92 − altimeter setting) × 1,000. Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft. Your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
+    <p class="lede"><strong>Pressure altitude ≈ field elevation + (29.92 − altimeter setting) × 1,000 (this calculator uses the exact standard-atmosphere form). Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft. Your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
 
     <h2>What density altitude actually is</h2>
     <p>Density altitude is pressure altitude corrected for non-standard temperature: the altitude in the standard atmosphere at which the air would be as thin as it is right now at your airport. Your wing, propeller, and normally aspirated engine do not care about the number painted on the airport sign; they care about air density. When the air is hot, the airplane performs as if the airport were much higher, even though your altimeter still reads field elevation on the ramp.</p>
     <p>Two steps get you the number:</p>
     <ul>
-      <li><strong>Pressure altitude</strong> = field elevation + (29.92 − altimeter setting) × 1,000. A low-pressure day (29.42) adds 500 ft; a high-pressure day (30.42) subtracts 500 ft.</li>
+      <li><strong>Pressure altitude</strong> ≈ field elevation + (29.92 − altimeter setting) × 1,000, roughly 1,000 ft per inch. A low-pressure day (29.42) adds about 500 ft; a high-pressure day (30.42) subtracts about 500 ft. This calculator uses the exact standard-atmosphere form, which lands within a few feet of the rule of thumb.</li>
       <li><strong>Density altitude</strong> ≈ pressure altitude + 120 × (OAT − ISA temp), where <strong>ISA temp</strong> = 15 − 2 × (pressure altitude ÷ 1,000) °C. Every degree warmer than standard adds roughly 120 ft.</li>
     </ul>
-    <p>This is the standard rule-of-thumb formula from the FAA handbooks. A Koch chart, E6B, or your EFB may read slightly higher because they model the atmosphere more exactly, so treat the rule of thumb as a floor, not a precise answer.</p>
+    <p>The density-altitude step above is the standard rule-of-thumb formula from the FAA handbooks (120 ft per degree). For pressure altitude this calculator uses the exact standard-atmosphere equation rather than the 1,000-ft-per-inch approximation, so it agrees with the <a href="/tools/true-airspeed-calculator/">true airspeed calculator</a> and the app. A Koch chart or E6B may still read slightly differently, so treat the density-altitude number as a close estimate, not a precise answer.</p>
 
     <h2>Worked example: 5,000 ft and 30 °C</h2>
     <p>Say you're departing a 5,000-ft-elevation airport on a summer afternoon: altimeter 29.92, temperature 30 °C.</p>
@@ -415,7 +415,7 @@
         const dew = parseFloat($('dew').value);
         if (isNaN(elev) || isNaN(altim) || isNaN(oat)) return;
 
-        const pa = elev + (29.92 - altim) * 1000;
+        const pa = elev + 145442.16 * (1 - Math.pow(altim / 29.92126, 0.190263));
         const isa = 15 - 2 * (pa / 1000);
         const da = pa + 120 * (oat - isa);
         const delta = da - elev;
@@ -473,6 +473,18 @@
 
       ['elev', 'altim', 'oat', 'dew'].forEach((id) => $(id).addEventListener('input', compute));
       compute();
+
+      // Share ambient inputs with the other tools
+      $('oat').addEventListener('input', function () {
+        FD.shared.publish('oatC', parseFloat($('oat').value), 'density-altitude', 'Density Altitude');
+      });
+      $('altim').addEventListener('input', function () {
+        FD.shared.publish('altimeterInHg', parseFloat($('altim').value), 'density-altitude', 'Density Altitude');
+      });
+
+      // Offer values other tools produced
+      FD.attachPrefill($('oat'), 'oatC', 'density-altitude', 'Density Altitude');
+      FD.attachPrefill($('altim'), 'altimeterInHg', 'density-altitude', 'Density Altitude');
     })();
 
   </script>

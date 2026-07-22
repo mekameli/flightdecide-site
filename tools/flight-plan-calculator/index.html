@@ -299,12 +299,12 @@
       };
 
       function fmtHMS(sec) {
-        sec = Math.round(sec);
+        sec = Math.floor(sec);
         const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
         return (h > 0 ? h + ':' + String(m).padStart(2, '0') : String(m)) + ':' + String(s).padStart(2, '0');
       }
       function fmtClock(sec) {
-        sec = ((Math.round(sec) % 86400) + 86400) % 86400;
+        sec = ((Math.floor(sec) % 86400) + 86400) % 86400;
         const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
         return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
       }
@@ -370,13 +370,13 @@
         legs.forEach(function (leg, i) {
           const name = leg.name || 'Leg ' + (i + 1);
           if (isNaN(leg.dist) || isNaN(leg.tc) || isNaN(leg.wd) || isNaN(leg.ws)) {
-            rows += '<tr><td>' + name + '</td><td class="num" colspan="5">fill in the leg</td></tr>';
+            rows += '<tr><td>' + name + '</td><td class="num" colspan="5">Fill in this leg</td></tr>';
             bad = true; return;
           }
           const beta = rad(leg.wd - leg.tc);
           const s = leg.ws * Math.sin(beta) / tas;
           if (Math.abs(s) >= 1) {
-            rows += '<tr><td>' + name + '</td><td class="num" colspan="5">wind exceeds TAS: no solution</td></tr>';
+            rows += '<tr><td>' + name + '</td><td class="num" colspan="5">Wind exceeds TAS: no heading holds it</td></tr>';
             bad = true; return;
           }
           const wca = Math.asin(s);
@@ -384,7 +384,7 @@
           const chdg = norm360(th + mvar + dev);
           const gs = tas * Math.cos(wca) - leg.ws * Math.cos(beta);
           if (gs <= 0) {
-            rows += '<tr><td>' + name + '</td><td class="num" colspan="5">groundspeed ≤ 0: no progress</td></tr>';
+            rows += '<tr><td>' + name + '</td><td class="num" colspan="5">Groundspeed is zero or negative: no progress</td></tr>';
             bad = true; return;
           }
           const sec = leg.dist / gs * 3600;
@@ -416,9 +416,16 @@
         }
       }
 
+      const TOOLID = 'trip-planner', TOOLNAME = 'Trip Planner';
+
       ['g-tas', 'g-rate', 'g-var', 'g-dev', 'g-dep'].forEach(function (id) {
         $(id).addEventListener('input', compute);
       });
+
+      // Ambient inputs other tools reuse
+      $('g-tas').addEventListener('input', function () { FD.shared.publish('tasKt', parseFloat($('g-tas').value), TOOLID, TOOLNAME); });
+      $('g-rate').addEventListener('input', function () { FD.shared.publish('fuelFlowGph', parseFloat($('g-rate').value), TOOLID, TOOLNAME); });
+      $('g-var').addEventListener('input', function () { FD.shared.publish('magVarDeg', parseFloat($('g-var').value), TOOLID, TOOLNAME); });
       $('add-leg').addEventListener('click', function () {
         legs.push({ name: 'Leg ' + (legs.length + 1) });
         render(); compute();
@@ -442,6 +449,11 @@
         legs = [{ name: 'Leg 1' }];
       }
       render(); compute();
+
+      // Prefill chips from values other tools produced
+      FD.attachPrefill($('g-tas'), 'tasKt', TOOLID, TOOLNAME);
+      FD.attachPrefill($('g-rate'), 'fuelFlowGph', TOOLID, TOOLNAME);
+      FD.attachPrefill($('g-var'), 'magVarDeg', TOOLID, TOOLNAME);
     })();
 
   </script>

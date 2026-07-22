@@ -163,7 +163,7 @@
           </div>
           <div class="calc-field">
             <label for="wdir">Wind direction (°)</label>
-            <div class="stepper" data-step="10">
+            <div class="stepper" data-step="5">
               <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="wdir" inputmode="numeric" min="0" max="360" step="1" value="310" />
               <button type="button" class="step-up" aria-label="Increase">+</button>
@@ -443,7 +443,7 @@
           v.textContent = label + ' ' + Math.round(worst) + ' kt exceeds your ' + Math.round(xmax) + ' kt maximum.';
         } else if (worst >= 0.7 * xmax) {
           v.className = 'verdict-line v-amber';
-          v.textContent = label + ' ' + Math.round(worst) + ' kt is within ' + Math.round(xmax) + ' kt, but close. Fly the gust speed.';
+          v.textContent = label + ' ' + Math.round(worst) + ' kt is within ' + Math.round(xmax) + ' kt, but close.' + (hasGust ? ' Fly the gust speed.' : '');
         } else {
           v.className = 'verdict-line v-green';
           v.textContent = label + ' ' + Math.round(worst) + ' kt is comfortably inside your ' + Math.round(xmax) + ' kt maximum.';
@@ -457,6 +457,14 @@
 
       ['rwy', 'wdir', 'wspd', 'wgst', 'xmax'].forEach((id) => $(id).addEventListener('input', compute));
       compute();
+
+      // publish ambient inputs when the user edits them
+      $('wdir').addEventListener('input', function () { FD.shared.publish('windDirDeg', parseFloat($('wdir').value), 'crosswind', 'Crosswind'); });
+      $('wspd').addEventListener('input', function () { FD.shared.publish('windSpeedKt', parseFloat($('wspd').value), 'crosswind', 'Crosswind'); });
+
+      // prefill chips for inputs this tool can consume from other tools
+      FD.attachPrefill($('wdir'), 'windDirDeg', 'crosswind', 'Crosswind');
+      FD.attachPrefill($('wspd'), 'windSpeedKt', 'crosswind', 'Crosswind');
 
       // direct manipulation: drag the arrows on the dial
       FD.dial($('compass'), $('windGroup'), $('wdir'), 5);

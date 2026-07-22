@@ -290,6 +290,7 @@
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
+      const TOOLID = 'time-speed-distance', TOOLNAME = 'Flight Time';
       let solve = 'dur'; // 'dur' | 'gs' | 'dist'
 
       function fmtHM(min) {
@@ -323,9 +324,11 @@
         } else if (solve === 'gs' && !isNaN(dist) && !isNaN(dur) && dur > 0) {
           gs = dist / (dur / 60);
           $('gs').value = Math.round(gs * 10) / 10;
+          FD.shared.publish('groundspeedKt', gs, TOOLID, TOOLNAME);
         } else if (solve === 'dist' && !isNaN(gs) && !isNaN(dur)) {
           dist = gs * (dur / 60);
           $('dist').value = Math.round(dist * 10) / 10;
+          FD.shared.publish('distanceNm', dist, TOOLID, TOOLNAME);
         }
         if (isNaN(dist) || isNaN(gs) || isNaN(dur) || gs <= 0) return;
 
@@ -357,8 +360,8 @@
         const v = $('verdict');
         if (dep) {
           const parts = dep.split(':');
-          const total = (parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10) + dur) % 1440;
-          const eta = String(Math.floor(total / 60)).padStart(2, '0') + ':' + String(Math.round(total % 60)).padStart(2, '0');
+          const total = (Math.round(parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10) + dur)) % 1440;
+          const eta = String(Math.floor(total / 60)).padStart(2, '0') + ':' + String(total % 60).padStart(2, '0');
           etaTile.style.display = '';
           $('eta-val').textContent = eta;
           v.className = 'verdict-line v-green';
@@ -371,6 +374,9 @@
       }
 
       compute();
+
+      FD.attachPrefill($('gs'), 'groundspeedKt', TOOLID, TOOLNAME);
+      FD.attachPrefill($('dist'), 'distanceNm', TOOLID, TOOLNAME);
     })();
 
   </script>

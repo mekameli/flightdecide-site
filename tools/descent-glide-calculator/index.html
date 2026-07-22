@@ -395,6 +395,9 @@
       ['alt', 'gs', 'rate', 'dist'].forEach(function (id) { $(id).addEventListener('input', compute); });
       compute();
 
+      FD.attachPrefill($('gs'), 'groundspeedKt', 'descent-glide', 'Descent & Glide');
+      FD.attachPrefill($('dist'), 'distanceNm', 'descent-glide', 'Descent & Glide');
+
       // glide
       function glide() {
         const ratio = parseFloat($('g-ratio').value);
