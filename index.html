@@ -250,7 +250,7 @@
       display: flex;
       align-items: center;
       padding: 120px 40px 100px;
-      overflow: hidden;
+      overflow-x: clip;
       background:
         radial-gradient(ellipse 70% 80% at 20% 50%, rgba(34,197,94,0.09) 0%, transparent 65%),
         radial-gradient(ellipse 50% 60% at 85% 35%, rgba(59,130,246,0.08) 0%, transparent 60%),
@@ -309,11 +309,12 @@
     }
 
     h1 {
-      font-size: 58px;
+      font-size: clamp(30px, 8vw, 58px);
       font-weight: 800;
-      letter-spacing: -2.5px;
+      letter-spacing: -1.5px;
       line-height: 1.05;
       margin-bottom: 24px;
+      overflow-wrap: break-word;
       animation: fadeUp 0.6s 0.1s ease both;
     }
 
@@ -343,6 +344,35 @@
     .hero-sub a:hover {
       color: var(--link-hover);
       text-decoration-color: currentColor;
+    }
+
+    .hero-proof {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 0 0 32px;
+      padding: 0;
+      max-width: 540px;
+      animation: fadeUp 0.6s 0.25s ease both;
+    }
+    .hero-proof li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+    .hero-proof li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      box-shadow: 0 0 8px var(--accent-green);
     }
 
     .hero-actions {
@@ -1449,12 +1479,13 @@
     }
 
     @media (max-width: 820px) {
-      .hero-inner { grid-template-columns: 1fr; text-align: center; }
-      .hero-text { max-width: 100%; }
+      .hero-inner { display: flex; flex-direction: column; text-align: center; gap: 40px; }
+      .hero-text { max-width: 100%; min-width: 0; }
       .hero-sub { margin-left: auto; margin-right: auto; }
+      .hero-proof { margin-left: auto; margin-right: auto; text-align: left; }
       .hero-actions { justify-content: center; }
       .hero-advisory { margin-left: auto; margin-right: auto; text-align: center; }
-      .hero-visual { display: flex; justify-content: center; margin-top: 8px; }
+      .hero-visual { display: flex; justify-content: center; margin-top: 0; }
       .verdict-mockup { width: min(280px, 80vw); }
       .steps { grid-template-columns: 1fr; }
       .efb-grid { grid-template-columns: 1fr; }
@@ -1467,8 +1498,8 @@
       html, body { overflow-x: hidden; width: 100%; }
       nav .nav-inner { padding: 0 16px; }
       .hero { padding: 96px 20px 64px; min-height: auto; }
-      h1 { font-size: 34px; letter-spacing: -1.5px; }
       .hero-sub { font-size: 16px; }
+      .hero-proof li { font-size: 14px; }
       .hero-visual { margin-top: 24px; }
       .verdict-mockup { width: min(300px, 88vw); }
       .proof-bar { padding: 24px 20px; }
@@ -1566,10 +1597,14 @@
       <div class="hero-inner">
         <div class="hero-text">
           <span class="hero-badge">Now on the App Store &middot; Android coming soon</span>
-          <h1>Should you fly today?<br/><span class="gradient-text">Get a second opinion.</span></h1>
+          <h1>Should you fly today? <span class="gradient-text">Get a second opinion.</span></h1>
           <p class="hero-sub">
-            FlightDecide is a go/no-go preflight decision-support app for general aviation pilots, free to try on iPhone. It does the math on your flight: fuel with reserves, weight and balance, and runway and climb performance from your aircraft's numbers, then scores the weather and NOTAMs against your personal minimums. Ceilings at 2,800 and forecast to lift. Gusts near your crosswind limit. It's been six weeks since you flew. Those are the days FlightDecide is for: a scored GO / CAUTION / NO GO advisory against your aircraft, your minimums, and the live data, with every reading verifiable against the raw METAR, TAF, and NOTAM. The final call is always yours. Prefer to run the numbers yourself? Our <a href="/tools/">free preflight planning tools and online E6B flight computer</a> are open to everyone, no sign-up.
+            FlightDecide scores the weather, NOTAMs, fuel, and weight and balance for your flight against your aircraft and your own minimums, then gives you one clear GO / CAUTION / NO GO before you launch. Every reading is verifiable against the raw METAR, TAF, and NOTAM, and the final call is always yours.
           </p>
+          <ul class="hero-proof">
+            <li>Built for the marginal day: ceilings at 2,800 and forecast to lift, gusts near your crosswind limit</li>
+            <li>Free to try on iPhone, no account needed</li>
+          </ul>
           <div class="hero-actions">
             <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary js-appstore-link">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -1577,8 +1612,8 @@
               </svg>
               Download on the App Store
             </a>
-            <a href="#features" class="btn-secondary">
-              Learn More
+            <a href="/tools/" class="btn-secondary">
+              Try the free tools
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -1824,7 +1859,6 @@
         <span class="section-label reveal">See it in action</span>
         <h2 id="demo-heading" class="reveal">Try a real briefing,<br/>right in your browser.</h2>
         <p class="section-sub reveal">Pick a sample flight and get the scored advisory FlightDecide produces: clear GO, marginal with a Path to GO, or a NO-GO built on the one NOTAM a tired pilot would miss. Then open the raw METAR, TAF, and NOTAM behind every call.</p>
-        <p class="demo-advisory reveal">Decision support only. Always complete a standard weather briefing and PIC review.</p>
 
         <div class="demo-shots reveal">
           <figure class="demo-shot">
@@ -2082,7 +2116,6 @@
     <!-- WHY WE BUILT IT -->
     <section aria-labelledby="founder-heading">
       <div class="section-inner">
-        <!-- DRAFT founder note — Mehdi: rewrite in your own voice before launch -->
         <div class="founder-note reveal">
           <span class="section-label">Why we built FlightDecide</span>
           <h3 id="founder-heading">A second opinion I wanted for myself</h3>
