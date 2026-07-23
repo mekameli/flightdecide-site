@@ -25,6 +25,44 @@
   <meta name="twitter:description" content="A free online E6B flight computer and preflight planning suite: ten flight-planning calculators and a printable personal minimums worksheet, no sign-up." />
   <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
   <link rel="stylesheet" href="/assets/pages.css" />
+  <style>
+    /* Tools index — scoped enhancements (this page only) */
+    .hero-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 24px; }
+    .hero-chip { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 600;
+      color: var(--text-muted); background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 100px; padding: 7px 14px; }
+    .hero-chip svg { width: 14px; height: 14px; color: var(--accent-green); flex: none; }
+
+    .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(238px, 1fr));
+      gap: 14px; margin: 8px 0 40px; }
+    .tool-tile { position: relative; display: flex; flex-direction: column; gap: 11px;
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 20px 20px 22px; text-decoration: none; color: var(--text);
+      transition: transform .16s ease, border-color .16s ease, background .16s ease; }
+    .tool-tile:hover { transform: translateY(-3px); border-color: rgba(59,130,246,0.45);
+      background: var(--bg-card-hover); }
+    .tool-ic { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+      border-radius: 11px; border: 1px solid var(--border);
+      background: linear-gradient(135deg, rgba(34,197,94,0.16), rgba(59,130,246,0.16)); }
+    .tool-ic svg { width: 21px; height: 21px; color: var(--accent-green); }
+    .tool-tile h3 { font-size: 16px; font-weight: 700; margin: 0; }
+    .tool-tile p { font-size: 13.5px; line-height: 1.5; color: var(--text-muted); margin: 0; }
+    /* Beat the shared `.prose a` link styling (color + underline bleed) */
+    .prose a.tool-tile, .prose a.tool-tile:hover { color: var(--text); text-decoration: none; }
+    .prose .tool-tile h3, .prose .tool-tile p { text-decoration: none; }
+    .prose .tool-tile h3 { color: var(--text); }
+    .prose a.btn-primary, .prose a.btn-primary:hover { color: #fff; text-decoration: none; }
+    .tool-tile::after { content: '\2192'; position: absolute; right: 18px; top: 20px;
+      color: var(--accent-blue); font-size: 16px; opacity: 0; transform: translateX(-5px);
+      transition: opacity .16s ease, transform .16s ease; }
+    .tool-tile:hover::after { opacity: 1; transform: none; }
+
+    .mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+      gap: 14px; margin: 8px 0 32px; }
+
+    @media (max-width: 520px) { .tool-grid, .mini-grid { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { .tool-tile, .tool-tile::after { transition: none; } }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -142,31 +180,81 @@
     <span class="page-label">FlightDecide</span>
     <h1>Free Pilot Tools &amp; Preflight Planning Calculators</h1>
     <p class="page-sub">An online E6B flight computer and preflight planning suite: the calculators and worksheets for the numbers every flight-planning and go/no-go decision runs on. No sign-up, no download. They work right in your browser.</p>
+    <div class="hero-chips">
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>11 calculators</span>
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Runs in your browser</span>
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>No sign-up</span>
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Free</span>
+    </div>
   </div>
 
   <div class="page-wrap prose">
 
     <p class="crumbs"><a href="/">Home</a> › Free Pilot Tools</p>
 
-    <p class="lede"><strong>A free online E6B flight computer for preflight planning: these tools require no sign-up and run entirely in your browser</strong>. Nothing you type is uploaded anywhere. They cover the flight-planning calculations pilots have run on E6-B flight computers for decades, from crosswind components and density altitude to the wind triangle, cross-country nav logs, and weight and balance. Built and maintained by the FlightDecide team, the same people who build the go/no-go decision-support app, each one comes with the formula, a worked example, and the judgment context you need to actually use the number. Every calculator here is also built into the FlightDecide app, in a Tools tab that works offline and is free on every plan, including the free tier, with no subscription needed.</p>
+    <p class="lede"><strong>A free online E6B flight computer for preflight planning that runs entirely in your browser.</strong> Nothing you type is uploaded anywhere. These cover the calculations pilots have run on E6-B flight computers for decades, from crosswind components and density altitude to the wind triangle, cross-country nav logs, and weight and balance. Each one comes with the formula, a worked example, and the judgment to actually use the number. Built by the FlightDecide team, the same people behind the go/no-go decision-support app, and built into the app's Tools tab too, where they work offline and stay free on every plan.</p>
 
-    <span class="section-label">Tools</span>
-    <div class="card-list">
-      <a class="card-link" href="/tools/crosswind-calculator/"><h3>Crosswind Calculator</h3><p>Headwind and crosswind components from runway, wind, and gusts, including the gust component that matters in the flare.</p></a>
-      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>Pressure altitude and density altitude from field elevation, altimeter, and temperature. See what altitude your airplane thinks it's at.</p></a>
-      <a class="card-link" href="/tools/true-airspeed-calculator/"><h3>True Airspeed Calculator</h3><p>CAS to TAS, Mach, and density altitude from altitude and temperature. The speed you file and the input the wind triangle needs.</p></a>
-      <a class="card-link" href="/tools/flight-time-calculator/"><h3>Time-Speed-Distance Calculator</h3><p>Solve time, groundspeed, or distance from the other two, plus an ETA. The E6-B function pilots use on every leg.</p></a>
-      <a class="card-link" href="/tools/fuel-burn-calculator/"><h3>Fuel Burn &amp; Endurance Calculator</h3><p>Gallons burned, endurance to dry tanks, and your margin over the legal reserve at landing.</p></a>
-      <a class="card-link" href="/tools/wind-correction-calculator/"><h3>Heading &amp; Groundspeed Calculator</h3><p>The wind triangle solved: wind correction angle, true and magnetic heading, and the groundspeed your leg times run on.</p></a>
-      <a class="card-link" href="/tools/flight-plan-calculator/"><h3>Cross-Country Trip Planner</h3><p>The whole nav log: heading, groundspeed, leg time, ETA, and fuel for every leg, plus trip totals.</p></a>
-      <a class="card-link" href="/tools/weight-balance-calculator/"><h3>Weight &amp; Balance Calculator</h3><p>Gross weight, total moment, and CG from your loading, checked against your limits, with a weight-shift solver.</p></a>
-      <a class="card-link" href="/tools/descent-glide-calculator/"><h3>Descent &amp; Glide Calculator</h3><p>When to start down and what rate to fly (the 3&deg; rule), plus your still-air glide range from any altitude.</p></a>
-      <a class="card-link" href="/tools/holding-pattern-calculator/"><h3>Holding Pattern Entry</h3><p>Direct, teardrop, or parallel, with the AIM sectors drawn around your heading and what to fly next.</p></a>
-      <a class="card-link" href="/tools/personal-minimums-worksheet/"><h3>Personal Minimums Worksheet</h3><p>A printable, fill-in worksheet for setting your own ceiling, visibility, wind, and performance numbers on a calm day, long before a tempting forecast.</p></a>
+    <span class="section-label">Calculators</span>
+    <div class="tool-grid">
+      <a class="tool-tile" href="/tools/crosswind-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10a2.5 2.5 0 1 0-2.5-2.5"/><path d="M3 12h15a2.5 2.5 0 1 1-2.5 2.5"/><path d="M3 16h7"/></svg></span>
+        <h3>Crosswind Calculator</h3>
+        <p>Headwind and crosswind components, gusts included.</p>
+      </a>
+      <a class="tool-tile" href="/tools/density-altitude-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M3 20l5-8 3 4 3.5-6L21 20"/></svg></span>
+        <h3>Density Altitude Calculator</h3>
+        <p>Pressure and density altitude for your conditions.</p>
+      </a>
+      <a class="tool-tile" href="/tools/true-airspeed-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19a8 8 0 1 1 16 0"/><path d="M12 15l4.5-4"/></svg></span>
+        <h3>True Airspeed Calculator</h3>
+        <p>CAS to TAS and Mach at altitude and temperature.</p>
+      </a>
+      <a class="tool-tile" href="/tools/flight-time-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.5 2"/></svg></span>
+        <h3>Time-Speed-Distance Calculator</h3>
+        <p>Solve time, groundspeed, or distance, plus an ETA.</p>
+      </a>
+      <a class="tool-tile" href="/tools/fuel-burn-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5c3.5 4 5.5 6.7 5.5 9.5a5.5 5.5 0 0 1-11 0c0-2.8 2-5.5 5.5-9.5z"/></svg></span>
+        <h3>Fuel Burn &amp; Endurance Calculator</h3>
+        <p>Burn, endurance, and your reserve margin at landing.</p>
+      </a>
+      <a class="tool-tile" href="/tools/wind-correction-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5l-1.8 5.2-3.2 1.8 1.8-5.2z"/></svg></span>
+        <h3>Heading &amp; Groundspeed Calculator</h3>
+        <p>The wind triangle: heading, WCA, and groundspeed.</p>
+      </a>
+      <a class="tool-tile" href="/tools/flight-plan-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg></span>
+        <h3>Cross-Country Trip Planner</h3>
+        <p>A full nav log: heading, time, and fuel per leg.</p>
+      </a>
+      <a class="tool-tile" href="/tools/weight-balance-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M6 20h12M4 7l8-2 8 2"/><path d="M4 7l-2 5h4zM20 7l-2 5h4z"/></svg></span>
+        <h3>Weight &amp; Balance Calculator</h3>
+        <p>Gross weight, moment, and CG against your limits.</p>
+      </a>
+      <a class="tool-tile" href="/tools/descent-glide-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6l14 11"/><path d="M19 11v6h-6"/></svg></span>
+        <h3>Descent &amp; Glide Calculator</h3>
+        <p>When to start down, and your still-air glide range.</p>
+      </a>
+      <a class="tool-tile" href="/tools/holding-pattern-calculator/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="8" width="17" height="8" rx="4"/><path d="M12 8l-3-4"/></svg></span>
+        <h3>Holding Pattern Entry</h3>
+        <p>Direct, teardrop, or parallel, with the AIM sectors.</p>
+      </a>
+      <a class="tool-tile" href="/tools/personal-minimums-worksheet/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 2.5v6.5c0 4-3 6.8-7 8.5-4-1.7-7-4.5-7-8.5V5.5z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3>Personal Minimums Worksheet</h3>
+        <p>A printable worksheet for your own limits.</p>
+      </a>
     </div>
 
     <span class="section-label">Guides</span>
-    <div class="card-list">
+    <div class="mini-grid">
       <a class="card-link" href="/learn/go-no-go-decision-framework/"><h3>The Go/No-Go Decision Framework</h3><p>A repeatable structure for the decision every one of these tools feeds into.</p></a>
       <a class="card-link" href="/learn/personal-minimums/"><h3>Personal Minimums</h3><p>Where the numbers come from, how to keep them honest, and how to say no gracefully.</p></a>
       <a class="card-link" href="/learn/how-to-read-a-taf/"><h3>How to Read a TAF</h3><p>Decode the forecast groups that decide whether your window is flyable.</p></a>
@@ -174,7 +262,7 @@
     </div>
 
     <span class="section-label">Comparisons</span>
-    <div class="card-list">
+    <div class="mini-grid">
       <a class="card-link" href="/compare/best-preflight-briefing-apps/"><h3>Best Preflight Briefing &amp; Go/No-Go Apps (2026)</h3><p>An honest, use-case-ranked comparison, including where the competition wins.</p></a>
     </div>
 
