@@ -1158,6 +1158,45 @@
       color: var(--text);
     }
 
+    /* FLIGHT PROFILE SHOWCASE BAND */
+    #flight-profile {
+      background: rgba(59,130,246,0.02);
+      border-top: 1px solid rgba(59,130,246,0.08);
+      border-bottom: 1px solid rgba(59,130,246,0.08);
+    }
+    .profile-band {
+      display: grid;
+      grid-template-columns: minmax(0, 340px) 1fr;
+      gap: 56px;
+      align-items: center;
+      margin-top: 48px;
+    }
+    .profile-figure { display: flex; justify-content: center; }
+    .profile-figure img {
+      height: auto;
+      width: 100%;
+      max-width: 320px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 60px rgba(59,130,246,0.12);
+      display: block;
+    }
+    .profile-lead { font-size: 18px; color: var(--text); line-height: 1.65; margin-bottom: 24px; }
+    .profile-points { list-style: none; display: flex; flex-direction: column; gap: 14px; margin: 0 0 24px; padding: 0; }
+    .profile-points li { position: relative; padding-left: 24px; font-size: 15px; color: var(--text-muted); line-height: 1.55; }
+    .profile-points li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-blue);
+      box-shadow: 0 0 8px var(--accent-blue);
+    }
+    .profile-advisory { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
     /* SEE IT IN ACTION (demo) */
     #demo { background: rgba(255,255,255,0.02); }
 
@@ -1438,6 +1477,8 @@
       .category-grid { grid-template-columns: repeat(2, 1fr); }
       .demo-shots { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
       .demo-shot img { height: auto; width: min(280px, 70%); }
+      .profile-band { grid-template-columns: 1fr; gap: 32px; text-align: center; max-width: 480px; margin-left: auto; margin-right: auto; }
+      .profile-points { text-align: left; }
       .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
       .pricing-card.featured { transform: none; }
       .pricing-card.featured:hover { transform: translateY(-4px); }
@@ -1467,6 +1508,8 @@
       .hero { padding: 96px 20px 64px; min-height: auto; }
       .hero-sub { font-size: 16px; }
       .hero-proof li { font-size: 14px; }
+      .profile-band { gap: 28px; }
+      .profile-lead { font-size: 16px; }
       .hero-visual { margin-top: 24px; }
       .verdict-mockup { width: min(300px, 88vw); }
       .proof-bar { padding: 24px 20px; }
@@ -1820,25 +1863,47 @@
       </div>
     </section>
 
+    <!-- FLIGHT PROFILE SHOWCASE -->
+    <section id="flight-profile" aria-labelledby="flight-profile-heading">
+      <div class="section-inner">
+        <span class="section-label reveal">The Flight Profile</span>
+        <h2 id="flight-profile-heading" class="reveal">Your whole flight,<br/>in one picture.</h2>
+        <div class="profile-band reveal">
+          <figure class="profile-figure">
+            <img src="assets/guide/flight-profile.png" width="820" height="1782" loading="lazy" decoding="async" alt="Flight profile for KSEA to KPDX: an altitude cross-section over terrain with wind barbs at each level, icing and turbulence bands, ceilings, the freezing level, and labeled climb, cruise, and descent phases" />
+          </figure>
+          <div class="profile-copy">
+            <p class="profile-lead">Terrain, winds aloft, icing and turbulence bands, ceilings, and the freezing level for KSEA to KPDX, drawn against your climb, cruise, and descent. The picture you'd normally stitch together across a handful of tools is already here, on one screen.</p>
+            <ul class="profile-points">
+              <li>Every phase timed out: climb 12 min to 6,500 ft, cruise 42 min at 112 kt GS, descent 12 min.</li>
+              <li>Per-segment risks called out along the route, like Icing (MOD) 46-52 NM and terrain within 2,000 ft.</li>
+              <li>Drag along the route to read the numbers at any point. Toggle terrain, winds, ceilings, and the freezing level.</li>
+            </ul>
+            <p class="profile-advisory">Advisory only. Verify against the raw data and your official briefing. The final call is yours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SEE IT IN ACTION -->
     <section id="demo" aria-labelledby="demo-heading">
       <div class="section-inner">
         <span class="section-label reveal">See it in action</span>
         <h2 id="demo-heading" class="reveal">Try a real briefing,<br/>right in your browser.</h2>
-        <p class="section-sub reveal">Pick a sample flight and get the scored advisory FlightDecide produces: clear GO, marginal with a Path to GO, or a NO-GO built on the one NOTAM a tired pilot would miss. Then open the raw METAR, TAF, and NOTAM behind every call.</p>
+        <p class="section-sub reveal">Pick a sample flight and get the scored advisory FlightDecide produces: enter the route, read the verdict, then open the raw METAR, TAF, and NOTAM behind every call.</p>
 
         <div class="demo-shots reveal">
           <figure class="demo-shot">
-            <img src="assets/guide/analyze-form.png" width="629" height="720" loading="lazy" decoding="async" alt="Analysis form with route, aircraft, and planned departure time entered" />
-            <figcaption>Enter your route, aircraft, and planned departure window.</figcaption>
+            <img src="assets/guide/flight-input.png" width="680" height="1477" loading="lazy" decoding="async" alt="New Analysis form for KSFO to KPAO with a Cessna 172 (N12345) and a green weight and balance summary" />
+            <figcaption>Enter your route, aircraft, and planned departure. Weight and balance checks green before you go.</figcaption>
           </figure>
           <figure class="demo-shot">
-            <img src="assets/guide/verdict.png" width="331" height="720" loading="lazy" decoding="async" alt="Analysis result with a scored GO recommendation and eight category scores" />
-            <figcaption>Eight scored categories resolve into one advisory verdict.</figcaption>
+            <img src="assets/guide/go-verdict.png" width="680" height="1415" loading="lazy" decoding="async" alt="Analysis Result for KSFO to KPAO with a GO banner, a bottom line summary, and eight scored risk categories" />
+            <figcaption>Eight scored categories resolve into one advisory verdict, with the bottom line up top.</figcaption>
           </figure>
           <figure class="demo-shot">
-            <img src="assets/guide/weather-tab.png" width="331" height="720" loading="lazy" decoding="async" alt="Weather tab showing interpreted conditions with the raw METAR and TAF one tap away" />
-            <figcaption>Every interpretation traces back to the raw METAR and TAF.</figcaption>
+            <img src="assets/guide/weather.png" width="680" height="1477" loading="lazy" decoding="async" alt="Weather tab for KSFO showing a VFR chip and a decoded METAR and TAF, with the raw text one tap away" />
+            <figcaption>Decoded METAR and TAF for the station, with the raw text one tap away so you can check it yourself.</figcaption>
           </figure>
         </div>
 
