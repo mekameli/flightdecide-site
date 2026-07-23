@@ -57,10 +57,10 @@
       transition: opacity .16s ease, transform .16s ease; }
     .tool-tile:hover::after { opacity: 1; transform: none; }
 
-    .mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
-      gap: 14px; margin: 8px 0 32px; }
+    .tool-grid.single { grid-template-columns: 1fr; }
+    .tools-about { font-size: 14.5px; line-height: 1.6; color: var(--text-muted); margin: 30px 0 0; }
 
-    @media (max-width: 520px) { .tool-grid, .mini-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 520px) { .tool-grid { grid-template-columns: 1fr; } }
     @media (prefers-reduced-motion: reduce) { .tool-tile, .tool-tile::after { transition: none; } }
   </style>
   <script type="application/ld+json">
@@ -192,8 +192,6 @@
 
     <p class="crumbs"><a href="/">Home</a> › Free Pilot Tools</p>
 
-    <p class="lede"><strong>A free online E6B flight computer for preflight planning that runs entirely in your browser.</strong> Nothing you type is uploaded anywhere. These cover the calculations pilots have run on E6-B flight computers for decades, from crosswind components and density altitude to the wind triangle, cross-country nav logs, and weight and balance. Each one comes with the formula, a worked example, and the judgment to actually use the number. Built by the FlightDecide team, the same people behind the go/no-go decision-support app, and built into the app's Tools tab too, where they work offline and stay free on every plan.</p>
-
     <span class="section-label">Calculators</span>
     <div class="tool-grid">
       <a class="tool-tile" href="/tools/crosswind-calculator/">
@@ -254,16 +252,36 @@
     </div>
 
     <span class="section-label">Guides</span>
-    <div class="mini-grid">
-      <a class="card-link" href="/learn/go-no-go-decision-framework/"><h3>The Go/No-Go Decision Framework</h3><p>A repeatable structure for the decision every one of these tools feeds into.</p></a>
-      <a class="card-link" href="/learn/personal-minimums/"><h3>Personal Minimums</h3><p>Where the numbers come from, how to keep them honest, and how to say no gracefully.</p></a>
-      <a class="card-link" href="/learn/how-to-read-a-taf/"><h3>How to Read a TAF</h3><p>Decode the forecast groups that decide whether your window is flyable.</p></a>
-      <a class="card-link" href="/learn/what-notams-to-check/"><h3>What NOTAMs to Check</h3><p>The NOTAMs that actually change a GA flight, and how to not miss them.</p></a>
+    <div class="tool-grid">
+      <a class="tool-tile" href="/learn/go-no-go-decision-framework/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l2.5 2.5L10 5"/><path d="M15 5l4 4M19 5l-4 4"/><path d="M4 15h16M4 19h10"/></svg></span>
+        <h3>The Go/No-Go Decision Framework</h3>
+        <p>A repeatable structure for the decision every tool here feeds into.</p>
+      </a>
+      <a class="tool-tile" href="/learn/personal-minimums/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h9M17 8h3"/><path d="M4 16h3M11 16h9"/><circle cx="15" cy="8" r="2.3"/><circle cx="9" cy="16" r="2.3"/></svg></span>
+        <h3>Personal Minimums</h3>
+        <p>Where the numbers come from, and how to keep them honest.</p>
+      </a>
+      <a class="tool-tile" href="/learn/how-to-read-a-taf/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h4"/></svg></span>
+        <h3>How to Read a TAF</h3>
+        <p>Decode the forecast groups that decide if your window is flyable.</p>
+      </a>
+      <a class="tool-tile" href="/learn/what-notams-to-check/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M10.5 20a1.5 1.5 0 0 0 3 0"/></svg></span>
+        <h3>What NOTAMs to Check</h3>
+        <p>The NOTAMs that actually change a GA flight, and how to not miss them.</p>
+      </a>
     </div>
 
     <span class="section-label">Comparisons</span>
-    <div class="mini-grid">
-      <a class="card-link" href="/compare/best-preflight-briefing-apps/"><h3>Best Preflight Briefing &amp; Go/No-Go Apps (2026)</h3><p>An honest, use-case-ranked comparison, including where the competition wins.</p></a>
+    <div class="tool-grid single">
+      <a class="tool-tile" href="/compare/best-preflight-briefing-apps/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V9"/><path d="M12 21V4"/><path d="M19 21v-8"/></svg></span>
+        <h3>Best Preflight Briefing &amp; Go/No-Go Apps (2026)</h3>
+        <p>An honest, use-case-ranked comparison, including where the competition wins.</p>
+      </a>
     </div>
 
     <div class="cta-band">
@@ -271,6 +289,8 @@
       <p>FlightDecide runs winds, ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B for your specific flight window and aircraft, then scores it GO, CAUTION, or NO GO and shows the raw data behind every call.</p>
       <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
+
+    <p class="tools-about">Every calculator runs in your browser with nothing uploaded, and each comes with the formula, a worked example, and the judgment to use the number. They're built by the FlightDecide team, and built into the app's Tools tab too, where they work offline and stay free on every plan.</p>
 
     <p class="advisory-note">These tools are educational aids for flight-planning practice. They are advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources are cited on each tool's page. Last reviewed: July 17, 2026.</p>
 
