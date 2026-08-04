@@ -137,5 +137,26 @@
       <a href="/guide.html" class="btn btn-outline">Pilot Guide</a>
     </div>
   </div>
+  <script>
+    // FD-339 self-heal: phones autocapitalise typed paths and messaging apps
+    // glue trailing punctuation onto shared links, and this host serves
+    // case-sensitive paths. If lowercasing the path and trimming trailing
+    // punctuation, whitespace, or %20 yields a DIFFERENT path, send the
+    // visitor there once instead of stranding them on this page. Loop-safe:
+    // an already-normalised path never differs from itself, and a
+    // sessionStorage marker caps it at one hop per target per session.
+    (function () {
+      var path = location.pathname;
+      var healed = path.toLowerCase().replace(/(?:%20|[\s.,)\];:])+$/, "");
+      if (healed === "") { healed = "/"; }
+      if (healed === path) { return; }
+      var marker = "fd404-healed:" + healed;
+      try {
+        if (sessionStorage.getItem(marker)) { return; }
+        sessionStorage.setItem(marker, "1");
+      } catch (e) { /* storage blocked; the differs-check alone prevents loops */ }
+      location.replace(healed + location.search + location.hash);
+    })();
+  </script>
 </body>
 </html>
