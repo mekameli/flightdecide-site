@@ -88,10 +88,34 @@
           },
           {
             "@type": "Offer",
+            "name": "Pilot Annual",
+            "price": "79.99",
+            "priceCurrency": "USD",
+            "description": "Unlimited analyses and custom aircraft profiles, per year"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot Annual first-year intro offer",
+            "price": "49.99",
+            "priceCurrency": "USD",
+            "availabilityStarts": "2026-09-15",
+            "availabilityEnds": "2026-11-30",
+            "priceValidUntil": "2026-11-30",
+            "description": "First year of the annual Pilot plan for subscriptions started between September 15 and November 30, 2026; renews at 79.99 USD per year"
+          },
+          {
+            "@type": "Offer",
             "name": "Pro",
             "price": "19.99",
             "priceCurrency": "USD",
             "description": "Everything in Pilot plus fleet management, per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro Annual",
+            "price": "159.99",
+            "priceCurrency": "USD",
+            "description": "Everything in Pilot plus fleet management, per year"
           }
         ]
       }
@@ -1287,6 +1311,28 @@
       margin-bottom: 4px;
     }
 
+    /* Fall 2026 intro offer (FD-595). Window-neutral copy: the sentence names
+       its own dates, so it is true before, during, and after the window and
+       needs no client-side date logic on a static page. */
+    .pricing-offer {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--accent-green);
+      background: rgba(34,197,94,0.08);
+      border: 1px solid rgba(34,197,94,0.28);
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin: 8px 0 4px;
+    }
+
+    .pricing-anchor {
+      max-width: 620px;
+      margin: 0 auto 8px;
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text-muted);
+    }
+
     .pricing-note {
       text-align: center;
       font-size: 13px;
@@ -2090,6 +2136,7 @@
         <span class="section-label reveal">Simple Pricing</span>
         <h2 id="pricing-heading" class="reveal">Fly as much as you want.<br/>Start free, upgrade when you're ready.</h2>
         <p class="section-sub reveal">Three analyses a month on the free tier. Unlimited on Pilot.</p>
+        <p class="pricing-anchor reveal">ForeFlight has said its plain-English NOTAM AI becomes a Premium feature once the free trial ends this fall. Premium runs $390 USD/yr, which is $130 USD/yr more than Essential (ForeFlight tier pricing checked July 2026). FlightDecide reads the weather, the NOTAMs, and your airplane's real numbers, checks them against your personal minimums, and gives you a straight go/no-go answer.</p>
 
         <div class="pricing-grid">
 
@@ -2111,8 +2158,9 @@
           <div class="pricing-card featured reveal">
             <div class="pricing-badge">Most Popular</div>
             <div class="pricing-tier">Pilot</div>
-            <div class="pricing-price">$6.67<span>/mo</span></div>
-            <div class="pricing-annual">billed annually at $79.99/yr (save 33%), or $9.99/mo with no yearly commitment</div>
+            <div class="pricing-price">$6.67 USD<span>/mo</span></div>
+            <div class="pricing-annual">billed annually at $79.99 USD/yr (save 33%), or $9.99 USD/mo with no yearly commitment</div>
+            <div class="pricing-offer">Fall offer: $49.99 USD for the first year, on annual Pilot plans started between September 15 and November 30, 2026. It renews at $79.99 USD/yr after the first year.</div>
             <div class="pricing-desc">For pilots who fly regularly and want a go/no-go advisor for every flight.</div>
             <ul class="pricing-features">
               <li>Unlimited analyses</li>
@@ -2128,8 +2176,8 @@
 
           <div class="pricing-card reveal">
             <div class="pricing-tier">Pro</div>
-            <div class="pricing-price">$13.33<span>/mo</span></div>
-            <div class="pricing-annual">billed annually at $159.99/yr (save 33%), or $19.99/mo with no yearly commitment</div>
+            <div class="pricing-price">$13.33 USD<span>/mo</span></div>
+            <div class="pricing-annual">billed annually at $159.99 USD/yr (save 33%), or $19.99 USD/mo with no yearly commitment</div>
             <div class="pricing-desc">For instructors, operators, and fleet managers.</div>
             <ul class="pricing-features">
               <li>Everything in Pilot</li>
@@ -2142,7 +2190,7 @@
 
         </div>
 
-        <p class="pricing-note">All plans start in the free app. Subscriptions are billed through the App Store and can be cancelled anytime in your Apple account settings.</p>
+        <p class="pricing-note">All plans start in the free app. Every price on this page is in US dollars; the App Store charges the equivalent in your own currency, so check the price shown in the app before you buy. Subscriptions are billed through the App Store and can be cancelled anytime in your Apple account settings.</p>
       </div>
     </section>
 

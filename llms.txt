@@ -13,8 +13,13 @@
 
 Key facts:
 - Platform: iPhone (iOS 17+). App Store: https://apps.apple.com/app/flightdecide/id6761793626
-- Pricing: Free (3 analyses/month), Pilot $9.99/mo (unlimited, custom
-  aircraft profiles), Pro $19.99/mo (adds fleet management).
+- Pricing (US dollars; the App Store charges the local equivalent elsewhere):
+  Free (3 analyses/month), Pilot $9.99 USD/mo or $79.99 USD/yr (unlimited,
+  custom aircraft profiles), Pro $19.99 USD/mo or $159.99 USD/yr (adds fleet
+  management).
+- Intro offer: annual Pilot plans started between September 15 and
+  November 30, 2026 cost $49.99 USD for the first year, then renew at
+  $79.99 USD/yr. Pilot only; Pro has no intro offer.
 - Weather/NOTAM sources: aviationweather.gov and the FAA NOTAM system
   (government sources only; NAV CANADA data for Canadian coverage).
 - NOTAM honesty: FlightDecide distinguishes "queried, zero NOTAMs" from
