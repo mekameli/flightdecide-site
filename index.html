@@ -698,6 +698,7 @@
       color: var(--text-muted);
       line-height: 1.65;
     }
+    .feature-desc a { color: #6EA8FA; }
 
     /* HOW IT WORKS */
     .steps {
@@ -845,13 +846,13 @@
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.3px;
-      color: var(--card-accent);
-      opacity: 0.8;
+      color: var(--card-accent-soft, var(--card-accent));
     }
 
     /* Card accent themes */
     .category-card.blue {
       --card-accent: var(--accent-blue);
+      --card-accent-soft: #7EB3FF;
       --card-gradient: linear-gradient(135deg, rgba(59,130,246,0.6), rgba(59,130,246,0.1));
       --card-glow: 0 0 28px rgba(59,130,246,0.12);
       --card-icon-bg: rgba(59,130,246,0.1);
@@ -859,6 +860,7 @@
     }
     .category-card.green {
       --card-accent: var(--accent-green);
+      --card-accent-soft: #4ADE80;
       --card-gradient: linear-gradient(135deg, rgba(34,197,94,0.6), rgba(34,197,94,0.1));
       --card-glow: 0 0 28px rgba(34,197,94,0.12);
       --card-icon-bg: rgba(34,197,94,0.1);
@@ -866,6 +868,7 @@
     }
     .category-card.amber {
       --card-accent: var(--accent-amber);
+      --card-accent-soft: #FACC15;
       --card-gradient: linear-gradient(135deg, rgba(234,179,8,0.6), rgba(234,179,8,0.1));
       --card-glow: 0 0 28px rgba(234,179,8,0.12);
       --card-icon-bg: rgba(234,179,8,0.1);
@@ -873,6 +876,7 @@
     }
     .category-card.purple {
       --card-accent: var(--accent-purple);
+      --card-accent-soft: #C084FC;
       --card-gradient: linear-gradient(135deg, rgba(168,85,247,0.6), rgba(168,85,247,0.1));
       --card-glow: 0 0 28px rgba(168,85,247,0.12);
       --card-icon-bg: rgba(168,85,247,0.1);
@@ -880,6 +884,7 @@
     }
     .category-card.cyan {
       --card-accent: var(--accent-cyan);
+      --card-accent-soft: #22D3EE;
       --card-gradient: linear-gradient(135deg, rgba(6,182,212,0.6), rgba(6,182,212,0.1));
       --card-glow: 0 0 28px rgba(6,182,212,0.12);
       --card-icon-bg: rgba(6,182,212,0.1);
@@ -887,6 +892,7 @@
     }
     .category-card.red {
       --card-accent: var(--accent-red);
+      --card-accent-soft: #F87171;
       --card-gradient: linear-gradient(135deg, rgba(239,68,68,0.6), rgba(239,68,68,0.1));
       --card-glow: 0 0 28px rgba(239,68,68,0.12);
       --card-icon-bg: rgba(239,68,68,0.1);

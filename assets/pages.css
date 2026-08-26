@@ -17,7 +17,7 @@
   --link-underline: rgba(110,168,250,0.4);
   --text: #F0F0F5;
   --text-muted: #94A3B8;
-  --text-dim: #64748B;
+  --text-dim: #8494AB;
   --radius: 16px;
   --radius-sm: 10px;
   --max-content: 800px;
@@ -361,7 +361,7 @@ nav.site-nav {
 }
 .verdict-line.v-green { color: var(--accent-green); background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.3); }
 .verdict-line.v-amber { color: var(--accent-amber); background: rgba(234,179,8,0.08); border-color: rgba(234,179,8,0.3); }
-.verdict-line.v-red { color: var(--accent-red); background: rgba(239,68,68,0.10); border-color: rgba(239,68,68,0.35); }
+.verdict-line.v-red { color: #F87171; background: rgba(239,68,68,0.10); border-color: rgba(239,68,68,0.35); }
 .verdict-line.v-dim { color: var(--text-muted); }
 .paste-box textarea {
   width: 100%;
@@ -413,7 +413,7 @@ nav.site-nav {
   width: 26px; height: 26px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
-  color: #052e16;
+  color: #02200C;
   font-size: 13px;
   font-weight: 800;
   margin-right: 10px;
@@ -467,7 +467,7 @@ nav.tool-switcher {
 }
 .tool-pill:hover { color: var(--text); background: var(--bg-card-hover); }
 .tool-pill.active {
-  color: #052e16;
+  color: #02200C;
   background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
   border-color: transparent;
   font-weight: 700;
@@ -503,7 +503,7 @@ nav.tool-switcher {
 }
 .solve-pills button:hover { color: var(--text); background: var(--bg-card-hover); }
 .solve-pills button.active {
-  color: #052e16;
+  color: #02200C;
   background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
   border-color: transparent;
 }
@@ -705,7 +705,7 @@ nav.tool-switcher {
   align-items: center;
   gap: 8px;
   background: linear-gradient(135deg, var(--accent-green), #16A34A);
-  color: #052e16;
+  color: #02200C;
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
@@ -714,6 +714,9 @@ nav.tool-switcher {
   transition: transform 0.15s, box-shadow 0.15s;
 }
 .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(34,197,94,0.25); }
+/* .prose a (higher specificity) must not repaint the button text light blue:
+   #02200C holds ≥5:1 on both ends of the green gradient (WCAG AA). */
+.prose a.btn-primary, .prose a.btn-primary:hover { color: #02200C; text-decoration: none; }
 .advisory-note {
   font-size: 13px;
   color: var(--text-dim);
