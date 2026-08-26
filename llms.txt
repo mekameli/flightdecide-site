@@ -43,6 +43,9 @@ flight. No sign-up; everything runs locally.
 - [Density Altitude Calculator](https://flightdecide.com/tools/density-altitude-calculator/):
   pressure altitude, ISA deviation, and density altitude from field
   elevation, altimeter, and temperature.
+- [Cloud Base Calculator](https://flightdecide.com/tools/cloud-base-calculator/):
+  estimated cumulus base (AGL/MSL) from the temperature/dew point
+  spread, freezing-level estimate, METAR prefill, limits of the rule.
 - [True Airspeed Calculator](https://flightdecide.com/tools/true-airspeed-calculator/):
   CAS to TAS, Mach, pressure altitude, and density altitude from altitude
   and temperature, with the 2% rule of thumb.
@@ -64,9 +67,15 @@ flight. No sign-up; everything runs locally.
 - [Descent & Glide Calculator](https://flightdecide.com/tools/descent-glide-calculator/):
   top of descent and required rate (3-degree rule) plus still-air
   glide range and time from glide ratio and height.
+- [Climb Gradient Calculator](https://flightdecide.com/tools/climb-gradient-calculator/):
+  ft/NM to required fpm at groundspeed and back, percent grade,
+  gradient-to-fpm table, groundspeed-not-airspeed guidance.
 - [Holding Pattern Entry Calculator](https://flightdecide.com/tools/holding-pattern-calculator/):
   direct/teardrop/parallel entry from heading + radial + turn
   direction, AIM 70-degree sectors drawn on a compass, next steps.
+- [IFR Alternate Minimums Checker](https://flightdecide.com/tools/ifr-alternate-minimums-checker/):
+  14 CFR 91.169 1-2-3 rule check plus standard 600-2/800-2 alternate
+  qualification, 91.167 fuel note, Canadian (CAR 602.122) differences.
 - [Personal Minimums Worksheet](https://flightdecide.com/tools/personal-minimums-worksheet/):
   printable worksheet for setting ceiling/visibility/wind/performance
   minimums, based on the FAA approach.

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Base Calculator: Estimate Cumulus Bases from Temperature &amp; Dew Point | FlightDecide</title>
+  <meta name="description" content="Free cloud base calculator for pilots. Enter temperature and dew point (or paste a METAR) to estimate the cumulus cloud base in feet AGL and MSL, plus a freezing-level estimate. Includes the spread formula, a worked example, and the limits of the rule. Part of a free online E6B flight computer and preflight planning suite." />
+  <link rel="canonical" href="https://flightdecide.com/tools/cloud-base-calculator/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Cloud Base Calculator: Estimate Cumulus Bases from Temperature &amp; Dew Point" />
+  <meta property="og:description" content="Free cloud base calculator for pilots: estimated cumulus base in AGL and MSL from the temperature/dew point spread, plus a freezing-level estimate and the limits of the rule." />
+  <meta property="og:url" content="https://flightdecide.com/tools/cloud-base-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide cloud base calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cloud Base Calculator: Estimate Cumulus Bases from Temperature &amp; Dew Point" />
+  <meta name="twitter:description" content="Free cloud base calculator for pilots: estimated cumulus base in AGL and MSL from the temperature/dew point spread." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/cloud-base-calculator/#app",
+        "name": "Cloud Base Calculator",
+        "url": "https://flightdecide.com/tools/cloud-base-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free cloud base calculator for pilots. Enter surface temperature and dew point, or paste a METAR, to estimate the cumulus cloud base in feet AGL and MSL plus an approximate freezing level.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/cloud-base-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate cloud base from temperature and dew point?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Estimated cumulus cloud base in feet AGL = (temperature − dew point in °C) ÷ 2.5 × 1000, which is the same as multiplying the spread by 400. A 22 °C temperature with a 9 °C dew point gives a 13 °C spread, so the estimated base is about 5,200 ft AGL. Add field elevation to get the base in MSL."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the cloud base formula work for all clouds?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The spread rule estimates the base of convective cumulus formed by surface heating, typically on an afternoon with decent mixing. It does not predict stratus, frontal cloud, advected marine layers, or cloud above an inversion, and it is not a substitute for the ceiling reported in a METAR or forecast in a TAF."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is the temperature/dew point spread method?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under the conditions it is built for, well-mixed air with cumulus forming from surface heating, it typically lands within several hundred feet. Treat the result as an estimate for planning and situational awareness, then compare it against reported ceilings, PIREPs, and the TAF before making any decision with it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does a small temperature/dew point spread mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A spread of 2 °C or less, especially with a falling temperature toward evening, signals a real chance of fog or a very low ceiling. Many pilots treat a narrowing spread at their destination as a reason to build in an alternate and extra fuel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the freezing level estimated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using the average lapse rate of about 2 °C per 1,000 ft: freezing level ≈ surface temperature ÷ 2 × 1000 ft above the field. A 10 °C surface temperature puts the estimated freezing level near 5,000 ft above field elevation. Real lapse rates vary, so confirm against winds/temps aloft forecasts, and remember visible moisture near the freezing level is where structural icing lives."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Cloud Base Calculator", "item": "https://flightdecide.com/tools/cloud-base-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
+      <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
+      <a class="tool-pill" href="/tools/climb-gradient-calculator/">Climb Gradient</a>
+      <a class="tool-pill" href="/tools/holding-pattern-calculator/">Holding Entry</a>
+      <a class="tool-pill" href="/tools/ifr-alternate-minimums-checker/">IFR Alternate</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Cloud Base Calculator</h1>
+    <p class="page-sub">Enter the surface temperature and dew point, or paste a METAR. Get the estimated cumulus cloud base in AGL and MSL, plus an approximate freezing level.</p>
+    </div>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <div class="calc-card" id="calculator">
+      <div class="calc-field paste-box" style="margin-bottom:18px">
+        <label for="metar">Paste a METAR to prefill temperature and dew point (optional)</label>
+        <textarea id="metar" rows="2" spellcheck="false" placeholder="KBFI 172053Z 31015G22KT 10SM FEW045 22/09 A3005"></textarea>
+        <p class="calc-hint" id="metar-note">Reads the temperature/dew point group (22/09, M02/M05).</p>
+      </div>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="temp">Surface temperature (°C)</label>
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="temp" inputmode="numeric" min="-60" max="60" step="1" value="22" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+          </div>
+          <div class="calc-field">
+            <label for="dew">Dew point (°C)</label>
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="dew" inputmode="numeric" min="-60" max="40" step="1" value="9" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Can't exceed the temperature</p>
+          </div>
+          <div class="calc-field">
+            <label for="elev">Field elevation (ft MSL)</label>
+            <div class="stepper" data-step="100">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="elev" inputmode="numeric" min="-1500" max="15000" step="1" value="0" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Only needed for the MSL and freezing-level numbers</p>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
+            <div class="result-tile" id="tile-spread">
+              <span class="result-label">Spread</span>
+              <span class="result-value" id="spread-val">&ndash;</span>
+              <span class="result-note">temperature minus dew point</span>
+            </div>
+            <div class="result-tile result-blue" id="tile-agl">
+              <span class="result-label">Estimated base</span>
+              <span class="result-value" id="agl-val">&ndash;</span>
+              <span class="result-note">ft AGL</span>
+            </div>
+            <div class="result-tile" id="tile-msl">
+              <span class="result-label">Estimated base</span>
+              <span class="result-value" id="msl-val">&ndash;</span>
+              <span class="result-note">ft MSL</span>
+            </div>
+            <div class="result-tile" id="tile-frz">
+              <span class="result-label">Freezing level</span>
+              <span class="result-value" id="frz-val">&ndash;</span>
+              <span class="result-note" id="frz-note">ft MSL, approximate</span>
+            </div>
+          </div>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter temperature and dew point to see the estimate.</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="lede"><strong>Estimated cumulus base (ft AGL) = temperature/dew point spread in °C ÷ 2.5 × 1000.</strong> A 22 °C afternoon with a 9 °C dew point has a 13 °C spread, so cumulus bases form near 5,200 ft AGL. The rule works for convective cloud built by surface heating; it says nothing about stratus, frontal cloud, or what the METAR is reporting right now.</p>
+
+    <h2>How the estimate works</h2>
+    <p>A parcel of air rising from the surface cools at the dry adiabatic rate, about 3 °C per 1,000 ft, while its dew point falls much more slowly, about 0.5 °C per 1,000 ft. The two converge at roughly 2.5 °C per 1,000 ft, and where they meet, the parcel saturates and cloud forms. That gives the rule:</p>
+    <ul>
+      <li><strong>Base (ft AGL)</strong> = (T &minus; T<sub>d</sub>) ÷ 2.5 × 1000, which is the spread × 400</li>
+      <li><strong>Base (ft MSL)</strong> = base AGL + field elevation</li>
+    </ul>
+    <p>Worked example: temperature 22 °C, dew point 9 °C, field elevation 500 ft. Spread 13 °C, so the base is 13 × 400 = 5,200 ft AGL, or about 5,700 ft MSL.</p>
+
+    <h2>Where the rule works, and where it lies to you</h2>
+    <p>The formula assumes the cloud you care about is being built by thermals rising off the surface into well-mixed air. That's a fair-weather cumulus afternoon. It is <em>not</em>:</p>
+    <ul>
+      <li><strong>Stratus or frontal cloud.</strong> Layer cloud forms by lifting or advection, not surface heating, and its base has no relationship to the surface spread.</li>
+      <li><strong>Marine layers and upslope cloud.</strong> Moist air moved in from elsewhere ignores your local spread entirely.</li>
+      <li><strong>Cloud above an inversion.</strong> If thermals can't punch through, the math stops at the inversion, not at the number this page prints.</li>
+    </ul>
+    <p>Use the estimate to anticipate where cumulus will pop on a cross-country afternoon and whether you'll fit underneath. For the actual ceiling at an airport, read the METAR and the TAF; our <a href="/learn/how-to-read-a-taf/">TAF guide</a> covers the forecast groups that matter.</p>
+
+    <h2>AGL vs. MSL: don't mix the two</h2>
+    <p>The spread formula produces a height above the ground under the rising air. Reported ceilings in a METAR are AGL at that station; cloud bases you plan a cruise altitude around are MSL. This calculator prints both so the conversion mistake never happens at 8,500 ft over rising terrain, where a 5,200 ft AGL base over a 500 ft valley floor becomes a much closer number over a 3,000 ft plateau.</p>
+
+    <h2>The freezing level, and why it's on this page</h2>
+    <p>The same lapse-rate arithmetic gives a quick freezing-level estimate: the standard atmosphere cools about 2 °C per 1,000 ft, so the 0 °C level sits near <strong>surface temperature ÷ 2 × 1,000 ft above the field</strong>. A 10 °C surface puts it near 5,000 ft above field elevation. If your estimated cloud base is at or above the estimated freezing level, the cloud tops you'd climb through hold structural icing risk. Confirm against the winds and temperatures aloft forecast; real lapse rates wander a long way from standard.</p>
+
+    <h2>The spread as a fog early-warning</h2>
+    <p>Watch the spread trend, not just its value. A spread narrowing through 3 °C as the sun goes down is the classic setup for radiation fog: the temperature keeps falling after the dew point stops. If the destination METARs show a shrinking spread and light wind near dusk, plan the alternate before you need it, and give the <a href="/tools/fuel-burn-calculator/">fuel and endurance numbers</a> a second look.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does the cloud base formula work for all clouds?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>No. It estimates the base of convective cumulus formed by surface heating. Stratus, frontal cloud, marine layers, and cloud above an inversion don't follow the spread, and no formula replaces the ceiling in the METAR.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How accurate is the spread method?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>On the well-mixed cumulus afternoons it's built for, usually within several hundred feet. Treat it as planning-grade situational awareness and check it against reported ceilings, PIREPs, and the TAF.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What does a small spread mean for my flight?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>A spread of 2 °C or less, particularly with falling evening temperatures and light wind, is the classic fog setup. Many pilots treat a narrowing spread at the destination as the trigger to line up an alternate and extra fuel.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>The other thing a hot afternoon does to your flight.</p></a>
+      <a class="card-link" href="/learn/how-to-read-a-taf/"><h3>How to Read a TAF</h3><p>Decode the forecast groups that decide whether your window is flyable.</p></a>
+      <a class="card-link" href="/tools/personal-minimums-worksheet/"><h3>Personal Minimums Worksheet</h3><p>Set your own ceiling and visibility numbers before the pressure is on.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Ceilings are one of eight risk categories</h2>
+      <p>FlightDecide reads the actual METARs and TAFs along your route for your specific flight window, scores ceilings and visibility against your personal minimums, and shows the raw reports behind every call.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Aviation Weather Handbook</em> (FAA-H-8083-28), Ch. 13; FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 12. Last reviewed: August 26, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/tools.js"></script>
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const fmt = (n) => Math.round(n).toLocaleString('en-US');
+
+      function compute() {
+        const t = parseFloat($('temp').value);
+        const d = parseFloat($('dew').value);
+        const e = parseFloat($('elev').value) || 0;
+        const v = $('verdict');
+        if (isNaN(t) || isNaN(d)) return;
+
+        if (d > t) {
+          $('spread-val').textContent = '–';
+          $('agl-val').textContent = '–';
+          $('msl-val').textContent = '–';
+          $('frz-val').textContent = '–';
+          v.className = 'verdict-line v-red';
+          v.textContent = 'Dew point above temperature: check the numbers.';
+          return;
+        }
+
+        const spread = t - d;
+        const agl = spread / 2.5 * 1000;
+        const msl = agl + e;
+        $('spread-val').textContent = (Math.round(spread * 10) / 10) + ' °C';
+        $('agl-val').textContent = fmt(agl) + ' ft';
+        $('msl-val').textContent = fmt(msl) + ' ft';
+
+        if (t <= 0) {
+          $('frz-val').textContent = 'Surface';
+          $('frz-note').textContent = 'at or below 0 °C on the ground';
+        } else {
+          $('frz-val').textContent = fmt(t / 2 * 1000 + e) + ' ft';
+          $('frz-note').textContent = 'ft MSL, approximate';
+        }
+
+        if (spread <= 1) {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'Spread ' + (Math.round(spread * 10) / 10) + ' °C: saturated or nearly so. Fog and very low cloud are likely.';
+        } else if (spread <= 3) {
+          v.className = 'verdict-line v-amber';
+          v.textContent = 'Spread ' + (Math.round(spread * 10) / 10) + ' °C is narrow. Watch the trend, especially toward evening.';
+        } else {
+          v.className = 'verdict-line v-green';
+          v.textContent = 'Estimated cumulus base about ' + fmt(agl) + ' ft AGL. Convective cloud only; check the METAR for the real ceiling.';
+        }
+      }
+
+      ['temp', 'dew', 'elev'].forEach((id) => $(id).addEventListener('input', compute));
+      compute();
+
+      // publish/consume the OAT across tools
+      $('temp').addEventListener('input', function () { FD.shared.publish('oatC', parseFloat($('temp').value), 'cloudbase', 'Cloud Base'); });
+      FD.attachPrefill($('temp'), 'oatC', 'cloudbase', 'Cloud Base');
+
+      // METAR prefill: temperature/dew point group (22/09, M02/M05)
+      $('metar').addEventListener('input', function () {
+        const m = String($('metar').value).toUpperCase().match(/\b(M?\d{2})\/(M?\d{2})\b/);
+        if (!m) return;
+        const parse = (s) => s.charAt(0) === 'M' ? -parseInt(s.slice(1), 10) : parseInt(s, 10);
+        $('temp').value = parse(m[1]);
+        $('dew').value = parse(m[2]);
+        $('metar-note').textContent = 'Temperature ' + parse(m[1]) + ' °C, dew point ' + parse(m[2]) + ' °C read from the METAR.';
+        compute();
+      });
+    })();
+  </script>
+
+</body>
+</html>

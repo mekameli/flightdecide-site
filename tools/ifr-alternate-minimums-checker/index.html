@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFR Alternate Checker: The 1-2-3 Rule &amp; Alternate Minimums | FlightDecide</title>
+  <meta name="description" content="Free IFR alternate requirements checker. Enter the forecast ceiling and visibility at your ETA to see whether 14 CFR 91.169's 1-2-3 rule requires an alternate, and whether your alternate's forecast meets the standard 600-2 or 800-2 minimums. Includes the fuel rule and how Canada differs." />
+  <link rel="canonical" href="https://flightdecide.com/tools/ifr-alternate-minimums-checker/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="IFR Alternate Checker: The 1-2-3 Rule &amp; Alternate Minimums" />
+  <meta property="og:description" content="Do you need an IFR alternate, and does yours qualify? The 1-2-3 rule and the standard 600-2 / 800-2 alternate minimums, checked against your forecast numbers." />
+  <meta property="og:url" content="https://flightdecide.com/tools/ifr-alternate-minimums-checker/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide IFR alternate minimums checker for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IFR Alternate Checker: The 1-2-3 Rule &amp; Alternate Minimums" />
+  <meta name="twitter:description" content="Do you need an IFR alternate, and does yours qualify? The 1-2-3 rule and standard alternate minimums, checked against your forecast." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/ifr-alternate-minimums-checker/#app",
+        "name": "IFR Alternate Minimums Checker",
+        "url": "https://flightdecide.com/tools/ifr-alternate-minimums-checker/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free IFR alternate requirements checker for pilots. Applies 14 CFR 91.169's 1-2-3 rule to your destination forecast and the standard 600-2 / 800-2 alternate minimums to your alternate's forecast.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/ifr-alternate-minimums-checker/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the 1-2-3 rule for IFR alternates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under 14 CFR 91.169, you must file an alternate unless, from 1 hour before to 1 hour after your ETA, the forecast at the destination shows a ceiling of at least 2,000 ft above the airport and visibility of at least 3 statute miles. If the destination has no instrument approach at all, an alternate is required no matter how good the forecast is."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the standard IFR alternate minimums?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At your ETA at the alternate, the forecast must be at or above 600-2 (600 ft ceiling and 2 SM visibility) if the alternate has a usable precision approach, or 800-2 if it only has non-precision approaches. Many airports publish non-standard alternate minimums that replace these numbers, marked with the alternate-minimums symbol on the approach chart, and some are marked NA as alternates entirely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I file an airport with no instrument approach as my alternate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, but only if the forecast ceiling and visibility at your ETA would let you descend from the minimum en route altitude, approach, and land under basic VFR. In practice that means the alternate weather needs to be solidly VFR from the MEA down."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use a GPS approach at my alternate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on your equipment. Non-WAAS GPS users may plan to use an RNAV (GPS) approach at either the destination or the alternate, but not both. WAAS-equipped aircraft have more flexibility, though alternate planning must use the LNAV or circling line of minima unless the chart says otherwise. Check AIM 1-1-17 and 1-1-18 and the chart's alternate-minimums notes for your installation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do IFR alternate rules differ in Canada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Canada is stricter. CAR 602.122 requires an alternate on an IFR flight plan regardless of how good the destination forecast is, with only narrow exceptions. Alternate weather minima come from the Canada Air Pilot's alternate-minima table, which keys on how many usable approaches the alternate has rather than the US 600-2 / 800-2 split."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "IFR Alternate Minimums Checker", "item": "https://flightdecide.com/tools/ifr-alternate-minimums-checker/" }
+        ]
+      }
+    ]
+  }
+  </script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
+      <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
+      <a class="tool-pill" href="/tools/climb-gradient-calculator/">Climb Gradient</a>
+      <a class="tool-pill" href="/tools/holding-pattern-calculator/">Holding Entry</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/ifr-alternate-minimums-checker/">IFR Alternate</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>IFR Alternate Minimums Checker</h1>
+    <p class="page-sub">The 1-2-3 rule and the standard alternate minimums, checked against your forecast numbers. Do you need an alternate, and does the one you picked qualify?</p>
+    </div>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <div class="calc-card" id="calculator">
+      <h2 style="margin-top:0">Step 1: Do you need an alternate? (14 CFR 91.169)</h2>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="hasiap">Destination has a published instrument approach?</label>
+            <select id="hasiap">
+              <option value="yes" selected>Yes</option>
+              <option value="no">No</option>
+            </select>
+            <p class="calc-hint">No approach means an alternate is required, full stop</p>
+          </div>
+          <div class="calc-field">
+            <label for="dceil">Forecast ceiling at destination (ft AGL)</label>
+            <div class="stepper" data-step="100">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="dceil" inputmode="numeric" min="0" max="30000" step="100" value="1500" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Worst forecast from 1 hr before to 1 hr after your ETA</p>
+          </div>
+          <div class="calc-field">
+            <label for="dvis">Forecast visibility at destination (SM)</label>
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="dvis" inputmode="decimal" min="0" max="30" step="0.25" value="3" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
+            <div class="result-tile" id="tile-c1">
+              <span class="result-label">Ceiling test</span>
+              <span class="result-value" id="c1-val">&ndash;</span>
+              <span class="result-note">needs 2,000 ft or better</span>
+            </div>
+            <div class="result-tile" id="tile-v1">
+              <span class="result-label">Visibility test</span>
+              <span class="result-value" id="v1-val">&ndash;</span>
+              <span class="result-note">needs 3 SM or better</span>
+            </div>
+          </div>
+          <div class="verdict-line v-dim" id="verdict1" aria-live="polite">Enter the destination forecast.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calc-card" id="alternate-check">
+      <h2 style="margin-top:0">Step 2: Does your alternate qualify?</h2>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="atype">Best usable approach at the alternate</label>
+            <select id="atype">
+              <option value="precision" selected>Precision (ILS or equivalent)</option>
+              <option value="nonprecision">Non-precision only</option>
+              <option value="none">No instrument approach</option>
+            </select>
+            <p class="calc-hint">Standard minima apply only if the chart doesn't publish non-standard ones</p>
+          </div>
+          <div class="calc-field">
+            <label for="aceil">Forecast ceiling at alternate (ft AGL)</label>
+            <div class="stepper" data-step="100">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="aceil" inputmode="numeric" min="0" max="30000" step="100" value="800" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Forecast for your ETA at the alternate</p>
+          </div>
+          <div class="calc-field">
+            <label for="avis">Forecast visibility at alternate (SM)</label>
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="avis" inputmode="decimal" min="0" max="30" step="0.25" value="2" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
+            <div class="result-tile" id="tile-req">
+              <span class="result-label">Required forecast</span>
+              <span class="result-value" id="req-val">600-2</span>
+              <span class="result-note" id="req-note">standard precision minima</span>
+            </div>
+            <div class="result-tile" id="tile-have">
+              <span class="result-label">Your forecast</span>
+              <span class="result-value" id="have-val">&ndash;</span>
+              <span class="result-note">ceiling-visibility</span>
+            </div>
+          </div>
+          <div class="verdict-line v-dim" id="verdict2" aria-live="polite">Enter the alternate forecast.</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="lede"><strong>The 1-2-3 rule: from 1 hour before to 1 hour after your ETA, the destination forecast must show at least a 2,000 ft ceiling and 3 SM visibility, or you must file an alternate.</strong> The alternate itself has to qualify: standard minima are 600-2 with a precision approach and 800-2 without one, unless the chart publishes different numbers. A TAF showing 1,500 broken at your ETA means you're filing an alternate.</p>
+
+    <h2>Step 1: the 1-2-3 rule at the destination</h2>
+    <p>14 CFR 91.169 lets you skip the alternate only when both of these hold for the window one hour either side of your ETA:</p>
+    <ul>
+      <li>Forecast <strong>ceiling at least 2,000 ft</strong> above the airport elevation</li>
+      <li>Forecast <strong>visibility at least 3 statute miles</strong></li>
+    </ul>
+    <p>Read the TAF for the whole window, including TEMPO and PROB groups; a two-hour TEMPO of 1,000 overcast inside your window fails the test even if the prevailing line looks fine. And if the destination has no published instrument approach at all, the forecast is irrelevant: an alternate is required.</p>
+
+    <h2>Step 2: standard alternate minimums</h2>
+    <p>An airport qualifies as your alternate only if, at your ETA there, the forecast meets the alternate minimums for its approaches:</p>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Best approach at the alternate</th><th>Required forecast at your ETA</th></tr></thead>
+      <tbody>
+        <tr><td>Precision (ILS or equivalent)</td><td>600 ft ceiling and 2 SM</td></tr>
+        <tr><td>Non-precision only</td><td>800 ft ceiling and 2 SM</td></tr>
+        <tr><td>No instrument approach</td><td>Descent from the MEA, approach, and landing in basic VFR</td></tr>
+      </tbody>
+    </table></div>
+    <p>Two traps hide behind that table. First, many airports publish <strong>non-standard alternate minimums</strong> that replace 600-2 and 800-2; the approach chart carries the alternate-minimums symbol when they do, and some approaches are marked NA for alternate use entirely (often because the weather reporting or navaid monitoring goes away when the tower closes). Second, GPS: a non-WAAS installation may plan an RNAV (GPS) approach at the destination or the alternate, not both, and WAAS planning generally uses the LNAV line of minima. AIM 1-1-17 and 1-1-18 carry the details.</p>
+
+    <h2>The fuel rule that comes with the alternate</h2>
+    <p>Filing an alternate changes your fuel math. 14 CFR 91.167 requires enough fuel to fly to the destination, <em>then</em> to the alternate, <em>then</em> 45 minutes at normal cruise. Run the trip through the <a href="/tools/fuel-burn-calculator/">fuel and endurance calculator</a> with the alternate leg included; a legal alternate you can't reach with reserves intact isn't an alternate.</p>
+
+    <h2>Flying in Canada: stricter, and different numbers</h2>
+    <p>Canada doesn't have a 1-2-3 escape hatch. CAR 602.122 requires an alternate on an IFR flight plan regardless of the destination forecast, with only narrow exceptions. The alternate weather minima also work differently: the Canada Air Pilot's alternate-minima table keys on how many usable approaches the airport has, not on a precision/non-precision split. If you fly both sides of the border, don't let the FAA numbers drive a Canadian plan; our <a href="/learn/canadian-weather-briefing/">Canadian weather briefing guide</a> covers the sources.</p>
+
+    <h2>Legal minimum vs. good plan</h2>
+    <p>The 1-2-3 rule is a floor, not a strategy. A destination forecast of 2,100 and 3 passes the test and still leaves you one TEMPO group from an approach to minimums with no plan B. Plenty of instrument pilots file an alternate whenever the destination is below their personal VFR-ish numbers, and pick alternates with weather good enough to be boring. The <a href="/tools/personal-minimums-worksheet/">personal minimums worksheet</a> is where those numbers get written down.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I file an airport with no instrument approach as my alternate?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Yes, if the forecast at your ETA lets you descend from the MEA, approach, and land under basic VFR. In practice the weather there needs to be solidly VFR from the MEA down.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I use a GPS approach at my alternate?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Non-WAAS GPS: at the destination or the alternate, not both. WAAS: more flexibility, but plan on the LNAV or circling minima unless the chart says otherwise. AIM 1-1-17 and 1-1-18, plus the chart's alternate notes, settle it for your installation.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do TEMPO and PROB groups count against the 1-2-3 rule?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Treat them as if they do. The regulation says "weather reports or forecasts, or any combination of them" must indicate 2,000 and 3; a TEMPO group forecasting less inside your window is a forecast of less. File the alternate and let the argument stay academic.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How do the rules differ in Canada?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>CAR 602.122 requires an alternate on an IFR flight plan regardless of the destination forecast, with narrow exceptions, and the Canada Air Pilot's alternate-minima table replaces the 600-2 / 800-2 numbers.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/fuel-burn-calculator/"><h3>Fuel &amp; Endurance Calculator</h3><p>Destination, alternate, then 45 minutes: check the whole 91.167 chain.</p></a>
+      <a class="card-link" href="/learn/how-to-read-a-taf/"><h3>How to Read a TAF</h3><p>The TEMPO and PROB groups that quietly fail your 1-2-3 test.</p></a>
+      <a class="card-link" href="/tools/holding-pattern-calculator/"><h3>Holding Pattern Entry</h3><p>If the approach doesn't work out, this is the next thing ATC will ask of you.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>The app reads the TAF window for you</h2>
+      <p>FlightDecide pulls the METARs and TAFs for your route and your specific flight window, flags the groups that fail your minimums, and scores the flight GO, CAUTION, or NO GO with the raw reports one tap away.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It applies the standard 14 CFR 91.169 tests and standard alternate minimums; published non-standard minimums, equipment-specific GPS rules, and operator requirements override it. Advisory only, and not a substitute for the regulations, current charts, an official briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: 14 CFR §§91.167, 91.169; AIM 1-1-17, 1-1-18; CAR 602.122. Last reviewed: August 26, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/tools.js"></script>
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const fmt = (n) => Math.round(n).toLocaleString('en-US');
+      const vis = (n) => (Math.round(n * 100) / 100) + ' SM';
+
+      function step1() {
+        const iap = $('hasiap').value === 'yes';
+        const c = parseFloat($('dceil').value);
+        const v = parseFloat($('dvis').value);
+        const out = $('verdict1');
+        if (isNaN(c) || isNaN(v)) return;
+
+        const cOk = c >= 2000, vOk = v >= 3;
+        $('c1-val').textContent = fmt(c) + ' ft';
+        $('v1-val').textContent = vis(v);
+        $('tile-c1').className = 'result-tile ' + (cOk ? 'result-green' : 'result-red');
+        $('tile-v1').className = 'result-tile ' + (vOk ? 'result-green' : 'result-red');
+
+        if (!iap) {
+          out.className = 'verdict-line v-red';
+          out.textContent = 'Alternate required: the destination has no instrument approach, so the forecast doesn’t matter.';
+        } else if (cOk && vOk) {
+          out.className = 'verdict-line v-green';
+          out.textContent = 'No alternate required: the 1-2-3 test is met for your window. Filing one anyway is cheap insurance.';
+        } else {
+          const fails = [!cOk ? 'ceiling below 2,000 ft' : '', !vOk ? 'visibility below 3 SM' : ''].filter(Boolean).join(' and ');
+          out.className = 'verdict-line v-red';
+          out.textContent = 'Alternate required: ' + fails + ' in your ETA window.';
+        }
+      }
+
+      function step2() {
+        const type = $('atype').value;
+        const c = parseFloat($('aceil').value);
+        const v = parseFloat($('avis').value);
+        const out = $('verdict2');
+        if (isNaN(c) || isNaN(v)) return;
+
+        $('have-val').textContent = fmt(c) + ' ft / ' + vis(v);
+
+        if (type === 'none') {
+          $('req-val').textContent = 'VFR';
+          $('req-note').textContent = 'from the MEA to the ground';
+          $('tile-have').className = 'result-tile result-blue';
+          out.className = 'verdict-line v-amber';
+          out.textContent = 'No approach at the alternate: the forecast must let you descend from the MEA and land in basic VFR. This tool can’t check your MEA, so treat anything short of solid VFR as a no.';
+          return;
+        }
+
+        const needC = type === 'precision' ? 600 : 800;
+        $('req-val').textContent = needC + '-2';
+        $('req-note').textContent = 'standard ' + (type === 'precision' ? 'precision' : 'non-precision') + ' minima';
+        const ok = c >= needC && v >= 2;
+        $('tile-have').className = 'result-tile ' + (ok ? 'result-green' : 'result-red');
+        if (ok) {
+          out.className = 'verdict-line v-green';
+          out.textContent = 'Qualifies on standard minima (' + needC + '-2). Confirm the chart doesn’t publish non-standard alternate minimums or an NA note.';
+        } else {
+          out.className = 'verdict-line v-red';
+          out.textContent = 'Doesn’t qualify: forecast is below ' + needC + '-2 at your ETA. Pick a different alternate.';
+        }
+      }
+
+      ['dceil', 'dvis'].forEach((id) => $(id).addEventListener('input', step1));
+      $('hasiap').addEventListener('change', step1);
+      ['aceil', 'avis'].forEach((id) => $(id).addEventListener('input', step2));
+      $('atype').addEventListener('change', step2);
+      step1();
+      step2();
+    })();
+  </script>
+
+</body>
+</html>

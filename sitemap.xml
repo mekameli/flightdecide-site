@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://flightdecide.com/tools/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -33,6 +33,12 @@
   <url>
     <loc>https://flightdecide.com/tools/density-altitude-calculator/</loc>
     <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/tools/cloud-base-calculator/</loc>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -79,8 +85,20 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://flightdecide.com/tools/climb-gradient-calculator/</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://flightdecide.com/tools/holding-pattern-calculator/</loc>
     <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/tools/ifr-alternate-minimums-checker/</loc>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

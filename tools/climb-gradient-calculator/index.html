@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climb Gradient Calculator: Feet per NM to Feet per Minute | FlightDecide</title>
+  <meta name="description" content="Free climb gradient calculator for pilots. Convert a required gradient in feet per nautical mile to the rate of climb in feet per minute at your groundspeed, or check the gradient you're actually achieving. Includes the formula, a conversion table, and why groundspeed (not airspeed) is the number that counts." />
+  <link rel="canonical" href="https://flightdecide.com/tools/climb-gradient-calculator/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="Climb Gradient Calculator: Feet per NM to Feet per Minute" />
+  <meta property="og:description" content="Convert a required climb gradient (ft/NM) to rate of climb (fpm) at your groundspeed, or check the gradient you're actually achieving." />
+  <meta property="og:url" content="https://flightdecide.com/tools/climb-gradient-calculator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide climb gradient calculator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Climb Gradient Calculator: Feet per NM to Feet per Minute" />
+  <meta name="twitter:description" content="Convert a required climb gradient (ft/NM) to rate of climb (fpm) at your groundspeed, or check the gradient you're achieving." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/climb-gradient-calculator/#app",
+        "name": "Climb Gradient Calculator",
+        "url": "https://flightdecide.com/tools/climb-gradient-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free climb gradient calculator for pilots. Converts a required gradient in feet per nautical mile to feet per minute at a given groundspeed, and back.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/climb-gradient-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you convert a climb gradient to a rate of climb?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rate of climb (fpm) = gradient (ft/NM) × groundspeed (kt) ÷ 60. A 200 ft/NM gradient at 90 knots groundspeed needs 200 × 90 ÷ 60 = 300 feet per minute. The reverse works too: gradient = fpm × 60 ÷ groundspeed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the climb gradient use groundspeed instead of airspeed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A gradient is height gained per distance over the ground, so the speed that matters is the speed over the ground. A headwind slows your groundspeed and makes any published gradient easier to meet at the same rate of climb; a tailwind on departure does the opposite. High density altitude hurts twice: the engine gives you less rate of climb while your true airspeed, and usually groundspeed, goes up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does the standard 200 ft/NM climb gradient come from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Instrument departure procedure design (TERPS) assumes at least 200 feet per nautical mile after crossing the departure end of the runway at 35 feet, unless the procedure publishes a higher gradient or a climb-over-airport option. If an obstacle departure procedure or SID lists a number bigger than 200, that number is the one your airplane has to beat, to the altitude the procedure states."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if my aircraft can't meet a published climb gradient?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Don't fly the procedure on hope. Options include a different runway or departure, a visual climb over the airport where one is published, waiting for cooler temperatures or a headwind, reducing weight, or departing VFR and picking up the clearance once clear of the terrain. Compare your POH climb performance at the actual density altitude and weight against the required feet per minute this calculator gives you."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Climb Gradient Calculator", "item": "https://flightdecide.com/tools/climb-gradient-calculator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
+      <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/climb-gradient-calculator/">Climb Gradient</a>
+      <a class="tool-pill" href="/tools/holding-pattern-calculator/">Holding Entry</a>
+      <a class="tool-pill" href="/tools/ifr-alternate-minimums-checker/">IFR Alternate</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>Climb Gradient Calculator</h1>
+    <p class="page-sub">Convert a required gradient in feet per nautical mile to the rate of climb your VSI has to show at your groundspeed, and check the gradient you're actually achieving.</p>
+    </div>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <div class="calc-card" id="calculator">
+      <h2 style="margin-top:0">Required rate of climb</h2>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="grad">Required gradient (ft/NM)</label>
+            <div class="stepper" data-step="10">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="grad" inputmode="numeric" min="0" max="2000" step="5" value="200" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">From the ODP, SID, or missed approach; 200 is the TERPS standard</p>
+          </div>
+          <div class="calc-field">
+            <label for="gs">Groundspeed in the climb (kt)</label>
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="gs" inputmode="numeric" min="1" max="600" step="1" value="90" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">Groundspeed, not indicated airspeed: wind changes this number</p>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
+            <div class="result-tile result-blue" id="tile-fpm">
+              <span class="result-label">Required climb</span>
+              <span class="result-value" id="fpm-val">&ndash;</span>
+              <span class="result-note">feet per minute</span>
+            </div>
+            <div class="result-tile" id="tile-pct">
+              <span class="result-label">Grade</span>
+              <span class="result-value" id="pct-val">&ndash;</span>
+              <span class="result-note">percent slope</span>
+            </div>
+          </div>
+          <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter a gradient and groundspeed.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calc-card" id="achieved">
+      <h2 style="margin-top:0">Gradient you're achieving</h2>
+      <div class="tool-layout">
+        <div class="tool-inputs">
+          <div class="calc-field">
+            <label for="fpm2">Rate of climb (fpm)</label>
+            <div class="stepper" data-step="50">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="fpm2" inputmode="numeric" min="0" max="10000" step="10" value="500" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <p class="calc-hint">From the POH climb chart at your weight and density altitude</p>
+          </div>
+          <div class="calc-field">
+            <label for="gs2">Groundspeed (kt)</label>
+            <div class="stepper" data-step="5">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="gs2" inputmode="numeric" min="1" max="600" step="1" value="90" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="tool-visual">
+          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr">
+            <div class="result-tile result-blue" id="tile-grad2">
+              <span class="result-label">Achieved gradient</span>
+              <span class="result-value" id="grad2-val">&ndash;</span>
+              <span class="result-note">feet per nautical mile</span>
+            </div>
+          </div>
+          <div class="verdict-line v-dim" id="verdict2" aria-live="polite">Enter your climb rate and groundspeed.</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="lede"><strong>Required rate of climb (fpm) = gradient (ft/NM) × groundspeed (kt) ÷ 60.</strong> The standard 200 ft/NM departure gradient at 90 knots groundspeed is only 300 fpm; a mountain SID demanding 425 ft/NM at 100 knots wants 708 fpm, which is a real number for a loaded single on a warm day. Convert the chart's gradient into fpm before you take the runway, not after the trees get big.</p>
+
+    <h2>The formula, and a worked example</h2>
+    <p>A climb gradient is height gained per distance travelled over the ground. Since groundspeed in knots is nautical miles per hour, dividing by 60 turns it into miles per minute:</p>
+    <ul>
+      <li><strong>fpm</strong> = gradient (ft/NM) × groundspeed (kt) ÷ 60</li>
+      <li><strong>gradient</strong> = fpm × 60 ÷ groundspeed (kt)</li>
+    </ul>
+    <p>Example: the ODP requires 340 ft/NM to 6,000 ft and you'll climb at 95 knots groundspeed. 340 × 95 ÷ 60 = 538 fpm, sustained, all the way to 6,000. If the POH says your loaded airplane does 450 fpm at that density altitude, the procedure isn't flyable today as filed.</p>
+
+    <h2>Quick reference: gradient to fpm</h2>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Gradient</th><th>60 kt GS</th><th>90 kt GS</th><th>120 kt GS</th><th>150 kt GS</th></tr></thead>
+      <tbody>
+        <tr><td>200 ft/NM</td><td>200 fpm</td><td>300 fpm</td><td>400 fpm</td><td>500 fpm</td></tr>
+        <tr><td>300 ft/NM</td><td>300 fpm</td><td>450 fpm</td><td>600 fpm</td><td>750 fpm</td></tr>
+        <tr><td>400 ft/NM</td><td>400 fpm</td><td>600 fpm</td><td>800 fpm</td><td>1,000 fpm</td></tr>
+        <tr><td>500 ft/NM</td><td>500 fpm</td><td>750 fpm</td><td>1,000 fpm</td><td>1,250 fpm</td></tr>
+      </tbody>
+    </table></div>
+    <p>Notice the slope: the faster you go, the more feet per minute the same gradient costs. Climbing at V<sub>Y</sub> instead of a cruise climb isn't just tradition; it buys gradient.</p>
+
+    <h2>Groundspeed, not airspeed</h2>
+    <p>The gradient is measured over the ground, so wind moves the requirement. A 20-knot headwind on departure cuts your groundspeed and makes the same VSI reading worth more feet per mile; a tailwind departure off a mountain runway quietly raises the fpm you need. Get the groundspeed from the <a href="/tools/wind-correction-calculator/">wind triangle calculator</a>, or read it off the GPS in the climb and re-check the math with the second card above.</p>
+
+    <h2>Where 200 ft/NM comes from, and when it isn't enough</h2>
+    <p>Instrument departure design (TERPS) assumes an aircraft crossing the departure end at 35 ft and climbing at least <strong>200 ft/NM</strong>. When terrain or obstacles need more, the ODP or SID publishes a higher gradient and the altitude it applies to, and that number is binding for the procedure. Two habits keep it honest:</p>
+    <ul>
+      <li>Convert the published gradient to fpm at your <em>planned groundspeed</em> before departure, and write it on the plate or the kneeboard.</li>
+      <li>Check it against POH climb performance at the actual weight and <a href="/tools/density-altitude-calculator/">density altitude</a>, not the sea-level book number.</li>
+    </ul>
+    <p>If the airplane can't make the number: different runway, a published visual climb over the airport, less weight, cooler air, or don't go yet. Hoping is not on the list.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why does the gradient use groundspeed instead of airspeed?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>A gradient is feet gained per mile over the ground. A headwind lowers groundspeed and makes the gradient easier at the same climb rate; a tailwind does the opposite. High density altitude hurts twice: less rate from the engine, more groundspeed for the same indicated speed.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is 200 ft/NM a regulation?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>It's the TERPS design assumption for instrument departures: obstacle clearance is built around at least 200 ft/NM from 35 ft over the departure end. A procedure that needs more publishes the higher number, and that published gradient is what you have to meet, to the stated altitude.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What if I can't meet the published gradient?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Change something real: another runway or departure, a published visual climb over the airport, less fuel or payload, cooler temperatures, or wait for a headwind. Departing VFR clear of terrain and picking up the clearance airborne can work where conditions genuinely allow it.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/density-altitude-calculator/"><h3>Density Altitude Calculator</h3><p>The number that decides whether the POH climb chart is on your side today.</p></a>
+      <a class="card-link" href="/tools/wind-correction-calculator/"><h3>Heading &amp; Groundspeed Calculator</h3><p>The groundspeed this page's math depends on.</p></a>
+      <a class="card-link" href="/tools/descent-glide-calculator/"><h3>Descent &amp; Glide Calculator</h3><p>The same arithmetic pointed downhill: top of descent and glide range.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>Performance is one of eight risk categories</h2>
+      <p>FlightDecide checks density altitude, runway performance, and weight and balance for your specific aircraft and flight window, alongside weather and NOTAMs, and shows the numbers behind every call.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, current charts, an official briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Instrument Procedures Handbook</em> (FAA-H-8083-16B), Ch. 1; FAA Order 8260.3 (TERPS); AIM 5-2-9. Last reviewed: August 26, 2026.</p>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/tools.js"></script>
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const fmt = (n) => Math.round(n).toLocaleString('en-US');
+
+      function required() {
+        const g = parseFloat($('grad').value);
+        const gs = parseFloat($('gs').value);
+        const v = $('verdict');
+        if (isNaN(g) || isNaN(gs) || gs <= 0) return;
+        const fpm = g * gs / 60;
+        $('fpm-val').textContent = fmt(fpm) + ' fpm';
+        $('pct-val').textContent = (Math.round(g / 6076 * 1000) / 10) + '%';
+        if (g <= 0) {
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Enter the published gradient.';
+        } else {
+          v.className = 'verdict-line ' + (fpm > 700 ? 'v-amber' : 'v-green');
+          v.textContent = 'Hold ' + fmt(fpm) + ' fpm at ' + fmt(gs) + ' kt groundspeed to make ' + fmt(g) +
+            ' ft/NM.' + (fpm > 700 ? ' Check the POH climb chart at today’s weight and density altitude.' : '');
+        }
+      }
+
+      function achieved() {
+        const fpm = parseFloat($('fpm2').value);
+        const gs = parseFloat($('gs2').value);
+        const v = $('verdict2');
+        if (isNaN(fpm) || isNaN(gs) || gs <= 0) return;
+        const g = fpm * 60 / gs;
+        $('grad2-val').textContent = fmt(g) + ' ft/NM';
+        if (g >= 200) {
+          v.className = 'verdict-line v-green';
+          v.textContent = 'Achieving ' + fmt(g) + ' ft/NM: meets the standard 200 ft/NM. Compare it against any higher published gradient.';
+        } else {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'Achieving ' + fmt(g) + ' ft/NM: below the standard 200 ft/NM instrument-departure assumption.';
+        }
+      }
+
+      ['grad', 'gs'].forEach((id) => $(id).addEventListener('input', required));
+      ['fpm2', 'gs2'].forEach((id) => $(id).addEventListener('input', achieved));
+      required();
+      achieved();
+
+      // share the groundspeed with the other tools
+      $('gs').addEventListener('input', function () { FD.shared.publish('groundspeedKt', parseFloat($('gs').value), 'climbgradient', 'Climb Gradient'); });
+      FD.attachPrefill($('gs'), 'groundspeedKt', 'climbgradient', 'Climb Gradient');
+      FD.attachPrefill($('gs2'), 'groundspeedKt', 'climbgradient', 'Climb Gradient');
+    })();
+  </script>
+
+</body>
+</html>
