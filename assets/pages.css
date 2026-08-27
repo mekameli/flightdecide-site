@@ -676,18 +676,38 @@ nav.tool-switcher {
 /* CARD LIST (hub pages, related links) */
 .card-list { display: grid; gap: 14px; margin: 8px 0 32px; }
 .card-link {
+  position: relative;
   display: block;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 18px 22px;
+  border-radius: var(--radius);
+  padding: 20px 52px 20px 22px;
   text-decoration: none;
   color: var(--text);
-  transition: border-color 0.2s, background 0.2s;
+  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
 }
-.card-link:hover { border-color: rgba(59,130,246,0.35); background: var(--bg-card-hover); }
-.card-link h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
-.card-link p { font-size: 14px; color: var(--text-muted); }
+.card-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59,130,246,0.45);
+  background: var(--bg-card-hover);
+}
+/* .prose a (higher specificity) must not repaint these as underlined links */
+.prose a.card-link, .prose a.card-link:hover { color: var(--text); text-decoration: none; }
+.card-link h3 { font-size: 17px; font-weight: 700; margin: 0 0 4px; color: var(--text); }
+.card-link p { font-size: 14px; color: var(--text-muted); margin: 0; }
+.card-link::after {
+  content: '\2192';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  color: var(--accent-blue);
+  font-size: 16px;
+  opacity: 0;
+  transform: translate(-5px, -50%);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+.card-link:hover::after { opacity: 1; transform: translateY(-50%); }
+@media (prefers-reduced-motion: reduce) { .card-link, .card-link::after { transition: none; } }
 
 /* CTA */
 .cta-band {
