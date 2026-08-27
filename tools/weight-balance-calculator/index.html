@@ -303,7 +303,7 @@
       <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
-    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, your aircraft's current weight-and-balance report, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Weight-Shift and Balance Handbook</em> (FAA-H-8083-1B); <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 10. Last reviewed: July 17, 2026.</p>
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, your aircraft's current weight-and-balance report, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Aircraft Weight and Balance Handbook</em> (FAA-H-8083-1B); <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 10. Last reviewed: July 17, 2026.</p>
 
   </div>
 
@@ -372,9 +372,6 @@
                   card.querySelector('input[data-k="mom"]').value = Math.round(it.wt * it.arm);
                 } else if (it.last === 'mom' && isFinite(it.mom) && it.wt > 0) {
                   card.querySelector('input[data-k="arm"]').value = Math.round(it.mom / it.wt * 100) / 100;
-                } else if (inp.dataset.k === 'wt') {
-                  if (it.last === 'arm' && isFinite(it.arm)) card.querySelector('input[data-k="mom"]').value = Math.round(it.wt * it.arm);
-                  if (it.last === 'mom' && isFinite(it.mom) && it.wt > 0) card.querySelector('input[data-k="arm"]').value = Math.round(it.mom / it.wt * 100) / 100;
                 }
               }
             }
@@ -435,13 +432,21 @@
           const lo = fwd - pad, hi = aft + pad;
           const X = (val) => 10 + 280 * (val - lo) / (hi - lo);
           const inCG = cg >= fwd && cg <= aft;
+          // clamp the CG marker into the visible bar; when clamped, add an
+          // arrowhead at that edge pointing at the off-scale CG
+          const cgXraw = X(cg);
+          const cgX = Math.min(290, Math.max(10, cgXraw));
+          const labelX = Math.min(268, Math.max(32, cgX));
+          const cgColor = inCG ? '#22C55E' : '#EF4444';
           bar =
             '<rect x="10" y="38" width="280" height="18" rx="4" fill="rgba(255,255,255,0.06)"/>' +
             '<rect x="' + X(fwd).toFixed(1) + '" y="38" width="' + (X(aft) - X(fwd)).toFixed(1) + '" height="18" rx="4" fill="rgba(34,197,94,0.25)" stroke="rgba(34,197,94,0.5)"/>' +
-            '<line x1="' + X(cg).toFixed(1) + '" y1="28" x2="' + X(cg).toFixed(1) + '" y2="66" stroke="' + (inCG ? '#22C55E' : '#EF4444') + '" stroke-width="3"/>' +
+            '<line x1="' + cgX.toFixed(1) + '" y1="28" x2="' + cgX.toFixed(1) + '" y2="66" stroke="' + cgColor + '" stroke-width="3"/>' +
+            (cgXraw < 10 ? '<polygon points="2,47 12,41 12,53" fill="' + cgColor + '"/>' : '') +
+            (cgXraw > 290 ? '<polygon points="298,47 288,41 288,53" fill="' + cgColor + '"/>' : '') +
             '<text x="' + X(fwd).toFixed(1) + '" y="80" text-anchor="middle" fill="#64748B" font-size="11">' + fwd + '</text>' +
             '<text x="' + X(aft).toFixed(1) + '" y="80" text-anchor="middle" fill="#64748B" font-size="11">' + aft + '</text>' +
-            '<text x="' + X(cg).toFixed(1) + '" y="20" text-anchor="middle" fill="' + (inCG ? '#22C55E' : '#EF4444') + '" font-size="12" font-weight="700">CG ' + (Math.round(cg * 100) / 100) + '</text>';
+            '<text x="' + labelX.toFixed(1) + '" y="20" text-anchor="middle" fill="' + cgColor + '" font-size="12" font-weight="700">CG ' + (Math.round(cg * 100) / 100) + '</text>';
           $('tile-cg').className = 'result-tile ' + (inCG ? 'result-green' : 'result-red');
           if (!inCG || overGW) {
             v.className = 'verdict-line v-red';

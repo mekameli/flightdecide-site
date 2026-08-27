@@ -171,7 +171,7 @@
                 <option value="60">Personal: 60 min</option>
               </select>
             </div>
-            <p class="calc-hint">At normal cruise consumption</p>
+            <p class="calc-hint" id="resv-hint">At normal cruise consumption</p>
           </div>
         </div>
         <div class="tool-visual">
@@ -231,7 +231,7 @@
     <ul>
       <li>Endurance to dry tanks: 38 ÷ 9.5 = <strong>4:00</strong></li>
       <li>Planning endurance after reserve: 4:00 − 0:45 = <strong>3:15</strong></li>
-      <li>Leg burn: 9.5 × 2.5 = <strong>23.8 gallons</strong>, landing with 14.2 gallons</li>
+      <li>Leg burn: 9.5 × 2.5 = <strong>23.8 gallons</strong>, landing with 14.3 gallons</li>
       <li>Margin at landing: 3:15 − 2:30 = <strong>45 minutes</strong> beyond the reserve</li>
     </ul>
     <p>Legal, and reasonable by day. Add an unforecast 15-knot headwind and a 20-minute reroute, and the margin is gone; that is why the calculator flags anything under an hour.</p>
@@ -307,19 +307,37 @@
 
       function fmtHM(min) {
         if (!isFinite(min)) return '–';
-        const neg = min < 0;
         const t = Math.round(Math.abs(min));
+        const neg = min < 0 && t > 0;
         const h = Math.floor(t / 60), m = t % 60;
         return (neg ? '-' : '') + h + ':' + String(m).padStart(2, '0');
       }
       $('resv').addEventListener('change', compute);
+      ['rate', 'fuel', 'leg'].forEach(function (id) {
+        $(id).addEventListener('input', compute);
+      });
 
       function compute() {
         const rate = parseFloat($('rate').value);
         const fuel = parseFloat($('fuel').value);
         const leg = parseFloat($('leg').value);
         const resv = parseFloat($('resv').value);
-        if (isNaN(rate) || isNaN(fuel) || rate <= 0) return;
+        if (isNaN(rate) || isNaN(fuel) || rate <= 0) {
+          ['end-val', 'plan-val', 'burn-val', 'margin-val'].forEach(function (id) {
+            $(id).textContent = '–';
+          });
+          $('plan-note').textContent = 'after reserve';
+          $('tile-margin').className = 'result-tile';
+          $('weight-note').textContent = '';
+          $('resv-hint').textContent = 'At normal cruise consumption';
+          $('fbars').innerHTML =
+            '<rect x="10" y="55" width="280" height="40" rx="6" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>';
+          $('flabels').innerHTML = '';
+          const v0 = $('verdict');
+          v0.className = 'verdict-line v-dim';
+          v0.textContent = 'Enter your numbers to see the margin.';
+          return;
+        }
 
         const endMin = fuel / rate * 60;
         const planMin = endMin - resv;
@@ -338,6 +356,7 @@
 
         // fuel bar: leg burn | margin | reserve (of total usable)
         const resGal = rate * resv / 60;
+        $('resv-hint').textContent = resv + ' min = ' + (Math.round(resGal * 10) / 10) + ' gal at this flow';
         const burnGal = hasLeg ? Math.min(burn, fuel) : 0;
         const marginGal = Math.max(fuel - burnGal - resGal, 0);
         const scale = 280 / Math.max(fuel, burnGal + resGal, 1);

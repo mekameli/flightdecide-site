@@ -182,7 +182,10 @@
           </div>
         </div>
         <div class="tool-visual">
-          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
+          <svg id="skychart" viewBox="0 0 300 190" width="300" height="190" role="img" aria-label="Side view of the estimated cumulus cloud base and freezing level above the field">
+            <g id="sky"></g>
+          </svg>
+          <div class="calc-results" aria-live="polite">
             <div class="result-tile" id="tile-spread">
               <span class="result-label">Spread</span>
               <span class="result-value" id="spread-val">&ndash;</span>
@@ -302,20 +305,60 @@
       const $ = (id) => document.getElementById(id);
       const fmt = (n) => Math.round(n).toLocaleString('en-US');
 
+      // Side view: ground line, cloud at the estimated base (MSL), dashed 0 °C line
+      function drawSky(e, msl, frz, sev) {
+        const g = $('sky');
+        if (msl === null) {
+          g.innerHTML = '<line x1="20" y1="160" x2="280" y2="160" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>';
+          return;
+        }
+        const lo = e - 200;
+        let hi = Math.max(msl, frz !== null ? frz : lo, e + 1500);
+        hi += (hi - lo) * 0.3;
+        const y = (a) => 180 - (a - lo) / (hi - lo) * 160;
+        const gy = y(e), by = y(msl);
+        let s = '<line x1="20" y1="' + gy.toFixed(1) + '" x2="280" y2="' + gy.toFixed(1) + '" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>';
+        s += '<text x="24" y="' + Math.min(186, gy + 14).toFixed(1) + '" font-size="12" fill="#94A3B8">Field ' + fmt(e) + ' ft</text>';
+        s += '<g fill="#94A3B8" fill-opacity="0.85">' +
+             '<ellipse cx="100" cy="' + (by - 11).toFixed(1) + '" rx="32" ry="12"/>' +
+             '<ellipse cx="135" cy="' + (by - 19).toFixed(1) + '" rx="28" ry="13"/>' +
+             '<ellipse cx="165" cy="' + (by - 10).toFixed(1) + '" rx="30" ry="11"/></g>';
+        s += '<line x1="68" y1="' + by.toFixed(1) + '" x2="197" y2="' + by.toFixed(1) + '" stroke="' + sev + '" stroke-width="2"/>';
+        s += '<text x="204" y="' + (by + 4).toFixed(1) + '" font-size="12" fill="#F0F0F5" font-weight="650">' + fmt(msl) + ' ft</text>';
+        if (frz !== null && frz > e) {
+          const fy = y(frz);
+          s += '<line x1="20" y1="' + fy.toFixed(1) + '" x2="280" y2="' + fy.toFixed(1) + '" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="6 5"/>';
+          s += '<text x="24" y="' + Math.max(12, fy - 6).toFixed(1) + '" font-size="12" fill="#3B82F6">0 °C ' + fmt(frz) + ' ft</text>';
+        }
+        g.innerHTML = s;
+      }
+
       function compute() {
         const t = parseFloat($('temp').value);
         const d = parseFloat($('dew').value);
         const e = parseFloat($('elev').value) || 0;
         const v = $('verdict');
-        if (isNaN(t) || isNaN(d)) return;
+        if (isNaN(t) || isNaN(d)) {
+          $('spread-val').textContent = '–';
+          $('agl-val').textContent = '–';
+          $('msl-val').textContent = '–';
+          $('frz-val').textContent = '–';
+          $('frz-note').textContent = 'ft MSL, approximate';
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Enter temperature and dew point to see the estimate.';
+          drawSky(0, null, null, '');
+          return;
+        }
 
         if (d > t) {
           $('spread-val').textContent = '–';
           $('agl-val').textContent = '–';
           $('msl-val').textContent = '–';
           $('frz-val').textContent = '–';
+          $('frz-note').textContent = 'ft MSL, approximate';
           v.className = 'verdict-line v-red';
           v.textContent = 'Dew point above temperature: check the numbers.';
+          drawSky(0, null, null, '');
           return;
         }
 
@@ -333,6 +376,9 @@
           $('frz-val').textContent = fmt(t / 2 * 1000 + e) + ' ft';
           $('frz-note').textContent = 'ft MSL, approximate';
         }
+
+        const sev = spread <= 1 ? '#EF4444' : spread <= 3 ? '#EAB308' : '#22C55E';
+        drawSky(e, msl, t <= 0 ? null : t / 2 * 1000 + e, sev);
 
         if (spread <= 1) {
           v.className = 'verdict-line v-red';
@@ -356,12 +402,15 @@
       // METAR prefill: temperature/dew point group (22/09, M02/M05)
       $('metar').addEventListener('input', function () {
         const m = String($('metar').value).toUpperCase().match(/\b(M?\d{2})\/(M?\d{2})\b/);
-        if (!m) return;
+        if (!m) {
+          $('metar-note').textContent = 'Reads the temperature/dew point group (22/09, M02/M05).';
+          return;
+        }
         const parse = (s) => s.charAt(0) === 'M' ? -parseInt(s.slice(1), 10) : parseInt(s, 10);
         $('temp').value = parse(m[1]);
         $('dew').value = parse(m[2]);
         $('metar-note').textContent = 'Temperature ' + parse(m[1]) + ' °C, dew point ' + parse(m[2]) + ' °C read from the METAR.';
-        compute();
+        ['temp', 'dew'].forEach((id) => $(id).dispatchEvent(new Event('input', { bubbles: true })));
       });
     })();
   </script>

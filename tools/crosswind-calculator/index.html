@@ -265,7 +265,7 @@
         <tr><td>60° or more ("top of the hour")</td><td>all of it</td></tr>
       </tbody>
     </table></div>
-    <p>It slightly overestimates, which is the right direction to err for a go/no-go call on the runway.</p>
+    <p>It overestimates near 45° and slightly underestimates at small angles, so run the exact numbers when the call is close.</p>
 
     <h2>Demonstrated crosswind is not a limit, but it is a reference</h2>
     <p>The "maximum demonstrated crosswind component" in your POH is what a certification test pilot actually flew, typically about 0.2 × V<sub>S0</sub>. Unless your POH lists it as a limitation, exceeding it is legal. But the airplane has not been shown to be controllable there, and you are the test pilot. Typical published values (always verify in <em>your</em> POH, they vary by model year):</p>
@@ -332,7 +332,7 @@
       <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
-    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Airplane Flying Handbook</em> (FAA-H-8083-3C), Ch. 9; 14 CFR §23.2165. Last reviewed: July 17, 2026.</p>
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Airplane Flying Handbook</em> (FAA-H-8083-3C), Ch. 9; 14 CFR §23.2135. Last reviewed: July 17, 2026.</p>
 
   </div>
 
@@ -387,7 +387,22 @@
         const wgst = parseFloat($('wgst').value);
         const xmax = parseFloat($('xmax').value);
         try { if (!isNaN(xmax)) localStorage.setItem('fd-crosswind-max', xmax); } catch (e) {}
-        if (isNaN(rwy) || isNaN(wdir) || isNaN(wspd)) return;
+        if (isNaN(rwy) || isNaN(wdir) || isNaN(wspd)) {
+          $('head-label').textContent = 'Headwind';
+          $('head-val').textContent = '–';
+          $('tile-head').className = 'result-tile';
+          $('cross-val').textContent = '–';
+          $('cross-note').textContent = 'steady';
+          $('tile-cross').className = 'result-tile result-blue';
+          $('gust-val').textContent = '–';
+          $('tile-gust').className = 'result-tile result-amber';
+          $('tile-gust').style.display = 'none';
+          $('angle-note').textContent = '';
+          const v = $('verdict');
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Enter the wind to see your components.';
+          return;
+        }
 
         // rotate the diagram
         $('rwyGroup').style.transform = 'rotate(' + (rwy % 360) + 'deg)';
@@ -455,7 +470,12 @@
 
         if (head < 0) {
           v.className = 'verdict-line v-red';
-          v.textContent = 'Tailwind component ' + Math.round(-head) + ' kt. Consider the opposite runway.';
+          if (!isNaN(xmax) && xmax > 0 && worst > xmax) {
+            v.textContent = label + ' ' + Math.round(worst) + ' kt exceeds your ' + Math.round(xmax) +
+              ' kt maximum, with a ' + Math.round(-head) + ' kt tailwind. Consider the opposite runway.';
+          } else {
+            v.textContent = 'Tailwind component ' + Math.round(-head) + ' kt. Consider the opposite runway.';
+          }
         }
       }
 
@@ -478,12 +498,15 @@
       $('metar').addEventListener('input', function () {
         const w = FD.parseMetarWind($('metar').value);
         if (!w) return;
-        if (w.dir !== null) $('wdir').value = w.dir;
+        const changed = [];
+        if (w.dir !== null) { $('wdir').value = w.dir; changed.push('wdir'); }
         $('wspd').value = w.speed;
-        if (w.gust) $('wgst').value = w.gust;
+        changed.push('wspd');
+        if (w.gust) { $('wgst').value = w.gust; } else { $('wgst').value = ''; }
+        changed.push('wgst');
         $('metar-note').textContent = 'Wind set to ' + (w.dir === null ? 'variable' : w.dir + '\u00B0') +
           ' at ' + w.speed + (w.gust ? ' gusting ' + w.gust : '') + ' kt. Remember: METAR direction is true.';
-        compute();
+        changed.forEach((id) => $(id).dispatchEvent(new Event('input', { bubbles: true })));
       });
     })();
 

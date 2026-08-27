@@ -148,7 +148,7 @@
             <label for="ialt">Indicated altitude (ft)</label>
             <div class="stepper" data-step="500">
               <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
-              <input type="number" id="ialt" inputmode="numeric" min="-1000" max="45000" step="100" value="8500" />
+              <input type="number" id="ialt" inputmode="numeric" min="-1000" max="36000" step="100" value="8500" />
               <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">What the altimeter reads at your cruise altitude</p>
@@ -233,7 +233,7 @@
       <li>TAS = 125 ÷ √0.78 ≈ <strong>141 knots</strong></li>
       <li>Mach = 141 ÷ 638 (speed of sound at -5 °C) ≈ <strong>0.22</strong></li>
     </ul>
-    <p>That 16-knot difference is not academic: over a 300 NM leg it changes the no-wind time by about 20 minutes, which is fuel you either have or do not.</p>
+    <p>That 16-knot difference is not academic: over a 300 NM leg it changes the no-wind time by about 17 minutes, which is fuel you either have or do not.</p>
 
     <span class="section-label" style="margin-top:44px">Common Questions</span>
     <div class="faq-list">
@@ -305,7 +305,24 @@
         const ialt = parseFloat($('ialt').value);
         const baro = parseFloat($('baro').value);
         const oat = parseFloat($('oat').value);
-        if (isNaN(cas) || isNaN(ialt) || isNaN(baro) || isNaN(oat)) return;
+        const v = $('verdict');
+
+        function reset(message) {
+          $('tas-val').textContent = '–';
+          $('mach-val').textContent = '–';
+          $('pa-val').textContent = '–';
+          $('da-val').textContent = '–';
+          $('bars').innerHTML = '';
+          $('barlabels').innerHTML = '';
+          $('isa-note').textContent = '';
+          v.className = 'verdict-line v-dim';
+          v.textContent = message;
+        }
+
+        if (isNaN(cas) || isNaN(ialt) || isNaN(baro) || isNaN(oat) || cas <= 0) {
+          reset('Enter your cruise numbers to see TAS.');
+          return;
+        }
 
         // pressure altitude (exact standard-atmosphere form)
         const palt = ialt + 145442.16 * (1 - Math.pow(baro / P0, 0.190263));
@@ -319,10 +336,15 @@
         const mach = Math.sqrt(5 * (Math.pow(qc / (delta * P0) + 1, 2 / 7) - 1));
         const tas = mach * A0 * Math.sqrt(T / T0);
 
-        if (isFinite(tas)) { FD.shared.publish('tasKt', tas, 'true-airspeed', 'True Airspeed'); }
+        if (sigma <= 0 || !isFinite(tas)) {
+          reset('Those inputs are outside the standard-atmosphere model.');
+          return;
+        }
+
+        FD.shared.publish('tasKt', tas, 'true-airspeed', 'True Airspeed');
 
         $('tas-val').textContent = Math.round(tas) + ' kt';
-        $('mach-val').textContent = mach.toFixed(3);
+        $('mach-val').textContent = mach.toFixed(2);
         $('pa-val').textContent = Math.round(palt).toLocaleString('en-US');
         $('da-val').textContent = Math.round(dalt).toLocaleString('en-US');
 
@@ -344,17 +366,13 @@
           '<text x="10" y="108" fill="#93C5FD">TAS ' + Math.round(tas) + ' kt</text>' +
           '<text x="10" y="172" fill="#64748B" font-weight="500">+' + Math.round((tas / cas - 1) * 100) + '% over indicated</text>';
 
-        const v = $('verdict');
         const pct = (tas / cas - 1) * 100;
         v.className = 'verdict-line v-green';
         v.textContent = 'File ' + Math.round(tas) + ' kt TAS. Your indicator under-reads by ' + Math.round(pct) +
           '% up here' + (dev > 10 ? ', more than usual because of the warm air.' : '.');
-        if (sigma <= 0 || !isFinite(tas)) {
-          v.className = 'verdict-line v-dim';
-          v.textContent = 'Those inputs are outside the standard-atmosphere model.';
-        }
       }
 
+      ['cas', 'ialt', 'baro', 'oat'].forEach((id) => $(id).addEventListener('input', compute));
       compute();
 
       // Ambient input publishers (publish only on user interaction, not on page load)

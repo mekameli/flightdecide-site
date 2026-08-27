@@ -50,7 +50,7 @@
             "name": "How do you determine which holding pattern entry to use?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Compare your heading at the fix with the inbound holding course. For standard right turns: within about 110° either side of the inbound course toward the direct sector, fly a direct entry; approaching within the 70° wedge on the holding side of the outbound course, fly a teardrop; approaching within the 110° wedge on the non-holding side, fly a parallel entry. The sectors come from AIM 5-3-8, and within about 5° of a boundary either adjacent entry is acceptable."
+              "text": "Compare your heading at the fix with the inbound holding course. For standard right turns: approaching within the 180° direct sector facing the hold (about 70° on one side of the inbound course and 110° on the other), fly a direct entry; approaching within the 70° wedge on the holding side of the outbound course, fly a teardrop; approaching within the 110° wedge on the non-holding side, fly a parallel entry. The sectors come from AIM 5-3-8, and within about 5° of a boundary either adjacent entry is acceptable."
             }
           },
           {
@@ -159,7 +159,7 @@
             </select>
             <p class="calc-hint">Left turns only when the clearance or chart says so</p>
           </div>
-          <div class="verdict-line v-dim" id="next-steps" style="margin-top:6px">&nbsp;</div>
+          <div class="verdict-line v-dim" id="next-steps" aria-live="polite" style="margin-top:6px">&nbsp;</div>
         </div>
         <div class="tool-visual">
           <svg id="compass" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Holding pattern entry sector diagram">
@@ -320,6 +320,15 @@
           ' Z" fill="' + color + '"/>';
       }
 
+      // single-letter label at a wedge's angular midpoint (D / T / P)
+      function wedgeLabel(a1, a2, txt) {
+        const sweep = ((a2 - a1) % 360 + 360) % 360;
+        const mid = rad(a1 + sweep / 2), r = 118;
+        const x = 150 + r * Math.sin(mid), y = 150 - r * Math.cos(mid);
+        return '<text x="' + x.toFixed(1) + '" y="' + (y + 4).toFixed(1) +
+          '" text-anchor="middle" fill="#94A3B8" font-size="12" font-weight="700">' + txt + '</text>';
+      }
+
       // racetrack path for the hold: inbound leg arrives at the fix (center) on `inb`
       function drawRacetrack(inb, right) {
         const cx = 150, cy = 150, leg = 62, rr = 20;
@@ -354,7 +363,18 @@
         const hdg = parseFloat($('hdg').value);
         const radial = parseFloat($('radial').value);
         const right = $('turns').value === 'R';
-        if (isNaN(hdg) || isNaN(radial)) return;
+        if (isNaN(hdg) || isNaN(radial)) {
+          $('entry-val').textContent = '–'; $('inbound-val').textContent = '–'; $('outbound-val').textContent = '–';
+          $('entry-note').textContent = '';
+          const v0 = $('verdict');
+          v0.className = 'verdict-line v-dim';
+          v0.textContent = 'Enter your heading and the radial.';
+          const ns0 = $('next-steps');
+          ns0.className = 'verdict-line v-dim';
+          ns0.textContent = ' ';
+          $('sectors').innerHTML = '';
+          return;
+        }
 
         const inb = norm360(radial + 180);
         const outb = norm360(radial);
@@ -408,7 +428,10 @@
           : wedge(A(110), A(290), 140, 'rgba(34,197,94,0.16)') +
             wedge(A(180), A(110), 140, 'rgba(234,179,8,0.18)') +
             wedge(A(290), A(180), 140, 'rgba(239,68,68,0.15)');
-        $('sectors').innerHTML = sect;
+        const labels = right
+          ? wedgeLabel(A(290), A(110), 'D') + wedgeLabel(A(110), A(180), 'T') + wedgeLabel(A(180), A(290), 'P')
+          : wedgeLabel(A(110), A(290), 'D') + wedgeLabel(A(180), A(110), 'T') + wedgeLabel(A(290), A(180), 'P');
+        $('sectors').innerHTML = sect + labels;
 
         $('hdgGroup').style.transform = 'rotate(' + (hdg % 360) + 'deg)';
         drawRacetrack(inb, right);

@@ -221,7 +221,7 @@
     <ul>
       <li>Leg 1: 92.3 NM, course 288°, wind 350° at 3 kt → GS 109 kt, 51:00, ETA 12:51:00</li>
       <li>Leg 2: 57.3 NM, course 170°, wind 200° at 6 kt → GS 105 kt, 32:49, ETA 13:23:49</li>
-      <li>Leg 3: 84.2 NM, course 069°, wind 140° at 5 kt → GS 108 kt, 46:40, ETA 14:10:29</li>
+      <li>Leg 3: 84.2 NM, course 069°, wind 140° at 5 kt → GS 108 kt, 46:39, ETA 14:10:29</li>
       <li><strong>Totals: 233.8 NM, 2:10:29 enroute, 20.7 gallons</strong></li>
     </ul>
     <p>Those are the same answers the flight-computer manual publishes, to the second.</p>
@@ -313,10 +313,14 @@
         return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
       }
       function norm360(d) { d = Math.round(d) % 360; if (d <= 0) d += 360; return d; }
+      function esc(s) {
+        return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      }
 
       function legHTML(i, leg) {
         return '<div class="row-head">' +
-          '<span class="row-title"><input type="text" value="' + (leg.name || 'Leg ' + (i + 1)).replace(/"/g, '') + '" data-i="' + i + '" data-k="name" aria-label="Leg name" /></span>' +
+          '<span class="row-title"><input type="text" value="' + esc(leg.name || 'Leg ' + (i + 1)) + '" data-i="' + i + '" data-k="name" aria-label="Leg name" /></span>' +
           '<button type="button" class="btn-remove" data-remove="' + i + '">Remove</button></div>' +
           '<div class="row-grid">' +
           [['dist', 'Distance (NM)', '0.1'], ['tc', 'True course (°)', '1'], ['wd', 'Wind from (° true)', '1'], ['ws', 'Wind speed (kt)', '1']].map(function (f) {
@@ -362,7 +366,12 @@
           $('save-status').className = 'save-status saved';
         } catch (e) {}
 
-        if (isNaN(tas) || tas <= 0 || legs.length === 0) { body.innerHTML = ''; return; }
+        if (isNaN(tas) || tas <= 0 || legs.length === 0) {
+          body.innerHTML = '';
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Add legs to build the nav log.';
+          return;
+        }
 
         let clock = NaN;
         if (dep) {
@@ -372,16 +381,16 @@
         let rows = '', totDist = 0, totSec = 0, totFuel = 0, bad = false;
 
         legs.forEach(function (leg, i) {
-          const name = leg.name || 'Leg ' + (i + 1);
+          const name = esc(leg.name || 'Leg ' + (i + 1));
           if (isNaN(leg.dist) || isNaN(leg.tc) || isNaN(leg.wd) || isNaN(leg.ws)) {
             rows += '<tr><td>' + name + '</td><td class="num" colspan="5">Fill in this leg</td></tr>';
-            bad = true; return;
+            bad = true; clock = NaN; return;
           }
           const beta = rad(leg.wd - leg.tc);
           const s = leg.ws * Math.sin(beta) / tas;
           if (Math.abs(s) >= 1) {
             rows += '<tr><td>' + name + '</td><td class="num" colspan="5">Wind exceeds TAS: no heading holds it</td></tr>';
-            bad = true; return;
+            bad = true; clock = NaN; return;
           }
           const wca = Math.asin(s);
           const th = leg.tc + wca * 180 / Math.PI;
@@ -389,7 +398,7 @@
           const gs = tas * Math.cos(wca) - leg.ws * Math.cos(beta);
           if (gs <= 0) {
             rows += '<tr><td>' + name + '</td><td class="num" colspan="5">Groundspeed is zero or negative: no progress</td></tr>';
-            bad = true; return;
+            bad = true; clock = NaN; return;
           }
           const sec = leg.dist / gs * 3600;
           const fuel = isNaN(rate) ? NaN : rate * sec / 3600;
@@ -407,7 +416,7 @@
           '<td class="num"></td><td class="num"></td>' +
           '<td class="num">' + fmtHMS(totSec) + '</td>' +
           '<td class="num">' + (isNaN(clock) ? '–' : fmtClock(clock)) + '</td>' +
-          '<td class="num">' + totFuel.toFixed(1) + ' gal</td></tr>';
+          '<td class="num">' + (isNaN(rate) ? '–' : totFuel.toFixed(1) + ' gal') + '</td></tr>';
         body.innerHTML = rows;
 
         if (bad) {
@@ -415,8 +424,9 @@
           v.textContent = 'Some legs are incomplete; totals cover the solved legs only.';
         } else {
           v.className = 'verdict-line v-green';
-          v.textContent = 'Trip: ' + (Math.round(totDist * 10) / 10) + ' NM, ' + fmtHMS(totSec) + ' enroute, ' +
-            totFuel.toFixed(1) + ' gal before reserve' + (isNaN(clock) ? '.' : ', arriving ' + fmtClock(clock) + '.');
+          v.textContent = 'Trip: ' + (Math.round(totDist * 10) / 10) + ' NM, ' + fmtHMS(totSec) + ' enroute' +
+            (isNaN(rate) ? '' : ', ' + totFuel.toFixed(1) + ' gal before reserve') +
+            (isNaN(clock) ? '.' : ', arriving ' + fmtClock(clock) + '.');
         }
       }
 

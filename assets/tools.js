@@ -19,8 +19,14 @@
         input.value = Math.round(v * 100) / 100;
         input.dispatchEvent(new Event('input', { bubbles: true }));
       }
+      const fieldLabel = (function () {
+        const host = st.closest('.calc-field');
+        const l = host && host.querySelector('label');
+        return l ? l.textContent.trim().replace(/\s+/g, ' ') : '';
+      })();
       st.querySelectorAll('button').forEach(function (btn) {
         const dir = btn.classList.contains('step-up') ? 1 : -1;
+        if (fieldLabel) btn.setAttribute('aria-label', (dir > 0 ? 'Increase ' : 'Decrease ') + fieldLabel);
         let t = null, iv = null;
         function stop() { clearTimeout(t); clearInterval(iv); t = iv = null; }
         btn.addEventListener('pointerdown', function (e) {
@@ -31,7 +37,11 @@
         ['pointerup', 'pointerleave', 'pointercancel'].forEach(function (ev) {
           btn.addEventListener(ev, stop);
         });
-        btn.addEventListener('click', function (e) { e.preventDefault(); }); // pointerdown already bumped
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          // keyboard activation (Enter/Space) never went through pointerdown
+          if (e.detail === 0) bump(dir);
+        });
       });
     });
   }

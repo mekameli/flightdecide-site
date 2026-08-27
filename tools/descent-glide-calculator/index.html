@@ -25,6 +25,11 @@
   <meta name="twitter:description" content="When to start down, what rate to fly, and how far you can glide, with the 3-degree rule and best-glide numbers." />
   <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
   <link rel="stylesheet" href="/assets/pages.css" />
+  <style>
+    /* A prefill chip on a solved-output field would be overwritten on the next
+       compute, so hide it while the field is an output. */
+    .calc-field.is-output .prefill-chip { display: none; }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -183,7 +188,8 @@
             <line id="prof-desc" x1="110" y1="40" x2="270" y2="148" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
             <circle id="prof-tod" cx="110" cy="40" r="5" fill="#F0F0F5"/>
             <text id="prof-tod-label" x="110" y="26" text-anchor="middle" fill="#F0F0F5" font-size="12" font-weight="700">TOD</text>
-            <text id="prof-angle" x="200" y="120" fill="#94A3B8" font-size="12" font-weight="600"></text>
+            <text id="prof-angle" x="290" y="24" text-anchor="end" fill="#94A3B8" font-size="12" font-weight="600"></text>
+            <text x="290" y="166" text-anchor="end" fill="#64748B" font-size="9">vertical scale exaggerated</text>
           </svg>
           <div class="verdict-line v-dim" id="verdict" aria-live="polite">Enter the descent to see the profile.</div>
         </div>
@@ -343,16 +349,65 @@
         });
       });
 
+      // profile drawing: airport fixed near the right edge, TOD placed
+      // proportionally on a rounded axis span, slope from the actual angle
+      // with a fixed vertical exaggeration (scaled down only if it would
+      // leave the canvas). Pass null to reset to the neutral profile.
+      function drawProfile(p) {
+        const cruise = $('prof-cruise'), desc = $('prof-desc');
+        const tod = $('prof-tod'), lbl = $('prof-tod-label');
+        if (!p) {
+          cruise.setAttribute('x2', '110');
+          cruise.setAttribute('y1', '40'); cruise.setAttribute('y2', '40');
+          desc.setAttribute('x1', '110'); desc.setAttribute('y1', '40');
+          desc.setAttribute('stroke', '#64748B');
+          tod.setAttribute('cx', '110'); tod.setAttribute('cy', '40');
+          lbl.setAttribute('x', '110'); lbl.setAttribute('y', '26');
+          $('prof-angle').textContent = '';
+          return;
+        }
+        const span = Math.max(Math.ceil(p.dist / 10) * 10, 10); // NM shown on the axis
+        const todX = 270 - (p.dist / span) * 250;
+        const run = 270 - todX; // px of descent
+        let ex = 12; // vertical exaggeration factor
+        let drop = run * Math.tan(p.angle * Math.PI / 180) * ex;
+        if (drop > 118) { drop = 118; } // keep the cruise line on the canvas
+        if (drop < 20) { drop = 20; }   // keep shallow paths legible
+        const topY = 150 - drop;
+        cruise.setAttribute('x2', todX.toFixed(1));
+        cruise.setAttribute('y1', topY.toFixed(1)); cruise.setAttribute('y2', topY.toFixed(1));
+        desc.setAttribute('x1', todX.toFixed(1)); desc.setAttribute('y1', topY.toFixed(1));
+        desc.setAttribute('stroke', p.color);
+        tod.setAttribute('cx', todX.toFixed(1)); tod.setAttribute('cy', topY.toFixed(1));
+        lbl.setAttribute('x', todX.toFixed(1)); lbl.setAttribute('y', (topY - 14).toFixed(1));
+        $('prof-angle').textContent = p.grad + ' ft/NM';
+      }
+
+      // clear every output and show a prompt (or a plain message) in the verdict
+      function resetOutputs(msg) {
+        $('main-val').innerHTML = '&ndash;';
+        $('main-note').textContent = '';
+        $('main-label').textContent = solve === 'tod' ? 'Start down' : 'Required rate';
+        $('time-val').innerHTML = '&ndash;';
+        $('grad-val').innerHTML = '&ndash;';
+        $('grad-note').textContent = 'ft per NM';
+        drawProfile(null);
+        const v = $('verdict');
+        v.className = 'verdict-line v-dim';
+        v.textContent = msg || 'Enter the descent to see the profile.';
+      }
+
       function compute() {
         const alt = parseFloat($('alt').value);
         const gs = parseFloat($('gs').value);
         let rate = parseFloat($('rate').value);
         let dist = parseFloat($('dist').value);
-        if (isNaN(alt) || isNaN(gs) || alt <= 0 || gs <= 0) return;
+        if (isFinite(alt) && alt <= 0) { resetOutputs('Already at or below the target altitude.'); return; }
+        if (isNaN(alt) || isNaN(gs) || gs <= 0) { resetOutputs(); return; }
 
         let mins;
         if (solve === 'tod') {
-          if (isNaN(rate) || rate <= 0) return;
+          if (isNaN(rate) || rate <= 0) { resetOutputs(); return; }
           mins = alt / rate;
           dist = gs * mins / 60;
           $('dist').value = Math.round(dist * 10) / 10;
@@ -360,12 +415,12 @@
           $('main-val').textContent = Math.round(dist * 10) / 10 + ' NM';
           $('main-note').textContent = 'before the airport or fix, at ' + Math.round(rate) + ' fpm';
         } else {
-          if (isNaN(dist) || dist <= 0) return;
+          if (isNaN(dist) || dist <= 0) { resetOutputs(); return; }
           mins = dist / gs * 60;
-          rate = alt / mins;
-          $('rate').value = Math.round(rate / 10) * 10;
+          rate = Math.round(alt / mins);
+          $('rate').value = rate;
           $('main-label').textContent = 'Required rate';
-          $('main-val').textContent = Math.round(rate) + ' fpm';
+          $('main-val').textContent = rate + ' fpm';
           $('main-note').textContent = 'to lose ' + Math.round(alt).toLocaleString('en-US') + ' ft in ' + Math.round(dist * 10) / 10 + ' NM';
         }
         const grad = alt / dist;
@@ -374,14 +429,8 @@
         $('grad-val').textContent = Math.round(grad);
         $('grad-note').textContent = 'ft per NM (~' + (Math.round(angle * 10) / 10) + '°)';
 
-        // profile drawing: TOD position scales with distance vs a 40 NM window
-        const win = Math.max(dist * 1.3, 10);
-        const todX = 270 - (dist / win) * 250;
-        $('prof-cruise').setAttribute('x2', todX.toFixed(1));
-        $('prof-desc').setAttribute('x1', todX.toFixed(1));
-        $('prof-tod').setAttribute('cx', todX.toFixed(1));
-        $('prof-tod-label').setAttribute('x', todX.toFixed(1));
-        $('prof-angle').textContent = Math.round(grad) + ' ft/NM';
+        const color = rate > 1000 ? '#EF4444' : rate > 700 ? '#F59E0B' : '#22C55E';
+        drawProfile({ dist: dist, angle: angle, grad: Math.round(grad), color: color });
 
         const v = $('verdict');
         if (rate > 1000) {
@@ -406,7 +455,11 @@
       function glide() {
         const ratio = parseFloat($('g-ratio').value);
         const agl = parseFloat($('g-agl').value);
-        if (isNaN(ratio) || isNaN(agl) || ratio <= 0 || agl < 0) return;
+        if (isNaN(ratio) || isNaN(agl) || ratio <= 0 || agl < 0) {
+          $('g-dist').innerHTML = '&ndash;';
+          $('g-time').innerHTML = '&ndash;';
+          return;
+        }
         const nm = ratio * agl / 6076.1;
         $('g-dist').textContent = (Math.round(nm * 10) / 10) + ' NM';
         // time at ~70 kt best glide along the slope ≈ ground distance / 70

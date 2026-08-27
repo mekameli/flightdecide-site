@@ -52,6 +52,7 @@
       cursor: pointer;
     }
     .btn-secondary:hover { color: var(--text); border-color: var(--text-muted); }
+    #pm-clear.confirm-clear { color: #f87171; border-color: #f87171; }
     @media print {
       .calc-field-cell { background: #fff; color: #111; border-color: #999; }
     }
@@ -220,8 +221,8 @@
           </tr>
           <tr>
             <td><strong>Total wind / gust (kt)</strong></td>
-            <td><input class="calc-field-cell" type="text" id="pm-wind-day" inputmode="numeric" placeholder="e.g. 20G25" /></td>
-            <td><input class="calc-field-cell" type="text" id="pm-wind-night" inputmode="numeric" placeholder="e.g. 15G20" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-wind-day" placeholder="e.g. 20G25" /></td>
+            <td><input class="calc-field-cell" type="text" id="pm-wind-night" placeholder="e.g. 15G20" /></td>
             <td><input class="calc-field-cell" type="text" id="pm-wind-ifr" placeholder="—" /></td>
           </tr>
         </tbody>
@@ -286,6 +287,8 @@
       <p class="calc-hint no-print" style="margin-top:10px">Entries save automatically in this browser (nothing is uploaded anywhere). Print a copy and keep it with your kneeboard or flight bag.</p>
     </div>
 
+    <div class="no-print">
+
     <h2>Why set the numbers before the pressure shows up</h2>
     <p>Every marginal-weather accident report reads the same way in hindsight: the pilot made the go decision at the airport, with passengers loaded, a schedule slipping, and the weather "probably good enough." Under that kind of pressure, human judgment reliably bends toward go. Personal minimums move the decision to a moment when nothing is at stake: your kitchen table, months in advance. On the day of the flight the question stops being "do I feel okay about this?" and becomes "is the ceiling above my number or not?" A number cannot be negotiated with by a disappointed passenger.</p>
     <p>They also close the gap between what is legal and what is smart for <em>you</em>. Basic VFR minimums make no promise that a 1,200-ft ceiling and 3 miles of haze are flyable by a 90-hour private pilot who hasn't flown in six weeks. Your worksheet numbers should sit well above the regulatory floor and below the airplane's demonstrated capability, at the level of your actual recent proficiency.</p>
@@ -342,6 +345,8 @@
       <h2>Your minimums, checked automatically</h2>
       <p>FlightDecide compares the actual forecast for your flight window against risk thresholds across eight categories (winds, ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B) and tells you exactly which of your numbers today's forecast busts, before you drive to the airport.</p>
       <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
     </div>
 
     <p class="advisory-note">Educational worksheet for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Risk Management Handbook</em> (FAA-H-8083-2A); FAA Personal Minimums Worksheet and "Getting the Maximum from Personal Minimums" (<em>FAA Safety Briefing</em>). Last reviewed: July 17, 2026.</p>
@@ -404,7 +409,27 @@
       });
       restore();
 
-      document.getElementById('pm-clear').addEventListener('click', function () {
+      const clearBtn = document.getElementById('pm-clear');
+      let clearArmed = false;
+      let clearTimer = null;
+
+      function disarmClear() {
+        clearArmed = false;
+        clearTimeout(clearTimer);
+        clearBtn.textContent = 'Clear worksheet';
+        clearBtn.classList.remove('confirm-clear');
+      }
+
+      clearBtn.addEventListener('click', function () {
+        if (!clearArmed) {
+          clearArmed = true;
+          clearBtn.textContent = 'Tap again to clear all';
+          clearBtn.classList.add('confirm-clear');
+          clearTimeout(clearTimer);
+          clearTimer = setTimeout(disarmClear, 4000);
+          return;
+        }
+        disarmClear();
         fields.forEach(function (el) {
           if (el.type === 'checkbox') { el.checked = false; } else { el.value = ''; }
         });

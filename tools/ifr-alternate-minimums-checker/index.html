@@ -169,7 +169,7 @@
           </div>
           <div class="calc-field">
             <label for="dvis">Forecast visibility at destination (SM)</label>
-            <div class="stepper" data-step="1">
+            <div class="stepper" data-step="0.25">
               <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="dvis" inputmode="decimal" min="0" max="30" step="0.25" value="3" />
               <button type="button" class="step-up" aria-label="Increase">+</button>
@@ -177,7 +177,7 @@
           </div>
         </div>
         <div class="tool-visual">
-          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
+          <div class="calc-results" style="grid-template-columns:1fr 1fr">
             <div class="result-tile" id="tile-c1">
               <span class="result-label">Ceiling test</span>
               <span class="result-value" id="c1-val">&ndash;</span>
@@ -218,7 +218,7 @@
           </div>
           <div class="calc-field">
             <label for="avis">Forecast visibility at alternate (SM)</label>
-            <div class="stepper" data-step="1">
+            <div class="stepper" data-step="0.25">
               <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
               <input type="number" id="avis" inputmode="decimal" min="0" max="30" step="0.25" value="2" />
               <button type="button" class="step-up" aria-label="Increase">+</button>
@@ -226,7 +226,7 @@
           </div>
         </div>
         <div class="tool-visual">
-          <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
+          <div class="calc-results" style="grid-template-columns:1fr 1fr">
             <div class="result-tile" id="tile-req">
               <span class="result-label">Required forecast</span>
               <span class="result-value" id="req-val">600-2</span>
@@ -353,7 +353,27 @@
         const c = parseFloat($('dceil').value);
         const v = parseFloat($('dvis').value);
         const out = $('verdict1');
-        if (isNaN(c) || isNaN(v)) return;
+
+        if (!iap) {
+          // No approach: the forecast doesn't matter, so keep the tiles neutral.
+          $('c1-val').textContent = isNaN(c) ? '–' : fmt(c) + ' ft';
+          $('v1-val').textContent = isNaN(v) ? '–' : vis(v);
+          $('tile-c1').className = 'result-tile';
+          $('tile-v1').className = 'result-tile';
+          out.className = 'verdict-line v-red';
+          out.textContent = 'Alternate required: the destination has no instrument approach, so the forecast doesn’t matter.';
+          return;
+        }
+
+        if (isNaN(c) || isNaN(v)) {
+          $('c1-val').textContent = '–';
+          $('v1-val').textContent = '–';
+          $('tile-c1').className = 'result-tile';
+          $('tile-v1').className = 'result-tile';
+          out.className = 'verdict-line v-dim';
+          out.textContent = 'Enter the destination forecast.';
+          return;
+        }
 
         const cOk = c >= 2000, vOk = v >= 3;
         $('c1-val').textContent = fmt(c) + ' ft';
@@ -361,10 +381,7 @@
         $('tile-c1').className = 'result-tile ' + (cOk ? 'result-green' : 'result-red');
         $('tile-v1').className = 'result-tile ' + (vOk ? 'result-green' : 'result-red');
 
-        if (!iap) {
-          out.className = 'verdict-line v-red';
-          out.textContent = 'Alternate required: the destination has no instrument approach, so the forecast doesn’t matter.';
-        } else if (cOk && vOk) {
+        if (cOk && vOk) {
           out.className = 'verdict-line v-green';
           out.textContent = 'No alternate required: the 1-2-3 test is met for your window. Filing one anyway is cheap insurance.';
         } else {
@@ -379,13 +396,11 @@
         const c = parseFloat($('aceil').value);
         const v = parseFloat($('avis').value);
         const out = $('verdict2');
-        if (isNaN(c) || isNaN(v)) return;
-
-        $('have-val').textContent = fmt(c) + ' ft / ' + vis(v);
 
         if (type === 'none') {
           $('req-val').textContent = 'VFR';
           $('req-note').textContent = 'from the MEA to the ground';
+          $('have-val').textContent = (isNaN(c) || isNaN(v)) ? '–' : fmt(c) + ' ft / ' + vis(v);
           $('tile-have').className = 'result-tile result-blue';
           out.className = 'verdict-line v-amber';
           out.textContent = 'No approach at the alternate: the forecast must let you descend from the MEA and land in basic VFR. This tool can’t check your MEA, so treat anything short of solid VFR as a no.';
@@ -395,6 +410,16 @@
         const needC = type === 'precision' ? 600 : 800;
         $('req-val').textContent = needC + '-2';
         $('req-note').textContent = 'standard ' + (type === 'precision' ? 'precision' : 'non-precision') + ' minima';
+
+        if (isNaN(c) || isNaN(v)) {
+          $('have-val').textContent = '–';
+          $('tile-have').className = 'result-tile';
+          out.className = 'verdict-line v-dim';
+          out.textContent = 'Enter the alternate forecast.';
+          return;
+        }
+
+        $('have-val').textContent = fmt(c) + ' ft / ' + vis(v);
         const ok = c >= needC && v >= 2;
         $('tile-have').className = 'result-tile ' + (ok ? 'result-green' : 'result-red');
         if (ok) {

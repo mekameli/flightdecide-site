@@ -238,7 +238,7 @@
     <p>Density altitude is pressure altitude corrected for non-standard temperature: the altitude in the standard atmosphere at which the air would be as thin as it is right now at your airport. Your wing, propeller, and normally aspirated engine do not care about the number painted on the airport sign; they care about air density. When the air is hot, the airplane performs as if the airport were much higher, even though your altimeter still reads field elevation on the ramp.</p>
     <p>Two steps get you the number:</p>
     <ul>
-      <li><strong>Pressure altitude</strong> ≈ field elevation + (29.92 − altimeter setting) × 1,000, roughly 1,000 ft per inch. A low-pressure day (29.42) adds about 500 ft; a high-pressure day (30.42) subtracts about 500 ft. This calculator uses the exact standard-atmosphere form, which lands within a few feet of the rule of thumb.</li>
+      <li><strong>Pressure altitude</strong> ≈ field elevation + (29.92 − altimeter setting) × 1,000, roughly 1,000 ft per inch. A low-pressure day (29.42) adds about 500 ft; a high-pressure day (30.42) subtracts about 500 ft. This calculator uses the exact standard-atmosphere form, which stays within about a hundred feet of the rule of thumb across the normal altimeter range.</li>
       <li><strong>Density altitude</strong> ≈ pressure altitude + 120 × (OAT − ISA temp), where <strong>ISA temp</strong> = 15 − 2 × (pressure altitude ÷ 1,000) °C. Every degree warmer than standard adds roughly 120 ft.</li>
     </ul>
     <p>The density-altitude step above is the standard rule-of-thumb formula from the FAA handbooks (120 ft per degree). For pressure altitude this calculator uses the exact standard-atmosphere equation rather than the 1,000-ft-per-inch approximation, so it agrees with the <a href="/tools/true-airspeed-calculator/">true airspeed calculator</a> and the app. A Koch chart or E6B may still read slightly differently, so treat the density-altitude number as a close estimate, not a precise answer.</p>
@@ -263,7 +263,7 @@
     <p>Many AWOS/ASOS broadcasts announce density altitude directly ("density altitude two thousand eight hundred") whenever it is well above field elevation. Listen for it at the end of the broadcast. If it isn't announced, pull the two numbers you need from the METAR: the altimeter setting (the group starting with "A", so <code>A2992</code> is 29.92 inHg) and the temperature (the first half of the temperature/dew-point group, so <code>25/12</code> is 25 °C). Combine those with field elevation in the calculator above and you have it in seconds.</p>
 
     <h2>Bonus: the cloud base estimate</h2>
-    <p>Because this calculator already has the temperature and dew point, it shows the classic cumulus cloud-base estimate when you enter both: rising air cools toward its dew point at about 2.5 &deg;C per 1,000 ft, so <strong>base AGL &asymp; spread &divide; 2.5 &times; 1,000</strong>. A 25 &deg;C day with a 13 &deg;C dew point suggests bases near 4,800 ft AGL. It only works for convective (cumuliform) cloud, and it is an estimate; the METARs and PIREPs win.</p>
+    <p>Because this calculator already has the temperature and dew point, it shows the classic cumulus cloud-base estimate when you enter both: a rising parcel cools at about 3 &deg;C per 1,000 ft while its dew point falls much more slowly, so the temperature/dew-point spread closes at about 2.5 &deg;C per 1,000 ft and <strong>base AGL &asymp; spread &divide; 2.5 &times; 1,000</strong>. A 25 &deg;C day with a 13 &deg;C dew point suggests bases near 4,800 ft AGL. It only works for convective (cumuliform) cloud, and it is an estimate; the METARs and PIREPs win.</p>
 
     <h2>Rules of thumb per 1,000 ft of density altitude</h2>
     <p>Exact numbers belong to your POH, but these directional effects hold for typical normally aspirated GA airplanes:</p>
@@ -362,12 +362,14 @@
       $('metar').addEventListener('input', function () {
         const s = $('metar').value.toUpperCase();
         let hit = [];
+        const changed = [];
         const td = s.match(/(?:^|\s)(M?\d{2})\/(M?\d{2})(?:\s|$)/);
         if (td) {
           const t = parseInt(td[1].replace('M', '-'), 10);
           const d = parseInt(td[2].replace('M', '-'), 10);
           $('oat').value = t;
           $('dew').value = d;
+          changed.push('oat', 'dew');
           hit.push('temperature ' + t + ' \u00B0C, dew point ' + d + ' \u00B0C');
         }
         const a = s.match(/(?:^|\s)A(\d{4})(?:\s|$)/);
@@ -375,16 +377,21 @@
         if (a) {
           const inhg = (parseInt(a[1], 10) / 100).toFixed(2);
           $('altim').value = inhg;
+          changed.push('altim');
           hit.push('altimeter ' + inhg + ' inHg');
         } else if (q) {
           const inhg = (parseInt(q[1], 10) * 0.02953).toFixed(2);
           $('altim').value = inhg;
+          changed.push('altim');
           hit.push('altimeter ' + inhg + ' inHg (from Q' + q[1] + ')');
         }
+        let missing = '';
+        if (td && !a && !q) missing = ' No altimeter group found, altimeter left as entered.';
+        else if (!td && (a || q)) missing = ' No temperature/dew point group found, temperature left as entered.';
         $('metar-note').textContent = hit.length
-          ? 'Prefilled ' + hit.join(' and ') + '. Elevation still comes from you.'
+          ? 'Prefilled ' + hit.join(' and ') + '.' + missing + ' Elevation still comes from you.'
           : 'Reads the temperature/dew point group and altimeter setting. Elevation still comes from you.';
-        compute();
+        changed.forEach((id) => $(id).dispatchEvent(new Event('input', { bubbles: true })));
       });
 
       function drawBars(elev, pa, da) {
@@ -417,7 +424,19 @@
         const altim = parseFloat($('altim').value);
         const oat = parseFloat($('oat').value);
         const dew = parseFloat($('dew').value);
-        if (isNaN(elev) || isNaN(altim) || isNaN(oat)) return;
+        if (isNaN(elev) || isNaN(altim) || isNaN(oat)) {
+          ['pa-val', 'isa-val', 'da-val', 'perf-val'].forEach((id) => { $(id).textContent = '–'; });
+          $('perf-note').textContent = 'vs. field elevation';
+          $('tile-perf').className = 'result-tile';
+          $('tile-cloud').style.display = 'none';
+          $('humid-note').textContent = '';
+          $('bars').innerHTML = '';
+          $('barlabels').innerHTML = '';
+          const v0 = $('verdict');
+          v0.className = 'verdict-line v-dim';
+          v0.textContent = 'Enter conditions to see the picture.';
+          return;
+        }
 
         const pa = elev + 145442.16 * (1 - Math.pow(altim / 29.92126, 0.190263));
         const isa = 15 - 2 * (pa / 1000);
@@ -427,7 +446,8 @@
         const fmt = (n) => Math.round(n).toLocaleString('en-US');
 
         $('pa-val').textContent = fmt(pa);
-        $('isa-val').textContent = (isa >= 0 ? '+' : '\u2212') + Math.abs(isa).toFixed(1) + ' \u00B0C';
+        const isaShow = Math.round(isa * 10) / 10 || 0;
+        $('isa-val').textContent = (isaShow >= 0 ? '+' : '\u2212') + Math.abs(isaShow).toFixed(1) + ' \u00B0C';
         $('da-val').textContent = fmt(da);
 
         drawBars(elev, pa, da);

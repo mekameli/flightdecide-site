@@ -146,7 +146,7 @@
             <label for="grad">Required gradient (ft/NM)</label>
             <div class="stepper" data-step="10">
               <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
-              <input type="number" id="grad" inputmode="numeric" min="0" max="2000" step="5" value="200" />
+              <input type="number" id="grad" inputmode="numeric" min="0" max="2000" step="10" value="200" />
               <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">From the ODP, SID, or missed approach; 200 is the TERPS standard</p>
@@ -162,6 +162,7 @@
           </div>
         </div>
         <div class="tool-visual">
+          <svg id="profile" viewBox="0 0 320 140" width="100%" role="img" aria-label="Climb profile: enter a gradient and groundspeed." style="display:block;margin-bottom:12px"></svg>
           <div class="calc-results" aria-live="polite" style="grid-template-columns:1fr 1fr">
             <div class="result-tile result-blue" id="tile-fpm">
               <span class="result-label">Required climb</span>
@@ -187,7 +188,7 @@
             <label for="fpm2">Rate of climb (fpm)</label>
             <div class="stepper" data-step="50">
               <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
-              <input type="number" id="fpm2" inputmode="numeric" min="0" max="10000" step="10" value="500" />
+              <input type="number" id="fpm2" inputmode="numeric" min="0" max="10000" step="50" value="500" />
               <button type="button" class="step-up" aria-label="Increase">+</button>
             </div>
             <p class="calc-hint">From the POH climb chart at your weight and density altitude</p>
@@ -311,13 +312,51 @@
     (function () {
       const $ = (id) => document.getElementById(id);
       const fmt = (n) => Math.round(n).toLocaleString('en-US');
+      let reqG = NaN, reqFpm = NaN, achG = NaN;
+
+      function drawProfile() {
+        const svg = $('profile');
+        const yFor = (g) => 122 - Math.min(g, 800) / 800 * 96;
+        const parts = [
+          '<line x1="8" y1="122" x2="312" y2="122" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>',
+          '<rect x="12" y="119" width="48" height="4" rx="1" fill="#94A3B8"/>',
+          '<text x="12" y="136" font-size="12" fill="#94A3B8">Runway</text>'
+        ];
+        let label = 'Climb profile: enter a gradient and groundspeed.';
+        if (!isNaN(reqG) && reqG > 0) {
+          const col = reqFpm > 700 ? '#EAB308' : '#22C55E';
+          const yr = yFor(reqG);
+          parts.push('<line x1="60" y1="122" x2="304" y2="' + yr + '" stroke="' + col + '" stroke-width="2"/>');
+          parts.push('<text x="304" y="' + (yr - 6) + '" text-anchor="end" font-size="12" fill="#94A3B8">' + fmt(reqG) + ' ft/NM required</text>');
+          label = 'Side profile of the climb: required slope of ' + fmt(reqG) + ' feet per nautical mile from the runway end';
+          if (!isNaN(achG) && achG > 0) {
+            const ya = yFor(achG);
+            let ty = ya + 14;
+            if (Math.abs(ty - (yr - 6)) < 13) ty = ya + 26;
+            parts.push('<line x1="60" y1="122" x2="304" y2="' + ya + '" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5 4"/>');
+            parts.push('<text x="304" y="' + ty + '" text-anchor="end" font-size="12" fill="#3B82F6">' + fmt(achG) + ' ft/NM achieved</text>');
+            label += '; dashed line shows the achieved slope of ' + fmt(achG) + ' feet per nautical mile';
+          }
+          label += '.';
+        }
+        svg.setAttribute('aria-label', label);
+        svg.innerHTML = parts.join('');
+      }
 
       function required() {
         const g = parseFloat($('grad').value);
         const gs = parseFloat($('gs').value);
         const v = $('verdict');
-        if (isNaN(g) || isNaN(gs) || gs <= 0) return;
+        if (isNaN(g) || isNaN(gs) || gs <= 0) {
+          $('fpm-val').innerHTML = '&ndash;';
+          $('pct-val').innerHTML = '&ndash;';
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Enter a gradient and groundspeed.';
+          reqG = NaN; reqFpm = NaN; drawProfile();
+          return;
+        }
         const fpm = g * gs / 60;
+        reqG = g; reqFpm = fpm; drawProfile();
         $('fpm-val').textContent = fmt(fpm) + ' fpm';
         $('pct-val').textContent = (Math.round(g / 6076 * 1000) / 10) + '%';
         if (g <= 0) {
@@ -334,8 +373,15 @@
         const fpm = parseFloat($('fpm2').value);
         const gs = parseFloat($('gs2').value);
         const v = $('verdict2');
-        if (isNaN(fpm) || isNaN(gs) || gs <= 0) return;
+        if (isNaN(fpm) || isNaN(gs) || gs <= 0) {
+          $('grad2-val').innerHTML = '&ndash;';
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Enter your climb rate and groundspeed.';
+          achG = NaN; drawProfile();
+          return;
+        }
         const g = fpm * 60 / gs;
+        achG = g; drawProfile();
         $('grad2-val').textContent = fmt(g) + ' ft/NM';
         if (g >= 200) {
           v.className = 'verdict-line v-green';

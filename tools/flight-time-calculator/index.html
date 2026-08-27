@@ -299,10 +299,16 @@
 
       function fmtHM(min) {
         if (!isFinite(min) || min < 0) return '–';
-        const h = Math.floor(min / 60), m = Math.round(min % 60);
+        const t = Math.round(min);
+        const h = Math.floor(t / 60), m = t % 60;
         return h > 0 ? h + ':' + String(m).padStart(2, '0') : m + ' min';
       }
       $('dep').addEventListener('input', compute);
+      // compute() writes the solved field via .value (no synthetic input
+      // events), so wiring 'input' on all three fields cannot loop.
+      ['dist', 'gs', 'dur'].forEach(function (id) {
+        $(id).addEventListener('input', compute);
+      });
 
       const pills = { dur: $('pill-dur'), gs: $('pill-gs'), dist: $('pill-dist') };
       Object.keys(pills).forEach(function (key) {
@@ -334,10 +340,22 @@
           $('dist').value = Math.round(dist * 10) / 10;
           FD.shared.publish('distanceNm', dist, TOOLID, TOOLNAME);
         }
-        if (isNaN(dist) || isNaN(gs) || isNaN(dur) || gs <= 0) return;
-
         const labels = { dur: 'Time', gs: 'Groundspeed', dist: 'Distance' };
         $('solved-label').textContent = labels[solve];
+        if (isNaN(dist) || isNaN(gs) || isNaN(dur) || gs <= 0 || (solve === 'gs' && dur <= 0)) {
+          $('solved-val').textContent = '–';
+          $('solved-note').textContent = '';
+          $('pace-val').textContent = '–';
+          $('leg-dist').textContent = '';
+          $('leg-time').textContent = '';
+          $('pace-list').innerHTML = '';
+          $('tile-eta').style.display = 'none';
+          const v0 = $('verdict');
+          v0.className = 'verdict-line v-dim';
+          v0.textContent = 'Enter two values to solve the third.';
+          return;
+        }
+        const distDisp = Math.round(dist * 10) / 10;
         if (solve === 'dur') {
           $('solved-val').textContent = fmtHM(dur);
           $('solved-note').textContent = Math.round(dur) + ' minutes enroute';
@@ -369,11 +387,11 @@
           etaTile.style.display = '';
           $('eta-val').textContent = eta;
           v.className = 'verdict-line v-green';
-          v.textContent = dist + ' NM at ' + Math.round(gs) + ' kt: ' + fmtHM(dur) + ' enroute, ETA ' + eta + '.';
+          v.textContent = distDisp + ' NM at ' + Math.round(gs) + ' kt: ' + fmtHM(dur) + ' enroute, ETA ' + eta + '.';
         } else {
           etaTile.style.display = 'none';
           v.className = 'verdict-line v-green';
-          v.textContent = dist + ' NM at ' + Math.round(gs) + ' kt takes ' + fmtHM(dur) + '.';
+          v.textContent = distDisp + ' NM at ' + Math.round(gs) + ' kt takes ' + fmtHM(dur) + '.';
         }
       }
 

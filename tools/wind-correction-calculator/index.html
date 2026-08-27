@@ -334,7 +334,7 @@
           <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-answer"><div class="faq-answer-inner">
-          <p>When the crosswind component of the wind exceeds your TAS, no heading can hold the course; the calculator will tell you. Short of that, a strong tailwind-quartering wind can also produce a groundspeed near zero into a strong headwind. If your trainer flies 90 knots and the winds aloft say 60, the triangle still solves, but the fuel math may not.</p>
+          <p>When the crosswind component of the wind exceeds your TAS, no heading can hold the course; the calculator will tell you. Short of that, a strong headwind near your TAS can leave your groundspeed near zero. If your trainer flies 90 knots and the winds aloft say 60, the triangle still solves, but the fuel math may not.</p>
         </div></div>
       </div>
       <div class="faq-item">
@@ -394,7 +394,7 @@
         $('ticks').innerHTML = t;
       })();
 
-      function norm360(d) { d = d % 360; if (d <= 0) d += 360; return Math.round(d); }
+      function norm360(d) { d = Math.round(d) % 360; if (d <= 0) d += 360; return d; }
 
       function compute() {
         const tc = parseFloat($('tc').value);
@@ -402,7 +402,16 @@
         const wd = parseFloat($('wd').value);
         const ws = parseFloat($('ws').value);
         const mvar = parseFloat($('mvar').value);
-        if (isNaN(tc) || isNaN(tas) || isNaN(wd) || isNaN(ws) || tas <= 0) return;
+        if (isNaN(tc) || isNaN(tas) || isNaN(wd) || isNaN(ws) || tas <= 0) {
+          $('wca-val').textContent = '–'; $('th-val').textContent = '–'; $('gs-val').textContent = '–';
+          $('wca-note').textContent = ''; $('gs-note').textContent = '';
+          $('tile-gs').className = 'result-tile';
+          $('tile-mh').style.display = 'none';
+          const v = $('verdict');
+          v.className = 'verdict-line v-dim';
+          v.textContent = 'Enter the wind to solve the triangle.';
+          return;
+        }
 
         $('courseGroup').style.transform = 'rotate(' + (tc % 360) + 'deg)';
         $('windGroup').style.transform = 'rotate(' + (wd % 360) + 'deg)';
@@ -414,6 +423,10 @@
           v.className = 'verdict-line v-red';
           v.textContent = 'The crosswind component exceeds your TAS. No heading holds this course.';
           $('wca-val').textContent = '–'; $('th-val').textContent = '–'; $('gs-val').textContent = '–';
+          $('wca-note').textContent = ''; $('gs-note').textContent = '';
+          $('tile-gs').className = 'result-tile';
+          $('tile-mh').style.display = 'none';
+          $('hdgGroup').style.transform = 'rotate(' + (tc % 360) + 'deg)';
           return;
         }
         const wca = Math.asin(s);
@@ -457,6 +470,7 @@
       }
 
       compute();
+      ['tc', 'tas', 'wd', 'ws', 'mvar'].forEach(function (id) { $(id).addEventListener('input', compute); });
 
       // direct manipulation: drag the arrows on the dial
       FD.dial($('compass'), $('windGroup'), $('wd'), 5);

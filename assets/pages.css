@@ -628,6 +628,8 @@ nav.tool-switcher {
   font-size: 12px;
   font-weight: 650;
   padding: 4px 10px;
+  min-height: 44px;
+  min-width: 44px;
   cursor: pointer;
   transition: color 0.15s, border-color 0.15s;
 }
