@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VFR Nav Log Generator: Printable Navigation Log | FlightDecide</title>
+  <meta name="description" content="Free VFR nav log generator for student pilots and checkrides. Enter checkpoints, courses, and winds aloft; it solves WCA, headings (true, magnetic, compass), groundspeed, ETE, ETA, and fuel per leg, then prints a clean textbook-format navigation log with blank Actual rows for in-flight use." />
+  <link rel="canonical" href="https://flightdecide.com/tools/navlog-generator/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="VFR Nav Log Generator: Printable Navigation Log" />
+  <meta property="og:description" content="Enter checkpoints, courses, and winds aloft; get WCA, headings, groundspeed, ETE, ETA, and fuel per leg, then print a textbook-format nav log with blank Actual rows." />
+  <meta property="og:url" content="https://flightdecide.com/tools/navlog-generator/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide VFR nav log generator for pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VFR Nav Log Generator: Printable Navigation Log" />
+  <meta name="twitter:description" content="Solves every nav log column per leg and prints a textbook-format navigation log with blank Actual rows for flight." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-tools.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://flightdecide.com/tools/navlog-generator/#app",
+        "name": "VFR Nav Log Generator",
+        "url": "https://flightdecide.com/tools/navlog-generator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free VFR nav log generator. Solves wind correction angle, true, magnetic, and compass headings, groundspeed, ETE, ETA, and fuel for every checkpoint leg, and prints a textbook-format navigation log with blank Actual rows for in-flight use.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flightdecide.com/tools/navlog-generator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What nav log format do checkride examiners expect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no mandated form. Examiners expect the columns every training nav log shares: checkpoints, altitude, winds aloft, true course, wind correction angle, true heading, variation, magnetic heading, deviation, compass heading, distance (leg and remaining), groundspeed, ETE, ETA, and fuel (leg and remaining), with totals and a reserve. The Private Pilot ACS cross-country planning task (FAA-S-ACS-6C, Task I.D) requires a navigation log with headings, times, and fuel computed from real winds aloft, and you should be able to explain where any number came from."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far apart should nav log checkpoints be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common training guidance is roughly 10 to 15 NM apart, close enough that a missed checkpoint is noticed within a few minutes, far enough that you are not heads-down constantly. Pick features you can actually identify from the air: a river crossing a road, a town with a distinctive shape, an airport. Each checkpoint starts a new line on the log."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why fill in the Actual columns in flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The planned groundspeed is a forecast; the actual time between two checkpoints is a measurement. Writing the actual time and groundspeed next to the estimate tells you within one or two legs whether the winds are as forecast, and every later ETA and the fuel remaining move with that answer. This estimate-versus-actual habit is exactly what examiners probe on the cross-country portion of a checkride."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I still need a paper nav log if I fly with an EFB?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a checkride, plan on it: most examiners want to see the planning done by hand at least once, and a paper log keeps working when the tablet overheats or the battery dies. After the checkride it becomes a backup and a cross-check; the discipline of estimating and verifying groundspeed is worth keeping either way."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flightdecide.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Pilot Tools", "item": "https://flightdecide.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "VFR Nav Log Generator", "item": "https://flightdecide.com/tools/navlog-generator/" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    #printsheet { display: none; }
+    .navlog-screen-table th, .navlog-screen-table td { white-space: nowrap; }
+    @media print {
+      @page { size: letter landscape; margin: 9mm; }
+      .screen-only, .page-hero, .tool-switcher { display: none !important; }
+      #printsheet { display: block; color: #111; font-size: 9pt; }
+      #printsheet .ps-title { font-size: 13pt; font-weight: 700; margin: 0 0 4pt; }
+      #printsheet .ps-head { display: grid; grid-template-columns: repeat(6, 1fr); gap: 3pt 10pt; border: 1px solid #333; padding: 4pt 6pt; margin-bottom: 5pt; }
+      #printsheet .ps-head div { font-size: 8.5pt; }
+      #printsheet .ps-head b { font-weight: 700; }
+      #printsheet table { width: 100%; border-collapse: collapse; }
+      #printsheet th, #printsheet td { border: 1px solid #333; padding: 1.5pt 3pt; font-size: 8pt; text-align: center; }
+      #printsheet th { background: #eee; font-weight: 700; }
+      #printsheet td.ck { text-align: left; font-weight: 600; }
+      #printsheet tr.act td { color: #777; height: 12pt; }
+      #printsheet tr.act td.ck { font-weight: 400; font-style: italic; font-size: 7pt; }
+      #printsheet tr.tot td { font-weight: 700; background: #f3f3f3; }
+      #printsheet .ps-foot { display: grid; grid-template-columns: 1fr 1fr; gap: 10pt; margin-top: 5pt; }
+      #printsheet .ps-box { border: 1px solid #333; padding: 4pt 6pt; font-size: 8.5pt; min-height: 40pt; }
+      #printsheet .ps-box b { display: block; margin-bottom: 2pt; }
+      #printsheet .ps-note { margin-top: 4pt; font-size: 7pt; color: #555; }
+    }
+  </style>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">✈</span>
+        FlightDecide
+      </a>
+      <a href="/tools/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All Free Tools
+      </a>
+    </div>
+  </nav>
+
+  <nav class="tool-switcher" aria-label="Pilot tools">
+    <div class="tool-switcher-inner">
+      <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
+      <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
+      <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
+      <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
+      <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
+      <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
+      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
+      <a class="tool-pill active" aria-current="page" href="/tools/navlog-generator/">Nav Log</a>
+      <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
+      <a class="tool-pill" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
+      <a class="tool-pill" href="/tools/climb-gradient-calculator/">Climb Gradient</a>
+      <a class="tool-pill" href="/tools/holding-pattern-calculator/">Holding Entry</a>
+      <a class="tool-pill" href="/tools/ifr-alternate-minimums-checker/">IFR Alternate</a>
+      <a class="tool-pill" href="/tools/personal-minimums-worksheet/">Personal Minimums</a>
+    </div>
+  </nav>
+
+  <div class="page-hero tool-hero">
+    <div class="hero-inner">
+    <span class="page-label">Free Pilot Tools</span>
+    <h1>VFR Nav Log Generator</h1>
+    <p class="page-sub">Enter checkpoints, courses, and winds aloft. Every column a checkride nav log needs (WCA, headings, groundspeed, ETE, ETA, fuel) computes as you type, then prints as a clean textbook-format sheet with blank Actual rows for flight.</p>
+    </div>
+  </div>
+
+  <div class="page-wrap prose">
+
+    <div class="screen-only">
+
+    <div class="calc-card" id="calculator">
+      <span class="section-label" style="margin-bottom:12px">Flight header (prints at the top of the log)</span>
+      <div class="calc-grid" style="margin-bottom:20px">
+        <div class="calc-field">
+          <label for="g-pilot">Pilot / student</label>
+          <input type="text" id="g-pilot" autocomplete="off" placeholder="Name" />
+        </div>
+        <div class="calc-field">
+          <label for="g-date">Date</label>
+          <input type="date" id="g-date" />
+        </div>
+        <div class="calc-field">
+          <label for="g-acft">Aircraft (ident and type)</label>
+          <input type="text" id="g-acft" autocomplete="off" placeholder="N12345 C172S" />
+        </div>
+        <div class="calc-field">
+          <label for="g-from">Departure point</label>
+          <input type="text" id="g-from" autocomplete="off" placeholder="KRNT" />
+          <p class="calc-hint">The first checkpoint row measures from here</p>
+        </div>
+      </div>
+
+      <span class="section-label" style="margin-bottom:12px">Aircraft &amp; trip constants</span>
+      <div class="calc-grid" style="margin-bottom:20px">
+        <div class="calc-field">
+          <label for="g-tas">True airspeed (kt)</label>
+          <div class="stepper" data-step="1">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-tas" inputmode="numeric" min="30" max="500" step="1" value="110" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
+          <p class="calc-hint">From the <a href="/tools/true-airspeed-calculator/">TAS calculator</a> or POH</p>
+        </div>
+        <div class="calc-field">
+          <label for="g-rate">Fuel burn (GPH)</label>
+          <div class="stepper" data-step="0.5">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-rate" inputmode="decimal" min="1" max="200" step="0.1" value="9.5" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="g-fuel">Usable fuel (gal)</label>
+          <div class="stepper" data-step="1">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-fuel" inputmode="decimal" min="0" max="500" step="0.5" value="38" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
+          <p class="calc-hint">Drives the fuel-remaining column</p>
+        </div>
+        <div class="calc-field">
+          <label for="g-resv">Reserve</label>
+          <select id="g-resv">
+            <option value="30">VFR day: 30 min (91.151)</option>
+            <option value="45" selected>VFR night / IFR: 45 min</option>
+            <option value="60">Personal: 60 min</option>
+          </select>
+          <p class="calc-hint" id="resv-hint">At the cruise burn above</p>
+        </div>
+        <div class="calc-field">
+          <label for="g-var">Magnetic variation (°)</label>
+          <div class="stepper" data-step="1">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-var" inputmode="numeric" min="-40" max="40" step="1" value="0" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
+          <p class="calc-hint">West positive, east negative</p>
+        </div>
+        <div class="calc-field">
+          <label for="g-dev">Compass deviation (°)</label>
+          <div class="stepper" data-step="1">
+            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+            <input type="number" id="g-dev" inputmode="numeric" min="-15" max="15" step="1" value="0" />
+            <button type="button" class="step-up" aria-label="Increase">+</button>
+          </div>
+          <p class="calc-hint">From the deviation card (optional)</p>
+        </div>
+        <div class="calc-field">
+          <label for="g-dep">Departure time</label>
+          <input type="time" id="g-dep" step="1" value="12:00:00" />
+          <p class="calc-hint">Local or Zulu; ETAs use the same clock</p>
+        </div>
+      </div>
+
+      <span class="section-label" style="margin-bottom:12px">Checkpoints (one leg per line)</span>
+      <div id="legs"></div>
+      <div class="tool-toolbar">
+        <button type="button" class="btn-secondary-sm" id="add-leg">+ Add checkpoint</button>
+        <button type="button" class="btn-secondary-sm" id="load-example">Load the worked example</button>
+        <span class="save-status" id="save-status"></span>
+      </div>
+
+      <div class="calc-field" style="margin-top:16px">
+        <label for="g-notes">Frequencies &amp; notes (prints in its own box)</label>
+        <textarea id="g-notes" rows="2" spellcheck="false" placeholder="KRNT ATIS 126.95, TWR 124.7 / S18 CTAF 122.8 / VFR flight plan on 122.2"></textarea>
+      </div>
+
+      <span class="section-label" style="margin:24px 0 4px">Nav log (computed)</span>
+      <div class="table-scroll"><table class="results-table navlog-screen-table" id="navlog">
+        <thead><tr>
+          <th>Checkpoint</th><th class="num">Alt</th><th class="num">Wind</th><th class="num">TC</th><th class="num">WCA</th><th class="num">TH</th><th class="num">Var</th><th class="num">MH</th><th class="num">CH</th><th class="num">Leg NM</th><th class="num">Rem NM</th><th class="num">GS</th><th class="num">ETE</th><th class="num">ETA</th><th class="num">Fuel</th><th class="num">Fuel rem</th>
+        </tr></thead>
+        <tbody id="navlog-body"></tbody>
+      </table></div>
+
+      <div class="calc-results" style="margin-top:16px">
+        <div class="result-tile">
+          <span class="result-label">Time enroute</span>
+          <span class="result-value" id="tot-time">&ndash;</span>
+          <span class="result-note">departure to last checkpoint</span>
+        </div>
+        <div class="result-tile">
+          <span class="result-label">Trip fuel</span>
+          <span class="result-value" id="tot-fuel">&ndash;</span>
+          <span class="result-note">before reserve</span>
+        </div>
+        <div class="result-tile" id="tile-req">
+          <span class="result-label">Fuel required</span>
+          <span class="result-value" id="req-fuel">&ndash;</span>
+          <span class="result-note" id="req-note">trip + reserve</span>
+        </div>
+        <div class="result-tile" id="tile-margin">
+          <span class="result-label">Fuel at destination</span>
+          <span class="result-value" id="land-fuel">&ndash;</span>
+          <span class="result-note">usable minus trip fuel</span>
+        </div>
+      </div>
+      <div class="verdict-line v-dim" id="verdict" aria-live="polite">Add checkpoints to build the nav log.</div>
+      <div class="tool-toolbar" style="margin-top:14px">
+        <button type="button" class="btn-primary" id="print-log">Print / save as PDF</button>
+        <span class="calc-hint" style="margin:0">Prints a landscape textbook-format log with blank Actual rows</span>
+      </div>
+    </div>
+
+    <p class="lede"><strong>This builds the full navigation log a checkride expects: every checkpoint leg solved from true course to compass heading, with groundspeed, ETE, ETA, and a running fuel column.</strong> Enter the legs you measured on the chart and the forecast winds aloft; the math updates as you type. The print button produces a clean landscape sheet in the standard training-log format, with an empty Actual row under every leg for times and groundspeeds you measure in flight. Your entries stay on this device.</p>
+
+    <h2>What an examiner wants to see on a nav log</h2>
+    <p>The Private Pilot ACS cross-country planning task (FAA-S-ACS-6C, Task I.D) asks for a navigation log computed from real winds aloft, and examiners tend to probe the same things:</p>
+    <ul>
+      <li><strong>Checkpoints you can actually find.</strong> Distinct features 10 to 15 NM apart, each one a line on the log. "I'll follow the magenta line" is the wrong answer.</li>
+      <li><strong>The full heading chain.</strong> True course off the chart, wind correction angle from the wind triangle, then variation and deviation applied in order: True, Variation, Magnetic, Deviation, Compass. Be ready to walk one leg by hand.</li>
+      <li><strong>Time and fuel that chain.</strong> Each leg's ETE from its own groundspeed, ETAs threaded from the departure time, fuel per leg and remaining, with the reserve stated.</li>
+      <li><strong>A plan for the estimate being wrong.</strong> The blank Actual rows are the point: measure the first leg, compare against the estimate, and know what a 10-knot groundspeed miss does to your fuel at destination.</li>
+    </ul>
+
+    <h2>The columns, decoded</h2>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Column</th><th>Where it comes from</th></tr></thead>
+      <tbody>
+        <tr><td>TC (true course)</td><td>Measured on the sectional against a meridian</td></tr>
+        <tr><td>WCA</td><td>arcsin(wind speed × sin(wind direction − course) ÷ TAS); the crab that holds the course line</td></tr>
+        <tr><td>TH</td><td>TC + WCA</td></tr>
+        <tr><td>Var</td><td>From the isogonic line on the chart; east is least (subtract), west is best (add)</td></tr>
+        <tr><td>MH</td><td>TH with variation applied</td></tr>
+        <tr><td>Dev</td><td>The compass deviation card in your aircraft</td></tr>
+        <tr><td>CH</td><td>MH with deviation applied: the number you actually fly</td></tr>
+        <tr><td>GS</td><td>TAS × cos(WCA) − wind speed × cos(wind direction − course)</td></tr>
+        <tr><td>ETE / ETA</td><td>Leg distance ÷ GS, chained from the departure time</td></tr>
+        <tr><td>Fuel</td><td>Burn rate × leg time; the remaining column starts at usable fuel</td></tr>
+      </tbody>
+    </table></div>
+    <p>Winds aloft are entered per leg because the forecast changes along a route and with altitude; short trips can repeat one wind. Climb performance is worse than cruise in every column, so many instructors log the climb to the first checkpoint as its own leg with a lower groundspeed and a higher burn, or simply note the POH's fuel-to-climb figure on top. This tool computes at your cruise numbers; treat the first-leg estimate as optimistic if it includes the climb.</p>
+
+    <h2>Worked example: the CX-3 manual trip</h2>
+    <p>A Cessna 172 (110 kt TAS, 9.5 GPH, 38 gal usable, 17° east variation) flies Renton (KRNT) → Forks (S18) → Ocean Shores (W04) → back to KRNT, departing 12:00:00Z. Load it with the button above and print it to see the sheet:</p>
+    <ul>
+      <li>KRNT → S18: 92.3 NM at 4,500 ft, wind 350° at 3 kt → CH 272°, GS 109 kt, ETE 51:00</li>
+      <li>S18 → W04: 57.3 NM at 3,500 ft, wind 200° at 6 kt → CH 155°, GS 105 kt, ETE 32:49</li>
+      <li>W04 → KRNT: 84.2 NM at 5,500 ft, wind 140° at 5 kt → CH 054°, GS 108 kt, ETE 46:39</li>
+      <li><strong>Totals: 233.8 NM, 2:10:29 enroute, 20.7 gal trip fuel, 17.3 gal at destination against a 7.1 gal reserve</strong></li>
+    </ul>
+    <p>Those headings and times match the flight-computer manual's published answers. On the printed sheet each of those lines gets an empty Actual row beneath it.</p>
+
+    <h2>Print it, fly it, mark it up</h2>
+    <p>The print button uses your browser's print dialog, so "Save as PDF" works everywhere and a real printer gets a landscape letter sheet. The printout carries the header block (pilot, date, aircraft, route, constants), the full log grid, your frequencies box, and the fuel summary. In flight: start the clock over each checkpoint, write the actual time in the Actual row, and compare. If the first two legs run slow, every later ETA and the fuel-at-destination number just told you something the forecast didn't.</p>
+
+    <span class="section-label" style="margin-top:44px">Common Questions</span>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What nav log format do checkride examiners expect?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>There's no mandated form. Examiners expect the columns every training log shares: checkpoints, altitude, winds, TC, WCA, TH, variation, MH, deviation, CH, distance, groundspeed, ETE, ETA, and fuel, with totals and a reserve. The ACS cross-country task (FAA-S-ACS-6C, Task I.D) requires a nav log computed from real winds aloft, and you should be able to explain where any number came from. This page prints exactly that column set.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How far apart should checkpoints be?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Roughly 10 to 15 NM is the common training guidance: close enough that a missed checkpoint gets noticed within a few minutes, far enough that you aren't heads-down constantly. Pick features you can identify from the air (a river crossing a road, a distinctively shaped town, an airport) and give each one its own line.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why fill in the Actual columns in flight?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>Planned groundspeed is a forecast; the time between two checkpoints is a measurement. One or two filled Actual rows tell you whether the winds are as forecast, and every later ETA and the fuel remaining move with that answer. That estimate-versus-actual habit is exactly what the cross-country portion of a checkride is probing.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do I still need a paper nav log if I fly with an EFB?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>For a checkride, plan on it: most examiners want the planning done by hand at least once, and paper keeps working when the tablet overheats or dies. Afterward it becomes a backup and a cross-check. The estimating-and-verifying discipline is worth keeping either way.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <h2>Related tools and guides</h2>
+    <div class="card-list">
+      <a class="card-link" href="/tools/flight-plan-calculator/"><h3>Cross-Country Trip Planner</h3><p>The quick version: heading, time, and fuel per leg without the print sheet.</p></a>
+      <a class="card-link" href="/tools/weight-balance-calculator/"><h3>Weight &amp; Balance Calculator</h3><p>The other sheet the examiner asks for: loading and CG.</p></a>
+      <a class="card-link" href="/tools/fuel-burn-calculator/"><h3>Fuel Burn &amp; Endurance Calculator</h3><p>Check the trip's fuel total against your tanks and reserve.</p></a>
+    </div>
+
+    <div class="cta-band">
+      <h2>The nav log is the arithmetic; the decision is the flight</h2>
+      <p>FlightDecide checks the weather, NOTAMs, fuel, performance, and W&amp;B for your specific route and window, scores it GO, CAUTION, or NO GO, and shows the raw data behind every call.</p>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+    </div>
+
+    <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 16; FAA Private Pilot ACS (FAA-S-ACS-6C), Task I.D. Last reviewed: August 26, 2026.</p>
+
+    </div><!-- /.screen-only -->
+
+    <div id="printsheet" aria-hidden="true"></div>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/tools.js"></script>
+  <script>
+    (function () {
+      const $ = (id) => document.getElementById(id);
+      const rad = (d) => d * Math.PI / 180;
+      const STORE = 'fd-navlog';
+      let legs = [];
+
+      const EXAMPLE = {
+        pilot: '', acft: 'N12345 C172S', from: 'KRNT',
+        tas: 110, rate: 9.5, fuel: 38, resv: 45, mvar: -17, dev: 0, dep: '12:00:00',
+        notes: 'KRNT ATIS 126.95, TWR 124.7 / S18 CTAF 122.8 / W04 CTAF 122.9',
+        legs: [
+          { name: 'S18', alt: 4500, dist: 92.3, tc: 288, wd: 350, ws: 3 },
+          { name: 'W04', alt: 3500, dist: 57.3, tc: 170, wd: 200, ws: 6 },
+          { name: 'KRNT', alt: 5500, dist: 84.2, tc: 69, wd: 140, ws: 5 }
+        ]
+      };
+
+      function fmtHMS(sec) {
+        sec = Math.floor(sec);
+        const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+        return (h > 0 ? h + ':' + String(m).padStart(2, '0') : String(m)) + ':' + String(s).padStart(2, '0');
+      }
+      function fmtClock(sec) {
+        sec = ((Math.floor(sec) % 86400) + 86400) % 86400;
+        const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+        return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      }
+      function norm360(d) { d = Math.round(d) % 360; if (d <= 0) d += 360; return d; }
+      function fmtHdg(d) { return String(norm360(d)).padStart(3, '0') + '°'; }
+      function fmtVar(v) { return v === 0 ? '0°' : Math.abs(v) + '°' + (v < 0 ? 'E' : 'W'); }
+      function fmtWca(w) { const r = Math.round(w); return (r >= 0 ? '+' : '−') + Math.abs(r) + '°'; }
+      function esc(s) {
+        return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      }
+
+      function legHTML(i, leg) {
+        return '<div class="row-head">' +
+          '<span class="row-title"><input type="text" value="' + esc(leg.name || 'Checkpoint ' + (i + 1)) + '" data-i="' + i + '" data-k="name" aria-label="Checkpoint name" /></span>' +
+          '<button type="button" class="btn-remove" data-remove="' + i + '">Remove</button></div>' +
+          '<div class="row-grid">' +
+          [['dist', 'Distance (NM)', '0.1'], ['tc', 'True course (°)', '1'], ['alt', 'Altitude (ft)', '500'],
+           ['wd', 'Wind from (° true)', '1'], ['ws', 'Wind speed (kt)', '1']].map(function (f) {
+            return '<div class="calc-field"><label>' + f[1] + '</label>' +
+              '<input type="number" inputmode="decimal" step="' + f[2] + '" value="' + (leg[f[0]] != null ? leg[f[0]] : '') + '" data-i="' + i + '" data-k="' + f[0] + '" /></div>';
+          }).join('') + '</div>';
+      }
+
+      function render() {
+        const wrap = $('legs');
+        wrap.innerHTML = legs.map(function (leg, i) {
+          return '<div class="row-card">' + legHTML(i, leg) + '</div>';
+        }).join('');
+        wrap.querySelectorAll('input').forEach(function (inp) {
+          inp.addEventListener('input', function () {
+            const i = +inp.dataset.i, k = inp.dataset.k;
+            legs[i][k] = k === 'name' ? inp.value : parseFloat(inp.value);
+            compute();
+          });
+        });
+        wrap.querySelectorAll('[data-remove]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            legs.splice(+btn.dataset.remove, 1);
+            render(); compute();
+          });
+        });
+      }
+
+      // Solve one leg; returns null when unsolvable, with .why set on the leg row.
+      function solveLeg(leg, tas, mvar, dev) {
+        if (isNaN(leg.dist) || isNaN(leg.tc) || isNaN(leg.wd) || isNaN(leg.ws)) return { why: 'Fill in this leg' };
+        const beta = rad(leg.wd - leg.tc);
+        const s = leg.ws * Math.sin(beta) / tas;
+        if (Math.abs(s) >= 1) return { why: 'Wind exceeds TAS: no heading holds it' };
+        const wca = Math.asin(s) * 180 / Math.PI;
+        const th = leg.tc + wca;
+        const gs = tas * Math.cos(rad(wca)) - leg.ws * Math.cos(beta);
+        if (gs <= 0) return { why: 'Groundspeed is zero or negative: no progress' };
+        return {
+          wca: wca, th: th, mh: th + mvar, ch: th + mvar + dev,
+          gs: gs, sec: leg.dist / gs * 3600
+        };
+      }
+
+      function reset() {
+        $('navlog-body').innerHTML = '';
+        ['tot-time', 'tot-fuel', 'req-fuel', 'land-fuel'].forEach(function (id) { $(id).textContent = '–'; });
+        $('tile-req').className = 'result-tile';
+        $('tile-margin').className = 'result-tile';
+        $('resv-hint').textContent = 'At the cruise burn above';
+        $('printsheet').innerHTML = '';
+        const v = $('verdict');
+        v.className = 'verdict-line v-dim';
+        v.textContent = 'Add checkpoints to build the nav log.';
+      }
+
+      function compute() {
+        const tas = parseFloat($('g-tas').value);
+        const rate = parseFloat($('g-rate').value);
+        const fuel = parseFloat($('g-fuel').value);
+        const resv = parseFloat($('g-resv').value);
+        const mvar = parseFloat($('g-var').value) || 0;
+        const dev = parseFloat($('g-dev').value) || 0;
+        const dep = $('g-dep').value;
+
+        try {
+          localStorage.setItem(STORE, JSON.stringify({
+            pilot: $('g-pilot').value, date: $('g-date').value, acft: $('g-acft').value,
+            from: $('g-from').value, notes: $('g-notes').value,
+            tas: tas, rate: rate, fuel: fuel, resv: resv, mvar: mvar, dev: dev, dep: dep, legs: legs
+          }));
+          $('save-status').textContent = 'Saved on this device';
+          $('save-status').className = 'save-status saved';
+        } catch (e) {}
+
+        if (isNaN(tas) || tas <= 0 || legs.length === 0) { reset(); return; }
+
+        let clock = NaN;
+        if (dep) {
+          const p = dep.split(':');
+          clock = (+p[0]) * 3600 + (+p[1]) * 60 + (+(p[2] || 0));
+        }
+        const totalDist = legs.reduce(function (a, l) { return a + (isNaN(l.dist) ? 0 : l.dist); }, 0);
+        let rows = '', prows = '', remDist = totalDist, remFuel = fuel;
+        let totSec = 0, totFuel = 0, bad = false;
+        const from = $('g-from').value.trim();
+        let prev = from || 'Depart';
+
+        legs.forEach(function (leg, i) {
+          const name = esc(leg.name || 'Checkpoint ' + (i + 1));
+          const ckScreen = esc(prev) + ' → ' + name;
+          const solved = solveLeg(leg, tas, mvar, dev);
+          if (solved.why) {
+            rows += '<tr><td>' + ckScreen + '</td><td class="num" colspan="15">' + solved.why + '</td></tr>';
+            prows += '<tr><td class="ck">' + name + '</td><td colspan="16">' + solved.why + '</td></tr>';
+            bad = true; clock = NaN;
+            prev = leg.name || prev;
+            return;
+          }
+          const legFuel = isNaN(rate) ? NaN : rate * solved.sec / 3600;
+          totSec += solved.sec; if (!isNaN(legFuel)) totFuel += legFuel;
+          remDist = Math.max(0, remDist - leg.dist);
+          if (!isNaN(remFuel) && !isNaN(legFuel)) remFuel -= legFuel;
+          if (!isNaN(clock)) clock += solved.sec;
+          const altTxt = isNaN(leg.alt) ? '–' : Math.round(leg.alt).toLocaleString('en-US');
+          const windTxt = String(norm360(leg.wd)).padStart(3, '0') + '/' + Math.round(leg.ws);
+          const eta = isNaN(clock) ? '–' : fmtClock(clock);
+          const fuelTxt = isNaN(legFuel) ? '–' : legFuel.toFixed(1);
+          const remFuelTxt = (isNaN(remFuel) || isNaN(legFuel)) ? '–' : remFuel.toFixed(1);
+
+          rows += '<tr><td>' + ckScreen + '</td>' +
+            '<td class="num">' + altTxt + '</td>' +
+            '<td class="num">' + windTxt + '</td>' +
+            '<td class="num">' + fmtHdg(leg.tc) + '</td>' +
+            '<td class="num">' + fmtWca(solved.wca) + '</td>' +
+            '<td class="num">' + fmtHdg(solved.th) + '</td>' +
+            '<td class="num">' + fmtVar(mvar) + '</td>' +
+            '<td class="num">' + fmtHdg(solved.mh) + '</td>' +
+            '<td class="num">' + fmtHdg(solved.ch) + '</td>' +
+            '<td class="num">' + leg.dist + '</td>' +
+            '<td class="num">' + (Math.round(remDist * 10) / 10) + '</td>' +
+            '<td class="num">' + Math.round(solved.gs) + '</td>' +
+            '<td class="num">' + fmtHMS(solved.sec) + '</td>' +
+            '<td class="num">' + eta + '</td>' +
+            '<td class="num">' + fuelTxt + '</td>' +
+            '<td class="num">' + remFuelTxt + '</td></tr>';
+
+          prows += '<tr><td class="ck">' + name + '</td>' +
+            '<td>' + altTxt + '</td>' +
+            '<td>' + windTxt + '</td>' +
+            '<td>' + fmtHdg(leg.tc) + '</td>' +
+            '<td>' + fmtWca(solved.wca) + '</td>' +
+            '<td>' + fmtHdg(solved.th) + '</td>' +
+            '<td>' + fmtVar(mvar) + '</td>' +
+            '<td>' + fmtHdg(solved.mh) + '</td>' +
+            '<td>' + (dev >= 0 ? '+' : '−') + Math.abs(dev) + '°</td>' +
+            '<td>' + fmtHdg(solved.ch) + '</td>' +
+            '<td>' + leg.dist + '</td>' +
+            '<td>' + (Math.round(remDist * 10) / 10) + '</td>' +
+            '<td>' + Math.round(solved.gs) + '</td>' +
+            '<td>' + fmtHMS(solved.sec) + '</td>' +
+            '<td>' + eta + '</td>' +
+            '<td>' + fuelTxt + '</td>' +
+            '<td>' + remFuelTxt + '</td></tr>' +
+            '<tr class="act"><td class="ck">actual</td>' +
+            '<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>' +
+            '<td></td><td></td><td></td><td></td><td></td></tr>';
+
+          prev = leg.name || prev;
+        });
+
+        $('navlog-body').innerHTML = rows;
+
+        const resvGal = (isNaN(rate) || isNaN(resv)) ? NaN : rate * resv / 60;
+        const reqGal = isNaN(resvGal) ? NaN : totFuel + resvGal;
+        $('tot-time').textContent = fmtHMS(totSec);
+        $('tot-fuel').textContent = isNaN(rate) ? '–' : totFuel.toFixed(1) + ' gal';
+        $('req-fuel').textContent = isNaN(reqGal) ? '–' : reqGal.toFixed(1) + ' gal';
+        $('req-note').textContent = isNaN(resvGal) ? 'trip + reserve' : 'trip + ' + resv + ' min reserve (' + resvGal.toFixed(1) + ' gal)';
+        $('resv-hint').textContent = isNaN(resvGal) ? 'At the cruise burn above' : resv + ' min = ' + resvGal.toFixed(1) + ' gal at this burn';
+
+        const landGal = (isNaN(fuel) || isNaN(rate)) ? NaN : fuel - totFuel;
+        $('land-fuel').textContent = isNaN(landGal) ? '–' : landGal.toFixed(1) + ' gal';
+        const reqTile = $('tile-req'), marTile = $('tile-margin');
+        if (!isNaN(reqGal) && !isNaN(fuel)) {
+          reqTile.className = 'result-tile ' + (reqGal <= fuel ? 'result-green' : 'result-red');
+        } else { reqTile.className = 'result-tile'; }
+        if (!isNaN(landGal) && !isNaN(resvGal)) {
+          marTile.className = 'result-tile ' + (landGal < 0 ? 'result-red' : landGal < resvGal ? 'result-amber' : 'result-green');
+        } else { marTile.className = 'result-tile'; }
+
+        const v = $('verdict');
+        if (bad) {
+          v.className = 'verdict-line v-amber';
+          v.textContent = 'Some legs are incomplete; totals cover the solved legs only.';
+        } else if (!isNaN(reqGal) && !isNaN(fuel) && reqGal > fuel) {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'Fuel required (' + reqGal.toFixed(1) + ' gal with reserve) exceeds usable fuel (' + fuel + ' gal). Shorten the trip, slow the burn, or plan a stop.';
+        } else {
+          v.className = 'verdict-line v-green';
+          v.textContent = 'Trip: ' + (Math.round(totalDist * 10) / 10) + ' NM, ' + fmtHMS(totSec) + ' enroute' +
+            (isNaN(rate) ? '' : ', ' + totFuel.toFixed(1) + ' gal') +
+            (isNaN(clock) ? '.' : ', arriving ' + fmtClock(clock) + '.');
+        }
+
+        // ── The printable sheet ──
+        const routeNames = [from].concat(legs.map(function (l, i) { return l.name || 'Checkpoint ' + (i + 1); }))
+          .filter(function (s) { return s; }).join(' → ');
+        const dateTxt = $('g-date').value || '____________';
+        const pilotTxt = $('g-pilot').value || '____________';
+        const acftTxt = $('g-acft').value || '____________';
+        const notes = $('g-notes').value;
+        $('printsheet').innerHTML =
+          '<p class="ps-title">VFR Navigation Log</p>' +
+          '<div class="ps-head">' +
+          '<div><b>Pilot:</b> ' + esc(pilotTxt) + '</div>' +
+          '<div><b>Date:</b> ' + esc(dateTxt) + '</div>' +
+          '<div><b>Aircraft:</b> ' + esc(acftTxt) + '</div>' +
+          '<div><b>TAS:</b> ' + tas + ' kt</div>' +
+          '<div><b>Burn:</b> ' + (isNaN(rate) ? '____' : rate + ' GPH') + '</div>' +
+          '<div><b>Usable fuel:</b> ' + (isNaN(fuel) ? '____' : fuel + ' gal') + '</div>' +
+          '<div style="grid-column:1/4"><b>Route:</b> ' + esc(routeNames) + '</div>' +
+          '<div><b>Departure:</b> ' + (dep || '____') + '</div>' +
+          '<div><b>Variation:</b> ' + fmtVar(mvar) + '</div>' +
+          '<div><b>Deviation:</b> ' + (dev >= 0 ? '+' : '−') + Math.abs(dev) + '°</div>' +
+          '</div>' +
+          '<table><thead><tr>' +
+          '<th>Checkpoint</th><th>Alt</th><th>Wind</th><th>TC</th><th>WCA</th><th>TH</th><th>Var</th><th>MH</th><th>Dev</th><th>CH</th>' +
+          '<th>Leg NM</th><th>Rem NM</th><th>GS est</th><th>ETE</th><th>ETA / ATA</th><th>Fuel</th><th>Fuel rem</th>' +
+          '</tr></thead><tbody>' +
+          '<tr><td class="ck">' + esc(from || 'Depart') + '</td><td colspan="13">off at ' + (dep || '________') + '</td>' +
+          '<td></td><td></td><td>' + (isNaN(fuel) ? '' : fuel.toFixed(1)) + '</td></tr>' +
+          prows +
+          '<tr class="tot"><td class="ck">Totals</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>' +
+          '<td>' + (Math.round(totalDist * 10) / 10) + '</td><td></td><td></td>' +
+          '<td>' + fmtHMS(totSec) + '</td><td>' + (isNaN(clock) ? '' : fmtClock(clock)) + '</td>' +
+          '<td>' + (isNaN(rate) ? '' : totFuel.toFixed(1)) + '</td>' +
+          '<td>' + (isNaN(remFuel) || isNaN(rate) ? '' : remFuel.toFixed(1)) + '</td></tr>' +
+          '</tbody></table>' +
+          '<div class="ps-foot">' +
+          '<div class="ps-box"><b>Frequencies &amp; notes</b>' + (notes ? esc(notes).replace(/\n/g, '<br/>') : '') + '</div>' +
+          '<div class="ps-box"><b>Fuel summary</b>' +
+          'Trip ' + (isNaN(rate) ? '____' : totFuel.toFixed(1) + ' gal') +
+          ' + reserve ' + (isNaN(resvGal) ? '____' : resvGal.toFixed(1) + ' gal (' + resv + ' min)') +
+          ' = required ' + (isNaN(reqGal) ? '____' : reqGal.toFixed(1) + ' gal') +
+          '; usable ' + (isNaN(fuel) ? '____' : fuel + ' gal') +
+          (isNaN(landGal) ? '' : '; planned at destination ' + landGal.toFixed(1) + ' gal') + '.' +
+          '<br/>Weather brief at ________ &nbsp;&nbsp; Flight plan opened ________ &nbsp;&nbsp; closed ________</div>' +
+          '</div>' +
+          '<p class="ps-note">Estimates at cruise TAS ' + tas + ' kt; the climb runs slower and burns more. Built with flightdecide.com/tools/navlog-generator. Advisory only; the pilot in command makes the decision (14 CFR 91.3).</p>';
+      }
+
+      const TOOLID = 'navlog', TOOLNAME = 'Nav Log';
+
+      ['g-pilot', 'g-date', 'g-acft', 'g-from', 'g-tas', 'g-rate', 'g-fuel', 'g-var', 'g-dev', 'g-dep', 'g-notes'].forEach(function (id) {
+        $(id).addEventListener('input', compute);
+      });
+      $('g-resv').addEventListener('change', compute);
+
+      $('g-tas').addEventListener('input', function () { FD.shared.publish('tasKt', parseFloat($('g-tas').value), TOOLID, TOOLNAME); });
+      $('g-rate').addEventListener('input', function () { FD.shared.publish('fuelFlowGph', parseFloat($('g-rate').value), TOOLID, TOOLNAME); });
+      $('g-var').addEventListener('input', function () { FD.shared.publish('magVarDeg', parseFloat($('g-var').value), TOOLID, TOOLNAME); });
+
+      $('add-leg').addEventListener('click', function () {
+        const last = legs[legs.length - 1] || {};
+        legs.push({ name: '', alt: last.alt, wd: last.wd, ws: last.ws });
+        render(); compute();
+      });
+      function loadExample() {
+        $('g-pilot').value = EXAMPLE.pilot; $('g-acft').value = EXAMPLE.acft; $('g-from').value = EXAMPLE.from;
+        $('g-tas').value = EXAMPLE.tas; $('g-rate').value = EXAMPLE.rate; $('g-fuel').value = EXAMPLE.fuel;
+        $('g-resv').value = EXAMPLE.resv; $('g-var').value = EXAMPLE.mvar; $('g-dev').value = EXAMPLE.dev;
+        $('g-dep').value = EXAMPLE.dep; $('g-notes').value = EXAMPLE.notes;
+        legs = EXAMPLE.legs.map(function (l) { return Object.assign({}, l); });
+        render(); compute();
+      }
+      $('load-example').addEventListener('click', loadExample);
+      $('print-log').addEventListener('click', function () {
+        compute();
+        window.print();
+      });
+
+      // restore
+      let saved = null;
+      try { saved = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
+      if (saved && saved.legs && saved.legs.length) {
+        $('g-pilot').value = saved.pilot || ''; $('g-acft').value = saved.acft || '';
+        $('g-from').value = saved.from || ''; $('g-notes').value = saved.notes || '';
+        if (saved.date) $('g-date').value = saved.date;
+        $('g-tas').value = saved.tas; $('g-rate').value = saved.rate;
+        if (saved.fuel != null && !isNaN(saved.fuel)) $('g-fuel').value = saved.fuel;
+        if (saved.resv) $('g-resv').value = saved.resv;
+        $('g-var').value = saved.mvar; $('g-dev').value = saved.dev;
+        if (saved.dep) $('g-dep').value = saved.dep;
+        legs = saved.legs;
+      } else {
+        legs = [{ name: '' }];
+      }
+      render(); compute();
+      if (window.location.search.indexOf('example') !== -1) loadExample();
+
+      FD.attachPrefill($('g-tas'), 'tasKt', TOOLID, TOOLNAME);
+      FD.attachPrefill($('g-rate'), 'fuelFlowGph', TOOLID, TOOLNAME);
+      FD.attachPrefill($('g-var'), 'magVarDeg', TOOLID, TOOLNAME);
+    })();
+
+  </script>
+
+</body>
+</html>

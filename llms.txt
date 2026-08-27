@@ -61,6 +61,10 @@ flight. No sign-up; everything runs locally.
 - [Cross-Country Trip Planner](https://flightdecide.com/tools/flight-plan-calculator/):
   multi-leg nav log solver: compass heading, groundspeed, leg time,
   ETA, and fuel per leg plus trip totals, saved locally.
+- [VFR Nav Log Generator](https://flightdecide.com/tools/navlog-generator/):
+  the full checkride navigation log: WCA, true/magnetic/compass headings,
+  groundspeed, ETE, ETA, and fuel per checkpoint, printable as a
+  textbook-format sheet with blank Actual rows.
 - [Weight & Balance Calculator](https://flightdecide.com/tools/weight-balance-calculator/):
   gross weight, total moment, and CG from itemized loading, envelope
   check against user-entered limits, weight-shift solver.
