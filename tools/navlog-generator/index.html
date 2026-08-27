@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VFR Nav Log Generator: Printable Navigation Log | FlightDecide</title>
-  <meta name="description" content="Free VFR nav log generator for student pilots and checkrides. Enter checkpoints, courses, and winds aloft; it solves WCA, headings (true, magnetic, compass), groundspeed, ETE, ETA, and fuel per leg, then prints a clean textbook-format navigation log with blank Actual rows for in-flight use." />
+  <meta name="description" content="Free VFR nav log generator for student pilots and checkrides. Enter checkpoints, courses, and winds aloft; it solves WCA, headings (true, magnetic, compass), groundspeed, ETE, ETA, and fuel per leg, then prints a clean textbook-format navigation log with blank Actual rows for in-flight use. A free online cross-country flight planning tool." />
   <link rel="canonical" href="https://flightdecide.com/tools/navlog-generator/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
@@ -67,6 +67,22 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "The planned groundspeed is a forecast; the actual time between two checkpoints is a measurement. Writing the actual time and groundspeed next to the estimate tells you within one or two legs whether the winds are as forecast, and every later ETA and the fuel remaining move with that answer. This estimate-versus-actual habit is exactly what examiners probe on the cross-country portion of a checkride."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do the distances and courses come from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From the sectional chart with a plotter, or from your EFB's route view. Measure the true course against a meridian (not the compass rose of a VOR) and the distance of each straight segment between checkpoints. Turn points are where the course changes, and each one starts a new line on the log."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my groundspeed different on the reciprocal leg home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The wind that slowed you outbound helps you home, but not symmetrically: the crosswind portion costs groundspeed in both directions because you crab both ways, so a round trip in wind always takes longer than the same trip in calm air. Never plan a round trip assuming the tailwind gives back what the headwind took."
             }
           },
           {
@@ -142,7 +158,6 @@
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
       <a class="tool-pill" href="/tools/wind-correction-calculator/">Heading &amp; Groundspeed</a>
-      <a class="tool-pill" href="/tools/flight-plan-calculator/">Trip Planner</a>
       <a class="tool-pill active" aria-current="page" href="/tools/navlog-generator/">Nav Log</a>
       <a class="tool-pill" href="/tools/weight-balance-calculator/">Weight &amp; Balance</a>
       <a class="tool-pill" href="/tools/descent-glide-calculator/">Descent &amp; Glide</a>
@@ -368,6 +383,22 @@
         </div></div>
       </div>
       <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Where do the distances and courses come from?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>From the sectional chart with a plotter, or from your EFB's route view. Measure the true course against a meridian (not the compass rose of a VOR) and the distance of each straight segment between checkpoints. Turn points are where the course changes, and each one starts a new line.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why is my groundspeed different on the reciprocal leg home?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p>The wind that slowed you outbound helps you home, but not symmetrically: the crosswind portion costs groundspeed in both directions (you crab both ways), so a round trip in wind always takes longer than the same trip in calm air. Never plan a round trip assuming the tailwind gives back what the headwind took.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
         <button class="faq-question" aria-expanded="false">Do I still need a paper nav log if I fly with an EFB?
           <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
@@ -379,7 +410,7 @@
 
     <h2>Related tools and guides</h2>
     <div class="card-list">
-      <a class="card-link" href="/tools/flight-plan-calculator/"><h3>Cross-Country Trip Planner</h3><p>The quick version: heading, time, and fuel per leg without the print sheet.</p></a>
+      <a class="card-link" href="/tools/true-airspeed-calculator/"><h3>True Airspeed Calculator</h3><p>The TAS constant this log needs, from CAS, altitude, and temperature.</p></a>
       <a class="card-link" href="/tools/weight-balance-calculator/"><h3>Weight &amp; Balance Calculator</h3><p>The other sheet the examiner asks for: loading and CG.</p></a>
       <a class="card-link" href="/tools/fuel-burn-calculator/"><h3>Fuel Burn &amp; Endurance Calculator</h3><p>Check the trip's fuel total against your tanks and reserve.</p></a>
     </div>
@@ -716,9 +747,15 @@
         window.print();
       });
 
-      // restore
+      // restore; a trip saved by the retired trip planner migrates in once
       let saved = null;
       try { saved = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
+      if (!(saved && saved.legs && saved.legs.length)) {
+        try {
+          const old = JSON.parse(localStorage.getItem('fd-trip-plan'));
+          if (old && old.legs && old.legs.length) saved = old;
+        } catch (e) {}
+      }
       if (saved && saved.legs && saved.legs.length) {
         $('g-pilot').value = saved.pilot || ''; $('g-acft').value = saved.acft || '';
         $('g-from').value = saved.from || ''; $('g-notes').value = saved.notes || '';
