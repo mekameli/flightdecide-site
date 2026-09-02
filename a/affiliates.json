@@ -1,17 +1,23 @@
 {
-  "_comment": "FD-339 affiliate link-page registry. Human-edited. After changing, run `python3 scripts/gen_affiliate_pages.py` from the repo root and commit + push INSIDE website/ (nested flightdecide-site repo = the deploy). Each slug/code pair must match the ASC custom offer code (scripts/asc_offer_codes.py) and, for rev-share affiliates, the backend affiliate row (POST /subscriptions/affiliates).",
-  "affiliates": [
-    {
-      "slug": "launch50",
-      "display_name": "the FlightDecide team",
-      "code": "FLYDECIDE50",
-      "discount_label": "50% off your first year of Pilot (first 50 pilots)"
-    },
-    {
-      "slug": "save30",
-      "display_name": "the FlightDecide team",
-      "code": "FLYDECIDE30",
-      "discount_label": "30% off your first year of Pilot"
-    }
-  ]
+ "_comment": "FD-339 affiliate link-page registry. Human-edited. After changing, run `python3 scripts/gen_affiliate_pages.py` from the repo root and commit + push INSIDE website/ (nested flightdecide-site repo = the deploy). Each slug/code pair must match the ASC custom offer code (scripts/asc_offer_codes.py) and, for rev-share affiliates, the backend affiliate row (POST /subscriptions/affiliates).",
+ "affiliates": [
+  {
+   "slug": "launch50",
+   "display_name": "the FlightDecide team",
+   "code": "FLYDECIDE50",
+   "discount_label": "50% off your first year of Pilot (first 50 pilots)"
+  },
+  {
+   "slug": "save30",
+   "display_name": "the FlightDecide team",
+   "code": "FLYDECIDE30",
+   "discount_label": "30% off your first year of Pilot"
+  },
+  {
+   "slug": "cfi",
+   "display_name": "the FlightDecide team",
+   "code": "FLYDECIDECFI",
+   "discount_label": "12 months of Pro free for flight instructors"
+  }
+ ]
 }
