@@ -240,13 +240,19 @@
           <p class="calc-hint" id="resv-hint">At the cruise burn above</p>
         </div>
         <div class="calc-field">
-          <label for="g-var">Magnetic variation (°)</label>
-          <div class="stepper" data-step="1">
-            <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
-            <input type="number" id="g-var" inputmode="numeric" min="-40" max="40" step="1" value="0" />
-            <button type="button" class="step-up" aria-label="Increase">+</button>
+          <label for="g-var">Magnetic variation</label>
+          <div class="var-row">
+            <div class="stepper" data-step="1">
+              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+              <input type="number" id="g-var" inputmode="numeric" min="0" max="40" step="1" value="0" aria-describedby="var-hint" />
+              <button type="button" class="step-up" aria-label="Increase">+</button>
+            </div>
+            <select id="g-var-dir" aria-label="Variation east or west">
+              <option value="E" selected>&deg;E</option>
+              <option value="W">&deg;W</option>
+            </select>
           </div>
-          <p class="calc-hint">West positive, east negative</p>
+          <p class="calc-hint" id="var-hint">As printed on the isogonic line</p>
         </div>
         <div class="calc-field">
           <label for="g-dev">Compass deviation (°)</label>
@@ -304,7 +310,7 @@
         <div class="result-tile" id="tile-margin">
           <span class="result-label">Fuel at destination</span>
           <span class="result-value" id="land-fuel">&ndash;</span>
-          <span class="result-note">usable minus trip fuel</span>
+          <span class="result-note" id="land-note">usable minus trip fuel</span>
         </div>
       </div>
       <div class="verdict-line v-dim" id="verdict" aria-live="polite">Add checkpoints to build the nav log.</div>
@@ -481,6 +487,28 @@
           .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
       }
 
+      // Variation is entered the way a chart prints it (magnitude + E/W) and kept
+      // signed internally: west positive (add), east negative (subtract).
+      function varSigned() {
+        const mag = Math.abs(parseFloat($('g-var').value));
+        if (isNaN(mag)) return 0;
+        return $('g-var-dir').value === 'W' ? mag : -mag;
+      }
+      function setVar(signed) {
+        const v = isFinite(signed) ? signed : 0;
+        $('g-var').value = Math.abs(v);
+        if (v > 0) $('g-var-dir').value = 'W';
+        else if (v < 0) $('g-var-dir').value = 'E';
+      }
+      function varHint() {
+        const v = varSigned(), mag = Math.abs(v);
+        $('var-hint').textContent = v === 0
+          ? 'As printed on the isogonic line'
+          : v < 0
+            ? mag + '°E: subtract ' + mag + '° from true heading ("east is least")'
+            : mag + '°W: add ' + mag + '° to true heading ("west is best")';
+      }
+
       function legHTML(i, leg) {
         return '<div class="row-head">' +
           '<span class="row-title"><input type="text" value="' + esc(leg.name || 'Checkpoint ' + (i + 1)) + '" data-i="' + i + '" data-k="name" aria-label="Checkpoint name" /></span>' +
@@ -534,7 +562,10 @@
         ['tot-time', 'tot-fuel', 'req-fuel', 'land-fuel'].forEach(function (id) { $(id).textContent = '–'; });
         $('tile-req').className = 'result-tile';
         $('tile-margin').className = 'result-tile';
+        $('req-note').textContent = 'trip + reserve';
+        $('land-note').textContent = 'usable minus trip fuel';
         $('resv-hint').textContent = 'At the cruise burn above';
+        varHint();
         $('printsheet').innerHTML = '';
         const v = $('verdict');
         v.className = 'verdict-line v-dim';
@@ -546,9 +577,10 @@
         const rate = parseFloat($('g-rate').value);
         const fuel = parseFloat($('g-fuel').value);
         const resv = parseFloat($('g-resv').value);
-        const mvar = parseFloat($('g-var').value) || 0;
+        const mvar = varSigned();
         const dev = parseFloat($('g-dev').value) || 0;
         const dep = $('g-dep').value;
+        varHint();
 
         try {
           localStorage.setItem(STORE, JSON.stringify({
@@ -648,26 +680,49 @@
 
         const landGal = (isNaN(fuel) || isNaN(rate)) ? NaN : fuel - totFuel;
         $('land-fuel').textContent = isNaN(landGal) ? '–' : landGal.toFixed(1) + ' gal';
-        const reqTile = $('tile-req'), marTile = $('tile-margin');
-        if (!isNaN(reqGal) && !isNaN(fuel)) {
-          reqTile.className = 'result-tile ' + (reqGal <= fuel ? 'result-green' : 'result-red');
-        } else { reqTile.className = 'result-tile'; }
+
+        // One fuel state drives both tiles and the verdict, so they never disagree.
+        // dry: the tanks empty before the last checkpoint. below: you land, but
+        // into the reserve. thin: above the reserve by less than 15 minutes.
+        const thinGal = isNaN(rate) ? NaN : rate * 15 / 60;
+        let fuelState = null;
         if (!isNaN(landGal) && !isNaN(resvGal)) {
-          marTile.className = 'result-tile ' + (landGal < 0 ? 'result-red' : landGal < resvGal ? 'result-amber' : 'result-green');
-        } else { marTile.className = 'result-tile'; }
+          fuelState = landGal < 0 ? 'dry'
+            : landGal < resvGal ? 'below'
+            : landGal < resvGal + thinGal ? 'thin' : 'ok';
+        }
+        const TILE = { dry: ' result-red', below: ' result-red', thin: ' result-amber', ok: ' result-green' };
+        const tileCls = 'result-tile' + (fuelState ? TILE[fuelState] : '');
+        $('tile-req').className = tileCls;
+        $('tile-margin').className = tileCls;
+        const overMin = fuelState ? (landGal - resvGal) / rate * 60 : NaN;
+        $('land-note').textContent = !fuelState ? 'usable minus trip fuel'
+          : fuelState === 'dry' ? 'short of the destination by ' + Math.abs(landGal).toFixed(1) + ' gal'
+          : fuelState === 'below' ? 'into the ' + resv + '-min reserve by ' + (resvGal - landGal).toFixed(1) + ' gal'
+          : Math.round(overMin) + ' min above the ' + resv + '-min reserve';
 
         const v = $('verdict');
+        const tripLine = 'Trip: ' + (Math.round(totalDist * 10) / 10) + ' NM, ' + fmtHMS(totSec) + ' enroute' +
+          (isNaN(rate) ? '' : ', ' + totFuel.toFixed(1) + ' gal') +
+          (isNaN(clock) ? '.' : ', arriving ' + fmtClock(clock) + '.');
         if (bad) {
           v.className = 'verdict-line v-amber';
           v.textContent = 'Some legs are incomplete; totals cover the solved legs only.';
-        } else if (!isNaN(reqGal) && !isNaN(fuel) && reqGal > fuel) {
+        } else if (fuelState === 'dry') {
           v.className = 'verdict-line v-red';
-          v.textContent = 'Fuel required (' + reqGal.toFixed(1) + ' gal with reserve) exceeds usable fuel (' + fuel + ' gal). Shorten the trip, slow the burn, or plan a stop.';
+          v.textContent = 'Trip fuel (' + totFuel.toFixed(1) + ' gal) exceeds usable fuel (' + fuel + ' gal): the tanks run dry ' +
+            Math.abs(landGal).toFixed(1) + ' gal short of the last checkpoint. Shorten the trip, slow the burn, or plan a fuel stop.';
+        } else if (fuelState === 'below') {
+          v.className = 'verdict-line v-red';
+          v.textContent = 'You reach the destination, but land with ' + landGal.toFixed(1) + ' gal: ' +
+            (resvGal - landGal).toFixed(1) + ' gal into the ' + resv + '-minute reserve (' + resvGal.toFixed(1) + ' gal). Shorten the trip, slow the burn, or plan a fuel stop.';
+        } else if (fuelState === 'thin') {
+          v.className = 'verdict-line v-amber';
+          v.textContent = tripLine + ' Lands with ' + landGal.toFixed(1) + ' gal, only ' + Math.round(overMin) +
+            ' min above the ' + resv + '-minute reserve.';
         } else {
           v.className = 'verdict-line v-green';
-          v.textContent = 'Trip: ' + (Math.round(totalDist * 10) / 10) + ' NM, ' + fmtHMS(totSec) + ' enroute' +
-            (isNaN(rate) ? '' : ', ' + totFuel.toFixed(1) + ' gal') +
-            (isNaN(clock) ? '.' : ', arriving ' + fmtClock(clock) + '.');
+          v.textContent = tripLine;
         }
 
         // ── The printable sheet ──
@@ -719,14 +774,26 @@
 
       const TOOLID = 'navlog', TOOLNAME = 'Nav Log';
 
+      // A signed value reaching this field (typed out of habit, or filled by the
+      // cross-tool prefill chip) folds into the E/W select instead of flying as
+      // a negative magnitude. Registered first so compute() sees it normalized.
+      $('g-var').addEventListener('input', function () {
+        const raw = parseFloat($('g-var').value);
+        if (raw < 0) setVar(raw);
+      });
+
       ['g-pilot', 'g-date', 'g-acft', 'g-from', 'g-tas', 'g-rate', 'g-fuel', 'g-var', 'g-dev', 'g-dep', 'g-notes'].forEach(function (id) {
         $(id).addEventListener('input', compute);
       });
-      $('g-resv').addEventListener('change', compute);
+      ['g-resv', 'g-var-dir'].forEach(function (id) { $(id).addEventListener('change', compute); });
 
       $('g-tas').addEventListener('input', function () { FD.shared.publish('tasKt', parseFloat($('g-tas').value), TOOLID, TOOLNAME); });
       $('g-rate').addEventListener('input', function () { FD.shared.publish('fuelFlowGph', parseFloat($('g-rate').value), TOOLID, TOOLNAME); });
-      $('g-var').addEventListener('input', function () { FD.shared.publish('magVarDeg', parseFloat($('g-var').value), TOOLID, TOOLNAME); });
+      ['g-var', 'g-var-dir'].forEach(function (id) {
+        $(id).addEventListener(id === 'g-var' ? 'input' : 'change', function () {
+          FD.shared.publish('magVarDeg', varSigned(), TOOLID, TOOLNAME);
+        });
+      });
 
       $('add-leg').addEventListener('click', function () {
         const last = legs[legs.length - 1] || {};
@@ -736,7 +803,7 @@
       function loadExample() {
         $('g-pilot').value = EXAMPLE.pilot; $('g-acft').value = EXAMPLE.acft; $('g-from').value = EXAMPLE.from;
         $('g-tas').value = EXAMPLE.tas; $('g-rate').value = EXAMPLE.rate; $('g-fuel').value = EXAMPLE.fuel;
-        $('g-resv').value = EXAMPLE.resv; $('g-var').value = EXAMPLE.mvar; $('g-dev').value = EXAMPLE.dev;
+        $('g-resv').value = EXAMPLE.resv; setVar(EXAMPLE.mvar); $('g-dev').value = EXAMPLE.dev;
         $('g-dep').value = EXAMPLE.dep; $('g-notes').value = EXAMPLE.notes;
         legs = EXAMPLE.legs.map(function (l) { return Object.assign({}, l); });
         render(); compute();
@@ -763,7 +830,7 @@
         $('g-tas').value = saved.tas; $('g-rate').value = saved.rate;
         if (saved.fuel != null && !isNaN(saved.fuel)) $('g-fuel').value = saved.fuel;
         if (saved.resv) $('g-resv').value = saved.resv;
-        $('g-var').value = saved.mvar; $('g-dev').value = saved.dev;
+        setVar(saved.mvar); $('g-dev').value = saved.dev;
         if (saved.dep) $('g-dep').value = saved.dep;
         legs = saved.legs;
       } else {
@@ -774,7 +841,8 @@
 
       FD.attachPrefill($('g-tas'), 'tasKt', TOOLID, TOOLNAME);
       FD.attachPrefill($('g-rate'), 'fuelFlowGph', TOOLID, TOOLNAME);
-      FD.attachPrefill($('g-var'), 'magVarDeg', TOOLID, TOOLNAME);
+      const varPrefill = FD.attachPrefill($('g-var'), 'magVarDeg', TOOLID, TOOLNAME, { read: varSigned, write: setVar, label: fmtVar });
+      $('g-var-dir').addEventListener('change', varPrefill);
     })();
 
   </script>

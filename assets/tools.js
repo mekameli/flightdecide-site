@@ -171,34 +171,43 @@
   })();
 
   /* Render a subtle "Use 142 kt (from True Airspeed)" chip under an input when a
-     fresher value from another tool exists. Tapping it fills the field. */
-  FD.attachPrefill = function (input, quantity, toolId, toolName) {
+     fresher value from another tool exists. Tapping it fills the field.
+     `opts.read` / `opts.write` let a page whose control is not a single signed
+     number (e.g. a magnitude paired with an E/W select) map to the shared value;
+     `opts.label` overrides how the offered value reads on the chip. All three
+     default to the plain input. Returns the refresh function so a caller can
+     re-run it when a companion control changes. */
+  FD.attachPrefill = function (input, quantity, toolId, toolName, opts) {
     if (!input || !FD.shared.meta[quantity]) return;
     const host = input.closest('.calc-field') || input.parentElement;
     if (!host) return;
+    const read = (opts && opts.read) || function () { return parseFloat(input.value); };
+    const write = (opts && opts.write) || function (v) { input.value = v; };
+    const label = (opts && opts.label) || function (v) { return FD.shared.fmt(quantity, v); };
     const chip = document.createElement('button');
     chip.type = 'button';
     chip.className = 'prefill-chip';
     chip.hidden = true;
     host.appendChild(chip);
     function refresh() {
-      const s = FD.shared.suggest(quantity, parseFloat(input.value), toolId);
+      const s = FD.shared.suggest(quantity, read(), toolId);
       if (s) {
         chip.hidden = false;
-        chip.textContent = '↓ Use ' + FD.shared.fmt(quantity, s.v) + ' (from ' + s.n + ')';
+        chip.textContent = '↓ Use ' + label(s.v) + ' (from ' + s.n + ')';
       } else {
         chip.hidden = true;
       }
     }
     chip.addEventListener('click', function () {
-      const s = FD.shared.suggest(quantity, parseFloat(input.value), toolId);
+      const s = FD.shared.suggest(quantity, read(), toolId);
       if (!s) return;
-      input.value = FD.shared.round(quantity, s.v);
+      write(FD.shared.round(quantity, s.v));
       input.dispatchEvent(new Event('input', { bubbles: true }));
       refresh();
     });
     input.addEventListener('input', refresh);
     refresh();
+    return refresh;
   };
 
   /* FAQ accordion (shared) */

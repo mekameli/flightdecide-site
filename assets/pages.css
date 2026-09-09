@@ -565,6 +565,15 @@ nav.tool-switcher {
 .stepper input[type="number"] { -moz-appearance: textfield; appearance: textfield; }
 .stepper-unit { font-size: 13px; color: var(--text-dim); margin-left: 10px; flex: none; }
 
+/* EAST/WEST PAIR (a magnitude stepper beside a direction select, so a chart's
+   "17°E" is entered as it reads instead of as a signed number). */
+.var-row { display: flex; align-items: stretch; gap: 8px; }
+.var-row .stepper { flex: 0 1 auto; min-width: 0; }
+/* Shrink-wrap to the same visible width as a plain stepper (42 + 110 + 42),
+   so the row keeps the column's rhythm, but let it squeeze on narrow phones. */
+.var-row .stepper input { width: 110px; min-width: 0; }
+.var-row select { flex: 0 0 auto; width: auto; height: 44px; padding: 0 10px; font-weight: 650; }
+
 /* RESULT PULSE (values pop when they change) */
 @keyframes fd-pulse {
   0% { transform: scale(1); }

@@ -171,13 +171,19 @@
             </div>
           </div>
           <div class="calc-field">
-            <label for="mvar">Magnetic variation (°, optional)</label>
-            <div class="stepper" data-step="1">
-              <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
-              <input type="number" id="mvar" inputmode="numeric" min="-40" max="40" step="1" placeholder="&ndash;" />
-              <button type="button" class="step-up" aria-label="Increase">+</button>
+            <label for="mvar">Magnetic variation (optional)</label>
+            <div class="var-row">
+              <div class="stepper" data-step="1">
+                <button type="button" class="step-dn" aria-label="Decrease">&#8722;</button>
+                <input type="number" id="mvar" inputmode="numeric" min="0" max="40" step="1" placeholder="&ndash;" aria-describedby="var-hint" />
+                <button type="button" class="step-up" aria-label="Increase">+</button>
+              </div>
+              <select id="mvar-dir" aria-label="Variation east or west">
+                <option value="E" selected>&deg;E</option>
+                <option value="W">&deg;W</option>
+              </select>
             </div>
-            <p class="calc-hint">West positive, east negative ("east is least"). From the isogonic line on your chart</p>
+            <p class="calc-hint" id="var-hint">From the isogonic line on your chart</p>
           </div>
         </div>
         <div class="tool-visual">
@@ -396,12 +402,37 @@
 
       function norm360(d) { d = Math.round(d) % 360; if (d <= 0) d += 360; return d; }
 
+      // Variation is entered the way a chart prints it (magnitude + E/W) and kept
+      // signed internally: west positive (add), east negative (subtract). The
+      // field stays optional, so an empty box reads back as NaN, not zero.
+      function varSigned() {
+        const mag = parseFloat($('mvar').value);
+        if (isNaN(mag)) return NaN;
+        return $('mvar-dir').value === 'W' ? Math.abs(mag) : -Math.abs(mag);
+      }
+      function setVar(signed) {
+        if (!isFinite(signed)) { $('mvar').value = ''; return; }
+        $('mvar').value = Math.abs(signed);
+        if (signed > 0) $('mvar-dir').value = 'W';
+        else if (signed < 0) $('mvar-dir').value = 'E';
+      }
+      function fmtVar(v) { return v === 0 ? '0°' : Math.abs(v) + '°' + (v < 0 ? 'E' : 'W'); }
+      function varHint() {
+        const v = varSigned(), mag = Math.abs(v);
+        $('var-hint').textContent = isNaN(v) || v === 0
+          ? 'From the isogonic line on your chart'
+          : v < 0
+            ? mag + '°E: subtract ' + mag + '° from true heading ("east is least")'
+            : mag + '°W: add ' + mag + '° to true heading ("west is best")';
+      }
+
       function compute() {
         const tc = parseFloat($('tc').value);
         const tas = parseFloat($('tas').value);
         const wd = parseFloat($('wd').value);
         const ws = parseFloat($('ws').value);
-        const mvar = parseFloat($('mvar').value);
+        const mvar = varSigned();
+        varHint();
         if (isNaN(tc) || isNaN(tas) || isNaN(wd) || isNaN(ws) || tas <= 0) {
           $('wca-val').textContent = '–'; $('th-val').textContent = '–'; $('gs-val').textContent = '–';
           $('wca-note').textContent = ''; $('gs-note').textContent = '';
@@ -469,8 +500,17 @@
         }
       }
 
+      // A signed value reaching this field (typed out of habit, or filled by the
+      // cross-tool prefill chip) folds into the E/W select instead of flying as
+      // a negative magnitude. Registered first so compute() sees it normalized.
+      $('mvar').addEventListener('input', function () {
+        const raw = parseFloat($('mvar').value);
+        if (raw < 0) setVar(raw);
+      });
+
       compute();
       ['tc', 'tas', 'wd', 'ws', 'mvar'].forEach(function (id) { $(id).addEventListener('input', compute); });
+      $('mvar-dir').addEventListener('change', compute);
 
       // direct manipulation: drag the arrows on the dial
       FD.dial($('compass'), $('windGroup'), $('wd'), 5);
@@ -502,13 +542,19 @@
       // ambient inputs: broadcast user-typed values for other tools
       $('wd').addEventListener('input', function () { FD.shared.publish('windDirDeg', parseFloat($('wd').value), 'heading-groundspeed', 'Heading & Groundspeed'); });
       $('ws').addEventListener('input', function () { FD.shared.publish('windSpeedKt', parseFloat($('ws').value), 'heading-groundspeed', 'Heading & Groundspeed'); });
-      $('mvar').addEventListener('input', function () { FD.shared.publish('magVarDeg', parseFloat($('mvar').value), 'heading-groundspeed', 'Heading & Groundspeed'); });
+      ['mvar', 'mvar-dir'].forEach(function (id) {
+        $(id).addEventListener(id === 'mvar' ? 'input' : 'change', function () {
+          FD.shared.publish('magVarDeg', varSigned(), 'heading-groundspeed', 'Heading & Groundspeed');
+        });
+      });
 
       // prefill chips: reuse values other tools produced
       FD.attachPrefill($('tas'), 'tasKt', 'heading-groundspeed', 'Heading & Groundspeed');
       FD.attachPrefill($('wd'), 'windDirDeg', 'heading-groundspeed', 'Heading & Groundspeed');
       FD.attachPrefill($('ws'), 'windSpeedKt', 'heading-groundspeed', 'Heading & Groundspeed');
-      FD.attachPrefill($('mvar'), 'magVarDeg', 'heading-groundspeed', 'Heading & Groundspeed');
+      const varPrefill = FD.attachPrefill($('mvar'), 'magVarDeg', 'heading-groundspeed', 'Heading & Groundspeed',
+        { read: varSigned, write: setVar, label: fmtVar });
+      $('mvar-dir').addEventListener('change', varPrefill);
     })();
 
   </script>
