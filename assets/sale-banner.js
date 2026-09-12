@@ -39,24 +39,39 @@
     // page had rather than clearing a value the page set itself.
     var priorPadding = document.body.style.paddingBottom || '';
 
+    // Same design language as the offer box on the pricing card: the cut is
+    // the loudest thing, its terms sit quietly beside it, and exactly one
+    // solid green element carries the action. The close button shares the
+    // CTA's height and sits in normal flex flow rather than being absolutely
+    // positioned, which is what made it drift out of line once the bar
+    // wrapped to two lines on a phone.
     var style = document.createElement('style');
     style.textContent = [
       '.fd-sale-bar{position:fixed;left:0;right:0;bottom:0;z-index:9000;',
-      'display:flex;align-items:center;justify-content:center;gap:10px;',
-      'flex-wrap:wrap;padding:10px 44px 10px 16px;',
+      'display:flex;align-items:center;justify-content:center;gap:14px;',
+      'flex-wrap:wrap;padding:9px 14px;',
       'background:rgba(15,23,42,0.97);border-top:1px solid rgba(34,197,94,0.45);',
       '-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);',
       "font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',system-ui,sans-serif;",
-      'font-size:14px;line-height:1.45;color:#F0F0F5;}',
-      '.fd-sale-bar strong{color:#22C55E;font-weight:700;}',
-      '.fd-sale-bar a{color:#0F172A;background:#22C55E;text-decoration:none;',
-      'font-weight:700;font-size:13px;padding:6px 14px;border-radius:999px;white-space:nowrap;}',
-      '.fd-sale-bar a:hover{background:#4ADE80;}',
-      '.fd-sale-close{position:absolute;right:8px;top:50%;transform:translateY(-50%);',
-      'background:transparent;border:0;color:#94A3B8;font-size:20px;line-height:1;',
-      'cursor:pointer;padding:6px 10px;border-radius:8px;font-family:inherit;}',
-      '.fd-sale-close:hover{color:#F0F0F5;}',
-      '@media (max-width:520px){.fd-sale-bar{font-size:13px;padding:9px 40px 9px 12px;}}'
+      'line-height:1.4;color:#F0F0F5;}',
+      '.fd-sale-msg{display:flex;align-items:baseline;gap:9px;',
+      'flex-wrap:wrap;justify-content:center;min-width:0;}',
+      '.fd-sale-pct{font-size:17px;font-weight:800;letter-spacing:-0.3px;',
+      'color:#22C55E;line-height:1;}',
+      '.fd-sale-sub{font-size:13px;color:#94A3B8;}',
+      '.fd-sale-cta,.fd-sale-close{height:36px;box-sizing:border-box;',
+      'display:inline-flex;align-items:center;justify-content:center;',
+      'flex:0 0 auto;font-family:inherit;}',
+      '.fd-sale-cta{padding:0 16px;border-radius:999px;background:#22C55E;',
+      'color:#06240F;font-weight:700;font-size:13px;text-decoration:none;',
+      'white-space:nowrap;transition:background 0.2s;}',
+      '.fd-sale-cta:hover{background:#4ADE80;}',
+      '.fd-sale-close{width:36px;padding:0;background:transparent;border:0;',
+      'color:#94A3B8;font-size:20px;line-height:1;cursor:pointer;',
+      'border-radius:9px;transition:color 0.2s,background 0.2s;}',
+      '.fd-sale-close:hover{color:#F0F0F5;background:rgba(255,255,255,0.07);}',
+      '@media (max-width:560px){.fd-sale-bar{gap:10px;padding:8px 10px;}',
+      '.fd-sale-pct{font-size:15px;}.fd-sale-sub{font-size:12px;}}'
     ].join('');
     document.head.appendChild(style);
 
@@ -65,13 +80,22 @@
     bar.setAttribute('role', 'region');
     bar.setAttribute('aria-label', 'FlightDecide sale');
 
-    var text = document.createElement('span');
-    var lead = document.createElement('strong');
-    lead.textContent = 'Sale: Pilot is 50% off';
-    text.appendChild(lead);
-    text.appendChild(document.createTextNode(' through November 30, 2026.'));
+    var msg = document.createElement('span');
+    msg.className = 'fd-sale-msg';
+
+    var pct = document.createElement('strong');
+    pct.className = 'fd-sale-pct';
+    pct.textContent = '50% OFF';
+
+    var sub = document.createElement('span');
+    sub.className = 'fd-sale-sub';
+    sub.textContent = 'Pilot, ends November 30, 2026';
+
+    msg.appendChild(pct);
+    msg.appendChild(sub);
 
     var link = document.createElement('a');
+    link.className = 'fd-sale-cta';
     link.href = TARGET;
     link.textContent = 'Get the code';
 
@@ -79,14 +103,14 @@
     close.type = 'button';
     close.className = 'fd-sale-close';
     close.setAttribute('aria-label', 'Dismiss the sale notice');
-    close.textContent = '×';
+    close.textContent = '\u00d7';
     close.addEventListener('click', function () {
       bar.remove();
       document.body.style.paddingBottom = priorPadding;
       try { window.localStorage.setItem(STORAGE_KEY, '1'); } catch (err) { /* fine */ }
     });
 
-    bar.appendChild(text);
+    bar.appendChild(msg);
     bar.appendChild(link);
     bar.appendChild(close);
     document.body.appendChild(bar);
