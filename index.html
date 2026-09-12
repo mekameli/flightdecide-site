@@ -1320,23 +1320,36 @@
     /* Fall 2026 intro offer (FD-595). Window-neutral copy: the sentence names
        its own dates, so it is true before, during, and after the window and
        needs no client-side date logic on a static page. */
+    /* Deliberately quiet. This was a second green box directly beneath the
+       offer box, and two competing green panels left neither one reading as
+       the offer. The sentence still earns its place (it is what a pilot gets
+       without a code) so it stays, as supporting text rather than a panel. */
     .pricing-offer {
-      font-size: 13px;
+      font-size: 12px;
       line-height: 1.55;
-      color: var(--accent-green);
-      background: rgba(34,197,94,0.08);
-      border: 1px solid rgba(34,197,94,0.28);
-      border-radius: 10px;
-      padding: 10px 12px;
-      margin: 8px 0 4px;
+      color: var(--text-muted);
+      padding: 0;
+      margin: 10px 0 4px;
     }
 
-    /* Sale signalling for the 50% code promo. Three surfaces, because a
-       visitor can enter at the top, jump straight to #pricing from the nav,
-       or land on the card itself: a hero link, a flag on the Pilot card, and
-       the struck regular price next to each code. All of it is percentage or
-       list-price based, never the discounted figure, for the per-territory
-       reason spelled out on .promo below. */
+    /* Sale signalling for the 50% code promo. A visitor can enter at the top,
+       jump to #pricing from the nav, or land on the card, so the hero carries
+       a link and the Pilot card carries the offer itself.
+
+       Design notes, because the first pass got these wrong:
+       - ONE focal point. The card previously had a corner 50% OFF flag fighting
+         the centred Most Popular pill, and the offer box sat next to a second
+         green box for the fall offer. The offer box is now the only green thing
+         in the card and .pricing-offer is quiet text beneath it.
+       - The struck price is an ANCHOR, so it sits on the plan line at readable
+         size rather than shrunk under a label.
+       - Code, Copy and Redeem share one explicit height. They previously had
+         three different intrinsic heights (33 / 29 / 33 px) because a button,
+         an anchor and a span pick up different default box metrics, which read
+         as the row being crooked.
+       Percentages and struck LIST prices only, never the discounted figure:
+       ASC prices these per territory and check_website_prices.sh admits only
+       figures sourced from ios/FlightDecide.storekit. */
     .hero-sale {
       display: inline-flex;
       align-items: center;
@@ -1357,112 +1370,140 @@
 
     .hero-sale:hover { background: rgba(34,197,94,0.22); }
 
-    .pricing-sale {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      background: var(--accent-green);
-      color: #06240F;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.6px;
-      padding: 4px 10px;
-      border-radius: 100px;
-    }
-
-    .promo-was {
-      display: block;
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--text-dim);
-      text-decoration: line-through;
-    }
-
-    /* Redeemable offer codes (FD-595 follow-up). Two codes, because an Apple
-       offer code redeems for exactly ONE product: FLY50YEAR hangs off the
-       Pilot yearly offer FD50PY, FLY50MONTH off the Pilot monthly offer
-       FD50PM. Percentages rather than dollar figures on purpose: ASC prices
-       both offers per territory (USA 39.99 / CAN 49.99 / GBR 39.99 on yearly),
-       so a hardcoded USD figure is false on most of the 175 storefronts, and
-       scripts/check_website_prices.sh only admits figures sourced from
-       ios/FlightDecide.storekit. Both codes expire 2026-11-30, the same day
-       the fall intro offer ends, so the two come down together. */
     .promo {
-      border: 1px solid rgba(34,197,94,0.35);
-      background: rgba(34,197,94,0.06);
-      border-radius: var(--radius-sm);
-      padding: 12px;
-      margin: 10px 0 6px;
+      border: 1px solid rgba(34,197,94,0.38);
+      background:
+        linear-gradient(180deg, rgba(34,197,94,0.10) 0%, rgba(34,197,94,0.03) 100%);
+      border-radius: 14px;
+      padding: 14px;
+      margin: 14px 0 10px;
+      text-align: left;
     }
 
     .promo-head {
+      display: flex;
+      align-items: baseline;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .promo-pct {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      color: var(--accent-green);
+      line-height: 1;
+    }
+
+    .promo-until {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.2px;
+    }
+
+    .promo-plan-block + .promo-plan-block {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .promo-plan-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+
+    .promo-term {
       font-size: 13px;
       font-weight: 700;
-      color: var(--accent-green);
-      margin-bottom: 10px;
+      color: var(--text);
+      letter-spacing: 0.2px;
     }
 
-    .promo-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-
-    .promo-plan {
-      /* Fixed basis, never shrink: the two codes differ in length, so a
-         shrinkable cell squeezes the longer row and wraps its struck price
-         onto a second line, leaving the two rows misaligned. */
-      flex: 0 0 84px;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-muted);
-      line-height: 1.3;
+    .promo-was {
+      font-size: 13px;
+      color: var(--text-dim);
+      text-decoration: line-through;
       white-space: nowrap;
     }
 
-    .promo-code {
-      flex: 1;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    /* One explicit height across the three controls: a span, a button and an
+       anchor otherwise resolve to different heights and the row looks crooked. */
+    .promo-row {
+      display: flex;
+      align-items: stretch;
+      gap: 7px;
+      /* Wraps on its own rather than on a viewport breakpoint: this row lives
+         inside a grid column, so its available width is set by the card, not
+         by the screen. Paired with the flex-basis floor on .promo-code below,
+         a row too tight for code + both buttons drops the buttons to a second
+         line instead of letting the code overlap Copy. */
+      flex-wrap: wrap;
+    }
+
+    .promo-code,
+    .promo-copy,
+    .promo-redeem {
+      height: 38px;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
       font-size: 13px;
+    }
+
+    .promo-code {
+      /* 140px floor: never shrink below the width the longest code needs.
+         FLY50MONTH at this size and tracking is about 110px of glyphs. */
+      flex: 1 1 140px;
+      justify-content: flex-start;
+      padding: 0 11px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       color: var(--text);
-      background: rgba(255,255,255,0.06);
-      border: 1px dashed rgba(255,255,255,0.25);
-      border-radius: 6px;
-      padding: 5px 8px;
+      background: rgba(255,255,255,0.07);
+      border: 1px dashed rgba(255,255,255,0.28);
       user-select: all;
       -webkit-user-select: all;
     }
 
     .promo-copy {
-      border: 1px solid var(--border);
+      flex: 0 0 auto;
+      padding: 0 12px;
+      border: 1px solid var(--border-bright);
       background: transparent;
       color: var(--text-muted);
-      border-radius: 6px;
-      padding: 6px 9px;
-      font-size: 12px;
       font-family: inherit;
+      font-weight: 600;
       cursor: pointer;
       transition: color 0.2s, border-color 0.2s;
     }
 
     .promo-copy:hover {
       color: var(--text);
-      border-color: var(--border-bright);
+      border-color: rgba(255,255,255,0.4);
     }
 
     .promo-redeem {
+      /* Grows to fill the line. On a wide card that is a few extra pixels; on a
+         narrow one, where the buttons wrap below the code, it stops the primary
+         action sitting stranded in a short pill with dead space beside it. */
+      flex: 1 1 auto;
+      padding: 0 16px;
       background: var(--accent-green);
       color: #06240F;
-      border-radius: 6px;
-      padding: 7px 12px;
-      font-size: 12px;
       font-weight: 700;
       text-decoration: none;
       white-space: nowrap;
+      transition: background 0.2s;
     }
+
+    .promo-redeem:hover { background: #4ADE80; }
 
     .promo-hint[hidden] { display: none; }
 
@@ -1470,22 +1511,17 @@
       font-size: 12px;
       line-height: 1.55;
       color: var(--accent-green);
-      background: rgba(34,197,94,0.10);
-      border-radius: 6px;
+      background: rgba(34,197,94,0.12);
+      border-radius: 8px;
       padding: 8px 10px;
-      margin-bottom: 8px;
+      margin-top: 10px;
     }
 
     .promo-fine {
       font-size: 12px;
-      line-height: 1.55;
+      line-height: 1.5;
       color: var(--text-muted);
-      margin-top: 2px;
-    }
-
-    @media (max-width: 420px) {
-      .promo-row { flex-wrap: wrap; }
-      .promo-code { flex-basis: 100%; }
+      margin-top: 10px;
     }
 
     .pricing-anchor {
@@ -2321,27 +2357,43 @@
 
           <div class="pricing-card featured reveal">
             <div class="pricing-badge">Most Popular</div>
-            <div class="pricing-sale">50% OFF</div>
             <div class="pricing-tier">Pilot</div>
             <div class="pricing-price">$6.67 USD<span>/mo</span></div>
             <div class="pricing-annual">billed annually at $79.99 USD/yr (save 33%), or $9.99 USD/mo with no yearly commitment</div>
             <div class="promo">
-              <div class="promo-head">On sale: 50% off Pilot with a code, through November 30, 2026</div>
-              <div class="promo-row">
-                <span class="promo-plan">Yearly<span class="promo-was">$79.99 USD/yr</span></span>
-                <span class="promo-code" id="promo-code-year">FLY50YEAR</span>
-                <button class="promo-copy" type="button" data-copy-target="promo-code-year" aria-label="Copy the yearly code FLY50YEAR">Copy</button>
-                <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50YEAR" aria-label="Redeem FLY50YEAR for yearly Pilot in the App Store">Redeem</a>
+              <div class="promo-head">
+                <span class="promo-pct">50% OFF</span>
+                <span class="promo-until">ends November 30, 2026</span>
               </div>
-              <div class="promo-row">
-                <span class="promo-plan">Monthly<span class="promo-was">$9.99 USD/mo</span></span>
-                <span class="promo-code" id="promo-code-month">FLY50MONTH</span>
-                <button class="promo-copy" type="button" data-copy-target="promo-code-month" aria-label="Copy the monthly code FLY50MONTH">Copy</button>
-                <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50MONTH" aria-label="Redeem FLY50MONTH for monthly Pilot in the App Store">Redeem</a>
+
+              <div class="promo-plan-block">
+                <div class="promo-plan-top">
+                  <span class="promo-term">Yearly</span>
+                  <span class="promo-was">$79.99 USD/yr</span>
+                </div>
+                <div class="promo-row">
+                  <span class="promo-code" id="promo-code-year">FLY50YEAR</span>
+                  <button class="promo-copy" type="button" data-copy-target="promo-code-year" aria-label="Copy the yearly code FLY50YEAR">Copy</button>
+                  <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50YEAR" aria-label="Redeem FLY50YEAR for yearly Pilot in the App Store">Redeem</a>
+                </div>
               </div>
+
+              <div class="promo-plan-block">
+                <div class="promo-plan-top">
+                  <span class="promo-term">Monthly</span>
+                  <span class="promo-was">$9.99 USD/mo</span>
+                </div>
+                <div class="promo-row">
+                  <span class="promo-code" id="promo-code-month">FLY50MONTH</span>
+                  <button class="promo-copy" type="button" data-copy-target="promo-code-month" aria-label="Copy the monthly code FLY50MONTH">Copy</button>
+                  <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50MONTH" aria-label="Redeem FLY50MONTH for monthly Pilot in the App Store">Redeem</a>
+                </div>
+              </div>
+
               <p class="promo-hint" id="promo-hint" hidden>Redeeming runs through the App Store on your iPhone, so this link does nothing on a computer. Copy the code above, then on your iPhone open the App Store, tap your photo at the top right, and choose Redeem Gift Card or Code.</p>
-              <p class="promo-fine">Yearly takes half off your first year, monthly takes half off your first three months. Redeem opens the App Store with the code already filled in, so install FlightDecide first. Both codes work for new and returning subscribers, and both beat the fall offer below.</p>
+              <p class="promo-fine">Half off the first year, or the first three months on monthly. Open to new and returning subscribers. Install FlightDecide first, then redeem.</p>
             </div>
+
             <div class="pricing-offer">Fall offer: $49.99 USD for the first year, on annual Pilot plans started between September 15 and November 30, 2026. It renews at $79.99 USD/yr after the first year.</div>
             <div class="pricing-desc">For pilots who fly regularly and want a go/no-go advisor for every flight.</div>
             <ul class="pricing-features">
