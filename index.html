@@ -1331,6 +1331,163 @@
       margin: 8px 0 4px;
     }
 
+    /* Sale signalling for the 50% code promo. Three surfaces, because a
+       visitor can enter at the top, jump straight to #pricing from the nav,
+       or land on the card itself: a hero link, a flag on the Pilot card, and
+       the struck regular price next to each code. All of it is percentage or
+       list-price based, never the discounted figure, for the per-territory
+       reason spelled out on .promo below. */
+    .hero-sale {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34,197,94,0.14);
+      border: 1px solid rgba(34,197,94,0.45);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-green);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-bottom: 14px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .hero-sale:hover { background: rgba(34,197,94,0.22); }
+
+    .pricing-sale {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--accent-green);
+      color: #06240F;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    .promo-was {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+
+    /* Redeemable offer codes (FD-595 follow-up). Two codes, because an Apple
+       offer code redeems for exactly ONE product: FLY50YEAR hangs off the
+       Pilot yearly offer FD50PY, FLY50MONTH off the Pilot monthly offer
+       FD50PM. Percentages rather than dollar figures on purpose: ASC prices
+       both offers per territory (USA 39.99 / CAN 49.99 / GBR 39.99 on yearly),
+       so a hardcoded USD figure is false on most of the 175 storefronts, and
+       scripts/check_website_prices.sh only admits figures sourced from
+       ios/FlightDecide.storekit. Both codes expire 2026-11-30, the same day
+       the fall intro offer ends, so the two come down together. */
+    .promo {
+      border: 1px solid rgba(34,197,94,0.35);
+      background: rgba(34,197,94,0.06);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      margin: 10px 0 6px;
+    }
+
+    .promo-head {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-green);
+      margin-bottom: 10px;
+    }
+
+    .promo-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .promo-plan {
+      /* Fixed basis, never shrink: the two codes differ in length, so a
+         shrinkable cell squeezes the longer row and wraps its struck price
+         onto a second line, leaving the two rows misaligned. */
+      flex: 0 0 84px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+
+    .promo-code {
+      flex: 1;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      border: 1px dashed rgba(255,255,255,0.25);
+      border-radius: 6px;
+      padding: 5px 8px;
+      user-select: all;
+      -webkit-user-select: all;
+    }
+
+    .promo-copy {
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .promo-copy:hover {
+      color: var(--text);
+      border-color: var(--border-bright);
+    }
+
+    .promo-redeem {
+      background: var(--accent-green);
+      color: #06240F;
+      border-radius: 6px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .promo-hint[hidden] { display: none; }
+
+    .promo-hint {
+      font-size: 12px;
+      line-height: 1.55;
+      color: var(--accent-green);
+      background: rgba(34,197,94,0.10);
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+    }
+
+    .promo-fine {
+      font-size: 12px;
+      line-height: 1.55;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    @media (max-width: 420px) {
+      .promo-row { flex-wrap: wrap; }
+      .promo-code { flex-basis: 100%; }
+    }
+
     .pricing-anchor {
       max-width: 620px;
       margin: 0 auto 8px;
@@ -1659,6 +1816,7 @@
     <section class="hero" aria-label="Hero">
       <div class="hero-inner">
         <div class="hero-text">
+          <a class="hero-sale" href="#pricing">Sale &middot; Pilot is 50% off through November 30, 2026</a>
           <span class="hero-badge">Now on the App Store &middot; Android coming soon</span>
           <h1>Should you fly today? <span class="gradient-text">Get a second opinion.</span></h1>
           <p class="hero-sub">
@@ -2163,9 +2321,27 @@
 
           <div class="pricing-card featured reveal">
             <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-sale">50% OFF</div>
             <div class="pricing-tier">Pilot</div>
             <div class="pricing-price">$6.67 USD<span>/mo</span></div>
             <div class="pricing-annual">billed annually at $79.99 USD/yr (save 33%), or $9.99 USD/mo with no yearly commitment</div>
+            <div class="promo">
+              <div class="promo-head">On sale: 50% off Pilot with a code, through November 30, 2026</div>
+              <div class="promo-row">
+                <span class="promo-plan">Yearly<span class="promo-was">$79.99 USD/yr</span></span>
+                <span class="promo-code" id="promo-code-year">FLY50YEAR</span>
+                <button class="promo-copy" type="button" data-copy-target="promo-code-year" aria-label="Copy the yearly code FLY50YEAR">Copy</button>
+                <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50YEAR" aria-label="Redeem FLY50YEAR for yearly Pilot in the App Store">Redeem</a>
+              </div>
+              <div class="promo-row">
+                <span class="promo-plan">Monthly<span class="promo-was">$9.99 USD/mo</span></span>
+                <span class="promo-code" id="promo-code-month">FLY50MONTH</span>
+                <button class="promo-copy" type="button" data-copy-target="promo-code-month" aria-label="Copy the monthly code FLY50MONTH">Copy</button>
+                <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50MONTH" aria-label="Redeem FLY50MONTH for monthly Pilot in the App Store">Redeem</a>
+              </div>
+              <p class="promo-hint" id="promo-hint" hidden>Redeeming runs through the App Store on your iPhone, so this link does nothing on a computer. Copy the code above, then on your iPhone open the App Store, tap your photo at the top right, and choose Redeem Gift Card or Code.</p>
+              <p class="promo-fine">Yearly takes half off your first year, monthly takes half off your first three months. Redeem opens the App Store with the code already filled in, so install FlightDecide first. Both codes work for new and returning subscribers, and both beat the fall offer below.</p>
+            </div>
             <div class="pricing-offer">Fall offer: $49.99 USD for the first year, on annual Pilot plans started between September 15 and November 30, 2026. It renews at $79.99 USD/yr after the first year.</div>
             <div class="pricing-desc">For pilots who fly regularly and want a go/no-go advisor for every flight.</div>
             <ul class="pricing-features">
@@ -2273,6 +2449,53 @@
     menuBtn.addEventListener('click', toggleMobileNav);
     document.querySelectorAll('.mobile-nav a').forEach(function(link) {
       link.addEventListener('click', closeMobileNav);
+    });
+
+    // The apps.apple.com/redeem page renders no HTML of its own: it exists only
+    // to bounce the browser to itms-apps://, which nothing outside iOS handles.
+    // On a desktop that lands the visitor on a blank page with no explanation,
+    // so anywhere the handoff cannot work, show the manual steps instead. The
+    // href is left intact for the no-JS case, where the native behaviour is
+    // still the best available.
+    (function () {
+      const handoffWorks = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (handoffWorks) return;
+      document.querySelectorAll('.promo-redeem').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const hint = document.getElementById('promo-hint');
+          if (hint) hint.hidden = false;
+        });
+      });
+    })();
+
+    // Offer-code copy buttons in the pricing card. The codes are plain,
+    // selectable text as well, so a clipboard failure costs a step, not the
+    // offer. Same fallback chain as the generated /a/<slug>/ pages.
+    document.querySelectorAll('.promo-copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const codeEl = document.getElementById(btn.getAttribute('data-copy-target'));
+        if (!codeEl) return;
+        const code = codeEl.textContent.trim();
+        function done() {
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+        }
+        function fallback() {
+          const range = document.createRange();
+          range.selectNodeContents(codeEl);
+          const sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+          try { document.execCommand('copy'); done(); } catch (err) { /* left selected to copy by hand */ }
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(code).then(done, fallback);
+        } else {
+          fallback();
+        }
+      });
     });
 
     try {

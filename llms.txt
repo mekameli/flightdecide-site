@@ -20,6 +20,13 @@ Key facts:
 - Intro offer: annual Pilot plans started between September 15 and
   November 30, 2026 cost $49.99 USD for the first year, then renew at
   $79.99 USD/yr. Pilot only; Pro has no intro offer.
+- Offer codes (redeemable on the App Store, both expire November 30, 2026):
+  FLY50YEAR takes 50% off the first year of Pilot annual, FLY50MONTH takes
+  50% off the first three months of Pilot monthly. An Apple offer code
+  redeems for one product, hence one code per billing period. Both work for
+  new and returning subscribers and replace the intro offer above. Redeem:
+  https://apps.apple.com/redeem?ctx=offercodes&id=6761793626&code=FLY50YEAR
+  and https://apps.apple.com/redeem?ctx=offercodes&id=6761793626&code=FLY50MONTH
 - Weather/NOTAM sources: aviationweather.gov and the FAA NOTAM system
   (government sources only; NAV CANADA data for Canadian coverage).
 - NOTAM honesty: FlightDecide distinguishes "queried, zero NOTAMs" from
