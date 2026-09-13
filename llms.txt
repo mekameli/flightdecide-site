@@ -32,6 +32,12 @@ Key facts:
 - NOTAM honesty: FlightDecide distinguishes "queried, zero NOTAMs" from
   "coverage gap"; it never claims "no NOTAMs" without evidence the source
   was queried.
+- Social: Instagram https://www.instagram.com/flightdecide/ posts one
+  illustrated explainer a day for student and private pilots (weather,
+  airspace, performance, visual illusions), each one cited to the FAA
+  handbooks or the CFR. Facebook Page:
+  https://www.facebook.com/61594406006442 carries the same posts. The most
+  recent are shown on https://flightdecide.com/learn/
 - Aircraft library: trainers through jets (C150/152, C172, PA-28, C182,
   C206, SR22, M20J, A36, Seneca, Baron 58, C310, Meridian, King Air C90,
   PC-12, CJ1+, CJ3, Phenom 100, and more), plus custom profiles with

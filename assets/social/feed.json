@@ -1,0 +1,86 @@
+{
+  "generated": "2026-09-13T21:21:25+00:00",
+  "profile": "https://www.instagram.com/flightdecide/",
+  "posts": [
+    {
+      "id": "night-black-hole",
+      "title": "The black hole approach",
+      "headline": "With nothing lit below, you fly lower than intended.",
+      "topic": "Visual illusions",
+      "alt": "The black hole approach: an illustrated diagram for pilots. With nothing lit below, you fly lower than intended. The picture shows night side elevation with the lit runway small and far in the right third and the approach entering from the left; solid aeroplane on the lower, shallower path, visibly close to the dark surface short of the field; ghost outline of the same aeroplane on the intended path at the same distance out, clearly above the solid one; completely unlit ground or water between the aeroplane and the threshold, with no towns, roads or scattered lights. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/night-black-hole.webp",
+      "permalink": "https://www.instagram.com/p/DdPPCUpGUhH/",
+      "posted": "2026-09-13"
+    },
+    {
+      "id": "hf-attention-narrows",
+      "title": "Attention narrowing under fatigue",
+      "headline": "Fatigue narrows your scan before you feel impaired.",
+      "topic": "Decision making",
+      "alt": "Attention narrowing under fatigue: an illustrated diagram for pilots. Fatigue narrows your scan before you feel impaired. The picture shows side elevation of a single-engine aeroplane in profile left of centre, late in the day, with layered ridgelines stepping back to the right into haze; a narrow pale-edged cone of attention opening forward from the cockpit, reaching only one small lit notch of rock at the shoulder of the pass; ghost comparison: a thin unfilled outline of a far wider cone from the same point, spanning nearly the whole forward view, the scan the pilot believes is being flown; terrain inside the narrow cone crisp and readable, everything between its edges and the ghost outline dimmed and softened into haze. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/hf-attention-narrows.webp",
+      "permalink": "https://www.instagram.com/p/DdOFOzFG3x1/",
+      "posted": "2026-09-13"
+    },
+    {
+      "id": "aero-load-factor-bank",
+      "title": "Stall speed rising with bank angle",
+      "headline": "A steeper level turn raises your stall speed.",
+      "topic": "Performance",
+      "alt": "Stall speed rising with bank angle: an illustrated diagram for pilots. A steeper level turn raises your stall speed. The picture shows a rendered single-engine aircraft heeled hard over in a steep turn, wings near sixty degrees of bank; the nose held on the horizon so the steep turn reads as level, not descending; a pale ghost of the same aircraft in a shallow bank, wings close to level; a thin level reference line joining solid aircraft and ghost at the same altitude. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/aero-load-factor-bank.webp",
+      "permalink": "https://www.instagram.com/p/DdNe5Blm14N/",
+      "posted": "2026-09-13"
+    },
+    {
+      "id": "wx-wind-shear-final",
+      "title": "Losing the headwind on final",
+      "headline": "A decreasing headwind costs airspeed and drops you below the path.",
+      "topic": "Weather",
+      "alt": "Losing the headwind on final: an illustrated diagram for pilots. A decreasing headwind costs airspeed and drops you below the path.",
+      "image": "/assets/social/wx-wind-shear-final.webp",
+      "permalink": "https://www.instagram.com/p/DdMYgvFG9Jh/",
+      "posted": "2026-09-12"
+    },
+    {
+      "id": "wx-inversion",
+      "title": "A temperature inversion trapping haze",
+      "headline": "The inversion that smooths the air also traps the haze below.",
+      "topic": "Weather",
+      "alt": "A temperature inversion trapping haze: an illustrated diagram for pilots. The inversion that smooths the air also traps the haze below.",
+      "image": "/assets/social/wx-inversion.webp",
+      "permalink": "https://www.instagram.com/p/DdK83aZmyLy/",
+      "posted": "2026-09-11"
+    },
+    {
+      "id": "terrain-lee-downdraft",
+      "title": "Lee-side downdraft",
+      "headline": "The air can sink faster than you can climb.",
+      "topic": "Weather",
+      "alt": "Lee-side downdraft: an illustrated diagram for pilots. The air can sink faster than you can climb.",
+      "image": "/assets/social/terrain-lee-downdraft.webp",
+      "permalink": "https://www.instagram.com/p/DdKZBtCgf3q/",
+      "posted": "2026-09-11"
+    },
+    {
+      "id": "wind-crab-on-final",
+      "title": "Wind correction angle",
+      "headline": "Line up with where you are going, not where you are pointing.",
+      "topic": "Navigation",
+      "alt": "Wind correction angle: an illustrated diagram for pilots. Line up with where you are going, not where you are pointing.",
+      "image": "/assets/social/wind-crab-on-final.webp",
+      "permalink": "https://www.instagram.com/p/DdKZAAVktan/",
+      "posted": "2026-09-11"
+    },
+    {
+      "id": "perf-density-altitude",
+      "title": "Density altitude",
+      "headline": "Thin air lengthens your takeoff and flattens your climb.",
+      "topic": "Weather",
+      "alt": "Density altitude: an illustrated diagram for pilots. Thin air lengthens your takeoff and flattens your climb.",
+      "image": "/assets/social/perf-density-altitude.webp",
+      "permalink": "https://www.instagram.com/p/DdKY4XbAYZL/",
+      "posted": "2026-09-11"
+    }
+  ]
+}
