@@ -1048,11 +1048,20 @@
       .footer-copy { text-align: center; }
       .footer-links { justify-content: center; }
     }
+    /* Eight items and a pill need about 950px at a 20px gap, so the gap
+       tightens below 1100 and the menu collapses to the hamburger below 960.
+       It collapsed at 640 before the Explainers link and spilled past the
+       viewport from 641 up to about 1,000px. */
+    @media (max-width: 1100px) {
+      .nav-links { gap: 20px; }
+    }
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: block; }
+    }
     @media (max-width: 640px) {
       html, body { overflow-x: hidden; width: 100%; }
       nav .nav-inner { padding: 0 16px; }
-      .nav-links { display: none; }
-      .nav-hamburger { display: block; }
       .demo-hero { padding: 96px 20px 32px; }
       .demo-hero h1 { font-size: 30px; letter-spacing: -1px; }
       .demo-hero p { font-size: 16px; }
@@ -1165,6 +1174,9 @@
         <li><a href="demo.html" aria-current="page">Demo</a></li>
         <li><a href="index.html#pricing">Pricing</a></li>
         <li><a href="/tools/">Free Tools</a></li>
+        <!-- site-nav-explainers:start -->
+        <li><a href="/explainers/">Explainers</a></li>
+        <!-- site-nav-explainers:end -->
         <li><a href="guide.html">Pilot Guide</a></li>
         <li><a href="https://apps.apple.com/app/flightdecide/id6761793626" class="nav-cta">Download</a></li>
       </ul>
@@ -1183,6 +1195,9 @@
         <a href="demo.html">Demo</a>
         <a href="index.html#pricing">Pricing</a>
         <a href="/tools/">Free Tools</a>
+        <!-- site-nav-explainers:start -->
+        <a href="/explainers/">Explainers</a>
+        <!-- site-nav-explainers:end -->
         <a href="guide.html">Pilot Guide</a>
         <a href="https://apps.apple.com/app/flightdecide/id6761793626">Download for iPhone</a>
       </div>

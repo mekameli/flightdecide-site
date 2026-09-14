@@ -1705,8 +1705,20 @@
     }
 
     /* RESPONSIVE */
-    @media (max-width: 1024px) {
+    /* The full menu is ten items and a pill. It needs about 1,070px at a 20px
+       gap and about 1,210px at the 36px desktop gap, so the gap tightens below
+       1280 and the menu collapses to the hamburger below 1100. Both were sized
+       for nine items before the Explainers link (1024 and 900). */
+    @media (max-width: 1280px) {
       .nav-links { gap: 20px; }
+    }
+    @media (max-width: 1100px) {
+      .nav-links { display: none; }
+      .nav-right { display: flex; }
+      .nav-hamburger { display: block; }
+      .nav-cta-mobile { display: inline-flex; padding: 5px 12px; font-size: 11px; white-space: nowrap; }
+    }
+    @media (max-width: 1024px) {
       .hero-inner { gap: 48px; }
       .verdict-mockup { width: 240px; }
       h1 { font-size: 44px; }
@@ -1714,12 +1726,6 @@
     }
 
     @media (max-width: 900px) {
-      /* Collapse the full nav to the hamburger before the 7 links + CTA pill would crowd.
-         space-between then spreads the logo (left) and the nav-right group (right). */
-      .nav-links { display: none; }
-      .nav-right { display: flex; }
-      .nav-hamburger { display: block; }
-      .nav-cta-mobile { display: inline-flex; padding: 5px 12px; font-size: 11px; white-space: nowrap; }
       .features-grid { grid-template-columns: repeat(2, 1fr); }
       .category-grid { grid-template-columns: repeat(2, 1fr); }
       .demo-shots { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
@@ -1980,6 +1986,9 @@
         <li><a href="#aircraft">Aircraft</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="/tools/">Free Tools</a></li>
+        <!-- site-nav-explainers:start -->
+        <li><a href="/explainers/">Explainers</a></li>
+        <!-- site-nav-explainers:end -->
         <li><a href="guide.html">Pilot Guide</a></li>
         <li><a href="#download" class="nav-cta">Download</a></li>
       </ul>
@@ -2003,6 +2012,9 @@
         <a href="#aircraft">Aircraft</a>
         <a href="#pricing">Pricing</a>
         <a href="/tools/">Free Tools</a>
+        <!-- site-nav-explainers:start -->
+        <a href="/explainers/">Explainers</a>
+        <!-- site-nav-explainers:end -->
         <a href="guide.html">Pilot Guide</a>
         <a href="#download">Download</a>
       </div>
