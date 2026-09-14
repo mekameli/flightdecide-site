@@ -1,86 +1,325 @@
 {
-  "generated": "2026-09-13T21:21:25+00:00",
+  "generated": "2026-09-14T07:38:39+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
       "id": "night-black-hole",
+      "slug": "black-hole-approach",
+      "page": "/explainers/black-hole-approach/",
       "title": "The black hole approach",
       "headline": "With nothing lit below, you fly lower than intended.",
+      "pillar": "illusions",
       "topic": "Visual illusions",
       "alt": "The black hole approach: an illustrated diagram for pilots. With nothing lit below, you fly lower than intended. The picture shows night side elevation with the lit runway small and far in the right third and the approach entering from the left; solid aeroplane on the lower, shallower path, visibly close to the dark surface short of the field; ghost outline of the same aeroplane on the intended path at the same distance out, clearly above the solid one; completely unlit ground or water between the aeroplane and the threshold, with no towns, roads or scattered lights. Flight training explainer from FlightDecide.",
       "image": "/assets/social/night-black-hole.webp",
+      "image_full": "/assets/explainers/black-hole-approach.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdPPCUpGUhH/",
-      "posted": "2026-09-13"
+      "posted": "2026-09-13",
+      "caption": [
+        "You turn final over the bay, and the only lights anywhere are the ones on the runway.",
+        "Night approaches over unlit terrain or water have a name. The black hole approach. The cues you use to judge height and distance are gone. No roads or rooflines under the nose. Only the runway lights, sitting out there alone.",
+        "On a lit approach the picture corrects you the whole way down. Over black ground it never updates. A small sink goes unchallenged. The Pilot's Handbook of Aeronautical Knowledge files it with the visual illusions in chapter 17.",
+        "FlightDecide reads your destination NOTAMs for the planned window, runway lighting outages included.",
+        "If the ground below the approach shows nothing, what is left to tell you how high you are?"
+      ],
+      "teaches": [
+        "An approach over unlit terrain or water removes the visual cues normally used to judge height and distance.",
+        "The result tends toward an approach lower than intended."
+      ],
+      "intent": "With no lit features between you and the runway there is no visual slope information, so the approach is flown on an impression.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 17",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 17",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 11",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 11",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+        }
+      ],
+      "related": []
     },
     {
       "id": "hf-attention-narrows",
+      "slug": "attention-narrowing-under-fatigue",
+      "page": "/explainers/attention-narrowing-under-fatigue/",
       "title": "Attention narrowing under fatigue",
       "headline": "Fatigue narrows your scan before you feel impaired.",
+      "pillar": "adm",
       "topic": "Decision making",
       "alt": "Attention narrowing under fatigue: an illustrated diagram for pilots. Fatigue narrows your scan before you feel impaired. The picture shows side elevation of a single-engine aeroplane in profile left of centre, late in the day, with layered ridgelines stepping back to the right into haze; a narrow pale-edged cone of attention opening forward from the cockpit, reaching only one small lit notch of rock at the shoulder of the pass; ghost comparison: a thin unfilled outline of a far wider cone from the same point, spanning nearly the whole forward view, the scan the pilot believes is being flown; terrain inside the narrow cone crisp and readable, everything between its edges and the ghost outline dimmed and softened into haze. Flight training explainer from FlightDecide.",
       "image": "/assets/social/hf-attention-narrows.webp",
+      "image_full": "/assets/explainers/attention-narrowing-under-fatigue.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdOFOzFG3x1/",
-      "posted": "2026-09-13"
+      "posted": "2026-09-13",
+      "caption": [
+        "Fourth hour in the airplane, you copy a squawk code and look up to find the heading off the bug.",
+        "Fatigue does that. It degrades attention, and it takes away the ability to divide attention between two jobs. Whatever your hands are doing wins. The instrument you were watching a minute ago goes unwatched, and nothing announces it.",
+        "You can't feel the narrowing while it's happening. Chapter 2 of the Pilot's Handbook of Aeronautical Knowledge covers why fitness gets judged against a written checklist. The same tired brain does the self-assessment, and it reports back that everything is fine.",
+        "FlightDecide reads the TAFs and NOTAMs across your whole planned window, so late-day workload is visible early.",
+        "On a long day, the checklist is the only honest opinion in the cockpit."
+      ],
+      "teaches": [
+        "Fatigue degrades attention and the ability to divide it between tasks.",
+        "The degradation is difficult to self-assess, which is why a checklist rather than a feeling is used to judge fitness."
+      ],
+      "intent": "Fatigue narrows the field of attention before it feels like impairment, so the scan stops covering what you think it covers.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 2",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 2",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+        },
+        {
+          "ref": "FAA-H-8083-2",
+          "title": "Risk Management Handbook (FAA-H-8083-2)",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/risk-management-handbook-faa-h-8083-2a"
+        }
+      ],
+      "related": []
     },
     {
       "id": "aero-load-factor-bank",
+      "slug": "stall-speed-rising-with-bank-angle",
+      "page": "/explainers/stall-speed-rising-with-bank-angle/",
       "title": "Stall speed rising with bank angle",
       "headline": "A steeper level turn raises your stall speed.",
+      "pillar": "performance",
       "topic": "Performance",
       "alt": "Stall speed rising with bank angle: an illustrated diagram for pilots. A steeper level turn raises your stall speed. The picture shows a rendered single-engine aircraft heeled hard over in a steep turn, wings near sixty degrees of bank; the nose held on the horizon so the steep turn reads as level, not descending; a pale ghost of the same aircraft in a shallow bank, wings close to level; a thin level reference line joining solid aircraft and ghost at the same altitude. Flight training explainer from FlightDecide.",
       "image": "/assets/social/aero-load-factor-bank.webp",
+      "image_full": "/assets/explainers/stall-speed-rising-with-bank-angle.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdNe5Blm14N/",
-      "posted": "2026-09-13"
+      "posted": "2026-09-13",
+      "caption": [
+        "Halfway around the steep turn the horn chirps, and the airspeed needle hasn't moved.",
+        "The wing is holding you up and hauling you around the corner at the same time. In a level turn, load factor grows with bank angle. Stall speed follows the square root of that load. Same airplane, higher number.",
+        "That number never shows up on the panel. The needle reads the same as it did wings level, so the margin feels unchanged. It has shrunk. The Airplane Flying Handbook works through steep turns in chapter 5.",
+        "FlightDecide computes the weight and balance for your planned load, so the gross weight behind your published stall speeds is a number you already have.",
+        "Next steep turns with your instructor, note the speed where the buffet starts and compare it to the wings level figure."
+      ],
+      "teaches": [
+        "In a level turn load factor increases with bank angle.",
+        "Stall speed increases with the square root of the load factor, so a 60 degree level turn doubles the load and raises the stall speed by about 41 percent."
+      ],
+      "intent": "A level turn raises load factor and the stall speed rises with the square root of it, so a steep turn stalls at a higher speed.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 5",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+        }
+      ],
+      "related": []
     },
     {
       "id": "wx-wind-shear-final",
+      "slug": "losing-the-headwind-on-final",
+      "page": "/explainers/losing-the-headwind-on-final/",
       "title": "Losing the headwind on final",
       "headline": "A decreasing headwind costs airspeed and drops you below the path.",
+      "pillar": "weather",
       "topic": "Weather",
-      "alt": "Losing the headwind on final: an illustrated diagram for pilots. A decreasing headwind costs airspeed and drops you below the path.",
+      "alt": "Losing the headwind on final: an illustrated diagram for pilots. A decreasing headwind costs airspeed and drops you below the path. The picture shows two wind layers divided by a soft shear seam: long streamlines above, short stubby ones below; a dashed intended glidepath running straight down to the runway threshold; the solid aircraft sitting beneath that dashed path, just after crossing the seam; a pale ghost of the same aircraft still on the dashed path at the same point along final. Flight training explainer from FlightDecide.",
       "image": "/assets/social/wx-wind-shear-final.webp",
+      "image_full": "/assets/explainers/losing-the-headwind-on-final.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdMYgvFG9Jh/",
-      "posted": "2026-09-12"
+      "posted": "2026-09-12",
+      "caption": [
+        "Headwind loss on final arrives late in the approach, where you have the least altitude to spare.",
+        "On final you are low and committed to a path. The wing knows only the air moving over it right now. Pattern altitude is history. A headwind that weakens as you descend hands you a sink you never asked for.",
+        "It is easy to read the sag as your own flying. The air changed. The Airplane Flying Handbook covers this in its approach and landing chapter. The speed does come back. You are lower than you planned by the time it does.",
+        "FlightDecide reads the wind lines in your TAF for the planned window, including a low level wind shear group when the forecast carries one.",
+        "One sentence worth carrying down final: the speed sagged because the air changed, and the airplane is already going low."
+      ],
+      "teaches": [
+        "A decreasing headwind with descent produces a momentary loss of indicated airspeed.",
+        "The aircraft descends below the intended path until the speed is regained."
+      ],
+      "intent": "Descending out of a stronger wind into a weaker one costs airspeed, and the aircraft sinks below the path while it recovers.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-28 ch 19",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 19",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+        }
+      ],
+      "related": []
     },
     {
       "id": "wx-inversion",
+      "slug": "temperature-inversion-trapping-haze",
+      "page": "/explainers/temperature-inversion-trapping-haze/",
       "title": "A temperature inversion trapping haze",
       "headline": "The inversion that smooths the air also traps the haze below.",
+      "pillar": "weather",
       "topic": "Weather",
-      "alt": "A temperature inversion trapping haze: an illustrated diagram for pilots. The inversion that smooths the air also traps the haze below.",
+      "alt": "A temperature inversion trapping haze: an illustrated diagram for pilots. The inversion that smooths the air also traps the haze below. The picture shows a valley filled with dense haze whose top is cut off along one ruler-straight horizontal line; clean transparent air above that line with distant ranges still crisp and edged; a smoke column from a chimney that climbs vertically, stops dead at the line, and spreads sideways into a long level sheet; a small profile aircraft flying at the top of the haze with wings dead level. Flight training explainer from FlightDecide.",
       "image": "/assets/social/wx-inversion.webp",
+      "image_full": "/assets/explainers/temperature-inversion-trapping-haze.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdK83aZmyLy/",
-      "posted": "2026-09-11"
+      "posted": "2026-09-12",
+      "caption": [
+        "Temperature inversions are stable layers, and stable air is what keeps the haze from clearing.",
+        "Vertical motion is what carries smoke and haze away. A stable layer has none, so it collects in the air you are looking through. Stability does all of it. The Aviation Weather Handbook covers inversions in chapter 18.",
+        "A smooth ride is easy to read as good conditions. It reports on mixing. With mixing suppressed, the haze underneath has nothing to lift it out and nowhere to go. Smooth air is what the trap feels like from inside.",
+        "FlightDecide reads the TAFs for your planned window and shows the forecast visibility and haze in a briefing you can check against raw data.",
+        "If the ride goes glassy and the horizon turns milky, one layer is doing both.",
+        "https://flightdecide.com iOS: https://apps.apple.com/us/app/flightdecide/id6761793626"
+      ],
+      "teaches": [
+        "A temperature inversion is a stable layer that suppresses vertical mixing.",
+        "Because mixing is suppressed, haze and smoke concentrate below the inversion while the air within it is smooth."
+      ],
+      "intent": "Smooth air and poor visibility arrive together, because the inversion that stops the mixing also traps what is in the air.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-28 ch 18",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 18",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+        },
+        {
+          "ref": "FAA-H-8083-28 ch 13",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 13",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+        }
+      ],
+      "related": []
     },
     {
       "id": "terrain-lee-downdraft",
+      "slug": "lee-side-downdraft",
+      "page": "/explainers/lee-side-downdraft/",
       "title": "Lee-side downdraft",
       "headline": "The air can sink faster than you can climb.",
+      "pillar": "weather",
       "topic": "Weather",
       "alt": "Lee-side downdraft: an illustrated diagram for pilots. The air can sink faster than you can climb.",
       "image": "/assets/social/terrain-lee-downdraft.webp",
+      "image_full": "/assets/explainers/lee-side-downdraft.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdKZBtCgf3q/",
-      "posted": "2026-09-11"
+      "posted": "2026-09-11",
+      "caption": [
+        "Lee-side downdraft: pitched up at climb power, an aircraft can still be losing height.",
+        "You plan a ridge crossing around climb performance. Descending air on the lee side can take that margin back, and FAA-H-8083-28 chapter 16 covers that flow. The margin goes first. The height goes next.",
+        "It is easy to read the attitude as proof of a climb. Pitch and power are inputs. The altimeter is the output. A steady nose-up picture can sit on top of a descending trend for the whole crossing.",
+        "FlightDecide computes the weight and balance for your planned flight window, which is one input to the climb performance you will have on the day.",
+        "If the nose is up and the altimeter is unwinding, believe the altimeter."
+      ],
+      "teaches": [
+        "On the lee side of a ridge the air can be descending, and it can descend faster than a light aircraft climbs.",
+        "So a climb attitude does not guarantee a climb: the aircraft can be pitched up, at climb power, and still losing height."
+      ],
+      "intent": "air spilling down the downwind side of a ridge can descend faster than a light aircraft can climb, even at a climb attitude",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-28 ch 16",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 16",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+        },
+        {
+          "ref": "FAA-H-8083-28 ch 19",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 19",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+        }
+      ],
+      "related": []
     },
     {
       "id": "wind-crab-on-final",
+      "slug": "wind-correction-angle",
+      "page": "/explainers/wind-correction-angle/",
       "title": "Wind correction angle",
       "headline": "Line up with where you are going, not where you are pointing.",
+      "pillar": "navigation",
       "topic": "Navigation",
       "alt": "Wind correction angle: an illustrated diagram for pilots. Line up with where you are going, not where you are pointing.",
       "image": "/assets/social/wind-crab-on-final.webp",
+      "image_full": "/assets/explainers/wind-correction-angle.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdKZAAVktan/",
-      "posted": "2026-09-11"
+      "posted": "2026-09-11",
+      "caption": [
+        "Wind correction angle is what keeps your track on the extended centreline in a crosswind.",
+        "In a crosswind your heading and your track over the ground are two different things. The angle between them is the wind correction angle. On final, hold it into the wind. The track then stays down the extended centreline. The crab comes out before touchdown, so the aeroplane lands with its longitudinal axis on the runway.",
+        "It is easy to read a nose pointed straight at the runway as lined up. You drift when the correction is missing. Chapter 16 of FAA-H-8083-25 lays out the same wind triangle for cross country legs.",
+        "FlightDecide pulls wind direction and speed from the TAF for your planned window, then scores it in the go/no-go advisor.",
+        "On the next crosswind final, notice how far off the runway heading your nose sits while the track stays straight."
+      ],
+      "teaches": [
+        "In a crosswind an aircraft's heading and its track over the ground are different, and the angle between them is the wind correction angle.",
+        "On the approach, holding a wind correction angle into the wind is what keeps the track along the extended centreline.",
+        "An aircraft that points straight at the runway in a crosswind, with no correction applied, drifts downwind of the centreline.",
+        "The crab is taken out before touchdown, so the aircraft lands with its longitudinal axis aligned with the runway."
+      ],
+      "intent": "in a crosswind the aeroplane's nose points off to one side while its path over the ground stays on the centreline",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 16",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 16",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+        }
+      ],
+      "related": []
     },
     {
       "id": "perf-density-altitude",
+      "slug": "density-altitude",
+      "page": "/explainers/density-altitude/",
       "title": "Density altitude",
       "headline": "Thin air lengthens your takeoff and flattens your climb.",
+      "pillar": "weather",
       "topic": "Weather",
       "alt": "Density altitude: an illustrated diagram for pilots. Thin air lengthens your takeoff and flattens your climb.",
       "image": "/assets/social/perf-density-altitude.webp",
+      "image_full": "/assets/explainers/density-altitude.webp",
+      "image_px": 1254,
       "permalink": "https://www.instagram.com/p/DdKY4XbAYZL/",
-      "posted": "2026-09-11"
+      "posted": "2026-09-11",
+      "caption": [
+        "Density altitude takes thrust from the propeller and lift from the wing, and the runway does not grow.",
+        "Heat and elevation both thin the air. The field that felt long at seven in the morning is a different field at three in the afternoon. Your loading has not changed and neither has your technique. The ground roll grows anyway.",
+        "It is easy to treat runway length as the whole question. The climb gradient available is reduced on that same afternoon, and the rising ground past the departure end is still there. FAA-H-8083-25 chapter 11 has the performance side of this.",
+        "FlightDecide reads the TAF for your planned window and the weight and balance you entered, then scores both in one advisory.",
+        "After the longer ground roll, what is the other half of a density altitude problem?"
+      ],
+      "teaches": [
+        "Heat and elevation both thin the air, and thin air reduces the thrust the propeller makes and the lift the wing makes at a given speed.",
+        "Takeoff distance therefore grows with density altitude while the aircraft, its weight and the pilot's technique are all unchanged.",
+        "Rising terrain beyond the runway matters more on a thin-air day, because the climb gradient available is reduced at the same time as the ground roll is lengthened."
+      ],
+      "intent": "the same aeroplane uses far more runway to get airborne when the air is thin than when it is dense",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 11",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 11",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+        },
+        {
+          "ref": "FAA-H-8083-28 ch 8",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 8",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+        }
+      ],
+      "related": []
     }
   ]
 }

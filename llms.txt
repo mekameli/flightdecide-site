@@ -38,6 +38,10 @@ Key facts:
   handbooks or the CFR. Facebook Page:
   https://www.facebook.com/flightdecide carries the same posts. The most
   recent are shown on https://flightdecide.com/learn/
+- Illustrated explainers on the site: https://flightdecide.com/explainers/
+  has one page per illustration, with the lesson in words, the FAA or CFR
+  sources it rests on and the picture at full size. Newest first, filter
+  by topic.
 - Aircraft library: trainers through jets (C150/152, C172, PA-28, C182,
   C206, SR22, M20J, A36, Seneca, Baron 58, C310, Meridian, King Air C90,
   PC-12, CJ1+, CJ3, Phenom 100, and more), plus custom profiles with
