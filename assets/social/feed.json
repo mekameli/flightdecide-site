@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T21:20:06+00:00",
+  "generated": "2026-09-16T21:30:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -498,7 +498,48 @@
           "points_at": null
         }
       ],
-      "article": [],
+      "article": [
+        {
+          "heading": "Why the air sinks there",
+          "paragraphs": [
+            "The wind does not stop at the ridge. When the air is stable and the wind is strong, the whole layer gets lifted over the top.",
+            "Gravity pulls it back down, and it does not stop at the level it came from. Momentum then carries it well below that height before it begins to rise once more.",
+            "That descending stretch is the lee-side downdraft. It sits on the downwind side, right where you are still trying to climb."
+          ]
+        },
+        {
+          "heading": "Climbing through air that is falling",
+          "paragraphs": [
+            "Your climb rate is measured against the air around you, not against the ground. When that air is sinking faster than you climb, your height falls while the wing keeps climbing.",
+            "A light aircraft does not have a large climb rate to spend. Set a descending air mass against it and the sum can come out below zero. You sink.",
+            "Nothing in the cockpit picture changes while this happens. The attitude holds and the airspeed sits where you put it. Only the vertical speed and the terrain ahead tell you anything is wrong."
+          ]
+        },
+        {
+          "heading": "When a ridge makes waves",
+          "paragraphs": [
+            "A wave needs strong wind and stable air upwind of the ridge. Take away either one and the air behaves in another way.",
+            "Weak wind can leave the mountains acting as a dam, holding the air back on the upwind side. Unstable air that carries enough moisture tends to build convective cloud rather than a smooth wave. Neither of those is the lee-side case.",
+            "Season matters. Late autumn through early spring is when the large-scale winds run strongest, and that is when the worst mountain wind events show up."
+          ]
+        },
+        {
+          "heading": "Where the sinking air sits",
+          "paragraphs": [
+            "The descending air is part of a wave, so it repeats. Past the first trough the air swings back up and then overshoots once more. The oscillation fades downstream.",
+            "That gives you bands of sinking air separated by bands of rising air. Crossing them, the vertical speed swings one way and then the other. One good climb through a rising band does not mean the sink is behind you.",
+            "The handbook names two shapes for this. A vertically propagating mountain wave and a trapped lee wave can both be present, and each can be hazardous. The name matters less than the sink."
+          ]
+        },
+        {
+          "heading": "What you might see first",
+          "paragraphs": [
+            "Sometimes the flow announces itself. Lenticular cloud and blowing dust mark mountain flow that is under way. Rotor cloud under the wave is another sign.",
+            "The handbook is direct about the other case, where severe wind events happen with little or no visual warning. A clear sky over a ridge is not a promise that the lee side is quiet.",
+            "The ridge bends the wind and breaks it into eddies at the same time. Those run from a few centimeters to tens or hundreds of kilometers across. The ride through them can be smooth or violent."
+          ]
+        }
+      ],
       "related": []
     },
     {
