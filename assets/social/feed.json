@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T21:50:57+00:00",
+  "generated": "2026-09-16T22:10:01+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -241,7 +241,43 @@
           "points_at": "The pilot's upright silhouette in the cockpit."
         }
       ],
-      "article": [],
+      "article": [
+        {
+          "heading": "Why the scan shrinks",
+          "paragraphs": [
+            "Attention is not one supply that you either have or do not have. Part of it is the work of splitting attention across several jobs that all need some. Fatigue degrades both of those.",
+            "The task in front of you holds on to its share. The one you only glance at loses turns, and the gap between glances gets longer.",
+            "Nothing goes dark when that happens. The part of the view you take in gets narrower, and it narrows around whatever you are working on.",
+            "You go heads down to set up the approach. When you look up, the airplane has been in a slow left turn for longer than you would have allowed."
+          ]
+        },
+        {
+          "heading": "Why self-assessment misses it",
+          "paragraphs": [
+            "The degradation is difficult to judge from inside your own head. The judgement about whether you are fit to fly runs on the faculty the fatigue is degrading.",
+            "There is also nothing that presents as missing. A narrow scan returns a sharp read of a small area, and it reports nothing at all about the rest.",
+            "So the picture you hold of your own coverage stays wide while the coverage itself shrinks. You are working from the version you had on a rested morning flight.",
+            "Traffic is the plain case. It sits in the windscreen, outside the band you are sampling, and leaves nothing behind for you to remember afterwards."
+          ]
+        },
+        {
+          "heading": "Where it costs the most",
+          "paragraphs": [
+            "Workload is not level from taxi to shutdown. The tasks increase sharply in the landing phase, and that phase demands more precision and attention than cruise does.",
+            "It is also the phase that asks you to hold several jobs at once. You watch airspeed and path while you change configuration, work the radio and look for other airplanes.",
+            "The accident record is concentrated in the same places. Landing accounts for 24.1 percent of general aviation accidents and takeoff for 23.4 percent. Approximately 80 percent of all aviation accidents are related to human factors.",
+            "The hours that tire you out come before the approach, not after it. Your narrowest scan of the day and the busiest flying of the day arrive together."
+          ]
+        },
+        {
+          "heading": "What to use instead",
+          "paragraphs": [
+            "Fitness gets judged against a written checklist because the feeling is not evidence. A list asks you things you answer by counting and by looking at a clock.",
+            "Personal minimums work the same way. You set them in advance and build them into habit, so the number exists before you have to apply it.",
+            "A written answer will never tell you that you are sharp. It tells you whether you are inside a limit you drew while you could still see well enough to draw it."
+          ]
+        }
+      ],
       "related": []
     },
     {
