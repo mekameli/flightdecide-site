@@ -1,7 +1,53 @@
 {
-  "generated": "2026-09-14T07:38:39+00:00",
+  "generated": "2026-09-16T15:15:22+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "illusion-runway-width",
+      "slug": "narrow-runway-and-a-low-approach",
+      "page": "/explainers/narrow-runway-and-a-low-approach/",
+      "title": "A narrow runway and a low approach",
+      "headline": "A narrow runway hides how low you really are.",
+      "pillar": "illusions",
+      "topic": "Visual illusions",
+      "alt": "A narrow runway and a low approach: an illustrated diagram for pilots. A narrow runway hides how low you really are. The picture shows the runway seen obliquely ahead, its paved width visibly narrow with the edges close together and the markings small and crowded; a pale unfilled outline of the usual, wider runway drawn around the real one, so the gap between true edge and outline can be read; ghost outline of the same aeroplane on the normal approach path, at the same distance out and clearly above the solid one; solid aeroplane low on a shallower path, sitting close to the ground short of the threshold. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/illusion-runway-width.webp",
+      "image_full": "/assets/explainers/narrow-runway-and-a-low-approach.webp",
+      "image_px": 1254,
+      "permalink": "https://www.instagram.com/p/DdWlYy4mz4h/",
+      "posted": "2026-09-16",
+      "caption": [
+        "You're on short final at a field you've never used, and the picture out the windscreen looks normal.",
+        "The runway ahead is narrower than the ones you learned on. A runway narrower than usual creates the illusion of extra height. That is the narrow runway illusion, and it needs nothing more than the width you're looking at. The picture says come down.",
+        "Miss it and the approach goes low. Objects along the approach path start to matter, and landing short is the other end of the same mistake. The Aeronautical Information Manual files it at 8-1-5, with the rest of the illusions of flight.",
+        "FlightDecide reads the NOTAMs for your destination and flags runway and obstruction notices in the briefing.",
+        "Next time you brief an unfamiliar field, look up its runway width and compare it to your home runway.",
+        "Check the current CFR before you apply this to a real flight."
+      ],
+      "teaches": [
+        "A runway narrower than usual creates the illusion that the aircraft is higher than it actually is.",
+        "A pilot who does not recognise the illusion flies a lower-than-normal approach, with the risk of striking objects along the approach path or landing short."
+      ],
+      "intent": "A narrower runway than you are used to makes you feel higher than you are, and the uncorrected result is an approach that is too low.",
+      "citations": [
+        {
+          "ref": "AIM 8-1-5",
+          "title": "Aeronautical Information Manual, paragraph 8-1-5",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html"
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 17",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 17",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+        }
+      ],
+      "related": []
+    },
     {
       "id": "night-black-hole",
       "slug": "black-hole-approach",
