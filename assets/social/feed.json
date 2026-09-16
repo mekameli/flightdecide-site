@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T20:23:58+00:00",
+  "generated": "2026-09-16T20:27:31+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -445,7 +445,20 @@
           "chapter": 19
         }
       ],
-      "figure_key": [],
+      "figure_key": [
+        {
+          "label": "AIR SINKING FAST",
+          "points_at": null
+        },
+        {
+          "label": "NOSE UP, STILL SINKING",
+          "points_at": null
+        },
+        {
+          "label": "LEVEL AIR PUTS YOU HERE",
+          "points_at": null
+        }
+      ],
       "related": []
     },
     {
@@ -487,7 +500,20 @@
           "chapter": 16
         }
       ],
-      "figure_key": [],
+      "figure_key": [
+        {
+          "label": "NOSE LEFT, TRACK STRAIGHT",
+          "points_at": null
+        },
+        {
+          "label": "WIND FROM THE LEFT",
+          "points_at": null
+        },
+        {
+          "label": "ALIGNED WITH RUNWAY, BLOWN OFF",
+          "points_at": null
+        }
+      ],
       "related": []
     },
     {
@@ -537,7 +563,24 @@
           "chapter": 8
         }
       ],
-      "figure_key": [],
+      "figure_key": [
+        {
+          "label": "AIRBORNE IN A THIRD",
+          "points_at": null
+        },
+        {
+          "label": "SAME AEROPLANE, SAME WEIGHT",
+          "points_at": null
+        },
+        {
+          "label": "EXTRA GROUND ROLL",
+          "points_at": null
+        },
+        {
+          "label": "TERRAIN, LESS CLIMB TO GIVE",
+          "points_at": null
+        }
+      ],
       "related": []
     }
   ]
