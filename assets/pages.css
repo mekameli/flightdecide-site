@@ -1002,7 +1002,28 @@ footer.site-footer {
 }
 .prose p.explainer-product a { color: var(--text); font-weight: 650; }
 .explainer-sources { font-size: 15px; }
-.explainer-sources li, .explainer-teaches li { margin-bottom: 8px; }
+.explainer-sources li, .explainer-teaches li { margin-bottom: 10px; }
+.prose p.fk-intro { color: var(--text-muted); font-size: 15px; margin: -6px 0 14px; }
+.explainer-figkey { list-style: none; padding: 0; margin: 0 0 26px; }
+.explainer-figkey li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+.explainer-figkey li:last-child { border-bottom: 1px solid var(--border); }
+.fk-label {
+  flex: 0 0 auto;
+  font-family: ui-monospace, "IBM Plex Mono", SFMono-Regular, Menlo, monospace;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  color: var(--accent-amber, var(--text));
+  text-transform: uppercase;
+}
+.fk-points { flex: 1 1 260px; color: var(--text-muted); font-size: 15px; }
+.src-note { display: block; color: var(--text-muted); font-size: 13.5px; margin-top: 2px; }
 .explainer-share {
   display: flex;
   flex-wrap: wrap;

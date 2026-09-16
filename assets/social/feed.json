@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T15:15:22+00:00",
+  "generated": "2026-09-16T20:23:58+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -33,17 +33,46 @@
         {
           "ref": "AIM 8-1-5",
           "title": "Aeronautical Information Manual, paragraph 8-1-5",
-          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html"
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+          "kind": "aim",
+          "note": "Aeronautical Information Manual",
+          "book_url": null
         },
         {
           "ref": "FAA-H-8083-25 ch 17",
           "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 17",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 17",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 17
         },
         {
           "ref": "FAA-H-8083-3 ch 9",
           "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+          "kind": "handbook",
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "LOWER THAN IT FEELS",
+          "points_at": "The solid aeroplane on the lower, shallower approach path."
+        },
+        {
+          "label": "NOT THE WIDTH YOU KNOW",
+          "points_at": "The gap between the real runway edge and the pale outline of the usual width drawn around it."
+        },
+        {
+          "label": "NORMAL PATH, UP HERE",
+          "points_at": "The ghost aeroplane on the upper, normal approach path."
+        },
+        {
+          "label": "TREES IN YOUR PATH",
+          "points_at": "The conifer tops short of the threshold that the solid aeroplane's path grazes."
         }
       ],
       "related": []
@@ -78,12 +107,38 @@
         {
           "ref": "FAA-H-8083-25 ch 17",
           "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 17",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 17",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 17
         },
         {
           "ref": "FAA-H-8083-3 ch 11",
           "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 11",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/12_afh_ch11.pdf",
+          "kind": "handbook",
+          "note": "Chapter 11 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 11
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "WHERE YOU MEANT TO BE",
+          "points_at": "The ghost outline of the aeroplane on the upper, intended approach path."
+        },
+        {
+          "label": "LOWER, AND IT FEELS RIGHT",
+          "points_at": "The solid aeroplane on the lower, shallower path."
+        },
+        {
+          "label": "NOTHING LIT TO JUDGE BY",
+          "points_at": "The unlit water midway between the aeroplane and the runway threshold."
+        },
+        {
+          "label": "DO NOT DESCEND ON FEEL",
+          "points_at": "The lower approach line where it runs closest to the water short of the threshold."
         }
       ],
       "related": []
@@ -118,12 +173,37 @@
         {
           "ref": "FAA-H-8083-25 ch 2",
           "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 2",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 2",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 2
         },
         {
           "ref": "FAA-H-8083-2",
           "title": "Risk Management Handbook (FAA-H-8083-2)",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/risk-management-handbook-faa-h-8083-2a"
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/risk-management-handbook-faa-h-8083-2a",
+          "kind": "handbook",
+          "note": "the FAA's own handbook",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/risk-management-handbook-faa-h-8083-2a"
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "ALL YOU ACTUALLY READ",
+          "points_at": "The lit notch of rock at the near shoulder of the pass, where the narrow cone of attention lands."
+        },
+        {
+          "label": "WHAT YOU THINK YOU COVER",
+          "points_at": "The upper edge of the wide ghost outline spanning the forward view."
+        },
+        {
+          "label": "TRAFFIC YOU NEVER SAW",
+          "points_at": "The small crossing aeroplane sitting in the dimmed band between the narrow cone and the ghost outline."
+        },
+        {
+          "label": "DO NOT JUDGE BY FEEL",
+          "points_at": "The pilot's upright silhouette in the cockpit."
         }
       ],
       "related": []
@@ -158,12 +238,34 @@
         {
           "ref": "FAA-H-8083-25 ch 5",
           "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 5",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
         },
         {
           "ref": "FAA-H-8083-3 ch 5",
           "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 5",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/06_afh_ch5.pdf",
+          "kind": "handbook",
+          "note": "Chapter 5 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 5
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "SIXTY DEGREE BANK, DOUBLE LOAD",
+          "points_at": "The thin pale bank-angle arc swept from the upright reference to the wing line of the steeply banked aircraft."
+        },
+        {
+          "label": "STALL SPEED RISES 41 PERCENT",
+          "points_at": "The upper wing surface of the steeply banked solid aircraft, where the streamlines crowd together toward the trailing edge."
+        },
+        {
+          "label": "SHALLOW BANK, LOWER STALL SPEED",
+          "points_at": "The pale ghost aircraft holding its shallow bank at the same altitude."
         }
       ],
       "related": []
@@ -198,12 +300,34 @@
         {
           "ref": "FAA-H-8083-28 ch 19",
           "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 19",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 19",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 19
         },
         {
           "ref": "FAA-H-8083-3 ch 9",
           "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+          "kind": "handbook",
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "HEADWIND WEAKENS WITH DESCENT",
+          "points_at": "The short stubby streamlines in the lower wind layer, beneath the shear seam."
+        },
+        {
+          "label": "INDICATED AIRSPEED DROPS MOMENTARILY",
+          "points_at": "The nose of the solid aircraft at the point where it crosses the shear seam."
+        },
+        {
+          "label": "AIRCRAFT SINKS BELOW PATH",
+          "points_at": "The vertical gap between the solid aircraft and the dashed intended glidepath above it."
         }
       ],
       "related": []
@@ -239,12 +363,38 @@
         {
           "ref": "FAA-H-8083-28 ch 18",
           "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 18",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 18",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 18
         },
         {
           "ref": "FAA-H-8083-28 ch 13",
           "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 13",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 13",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 13
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "INVERSION SUPPRESSES VERTICAL MIXING",
+          "points_at": "The height where the rising smoke column stops climbing and spreads sideways into a level sheet."
+        },
+        {
+          "label": "SMOOTH AIR INSIDE THE LAYER",
+          "points_at": "The small profile aircraft flying wings-dead-level at the top of the haze, on the inversion line."
+        },
+        {
+          "label": "HAZE TRAPPED UNDERNEATH",
+          "points_at": "The dense amber-brown murk filling the valley floor beneath that line."
+        },
+        {
+          "label": "VISIBILITY LOST BELOW THE LID",
+          "points_at": "The far end of the valley below the line, where the ridges dissolve into grey with no edges left."
         }
       ],
       "related": []
@@ -279,14 +429,23 @@
         {
           "ref": "FAA-H-8083-28 ch 16",
           "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 16",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 16",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 16
         },
         {
           "ref": "FAA-H-8083-28 ch 19",
           "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 19",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 19",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 19
         }
       ],
+      "figure_key": [],
       "related": []
     },
     {
@@ -321,9 +480,14 @@
         {
           "ref": "FAA-H-8083-25 ch 16",
           "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 16",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 16",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 16
         }
       ],
+      "figure_key": [],
       "related": []
     },
     {
@@ -357,14 +521,23 @@
         {
           "ref": "FAA-H-8083-25 ch 11",
           "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 11",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 11",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 11
         },
         {
           "ref": "FAA-H-8083-28 ch 8",
           "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 8",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook"
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 8",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 8
         }
       ],
+      "figure_key": [],
       "related": []
     }
   ]
