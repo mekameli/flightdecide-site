@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T20:50:04+00:00",
+  "generated": "2026-09-16T20:53:20+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -144,43 +144,35 @@
       ],
       "article": [
         {
-          "heading": "What the dark ground removes",
+          "heading": "When the approach goes dark",
           "paragraphs": [
-            "Height and distance are judged against things on the ground. An approach over unlit terrain or water takes those away, because nothing down there is lit enough to read. The surface is still below you and it tells you nothing.",
-            "Over a lit town the size and spacing of what you pass over changes as you descend, and that change is information. Remove the lighting and the information goes with it.",
-            "The runway lights stay visible the whole way in. The view still reads as an approach, and nothing in it announces what is missing."
+            "The black hole approach is a property of the ground, not of the weather. The night can be clear, the air smooth and the runway in sight the whole way.",
+            "That makes it specific to one runway, at one field, in one direction. The same airport approached over a lit town gives you an ordinary night picture. The reciprocal runway, out over the bay, is a different approach entirely.",
+            "Open water is the obvious version. Unlit forest, desert, farmland and prairie do the same thing, and so does any long stretch of dark ground short of the threshold. None of it announces itself the way weather does."
           ]
         },
         {
-          "heading": "Why the approach goes low",
+          "heading": "How you normally judge height",
           "paragraphs": [
-            "With no lit features between you and the threshold, the approach carries no visual slope information. What you fly instead is an impression of where the path ought to be.",
-            "That impression is not neutral. The result tends toward an approach lower than intended, so the path you settle onto is shallower than the one you planned.",
-            "A shallower path also arrives near the surface earlier. Out short of the threshold, that surface is the part you cannot see."
+            "Judging your height by eye is comparison work. You read your position against things whose size and spacing you already know, roofs and roads and fences and the lights of a town.",
+            "With nothing lit between you and the threshold, there is nothing to compare against. The runway lights become a small pattern floating in black, and that pattern can be read as more than one height. Nothing in the view rules out the wrong reading.",
+            "The Airplane Flying Handbook keeps a section on night illusions inside its chapter on night operations. The featureless terrain illusion and the ground lighting illusions are both named there. Both come down to a view with too little in it."
           ]
         },
         {
-          "heading": "Why your night vision cannot help",
+          "heading": "Why the error goes low",
           "paragraphs": [
-            "The mechanical side of flying does not change after dark. The Airplane Flying Handbook is plain about it, saying the airplane does not know if it is being operated in the dark or in bright sunlight. The pilot is the part that is affected.",
-            "The rods are located mainly in the periphery of the retina, an area that is about 10,000 times more sensitive to light than the fovea. In the absence of normal light, the rods are what make night vision possible.",
-            "Rods are involved with peripheral vision to detect position references, including fixed and moving objects, in shades of gray. They cannot be used to detect detail or to perceive color.",
-            "Position references have to be references to something. Over unlit water or terrain there is nothing out there to hold, so the most light sensitive part of your eye has no work to do."
+            "The useful thing about this illusion is that it has a direction. Approaches flown without those references tend to end up lower than the pilot intended. The error is not random, so you know in advance which way to check.",
+            "Low is the direction that costs you. Terrain and obstacles sit under the path you meant to fly, and on this approach they are unlit as well. You would be arriving among them without having seen them.",
+            "An approach flown on impression can feel settled all the way down. The feeling is not evidence, because the part of the view that would argue with it is dark ground."
           ]
         },
         {
-          "heading": "When the rules call it night",
+          "heading": "What to fly instead of feel",
           "paragraphs": [
-            "14 CFR part 1, section 1.1 defines night as the time between the end of evening civil twilight and the beginning of morning civil twilight, as published in the Air Almanac, converted to local time. Evening civil twilight begins at sunset and ends when the geometric center of the sun is 6 degrees below the horizon. The FAA has an online tool to calculate sunrise, sunset, and civil twilight for any given location.",
-            "Recent flight experience uses a different window. For 14 CFR part 61, section 61.57(b)(1), night means the time period beginning 1 hour after sunset and ending 1 hour before sunrise.",
-            "During those hours, no person may act as pilot in command of an aircraft carrying passengers unless, within the preceding 90 days, that person has made 3 takeoffs and landings to a full stop. The regulation requires those takeoffs and landings as the sole manipulator of the controls, in an aircraft of the same category, class, and type if a type rating is required."
-          ]
-        },
-        {
-          "heading": "Where the handbook covers this",
-          "paragraphs": [
-            "Night operations are chapter 11 of the Airplane Flying Handbook. Its Night Illusions section names the false horizon, autokinesis, the featureless terrain illusion and ground lighting illusions, and the chapter carries a separate section on how to prevent landing errors due to optical illusions.",
-            "The chapter also sets a limit on who should be out there. Night flying operations should not be encouraged or attempted except by certificated pilots with knowledge of and experience in the topics it discusses."
+            "If the view cannot tell you your height, your height has to come from somewhere other than the view. An altimeter, read against the field elevation, does the work the ground outside is not doing. If the approach offers a glidepath, that is the reference to fly.",
+            "Most of this is settled before the engine starts. Which runway puts dark ground under the final is something you can work out at the table, in daylight, with a chart.",
+            "Cross-checking an instrument on short final can feel like distrust of your own eyes. Over black ground, that distrust is the correct setting."
           ]
         }
       ],
