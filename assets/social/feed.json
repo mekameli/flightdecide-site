@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T22:10:01+00:00",
+  "generated": "2026-09-17T00:20:02+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -781,6 +781,72 @@
           ]
         }
       ],
+      "related": []
+    },
+    {
+      "id": "aero-ground-effect",
+      "slug": "ground-effect-in-the-flare",
+      "page": "/explainers/ground-effect-in-the-flare/",
+      "title": "Ground effect in the flare",
+      "headline": "Your drag falls away inside the last wingspan.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "Ground effect in the flare: an illustrated diagram for pilots. Your drag falls away inside the last wingspan.",
+      "image": "/assets/social/aero-ground-effect.webp",
+      "image_full": "/assets/explainers/ground-effect-in-the-flare.webp",
+      "image_px": 1254,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "Ground effect occurs within approximately one wingspan of the surface and reduces induced drag.",
+        "The reduced drag is why an aircraft floats in the flare and why it can lift off below normal flying speed and settle back."
+      ],
+      "intent": "Within about one wingspan of the surface induced drag falls away, so the aeroplane floats on air that has nowhere to go.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 5",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+          "kind": "handbook",
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 6",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 6",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/07_afh_ch6.pdf",
+          "kind": "handbook",
+          "note": "Chapter 6 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 6
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "ONE WINGSPAN TO THE RUNWAY",
+          "points_at": "The thin vertical dimension line running from the low aircraft's left wingtip down to the asphalt."
+        },
+        {
+          "label": "STILL FLOATING, THRESHOLD BEHIND YOU",
+          "points_at": "The band of daylight between the low aircraft's main wheels and the runway centreline."
+        },
+        {
+          "label": "SAME ATTITUDE, STILL SINKING",
+          "points_at": "The pale ghost outline higher up and the two tight tip vortices trailing beneath it."
+        }
+      ],
+      "article": [],
       "related": []
     }
   ]

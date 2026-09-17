@@ -531,5 +531,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/ground-effect-in-the-flare/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <!-- explainers:end -->
 </urlset>
