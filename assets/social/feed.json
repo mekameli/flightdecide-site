@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T15:55:02+00:00",
+  "generated": "2026-09-17T16:15:01+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -25,7 +25,7 @@
         "When somebody asks why you floated, what is the one word in your answer?"
       ],
       "teaches": [
-        "Ground effect occurs within approximately one wingspan of the surface and reduces induced drag.",
+        "Within about one wingspan of the surface, ground effect reduces induced drag and the thrust required to hold a low airspeed in level flight.",
         "The reduced drag is why an aircraft floats in the flare and why it can lift off below normal flying speed and settle back."
       ],
       "intent": "Within about one wingspan of the surface induced drag falls away, so the aeroplane floats on air that has nowhere to go.",
@@ -38,15 +38,6 @@
           "note": "see Chapter 5",
           "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
           "chapter": 5
-        },
-        {
-          "ref": "FAA-H-8083-3 ch 9",
-          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
-          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
-          "kind": "handbook",
-          "note": "Chapter 9 as a PDF",
-          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
-          "chapter": 9
         },
         {
           "ref": "FAA-H-8083-3 ch 6",
