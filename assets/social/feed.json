@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T06:45:05+00:00",
+  "generated": "2026-09-17T15:25:01+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -201,7 +201,7 @@
       "slug": "black-hole-approach",
       "page": "/explainers/black-hole-approach/",
       "title": "The black hole approach",
-      "headline": "With nothing lit below, you fly lower than intended.",
+      "headline": "Over black ground you end up lower than intended.",
       "pillar": "illusions",
       "topic": "Visual illusions",
       "alt": "The black hole approach: an illustrated diagram for pilots. With nothing lit below, you fly lower than intended. The picture shows night side elevation with the lit runway small and far in the right third and the approach entering from the left; solid aeroplane on the lower, shallower path, visibly close to the dark surface short of the field; ghost outline of the same aeroplane on the intended path at the same distance out, clearly above the solid one; completely unlit ground or water between the aeroplane and the threshold, with no towns, roads or scattered lights. Flight training explainer from FlightDecide.",
@@ -244,57 +244,24 @@
       ],
       "figure_key": [
         {
+          "label": "FEELS RIGHT, SITTING LOW",
+          "points_at": "The solid aeroplane on the lower, shallower approach path."
+        },
+        {
           "label": "WHERE YOU MEANT TO BE",
-          "points_at": "The ghost outline of the aeroplane on the upper, intended approach path."
+          "points_at": "The ghost outline of the same aeroplane on the upper, intended path."
         },
         {
-          "label": "LOWER, AND IT FEELS RIGHT",
-          "points_at": "The solid aeroplane on the lower, shallower path."
+          "label": "NOTHING HERE TO JUDGE BY",
+          "points_at": "The unlit ground midway between the aeroplane and the runway threshold."
         },
         {
-          "label": "NOTHING LIT TO JUDGE BY",
-          "points_at": "The unlit water midway between the aeroplane and the runway threshold."
-        },
-        {
-          "label": "DO NOT DESCEND ON FEEL",
-          "points_at": "The lower approach line where it runs closest to the water short of the threshold."
+          "label": "GROUND YOU CANNOT SEE",
+          "points_at": "The dark ground directly beneath the solid aeroplane, short of the threshold."
         }
       ],
       "short": "black-hole",
-      "article": [
-        {
-          "heading": "When the approach goes dark",
-          "paragraphs": [
-            "The black hole approach is a property of the ground, not of the weather. The night can be clear, the air smooth and the runway in sight the whole way.",
-            "That makes it specific to one runway, at one field, in one direction. The same airport approached over a lit town gives you an ordinary night picture. The reciprocal runway, out over the bay, is a different approach entirely.",
-            "Open water is the obvious version. Unlit forest, desert, farmland and prairie do the same thing, and so does any long stretch of dark ground short of the threshold. None of it announces itself the way weather does."
-          ]
-        },
-        {
-          "heading": "How you normally judge height",
-          "paragraphs": [
-            "Judging your height by eye is comparison work. You read your position against things whose size and spacing you already know, roofs and roads and fences and the lights of a town.",
-            "With nothing lit between you and the threshold, there is nothing to compare against. The runway lights become a small pattern floating in black, and that pattern can be read as more than one height. Nothing in the view rules out the wrong reading.",
-            "The Airplane Flying Handbook keeps a section on night illusions inside its chapter on night operations. The featureless terrain illusion and the ground lighting illusions are both named there. Both come down to a view with too little in it."
-          ]
-        },
-        {
-          "heading": "Why the error goes low",
-          "paragraphs": [
-            "The useful thing about this illusion is that it has a direction. Approaches flown without those references tend to end up lower than the pilot intended. The error is not random, so you know in advance which way to check.",
-            "Low is the direction that costs you. Terrain and obstacles sit under the path you meant to fly, and on this approach they are unlit as well. You would be arriving among them without having seen them.",
-            "An approach flown on impression can feel settled all the way down. The feeling is not evidence, because the part of the view that would argue with it is dark ground."
-          ]
-        },
-        {
-          "heading": "What to fly instead of feel",
-          "paragraphs": [
-            "If the view cannot tell you your height, your height has to come from somewhere other than the view. An altimeter, read against the field elevation, does the work the ground outside is not doing. If the approach offers a glidepath, that is the reference to fly.",
-            "Most of this is settled before the engine starts. Which runway puts dark ground under the final is something you can work out at the table, in daylight, with a chart.",
-            "Cross-checking an instrument on short final can feel like distrust of your own eyes. Over black ground, that distrust is the correct setting."
-          ]
-        }
-      ],
+      "article": [],
       "related": []
     },
     {
