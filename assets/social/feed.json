@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T16:17:34+00:00",
+  "generated": "2026-09-17T16:25:01+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -523,7 +523,8 @@
       ],
       "teaches": [
         "A decreasing headwind with descent produces a momentary loss of indicated airspeed.",
-        "The aircraft descends below the intended path until the speed is regained."
+        "The aircraft sinks below the intended path, and getting the airspeed back does not by itself return it to the path.",
+        "The pilot must recover the path, promptly adding power and adjusting pitch to correct for the wind's effect on the descent."
       ],
       "intent": "Descending out of a stronger wind into a weaker one costs airspeed, and the aircraft sinks below the path while it recovers.",
       "citations": [
