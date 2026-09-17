@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T00:30:31+00:00",
+  "generated": "2026-09-17T00:34:44+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -148,7 +148,50 @@
           "points_at": "The conifer tops short of the threshold that the solid aeroplane's path grazes."
         }
       ],
-      "article": [],
+      "article": [
+        {
+          "heading": "Why a narrow runway feels high",
+          "paragraphs": [
+            "Your eye learned a shape. Approach after approach at the same field, you built a picture of what a runway should look like from a normal glide path. You fly the approach against that picture.",
+            "Width is most of that picture. Take it to a narrower runway and the strip sits thinner in the windscreen. Thinner reads as higher.",
+            "What counts as usual is personal. A runway is narrow only against the ones your eye has been trained on, and that training shifts as you fly new fields.",
+            "The conditions do not have to be poor. This happens in clear air at a quiet airport, on an approach that is otherwise going well."
+          ]
+        },
+        {
+          "heading": "The correction that puts you low",
+          "paragraphs": [
+            "Feeling high, you correct. The aeroplane ends up on a path below the one you intended, and nothing in the windscreen objects.",
+            "The runway looks like a runway and the approach feels tidy. A small correction for apparent height feels like ordinary flying. Nothing in the aeroplane tells you the reference was wrong.",
+            "Each foot you lose makes the runway look a little more like the one you know. The descent feels like it is working."
+          ]
+        },
+        {
+          "heading": "What a low approach runs into",
+          "paragraphs": [
+            "A low path takes you close to the ground short of the runway. Trees that pass well beneath a normal approach do not pass beneath this one.",
+            "Sometimes nothing stands in the way. The path is still low, and it risks putting the wheels down before the pavement starts.",
+            "Neither outcome needs a second mistake. An approach that starts low stays low until you notice the height is wrong."
+          ]
+        },
+        {
+          "heading": "Expect it at unfamiliar fields",
+          "paragraphs": [
+            "Expecting the illusion takes most of its power away. An illusion you have already named on the ground has much less grip on you on short final.",
+            "A look from above is worth taking. Flying over an unfamiliar airport before you set up for landing shows you the runway from outside the approach picture. From up there the width is something you look at, rather than something you feel.",
+            "Your home field is not where this catches you. You have flown that width many times, and it set the standard your eye now uses.",
+            "Knowing the field is narrow changes what you do with the picture. It still looks wrong on final, and you can hold the normal path anyway, because you know why it looks that way."
+          ]
+        },
+        {
+          "heading": "What to trust on final",
+          "paragraphs": [
+            "An electronic glide slope or a VASI does the judging for you. Neither is reading the runway width, so neither is fooled by it.",
+            "Plenty of runways have neither. There you are back on the picture, and frequent landings keep your sense of a normal approach sharp.",
+            "The cue is height you did not expect. If you feel comfortably high on final at a field you have never used, the runway width is the first thing to check."
+          ]
+        }
+      ],
       "related": []
     },
     {
