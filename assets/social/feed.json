@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T00:34:44+00:00",
+  "generated": "2026-09-17T02:30:01+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -72,6 +72,7 @@
           "points_at": "The pale ghost outline higher up and the two tight tip vortices trailing beneath it."
         }
       ],
+      "short": "ground-effect",
       "article": [],
       "related": []
     },
@@ -148,6 +149,7 @@
           "points_at": "The conifer tops short of the threshold that the solid aeroplane's path grazes."
         }
       ],
+      "short": "narrow-runway",
       "article": [
         {
           "heading": "Why a narrow runway feels high",
@@ -258,6 +260,7 @@
           "points_at": "The lower approach line where it runs closest to the water short of the threshold."
         }
       ],
+      "short": "black-hole",
       "article": [
         {
           "heading": "When the approach goes dark",
@@ -357,6 +360,7 @@
           "points_at": "The pilot's upright silhouette in the cockpit."
         }
       ],
+      "short": "attention-narrowing",
       "article": [
         {
           "heading": "Why the scan shrinks",
@@ -456,6 +460,7 @@
           "points_at": "The pale ghost aircraft holding its shallow bank at the same altitude."
         }
       ],
+      "short": "stall-speed",
       "article": [],
       "related": []
     },
@@ -519,6 +524,7 @@
           "points_at": "The vertical gap between the solid aircraft and the dashed intended glidepath above it."
         }
       ],
+      "short": "losing-headwind",
       "article": [],
       "related": []
     },
@@ -587,6 +593,7 @@
           "points_at": "The far end of the valley below the line, where the ridges dissolve into grey with no edges left."
         }
       ],
+      "short": "temperature-inversion",
       "article": [
         {
           "heading": "What a temperature inversion is",
@@ -691,6 +698,7 @@
           "points_at": null
         }
       ],
+      "short": "lee-side",
       "article": [
         {
           "heading": "Why the air sinks there",
@@ -788,6 +796,7 @@
           "points_at": null
         }
       ],
+      "short": "wind-correction",
       "article": [],
       "related": []
     },
@@ -856,6 +865,7 @@
           "points_at": null
         }
       ],
+      "short": "density-altitude",
       "article": [
         {
           "heading": "Why thin air costs you",
