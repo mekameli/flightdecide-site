@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T02:30:01+00:00",
+  "generated": "2026-09-17T06:45:05+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -768,18 +768,27 @@
         "In a crosswind an aircraft's heading and its track over the ground are different, and the angle between them is the wind correction angle.",
         "On the approach, holding a wind correction angle into the wind is what keeps the track along the extended centreline.",
         "An aircraft that points straight at the runway in a crosswind, with no correction applied, drifts downwind of the centreline.",
-        "The crab is taken out before touchdown, so the aircraft lands with its longitudinal axis aligned with the runway."
+        "Taking the crab out the instant before touchdown aligns the axis with the runway, but aileron into the wind stops the drift."
       ],
       "intent": "in a crosswind the aeroplane's nose points off to one side while its path over the ground stays on the centreline",
       "citations": [
         {
-          "ref": "FAA-H-8083-25 ch 16",
-          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 16",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
           "kind": "handbook",
-          "note": "see Chapter 16",
-          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
-          "chapter": 16
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 7",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 7",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/08_afh_ch7.pdf",
+          "kind": "handbook",
+          "note": "Chapter 7 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 7
         }
       ],
       "figure_key": [
