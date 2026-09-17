@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T16:15:01+00:00",
+  "generated": "2026-09-17T16:17:34+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -64,7 +64,50 @@
         }
       ],
       "short": "ground-effect",
-      "article": [],
+      "article": [
+        {
+          "heading": "Where ground effect starts",
+          "paragraphs": [
+            "The last part of a landing happens in air that is behaving differently from the air you flew the approach in. Below about one wingspan above the surface, the wing no longer has open air underneath it. That band is called ground effect, and your own wings measure it out tip to tip.",
+            "A wing holds you up by pushing a mass of air downward. With the runway right there, that air has nowhere to go. The surface gets in the way of the flow around the wing, and the whole pattern of it changes.",
+            "Ground effect is strongest when you hold a steady attitude at low speed close to the surface. That is the flare. It is also the first seconds after lift-off."
+          ]
+        },
+        {
+          "heading": "Why lift costs you drag",
+          "paragraphs": [
+            "At each wingtip, the higher pressure under the wing leaks around to the lower pressure on top. The escaping air curls up over the tip, joins the downward flow behind the wing, and rolls into a spinning core called a vortex. One trails from each tip whenever the wing is lifting.",
+            "Spinning all that air takes energy, and the energy comes out of your forward motion. That is induced drag, the drag you pay for making lift. Raise the angle of attack, the angle between the wing and the oncoming air, and it grows.",
+            "A bigger angle means a bigger pressure difference and stronger vortices. Slow flight needs a high angle of attack, so induced drag is the drag that dominates down there. That is the speed you fly a flare at.",
+            "At cruise it is the other way round. Parasite drag, the cost of hauling the airframe through the air, is most of the total, and induced drag is a small part. Ground effect belongs to the two ends of the flight."
+          ]
+        },
+        {
+          "heading": "What the ground takes away",
+          "paragraphs": [
+            "Inside that last wingspan the wing's wake shrinks. The air it lifts ahead of itself, the air it pushes down behind, and the vortices at the tips are all reduced. Weaker vortices mean less induced drag.",
+            "The size of it is worth knowing. At a height equal to 1/4 of the span, induced drag drops by about 25 percent. At 1/10 of the span, it drops by about 50 percent.",
+            "So the wing needs a lower angle of attack in ground effect to make the same lift. Hold the attitude where it was and the wing makes more lift instead. Either way, the thrust needed to hold a low speed in level flight falls."
+          ]
+        },
+        {
+          "heading": "Why you float",
+          "paragraphs": [
+            "With the power at idle over the runway, drag is the only thing slowing you down. In the last wingspan a large share of that drag is missing. Your speed bleeds off slowly and the wing goes on flying.",
+            "Any extra speed you carry across the threshold has to be spent in there. Low speed is where induced drag would normally do that job. It is the drag the ground has just taken away.",
+            "The effect grows stronger the lower you get. The final few feet are where the airplane feels least willing to land."
+          ]
+        },
+        {
+          "heading": "The same air on takeoff",
+          "paragraphs": [
+            "The takeoff roll and the lift-off happen inside the same band of air. With induced drag reduced, the wing can pick the airplane up before it has the speed it needs to fly out of ground effect.",
+            "Climb out of the last wingspan and the help ends. Induced drag comes back, the thrust required goes up, and the wing needs a higher angle of attack to hold the same lift. An airplane that left the ground below flying speed can settle back onto the runway.",
+            "Leave below the recommended climb speed and the initial climb will be far weaker than it should be. Thin air from heat or field elevation, called high density altitude, makes that worse. So does maximum gross weight.",
+            "An airplane can lift off in those conditions and still be unable to climb out of ground effect. If there are obstructions off the far end, it may not clear them."
+          ]
+        }
+      ],
       "related": []
     },
     {
