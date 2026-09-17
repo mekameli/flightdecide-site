@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T15:30:09+00:00",
+  "generated": "2026-09-17T15:55:02+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -424,8 +424,8 @@
         "Next steep turns with your instructor, note the speed where the buffet starts and compare it to the wings level figure."
       ],
       "teaches": [
-        "In a level turn load factor increases with bank angle.",
-        "Stall speed increases with the square root of the load factor, so a 60 degree level turn doubles the load and raises the stall speed by about 41 percent."
+        "In a coordinated level turn load factor increases with bank angle, reaching 2G at 60 degrees.",
+        "Stall speed follows the square root of load factor, so a coordinated 60 degree level turn stalls 41 percent above its 1G stall speed."
       ],
       "intent": "A level turn raises load factor and the stall speed rises with the square root of it, so a steep turn stalls at a higher speed.",
       "citations": [
