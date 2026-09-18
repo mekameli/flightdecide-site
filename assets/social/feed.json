@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T16:25:01+00:00",
+  "generated": "2026-09-18T01:05:08+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -953,6 +953,68 @@
           ]
         }
       ],
+      "related": []
+    },
+    {
+      "id": "sys-unusable-fuel",
+      "slug": "fuel-you-cannot-use",
+      "page": "/explainers/fuel-you-cannot-use/",
+      "title": "The fuel you cannot use",
+      "headline": "Usable fuel is less than your tanks hold.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "The fuel you cannot use: an illustrated diagram for pilots. Usable fuel is less than your tanks hold.",
+      "image": "/assets/social/sys-unusable-fuel.webp",
+      "image_full": "/assets/explainers/fuel-you-cannot-use.webp",
+      "image_px": 1254,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "An aircraft's total fuel capacity includes an unusable quantity that cannot be relied on in flight.",
+        "Fuel planning uses the usable figure from the approved flight manual."
+      ],
+      "intent": "Usable fuel is less than total fuel, and the difference is a published number rather than a rounding error.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 10",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 10",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 10",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 10
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "THIS IS TOTAL, NOT USABLE",
+          "points_at": "The brimmed fuel surface where it meets the filler neck at the top of the cut-away tank bay."
+        },
+        {
+          "label": "TRAPPED BELOW THE PICKUP",
+          "points_at": "The thin separate band of fuel lying in the floor corrugations beneath the fuel pickup."
+        },
+        {
+          "label": "TOTAL FUEL GETS YOU HERE",
+          "points_at": "The translucent dimmed ghost aeroplane further along the track line."
+        },
+        {
+          "label": "PLAN FROM THIS FIGURE",
+          "points_at": "The ruled line in the fuel table on the open flight manual page."
+        }
+      ],
+      "short": "fuel-cannot",
+      "article": [],
       "related": []
     }
   ]
