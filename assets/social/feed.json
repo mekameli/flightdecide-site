@@ -1,7 +1,72 @@
 {
-  "generated": "2026-09-18T01:06:08+00:00",
+  "generated": "2026-09-18T01:10:38+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "sys-unusable-fuel",
+      "slug": "fuel-you-cannot-use",
+      "page": "/explainers/fuel-you-cannot-use/",
+      "title": "The fuel you cannot use",
+      "headline": "Usable fuel is less than your tanks hold.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "The fuel you cannot use: an illustrated diagram for pilots. Usable fuel is less than your tanks hold. The picture shows a rendered low-wing single-engine aeroplane in level cruise, solid and fully lit, with a thin pale track line running forward from the spinner and stopping in open air; a translucent dimmed ghost of the same aeroplane further along that same track line, with open air between the solid aircraft and the ghost; a cut-away section through the wing fuel tank lifted large into the near foreground, joined to the wing root by one thin line; fuel brimmed to the filler neck inside that cut-away, its upper surface clearly the top of what the tank holds. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/sys-unusable-fuel.webp",
+      "image_full": "/assets/explainers/fuel-you-cannot-use.webp",
+      "image_px": 1254,
+      "permalink": "https://www.instagram.com/p/DdaOTUTmqV7/",
+      "posted": "2026-09-18",
+      "caption": [
+        "Usable fuel is less than your tanks hold.",
+        "Full explainer with the FAA sources it rests on flightdecide.com/e/fuel-cannot"
+      ],
+      "teaches": [
+        "An aircraft's total fuel capacity includes an unusable quantity that cannot be relied on in flight.",
+        "Fuel planning uses the usable figure from the approved flight manual."
+      ],
+      "intent": "Usable fuel is less than total fuel, and the difference is a published number rather than a rounding error.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 10",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 10",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 10",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 10
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "THIS IS TOTAL, NOT USABLE",
+          "points_at": "The brimmed fuel surface where it meets the filler neck at the top of the cut-away tank bay."
+        },
+        {
+          "label": "TRAPPED BELOW THE PICKUP",
+          "points_at": "The thin separate band of fuel lying in the floor corrugations beneath the fuel pickup."
+        },
+        {
+          "label": "TOTAL FUEL GETS YOU HERE",
+          "points_at": "The translucent dimmed ghost aeroplane further along the track line."
+        },
+        {
+          "label": "PLAN FROM THIS FIGURE",
+          "points_at": "The ruled line in the fuel table on the open flight manual page."
+        }
+      ],
+      "short": "fuel-cannot",
+      "article": [],
+      "related": []
+    },
     {
       "id": "aero-ground-effect",
       "slug": "ground-effect-in-the-flare",
