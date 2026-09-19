@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T17:55:06+00:00",
+  "generated": "2026-09-19T17:55:27+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -595,7 +595,42 @@
         }
       ],
       "short": "stall-speed",
-      "article": [],
+      "article": [
+        {
+          "heading": "Why a turn adds load",
+          "paragraphs": [
+            "Roll into a bank and the wing carries on making lift, but that lift is no longer pointed straight up. Part of it now pulls you sideways into the turn. Only the upward share is left to hold your weight.",
+            "So you pull back to keep the nose where it was. The wing answers with more lift than the airplane weighs. That surplus covers your weight and the outward pull of the turn at the same time.",
+            "The steeper the bank, the more of the wing's lift goes into turning and the less is left holding you up. A shallow bank asks for a little more lift. A steep one asks for a lot.",
+            "That ratio has a name. Load factor is the lift the wing makes divided by the weight of the airplane, and wings level it sits at 1G. In a coordinated level turn, meaning the ball stays centered in the slip indicator, it climbs with bank angle to 2G at 60 degrees."
+          ]
+        },
+        {
+          "heading": "How stall speed follows the load",
+          "paragraphs": [
+            "Stall speed is the speed below which the wing can no longer make the lift to hold level flight. The number in your handbook was measured in 1G flight, at one weight and flap setting.",
+            "Raise the load and that speed rises with the square root of it. Speed does not keep pace with load. Doubling the load leaves the stall speed short of double.",
+            "Put numbers on the 60 degree turn. Load factor is 2G, and the airplane stalls 41 percent higher than its 1G stall speed. The wing has not changed and the airplane weighs what it did on the ramp."
+          ]
+        },
+        {
+          "heading": "The wing stalls at an angle",
+          "paragraphs": [
+            "The wing pays no attention to the airspeed indicator. It stalls at an angle of attack, the angle between the wing and the air coming at it. Past that angle the air separates from the upper surface and the lift falls away.",
+            "Each airplane has one angle where this happens, approximately 16° to 20° depending on the design. The angle does not move when the airplane gets heavier or when the load factor goes up.",
+            "Holding altitude in a bank means holding more angle of attack than you would wings level. You sit closer to the stalling angle than you did before the roll-in.",
+            "This is why airspeed on its own does not tell you how close the stall is. Pull hard enough and the wing reaches its stalling angle at a speed above the book figure."
+          ]
+        },
+        {
+          "heading": "What happens if you keep pulling",
+          "paragraphs": [
+            "Tighten the turn past that point and the angle of attack goes over the stalling angle. The wing stalls with the airplane banked and the airspeed above the 1G number.",
+            "Most training airplanes are built to drop the nose when that happens. The wing's lift acts behind the center of gravity, the point the airplane balances around, so the nose pitches down.",
+            "The nose-down pitch lowers the angle of attack. The air flows smoothly over the wing again and the lift returns. Lowering the angle is what ends a stall, in a bank the same as wings level."
+          ]
+        }
+      ],
       "related": []
     },
     {
