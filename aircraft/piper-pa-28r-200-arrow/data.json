@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "P28R",
+ "limits": {
+  "empty_weight_lbs": 1640,
+  "max_gross_weight_lbs": 2650,
+  "service_ceiling_ft": 16900,
+  "usable_fuel_gal": 48,
+  "useful_load_lbs": 1010
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-28R-200 Arrow",
+ "performance": {},
+ "slug": "piper-pa-28r-200-arrow",
+ "v_speeds": {
+  "best_glide": 91,
+  "va": 114,
+  "vfe": 109,
+  "vne": 186,
+  "vno": 148,
+  "vs0": 56,
+  "vs1": 62,
+  "vx": 83,
+  "vy": 87
+ }
+}

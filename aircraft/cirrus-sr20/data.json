@@ -1,0 +1,2070 @@
+{
+ "data_version": 2,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "SR20",
+ "limits": {
+  "empty_weight_lbs": 2000,
+  "max_gross_weight_lbs": 3050,
+  "service_ceiling_ft": 17500,
+  "usable_fuel_gal": 56,
+  "useful_load_lbs": 1050
+ },
+ "manufacturer": "Cirrus",
+ "name": "Cirrus SR20",
+ "performance": {
+  "climb": {
+   "cells": {
+    "2500": {
+     "0": {
+      "-20": {
+       "basis": "poh",
+       "v": 1231
+      },
+      "0": {
+       "basis": "poh",
+       "v": 1175
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1117
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1058
+      }
+     },
+     "1000": {
+      "-20": {
+       "basis": "interp",
+       "v": 1170
+      },
+      "0": {
+       "basis": "interp",
+       "v": 1112
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1052
+      },
+      "40": {
+       "basis": "interp",
+       "v": 992
+      }
+     },
+     "10000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 621
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 542
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 468
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 394
+      }
+     },
+     "2000": {
+      "-20": {
+       "basis": "poh",
+       "v": 1109
+      },
+      "0": {
+       "basis": "poh",
+       "v": 1050
+      },
+      "20": {
+       "basis": "poh",
+       "v": 988
+      },
+      "40": {
+       "basis": "poh",
+       "v": 926
+      }
+     },
+     "3000": {
+      "-20": {
+       "basis": "interp",
+       "v": 1048
+      },
+      "0": {
+       "basis": "interp",
+       "v": 986
+      },
+      "20": {
+       "basis": "interp",
+       "v": 923
+      },
+      "40": {
+       "basis": "interp",
+       "v": 860
+      }
+     },
+     "4000": {
+      "-20": {
+       "basis": "poh",
+       "v": 987
+      },
+      "0": {
+       "basis": "poh",
+       "v": 923
+      },
+      "20": {
+       "basis": "poh",
+       "v": 858
+      },
+      "40": {
+       "basis": "poh",
+       "v": 793
+      }
+     },
+     "5000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 926
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 860
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 793
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 726
+      }
+     },
+     "6000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 865
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 796
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 728
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 660
+      }
+     },
+     "7000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 804
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 732
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 663
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 594
+      }
+     },
+     "8000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 743
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 669
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 598
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 527
+      }
+     },
+     "9000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 682
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 606
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 533
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 460
+      }
+     }
+    },
+    "3050": {
+     "0": {
+      "-20": {
+       "basis": "poh",
+       "v": 1007
+      },
+      "0": {
+       "basis": "poh",
+       "v": 949
+      },
+      "20": {
+       "basis": "poh",
+       "v": 890
+      },
+      "40": {
+       "basis": "poh",
+       "v": 830
+      }
+     },
+     "1000": {
+      "-20": {
+       "basis": "interp",
+       "v": 938
+      },
+      "0": {
+       "basis": "interp",
+       "v": 878
+      },
+      "20": {
+       "basis": "interp",
+       "v": 819
+      },
+      "40": {
+       "basis": "interp",
+       "v": 759
+      }
+     },
+     "10000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 420
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 348
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 276
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 204
+      }
+     },
+     "2000": {
+      "-20": {
+       "basis": "poh",
+       "v": 868
+      },
+      "0": {
+       "basis": "poh",
+       "v": 808
+      },
+      "20": {
+       "basis": "poh",
+       "v": 748
+      },
+      "40": {
+       "basis": "poh",
+       "v": 688
+      }
+     },
+     "3000": {
+      "-20": {
+       "basis": "interp",
+       "v": 812
+      },
+      "0": {
+       "basis": "interp",
+       "v": 750
+      },
+      "20": {
+       "basis": "interp",
+       "v": 689
+      },
+      "40": {
+       "basis": "interp",
+       "v": 628
+      }
+     },
+     "4000": {
+      "-20": {
+       "basis": "poh",
+       "v": 756
+      },
+      "0": {
+       "basis": "poh",
+       "v": 693
+      },
+      "20": {
+       "basis": "poh",
+       "v": 630
+      },
+      "40": {
+       "basis": "poh",
+       "v": 567
+      }
+     },
+     "5000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 700
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 636
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 571
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 506
+      }
+     },
+     "6000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 644
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 578
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 512
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 446
+      }
+     },
+     "7000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 588
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 520
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 453
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 386
+      }
+     },
+     "8000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 532
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 463
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 394
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 325
+      }
+     },
+     "9000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 476
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 406
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 335
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 264
+      }
+     }
+    }
+   },
+   "cells_trimmed_for_rectangular_grid": [
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 4,
+     "value": 8000
+    },
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 4,
+     "value": 6000
+    }
+   ],
+   "conditions": "Full throttle, mixture as required, flaps 0% (up), best rate of climb airspeed",
+   "counts": {
+    "extrap": 48,
+    "interp": 16,
+    "poh": 24
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 \u00b7 Enroute Rate of Climb \u00b7 Section 9 Supplements, 11934-S37 (3050 lb gross weight increase)",
+   "weights_lbs": [
+    3050,
+    2500
+   ]
+  },
+  "landing": {
+   "cells": {
+    "3050": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 809
+      },
+      "10": {
+       "basis": "poh",
+       "v": 838
+      },
+      "20": {
+       "basis": "poh",
+       "v": 868
+      },
+      "30": {
+       "basis": "poh",
+       "v": 897
+      },
+      "40": {
+       "basis": "poh",
+       "v": 927
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 838
+      },
+      "10": {
+       "basis": "poh",
+       "v": 869
+      },
+      "20": {
+       "basis": "poh",
+       "v": 900
+      },
+      "30": {
+       "basis": "poh",
+       "v": 931
+      },
+      "40": {
+       "basis": "poh",
+       "v": 961
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "poh",
+       "v": 1176
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1219
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1262
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1305
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1348
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 870
+      },
+      "10": {
+       "basis": "poh",
+       "v": 901
+      },
+      "20": {
+       "basis": "poh",
+       "v": 933
+      },
+      "30": {
+       "basis": "poh",
+       "v": 965
+      },
+      "40": {
+       "basis": "poh",
+       "v": 997
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 902
+      },
+      "10": {
+       "basis": "poh",
+       "v": 935
+      },
+      "20": {
+       "basis": "poh",
+       "v": 968
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1001
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1034
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 936
+      },
+      "10": {
+       "basis": "poh",
+       "v": 971
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1005
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1039
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1073
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 972
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1007
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1043
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1079
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1114
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1009
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1046
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1083
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1120
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1157
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 1048
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1086
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1125
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1163
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1201
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 1089
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1128
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1168
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1208
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1248
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "poh",
+       "v": 1131
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1173
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1214
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1255
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1297
+      }
+     }
+    }
+   },
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": null,
+   "counts": {
+    "extrap": 0,
+    "interp": 0,
+    "poh": 55
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "3050": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 2557
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2609
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2663
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2717
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2773
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 2610
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2665
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2722
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2779
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2838
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "poh",
+       "v": 3272
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3364
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3457
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3551
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3646
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 2666
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2725
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2785
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2846
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2907
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 2726
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2788
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2852
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2916
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2981
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 2790
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2856
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2923
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2991
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3060
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 2858
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2928
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2999
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3070
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3143
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 2931
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3004
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3079
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3155
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3232
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 3008
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3086
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3165
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3245
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3326
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 3091
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3173
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3256
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3341
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3427
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "poh",
+       "v": 3179
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3265
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3353
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3443
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3533
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 \u00b7 Landing Distance \u00b7 Section 9 Supplements, 11934-S37 (3050 lb gross weight increase)",
+   "weights_lbs": [
+    3050
+   ]
+  },
+  "rangeendurance": {
+   "conditions": "Mixture = best power",
+   "rows": [
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 0.0,
+     "endurance_hours": 4.4,
+     "fuel_flow_gph": 10.5,
+     "fuel_remaining_for_cruise_gal": 46.3,
+     "ktas": 137,
+     "pressure_altitude": 0,
+     "range_nm": 608,
+     "specific_range_nm_per_gal": 13.0
+    },
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 0.6,
+     "endurance_hours": 4.4,
+     "fuel_flow_gph": 10.5,
+     "fuel_remaining_for_cruise_gal": 45.7,
+     "ktas": 139,
+     "pressure_altitude": 2000,
+     "range_nm": 620,
+     "specific_range_nm_per_gal": 13.1
+    },
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 1.3,
+     "endurance_hours": 4.4,
+     "fuel_flow_gph": 10.5,
+     "fuel_remaining_for_cruise_gal": 45.0,
+     "ktas": 141,
+     "pressure_altitude": 4000,
+     "range_nm": 628,
+     "specific_range_nm_per_gal": 13.2
+    },
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 2.0,
+     "endurance_hours": 4.4,
+     "fuel_flow_gph": 10.5,
+     "fuel_remaining_for_cruise_gal": 44.3,
+     "ktas": 143,
+     "pressure_altitude": 6000,
+     "range_nm": 635,
+     "specific_range_nm_per_gal": 13.2
+    },
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 2.9,
+     "endurance_hours": 4.4,
+     "fuel_flow_gph": 10.5,
+     "fuel_remaining_for_cruise_gal": 43.4,
+     "ktas": 145,
+     "pressure_altitude": 8000,
+     "range_nm": 645,
+     "specific_range_nm_per_gal": 13.3
+    },
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 3.8,
+     "endurance_hours": 4.4,
+     "fuel_flow_gph": 10.5,
+     "fuel_remaining_for_cruise_gal": 42.5,
+     "ktas": 147,
+     "pressure_altitude": 10000,
+     "range_nm": 654,
+     "specific_range_nm_per_gal": 13.3
+    },
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 5.0,
+     "endurance_hours": 4.4,
+     "fuel_flow_gph": 10.5,
+     "fuel_remaining_for_cruise_gal": 41.3,
+     "ktas": 150,
+     "pressure_altitude": 12000,
+     "range_nm": 666,
+     "specific_range_nm_per_gal": 13.4
+    },
+    {
+     "block": "65% power",
+     "climb_fuel_gal": 6.8,
+     "fuel_remaining_for_cruise_gal": 39.5,
+     "pressure_altitude": 14000
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 0.0,
+     "endurance_hours": 5.5,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 46.3,
+     "ktas": 127,
+     "pressure_altitude": 0,
+     "range_nm": 708,
+     "specific_range_nm_per_gal": 15.2
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 0.6,
+     "endurance_hours": 5.5,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 45.7,
+     "ktas": 130,
+     "pressure_altitude": 2000,
+     "range_nm": 726,
+     "specific_range_nm_per_gal": 15.5
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 1.3,
+     "endurance_hours": 5.5,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 45.0,
+     "ktas": 131,
+     "pressure_altitude": 4000,
+     "range_nm": 731,
+     "specific_range_nm_per_gal": 15.4
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 2.0,
+     "endurance_hours": 5.5,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 44.3,
+     "ktas": 134,
+     "pressure_altitude": 6000,
+     "range_nm": 745,
+     "specific_range_nm_per_gal": 15.6
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 2.9,
+     "endurance_hours": 5.5,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 43.4,
+     "ktas": 136,
+     "pressure_altitude": 8000,
+     "range_nm": 755,
+     "specific_range_nm_per_gal": 15.7
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 3.8,
+     "endurance_hours": 5.4,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 42.5,
+     "ktas": 139,
+     "pressure_altitude": 10000,
+     "range_nm": 768,
+     "specific_range_nm_per_gal": 15.9
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 5.0,
+     "endurance_hours": 5.4,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 41.3,
+     "ktas": 141,
+     "pressure_altitude": 12000,
+     "range_nm": 776,
+     "specific_range_nm_per_gal": 15.9
+    },
+    {
+     "block": "55% power",
+     "climb_fuel_gal": 6.8,
+     "endurance_hours": 5.4,
+     "fuel_flow_gph": 8.4,
+     "fuel_remaining_for_cruise_gal": 39.5,
+     "ktas": 144,
+     "pressure_altitude": 14000,
+     "range_nm": 785,
+     "specific_range_nm_per_gal": 16.0
+    }
+   ],
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 \u00b7 Range / Endurance Profile \u00b7 page 5-24"
+  },
+  "takeoff": {
+   "cells": {
+    "2500": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 787
+      },
+      "10": {
+       "basis": "poh",
+       "v": 850
+      },
+      "20": {
+       "basis": "poh",
+       "v": 915
+      },
+      "30": {
+       "basis": "poh",
+       "v": 983
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1054
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 864
+      },
+      "10": {
+       "basis": "poh",
+       "v": 933
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1005
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1079
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1157
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 949
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1025
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1104
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1186
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1271
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1043
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1126
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1213
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1304
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1398
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1147
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1239
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1434
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1537
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1263
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1364
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1469
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1579
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1693
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1392
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1503
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1619
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1739
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1865
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1534
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1656
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1784
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1915
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2054
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1691
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1825
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1967
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2109
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2263
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1864
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2011
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2167
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2323
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2493
+      }
+     }
+    },
+    "3050": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1319
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1424
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1534
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1648
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1767
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1448
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1563
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1684
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1809
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1940
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1590
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1717
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1850
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1988
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2131
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1748
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1888
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2034
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2185
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2343
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1923
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2077
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2237
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2404
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2577
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 2117
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2287
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2463
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2647
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2837
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 2333
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2519
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2714
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2916
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3126
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2571
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2775
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2991
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3212
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3444
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2833
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3056
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3295
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3539
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3795
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3122
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3366
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3631
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3898
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4182
+      }
+     }
+    }
+   },
+   "cells_trimmed_for_rectangular_grid": [
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 4,
+     "value": 10000
+    },
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 6,
+     "value": 9000
+    },
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 6,
+     "value": 8000
+    },
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 6,
+     "value": 7000
+    }
+   ],
+   "conditions": "Flaps 50%, takeoff power, dry paved level runway, zero wind",
+   "counts": {
+    "extrap": 30,
+    "interp": 0,
+    "poh": 70
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2500": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1215
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1306
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1400
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1497
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1598
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1329
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1428
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1531
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1637
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1748
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1454
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1563
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1676
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1792
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1913
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1593
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1712
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1835
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1963
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2095
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1745
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1876
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2011
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2151
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2296
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1914
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2057
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2206
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2359
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2518
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 2101
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2258
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2421
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2589
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2764
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2306
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2479
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2657
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2841
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3034
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2532
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2721
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2916
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3118
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3330
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2779
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2987
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3200
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3423
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3656
+      }
+     }
+    },
+    "3050": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1996
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2145
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2300
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2460
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2626
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 2183
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2346
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2515
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2691
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2872
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 2389
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2568
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2753
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2945
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3144
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 2616
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2812
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3015
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3226
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3444
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 2868
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3082
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3305
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3536
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3775
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 3145
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3381
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3625
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3879
+      },
+      "40": {
+       "basis": "poh",
+       "v": 4141
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 3452
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3711
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3980
+      },
+      "30": {
+       "basis": "poh",
+       "v": 4258
+      },
+      "40": {
+       "basis": "poh",
+       "v": 4546
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3789
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 4073
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4370
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 4674
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4991
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 4159
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 4471
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4798
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 5131
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 5479
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 4565
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 4907
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 5268
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 5632
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 6015
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 \u00b7 Takeoff Distance \u00b7 Section 9 Supplements, 11934-S37 (3050 lb gross weight increase)",
+   "weights_lbs": [
+    3050,
+    2500
+   ]
+  }
+ },
+ "slug": "cirrus-sr20",
+ "v_speeds": {
+  "best_glide": 96,
+  "va": 131,
+  "vfe": 100,
+  "vne": 200,
+  "vno": 165,
+  "vpd": 135,
+  "vs0": 56,
+  "vs1": 65,
+  "vx": 81,
+  "vy": 96
+ }
+}

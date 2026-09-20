@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C177",
+ "limits": {
+  "empty_weight_lbs": 1580,
+  "max_gross_weight_lbs": 2500,
+  "service_ceiling_ft": 14100,
+  "usable_fuel_gal": 49,
+  "useful_load_lbs": 920
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 177 Cardinal",
+ "performance": {},
+ "slug": "cessna-177-cardinal",
+ "v_speeds": {
+  "best_glide": 74,
+  "va": 104,
+  "vfe": 92,
+  "vne": 165,
+  "vno": 138,
+  "vs0": 44,
+  "vs1": 54,
+  "vx": 60,
+  "vy": 80
+ }
+}

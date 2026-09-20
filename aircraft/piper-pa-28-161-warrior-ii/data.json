@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "P28A",
+ "limits": {
+  "empty_weight_lbs": 1510,
+  "max_gross_weight_lbs": 2440,
+  "service_ceiling_ft": 14100,
+  "usable_fuel_gal": 48,
+  "useful_load_lbs": 930
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-28-161 Warrior II",
+ "performance": {},
+ "slug": "piper-pa-28-161-warrior-ii",
+ "v_speeds": {
+  "best_glide": 73,
+  "va": 111,
+  "vfe": 103,
+  "vne": 160,
+  "vno": 126,
+  "vs0": 44,
+  "vs1": 50,
+  "vx": 63,
+  "vy": 79
+ }
+}

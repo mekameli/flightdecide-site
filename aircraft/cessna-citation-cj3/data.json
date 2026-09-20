@@ -1,0 +1,30 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official AFM/POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C25B",
+ "limits": {
+  "empty_weight_lbs": 9170,
+  "max_gross_weight_lbs": 13870,
+  "service_ceiling_ft": 45000,
+  "usable_fuel_gal": 704,
+  "useful_load_lbs": 4700
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna Citation CJ3",
+ "performance": {},
+ "slug": "cessna-citation-cj3",
+ "v_speeds": {
+  "best_glide": 140,
+  "mmo": 0.737,
+  "va": 155,
+  "vfe": 161,
+  "vmc": 88,
+  "vmo": 278,
+  "vs0": 85,
+  "vs1": 96,
+  "vx": 140,
+  "vy": 160,
+  "vyse": 140
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "DA42",
+ "limits": {
+  "empty_weight_lbs": 2656,
+  "max_gross_weight_lbs": 3935,
+  "service_ceiling_ft": 18000,
+  "usable_fuel_gal": 50,
+  "useful_load_lbs": 1279
+ },
+ "manufacturer": "Diamond",
+ "name": "Diamond DA42 Twin Star",
+ "performance": {},
+ "slug": "diamond-da42-twin-star",
+ "v_speeds": {
+  "best_glide": 90,
+  "vfe": 113,
+  "vmc": 68,
+  "vne": 188,
+  "vno": 151,
+  "vs0": 62,
+  "vs1": 68,
+  "vx": 80,
+  "vxse": 80,
+  "vy": 89,
+  "vyse": 85
+ }
+}

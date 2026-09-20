@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "DA20",
+ "limits": {
+  "empty_weight_lbs": 1150,
+  "max_gross_weight_lbs": 1764,
+  "service_ceiling_ft": 13120,
+  "usable_fuel_gal": 24,
+  "useful_load_lbs": 614
+ },
+ "manufacturer": "Diamond",
+ "name": "Diamond DA20-C1 Eclipse",
+ "performance": {},
+ "slug": "diamond-da20-c1-eclipse",
+ "v_speeds": {
+  "best_glide": 73,
+  "va": 106,
+  "vfe": 78,
+  "vne": 164,
+  "vno": 118,
+  "vs0": 34,
+  "vs1": 42,
+  "vx": 57,
+  "vy": 68
+ }
+}

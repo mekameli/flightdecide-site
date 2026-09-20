@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "BE36",
+ "limits": {
+  "empty_weight_lbs": 2364,
+  "max_gross_weight_lbs": 3600,
+  "service_ceiling_ft": 18500,
+  "usable_fuel_gal": 74,
+  "useful_load_lbs": 1236
+ },
+ "manufacturer": "Beechcraft",
+ "name": "Beechcraft Bonanza A36",
+ "performance": {},
+ "slug": "beechcraft-bonanza-a36",
+ "v_speeds": {
+  "best_glide": 110,
+  "va": 141,
+  "vfe": 124,
+  "vne": 205,
+  "vno": 167,
+  "vs0": 59,
+  "vs1": 68,
+  "vx": 84,
+  "vy": 100
+ }
+}

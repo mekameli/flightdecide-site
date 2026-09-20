@@ -1,0 +1,31 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "BE76",
+ "limits": {
+  "empty_weight_lbs": 2530,
+  "max_gross_weight_lbs": 3900,
+  "service_ceiling_ft": 19650,
+  "usable_fuel_gal": 100,
+  "useful_load_lbs": 1370
+ },
+ "manufacturer": "Beechcraft",
+ "name": "Beechcraft Duchess 76",
+ "performance": {},
+ "slug": "beechcraft-duchess-76",
+ "v_speeds": {
+  "best_glide": 95,
+  "va": 132,
+  "vfe": 110,
+  "vmc": 65,
+  "vne": 194,
+  "vno": 154,
+  "vs0": 60,
+  "vs1": 70,
+  "vx": 71,
+  "vxse": 85,
+  "vy": 85,
+  "vyse": 85
+ }
+}

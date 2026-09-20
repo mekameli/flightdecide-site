@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C182",
+ "limits": {
+  "empty_weight_lbs": 1900,
+  "max_gross_weight_lbs": 2950,
+  "service_ceiling_ft": 17700,
+  "usable_fuel_gal": 56,
+  "useful_load_lbs": 1050
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 182P Skylane",
+ "performance": {},
+ "slug": "cessna-182p-skylane",
+ "v_speeds": {
+  "best_glide": 70,
+  "va": 110,
+  "vfe": 95,
+  "vne": 176,
+  "vno": 141,
+  "vs0": 48,
+  "vs1": 53,
+  "vx": 59,
+  "vy": 80
+ }
+}

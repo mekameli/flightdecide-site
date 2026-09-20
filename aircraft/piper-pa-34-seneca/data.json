@@ -1,0 +1,31 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "PA34",
+ "limits": {
+  "empty_weight_lbs": 2900,
+  "max_gross_weight_lbs": 4570,
+  "service_ceiling_ft": 25000,
+  "usable_fuel_gal": 93,
+  "useful_load_lbs": 1670
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-34 Seneca",
+ "performance": {},
+ "slug": "piper-pa-34-seneca",
+ "v_speeds": {
+  "best_glide": 90,
+  "va": 136,
+  "vfe": 107,
+  "vmc": 66,
+  "vne": 195,
+  "vno": 163,
+  "vs0": 61,
+  "vs1": 63,
+  "vx": 76,
+  "vxse": 78,
+  "vy": 89,
+  "vyse": 89
+ }
+}

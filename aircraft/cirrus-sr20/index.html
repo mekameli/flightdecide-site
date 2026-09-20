@@ -25,6 +25,7 @@
   <meta name="twitter:description" content="Cirrus SR20 specs from the POH: weights, useful load, service ceiling, V-speeds, cruise performance, fuel, takeoff and landing distances." />
   <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <link rel="stylesheet" href="/assets/pages.css" />
+  <link rel="stylesheet" href="/assets/aircraft.css" />
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
@@ -115,6 +116,7 @@
   </script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
   <script defer src="/assets/sale-banner.js"></script>
+<script defer src="/assets/aircraft.js"></script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Main">
@@ -200,19 +202,158 @@
     <p class="calc-hint">Standard-day (ISA) rows shown, sampled across the POH table for readability; the FlightDecide app carries the full digitized table, including non-standard temperatures.</p>
 
     <h2>How much runway does a Cirrus SR20 need?</h2>
-    <p>Book figures at 3050 lb, 0 ft pressure altitude, 15 °C. Real-world technique, wind, surface, and density altitude move these substantially, so apply your own margin (many pilots use 1.5× the book number) and run the numbers for the actual conditions.</p>
+    <p>Book figures at 3050 lb, 0 ft pressure altitude, 10 °C. Real-world technique, wind, surface, and density altitude move these substantially, so apply your own margin (many pilots use 1.5× the book number) and run the numbers for the actual conditions.</p>
     <div class="table-scroll"><table>
       <thead><tr><th>POH figure</th><th>Distance</th></tr></thead>
       <tbody>
-        <tr><td>Takeoff ground roll</td><td>1600 ft</td></tr>
-        <tr><td>Takeoff over a 50 ft obstacle</td><td>2187 ft</td></tr>
-        <tr><td>Landing ground roll</td><td>556 ft</td></tr>
-        <tr><td>Landing over a 50 ft obstacle</td><td>1360 ft</td></tr>
-        <tr><td>Rate of climb</td><td>886 fpm</td></tr>
+        <tr><td>Takeoff ground roll</td><td>1424 ft</td></tr>
+        <tr><td>Takeoff over a 50 ft obstacle</td><td>2145 ft</td></tr>
+        <tr><td>Landing ground roll</td><td>838 ft</td></tr>
+        <tr><td>Landing over a 50 ft obstacle</td><td>2609 ft</td></tr>
+        <tr><td>Rate of climb</td><td>890 fpm</td></tr>
       </tbody>
     </table></div>
     <p>See how <a href="/tools/density-altitude-calculator/">density altitude</a> stretches these distances on a hot day.</p>
 
+
+    <h2 id="takeoff">Takeoff distance</h2>
+    <p class="perf-cond">Flaps 50%, takeoff power, dry paved level runway, zero wind</p>
+    <p class="perf-src">Source: Pilot&#x27;s Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 · Takeoff Distance · Section 9 Supplements, 11934-S37 (3050 lb gross weight increase)</p>
+    
+    <div class="perf-tabs" role="group" aria-label="Weight" data-for="takeoff"><button type="button" data-weight="3050" aria-pressed="true">3,050 lb</button><button type="button" data-weight="2500" aria-pressed="false">2,500 lb</button></div>
+    <div class="table-scroll" data-perf="takeoff">
+<div class="perf-panel" data-weight="3050">
+  <table class="perf-table" data-table="takeoff" data-weight="3050">
+    <caption>Ground roll (bold) and total distance over a 50 ft obstacle at 3,050 lb</caption>
+    <thead><tr><th scope="col">Pressure altitude</th><th>0 °C</th><th>10 °C</th><th>20 °C</th><th>30 °C</th><th>40 °C</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Sea level</th><td class="c-poh" title="From the handbook"><b>1,319</b><i class="sep"> / </i><span>1,996</span></td><td class="c-poh" title="From the handbook"><b>1,424</b><i class="sep"> / </i><span>2,145</span></td><td class="c-poh" title="From the handbook"><b>1,534</b><i class="sep"> / </i><span>2,300</span></td><td class="c-poh" title="From the handbook"><b>1,648</b><i class="sep"> / </i><span>2,460</span></td><td class="c-poh" title="From the handbook"><b>1,767</b><i class="sep"> / </i><span>2,626</span></td></tr>
+      <tr><th scope="row">1,000 ft</th><td class="c-poh" title="From the handbook"><b>1,448</b><i class="sep"> / </i><span>2,183</span></td><td class="c-poh" title="From the handbook"><b>1,563</b><i class="sep"> / </i><span>2,346</span></td><td class="c-poh" title="From the handbook"><b>1,684</b><i class="sep"> / </i><span>2,515</span></td><td class="c-poh" title="From the handbook"><b>1,809</b><i class="sep"> / </i><span>2,691</span></td><td class="c-poh" title="From the handbook"><b>1,940</b><i class="sep"> / </i><span>2,872</span></td></tr>
+      <tr><th scope="row">2,000 ft</th><td class="c-poh" title="From the handbook"><b>1,590</b><i class="sep"> / </i><span>2,389</span></td><td class="c-poh" title="From the handbook"><b>1,717</b><i class="sep"> / </i><span>2,568</span></td><td class="c-poh" title="From the handbook"><b>1,850</b><i class="sep"> / </i><span>2,753</span></td><td class="c-poh" title="From the handbook"><b>1,988</b><i class="sep"> / </i><span>2,945</span></td><td class="c-poh" title="From the handbook"><b>2,131</b><i class="sep"> / </i><span>3,144</span></td></tr>
+      <tr><th scope="row">3,000 ft</th><td class="c-poh" title="From the handbook"><b>1,748</b><i class="sep"> / </i><span>2,616</span></td><td class="c-poh" title="From the handbook"><b>1,888</b><i class="sep"> / </i><span>2,812</span></td><td class="c-poh" title="From the handbook"><b>2,034</b><i class="sep"> / </i><span>3,015</span></td><td class="c-poh" title="From the handbook"><b>2,185</b><i class="sep"> / </i><span>3,226</span></td><td class="c-poh" title="From the handbook"><b>2,343</b><i class="sep"> / </i><span>3,444</span></td></tr>
+      <tr><th scope="row">4,000 ft</th><td class="c-poh" title="From the handbook"><b>1,923</b><i class="sep"> / </i><span>2,868</span></td><td class="c-poh" title="From the handbook"><b>2,077</b><i class="sep"> / </i><span>3,082</span></td><td class="c-poh" title="From the handbook"><b>2,237</b><i class="sep"> / </i><span>3,305</span></td><td class="c-poh" title="From the handbook"><b>2,404</b><i class="sep"> / </i><span>3,536</span></td><td class="c-poh" title="From the handbook"><b>2,577</b><i class="sep"> / </i><span>3,775</span></td></tr>
+      <tr><th scope="row">5,000 ft</th><td class="c-poh" title="From the handbook"><b>2,117</b><i class="sep"> / </i><span>3,145</span></td><td class="c-poh" title="From the handbook"><b>2,287</b><i class="sep"> / </i><span>3,381</span></td><td class="c-poh" title="From the handbook"><b>2,463</b><i class="sep"> / </i><span>3,625</span></td><td class="c-poh" title="From the handbook"><b>2,647</b><i class="sep"> / </i><span>3,879</span></td><td class="c-poh" title="From the handbook"><b>2,837</b><i class="sep"> / </i><span>4,141</span></td></tr>
+      <tr><th scope="row">6,000 ft</th><td class="c-poh" title="From the handbook"><b>2,333</b><i class="sep"> / </i><span>3,452</span></td><td class="c-poh" title="From the handbook"><b>2,519</b><i class="sep"> / </i><span>3,711</span></td><td class="c-poh" title="From the handbook"><b>2,714</b><i class="sep"> / </i><span>3,980</span></td><td class="c-poh" title="From the handbook"><b>2,916</b><i class="sep"> / </i><span>4,258</span></td><td class="c-poh" title="From the handbook"><b>3,126</b><i class="sep"> / </i><span>4,546</span></td></tr>
+      <tr><th scope="row">7,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,571</b><i class="sep"> / </i><span>3,789</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,775</b><i class="sep"> / </i><span>4,073</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,991</b><i class="sep"> / </i><span>4,370</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,212</b><i class="sep"> / </i><span>4,674</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,444</b><i class="sep"> / </i><span>4,991</span></td></tr>
+      <tr><th scope="row">8,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,833</b><i class="sep"> / </i><span>4,159</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,056</b><i class="sep"> / </i><span>4,471</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,295</b><i class="sep"> / </i><span>4,798</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,539</b><i class="sep"> / </i><span>5,131</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,795</b><i class="sep"> / </i><span>5,479</span></td></tr>
+      <tr><th scope="row">9,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,122</b><i class="sep"> / </i><span>4,565</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,366</b><i class="sep"> / </i><span>4,907</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,631</b><i class="sep"> / </i><span>5,268</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>3,898</b><i class="sep"> / </i><span>5,632</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>4,182</b><i class="sep"> / </i><span>6,015</span></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="perf-panel" data-weight="2500" hidden>
+  <table class="perf-table" data-table="takeoff" data-weight="2500">
+    <caption>Ground roll (bold) and total distance over a 50 ft obstacle at 2,500 lb</caption>
+    <thead><tr><th scope="col">Pressure altitude</th><th>0 °C</th><th>10 °C</th><th>20 °C</th><th>30 °C</th><th>40 °C</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Sea level</th><td class="c-poh" title="From the handbook"><b>787</b><i class="sep"> / </i><span>1,215</span></td><td class="c-poh" title="From the handbook"><b>850</b><i class="sep"> / </i><span>1,306</span></td><td class="c-poh" title="From the handbook"><b>915</b><i class="sep"> / </i><span>1,400</span></td><td class="c-poh" title="From the handbook"><b>983</b><i class="sep"> / </i><span>1,497</span></td><td class="c-poh" title="From the handbook"><b>1,054</b><i class="sep"> / </i><span>1,598</span></td></tr>
+      <tr><th scope="row">1,000 ft</th><td class="c-poh" title="From the handbook"><b>864</b><i class="sep"> / </i><span>1,329</span></td><td class="c-poh" title="From the handbook"><b>933</b><i class="sep"> / </i><span>1,428</span></td><td class="c-poh" title="From the handbook"><b>1,005</b><i class="sep"> / </i><span>1,531</span></td><td class="c-poh" title="From the handbook"><b>1,079</b><i class="sep"> / </i><span>1,637</span></td><td class="c-poh" title="From the handbook"><b>1,157</b><i class="sep"> / </i><span>1,748</span></td></tr>
+      <tr><th scope="row">2,000 ft</th><td class="c-poh" title="From the handbook"><b>949</b><i class="sep"> / </i><span>1,454</span></td><td class="c-poh" title="From the handbook"><b>1,025</b><i class="sep"> / </i><span>1,563</span></td><td class="c-poh" title="From the handbook"><b>1,104</b><i class="sep"> / </i><span>1,676</span></td><td class="c-poh" title="From the handbook"><b>1,186</b><i class="sep"> / </i><span>1,792</span></td><td class="c-poh" title="From the handbook"><b>1,271</b><i class="sep"> / </i><span>1,913</span></td></tr>
+      <tr><th scope="row">3,000 ft</th><td class="c-poh" title="From the handbook"><b>1,043</b><i class="sep"> / </i><span>1,593</span></td><td class="c-poh" title="From the handbook"><b>1,126</b><i class="sep"> / </i><span>1,712</span></td><td class="c-poh" title="From the handbook"><b>1,213</b><i class="sep"> / </i><span>1,835</span></td><td class="c-poh" title="From the handbook"><b>1,304</b><i class="sep"> / </i><span>1,963</span></td><td class="c-poh" title="From the handbook"><b>1,398</b><i class="sep"> / </i><span>2,095</span></td></tr>
+      <tr><th scope="row">4,000 ft</th><td class="c-poh" title="From the handbook"><b>1,147</b><i class="sep"> / </i><span>1,745</span></td><td class="c-poh" title="From the handbook"><b>1,239</b><i class="sep"> / </i><span>1,876</span></td><td class="c-poh" title="From the handbook"><b>1,335</b><i class="sep"> / </i><span>2,011</span></td><td class="c-poh" title="From the handbook"><b>1,434</b><i class="sep"> / </i><span>2,151</span></td><td class="c-poh" title="From the handbook"><b>1,537</b><i class="sep"> / </i><span>2,296</span></td></tr>
+      <tr><th scope="row">5,000 ft</th><td class="c-poh" title="From the handbook"><b>1,263</b><i class="sep"> / </i><span>1,914</span></td><td class="c-poh" title="From the handbook"><b>1,364</b><i class="sep"> / </i><span>2,057</span></td><td class="c-poh" title="From the handbook"><b>1,469</b><i class="sep"> / </i><span>2,206</span></td><td class="c-poh" title="From the handbook"><b>1,579</b><i class="sep"> / </i><span>2,359</span></td><td class="c-poh" title="From the handbook"><b>1,693</b><i class="sep"> / </i><span>2,518</span></td></tr>
+      <tr><th scope="row">6,000 ft</th><td class="c-poh" title="From the handbook"><b>1,392</b><i class="sep"> / </i><span>2,101</span></td><td class="c-poh" title="From the handbook"><b>1,503</b><i class="sep"> / </i><span>2,258</span></td><td class="c-poh" title="From the handbook"><b>1,619</b><i class="sep"> / </i><span>2,421</span></td><td class="c-poh" title="From the handbook"><b>1,739</b><i class="sep"> / </i><span>2,589</span></td><td class="c-poh" title="From the handbook"><b>1,865</b><i class="sep"> / </i><span>2,764</span></td></tr>
+      <tr><th scope="row">7,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,534</b><i class="sep"> / </i><span>2,306</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,656</b><i class="sep"> / </i><span>2,479</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,784</b><i class="sep"> / </i><span>2,657</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,915</b><i class="sep"> / </i><span>2,841</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,054</b><i class="sep"> / </i><span>3,034</span></td></tr>
+      <tr><th scope="row">8,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,691</b><i class="sep"> / </i><span>2,532</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,825</b><i class="sep"> / </i><span>2,721</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,967</b><i class="sep"> / </i><span>2,916</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,109</b><i class="sep"> / </i><span>3,118</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,263</b><i class="sep"> / </i><span>3,330</span></td></tr>
+      <tr><th scope="row">9,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>1,864</b><i class="sep"> / </i><span>2,779</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,011</b><i class="sep"> / </i><span>2,987</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,167</b><i class="sep"> / </i><span>3,200</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,323</b><i class="sep"> / </i><span>3,423</span></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>2,493</b><i class="sep"> / </i><span>3,656</span></td></tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+    <p class="perf-key"><span class="k k-poh"></span> from the handbook &nbsp; <span class="k k-ext"></span> extrapolated beyond the handbook</p>
+    
+
+    <h2 id="landing">Landing distance</h2>
+    <p class="perf-cond"></p>
+    <p class="perf-src">Source: Pilot&#x27;s Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 · Landing Distance · Section 9 Supplements, 11934-S37 (3050 lb gross weight increase)</p>
+    
+    
+    <div class="table-scroll" data-perf="landing">
+<div class="perf-panel" data-weight="3050">
+  <table class="perf-table" data-table="landing" data-weight="3050">
+    <caption>Ground roll (bold) and total distance over a 50 ft obstacle at 3,050 lb</caption>
+    <thead><tr><th scope="col">Pressure altitude</th><th>0 °C</th><th>10 °C</th><th>20 °C</th><th>30 °C</th><th>40 °C</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Sea level</th><td class="c-poh" title="From the handbook"><b>809</b><i class="sep"> / </i><span>2,557</span></td><td class="c-poh" title="From the handbook"><b>838</b><i class="sep"> / </i><span>2,609</span></td><td class="c-poh" title="From the handbook"><b>868</b><i class="sep"> / </i><span>2,663</span></td><td class="c-poh" title="From the handbook"><b>897</b><i class="sep"> / </i><span>2,717</span></td><td class="c-poh" title="From the handbook"><b>927</b><i class="sep"> / </i><span>2,773</span></td></tr>
+      <tr><th scope="row">1,000 ft</th><td class="c-poh" title="From the handbook"><b>838</b><i class="sep"> / </i><span>2,610</span></td><td class="c-poh" title="From the handbook"><b>869</b><i class="sep"> / </i><span>2,665</span></td><td class="c-poh" title="From the handbook"><b>900</b><i class="sep"> / </i><span>2,722</span></td><td class="c-poh" title="From the handbook"><b>931</b><i class="sep"> / </i><span>2,779</span></td><td class="c-poh" title="From the handbook"><b>961</b><i class="sep"> / </i><span>2,838</span></td></tr>
+      <tr><th scope="row">2,000 ft</th><td class="c-poh" title="From the handbook"><b>870</b><i class="sep"> / </i><span>2,666</span></td><td class="c-poh" title="From the handbook"><b>901</b><i class="sep"> / </i><span>2,725</span></td><td class="c-poh" title="From the handbook"><b>933</b><i class="sep"> / </i><span>2,785</span></td><td class="c-poh" title="From the handbook"><b>965</b><i class="sep"> / </i><span>2,846</span></td><td class="c-poh" title="From the handbook"><b>997</b><i class="sep"> / </i><span>2,907</span></td></tr>
+      <tr><th scope="row">3,000 ft</th><td class="c-poh" title="From the handbook"><b>902</b><i class="sep"> / </i><span>2,726</span></td><td class="c-poh" title="From the handbook"><b>935</b><i class="sep"> / </i><span>2,788</span></td><td class="c-poh" title="From the handbook"><b>968</b><i class="sep"> / </i><span>2,852</span></td><td class="c-poh" title="From the handbook"><b>1,001</b><i class="sep"> / </i><span>2,916</span></td><td class="c-poh" title="From the handbook"><b>1,034</b><i class="sep"> / </i><span>2,981</span></td></tr>
+      <tr><th scope="row">4,000 ft</th><td class="c-poh" title="From the handbook"><b>936</b><i class="sep"> / </i><span>2,790</span></td><td class="c-poh" title="From the handbook"><b>971</b><i class="sep"> / </i><span>2,856</span></td><td class="c-poh" title="From the handbook"><b>1,005</b><i class="sep"> / </i><span>2,923</span></td><td class="c-poh" title="From the handbook"><b>1,039</b><i class="sep"> / </i><span>2,991</span></td><td class="c-poh" title="From the handbook"><b>1,073</b><i class="sep"> / </i><span>3,060</span></td></tr>
+      <tr><th scope="row">5,000 ft</th><td class="c-poh" title="From the handbook"><b>972</b><i class="sep"> / </i><span>2,858</span></td><td class="c-poh" title="From the handbook"><b>1,007</b><i class="sep"> / </i><span>2,928</span></td><td class="c-poh" title="From the handbook"><b>1,043</b><i class="sep"> / </i><span>2,999</span></td><td class="c-poh" title="From the handbook"><b>1,079</b><i class="sep"> / </i><span>3,070</span></td><td class="c-poh" title="From the handbook"><b>1,114</b><i class="sep"> / </i><span>3,143</span></td></tr>
+      <tr><th scope="row">6,000 ft</th><td class="c-poh" title="From the handbook"><b>1,009</b><i class="sep"> / </i><span>2,931</span></td><td class="c-poh" title="From the handbook"><b>1,046</b><i class="sep"> / </i><span>3,004</span></td><td class="c-poh" title="From the handbook"><b>1,083</b><i class="sep"> / </i><span>3,079</span></td><td class="c-poh" title="From the handbook"><b>1,120</b><i class="sep"> / </i><span>3,155</span></td><td class="c-poh" title="From the handbook"><b>1,157</b><i class="sep"> / </i><span>3,232</span></td></tr>
+      <tr><th scope="row">7,000 ft</th><td class="c-poh" title="From the handbook"><b>1,048</b><i class="sep"> / </i><span>3,008</span></td><td class="c-poh" title="From the handbook"><b>1,086</b><i class="sep"> / </i><span>3,086</span></td><td class="c-poh" title="From the handbook"><b>1,125</b><i class="sep"> / </i><span>3,165</span></td><td class="c-poh" title="From the handbook"><b>1,163</b><i class="sep"> / </i><span>3,245</span></td><td class="c-poh" title="From the handbook"><b>1,201</b><i class="sep"> / </i><span>3,326</span></td></tr>
+      <tr><th scope="row">8,000 ft</th><td class="c-poh" title="From the handbook"><b>1,089</b><i class="sep"> / </i><span>3,091</span></td><td class="c-poh" title="From the handbook"><b>1,128</b><i class="sep"> / </i><span>3,173</span></td><td class="c-poh" title="From the handbook"><b>1,168</b><i class="sep"> / </i><span>3,256</span></td><td class="c-poh" title="From the handbook"><b>1,208</b><i class="sep"> / </i><span>3,341</span></td><td class="c-poh" title="From the handbook"><b>1,248</b><i class="sep"> / </i><span>3,427</span></td></tr>
+      <tr><th scope="row">9,000 ft</th><td class="c-poh" title="From the handbook"><b>1,131</b><i class="sep"> / </i><span>3,179</span></td><td class="c-poh" title="From the handbook"><b>1,173</b><i class="sep"> / </i><span>3,265</span></td><td class="c-poh" title="From the handbook"><b>1,214</b><i class="sep"> / </i><span>3,353</span></td><td class="c-poh" title="From the handbook"><b>1,255</b><i class="sep"> / </i><span>3,443</span></td><td class="c-poh" title="From the handbook"><b>1,297</b><i class="sep"> / </i><span>3,533</span></td></tr>
+      <tr><th scope="row">10,000 ft</th><td class="c-poh" title="From the handbook"><b>1,176</b><i class="sep"> / </i><span>3,272</span></td><td class="c-poh" title="From the handbook"><b>1,219</b><i class="sep"> / </i><span>3,364</span></td><td class="c-poh" title="From the handbook"><b>1,262</b><i class="sep"> / </i><span>3,457</span></td><td class="c-poh" title="From the handbook"><b>1,305</b><i class="sep"> / </i><span>3,551</span></td><td class="c-poh" title="From the handbook"><b>1,348</b><i class="sep"> / </i><span>3,646</span></td></tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+    <p class="perf-key"><span class="k k-poh"></span> from the handbook</p>
+    
+
+    <h2 id="climb">Rate of climb</h2>
+    <p class="perf-cond">Full throttle, mixture as required, flaps 0% (up), best rate of climb airspeed</p>
+    <p class="perf-src">Source: Pilot&#x27;s Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 · Enroute Rate of Climb · Section 9 Supplements, 11934-S37 (3050 lb gross weight increase)</p>
+    
+    <div class="perf-tabs" role="group" aria-label="Weight" data-for="climb"><button type="button" data-weight="3050" aria-pressed="true">3,050 lb</button><button type="button" data-weight="2500" aria-pressed="false">2,500 lb</button></div>
+    <div class="table-scroll" data-perf="climb">
+<div class="perf-panel" data-weight="3050">
+  <table class="perf-table" data-table="climb" data-weight="3050">
+    <caption>Rate of climb in feet per minute at 3,050 lb</caption>
+    <thead><tr><th scope="col">Pressure altitude</th><th>-20 °C</th><th>0 °C</th><th>20 °C</th><th>40 °C</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Sea level</th><td class="c-poh" title="From the handbook"><b>1,007</b></td><td class="c-poh" title="From the handbook"><b>949</b></td><td class="c-poh" title="From the handbook"><b>890</b></td><td class="c-poh" title="From the handbook"><b>830</b></td></tr>
+      <tr><th scope="row">1,000 ft</th><td class="c-int" title="Interpolated between handbook figures"><b>938</b></td><td class="c-int" title="Interpolated between handbook figures"><b>878</b></td><td class="c-int" title="Interpolated between handbook figures"><b>819</b></td><td class="c-int" title="Interpolated between handbook figures"><b>759</b></td></tr>
+      <tr><th scope="row">2,000 ft</th><td class="c-poh" title="From the handbook"><b>868</b></td><td class="c-poh" title="From the handbook"><b>808</b></td><td class="c-poh" title="From the handbook"><b>748</b></td><td class="c-poh" title="From the handbook"><b>688</b></td></tr>
+      <tr><th scope="row">3,000 ft</th><td class="c-int" title="Interpolated between handbook figures"><b>812</b></td><td class="c-int" title="Interpolated between handbook figures"><b>750</b></td><td class="c-int" title="Interpolated between handbook figures"><b>689</b></td><td class="c-int" title="Interpolated between handbook figures"><b>628</b></td></tr>
+      <tr><th scope="row">4,000 ft</th><td class="c-poh" title="From the handbook"><b>756</b></td><td class="c-poh" title="From the handbook"><b>693</b></td><td class="c-poh" title="From the handbook"><b>630</b></td><td class="c-poh" title="From the handbook"><b>567</b></td></tr>
+      <tr><th scope="row">5,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>700</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>636</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>571</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>506</b></td></tr>
+      <tr><th scope="row">6,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>644</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>578</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>512</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>446</b></td></tr>
+      <tr><th scope="row">7,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>588</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>520</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>453</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>386</b></td></tr>
+      <tr><th scope="row">8,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>532</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>463</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>394</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>325</b></td></tr>
+      <tr><th scope="row">9,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>476</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>406</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>335</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>264</b></td></tr>
+      <tr><th scope="row">10,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>420</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>348</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>276</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>204</b></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="perf-panel" data-weight="2500" hidden>
+  <table class="perf-table" data-table="climb" data-weight="2500">
+    <caption>Rate of climb in feet per minute at 2,500 lb</caption>
+    <thead><tr><th scope="col">Pressure altitude</th><th>-20 °C</th><th>0 °C</th><th>20 °C</th><th>40 °C</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Sea level</th><td class="c-poh" title="From the handbook"><b>1,231</b></td><td class="c-poh" title="From the handbook"><b>1,175</b></td><td class="c-poh" title="From the handbook"><b>1,117</b></td><td class="c-poh" title="From the handbook"><b>1,058</b></td></tr>
+      <tr><th scope="row">1,000 ft</th><td class="c-int" title="Interpolated between handbook figures"><b>1,170</b></td><td class="c-int" title="Interpolated between handbook figures"><b>1,112</b></td><td class="c-int" title="Interpolated between handbook figures"><b>1,052</b></td><td class="c-int" title="Interpolated between handbook figures"><b>992</b></td></tr>
+      <tr><th scope="row">2,000 ft</th><td class="c-poh" title="From the handbook"><b>1,109</b></td><td class="c-poh" title="From the handbook"><b>1,050</b></td><td class="c-poh" title="From the handbook"><b>988</b></td><td class="c-poh" title="From the handbook"><b>926</b></td></tr>
+      <tr><th scope="row">3,000 ft</th><td class="c-int" title="Interpolated between handbook figures"><b>1,048</b></td><td class="c-int" title="Interpolated between handbook figures"><b>986</b></td><td class="c-int" title="Interpolated between handbook figures"><b>923</b></td><td class="c-int" title="Interpolated between handbook figures"><b>860</b></td></tr>
+      <tr><th scope="row">4,000 ft</th><td class="c-poh" title="From the handbook"><b>987</b></td><td class="c-poh" title="From the handbook"><b>923</b></td><td class="c-poh" title="From the handbook"><b>858</b></td><td class="c-poh" title="From the handbook"><b>793</b></td></tr>
+      <tr><th scope="row">5,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>926</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>860</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>793</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>726</b></td></tr>
+      <tr><th scope="row">6,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>865</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>796</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>728</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>660</b></td></tr>
+      <tr><th scope="row">7,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>804</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>732</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>663</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>594</b></td></tr>
+      <tr><th scope="row">8,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>743</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>669</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>598</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>527</b></td></tr>
+      <tr><th scope="row">9,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>682</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>606</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>533</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>460</b></td></tr>
+      <tr><th scope="row">10,000 ft</th><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>621</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>542</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>468</b></td><td class="c-ext" title="Extrapolated beyond the handbook's range"><b>394</b></td></tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+    <p class="perf-key"><span class="k k-poh"></span> from the handbook &nbsp; <span class="k k-int"></span> interpolated &nbsp; <span class="k k-ext"></span> extrapolated beyond the handbook</p>
+    
+
+    <h2 id="rangeendurance">Range and endurance</h2>
+    <p class="perf-cond">Mixture = best power</p>
+    <p class="perf-src">Source: Pilot&#x27;s Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 · Range / Endurance Profile · page 5-24</p>
+    <div class="table-scroll" data-perf="rangeendurance">
+  <table class="perf-table" data-table="rangeendurance">
+    <caption>Range / Endurance Profile — 65% power</caption>
+    <thead><tr><th scope="col">Pressure altitude</th><th>Climb fuel (gal)</th><th>Fuel for cruise (gal)</th><th>TAS (kt)</th><th>Fuel flow (gph)</th><th>Endurance (hr)</th><th>Range (NM)</th><th>Specific range (NM/gal)</th></tr></thead>
+    <tbody><tr><th scope="row">Sea level</th><td>0.0</td><td>46.3</td><td>137</td><td>10.5</td><td>4.4</td><td>608</td><td>13.0</td></tr><tr><th scope="row">2,000 ft</th><td>0.6</td><td>45.7</td><td>139</td><td>10.5</td><td>4.4</td><td>620</td><td>13.1</td></tr><tr><th scope="row">4,000 ft</th><td>1.3</td><td>45.0</td><td>141</td><td>10.5</td><td>4.4</td><td>628</td><td>13.2</td></tr><tr><th scope="row">6,000 ft</th><td>2.0</td><td>44.3</td><td>143</td><td>10.5</td><td>4.4</td><td>635</td><td>13.2</td></tr><tr><th scope="row">8,000 ft</th><td>2.9</td><td>43.4</td><td>145</td><td>10.5</td><td>4.4</td><td>645</td><td>13.3</td></tr><tr><th scope="row">10,000 ft</th><td>3.8</td><td>42.5</td><td>147</td><td>10.5</td><td>4.4</td><td>654</td><td>13.3</td></tr><tr><th scope="row">12,000 ft</th><td>5.0</td><td>41.3</td><td>150</td><td>10.5</td><td>4.4</td><td>666</td><td>13.4</td></tr><tr><th scope="row">14,000 ft</th><td>6.8</td><td>39.5</td><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+  </table>
+  <table class="perf-table" data-table="rangeendurance">
+    <caption>Range / Endurance Profile — 55% power</caption>
+    <thead><tr><th scope="col">Pressure altitude</th><th>Climb fuel (gal)</th><th>Fuel for cruise (gal)</th><th>TAS (kt)</th><th>Fuel flow (gph)</th><th>Endurance (hr)</th><th>Range (NM)</th><th>Specific range (NM/gal)</th></tr></thead>
+    <tbody><tr><th scope="row">Sea level</th><td>0.0</td><td>46.3</td><td>127</td><td>8.4</td><td>5.5</td><td>708</td><td>15.2</td></tr><tr><th scope="row">2,000 ft</th><td>0.6</td><td>45.7</td><td>130</td><td>8.4</td><td>5.5</td><td>726</td><td>15.5</td></tr><tr><th scope="row">4,000 ft</th><td>1.3</td><td>45.0</td><td>131</td><td>8.4</td><td>5.5</td><td>731</td><td>15.4</td></tr><tr><th scope="row">6,000 ft</th><td>2.0</td><td>44.3</td><td>134</td><td>8.4</td><td>5.5</td><td>745</td><td>15.6</td></tr><tr><th scope="row">8,000 ft</th><td>2.9</td><td>43.4</td><td>136</td><td>8.4</td><td>5.5</td><td>755</td><td>15.7</td></tr><tr><th scope="row">10,000 ft</th><td>3.8</td><td>42.5</td><td>139</td><td>8.4</td><td>5.4</td><td>768</td><td>15.9</td></tr><tr><th scope="row">12,000 ft</th><td>5.0</td><td>41.3</td><td>141</td><td>8.4</td><td>5.4</td><td>776</td><td>15.9</td></tr><tr><th scope="row">14,000 ft</th><td>6.8</td><td>39.5</td><td>144</td><td>8.4</td><td>5.4</td><td>785</td><td>16.0</td></tr></tbody>
+  </table>
+    </div>
     <span class="section-label" style="margin-top:44px">Common Questions</span>
     <div class="faq-list">
       <div class="faq-item">

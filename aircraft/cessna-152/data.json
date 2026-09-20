@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C152",
+ "limits": {
+  "empty_weight_lbs": 1080,
+  "max_gross_weight_lbs": 1670,
+  "service_ceiling_ft": 14700,
+  "usable_fuel_gal": 24.5,
+  "useful_load_lbs": 590
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 152",
+ "performance": {},
+ "slug": "cessna-152",
+ "v_speeds": {
+  "best_glide": 60,
+  "va": 104,
+  "vfe": 85,
+  "vne": 149,
+  "vno": 111,
+  "vs0": 43,
+  "vs1": 48,
+  "vx": 55,
+  "vy": 67
+ }
+}

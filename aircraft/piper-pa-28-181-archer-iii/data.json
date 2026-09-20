@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "P28A",
+ "limits": {
+  "empty_weight_lbs": 1550,
+  "max_gross_weight_lbs": 2550,
+  "service_ceiling_ft": 14100,
+  "usable_fuel_gal": 48,
+  "useful_load_lbs": 1000
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-28-181 Archer III",
+ "performance": {},
+ "slug": "piper-pa-28-181-archer-iii",
+ "v_speeds": {
+  "best_glide": 76,
+  "va": 113,
+  "vfe": 102,
+  "vne": 154,
+  "vno": 125,
+  "vs0": 45,
+  "vs1": 50,
+  "vx": 64,
+  "vy": 76
+ }
+}

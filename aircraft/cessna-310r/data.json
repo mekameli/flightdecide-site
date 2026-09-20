@@ -1,0 +1,31 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C310",
+ "limits": {
+  "empty_weight_lbs": 3500,
+  "max_gross_weight_lbs": 5500,
+  "service_ceiling_ft": 20200,
+  "usable_fuel_gal": 163,
+  "useful_load_lbs": 2000
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 310R",
+ "performance": {},
+ "slug": "cessna-310r",
+ "v_speeds": {
+  "best_glide": 105,
+  "va": 148,
+  "vfe": 158,
+  "vmc": 80,
+  "vne": 223,
+  "vno": 181,
+  "vs0": 72,
+  "vs1": 79,
+  "vx": 85,
+  "vxse": 95,
+  "vy": 107,
+  "vyse": 106
+ }
+}

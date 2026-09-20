@@ -1,0 +1,31 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "BE58",
+ "limits": {
+  "empty_weight_lbs": 3400,
+  "max_gross_weight_lbs": 5500,
+  "service_ceiling_ft": 20688,
+  "usable_fuel_gal": 166,
+  "useful_load_lbs": 2100
+ },
+ "manufacturer": "Beechcraft",
+ "name": "Beechcraft Baron 58",
+ "performance": {},
+ "slug": "beechcraft-baron-58",
+ "v_speeds": {
+  "best_glide": 115,
+  "va": 156,
+  "vfe": 122,
+  "vmc": 84,
+  "vne": 223,
+  "vno": 195,
+  "vs0": 67,
+  "vs1": 78,
+  "vx": 92,
+  "vxse": 96,
+  "vy": 105,
+  "vyse": 101
+ }
+}

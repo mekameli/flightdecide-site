@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "PA22",
+ "limits": {
+  "empty_weight_lbs": 1280,
+  "max_gross_weight_lbs": 2000,
+  "service_ceiling_ft": 12000,
+  "usable_fuel_gal": 36,
+  "useful_load_lbs": 720
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-22 Tri-Pacer",
+ "performance": {},
+ "slug": "piper-pa-22-tri-pacer",
+ "v_speeds": {
+  "best_glide": 72,
+  "va": 97,
+  "vfe": 83,
+  "vne": 148,
+  "vno": 117,
+  "vs0": 43,
+  "vs1": 46,
+  "vx": 72,
+  "vy": 73
+ }
+}

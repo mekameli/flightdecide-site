@@ -1,0 +1,27 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "PA32",
+ "limits": {
+  "empty_weight_lbs": 2100,
+  "max_gross_weight_lbs": 3400,
+  "service_ceiling_ft": 16250,
+  "usable_fuel_gal": 83.6,
+  "useful_load_lbs": 1300
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-32-300 Cherokee Six",
+ "performance": {},
+ "slug": "piper-pa-32-300-cherokee-six",
+ "v_speeds": {
+  "best_glide": 87,
+  "vfe": 109,
+  "vne": 184,
+  "vno": 146,
+  "vs0": 55,
+  "vs1": 62,
+  "vx": 79,
+  "vy": 90
+ }
+}

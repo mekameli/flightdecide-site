@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "SF50",
+ "limits": {
+  "empty_weight_lbs": 4000,
+  "max_gross_weight_lbs": 6000,
+  "service_ceiling_ft": 28000,
+  "usable_fuel_gal": 296,
+  "useful_load_lbs": 2000
+ },
+ "manufacturer": "Cirrus",
+ "name": "Cirrus SF50 Vision Jet",
+ "performance": {},
+ "slug": "cirrus-sf50-vision-jet",
+ "v_speeds": {
+  "best_glide": 104,
+  "mmo": 0.53,
+  "va": 150,
+  "vfe": 150,
+  "vmo": 250,
+  "vs0": 67,
+  "vs1": 86,
+  "vx": 91,
+  "vy": 160
+ }
+}

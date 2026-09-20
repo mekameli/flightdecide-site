@@ -1,0 +1,30 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "DA62",
+ "limits": {
+  "empty_weight_lbs": 3131,
+  "max_gross_weight_lbs": 5071,
+  "service_ceiling_ft": 18000,
+  "usable_fuel_gal": 79,
+  "useful_load_lbs": 1940
+ },
+ "manufacturer": "Diamond",
+ "name": "Diamond DA62",
+ "performance": {},
+ "slug": "diamond-da62",
+ "v_speeds": {
+  "best_glide": 95,
+  "vfe": 119,
+  "vmc": 72,
+  "vne": 205,
+  "vno": 162,
+  "vs0": 69,
+  "vs1": 73,
+  "vx": 86,
+  "vxse": 85,
+  "vy": 89,
+  "vyse": 96
+ }
+}

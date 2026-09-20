@@ -1,0 +1,31 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "BE20",
+ "limits": {
+  "empty_weight_lbs": 7800,
+  "max_gross_weight_lbs": 12500,
+  "service_ceiling_ft": 35000,
+  "usable_fuel_gal": 544,
+  "useful_load_lbs": 4700
+ },
+ "manufacturer": "Beechcraft",
+ "name": "Beechcraft King Air 200",
+ "performance": {},
+ "slug": "beechcraft-king-air-200",
+ "v_speeds": {
+  "best_glide": 120,
+  "mmo": 0.52,
+  "va": 181,
+  "vfe": 200,
+  "vmc": 86,
+  "vmo": 260,
+  "vs0": 75,
+  "vs1": 99,
+  "vx": 100,
+  "vxse": 115,
+  "vy": 125,
+  "vyse": 121
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C185",
+ "limits": {
+  "empty_weight_lbs": 2050,
+  "max_gross_weight_lbs": 3350,
+  "service_ceiling_ft": 17150,
+  "usable_fuel_gal": 84,
+  "useful_load_lbs": 1300
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 185 Skywagon",
+ "performance": {},
+ "slug": "cessna-185-skywagon",
+ "v_speeds": {
+  "best_glide": 72,
+  "vfe": 100,
+  "vne": 182,
+  "vno": 148,
+  "vs0": 47,
+  "vs1": 55,
+  "vx": 75,
+  "vy": 88
+ }
+}

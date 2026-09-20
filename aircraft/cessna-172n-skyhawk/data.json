@@ -1,0 +1,27 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C172",
+ "limits": {
+  "empty_weight_lbs": 1430,
+  "max_gross_weight_lbs": 2300,
+  "service_ceiling_ft": 14200,
+  "usable_fuel_gal": 40,
+  "useful_load_lbs": 870
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 172N Skyhawk",
+ "performance": {},
+ "slug": "cessna-172n-skyhawk",
+ "v_speeds": {
+  "best_glide": 65,
+  "vfe": 85,
+  "vne": 158,
+  "vno": 127,
+  "vs0": 40,
+  "vs1": 50,
+  "vx": 62,
+  "vy": 73
+ }
+}

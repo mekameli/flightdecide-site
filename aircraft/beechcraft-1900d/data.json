@@ -1,0 +1,33 @@
+{
+ "data_version": 1,
+ "disclaimer": "Zone arms are area averages. Verify all station arms and CG limits from your aircraft's current FAA-approved AFM before use.",
+ "generated": "2026-09-19",
+ "icao_type": "B190",
+ "limits": {
+  "empty_weight_lbs": 10900,
+  "max_gross_weight_lbs": 17120,
+  "service_ceiling_ft": 25000,
+  "usable_fuel_gal": 666,
+  "useful_load_lbs": 6220
+ },
+ "manufacturer": "Beechcraft",
+ "name": "Beechcraft 1900D",
+ "performance": {},
+ "slug": "beechcraft-1900d",
+ "v_speeds": {
+  "best_glide": 130,
+  "mmo": 0.48,
+  "va": 178,
+  "vfe": 154,
+  "vle": 180,
+  "vlo": 180,
+  "vmc": 92,
+  "vmo": 248,
+  "vs0": 88,
+  "vs1": 104,
+  "vx": 123,
+  "vxse": 122,
+  "vy": 141,
+  "vyse": 128
+ }
+}

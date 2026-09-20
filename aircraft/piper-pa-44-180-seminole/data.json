@@ -1,0 +1,31 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "PA44",
+ "limits": {
+  "empty_weight_lbs": 2534,
+  "max_gross_weight_lbs": 3800,
+  "service_ceiling_ft": 15000,
+  "usable_fuel_gal": 108,
+  "useful_load_lbs": 1266
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-44-180 Seminole",
+ "performance": {},
+ "slug": "piper-pa-44-180-seminole",
+ "v_speeds": {
+  "best_glide": 88,
+  "va": 135,
+  "vfe": 111,
+  "vmc": 56,
+  "vne": 202,
+  "vno": 169,
+  "vs0": 55,
+  "vs1": 57,
+  "vx": 82,
+  "vxse": 82,
+  "vy": 88,
+  "vyse": 88
+ }
+}

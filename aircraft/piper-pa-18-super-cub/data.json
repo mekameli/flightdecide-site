@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "PA18",
+ "limits": {
+  "empty_weight_lbs": 1025,
+  "max_gross_weight_lbs": 1750,
+  "service_ceiling_ft": 19000,
+  "usable_fuel_gal": 36,
+  "useful_load_lbs": 725
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-18 Super Cub",
+ "performance": {},
+ "slug": "piper-pa-18-super-cub",
+ "v_speeds": {
+  "best_glide": 67,
+  "va": 83,
+  "vfe": 74,
+  "vne": 133,
+  "vno": 105,
+  "vs0": 37,
+  "vs1": 41,
+  "vx": 39,
+  "vy": 65
+ }
+}

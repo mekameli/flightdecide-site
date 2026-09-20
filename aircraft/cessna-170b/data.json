@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C170",
+ "limits": {
+  "empty_weight_lbs": 1410,
+  "max_gross_weight_lbs": 2200,
+  "service_ceiling_ft": 15500,
+  "usable_fuel_gal": 37,
+  "useful_load_lbs": 790
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 170B",
+ "performance": {},
+ "slug": "cessna-170b",
+ "v_speeds": {
+  "best_glide": 61,
+  "va": 100,
+  "vfe": 87,
+  "vne": 139,
+  "vno": 122,
+  "vs0": 45,
+  "vs1": 50,
+  "vx": 66,
+  "vy": 76
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C150",
+ "limits": {
+  "empty_weight_lbs": 1060,
+  "max_gross_weight_lbs": 1600,
+  "service_ceiling_ft": 14000,
+  "usable_fuel_gal": 22.5,
+  "useful_load_lbs": 540
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 150M",
+ "performance": {},
+ "slug": "cessna-150m",
+ "v_speeds": {
+  "best_glide": 60,
+  "va": 97,
+  "vfe": 85,
+  "vne": 141,
+  "vno": 107,
+  "vs0": 42,
+  "vs1": 47,
+  "vx": 56,
+  "vy": 68
+ }
+}

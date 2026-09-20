@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "P28A",
+ "limits": {
+  "empty_weight_lbs": 1760,
+  "max_gross_weight_lbs": 2900,
+  "service_ceiling_ft": 18000,
+  "usable_fuel_gal": 84,
+  "useful_load_lbs": 1140
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-28-235 Cherokee 235",
+ "performance": {},
+ "slug": "piper-pa-28-235-cherokee-235",
+ "v_speeds": {
+  "best_glide": 82,
+  "va": 120,
+  "vfe": 100,
+  "vne": 171,
+  "vno": 136,
+  "vs0": 52,
+  "vs1": 61,
+  "vx": 78,
+  "vy": 87
+ }
+}

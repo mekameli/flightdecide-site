@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C210",
+ "limits": {
+  "empty_weight_lbs": 2350,
+  "max_gross_weight_lbs": 3800,
+  "service_ceiling_ft": 17300,
+  "usable_fuel_gal": 89,
+  "useful_load_lbs": 1450
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 210 Centurion",
+ "performance": {},
+ "slug": "cessna-210-centurion",
+ "v_speeds": {
+  "best_glide": 85,
+  "va": 125,
+  "vfe": 115,
+  "vne": 200,
+  "vno": 165,
+  "vs0": 58,
+  "vs1": 62,
+  "vx": 73,
+  "vy": 89
+ }
+}

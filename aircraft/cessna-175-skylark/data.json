@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "C175",
+ "limits": {
+  "empty_weight_lbs": 1500,
+  "max_gross_weight_lbs": 2350,
+  "service_ceiling_ft": 13200,
+  "usable_fuel_gal": 52,
+  "useful_load_lbs": 850
+ },
+ "manufacturer": "Cessna",
+ "name": "Cessna 175 Skylark",
+ "performance": {},
+ "slug": "cessna-175-skylark",
+ "v_speeds": {
+  "best_glide": 72,
+  "va": 107,
+  "vfe": 87,
+  "vne": 153,
+  "vno": 122,
+  "vs0": 47,
+  "vs1": 54,
+  "vx": 76,
+  "vy": 88
+ }
+}

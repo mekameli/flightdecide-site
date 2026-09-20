@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "PA24",
+ "limits": {
+  "empty_weight_lbs": 1940,
+  "max_gross_weight_lbs": 3100,
+  "service_ceiling_ft": 20000,
+  "usable_fuel_gal": 60,
+  "useful_load_lbs": 1160
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-24 Comanche",
+ "performance": {},
+ "slug": "piper-pa-24-comanche",
+ "v_speeds": {
+  "best_glide": 90,
+  "va": 125,
+  "vfe": 108,
+  "vne": 197,
+  "vno": 156,
+  "vs0": 56,
+  "vs1": 64,
+  "vx": 73,
+  "vy": 91
+ }
+}

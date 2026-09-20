@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "P28A",
+ "limits": {
+  "empty_weight_lbs": 1250,
+  "max_gross_weight_lbs": 2150,
+  "service_ceiling_ft": 12700,
+  "usable_fuel_gal": 36,
+  "useful_load_lbs": 900
+ },
+ "manufacturer": "Piper",
+ "name": "Piper PA-28-140 Cherokee",
+ "performance": {},
+ "slug": "piper-pa-28-140-cherokee",
+ "v_speeds": {
+  "best_glide": 72,
+  "va": 112,
+  "vfe": 100,
+  "vne": 149,
+  "vno": 122,
+  "vs0": 48,
+  "vs1": 56,
+  "vx": 64,
+  "vy": 74
+ }
+}

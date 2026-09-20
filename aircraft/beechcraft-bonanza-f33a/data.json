@@ -1,0 +1,28 @@
+{
+ "data_version": 1,
+ "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
+ "generated": "2026-09-19",
+ "icao_type": "BE33",
+ "limits": {
+  "empty_weight_lbs": 2200,
+  "max_gross_weight_lbs": 3400,
+  "service_ceiling_ft": 17200,
+  "usable_fuel_gal": 74,
+  "useful_load_lbs": 1200
+ },
+ "manufacturer": "Beechcraft",
+ "name": "Beechcraft Bonanza F33A",
+ "performance": {},
+ "slug": "beechcraft-bonanza-f33a",
+ "v_speeds": {
+  "best_glide": 105,
+  "va": 134,
+  "vfe": 123,
+  "vne": 196,
+  "vno": 167,
+  "vs0": 51,
+  "vs1": 63,
+  "vx": 77,
+  "vy": 96
+ }
+}
