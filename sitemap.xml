@@ -473,9 +473,15 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/rotor-cloud-under-a-mountain-wave/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/fuel-you-cannot-use/</loc>
@@ -540,11 +546,6 @@
   <url>
     <loc>https://flightdecide.com/explainers/density-altitude/</loc>
     <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/rotor-cloud-under-a-mountain-wave/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

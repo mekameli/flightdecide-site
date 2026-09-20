@@ -1,7 +1,69 @@
 {
-  "generated": "2026-09-20T19:35:22+00:00",
+  "generated": "2026-09-20T19:37:38+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "wx-mountain-rotor",
+      "slug": "rotor-cloud-under-a-mountain-wave",
+      "page": "/explainers/rotor-cloud-under-a-mountain-wave/",
+      "title": "Rotor cloud under a mountain wave",
+      "headline": "Expect the roughest low-level air under that smooth cloud.",
+      "pillar": "weather",
+      "topic": "Weather",
+      "alt": "Rotor cloud under a mountain wave: an illustrated diagram for pilots. Expect the roughest low-level air under that smooth cloud. The picture shows a mountain ridge in profile with the wind crossing it left to right; a smooth, hard-edged lens of lenticular cloud sitting at the wave crest downwind of the summit; a torn, ragged rotor cloud directly below that lenticular, at about ridge-top height; streamlines drawn unbroken from the lenticular down into the rotor, so the two clouds read as one wave. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/wx-mountain-rotor.webp",
+      "image_full": "/assets/explainers/rotor-cloud-under-a-mountain-wave.webp",
+      "image_px": 836,
+      "permalink": "https://www.instagram.com/p/DdhWkaKD9jh/",
+      "posted": "2026-09-20",
+      "caption": [
+        "What's the difference between a lenticular cloud and a rotor cloud?",
+        "Air crossing a ridge can set up a standing wave downwind. Smooth lenticular cloud marks the crests. The rotor turns underneath, and down low that roll is usually the roughest part of the system.",
+        "Full explainer, and the FAA sources, at the link in our bio."
+      ],
+      "teaches": [
+        "A mountain wave can form smooth lenticular cloud at its crests and turbulent rotor cloud beneath them.",
+        "At low level the rotor beneath the crests is usually the most turbulent part of the wave."
+      ],
+      "intent": "The smooth lenticular above and the ragged rotor below belong to the same wave, and down low the rotor is where the turbulence lives.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-28 ch 16",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 16",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 16",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 16
+        },
+        {
+          "ref": "FAA-H-8083-28 ch 19",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 19",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 19",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 19
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "CLEAN EDGES UP HERE",
+          "points_at": "The hard lit upper lip of the stacked lenticular cloud at the wave crest."
+        },
+        {
+          "label": "USUALLY THE ROUGHEST AIR",
+          "points_at": "The dark torn belly of the rotor cloud rolling directly beneath that lenticular."
+        },
+        {
+          "label": "SAME WAVE, BOTH CLOUDS",
+          "points_at": "The streamline that runs unbroken from the lenticular crest down into the rotor roll."
+        }
+      ],
+      "short": "rotor-cloud",
+      "article": [],
+      "related": []
+    },
     {
       "id": "sys-unusable-fuel",
       "slug": "fuel-you-cannot-use",
@@ -1086,64 +1148,6 @@
           ]
         }
       ],
-      "related": []
-    },
-    {
-      "id": "wx-mountain-rotor",
-      "slug": "rotor-cloud-under-a-mountain-wave",
-      "page": "/explainers/rotor-cloud-under-a-mountain-wave/",
-      "title": "Rotor cloud under a mountain wave",
-      "headline": "Expect the roughest low-level air under that smooth cloud.",
-      "pillar": "weather",
-      "topic": "Weather",
-      "alt": "Rotor cloud under a mountain wave: an illustrated diagram for pilots. Expect the roughest low-level air under that smooth cloud.",
-      "image": "/assets/social/wx-mountain-rotor.webp",
-      "image_full": "/assets/explainers/rotor-cloud-under-a-mountain-wave.webp",
-      "image_px": 836,
-      "permalink": null,
-      "posted": "",
-      "caption": [],
-      "teaches": [
-        "A mountain wave can form smooth lenticular cloud at its crests and turbulent rotor cloud beneath them.",
-        "At low level the rotor beneath the crests is usually the most turbulent part of the wave."
-      ],
-      "intent": "The smooth lenticular above and the ragged rotor below belong to the same wave, and down low the rotor is where the turbulence lives.",
-      "citations": [
-        {
-          "ref": "FAA-H-8083-28 ch 16",
-          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 16",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
-          "kind": "handbook",
-          "note": "see Chapter 16",
-          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
-          "chapter": 16
-        },
-        {
-          "ref": "FAA-H-8083-28 ch 19",
-          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 19",
-          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
-          "kind": "handbook",
-          "note": "see Chapter 19",
-          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
-          "chapter": 19
-        }
-      ],
-      "figure_key": [
-        {
-          "label": "CLEAN EDGES UP HERE",
-          "points_at": "The hard lit upper lip of the stacked lenticular cloud at the wave crest."
-        },
-        {
-          "label": "USUALLY THE ROUGHEST AIR",
-          "points_at": "The dark torn belly of the rotor cloud rolling directly beneath that lenticular."
-        },
-        {
-          "label": "SAME WAVE, BOTH CLOUDS",
-          "points_at": "The streamline that runs unbroken from the lenticular crest down into the rotor roll."
-        }
-      ],
-      "short": "rotor-cloud",
-      "article": [],
       "related": []
     }
   ]
