@@ -1,5 +1,5 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
  "generated": "2026-09-19",
  "icao_type": "C172",
@@ -904,6 +904,1018 @@
     }
    ],
    "source": "Figure 5-7"
+  },
+  "landing": {
+   "cells": {
+    "2300": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 495
+      },
+      "10": {
+       "basis": "poh",
+       "v": 510
+      },
+      "20": {
+       "basis": "poh",
+       "v": 530
+      },
+      "30": {
+       "basis": "poh",
+       "v": 545
+      },
+      "40": {
+       "basis": "poh",
+       "v": 565
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 510
+      },
+      "10": {
+       "basis": "poh",
+       "v": 530
+      },
+      "20": {
+       "basis": "poh",
+       "v": 550
+      },
+      "30": {
+       "basis": "poh",
+       "v": 565
+      },
+      "40": {
+       "basis": "poh",
+       "v": 585
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 718
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 754
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 763
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 788
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 824
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 530
+      },
+      "10": {
+       "basis": "poh",
+       "v": 550
+      },
+      "20": {
+       "basis": "poh",
+       "v": 570
+      },
+      "30": {
+       "basis": "poh",
+       "v": 590
+      },
+      "40": {
+       "basis": "poh",
+       "v": 610
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 550
+      },
+      "10": {
+       "basis": "poh",
+       "v": 570
+      },
+      "20": {
+       "basis": "poh",
+       "v": 590
+      },
+      "30": {
+       "basis": "poh",
+       "v": 610
+      },
+      "40": {
+       "basis": "poh",
+       "v": 630
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 570
+      },
+      "10": {
+       "basis": "poh",
+       "v": 590
+      },
+      "20": {
+       "basis": "poh",
+       "v": 615
+      },
+      "30": {
+       "basis": "poh",
+       "v": 635
+      },
+      "40": {
+       "basis": "poh",
+       "v": 655
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 590
+      },
+      "10": {
+       "basis": "poh",
+       "v": 615
+      },
+      "20": {
+       "basis": "poh",
+       "v": 635
+      },
+      "30": {
+       "basis": "poh",
+       "v": 655
+      },
+      "40": {
+       "basis": "poh",
+       "v": 680
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 615
+      },
+      "10": {
+       "basis": "poh",
+       "v": 640
+      },
+      "20": {
+       "basis": "poh",
+       "v": 660
+      },
+      "30": {
+       "basis": "poh",
+       "v": 685
+      },
+      "40": {
+       "basis": "poh",
+       "v": 705
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 640
+      },
+      "10": {
+       "basis": "poh",
+       "v": 660
+      },
+      "20": {
+       "basis": "poh",
+       "v": 685
+      },
+      "30": {
+       "basis": "poh",
+       "v": 710
+      },
+      "40": {
+       "basis": "poh",
+       "v": 730
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 665
+      },
+      "10": {
+       "basis": "poh",
+       "v": 690
+      },
+      "20": {
+       "basis": "poh",
+       "v": 710
+      },
+      "30": {
+       "basis": "poh",
+       "v": 735
+      },
+      "40": {
+       "basis": "poh",
+       "v": 760
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 691
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 721
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 736
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 761
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 791
+      }
+     }
+    }
+   },
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
+   "counts": {
+    "extrap": 10,
+    "interp": 0,
+    "poh": 45
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2300": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1205
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1235
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1265
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1295
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1330
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1235
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1265
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1330
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1365
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1594
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1634
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1674
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1714
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1770
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1265
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1405
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1405
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1440
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1410
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1445
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1480
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1415
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1450
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1485
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1525
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1415
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1455
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1490
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1535
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1570
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 1455
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1495
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1535
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1575
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1615
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 1500
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1540
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1580
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1620
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1665
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1546
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1586
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1626
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1666
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1717
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172N Skyhawk \u00b7 Landing Distance - Short Field",
+   "weights_lbs": [
+    2300
+   ]
+  },
+  "takeoff": {
+   "cells": {
+    "2300": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 720
+      },
+      "10": {
+       "basis": "poh",
+       "v": 775
+      },
+      "20": {
+       "basis": "poh",
+       "v": 835
+      },
+      "30": {
+       "basis": "poh",
+       "v": 895
+      },
+      "40": {
+       "basis": "poh",
+       "v": 960
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 790
+      },
+      "10": {
+       "basis": "poh",
+       "v": 850
+      },
+      "20": {
+       "basis": "poh",
+       "v": 915
+      },
+      "30": {
+       "basis": "poh",
+       "v": 980
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1050
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1900
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2061
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2213
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2389
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2574
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 865
+      },
+      "10": {
+       "basis": "poh",
+       "v": 930
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1000
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1075
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1155
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 950
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1025
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1100
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1185
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1270
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1045
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1125
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1210
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1400
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1150
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1240
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1435
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1540
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1265
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1365
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1475
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1585
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1705
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 1400
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1510
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1630
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1755
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1890
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 1550
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1675
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1805
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1945
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2095
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1716
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1858
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1999
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2156
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2322
+      }
+     }
+    }
+   },
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps up, full throttle prior to brake release, paved level dry runway, zero wind",
+   "counts": {
+    "extrap": 10,
+    "interp": 0,
+    "poh": 45
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2300": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1390
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1490
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1590
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1700
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1420
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1525
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1630
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1745
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1865
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3593
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3920
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4271
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 4694
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 5141
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1555
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1670
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1790
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1915
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2055
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1710
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1835
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1970
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2115
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2265
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1880
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2025
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2175
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2335
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2510
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 2075
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2240
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2410
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2595
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2795
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 2305
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2485
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2680
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2895
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3125
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 2565
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2770
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3000
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3245
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3515
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 2870
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3110
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3375
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3670
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3990
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3211
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3492
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3797
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 4151
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4529
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172N Skyhawk \u00b7 Takeoff Distance - Short Field",
+   "weights_lbs": [
+    2300
+   ]
   }
  },
  "slug": "cessna-172n-skyhawk",
