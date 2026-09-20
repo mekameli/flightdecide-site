@@ -12,7 +12,396 @@
  },
  "manufacturer": "Piper",
  "name": "Piper PA-28-181 Archer III",
- "performance": {},
+ "performance": {
+  "cruise": {
+   "axes": [
+    "pressure_altitude",
+    "rpm"
+   ],
+   "row_count": 42,
+   "rows": [
+    {
+     "gph": 8.2,
+     "isa_offset_c": -15,
+     "oat_c": 0,
+     "pct_power": 55,
+     "pressure_altitude": 0,
+     "rpm": 2245,
+     "tas_kts": 105
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": 30,
+     "oat_c": 45,
+     "pct_power": 55,
+     "pressure_altitude": 0,
+     "rpm": 2295,
+     "tas_kts": 106
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": -15,
+     "oat_c": 0,
+     "pct_power": 65,
+     "pressure_altitude": 0,
+     "rpm": 2385,
+     "tas_kts": 113
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": 30,
+     "oat_c": 45,
+     "pct_power": 65,
+     "pressure_altitude": 0,
+     "rpm": 2440,
+     "tas_kts": 116
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": -15,
+     "oat_c": 0,
+     "pct_power": 75,
+     "pressure_altitude": 0,
+     "rpm": 2485,
+     "tas_kts": 119
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": 30,
+     "oat_c": 45,
+     "pct_power": 75,
+     "pressure_altitude": 0,
+     "rpm": 2565,
+     "tas_kts": 124
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": -15,
+     "oat_c": -4,
+     "pct_power": 55,
+     "pressure_altitude": 2000,
+     "rpm": 2265,
+     "tas_kts": 106
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": 30,
+     "oat_c": 41,
+     "pct_power": 55,
+     "pressure_altitude": 2000,
+     "rpm": 2315,
+     "tas_kts": 107
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": -15,
+     "oat_c": -4,
+     "pct_power": 65,
+     "pressure_altitude": 2000,
+     "rpm": 2405,
+     "tas_kts": 114
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": 30,
+     "oat_c": 41,
+     "pct_power": 65,
+     "pressure_altitude": 2000,
+     "rpm": 2465,
+     "tas_kts": 117
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": -15,
+     "oat_c": -4,
+     "pct_power": 75,
+     "pressure_altitude": 2000,
+     "rpm": 2520,
+     "tas_kts": 121
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": 30,
+     "oat_c": 41,
+     "pct_power": 75,
+     "pressure_altitude": 2000,
+     "rpm": 2600,
+     "tas_kts": 126
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": -15,
+     "oat_c": -6,
+     "pct_power": 75,
+     "pressure_altitude": 3000,
+     "rpm": 2535,
+     "tas_kts": 122
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": 30,
+     "oat_c": 39,
+     "pct_power": 75,
+     "pressure_altitude": 3000,
+     "rpm": 2615,
+     "tas_kts": 127
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": -15,
+     "oat_c": -8,
+     "pct_power": 55,
+     "pressure_altitude": 4000,
+     "rpm": 2285,
+     "tas_kts": 106
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": 30,
+     "oat_c": 37,
+     "pct_power": 55,
+     "pressure_altitude": 4000,
+     "rpm": 2335,
+     "tas_kts": 108
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": -15,
+     "oat_c": -8,
+     "pct_power": 65,
+     "pressure_altitude": 4000,
+     "rpm": 2430,
+     "tas_kts": 115
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": 30,
+     "oat_c": 37,
+     "pct_power": 65,
+     "pressure_altitude": 4000,
+     "rpm": 2485,
+     "tas_kts": 118
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": -15,
+     "oat_c": -8,
+     "pct_power": 75,
+     "pressure_altitude": 4000,
+     "rpm": 2550,
+     "tas_kts": 123
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": 30,
+     "oat_c": 37,
+     "pct_power": 75,
+     "pressure_altitude": 4000,
+     "rpm": 2630,
+     "tas_kts": 128
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": -15,
+     "oat_c": -10,
+     "pct_power": 75,
+     "pressure_altitude": 5000,
+     "rpm": 2565,
+     "tas_kts": 124
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": 25,
+     "oat_c": 30,
+     "pct_power": 75,
+     "pressure_altitude": 5000,
+     "rpm": 2635,
+     "tas_kts": 128
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": -15,
+     "oat_c": -12,
+     "pct_power": 55,
+     "pressure_altitude": 6000,
+     "rpm": 2305,
+     "tas_kts": 107
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": 30,
+     "oat_c": 33,
+     "pct_power": 55,
+     "pressure_altitude": 6000,
+     "rpm": 2355,
+     "tas_kts": 108
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": -15,
+     "oat_c": -12,
+     "pct_power": 65,
+     "pressure_altitude": 6000,
+     "rpm": 2450,
+     "tas_kts": 116
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": 30,
+     "oat_c": 33,
+     "pct_power": 65,
+     "pressure_altitude": 6000,
+     "rpm": 2510,
+     "tas_kts": 119
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": -15,
+     "oat_c": -12,
+     "pct_power": 75,
+     "pressure_altitude": 6000,
+     "rpm": 2580,
+     "tas_kts": 125
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": 15,
+     "oat_c": 18,
+     "pct_power": 75,
+     "pressure_altitude": 6000,
+     "rpm": 2635,
+     "tas_kts": 128
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": -15,
+     "oat_c": -14,
+     "pct_power": 75,
+     "pressure_altitude": 7000,
+     "rpm": 2595,
+     "tas_kts": 126
+    },
+    {
+     "gph": 10.5,
+     "isa_offset_c": 7.5,
+     "oat_c": 8.5,
+     "pct_power": 75,
+     "pressure_altitude": 7000,
+     "rpm": 2635,
+     "tas_kts": 128
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": -15,
+     "oat_c": -16,
+     "pct_power": 55,
+     "pressure_altitude": 8000,
+     "rpm": 2320,
+     "tas_kts": 107
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": 17.5,
+     "oat_c": 16.5,
+     "pct_power": 55,
+     "pressure_altitude": 8000,
+     "rpm": 2360,
+     "tas_kts": 108
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": -15,
+     "oat_c": -16,
+     "pct_power": 65,
+     "pressure_altitude": 8000,
+     "rpm": 2475,
+     "tas_kts": 117
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": 17.5,
+     "oat_c": 16.5,
+     "pct_power": 65,
+     "pressure_altitude": 8000,
+     "rpm": 2515,
+     "tas_kts": 119
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": -15,
+     "oat_c": -18,
+     "pct_power": 55,
+     "pressure_altitude": 9000,
+     "rpm": 2330,
+     "tas_kts": 107
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": 8.5,
+     "oat_c": 5.5,
+     "pct_power": 55,
+     "pressure_altitude": 9000,
+     "rpm": 2360,
+     "tas_kts": 108
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": -15,
+     "oat_c": -18,
+     "pct_power": 65,
+     "pressure_altitude": 9000,
+     "rpm": 2485,
+     "tas_kts": 117
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": 8.5,
+     "oat_c": 5.5,
+     "pct_power": 65,
+     "pressure_altitude": 9000,
+     "rpm": 2515,
+     "tas_kts": 119
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": -15,
+     "oat_c": -20,
+     "pct_power": 55,
+     "pressure_altitude": 10000,
+     "rpm": 2340,
+     "tas_kts": 107
+    },
+    {
+     "gph": 8.2,
+     "isa_offset_c": 0,
+     "oat_c": -5,
+     "pct_power": 55,
+     "pressure_altitude": 10000,
+     "rpm": 2360,
+     "tas_kts": 108
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": -15,
+     "oat_c": -20,
+     "pct_power": 65,
+     "pressure_altitude": 10000,
+     "rpm": 2495,
+     "tas_kts": 118
+    },
+    {
+     "gph": 9.5,
+     "isa_offset_c": 0,
+     "oat_c": -5,
+     "pct_power": 65,
+     "pressure_altitude": 10000,
+     "rpm": 2515,
+     "tas_kts": 119
+    }
+   ],
+   "source": "Figures 5-20 / 5-20a / 5-20b (Engine/Cruise Performance for Non-ISA OAT)"
+  }
+ },
  "slug": "piper-pa-28-181-archer-iii",
  "v_speeds": {
   "best_glide": 76,

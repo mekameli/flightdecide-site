@@ -12,7 +12,124 @@
  },
  "manufacturer": "Beechcraft",
  "name": "Beechcraft Bonanza A36",
- "performance": {},
+ "performance": {
+  "cruise": {
+   "axes": [
+    "pressure_altitude",
+    "power_setting",
+    "mixture_mode"
+   ],
+   "row_count": 15,
+   "rows": [
+    {
+     "gph": 11.5,
+     "mixture_mode": "best_power",
+     "power_setting": "21/2100",
+     "pressure_altitude": 2000,
+     "tas_kts": 148
+    },
+    {
+     "gph": 13.2,
+     "mixture_mode": "best_power",
+     "power_setting": "23/2300",
+     "pressure_altitude": 2000,
+     "tas_kts": 158
+    },
+    {
+     "gph": 15.2,
+     "mixture_mode": "best_power",
+     "power_setting": "25/2500",
+     "pressure_altitude": 2000,
+     "tas_kts": 166
+    },
+    {
+     "gph": 11.2,
+     "mixture_mode": "best_power",
+     "power_setting": "21/2100",
+     "pressure_altitude": 4000,
+     "tas_kts": 152
+    },
+    {
+     "gph": 12.9,
+     "mixture_mode": "best_power",
+     "power_setting": "23/2300",
+     "pressure_altitude": 4000,
+     "tas_kts": 162
+    },
+    {
+     "gph": 14.8,
+     "mixture_mode": "best_power",
+     "power_setting": "25/2500",
+     "pressure_altitude": 4000,
+     "tas_kts": 170
+    },
+    {
+     "gph": 10.9,
+     "mixture_mode": "best_power",
+     "power_setting": "21/2100",
+     "pressure_altitude": 6000,
+     "tas_kts": 156
+    },
+    {
+     "gph": 14.0,
+     "mixture_mode": "best_power",
+     "power_setting": "23/2300",
+     "pressure_altitude": 6000,
+     "tas_kts": 168
+    },
+    {
+     "gph": 16.0,
+     "mixture_mode": "best_power",
+     "power_setting": "25/2500",
+     "pressure_altitude": 6000,
+     "tas_kts": 176
+    },
+    {
+     "gph": 10.6,
+     "mixture_mode": "best_power",
+     "power_setting": "21/2100",
+     "pressure_altitude": 8000,
+     "tas_kts": 160
+    },
+    {
+     "gph": 13.2,
+     "mixture_mode": "best_power",
+     "power_setting": "23/2300",
+     "pressure_altitude": 8000,
+     "tas_kts": 172
+    },
+    {
+     "gph": 15.2,
+     "mixture_mode": "best_power",
+     "power_setting": "25/2500",
+     "pressure_altitude": 8000,
+     "tas_kts": 180
+    },
+    {
+     "gph": 10.3,
+     "mixture_mode": "best_power",
+     "power_setting": "21/2100",
+     "pressure_altitude": 10000,
+     "tas_kts": 163
+    },
+    {
+     "gph": 12.8,
+     "mixture_mode": "best_power",
+     "power_setting": "23/2300",
+     "pressure_altitude": 10000,
+     "tas_kts": 174
+    },
+    {
+     "gph": 14.7,
+     "mixture_mode": "best_power",
+     "power_setting": "25/2500",
+     "pressure_altitude": 10000,
+     "tas_kts": 182
+    }
+   ],
+   "source": "Section V, Cruise Power Settings \u2014 Best Power Mixture sub-table"
+  }
+ },
  "slug": "beechcraft-bonanza-a36",
  "v_speeds": {
   "best_glide": 110,

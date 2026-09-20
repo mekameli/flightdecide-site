@@ -12,7 +12,252 @@
  },
  "manufacturer": "Cessna",
  "name": "Cessna 177 Cardinal",
- "performance": {},
+ "performance": {
+  "cruise": {
+   "axes": [
+    "pressure_altitude",
+    "rpm"
+   ],
+   "row_count": 26,
+   "rows": [
+    {
+     "gph": 9.9,
+     "isa_offset_c": 0,
+     "oat_c": 10,
+     "pct_power": 89,
+     "pressure_altitude": 2500,
+     "rpm": 2700,
+     "tas_kts": 120
+    },
+    {
+     "gph": 8.9,
+     "isa_offset_c": 0,
+     "oat_c": 10,
+     "pct_power": 81,
+     "pressure_altitude": 2500,
+     "rpm": 2600,
+     "tas_kts": 115
+    },
+    {
+     "gph": 8.1,
+     "isa_offset_c": 0,
+     "oat_c": 10,
+     "pct_power": 73,
+     "pressure_altitude": 2500,
+     "rpm": 2500,
+     "tas_kts": 109
+    },
+    {
+     "gph": 7.3,
+     "isa_offset_c": 0,
+     "oat_c": 10,
+     "pct_power": 55,
+     "pressure_altitude": 2500,
+     "rpm": 2400,
+     "tas_kts": 103
+    },
+    {
+     "gph": 6.6,
+     "isa_offset_c": 0,
+     "oat_c": 10,
+     "pct_power": 58,
+     "pressure_altitude": 2500,
+     "rpm": 2300,
+     "tas_kts": 97
+    },
+    {
+     "gph": 6.0,
+     "isa_offset_c": 0,
+     "oat_c": 10,
+     "pct_power": 52,
+     "pressure_altitude": 2500,
+     "rpm": 2200,
+     "tas_kts": 90
+    },
+    {
+     "gph": 5.7,
+     "isa_offset_c": 0,
+     "oat_c": 10,
+     "pct_power": 46,
+     "pressure_altitude": 2500,
+     "rpm": 2100,
+     "tas_kts": 82
+    },
+    {
+     "gph": 9.3,
+     "isa_offset_c": 0,
+     "oat_c": 5,
+     "pct_power": 84,
+     "pressure_altitude": 5000,
+     "rpm": 2700,
+     "tas_kts": 119
+    },
+    {
+     "gph": 8.4,
+     "isa_offset_c": 0,
+     "oat_c": 5,
+     "pct_power": 76,
+     "pressure_altitude": 5000,
+     "rpm": 2600,
+     "tas_kts": 114
+    },
+    {
+     "gph": 7.6,
+     "isa_offset_c": 0,
+     "oat_c": 5,
+     "pct_power": 69,
+     "pressure_altitude": 5000,
+     "rpm": 2500,
+     "tas_kts": 109
+    },
+    {
+     "gph": 6.9,
+     "isa_offset_c": 0,
+     "oat_c": 5,
+     "pct_power": 61,
+     "pressure_altitude": 5000,
+     "rpm": 2400,
+     "tas_kts": 103
+    },
+    {
+     "gph": 6.3,
+     "isa_offset_c": 0,
+     "oat_c": 5,
+     "pct_power": 55,
+     "pressure_altitude": 5000,
+     "rpm": 2300,
+     "tas_kts": 96
+    },
+    {
+     "gph": 5.8,
+     "isa_offset_c": 0,
+     "oat_c": 5,
+     "pct_power": 48,
+     "pressure_altitude": 5000,
+     "rpm": 2200,
+     "tas_kts": 87
+    },
+    {
+     "gph": 8.7,
+     "isa_offset_c": 0,
+     "oat_c": 0,
+     "pct_power": 79,
+     "pressure_altitude": 7500,
+     "rpm": 2700,
+     "tas_kts": 118
+    },
+    {
+     "gph": 7.9,
+     "isa_offset_c": 0,
+     "oat_c": 0,
+     "pct_power": 71,
+     "pressure_altitude": 7500,
+     "rpm": 2600,
+     "tas_kts": 113
+    },
+    {
+     "gph": 7.2,
+     "isa_offset_c": 0,
+     "oat_c": 0,
+     "pct_power": 64,
+     "pressure_altitude": 7500,
+     "rpm": 2500,
+     "tas_kts": 107
+    },
+    {
+     "gph": 6.5,
+     "isa_offset_c": 0,
+     "oat_c": 0,
+     "pct_power": 57,
+     "pressure_altitude": 7500,
+     "rpm": 2400,
+     "tas_kts": 100
+    },
+    {
+     "gph": 6.0,
+     "isa_offset_c": 0,
+     "oat_c": 0,
+     "pct_power": 51,
+     "pressure_altitude": 7500,
+     "rpm": 2300,
+     "tas_kts": 91
+    },
+    {
+     "gph": 7.8,
+     "isa_offset_c": 0,
+     "oat_c": -5,
+     "pct_power": 70,
+     "pressure_altitude": 10000,
+     "rpm": 2650,
+     "tas_kts": 114
+    },
+    {
+     "gph": 7.4,
+     "isa_offset_c": 0,
+     "oat_c": -5,
+     "pct_power": 67,
+     "pressure_altitude": 10000,
+     "rpm": 2600,
+     "tas_kts": 110
+    },
+    {
+     "gph": 6.8,
+     "isa_offset_c": 0,
+     "oat_c": -5,
+     "pct_power": 60,
+     "pressure_altitude": 10000,
+     "rpm": 2500,
+     "tas_kts": 104
+    },
+    {
+     "gph": 6.2,
+     "isa_offset_c": 0,
+     "oat_c": -5,
+     "pct_power": 54,
+     "pressure_altitude": 10000,
+     "rpm": 2400,
+     "tas_kts": 96
+    },
+    {
+     "gph": 5.8,
+     "isa_offset_c": 0,
+     "oat_c": -5,
+     "pct_power": 48,
+     "pressure_altitude": 10000,
+     "rpm": 2300,
+     "tas_kts": 85
+    },
+    {
+     "gph": 7.0,
+     "isa_offset_c": 0,
+     "oat_c": -10,
+     "pct_power": 62,
+     "pressure_altitude": 12500,
+     "rpm": 2600,
+     "tas_kts": 108
+    },
+    {
+     "gph": 6.4,
+     "isa_offset_c": 0,
+     "oat_c": -10,
+     "pct_power": 56,
+     "pressure_altitude": 12500,
+     "rpm": 2500,
+     "tas_kts": 100
+    },
+    {
+     "gph": 5.9,
+     "isa_offset_c": 0,
+     "oat_c": -10,
+     "pct_power": 50,
+     "pressure_altitude": 12500,
+     "rpm": 2400,
+     "tas_kts": 90
+    }
+   ],
+   "source": "Figure 5-4"
+  }
+ },
  "slug": "cessna-177-cardinal",
  "v_speeds": {
   "best_glide": 74,

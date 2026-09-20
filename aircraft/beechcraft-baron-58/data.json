@@ -12,7 +12,183 @@
  },
  "manufacturer": "Beechcraft",
  "name": "Beechcraft Baron 58",
- "performance": {},
+ "performance": {
+  "cruise": {
+   "axes": [
+    "pressure_altitude",
+    "rpm",
+    "mp_inhg",
+    "mixture_mode",
+    "power_label"
+   ],
+   "row_count": 18,
+   "rows": [
+    {
+     "gph": 33.6,
+     "mixture_mode": "best_power",
+     "mp_inhg": 25,
+     "power_label": "max_cruise",
+     "pressure_altitude": 2000,
+     "rpm": 2500,
+     "tas_kts": 195
+    },
+    {
+     "gph": 35.0,
+     "mixture_mode": "best_power",
+     "mp_inhg": 25,
+     "power_label": "max_cruise",
+     "pressure_altitude": 4000,
+     "rpm": 2500,
+     "tas_kts": 201
+    },
+    {
+     "gph": 34.0,
+     "mixture_mode": "best_power",
+     "mp_inhg": 24,
+     "power_label": "max_cruise",
+     "pressure_altitude": 6000,
+     "rpm": 2500,
+     "tas_kts": 202
+    },
+    {
+     "gph": 31.6,
+     "mixture_mode": "best_power",
+     "mp_inhg": 22,
+     "power_label": "max_cruise",
+     "pressure_altitude": 8000,
+     "rpm": 2500,
+     "tas_kts": 200
+    },
+    {
+     "gph": 29.6,
+     "mixture_mode": "best_power",
+     "mp_inhg": 21,
+     "power_label": "max_cruise",
+     "pressure_altitude": 10000,
+     "rpm": 2500,
+     "tas_kts": 198
+    },
+    {
+     "gph": 27.6,
+     "mixture_mode": "best_power",
+     "mp_inhg": 19,
+     "power_label": "max_cruise",
+     "pressure_altitude": 12000,
+     "rpm": 2500,
+     "tas_kts": 195
+    },
+    {
+     "gph": 27.0,
+     "mixture_mode": "best_power",
+     "mp_inhg": 23,
+     "power_label": "normal_cruise",
+     "pressure_altitude": 2000,
+     "rpm": 2300,
+     "tas_kts": 177
+    },
+    {
+     "gph": 28.4,
+     "mixture_mode": "best_power",
+     "mp_inhg": 23,
+     "power_label": "normal_cruise",
+     "pressure_altitude": 4000,
+     "rpm": 2300,
+     "tas_kts": 183
+    },
+    {
+     "gph": 29.4,
+     "mixture_mode": "best_power",
+     "mp_inhg": 23,
+     "power_label": "normal_cruise",
+     "pressure_altitude": 6000,
+     "rpm": 2300,
+     "tas_kts": 190
+    },
+    {
+     "gph": 29.0,
+     "mixture_mode": "best_power",
+     "mp_inhg": 22,
+     "power_label": "normal_cruise",
+     "pressure_altitude": 8000,
+     "rpm": 2300,
+     "tas_kts": 192
+    },
+    {
+     "gph": 27.0,
+     "mixture_mode": "best_power",
+     "mp_inhg": 21,
+     "power_label": "normal_cruise",
+     "pressure_altitude": 10000,
+     "rpm": 2300,
+     "tas_kts": 189
+    },
+    {
+     "gph": 25.4,
+     "mixture_mode": "best_power",
+     "mp_inhg": 19,
+     "power_label": "normal_cruise",
+     "pressure_altitude": 12000,
+     "rpm": 2300,
+     "tas_kts": 186
+    },
+    {
+     "gph": 21.0,
+     "mixture_mode": "best_power",
+     "mp_inhg": 21,
+     "power_label": "economy_cruise",
+     "pressure_altitude": 2000,
+     "rpm": 2100,
+     "tas_kts": 156
+    },
+    {
+     "gph": 21.6,
+     "mixture_mode": "best_power",
+     "mp_inhg": 21,
+     "power_label": "economy_cruise",
+     "pressure_altitude": 4000,
+     "rpm": 2100,
+     "tas_kts": 162
+    },
+    {
+     "gph": 22.6,
+     "mixture_mode": "best_power",
+     "mp_inhg": 21,
+     "power_label": "economy_cruise",
+     "pressure_altitude": 6000,
+     "rpm": 2100,
+     "tas_kts": 167
+    },
+    {
+     "gph": 23.4,
+     "mixture_mode": "best_power",
+     "mp_inhg": 21,
+     "power_label": "economy_cruise",
+     "pressure_altitude": 8000,
+     "rpm": 2100,
+     "tas_kts": 173
+    },
+    {
+     "gph": 23.6,
+     "mixture_mode": "best_power",
+     "mp_inhg": 21,
+     "power_label": "economy_cruise",
+     "pressure_altitude": 10000,
+     "rpm": 2100,
+     "tas_kts": 177
+    },
+    {
+     "gph": 22.0,
+     "mixture_mode": "best_power",
+     "mp_inhg": 19,
+     "power_label": "economy_cruise",
+     "pressure_altitude": 12000,
+     "rpm": 2100,
+     "tas_kts": 173
+    }
+   ],
+   "source": "Max/Recommended/Economy Cruise Power Settings, 20 deg ROP"
+  }
+ },
  "slug": "beechcraft-baron-58",
  "v_speeds": {
   "best_glide": 115,

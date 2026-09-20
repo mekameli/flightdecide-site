@@ -937,6 +937,252 @@
     3600
    ]
   },
+  "stall": {
+   "conditions": "Power idle",
+   "rows": [
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 73,
+     "kias": 74,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 67,
+     "kias": 70,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 61,
+     "kias": 64,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 74,
+     "kias": 76,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 68,
+     "kias": 71,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 62,
+     "kias": 64,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 78,
+     "kias": 80,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 72,
+     "kias": 74,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 65,
+     "kias": 67,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 87,
+     "kias": 87,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 79,
+     "kias": 79,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 72,
+     "kias": 73,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 103,
+     "kias": 103,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 94,
+     "kias": 92,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 86,
+     "kias": 85,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 70,
+     "kias": 72,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 66,
+     "kias": 69,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 60,
+     "kias": 63,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 71,
+     "kias": 73,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 67,
+     "kias": 70,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 61,
+     "kias": 64,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 75,
+     "kias": 77,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 71,
+     "kias": 73,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 65,
+     "kias": 66,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 83,
+     "kias": 84,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 78,
+     "kias": 79,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 72,
+     "kias": 72,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 99,
+     "kias": 99,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 93,
+     "kias": 91,
+     "weight_lbs": 3600
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 85,
+     "kias": 85,
+     "weight_lbs": 3600
+    }
+   ],
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22T (P/N 13772-005) \u00b7 Stall Speeds \u00b7 page 5-12"
+  },
   "takeoff": {
    "cells": {
     "2900": {

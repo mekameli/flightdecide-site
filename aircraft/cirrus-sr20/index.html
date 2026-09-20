@@ -147,7 +147,7 @@
 
     <p class="crumbs"><a href="/">Home</a> › <a href="/aircraft/">Aircraft</a> › Cirrus SR20</p>
 
-    <p class="lede"><strong>Cirrus SR20 preflight numbers at a glance:</strong> max gross weight 3050 lb, typical useful load 1050 lb, 56 gal usable fuel, cruise up to about 157 KTAS (POH figure at 8000 ft, standard day). All figures below come from the FlightDecide curated aircraft library, digitized from the published POH/AFM. Use them for planning and study, and confirm against the POH for your specific serial number before flight.</p>
+    <p class="lede"><strong>Cirrus SR20 preflight numbers at a glance:</strong> max gross weight 3050 lb, typical useful load 1050 lb, 56 gal usable fuel, cruise up to about 157 KTAS (reference figure at 8000 ft, standard day). Figures below are transcribed from the published POH/AFM and each table cites its figure and page. Use them for planning and study, and confirm against the POH for your specific serial number before flight.</p>
 
     <h2>Cirrus SR20 specs and key numbers</h2>
     <div class="table-scroll"><table>
@@ -180,8 +180,9 @@
       </tbody>
     </table></div>
 
+
     <h2>Cirrus SR20 cruise performance</h2>
-    <p>Transcribed from the POH cruise tables. True airspeed and fuel flow depend on altitude, power setting, temperature, and leaning technique.</p>
+    <p>Interpolated between the handbook's published cruise points. True airspeed and fuel flow depend on altitude, power setting, temperature, and leaning technique.</p>
     <div class="table-scroll"><table>
       <thead><tr><th>Pressure alt (ft)</th><th>% power</th><th>Mixture</th><th>TAS (kt)</th><th>Fuel (GPH)</th></tr></thead>
       <tbody>
@@ -202,9 +203,9 @@
     <p class="calc-hint">Standard-day (ISA) rows shown, sampled across the POH table for readability; the FlightDecide app carries the full digitized table, including non-standard temperatures.</p>
 
     <h2>How much runway does a Cirrus SR20 need?</h2>
-    <p>Book figures at 3050 lb, 0 ft pressure altitude, 10 °C. Real-world technique, wind, surface, and density altitude move these substantially, so apply your own margin (many pilots use 1.5× the book number) and run the numbers for the actual conditions.</p>
+    <p>Handbook figures at 3050 lb, 0 ft pressure altitude, 10 °C. Real-world technique, wind, surface, and density altitude move these substantially, so apply your own margin (many pilots use 1.5× the book number) and run the numbers for the actual conditions.</p>
     <div class="table-scroll"><table>
-      <thead><tr><th>POH figure</th><th>Distance</th></tr></thead>
+      <thead><tr><th>Handbook figure</th><th>Distance</th></tr></thead>
       <tbody>
         <tr><td>Takeoff ground roll</td><td>1424 ft</td></tr>
         <tr><td>Takeoff over a 50 ft obstacle</td><td>2145 ft</td></tr>
@@ -338,6 +339,22 @@
     </div>
     <p class="perf-key"><span class="k k-poh"></span> from the handbook &nbsp; <span class="k k-int"></span> interpolated &nbsp; <span class="k k-ext"></span> extrapolated beyond the handbook</p>
     
+
+    <h2 id="stall">Stall speeds</h2>
+    <p class="perf-cond">Power idle</p>
+    <p class="perf-src">Source: Pilot&#x27;s Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 · Stall Speeds · page 5-10</p>
+    <div class="table-scroll" data-perf="stall">
+  <table class="perf-table" data-table="stall">
+    <caption>KIAS (bold) over KCAS — Most forward C.G.</caption>
+    <thead><tr><th scope="col">Flap setting</th><th>0°</th><th>15°</th><th>30°</th><th>45°</th><th>60°</th></tr></thead>
+    <tbody><tr><th scope="row">Flaps 0% (up)°</th><td><b>65</b><i class="sep"> / </i><span>67</span></td><td><b>66</b><i class="sep"> / </i><span>68</span></td><td><b>70</b><i class="sep"> / </i><span>72</span></td><td><b>78</b><i class="sep"> / </i><span>80</span></td><td><b>92</b><i class="sep"> / </i><span>95</span></td></tr><tr><th scope="row">Flaps 50%°</th><td><b>61</b><i class="sep"> / </i><span>63</span></td><td><b>62</b><i class="sep"> / </i><span>64</span></td><td><b>65</b><i class="sep"> / </i><span>68</span></td><td><b>72</b><i class="sep"> / </i><span>75</span></td><td><b>86</b><i class="sep"> / </i><span>89</span></td></tr><tr><th scope="row">Flaps 100% (down)°</th><td><b>56</b><i class="sep"> / </i><span>59</span></td><td><b>57</b><i class="sep"> / </i><span>60</span></td><td><b>61</b><i class="sep"> / </i><span>63</span></td><td><b>67</b><i class="sep"> / </i><span>70</span></td><td><b>80</b><i class="sep"> / </i><span>83</span></td></tr></tbody>
+  </table>
+  <table class="perf-table" data-table="stall">
+    <caption>KIAS (bold) over KCAS — Most rearward C.G.</caption>
+    <thead><tr><th scope="col">Flap setting</th><th>0°</th><th>15°</th><th>30°</th><th>45°</th><th>60°</th></tr></thead>
+    <tbody><tr><th scope="row">Flaps 0% (up)°</th><td><b>64</b><i class="sep"> / </i><span>66</span></td><td><b>65</b><i class="sep"> / </i><span>67</span></td><td><b>69</b><i class="sep"> / </i><span>71</span></td><td><b>76</b><i class="sep"> / </i><span>78</span></td><td><b>90</b><i class="sep"> / </i><span>93</span></td></tr><tr><th scope="row">Flaps 50%°</th><td><b>59</b><i class="sep"> / </i><span>62</span></td><td><b>60</b><i class="sep"> / </i><span>63</span></td><td><b>64</b><i class="sep"> / </i><span>66</span></td><td><b>71</b><i class="sep"> / </i><span>73</span></td><td><b>84</b><i class="sep"> / </i><span>87</span></td></tr><tr><th scope="row">Flaps 100% (down)°</th><td><b>54</b><i class="sep"> / </i><span>57</span></td><td><b>55</b><i class="sep"> / </i><span>58</span></td><td><b>58</b><i class="sep"> / </i><span>61</span></td><td><b>64</b><i class="sep"> / </i><span>68</span></td><td><b>76</b><i class="sep"> / </i><span>81</span></td></tr></tbody>
+  </table>
+    </div>
 
     <h2 id="rangeendurance">Range and endurance</h2>
     <p class="perf-cond">Mixture = best power</p>

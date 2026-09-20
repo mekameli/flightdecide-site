@@ -431,6 +431,185 @@
     2900
    ]
   },
+  "cruise": {
+   "axes": [
+    "pressure_altitude",
+    "power_pct",
+    "mixture_mode"
+   ],
+   "row_count": 24,
+   "rows": [
+    {
+     "gph": 13.3,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 55,
+     "pressure_altitude": 0,
+     "tas_kts": 143
+    },
+    {
+     "gph": 14.9,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 65,
+     "pressure_altitude": 0,
+     "tas_kts": 155
+    },
+    {
+     "gph": 16.5,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 75,
+     "pressure_altitude": 0,
+     "tas_kts": 164
+    },
+    {
+     "gph": 18.3,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 85,
+     "pressure_altitude": 0,
+     "tas_kts": 173
+    },
+    {
+     "gph": 13.0,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 55,
+     "pressure_altitude": 2000,
+     "tas_kts": 148
+    },
+    {
+     "gph": 14.6,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 65,
+     "pressure_altitude": 2000,
+     "tas_kts": 160
+    },
+    {
+     "gph": 16.2,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 75,
+     "pressure_altitude": 2000,
+     "tas_kts": 169
+    },
+    {
+     "gph": 18.0,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 85,
+     "pressure_altitude": 2000,
+     "tas_kts": 178
+    },
+    {
+     "gph": 12.8,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 55,
+     "pressure_altitude": 4000,
+     "tas_kts": 153
+    },
+    {
+     "gph": 14.3,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 65,
+     "pressure_altitude": 4000,
+     "tas_kts": 165
+    },
+    {
+     "gph": 15.9,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 75,
+     "pressure_altitude": 4000,
+     "tas_kts": 174
+    },
+    {
+     "gph": 17.7,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 85,
+     "pressure_altitude": 4000,
+     "tas_kts": 183
+    },
+    {
+     "gph": 12.5,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 55,
+     "pressure_altitude": 6000,
+     "tas_kts": 158
+    },
+    {
+     "gph": 14.0,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 65,
+     "pressure_altitude": 6000,
+     "tas_kts": 170
+    },
+    {
+     "gph": 15.6,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 75,
+     "pressure_altitude": 6000,
+     "tas_kts": 179
+    },
+    {
+     "gph": 17.4,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 85,
+     "pressure_altitude": 6000,
+     "tas_kts": 187
+    },
+    {
+     "gph": 12.2,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 55,
+     "pressure_altitude": 8000,
+     "tas_kts": 162
+    },
+    {
+     "gph": 13.8,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 65,
+     "pressure_altitude": 8000,
+     "tas_kts": 174
+    },
+    {
+     "gph": 15.3,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 75,
+     "pressure_altitude": 8000,
+     "tas_kts": 183
+    },
+    {
+     "gph": 17.1,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 85,
+     "pressure_altitude": 8000,
+     "tas_kts": 191
+    },
+    {
+     "gph": 12.0,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 55,
+     "pressure_altitude": 10000,
+     "tas_kts": 165
+    },
+    {
+     "gph": 13.6,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 65,
+     "pressure_altitude": 10000,
+     "tas_kts": 177
+    },
+    {
+     "gph": 15.0,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 75,
+     "pressure_altitude": 10000,
+     "tas_kts": 186
+    },
+    {
+     "gph": 16.8,
+     "mixture_mode": "recommended_lean",
+     "power_pct": 85,
+     "pressure_altitude": 10000,
+     "tas_kts": 194
+    }
+   ],
+   "source": ""
+  },
   "landing": {
    "cells": {
     "3400": {
@@ -1107,6 +1286,252 @@
     }
    ],
    "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22 \u00b7 P/N 13772-001 \u00b7 Range / Endurance Profile \u00b7 page 5-30"
+  },
+  "stall": {
+   "conditions": "Power idle",
+   "rows": [
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 69,
+     "kias": 70,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 64,
+     "kias": 67,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 59,
+     "kias": 59,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 70,
+     "kias": 71,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 65,
+     "kias": 68,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 60,
+     "kias": 62,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 74,
+     "kias": 75,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 69,
+     "kias": 72,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 64,
+     "kias": 66,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 82,
+     "kias": 84,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 76,
+     "kias": 80,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 70,
+     "kias": 73,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 97,
+     "kias": 99,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 90,
+     "kias": 95,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 84,
+     "kias": 87,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 67,
+     "kias": 68,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 62,
+     "kias": 66,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 59,
+     "kias": 61,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 68,
+     "kias": 69,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 63,
+     "kias": 67,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 60,
+     "kias": 62,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 72,
+     "kias": 73,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 67,
+     "kias": 71,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 63,
+     "kias": 65,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 79,
+     "kias": 81,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 74,
+     "kias": 78,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 70,
+     "kias": 72,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 94,
+     "kias": 96,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 88,
+     "kias": 93,
+     "weight_lbs": 3400
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 83,
+     "kias": 86,
+     "weight_lbs": 3400
+    }
+   ],
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22 \u00b7 P/N 13772-001 \u00b7 Stall Speeds \u00b7 page 5-16"
   },
   "takeoff": {
    "cells": {

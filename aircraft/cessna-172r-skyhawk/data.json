@@ -367,6 +367,72 @@
    ],
    "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R \u00b7 Time, Fuel and Distance to Climb \u00b7 page 5-16"
   },
+  "cruise": {
+   "axes": [
+    "pressure_altitude",
+    "rpm"
+   ],
+   "row_count": 8,
+   "rows": [
+    {
+     "gph": 9.0,
+     "pct_power": 79,
+     "pressure_altitude": 2000,
+     "rpm": 2250,
+     "tas_kts": 115
+    },
+    {
+     "gph": 7.5,
+     "pct_power": 65,
+     "pressure_altitude": 2000,
+     "rpm": 2100,
+     "tas_kts": 106
+    },
+    {
+     "gph": 8.6,
+     "pct_power": 75,
+     "pressure_altitude": 4000,
+     "rpm": 2250,
+     "tas_kts": 114
+    },
+    {
+     "gph": 7.1,
+     "pct_power": 62,
+     "pressure_altitude": 4000,
+     "rpm": 2100,
+     "tas_kts": 105
+    },
+    {
+     "gph": 8.6,
+     "pct_power": 75,
+     "pressure_altitude": 6000,
+     "rpm": 2300,
+     "tas_kts": 117
+    },
+    {
+     "gph": 7.7,
+     "pct_power": 67,
+     "pressure_altitude": 6000,
+     "rpm": 2200,
+     "tas_kts": 111
+    },
+    {
+     "gph": 8.7,
+     "pct_power": 76,
+     "pressure_altitude": 8000,
+     "rpm": 2350,
+     "tas_kts": 119
+    },
+    {
+     "gph": 7.3,
+     "pct_power": 64,
+     "pressure_altitude": 8000,
+     "rpm": 2200,
+     "tas_kts": 110
+    }
+   ],
+   "source": "Figure 5-8"
+  },
   "landing": {
    "cells": {
     "2450": {

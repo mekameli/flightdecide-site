@@ -1125,6 +1125,252 @@
    ],
    "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 \u00b7 Range / Endurance Profile \u00b7 page 5-24"
   },
+  "stall": {
+   "conditions": "Power idle",
+   "rows": [
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 67,
+     "kias": 65,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 63,
+     "kias": 61,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 59,
+     "kias": 56,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 68,
+     "kias": 66,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 64,
+     "kias": 62,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 60,
+     "kias": 57,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 72,
+     "kias": 70,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 68,
+     "kias": 65,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 63,
+     "kias": 61,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 80,
+     "kias": 78,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 75,
+     "kias": 72,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 70,
+     "kias": 67,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "0% (up)",
+     "kcas": 95,
+     "kias": 92,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "50%",
+     "kcas": 89,
+     "kias": 86,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "100% (down)",
+     "kcas": 83,
+     "kias": 80,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 66,
+     "kias": 64,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 62,
+     "kias": 59,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 57,
+     "kias": 54,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 67,
+     "kias": 65,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 63,
+     "kias": 60,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 15,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 58,
+     "kias": 55,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 71,
+     "kias": 69,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 66,
+     "kias": 64,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 61,
+     "kias": 58,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 78,
+     "kias": 76,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 73,
+     "kias": 71,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 68,
+     "kias": 64,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "0% (up)",
+     "kcas": 93,
+     "kias": 90,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "50%",
+     "kcas": 87,
+     "kias": 84,
+     "weight_lbs": 3000
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_rearward",
+     "flap_setting": "100% (down)",
+     "kcas": 81,
+     "kias": 76,
+     "weight_lbs": 3000
+    }
+   ],
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 \u00b7 Stall Speeds \u00b7 page 5-10"
+  },
   "takeoff": {
    "cells": {
     "2500": {

@@ -12,7 +12,144 @@
  },
  "manufacturer": "Diamond",
  "name": "Diamond DA42 Twin Star",
- "performance": {},
+ "performance": {
+  "cruise": {
+   "axes": [
+    "pressure_altitude",
+    "pct_power"
+   ],
+   "row_count": 21,
+   "rows": [
+    {
+     "gph": 16.6,
+     "pct_power": 92,
+     "pressure_altitude": 2000,
+     "tas_kts": 166
+    },
+    {
+     "gph": 13.2,
+     "pct_power": 75,
+     "pressure_altitude": 2000,
+     "tas_kts": 153
+    },
+    {
+     "gph": 10.3,
+     "pct_power": 60,
+     "pressure_altitude": 2000,
+     "tas_kts": 139
+    },
+    {
+     "gph": 16.6,
+     "pct_power": 92,
+     "pressure_altitude": 4000,
+     "tas_kts": 169
+    },
+    {
+     "gph": 13.2,
+     "pct_power": 75,
+     "pressure_altitude": 4000,
+     "tas_kts": 156
+    },
+    {
+     "gph": 10.3,
+     "pct_power": 60,
+     "pressure_altitude": 4000,
+     "tas_kts": 142
+    },
+    {
+     "gph": 16.6,
+     "pct_power": 92,
+     "pressure_altitude": 6000,
+     "tas_kts": 173
+    },
+    {
+     "gph": 13.2,
+     "pct_power": 75,
+     "pressure_altitude": 6000,
+     "tas_kts": 159
+    },
+    {
+     "gph": 10.3,
+     "pct_power": 60,
+     "pressure_altitude": 6000,
+     "tas_kts": 144
+    },
+    {
+     "gph": 16.6,
+     "pct_power": 92,
+     "pressure_altitude": 8000,
+     "tas_kts": 176
+    },
+    {
+     "gph": 13.2,
+     "pct_power": 75,
+     "pressure_altitude": 8000,
+     "tas_kts": 162
+    },
+    {
+     "gph": 10.3,
+     "pct_power": 60,
+     "pressure_altitude": 8000,
+     "tas_kts": 147
+    },
+    {
+     "gph": 16.6,
+     "pct_power": 92,
+     "pressure_altitude": 10000,
+     "tas_kts": 179
+    },
+    {
+     "gph": 13.2,
+     "pct_power": 75,
+     "pressure_altitude": 10000,
+     "tas_kts": 165
+    },
+    {
+     "gph": 10.3,
+     "pct_power": 60,
+     "pressure_altitude": 10000,
+     "tas_kts": 150
+    },
+    {
+     "gph": 16.6,
+     "pct_power": 92,
+     "pressure_altitude": 12000,
+     "tas_kts": 183
+    },
+    {
+     "gph": 13.2,
+     "pct_power": 75,
+     "pressure_altitude": 12000,
+     "tas_kts": 168
+    },
+    {
+     "gph": 10.3,
+     "pct_power": 60,
+     "pressure_altitude": 12000,
+     "tas_kts": 152
+    },
+    {
+     "gph": 16.8,
+     "pct_power": 92,
+     "pressure_altitude": 16000,
+     "tas_kts": 190
+    },
+    {
+     "gph": 13.2,
+     "pct_power": 75,
+     "pressure_altitude": 16000,
+     "tas_kts": 175
+    },
+    {
+     "gph": 10.3,
+     "pct_power": 60,
+     "pressure_altitude": 16000,
+     "tas_kts": 157
+    }
+   ],
+   "source": "5.3.10"
+  }
+ },
  "slug": "diamond-da42-twin-star",
  "v_speeds": {
   "best_glide": 90,
