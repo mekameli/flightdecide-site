@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T16:45:10+00:00",
+  "generated": "2026-09-21T19:25:09+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -601,7 +601,7 @@
       "slug": "stall-speed-rising-with-bank-angle",
       "page": "/explainers/stall-speed-rising-with-bank-angle/",
       "title": "Stall speed rising with bank angle",
-      "headline": "A steeper level turn raises your stall speed.",
+      "headline": "Steepen a level turn and your stall speed rises.",
       "pillar": "performance",
       "topic": "Performance",
       "alt": "Stall speed rising with bank angle: an illustrated diagram for pilots. A steeper level turn raises your stall speed. The picture shows a rendered single-engine aircraft heeled hard over in a steep turn, wings near sixty degrees of bank; the nose held on the horizon so the steep turn reads as level, not descending; a pale ghost of the same aircraft in a shallow bank, wings close to level; a thin level reference line joining solid aircraft and ghost at the same altitude. Flight training explainer from FlightDecide.",
@@ -618,8 +618,8 @@
         "Next steep turns with your instructor, note the speed where the buffet starts and compare it to the wings level figure."
       ],
       "teaches": [
-        "In a coordinated level turn load factor increases with bank angle, reaching 2G at 60 degrees.",
-        "Stall speed follows the square root of load factor, so a coordinated 60 degree level turn stalls 41 percent above its 1G stall speed."
+        "In a level turn load factor increases with bank angle.",
+        "Stall speed increases with the square root of the load factor, so a 60 degree level turn doubles the load and raises the stall speed by about 41 percent."
       ],
       "intent": "A level turn raises load factor and the stall speed rises with the square root of it, so a steep turn stalls at a higher speed.",
       "citations": [
@@ -644,55 +644,24 @@
       ],
       "figure_key": [
         {
-          "label": "SIXTY DEGREE BANK, DOUBLE LOAD",
-          "points_at": "The thin pale bank-angle arc swept from the upright reference to the wing line of the steeply banked aircraft."
+          "label": "60 DEGREES OF BANK",
+          "points_at": "The banked aeroplane's raised wingtip against the tilted horizon."
         },
         {
-          "label": "STALL SPEED RISES 41 PERCENT",
-          "points_at": "The upper wing surface of the steeply banked solid aircraft, where the streamlines crowd together toward the trailing edge."
+          "label": "2 G ON THE NEEDLE",
+          "points_at": "The needle of the small round accelerometer face at lower right."
         },
         {
-          "label": "SHALLOW BANK, LOWER STALL SPEED",
-          "points_at": "The pale ghost aircraft holding its shallow bank at the same altitude."
+          "label": "STALL SPEED UP 41 PERCENT",
+          "points_at": "The upper amber stall mark on the small airspeed dial at lower right."
+        },
+        {
+          "label": "1 G, WINGS LEVEL",
+          "points_at": "The ghost aeroplane's level wings."
         }
       ],
       "short": "stall-speed",
-      "article": [
-        {
-          "heading": "Why a turn adds load",
-          "paragraphs": [
-            "Roll into a bank and the wing carries on making lift, but that lift is no longer pointed straight up. Part of it now pulls you sideways into the turn. Only the upward share is left to hold your weight.",
-            "So you pull back to keep the nose where it was. The wing answers with more lift than the airplane weighs. That surplus covers your weight and the outward pull of the turn at the same time.",
-            "The steeper the bank, the more of the wing's lift goes into turning and the less is left holding you up. A shallow bank asks for a little more lift. A steep one asks for a lot.",
-            "That ratio has a name. Load factor is the lift the wing makes divided by the weight of the airplane, and wings level it sits at 1G. In a coordinated level turn, meaning the ball stays centered in the slip indicator, it climbs with bank angle to 2G at 60 degrees."
-          ]
-        },
-        {
-          "heading": "How stall speed follows the load",
-          "paragraphs": [
-            "Stall speed is the speed below which the wing can no longer make the lift to hold level flight. The number in your handbook was measured in 1G flight, at one weight and flap setting.",
-            "Raise the load and that speed rises with the square root of it. Speed does not keep pace with load. Doubling the load leaves the stall speed short of double.",
-            "Put numbers on the 60 degree turn. Load factor is 2G, and the airplane stalls 41 percent higher than its 1G stall speed. The wing has not changed and the airplane weighs what it did on the ramp."
-          ]
-        },
-        {
-          "heading": "The wing stalls at an angle",
-          "paragraphs": [
-            "The wing pays no attention to the airspeed indicator. It stalls at an angle of attack, the angle between the wing and the air coming at it. Past that angle the air separates from the upper surface and the lift falls away.",
-            "Each airplane has one angle where this happens, approximately 16° to 20° depending on the design. The angle does not move when the airplane gets heavier or when the load factor goes up.",
-            "Holding altitude in a bank means holding more angle of attack than you would wings level. You sit closer to the stalling angle than you did before the roll-in.",
-            "This is why airspeed on its own does not tell you how close the stall is. Pull hard enough and the wing reaches its stalling angle at a speed above the book figure."
-          ]
-        },
-        {
-          "heading": "What happens if you keep pulling",
-          "paragraphs": [
-            "Tighten the turn past that point and the angle of attack goes over the stalling angle. The wing stalls with the airplane banked and the airspeed above the 1G number.",
-            "Most training airplanes are built to drop the nose when that happens. The wing's lift acts behind the center of gravity, the point the airplane balances around, so the nose pitches down.",
-            "The nose-down pitch lowers the angle of attack. The air flows smoothly over the wing again and the lift returns. Lowering the angle is what ends a stall, in a bank the same as wings level."
-          ]
-        }
-      ],
+      "article": [],
       "related": []
     },
     {
