@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T19:37:38+00:00",
+  "generated": "2026-09-21T01:20:16+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -7,7 +7,7 @@
       "slug": "rotor-cloud-under-a-mountain-wave",
       "page": "/explainers/rotor-cloud-under-a-mountain-wave/",
       "title": "Rotor cloud under a mountain wave",
-      "headline": "Expect the roughest low-level air under that smooth cloud.",
+      "headline": "In a mountain wave, the roughest low-level air is under that smooth cloud.",
       "pillar": "weather",
       "topic": "Weather",
       "alt": "Rotor cloud under a mountain wave: an illustrated diagram for pilots. Expect the roughest low-level air under that smooth cloud. The picture shows a mountain ridge in profile with the wind crossing it left to right; a smooth, hard-edged lens of lenticular cloud sitting at the wave crest downwind of the summit; a torn, ragged rotor cloud directly below that lenticular, at about ridge-top height; streamlines drawn unbroken from the lenticular down into the rotor, so the two clouds read as one wave. Flight training explainer from FlightDecide.",
@@ -48,15 +48,15 @@
       ],
       "figure_key": [
         {
-          "label": "CLEAN EDGES UP HERE",
+          "label": "SMOOTH EDGES MARK THE CREST",
           "points_at": "The hard lit upper lip of the stacked lenticular cloud at the wave crest."
         },
         {
-          "label": "USUALLY THE ROUGHEST AIR",
+          "label": "ROTOR: USUALLY THE ROUGHEST",
           "points_at": "The dark torn belly of the rotor cloud rolling directly beneath that lenticular."
         },
         {
-          "label": "SAME WAVE, BOTH CLOUDS",
+          "label": "ONE WAVE, TWO DIFFERENT CLOUDS",
           "points_at": "The streamline that runs unbroken from the lenticular crest down into the rotor roll."
         }
       ],
