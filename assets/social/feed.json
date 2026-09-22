@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T16:20:49+00:00",
+  "generated": "2026-09-22T16:50:16+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -7,13 +7,13 @@
       "slug": "acceleration-that-feels-like-a-climb",
       "page": "/explainers/acceleration-that-feels-like-a-climb/",
       "title": "Acceleration that feels like a climb",
-      "headline": "Speeding up in the dark feels like pitching up.",
+      "headline": "With nothing to see outside, speeding up feels like pitching up.",
       "pillar": "illusions",
       "topic": "Visual illusions",
       "alt": "Acceleration that feels like a climb: an illustrated diagram for pilots. Speeding up in the dark feels like pitching up. The picture shows a rendered single-engine aeroplane seconds after a night takeoff, seen three-quarter from off its left, wings level and nose pushed visibly below a climb attitude, gear doors still closing; a translucent ghost of the same aeroplane superimposed at the same point in space, pitched distinctly nose-high, with the solid nose plainly lower than the ghost's; a thin pale line tracing the solid aircraft's path: up off the runway, over a shallow crest, then bending down toward the unlit surface at the front of the frame; unlit water filling everything ahead of and below the aeroplane, with no readable seam where the surface meets the sky. Flight training explainer from FlightDecide.",
       "image": "/assets/social/illusion-somatogravic.webp",
       "image_full": "/assets/explainers/acceleration-that-feels-like-a-climb.webp",
-      "image_px": 836,
+      "image_px": 1003,
       "permalink": "https://www.instagram.com/p/DdmJoeRiWnJ/",
       "posted": "2026-09-22",
       "caption": [
@@ -23,7 +23,7 @@
       ],
       "teaches": [
         "Forward acceleration can produce a false sensation of a nose-up pitch attitude.",
-        "Without an outside horizon the pilot may respond by lowering the nose toward the surface."
+        "Without outside visual references the pilot may lower the nose toward the surface, so pitch must be flown on the flight instruments rather than on what the body reports."
       ],
       "intent": "On a dark night takeoff, acceleration pushes the inner ear the same way a nose-up pitch would, and the instinct is to push down.",
       "citations": [
@@ -51,16 +51,16 @@
           "points_at": "The raised nose and spinner of the translucent ghost aeroplane."
         },
         {
-          "label": "FEELS UP, POINTING DOWN",
-          "points_at": "The solid aeroplane's nose and spinner, sitting clearly below the ghost's."
+          "label": "PITCH YOU ACTUALLY HAVE",
+          "points_at": "The solid aeroplane's nose, visibly below the ghost's and below level."
         },
         {
-          "label": "NO HORIZON OUT HERE",
-          "points_at": "The place directly ahead of the solid aircraft's spinner where black water meets sky with no readable seam."
+          "label": "NO HORIZON TO CHECK IT",
+          "points_at": "The place straight ahead of the spinner where black water meets sky with no seam."
         },
         {
-          "label": "DON'T FLY THE FEELING",
-          "points_at": "The solid aircraft's flight path line where it bends down closest to the water."
+          "label": "FLY THE INSTRUMENTS",
+          "points_at": "The solid aeroplane's windscreen and the warm instrument glow behind it."
         }
       ],
       "short": "acceleration-that",
