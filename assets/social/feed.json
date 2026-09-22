@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T19:25:09+00:00",
+  "generated": "2026-09-22T08:30:47+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -395,7 +395,7 @@
       "slug": "black-hole-approach",
       "page": "/explainers/black-hole-approach/",
       "title": "The black hole approach",
-      "headline": "Over black ground you end up lower than intended.",
+      "headline": "Over dark ground you fly lower than you think.",
       "pillar": "illusions",
       "topic": "Visual illusions",
       "alt": "The black hole approach: an illustrated diagram for pilots. With nothing lit below, you fly lower than intended. The picture shows night side elevation with the lit runway small and far in the right third and the approach entering from the left; solid aeroplane on the lower, shallower path, visibly close to the dark surface short of the field; ghost outline of the same aeroplane on the intended path at the same distance out, clearly above the solid one; completely unlit ground or water between the aeroplane and the threshold, with no towns, roads or scattered lights. Flight training explainer from FlightDecide.",
@@ -438,59 +438,24 @@
       ],
       "figure_key": [
         {
-          "label": "FEELS RIGHT, SITTING LOW",
-          "points_at": "The solid aeroplane on the lower, shallower approach path."
+          "label": "ONLY LIGHTS IN SIGHT",
+          "points_at": "The runway edge and threshold lamps at the right of the frame."
+        },
+        {
+          "label": "NOTHING LIT DOWN HERE",
+          "points_at": "The open black water midway between the aeroplane and the threshold."
+        },
+        {
+          "label": "LOW, AND STILL DESCENDING",
+          "points_at": "The solid aeroplane on the sagging path."
         },
         {
           "label": "WHERE YOU MEANT TO BE",
-          "points_at": "The ghost outline of the same aeroplane on the upper, intended path."
-        },
-        {
-          "label": "NOTHING HERE TO JUDGE BY",
-          "points_at": "The unlit ground midway between the aeroplane and the runway threshold."
-        },
-        {
-          "label": "GROUND YOU CANNOT SEE",
-          "points_at": "The dark ground directly beneath the solid aeroplane, short of the threshold."
+          "points_at": "The ghost aeroplane sitting on the dashed constant slope, directly above the solid one."
         }
       ],
       "short": "black-hole",
-      "article": [
-        {
-          "heading": "What a black hole approach is",
-          "paragraphs": [
-            "It is a clear night and the runway lights are on ahead of you. Between you and them lies a lake, or farmland with not one light on it. The only light in the windscreen is the airport itself.",
-            "Pilots call this the black hole approach. Everything between you and the threshold, the near end of the runway, is dark. Flown on the picture out the window, this approach tends to finish lower than you meant.",
-            "The aeroplane has not changed. What has changed is the view you are flying it on."
-          ]
-        },
-        {
-          "heading": "What the darkness takes away",
-          "paragraphs": [
-            "On an approach over a town you read the ground without trying. Streetlights, roads and rooftops pass below and beside you. Their size and spacing tell you how high you are.",
-            "A lot of that arrives through the corner of your eye rather than straight ahead. That is peripheral vision, the part of your sight that picks up what is off to the side. Over black ground it has nothing to work on.",
-            "What you have left is a cluster of runway lights in the middle of nothing. Lights on their own do not tell you how steeply you are coming down. They look much the same from a shallow path and from the path you planned."
-          ]
-        },
-        {
-          "heading": "Why you end up low",
-          "paragraphs": [
-            "Take the lit ground away and your eye reads the scene as higher than it is. So you fix a height problem you do not have, and ease the aeroplane down.",
-            "A second pull works in the same direction. Ground with only a few lights on it makes the runway look as if it is backing away. A runway that reads as further off also draws the approach lower.",
-            "The runway can join in as well. With no lit ground around it, it can look as though it slopes up or down when it does not. You then set a path against a slope that is not there.",
-            "Low here means low over ground with no lights on it. In the worst case the aeroplane lands short of the runway."
-          ]
-        },
-        {
-          "heading": "Flying it without the picture",
-          "paragraphs": [
-            "The answer is to stop asking your eyes for the slope. An electronic glide slope, the up and down guidance that comes with an instrument approach, will give it to you. So will a visual approach slope indicator, the lights by the runway that show you where you sit on the slope.",
-            "When neither is there, the flight instruments are what holds a normal approach together. They keep you oriented when the view outside cannot.",
-            "Some of this work happens on the ground. Read the airfield layout and its boundaries before you start down. Then the few lights out there match a layout you have seen on paper.",
-            "If your height or your position relative to the runway is in doubt, go around and set it up again. A black approach gives you nothing to settle the doubt with."
-          ]
-        }
-      ],
+      "article": [],
       "related": []
     },
     {
