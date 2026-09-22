@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T08:30:47+00:00",
+  "generated": "2026-09-22T08:35:12+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -455,7 +455,40 @@
         }
       ],
       "short": "black-hole",
-      "article": [],
+      "article": [
+        {
+          "heading": "How you normally judge height",
+          "paragraphs": [
+            "Fly a night approach into a town and the ground keeps telling you where you are. Streetlights, driveways and lit rooftops slide under the nose at a rate you already know. The runway sits inside all that light.",
+            "None of it is deliberate. Your eyes compare the runway against the lit ground around it, and against the roads and houses sliding past the side windows. Height and distance come out of that comparison. Take it away and the reading stops."
+          ]
+        },
+        {
+          "heading": "Why dark ground hides the slope",
+          "paragraphs": [
+            "Now put the same runway on the far side of a lake, or behind unlit farmland. The runway edge lights and the threshold lamps are the only light in the windscreen. Between you and them, nothing is lit.",
+            "Your peripheral vision, the wide outer part of your sight that reads movement, is getting nothing. The pattern that normally tells you how fast the ground is coming up is absent. So the approach gets flown on the lights alone.",
+            "A patch of lights at the far end of the dark is a poor ruler. It is hard to tell how far off it is, and harder to tell what angle you are seeing it from. That is the black hole approach, and it is a picture problem rather than a flying problem."
+          ]
+        },
+        {
+          "heading": "Which way the error goes",
+          "paragraphs": [
+            "The impression is that you are high. Nothing contradicts it, so it sits there while you make the reasonable correction for being high, which is to let the aeroplane down. The path ends up below the one you meant to fly.",
+            "Distance drifts the same way. Dark ground with only a few lights on it makes the runway look as though it is receding, further away than it really is. A town beyond the field on higher ground pulls you the same way.",
+            "The runway can also look tilted, sloping up or down when it is doing neither. You fly the picture in front of you, because that is all there is. In the worst case it ends in a landing short of the runway."
+          ]
+        },
+        {
+          "heading": "What to fly instead",
+          "paragraphs": [
+            "Find a slope you are not guessing at. A visual approach slope indicator is a light system beside the runway that shows whether you are on the correct angle. An electronic glide slope, the vertical guidance on an instrument approach, does the same job.",
+            "With neither on offer, fly the panel. Altitude and rate of descent do not care how dark the ground is. They hold a normal approach when the view will not.",
+            "Read the field before you start down. Knowing the layout and where the airport ends means the lights ahead arrive as something you were expecting. Expect the illusion at an unfamiliar airport at night.",
+            "If you are unsure how high you are, or where you are against the runway, go around. Doubt is the trigger by itself."
+          ]
+        }
+      ],
       "related": []
     },
     {
