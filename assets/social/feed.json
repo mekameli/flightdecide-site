@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T19:28:34+00:00",
+  "generated": "2026-09-22T20:25:46+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -765,7 +765,48 @@
         }
       ],
       "short": "stall-speed",
-      "article": [],
+      "article": [
+        {
+          "heading": "What the wing has to do",
+          "paragraphs": [
+            "You roll into a bank at altitude and hold your height. The wing now has two jobs. It still carries the weight of the airplane, and on top of that it has to bend your path into a circle.",
+            "Doing both takes more lift than flying straight took. You get that lift by pulling back. Back pressure raises the angle of attack, which is the angle at which the wing meets the oncoming air.",
+            "Steepen the bank and the wing needs more lift again. That is the chain the whole subject hangs on. Bank costs lift, and lift costs angle."
+          ]
+        },
+        {
+          "heading": "Where the extra load comes from",
+          "paragraphs": [
+            "Lift you add has to be felt somewhere. Load factor is the name for it. It compares the lift the wing is making with what the airplane weighs.",
+            "Wings level, that figure is 1 G. The wing lifts what the airplane weighs and no more. Steepen the bank in a level turn and the figure climbs with it.",
+            "The outward pull of a turn, which handbooks call centrifugal force, adds to the weight the wing has to support. Keep the ball centered and hold a level turn at 60 degrees of bank. The load factor is 2 G."
+          ]
+        },
+        {
+          "heading": "Why the stall speed climbs",
+          "paragraphs": [
+            "A wing stalls at an angle. Take the angle of attack far enough and the air stops following the top of the wing. Lift drops off hard at that point and the wing is stalled.",
+            "Every airplane has one angle where that happens, the stalling angle, somewhere around 16 to 20 degrees depending on the design. That angle does not move. Weight and load change the speed at which you reach it, and the angle stays put.",
+            "Load the wing to 2 G and it reaches that angle at a higher speed than it would at 1 G. The speed does not climb as fast as the load does. It goes up with the square root of the load factor, so doubling the load adds 41 percent."
+          ]
+        },
+        {
+          "heading": "What the published number assumes",
+          "paragraphs": [
+            "The stall speed in your handbook is one condition. It assumes 1 G flight at a given weight and flap setting. Change the load and you have changed what that number refers to.",
+            "In a level turn at 60 degrees of bank the wing is carrying 2 G. The speed that stalls it sits 41 percent above the book figure.",
+            "You are closer to the stalling angle there than you were wings level. The pull that held your altitude is what took you closer."
+          ]
+        },
+        {
+          "heading": "Getting the angle back",
+          "paragraphs": [
+            "The buffet, a shake you feel through the airframe, is one warning. The horn is the other. In a steep turn both arrive at a speed that reads fine on the dial.",
+            "Ease the back pressure. Lowering the angle of attack is what unstalls a wing, and it is the first thing to do at any bank angle.",
+            "Rolling out works on the cause. Less bank means less load factor, and less load brings the stall speed back toward the 1 G figure."
+          ]
+        }
+      ],
       "related": []
     },
     {
