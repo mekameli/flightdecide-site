@@ -1,7 +1,7 @@
 {
  "data_version": 1,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "PA32",
  "limits": {
   "empty_weight_lbs": 2100,

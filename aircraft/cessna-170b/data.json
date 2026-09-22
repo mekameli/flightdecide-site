@@ -1,7 +1,7 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "C170",
  "limits": {
   "empty_weight_lbs": 1410,
@@ -12,7 +12,750 @@
  },
  "manufacturer": "Cessna",
  "name": "Cessna 170B",
- "performance": {},
+ "performance": {
+  "climb": {
+   "cells": {
+    "2200": {
+     "0": {
+      "-20": {
+       "basis": "extrap",
+       "v": 764
+      },
+      "0": {
+       "basis": "interp",
+       "v": 725
+      },
+      "20": {
+       "basis": "interp",
+       "v": 682
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 640
+      }
+     },
+     "1000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 719
+      },
+      "0": {
+       "basis": "interp",
+       "v": 679
+      },
+      "20": {
+       "basis": "interp",
+       "v": 637
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 595
+      }
+     },
+     "10000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 315
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 264
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 230
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 173
+      }
+     },
+     "2000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 675
+      },
+      "0": {
+       "basis": "interp",
+       "v": 633
+      },
+      "20": {
+       "basis": "interp",
+       "v": 592
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 550
+      }
+     },
+     "3000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 630
+      },
+      "0": {
+       "basis": "interp",
+       "v": 588
+      },
+      "20": {
+       "basis": "interp",
+       "v": 546
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 506
+      }
+     },
+     "4000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 585
+      },
+      "0": {
+       "basis": "interp",
+       "v": 543
+      },
+      "20": {
+       "basis": "interp",
+       "v": 500
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 461
+      }
+     },
+     "5000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 540
+      },
+      "0": {
+       "basis": "interp",
+       "v": 496
+      },
+      "20": {
+       "basis": "interp",
+       "v": 455
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 413
+      }
+     },
+     "6000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 495
+      },
+      "0": {
+       "basis": "interp",
+       "v": 450
+      },
+      "20": {
+       "basis": "interp",
+       "v": 410
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 365
+      }
+     },
+     "7000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 450
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 403
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 365
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 317
+      }
+     },
+     "8000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 405
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 357
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 320
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 269
+      }
+     },
+     "9000": {
+      "-20": {
+       "basis": "extrap",
+       "v": 360
+      },
+      "0": {
+       "basis": "extrap",
+       "v": 310
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 275
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 221
+      }
+     }
+    }
+   },
+   "cells_are": "rate_of_climb",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps up, full throttle, gross weight 2200 lb, McCauley propeller. Best climb speed TIAS is printed beside the rows and is not carried as a field because it sits LEFT of the altitude column, outside the window the shared extractor reads: 89 MPH at sea level, 86 at 2000 ft, 84 at 4000 ft, 81 at 6000 ft, 79 at 7000 ft.",
+   "counts": {
+    "extrap": 30,
+    "interp": 14,
+    "poh": 0
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Cessna 170 Owner's Manual, \"52, 53, 54 and 55 Models\" (form P213-13-RPC-200-3/79). Section V - Operational Data, Performance Information - Landplane, printed page 37 (PDF page 43) \u00b7 Performance Information - Landplane: Normal Rate of Climb, Feet per min., Flaps Up",
+   "weights_lbs": [
+    2200
+   ]
+  },
+  "landing": {
+   "cells": {
+    "2200": {
+     "0": {
+      "0": {
+       "basis": "interp",
+       "v": 1094
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1128
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1159
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1190
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1222
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "interp",
+       "v": 1128
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1160
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1191
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1223
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1255
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1442
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1474
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1499
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1530
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1562
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "interp",
+       "v": 1161
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1192
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1224
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1255
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1287
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "interp",
+       "v": 1194
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1226
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1259
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1290
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1322
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "interp",
+       "v": 1226
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1260
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1294
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1325
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1357
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "interp",
+       "v": 1260
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1294
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1326
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1358
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1390
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "interp",
+       "v": 1294
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1328
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1359
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1390
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1422
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1330
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1363
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1393
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1424
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1456
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1366
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1399
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1427
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1459
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1490
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1403
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1436
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1463
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1494
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1525
+      }
+     }
+    }
+   },
+   "cells_are": "landing_over_50ft",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps 40 deg, to land over a 50 ft. obstacle at 67 MPH TIAS approach, gross weight 2200 lb, zero wind, hard surface level runway. The handbook prints only the total distance over the 50 ft obstacle; it gives the ground roll as a rule rather than a column (\"Roll 40% distance shown\"), so no ground-roll value is carried. Distances are reduced approximately 10% for each 6 m.p.h. of wind.",
+   "counts": {
+    "extrap": 27,
+    "interp": 28,
+    "poh": 0
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Cessna 170 Owner's Manual, \"52, 53, 54 and 55 Models\" (form P213-13-RPC-200-3/79). Section V - Operational Data, Performance Information - Landplane, printed page 37 (PDF page 43) \u00b7 Performance Information - Landplane: Landing Distance (Ft.), Flaps 40 deg",
+   "weights_lbs": [
+    2200
+   ]
+  },
+  "takeoff": {
+   "cells": {
+    "2200": {
+     "0": {
+      "0": {
+       "basis": "interp",
+       "v": 1652
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1760
+      },
+      "20": {
+       "basis": "interp",
+       "v": 1864
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1966
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2075
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "interp",
+       "v": 1823
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1940
+      },
+      "20": {
+       "basis": "interp",
+       "v": 2057
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2177
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2304
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 4084
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 4368
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4675
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 4991
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 5353
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "interp",
+       "v": 1995
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2120
+      },
+      "20": {
+       "basis": "interp",
+       "v": 2249
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2388
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2533
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "interp",
+       "v": 2191
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2325
+      },
+      "20": {
+       "basis": "interp",
+       "v": 2465
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2620
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2788
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "interp",
+       "v": 2387
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2530
+      },
+      "20": {
+       "basis": "interp",
+       "v": 2681
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2852
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3043
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "interp",
+       "v": 2621
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2782
+      },
+      "20": {
+       "basis": "interp",
+       "v": 2954
+      },
+      "30": {
+       "basis": "interp",
+       "v": 3145
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3359
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "interp",
+       "v": 2855
+      },
+      "10": {
+       "basis": "interp",
+       "v": 3035
+      },
+      "20": {
+       "basis": "interp",
+       "v": 3227
+      },
+      "30": {
+       "basis": "interp",
+       "v": 3437
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3674
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3122
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3324
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3540
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3773
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4036
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3415
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3641
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3884
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 4142
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4435
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3734
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3988
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4261
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 4547
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4873
+      }
+     }
+    }
+   },
+   "cells_are": "takeoff_over_50ft",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps up, full throttle, to clear a 50 ft. obstacle at 76 MPH TIAS, gross weight 2200 lb, zero wind, hard surface level runway. The handbook prints only the total distance over the 50 ft obstacle; it gives the ground run as a rule rather than a column (\"Ground run approx. 40% distance shown\"), so no ground-roll value is carried. Distances are reduced approximately 10% for each 6 m.p.h. of wind.",
+   "counts": {
+    "extrap": 27,
+    "interp": 28,
+    "poh": 0
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Cessna 170 Owner's Manual, \"52, 53, 54 and 55 Models\" (form P213-13-RPC-200-3/79). Section V - Operational Data, Performance Information - Landplane, printed page 37 (PDF page 43) \u00b7 Performance Information - Landplane: Take-off Distance (Ft.), Flaps Up",
+   "weights_lbs": [
+    2200
+   ]
+  }
+ },
  "slug": "cessna-170b",
  "v_speeds": {
   "best_glide": 61,

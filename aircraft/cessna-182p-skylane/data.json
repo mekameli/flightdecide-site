@@ -1,7 +1,7 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "C182",
  "limits": {
   "empty_weight_lbs": 1900,
@@ -13,6 +13,230 @@
  "manufacturer": "Cessna",
  "name": "Cessna 182P Skylane",
  "performance": {
+  "climb": {
+   "cells": {
+    "2950": {
+     "0": {
+      "-20": {
+       "basis": "poh",
+       "v": 1040
+      },
+      "0": {
+       "basis": "poh",
+       "v": 955
+      },
+      "20": {
+       "basis": "poh",
+       "v": 870
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 785
+      }
+     },
+     "1000": {
+      "-20": {
+       "basis": "interp",
+       "v": 985
+      },
+      "0": {
+       "basis": "interp",
+       "v": 900
+      },
+      "20": {
+       "basis": "interp",
+       "v": 818
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 735
+      }
+     },
+     "10000": {
+      "-20": {
+       "basis": "poh",
+       "v": 495
+      },
+      "0": {
+       "basis": "poh",
+       "v": 425
+      },
+      "20": {
+       "basis": "poh",
+       "v": 360
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 295
+      }
+     },
+     "2000": {
+      "-20": {
+       "basis": "poh",
+       "v": 930
+      },
+      "0": {
+       "basis": "poh",
+       "v": 845
+      },
+      "20": {
+       "basis": "poh",
+       "v": 765
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 685
+      }
+     },
+     "3000": {
+      "-20": {
+       "basis": "interp",
+       "v": 875
+      },
+      "0": {
+       "basis": "interp",
+       "v": 792
+      },
+      "20": {
+       "basis": "interp",
+       "v": 712
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 632
+      }
+     },
+     "4000": {
+      "-20": {
+       "basis": "poh",
+       "v": 820
+      },
+      "0": {
+       "basis": "poh",
+       "v": 740
+      },
+      "20": {
+       "basis": "poh",
+       "v": 660
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 580
+      }
+     },
+     "5000": {
+      "-20": {
+       "basis": "interp",
+       "v": 765
+      },
+      "0": {
+       "basis": "interp",
+       "v": 688
+      },
+      "20": {
+       "basis": "interp",
+       "v": 610
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 532
+      }
+     },
+     "6000": {
+      "-20": {
+       "basis": "poh",
+       "v": 710
+      },
+      "0": {
+       "basis": "poh",
+       "v": 635
+      },
+      "20": {
+       "basis": "poh",
+       "v": 560
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 485
+      }
+     },
+     "7000": {
+      "-20": {
+       "basis": "interp",
+       "v": 655
+      },
+      "0": {
+       "basis": "interp",
+       "v": 582
+      },
+      "20": {
+       "basis": "interp",
+       "v": 510
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 438
+      }
+     },
+     "8000": {
+      "-20": {
+       "basis": "poh",
+       "v": 600
+      },
+      "0": {
+       "basis": "poh",
+       "v": 530
+      },
+      "20": {
+       "basis": "poh",
+       "v": 460
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 390
+      }
+     },
+     "9000": {
+      "-20": {
+       "basis": "interp",
+       "v": 548
+      },
+      "0": {
+       "basis": "interp",
+       "v": 478
+      },
+      "20": {
+       "basis": "interp",
+       "v": 410
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 342
+      }
+     }
+    }
+   },
+   "cells_are": "rate_of_climb",
+   "cells_trimmed_for_rectangular_grid": [
+    {
+     "axis": "oat_c",
+     "poh_cells_lost": 5,
+     "value": 40
+    }
+   ],
+   "conditions": "Flaps up, 2600 RPM, full throttle, cowl flaps open",
+   "counts": {
+    "extrap": 11,
+    "interp": 15,
+    "poh": 18
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976) \u00b7 Rate of Climb - Maximum",
+   "weights_lbs": [
+    2950
+   ]
+  },
   "cruise": {
    "axes": [
     "pressure_altitude",
@@ -3223,6 +3447,987 @@
     }
    ],
    "source": "Figure 5-7"
+  },
+  "landing": {
+   "cells": {
+    "2950": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 560
+      },
+      "10": {
+       "basis": "poh",
+       "v": 580
+      },
+      "20": {
+       "basis": "poh",
+       "v": 600
+      },
+      "30": {
+       "basis": "poh",
+       "v": 620
+      },
+      "40": {
+       "basis": "poh",
+       "v": 640
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 580
+      },
+      "10": {
+       "basis": "poh",
+       "v": 600
+      },
+      "20": {
+       "basis": "poh",
+       "v": 620
+      },
+      "30": {
+       "basis": "poh",
+       "v": 645
+      },
+      "40": {
+       "basis": "poh",
+       "v": 665
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 819
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 844
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 874
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 898
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 939
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 600
+      },
+      "10": {
+       "basis": "poh",
+       "v": 625
+      },
+      "20": {
+       "basis": "poh",
+       "v": 645
+      },
+      "30": {
+       "basis": "poh",
+       "v": 670
+      },
+      "40": {
+       "basis": "poh",
+       "v": 690
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 625
+      },
+      "10": {
+       "basis": "poh",
+       "v": 645
+      },
+      "20": {
+       "basis": "poh",
+       "v": 670
+      },
+      "30": {
+       "basis": "poh",
+       "v": 695
+      },
+      "40": {
+       "basis": "poh",
+       "v": 715
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 650
+      },
+      "10": {
+       "basis": "poh",
+       "v": 670
+      },
+      "20": {
+       "basis": "poh",
+       "v": 695
+      },
+      "30": {
+       "basis": "poh",
+       "v": 720
+      },
+      "40": {
+       "basis": "poh",
+       "v": 740
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 670
+      },
+      "10": {
+       "basis": "poh",
+       "v": 695
+      },
+      "20": {
+       "basis": "poh",
+       "v": 720
+      },
+      "30": {
+       "basis": "poh",
+       "v": 745
+      },
+      "40": {
+       "basis": "poh",
+       "v": 770
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 700
+      },
+      "10": {
+       "basis": "poh",
+       "v": 725
+      },
+      "20": {
+       "basis": "poh",
+       "v": 750
+      },
+      "30": {
+       "basis": "poh",
+       "v": 775
+      },
+      "40": {
+       "basis": "poh",
+       "v": 800
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 725
+      },
+      "10": {
+       "basis": "poh",
+       "v": 750
+      },
+      "20": {
+       "basis": "poh",
+       "v": 780
+      },
+      "30": {
+       "basis": "poh",
+       "v": 805
+      },
+      "40": {
+       "basis": "poh",
+       "v": 830
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 755
+      },
+      "10": {
+       "basis": "poh",
+       "v": 780
+      },
+      "20": {
+       "basis": "poh",
+       "v": 810
+      },
+      "30": {
+       "basis": "poh",
+       "v": 835
+      },
+      "40": {
+       "basis": "poh",
+       "v": 865
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 786
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 811
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 841
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 866
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 901
+      }
+     }
+    }
+   },
+   "cells_are": "landing_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
+   "counts": {
+    "extrap": 10,
+    "interp": 0,
+    "poh": 45
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2950": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1365
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1400
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1435
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1365
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1400
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1440
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1475
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1730
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1770
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1820
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1864
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1920
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1405
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1440
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1480
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1515
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1410
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1445
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1485
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1525
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1560
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1450
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1485
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1525
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1565
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1600
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1485
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1525
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1565
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1610
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1650
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1530
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1575
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1615
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1660
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1700
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 1575
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1615
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1665
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1710
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1750
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 1625
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1665
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1715
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1760
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1805
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1677
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1717
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1767
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1811
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1862
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976) \u00b7 Landing Distance",
+   "weights_lbs": [
+    2950
+   ]
+  },
+  "takeoff": {
+   "cells": {
+    "2950": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 635
+      },
+      "10": {
+       "basis": "poh",
+       "v": 680
+      },
+      "20": {
+       "basis": "poh",
+       "v": 730
+      },
+      "30": {
+       "basis": "poh",
+       "v": 780
+      },
+      "40": {
+       "basis": "poh",
+       "v": 835
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 690
+      },
+      "10": {
+       "basis": "poh",
+       "v": 745
+      },
+      "20": {
+       "basis": "poh",
+       "v": 795
+      },
+      "30": {
+       "basis": "poh",
+       "v": 850
+      },
+      "40": {
+       "basis": "poh",
+       "v": 910
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 755
+      },
+      "10": {
+       "basis": "poh",
+       "v": 810
+      },
+      "20": {
+       "basis": "poh",
+       "v": 870
+      },
+      "30": {
+       "basis": "poh",
+       "v": 930
+      },
+      "40": {
+       "basis": "poh",
+       "v": 995
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 825
+      },
+      "10": {
+       "basis": "poh",
+       "v": 890
+      },
+      "20": {
+       "basis": "poh",
+       "v": 950
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1020
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1090
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 905
+      },
+      "10": {
+       "basis": "poh",
+       "v": 970
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1045
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1120
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1195
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 995
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1065
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1145
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1230
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1315
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1090
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1175
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1260
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1350
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1450
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1194
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1296
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1387
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1482
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1599
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1308
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1430
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1526
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1626
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1763
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1433
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1578
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1679
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1785
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1944
+      }
+     }
+    }
+   },
+   "cells_are": "takeoff_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 3,
+     "value": 8000
+    },
+    {
+     "axis": "pressure_altitude",
+     "poh_cells_lost": 4,
+     "value": 7000
+    }
+   ],
+   "conditions": "Flaps 20 deg, 2600 RPM and full throttle prior to brake release, cowl flaps open, paved level dry runway, zero wind",
+   "counts": {
+    "extrap": 15,
+    "interp": 0,
+    "poh": 35
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2950": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1220
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1305
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1395
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1490
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1590
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1430
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1530
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1635
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1745
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1465
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1565
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1680
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1800
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1925
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1605
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1725
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1850
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1985
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2130
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1770
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1905
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2050
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2205
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2370
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1965
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2115
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2280
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2460
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2655
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 2185
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2360
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2555
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2765
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3005
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2430
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2633
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2863
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3108
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3401
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2702
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2938
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3209
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3493
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3850
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3004
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3279
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3595
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3926
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4357
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976) \u00b7 Takeoff Distance - Maximum Weight 2950 LBS",
+   "weights_lbs": [
+    2950
+   ]
   }
  },
  "slug": "cessna-182p-skylane",

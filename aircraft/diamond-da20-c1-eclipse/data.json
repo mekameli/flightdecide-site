@@ -1,7 +1,7 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "DA20",
  "limits": {
   "empty_weight_lbs": 1150,
@@ -751,6 +751,108 @@
     }
    ],
    "source": "Section 5.3 Performance, Table 3 \u2014 Cruise Performance Table"
+  },
+  "stall": {
+   "conditions": "Idle, most forward center of gravity, max. weight of 800 kg (1764 lb) - the handbook calls this the most adverse configuration. Speeds in knots; the flap settings are the DA 20-C1's three flap-selector positions, printed on this sheet as Cruise / Take-off / Landing and elsewhere in the manual as CRUISE / T/O / LDG.",
+   "rows": [
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "Cruise",
+     "kcas": 54,
+     "kias": 44,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "Cruise",
+     "kcas": 58,
+     "kias": 49,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "Cruise",
+     "kcas": 64,
+     "kias": 57,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "Cruise",
+     "kcas": 76,
+     "kias": 72,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "Take-off",
+     "kcas": 50,
+     "kias": 40,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "Take-off",
+     "kcas": 53,
+     "kias": 46,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "Take-off",
+     "kcas": 59,
+     "kias": 53,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "Take-off",
+     "kcas": 70,
+     "kias": 66,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": "most_forward",
+     "flap_setting": "Landing",
+     "kcas": 45,
+     "kias": 36,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": "most_forward",
+     "flap_setting": "Landing",
+     "kcas": 49,
+     "kias": 41,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": "most_forward",
+     "flap_setting": "Landing",
+     "kcas": 54,
+     "kias": 48,
+     "weight_lbs": 1764
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": "most_forward",
+     "flap_setting": "Landing",
+     "kcas": 64,
+     "kias": 61,
+     "weight_lbs": 1764
+    }
+   ],
+   "source": "Flight Manual, Diamond DA 20-C1, Document No. DA202-C1, Date of Issue 19 December 1997, Revision 20 (August 18, 2005) \u00b7 Figure 5.3: Stall Speeds \u00b7 Chapter 9 Supplement 4 (gross weight increase from 750 kg to 800 kg; Sensenich propeller; aircraft registered in the USA or Canada), printed page S4-6"
   }
  },
  "slug": "diamond-da20-c1-eclipse",

@@ -1,7 +1,7 @@
 {
  "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "SR20",
  "limits": {
   "empty_weight_lbs": 2000,
@@ -416,6 +416,7 @@
      }
     }
    },
+   "cells_are": "rate_of_climb",
    "cells_trimmed_for_rectangular_grid": [
     {
      "axis": "pressure_altitude",
@@ -689,6 +690,7 @@
      }
     }
    },
+   "cells_are": "landing_ground_roll",
    "cells_trimmed_for_rectangular_grid": [],
    "conditions": null,
    "counts": {
@@ -1818,6 +1820,7 @@
      }
     }
    },
+   "cells_are": "takeoff_ground_roll",
    "cells_trimmed_for_rectangular_grid": [
     {
      "axis": "pressure_altitude",

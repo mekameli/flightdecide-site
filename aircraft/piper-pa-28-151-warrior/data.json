@@ -1,7 +1,7 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "P28A",
  "limits": {
   "empty_weight_lbs": 1455,
@@ -12,7 +12,574 @@
  },
  "manufacturer": "Piper",
  "name": "Piper PA-28-151 Warrior",
- "performance": {},
+ "performance": {
+  "climb": {
+   "cells": {
+    "2325": {
+     "0": {
+      "0": {
+       "basis": "extrap",
+       "v": 740
+      },
+      "20": {
+       "basis": "poh",
+       "v": 630
+      },
+      "40": {
+       "basis": "poh",
+       "v": 525
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "extrap",
+       "v": 675
+      },
+      "20": {
+       "basis": "poh",
+       "v": 575
+      },
+      "40": {
+       "basis": "poh",
+       "v": 470
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "extrap",
+       "v": 620
+      },
+      "20": {
+       "basis": "poh",
+       "v": 520
+      },
+      "40": {
+       "basis": "poh",
+       "v": 420
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "extrap",
+       "v": 580
+      },
+      "20": {
+       "basis": "poh",
+       "v": 470
+      },
+      "40": {
+       "basis": "poh",
+       "v": 365
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "extrap",
+       "v": 525
+      },
+      "20": {
+       "basis": "poh",
+       "v": 415
+      },
+      "40": {
+       "basis": "poh",
+       "v": 310
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "extrap",
+       "v": 460
+      },
+      "20": {
+       "basis": "poh",
+       "v": 360
+      },
+      "40": {
+       "basis": "poh",
+       "v": 255
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "extrap",
+       "v": 405
+      },
+      "20": {
+       "basis": "poh",
+       "v": 305
+      },
+      "40": {
+       "basis": "poh",
+       "v": 200
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 350
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 250
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 145
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 295
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 195
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 90
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 240
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 140
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 35
+      }
+     }
+    }
+   },
+   "cells_are": "rate_of_climb",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "CLIMB PERFORMANCE. POWER - FULL THROTTLE. GROSS WEIGHT 2325 LBS. MIXTURE - LEAN PER LYCOMING INSTRUCTIONS. 87 MPH CAS. Plotted against DENSITY ALTITUDE - FEET, 0 to 16000 ft, vs RATE OF CLIMB (FT/MIN). One curve.",
+   "counts": {
+    "extrap": 16,
+    "interp": 0,
+    "poh": 14
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Cherokee Warrior Information Manual, Piper Model PA-28-151 (Handbook Part No. 761 563; Report VB-535, with the FAA Approved Airplane Flight Manual as Report VB-573). Applicability page: serial numbers 28-7415001 through 28-7615435. \u00b7 Climb",
+   "weights_lbs": [
+    2325
+   ]
+  },
+  "landing": {
+   "cells": {
+    "2325": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 590
+      },
+      "20": {
+       "basis": "poh",
+       "v": 610
+      },
+      "30": {
+       "basis": "poh",
+       "v": 630
+      },
+      "40": {
+       "basis": "poh",
+       "v": 655
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 601
+      },
+      "20": {
+       "basis": "poh",
+       "v": 630
+      },
+      "30": {
+       "basis": "poh",
+       "v": 655
+      },
+      "40": {
+       "basis": "poh",
+       "v": 680
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 626
+      },
+      "20": {
+       "basis": "poh",
+       "v": 655
+      },
+      "30": {
+       "basis": "poh",
+       "v": 680
+      },
+      "40": {
+       "basis": "poh",
+       "v": 705
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 651
+      },
+      "20": {
+       "basis": "poh",
+       "v": 680
+      },
+      "30": {
+       "basis": "poh",
+       "v": 710
+      },
+      "40": {
+       "basis": "poh",
+       "v": 735
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 652
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 700
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 741
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 766
+      }
+     }
+    }
+   },
+   "cells_are": "landing_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "LANDING PERFORMANCE. GROSS WEIGHT 2325 LBS. POWER OFF. 40 deg FLAPS. PAVED LEVEL DRY RUNWAY. NO WIND. MAX. BRAKING. APPROACH SPEED 73 MPH CAS. Plotted against DENSITY ALTITUDE - FEET, 0 to 7000 ft, vs LANDING DISTANCE - FEET. Two curves, labelled GROUND DISTANCE and TOTAL DISTANCE along the curve; ground_roll_ft is GROUND DISTANCE and over_50ft_ft is TOTAL DISTANCE (over the 50 ft barrier).",
+   "counts": {
+    "extrap": 8,
+    "interp": 0,
+    "poh": 12
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2325": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 1110
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1130
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1150
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1170
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1130
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1150
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1170
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1190
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1150
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1170
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1195
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1215
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1175
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1195
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1220
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1240
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1196
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1215
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1251
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1260
+      }
+     }
+    }
+   },
+   "source": "Cherokee Warrior Information Manual, Piper Model PA-28-151 (Handbook Part No. 761 563; Report VB-535, with the FAA Approved Airplane Flight Manual as Report VB-573). Applicability page: serial numbers 28-7415001 through 28-7615435. \u00b7 Landing",
+   "weights_lbs": [
+    2325
+   ]
+  },
+  "takeoff": {
+   "cells": {
+    "2325": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 1007
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1160
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1330
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1500
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1180
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1510
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1695
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1341
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1515
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1705
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1900
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1526
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1710
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1910
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2125
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1725
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1929
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2139
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2375
+      }
+     }
+    }
+   },
+   "cells_are": "takeoff_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "TAKEOFF PERFORMANCE. PAVED LEVEL DRY RUNWAY. GROSS WEIGHT 2325 LBS. NO WIND. FULL POWER BEFORE BRAKE RELEASE. EXTRAPOLATION OF CHART ABOVE 7000 FT. IS INVALID. Plotted against DENSITY ALTITUDE (FT.), 0 to 7000 ft, vs TAKEOFF DISTANCE (FT.). The sheet carries four curves keyed by a legend of FLAPS / ROTATION AIRSPEED / GROUND ROLL / AIRSPEED THROUGH 50 FT. / OVER 50 FT.: 25 deg flaps rotate 52 mph, through 50 ft at 66 mph (ground roll = the dotted curve); 25 deg flaps rotate 66 mph, through 50 ft at 66 mph (ground roll = the plain curve, over 50 ft = the open-circle curve); 0 deg flaps rotate 65 mph and 0 deg flaps rotate 72 mph, both through 50 ft at 72 mph (over 50 ft = the dashed curve). ALL AIRSPEEDS ARE MPH-CAS. ground_roll_ft here is the dotted curve (25 deg flaps, 52 mph rotation) and over_50ft_ft is the open-circle curve (25 deg flaps, 66 mph over the obstacle) -- the pair the handbook's own General Specifications page publishes as 1065 ft and 1760 ft.",
+   "counts": {
+    "extrap": 8,
+    "interp": 0,
+    "poh": 12
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2325": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 1629
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1905
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2215
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2530
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1945
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2225
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2540
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2880
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2254
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2555
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2890
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3260
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2568
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2905
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3280
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3690
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2924
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3301
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3720
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4173
+      }
+     }
+    }
+   },
+   "source": "Cherokee Warrior Information Manual, Piper Model PA-28-151 (Handbook Part No. 761 563; Report VB-535, with the FAA Approved Airplane Flight Manual as Report VB-573). Applicability page: serial numbers 28-7415001 through 28-7615435. \u00b7 Takeoff",
+   "weights_lbs": [
+    2325
+   ]
+  }
+ },
  "slug": "piper-pa-28-151-warrior",
  "v_speeds": {
   "best_glide": 73,

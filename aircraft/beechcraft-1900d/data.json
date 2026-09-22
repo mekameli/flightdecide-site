@@ -1,7 +1,7 @@
 {
  "data_version": 1,
  "disclaimer": "Zone arms are area averages. Verify all station arms and CG limits from your aircraft's current FAA-approved AFM before use.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "B190",
  "limits": {
   "empty_weight_lbs": 10900,

@@ -1,7 +1,7 @@
 {
  "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "S22T",
  "limits": {
   "empty_weight_lbs": 2450,
@@ -416,6 +416,7 @@
      }
     }
    },
+   "cells_are": "rate_of_climb",
    "cells_trimmed_for_rectangular_grid": [],
    "conditions": "Full throttle, mixture as required, flaps 0% (up), best rate of climb airspeed",
    "counts": {
@@ -678,6 +679,7 @@
      }
     }
    },
+   "cells_are": "landing_ground_roll",
    "cells_trimmed_for_rectangular_grid": [],
    "conditions": "Flaps 100%, idle power, dry paved level runway, speed over 50 ft 79 KIAS",
    "counts": {
@@ -1674,6 +1676,7 @@
      }
     }
    },
+   "cells_are": "takeoff_ground_roll",
    "cells_trimmed_for_rectangular_grid": [],
    "conditions": null,
    "counts": {

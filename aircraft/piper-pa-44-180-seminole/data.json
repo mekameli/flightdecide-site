@@ -1,7 +1,7 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "PA44",
  "limits": {
   "empty_weight_lbs": 2534,
@@ -12,7 +12,802 @@
  },
  "manufacturer": "Piper",
  "name": "Piper PA-44-180 Seminole",
- "performance": {},
+ "performance": {
+  "landing": {
+   "cells": {
+    "3800": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 555
+      },
+      "10": {
+       "basis": "interp",
+       "v": 575
+      },
+      "20": {
+       "basis": "poh",
+       "v": 595
+      },
+      "30": {
+       "basis": "interp",
+       "v": 618
+      },
+      "40": {
+       "basis": "poh",
+       "v": 640
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 575
+      },
+      "10": {
+       "basis": "interp",
+       "v": 595
+      },
+      "20": {
+       "basis": "poh",
+       "v": 615
+      },
+      "30": {
+       "basis": "interp",
+       "v": 638
+      },
+      "40": {
+       "basis": "poh",
+       "v": 660
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 595
+      },
+      "10": {
+       "basis": "interp",
+       "v": 615
+      },
+      "20": {
+       "basis": "poh",
+       "v": 635
+      },
+      "30": {
+       "basis": "interp",
+       "v": 658
+      },
+      "40": {
+       "basis": "poh",
+       "v": 680
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 615
+      },
+      "10": {
+       "basis": "interp",
+       "v": 638
+      },
+      "20": {
+       "basis": "poh",
+       "v": 660
+      },
+      "30": {
+       "basis": "interp",
+       "v": 685
+      },
+      "40": {
+       "basis": "poh",
+       "v": 710
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 640
+      },
+      "10": {
+       "basis": "interp",
+       "v": 662
+      },
+      "20": {
+       "basis": "poh",
+       "v": 685
+      },
+      "30": {
+       "basis": "interp",
+       "v": 710
+      },
+      "40": {
+       "basis": "poh",
+       "v": 735
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 665
+      },
+      "10": {
+       "basis": "interp",
+       "v": 688
+      },
+      "20": {
+       "basis": "poh",
+       "v": 710
+      },
+      "30": {
+       "basis": "interp",
+       "v": 735
+      },
+      "40": {
+       "basis": "poh",
+       "v": 760
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "extrap",
+       "v": 691
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 713
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 736
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 761
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 786
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 718
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 740
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 763
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 788
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 813
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 746
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 768
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 791
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 815
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 840
+      }
+     }
+    }
+   },
+   "cells_are": "landing_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "LANDING, *STANDARD BRAKES, SHORT FIELD EFFORT. WING FLAPS 40 deg -- POWER OFF; COWL FLAPS OPEN; PAVED LEVEL DRY RUNWAY; FULL STALL TOUCHDOWN; (Fig 5-45) APPROACH SPEED AS SCHEDULED -- 75 KIAS at 3800 lb, 72 at 3500, 67 at 3000, 61 at 2500. *NOTE (Fig 5-43): 'REDUCE LANDING GROUND ROLL BY 35% IF OPTIONAL LANDING GEAR HEAVY DUTY GROUP NO. 1 IS INSTALLED. (SEE EQUIPMENT LIST)'. *NOTE (Fig 5-45): 'Reduce total landing distance by 15% if optional landing gear heavy duty Group No. 1 is installed. (See Equipment List)'. This handbook prints only one landing chart pair and it is the short-field one; there is no separate normal-procedure landing chart.",
+   "counts": {
+    "extrap": 15,
+    "interp": 12,
+    "poh": 18
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "3800": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1390
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1410
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1430
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1450
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1390
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1412
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1435
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1455
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1475
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1415
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1435
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1455
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1478
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1500
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1435
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1458
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1480
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1505
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1530
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1455
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1480
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1505
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1530
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1555
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1480
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1505
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1530
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1555
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1580
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1505
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1530
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1555
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1580
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1605
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1531
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1556
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1581
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1606
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1631
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1558
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1583
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1608
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1632
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1657
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Piper PA-44-180 Seminole \u00b7 Landing",
+   "weights_lbs": [
+    3800
+   ]
+  },
+  "takeoff": {
+   "cells": {
+    "3800": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1035
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1168
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1450
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1600
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1180
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1325
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1470
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1632
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1795
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1315
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1472
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1630
+      },
+      "30": {
+       "basis": "interp",
+       "v": 1802
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1975
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1470
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1648
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1825
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2028
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2230
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1640
+      },
+      "10": {
+       "basis": "interp",
+       "v": 1838
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2035
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2260
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2485
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1830
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2049
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2269
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2519
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2769
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2041
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2286
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2530
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2808
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3086
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2277
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2549
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2821
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3130
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3439
+      }
+     }
+    }
+   },
+   "cells_are": "takeoff_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "NORMAL PROCEDURE TAKEOFF -- both engines operating. WING FLAPS 0 deg; 2700 RPM & FULL THROTTLE BEFORE BRAKE RELEASE; PAVED LEVEL DRY RUNWAY; COWL FLAPS OPEN. Lift-off speed 75 KIAS at 3800 lb (71 at 3400, 66 at 3000, 62 at 2600); barrier speed (Fig 5-11) 88 KIAS at 3800 lb (83 at 3400, 78 at 3000, 73 at 2600). Fig 5-11 also carries a CAUTION over a shaded area of its WEIGHT panel: 'Best one engine inoperative rate of climb is less than 50 FPM if T.O. wt. is in the shaded area.' -- that shading is in the weight panel and does not touch the 3800 lb reference line these readings are taken at.",
+   "counts": {
+    "extrap": 15,
+    "interp": 10,
+    "poh": 15
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "3800": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1835
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2082
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2330
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2592
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2855
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 2085
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2340
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2595
+      },
+      "30": {
+       "basis": "interp",
+       "v": 2878
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3160
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 2355
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2628
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2900
+      },
+      "30": {
+       "basis": "interp",
+       "v": 3205
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3510
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 2610
+      },
+      "10": {
+       "basis": "interp",
+       "v": 2952
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3295
+      },
+      "30": {
+       "basis": "interp",
+       "v": 3695
+      },
+      "40": {
+       "basis": "poh",
+       "v": 4095
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 2940
+      },
+      "10": {
+       "basis": "interp",
+       "v": 3338
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3735
+      },
+      "30": {
+       "basis": "interp",
+       "v": 4178
+      },
+      "40": {
+       "basis": "poh",
+       "v": 4620
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3312
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 3773
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4234
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 4723
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 5212
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "extrap",
+       "v": 3730
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 4265
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4799
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 5340
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 5881
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 4202
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 4821
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 5440
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 6037
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 6634
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Piper PA-44-180 Seminole \u00b7 Takeoff",
+   "weights_lbs": [
+    3800
+   ]
+  }
+ },
  "slug": "piper-pa-44-180-seminole",
  "v_speeds": {
   "best_glide": 88,

@@ -1,7 +1,7 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "BE76",
  "limits": {
   "empty_weight_lbs": 2530,
@@ -12,7 +12,934 @@
  },
  "manufacturer": "Beechcraft",
  "name": "Beechcraft Duchess 76",
- "performance": {},
+ "performance": {
+  "landing": {
+   "cells": {
+    "3900": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 940
+      },
+      "10": {
+       "basis": "poh",
+       "v": 980
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1010
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1050
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1080
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 980
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1020
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1050
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1090
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1125
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1020
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1060
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1095
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1130
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1170
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1060
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1100
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1135
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1170
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1210
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1100
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1140
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1180
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1210
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1260
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1140
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1180
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1220
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1260
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1310
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1180
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1220
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1265
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1310
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1360
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1221
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1261
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1312
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1362
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1412
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1264
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1304
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1360
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1416
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1466
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1309
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1348
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1410
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1472
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1522
+      }
+     }
+    }
+   },
+   "cells_are": "landing_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "ASSOCIATED CONDITIONS: POWER - RETARD TO MAINTAIN 800 FT/MIN ON FINAL APPROACH; FLAPS - DOWN (DN); LANDING GEAR - DOWN; RUNWAY - PAVED, LEVEL, DRY SURFACE; APPROACH SPEED - 76 KNOTS IAS; BRAKING - MAXIMUM. Heading: APPROACH SPEED 76 KNOTS (ALL WEIGHTS). This sheet has no weight panel at all, so the distances are the same at every weight; they are recorded here at the 3900 lb reference weight. Read at zero wind component; ground_roll_ft is the value at the obstacle-height reference line (0 ft), over_50ft_ft follows the guide lines to 50 ft.",
+   "counts": {
+    "extrap": 15,
+    "interp": 0,
+    "poh": 35
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "3900": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1805
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1860
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1910
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1965
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2020
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1860
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1920
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1975
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2030
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2085
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1920
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1980
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2040
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2095
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2140
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1980
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2040
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2100
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2145
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2190
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 2050
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2100
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2150
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2195
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2250
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 2110
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2155
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2200
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2250
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2305
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 2150
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2205
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2255
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2310
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2365
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2191
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2256
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2311
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2372
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2427
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2232
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2309
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2369
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2435
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2490
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2275
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2362
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2428
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2500
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2555
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, BEECHCRAFT Duchess 76 \u00b7 P/N 105-590000-5 (revision 105-590000-5A7) \u00b7 Landing",
+   "weights_lbs": [
+    3900
+   ]
+  },
+  "takeoff": {
+   "cells": {
+    "3900": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 860
+      },
+      "10": {
+       "basis": "poh",
+       "v": 930
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1010
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1105
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1215
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 985
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1070
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1155
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1250
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1370
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1110
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1205
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1400
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1520
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1240
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1350
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1460
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1575
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1700
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1490
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1615
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1750
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1890
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1530
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1665
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1810
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1960
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2120
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1690
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1840
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2000
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2170
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2360
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1867
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2033
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2210
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2403
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2627
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2062
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2247
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2442
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2660
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 2925
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 2278
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 2483
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2698
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 2945
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3256
+      }
+     }
+    }
+   },
+   "cells_are": "takeoff_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "ASSOCIATED CONDITIONS: POWER - TAKE-OFF POWER AT 2700 RPM SET BEFORE BRAKE RELEASE; MIXTURE - FULL RICH (ABOVE 5000 FT LEAN TO 75-100 F ON RICH SIDE OF PEAK EGT); FLAPS - UP; LANDING GEAR - RETRACT AFTER POSITIVE CLIMB ESTABLISHED; RUNWAY - PAVED, LEVEL, DRY SURFACE; COWL FLAPS - OPEN. TAKE-OFF SPEEDS (ALL WEIGHTS): LIFT-OFF 71 KNOTS, 50 FEET 80 KNOTS. Both engines operating (normal take-off sheet, not accelerate-stop or accelerate-go). Read at zero wind component; ground_roll_ft is the value carried straight across the obstacle-height reference line (0 ft), over_50ft_ft follows the obstacle-height guide lines to 50 ft.",
+   "counts": {
+    "extrap": 15,
+    "interp": 0,
+    "poh": 35
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "3900": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1825
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1970
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2130
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2340
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2585
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 2080
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2255
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2450
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2660
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2910
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 2345
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2560
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2770
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2990
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3245
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 2635
+      },
+      "10": {
+       "basis": "poh",
+       "v": 2870
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3120
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3390
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3710
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 2920
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3185
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3495
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3820
+      },
+      "40": {
+       "basis": "poh",
+       "v": 4160
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 3280
+      },
+      "10": {
+       "basis": "poh",
+       "v": 3620
+      },
+      "20": {
+       "basis": "poh",
+       "v": 3960
+      },
+      "30": {
+       "basis": "poh",
+       "v": 4330
+      },
+      "40": {
+       "basis": "poh",
+       "v": 4760
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 3690
+      },
+      "10": {
+       "basis": "poh",
+       "v": 4040
+      },
+      "20": {
+       "basis": "poh",
+       "v": 4420
+      },
+      "30": {
+       "basis": "poh",
+       "v": 4890
+      },
+      "40": {
+       "basis": "poh",
+       "v": 5410
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "extrap",
+       "v": 4151
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 4509
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 4933
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 5522
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 6149
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "extrap",
+       "v": 4670
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 5032
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 5507
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 6237
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 6988
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 5254
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 5616
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 6146
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 7043
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 7943
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, BEECHCRAFT Duchess 76 \u00b7 P/N 105-590000-5 (revision 105-590000-5A7) \u00b7 Takeoff",
+   "weights_lbs": [
+    3900
+   ]
+  }
+ },
  "slug": "beechcraft-duchess-76",
  "v_speeds": {
   "best_glide": 95,

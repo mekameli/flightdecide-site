@@ -1,7 +1,7 @@
 {
  "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": null,
  "limits": {
   "empty_weight_lbs": 1639,
@@ -216,6 +216,7 @@
      }
     }
    },
+   "cells_are": "rate_of_climb",
    "cells_trimmed_for_rectangular_grid": [
     {
      "axis": "pressure_altitude",
@@ -439,23 +440,23 @@
      "0": {
       "0": {
        "basis": "extrap",
-       "v": 525
+       "v": 526
       },
       "10": {
        "basis": "extrap",
-       "v": 535
+       "v": 536
       },
       "20": {
        "basis": "extrap",
-       "v": 555
+       "v": 556
       },
       "30": {
        "basis": "extrap",
-       "v": 575
+       "v": 576
       },
       "40": {
        "basis": "extrap",
-       "v": 595
+       "v": 596
       }
      },
      "1000": {
@@ -680,6 +681,7 @@
      }
     }
    },
+   "cells_are": "landing_ground_roll",
    "cells_trimmed_for_rectangular_grid": [],
    "conditions": "Flaps 30 deg, power off, maximum braking, paved level dry runway, zero wind",
    "counts": {
@@ -693,23 +695,23 @@
      "0": {
       "0": {
        "basis": "extrap",
-       "v": 1250
+       "v": 1251
       },
       "10": {
        "basis": "extrap",
-       "v": 1275
+       "v": 1276
       },
       "20": {
        "basis": "extrap",
-       "v": 1315
+       "v": 1316
       },
       "30": {
        "basis": "extrap",
-       "v": 1340
+       "v": 1341
       },
       "40": {
        "basis": "extrap",
-       "v": 1370
+       "v": 1371
       }
      },
      "1000": {
@@ -1143,23 +1145,23 @@
      "0": {
       "0": {
        "basis": "extrap",
-       "v": 835
+       "v": 843
       },
       "10": {
        "basis": "extrap",
-       "v": 905
+       "v": 913
       },
       "20": {
        "basis": "extrap",
-       "v": 965
+       "v": 975
       },
       "30": {
        "basis": "extrap",
-       "v": 1045
+       "v": 1055
       },
       "40": {
        "basis": "extrap",
-       "v": 1125
+       "v": 1136
       }
      },
      "1000": {
@@ -1384,6 +1386,7 @@
      }
     }
    },
+   "cells_are": "takeoff_ground_roll",
    "cells_trimmed_for_rectangular_grid": [
     {
      "axis": "pressure_altitude",
@@ -1403,23 +1406,23 @@
      "0": {
       "0": {
        "basis": "extrap",
-       "v": 1490
+       "v": 1506
       },
       "10": {
        "basis": "extrap",
-       "v": 1610
+       "v": 1626
       },
       "20": {
        "basis": "extrap",
-       "v": 1725
+       "v": 1744
       },
       "30": {
        "basis": "extrap",
-       "v": 1850
+       "v": 1871
       },
       "40": {
        "basis": "extrap",
-       "v": 1985
+       "v": 2007
       }
      },
      "1000": {

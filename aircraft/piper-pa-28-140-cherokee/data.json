@@ -1,7 +1,7 @@
 {
- "data_version": 1,
+ "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "icao_type": "P28A",
  "limits": {
   "empty_weight_lbs": 1250,
@@ -12,7 +12,669 @@
  },
  "manufacturer": "Piper",
  "name": "Piper PA-28-140 Cherokee",
- "performance": {},
+ "performance": {
+  "climb": {
+   "cells": {
+    "2150": {
+     "0": {
+      "20": {
+       "basis": "poh",
+       "v": 595
+      },
+      "40": {
+       "basis": "poh",
+       "v": 490
+      }
+     },
+     "1000": {
+      "20": {
+       "basis": "poh",
+       "v": 540
+      },
+      "40": {
+       "basis": "poh",
+       "v": 430
+      }
+     },
+     "2000": {
+      "20": {
+       "basis": "poh",
+       "v": 480
+      },
+      "40": {
+       "basis": "poh",
+       "v": 370
+      }
+     },
+     "3000": {
+      "20": {
+       "basis": "poh",
+       "v": 430
+      },
+      "40": {
+       "basis": "poh",
+       "v": 320
+      }
+     },
+     "4000": {
+      "20": {
+       "basis": "extrap",
+       "v": 380
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 270
+      }
+     }
+    }
+   },
+   "cells_are": "rate_of_climb",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "CLIMB PERFORMANCE. TAKEOFF GROSS WEIGHT 2150 LBS. FLAPS 0 deg. POWER - FULL THROTTLE. MIXTURE - LEAN PER LYCOMING INSTRUCTIONS. 89 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE-FEET (0 to 14000) against RATE OF CLIMB-FEET PER MINUTE (0 to 1400, labelled every 200). A single line; no temperature axis. The drawn line stops at about 20 fpm / 12,900 ft density altitude and does not reach the axis. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+   "counts": {
+    "extrap": 2,
+    "interp": 0,
+    "poh": 8
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974 \u00b7 Climb",
+   "weights_lbs": [
+    2150
+   ]
+  },
+  "landing": {
+   "cells": {
+    "2150": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 511
+      },
+      "20": {
+       "basis": "poh",
+       "v": 540
+      },
+      "30": {
+       "basis": "poh",
+       "v": 565
+      },
+      "40": {
+       "basis": "poh",
+       "v": 585
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 546
+      },
+      "20": {
+       "basis": "poh",
+       "v": 565
+      },
+      "30": {
+       "basis": "poh",
+       "v": 590
+      },
+      "40": {
+       "basis": "poh",
+       "v": 610
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 570
+      },
+      "20": {
+       "basis": "poh",
+       "v": 590
+      },
+      "30": {
+       "basis": "poh",
+       "v": 610
+      },
+      "40": {
+       "basis": "poh",
+       "v": 630
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 590
+      },
+      "20": {
+       "basis": "poh",
+       "v": 610
+      },
+      "30": {
+       "basis": "poh",
+       "v": 630
+      },
+      "40": {
+       "basis": "poh",
+       "v": 650
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 611
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 631
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 650
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 670
+      }
+     }
+    }
+   },
+   "cells_are": "landing_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "LANDING PERFORMANCE. GROSS WEIGHT 2150 LBS. PAVED LEVEL DRY RUNWAY. POWER OFF. 40 deg FLAPS. ZERO WIND. MAXIMUM BRAKING. APPROACH AIRSPEED 71 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE, FEET (0 to 7000) against LANDING DISTANCE, FEET (200 to 1400). One weight only; GROUND ROLL and OVER 50 FT. are two labelled solid curves. Plotted against DENSITY altitude with no temperature axis. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+   "counts": {
+    "extrap": 8,
+    "interp": 0,
+    "poh": 12
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "2150": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 1051
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1090
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1125
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1160
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1096
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1125
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1160
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1190
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1121
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1160
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1195
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1230
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1180
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1200
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1230
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1270
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1242
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1241
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1271
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1311
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974 \u00b7 Landing",
+   "weights_lbs": [
+    2150
+   ]
+  },
+  "takeoff": {
+   "cells": {
+    "1950": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 662
+      },
+      "20": {
+       "basis": "poh",
+       "v": 785
+      },
+      "30": {
+       "basis": "poh",
+       "v": 930
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1070
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 796
+      },
+      "20": {
+       "basis": "poh",
+       "v": 930
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1070
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1210
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 953
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1080
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1220
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1360
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1096
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1225
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1365
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1505
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1261
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1390
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1517
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1667
+      }
+     }
+    },
+    "2150": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 755
+      },
+      "20": {
+       "basis": "poh",
+       "v": 880
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1030
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1190
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 897
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1040
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1200
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1350
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1055
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1200
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1360
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1515
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1240
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1520
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1670
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1483
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1569
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1694
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1831
+      }
+     }
+    }
+   },
+   "cells_are": "takeoff_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "TAKEOFF PERFORMANCE. FLAPS 0 deg. PAVED LEVEL DRY RUNWAY. FULL POWER BEFORE BRAKE RELEASE. ZERO WIND. EXTRAPOLATION OF CHART ABOVE 7000 FT. IS INVALID. GROSS WEIGHT: 1950 LBS. (solid curves) / 2150 LBS. (dashed curves). AIRSPEED THROUGH 50 FEET: 1950 LBS. - 72 MPH CAS; 2150 LBS. - 76 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE - FEET (0 to 7000) against TAKE-OFF DISTANCE - FEET (500 to 4000). GROUND ROLL and OVER 50 FT. are separate labelled curves, each drawn twice, once per weight; only the 2150 lb (dashed) pair was read. The sheet is plotted against DENSITY altitude and carries no temperature axis, so each cell here is the chart read at the density altitude its pressure altitude and OAT give. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+   "counts": {
+    "extrap": 16,
+    "interp": 0,
+    "poh": 24
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "1950": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 1388
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1620
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1875
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2140
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1650
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1885
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2150
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2430
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1905
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2160
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2445
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2785
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2156
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2455
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2800
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3220
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2438
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 2797
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3210
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 3734
+      }
+     }
+    },
+    "2150": {
+     "0": {
+      "10": {
+       "basis": "extrap",
+       "v": 1615
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1850
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2110
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2410
+      }
+     },
+     "1000": {
+      "10": {
+       "basis": "extrap",
+       "v": 1875
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2130
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2420
+      },
+      "40": {
+       "basis": "poh",
+       "v": 2760
+      }
+     },
+     "2000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2144
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2435
+      },
+      "30": {
+       "basis": "poh",
+       "v": 2770
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3165
+      }
+     },
+     "3000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2441
+      },
+      "20": {
+       "basis": "poh",
+       "v": 2785
+      },
+      "30": {
+       "basis": "poh",
+       "v": 3180
+      },
+      "40": {
+       "basis": "poh",
+       "v": 3640
+      }
+     },
+     "4000": {
+      "10": {
+       "basis": "extrap",
+       "v": 2779
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 3183
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 3646
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 4184
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974 \u00b7 Takeoff",
+   "weights_lbs": [
+    2150,
+    1950
+   ]
+  }
+ },
  "slug": "piper-pa-28-140-cherokee",
  "v_speeds": {
   "best_glide": 72,
