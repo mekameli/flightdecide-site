@@ -1,7 +1,72 @@
 {
-  "generated": "2026-09-23T03:43:26+00:00",
+  "generated": "2026-09-23T03:45:29+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "sys-carb-ice",
+      "slug": "carburettor-ice-on-a-warm-day",
+      "page": "/explainers/carburettor-ice-on-a-warm-day/",
+      "title": "Carburettor ice on a warm day",
+      "headline": "Your carburettor makes its own cold, whatever the OAT.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "Carburettor ice on a warm day: an illustrated diagram for pilots. Your carburettor makes its own cold, whatever the OAT. The picture shows a rendered single-engine aeroplane in level cruise, small and high in the frame, over hazy summer farmland; a large cutaway of its carburettor filling the near foreground, sectioned along the induction path so intake mouth, venturi throat and throttle plate all read; pale streamlines entering the intake mouth and squeezing through the narrow throat, with the fuel spray leaving the nozzle in that same throat; a granular rime collar around the partly closed throttle plate, feathering thinner up the bore wall behind it. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/sys-carb-ice.webp",
+      "image_full": "/assets/explainers/carburettor-ice-on-a-warm-day.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/p/DdnX_5Bm2S4/",
+      "posted": "2026-09-23",
+      "caption": [
+        "How does carburettor ice form when the outside air is well above freezing?",
+        "Fuel vaporising in the venturi absorbs heat, and the pressure drop through it cools the induction air further. The charge can end up below freezing. A warm OAT is what makes the risk easy to dismiss, and reduced power in humid air is when it shows up.",
+        "Full explainer, and the FAA sources, at the link in our bio."
+      ],
+      "teaches": [
+        "Fuel vaporisation and the pressure drop through the venturi cool the induction air substantially below ambient.",
+        "Carburettor ice is therefore possible at outside air temperatures well above freezing, particularly at high humidity and reduced power."
+      ],
+      "intent": "The temperature drop happens inside the carburettor, so ice forms on a day well above freezing.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        },
+        {
+          "ref": "AC 00-6",
+          "title": "Advisory Circular 00-6B, Aviation Weather",
+          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-6B.pdf",
+          "kind": "advisory-circular",
+          "note": "FAA advisory circular",
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "WARM, HUMID AIR HERE",
+          "points_at": "The flared intake mouth of the cutaway, where outside air enters."
+        },
+        {
+          "label": "COLDER THAN OUTSIDE AIR",
+          "points_at": "The narrow venturi throat, at the point the fuel spray leaves the nozzle."
+        },
+        {
+          "label": "ICE NARROWING THE GAP",
+          "points_at": "The rime collar on the partly closed throttle plate and the shrunken air gap past it."
+        },
+        {
+          "label": "PLATE OPEN, BORE CLEAR",
+          "points_at": "The ghost cutaway's wide-open throttle plate and clean bore."
+        }
+      ],
+      "short": "carburettor-ice",
+      "article": [],
+      "related": []
+    },
     {
       "id": "illusion-somatogravic",
       "slug": "acceleration-that-feels-like-a-climb",
