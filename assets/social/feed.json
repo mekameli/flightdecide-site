@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T06:10:08+00:00",
+  "generated": "2026-09-23T06:13:36+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -152,7 +152,12 @@
             "A pilot who feels a steep climb does the reasonable thing about it. You ease the nose down to bring it back. Since the climb was never there, what you have really done is point the aeroplane lower.",
             "That correction is worst in the first minute after takeoff. You are low, the surface below is unlit, and there is nothing outside to show the nose going down.",
             "The handbook's own summary of these demonstrations is blunt about the body. Its read on the aeroplane's attitude is wrong often enough that you cannot use it."
-          ]
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/acceleration-that-feels-like-a-climb-fig1.webp",
+            "caption": "The pilot corrects a climb that was never happening, and the real path bends down toward the water.",
+            "alt": "The pilot corrects a climb that was never happening, and the real path bends down toward the water."
+          }
         },
         {
           "heading": "Meeting it with an instructor",
