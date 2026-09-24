@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T16:30:13+00:00",
+  "generated": "2026-09-24T17:01:14+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1389,42 +1389,119 @@
       "short": "density-altitude",
       "article": [
         {
-          "heading": "Why thin air costs you",
+          "heading": "What thin air does to the same aeroplane",
           "paragraphs": [
-            "Air gets thinner for two reasons. Climb higher and there is less atmosphere left above you, pressing down. Heat the air and it expands, spreading the same molecules over more room.",
-            "Your engine breathes that air, and a thinner charge makes less power. The propeller has less to push against, so it turns that power into less thrust. The wing, meeting fewer molecules per second at the same speed, makes less lift.",
-            "All three losses come from one cause and show up together. Density altitude is how that single cause gets written down as a number."
+            "Picture one aeroplane at one weight, flown by one pilot, on two different days. On the first it lifts off with plenty of runway left. On the second it rolls and rolls before it will fly.",
+            "The difference is the air. Air density, the amount of air packed into a given space, sets how hard the air pushes back on the propeller and the wing.",
+            "Pilots put that density into a single number called density altitude. It is the height in the standard atmosphere, a reference model of pressure and temperature, where air is as dense as today's air. Your aeroplane performs as if it were at that height, whatever the field elevation says.",
+            "A high density altitude means thin air, and performance drops. A low density altitude means dense air, and performance improves."
           ]
         },
         {
-          "heading": "Why heat acts like height",
+          "heading": "How height and heat each thin the air",
           "paragraphs": [
-            "Warm air expands and cool air contracts. Picture three columns of air with the same pressure at the bottom and the top of each. The warm one stands tallest, because expansion has stretched it.",
-            "Stretching a column spreads its air over more height, which leaves less of it down low where you are rolling. Elevation does the same job by a different route. Station pressure at Denver is lower than at New Orleans before temperature has had any say.",
-            "So a hot day and a high field are not two separate problems. They push the same way, and they can arrive together."
+            "The higher you go, the less air there is above you pressing down. With less pressure on it, air spreads out, so each cubic foot holds less of it.",
+            "The standard atmosphere puts sea level at 29.92 inHg, inches of mercury, and 15.0 °C. By 5,000 feet the standard pressure is down to 24.89 inHg. That is why Denver starts with thinner air than New Orleans before the weather has any say.",
+            "Heat thins the air as well. Warm air expands and takes up more room, so the same space holds less of it. From one airport to another across the country, temperature is the biggest driver of density.",
+            "Pressure altitude is what your altimeter reads when you set it to 29.92 inHg. The FAA weather handbook takes a pressure altitude of 10,000 ft with the air at 20 °C. The density altitude there is 12,700 ft.",
+            "Humidity adds a little on top. Water vapour is lighter than dry air, so moist air is less dense, though the handbooks treat the effect as small."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/density-altitude-fig1.webp",
+            "caption": "The same space holds less air when it is warmer or higher, which leaves the propeller and wing less to work with.",
+            "alt": "The same space holds less air when it is warmer or higher, which leaves the propeller and wing less to work with."
+          },
+          "table": {
+            "caption": "Standard pressure and temperature both fall as you climb, from FAA-H-8083-25 Figure 11-2.",
+            "columns": [
+              "Altitude (ft)",
+              "Pressure (inHg)",
+              "Temperature (°C)"
+            ],
+            "rows": [
+              [
+                "0",
+                "29.92",
+                "15.0"
+              ],
+              [
+                "2,000",
+                "27.82",
+                "11.0"
+              ],
+              [
+                "5,000",
+                "24.89",
+                "5.1"
+              ],
+              [
+                "7,000",
+                "23.09",
+                "1.1"
+              ],
+              [
+                "10,000",
+                "20.57",
+                "−4.8"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Why the ground roll grows",
+          "paragraphs": [
+            "Thin air hits the aeroplane in three ways at once. The engine takes in less air, so it makes less power. The propeller has less air to push back, so it makes less thrust.",
+            "The wing loses out too. Lift comes from air pressing on the wing, and lighter air presses less at the same speed.",
+            "Here is the part that catches pilots out. Your airspeed indicator shows nothing unusual, and you rotate at the usual indicated airspeed. Your true airspeed, your real speed through the air, is higher.",
+            "A higher true airspeed means a higher groundspeed at liftoff. So the aeroplane has to run faster along the runway before it will fly. It does that with less thrust to speed it up, which adds still more runway.",
+            "None of this needs a heavier load or a sloppier technique. The aeroplane and the pilot are exactly as they were. Only the air is different."
           ]
         },
         {
-          "heading": "Where the extra roll comes from",
+          "heading": "How much longer, in the handbook's example",
           "paragraphs": [
-            "Less thrust means slower acceleration, so every knot takes longer to gain. Lift is also down at any given speed, so the aeroplane leaves the ground later than it would in denser air. Both of those get paid for in concrete.",
-            "Nothing about the aeroplane accounts for it. The weight is what you loaded, the flap setting is what you chose, and the technique is the one you always use. The distance grows on the air alone."
+            "The Pilot's Handbook of Aeronautical Knowledge, FAA-H-8083-25, works through one case. The altimeter, set to 29.92 inHg, shows a pressure altitude of 5,000 feet.",
+            "On a standard temperature day, the example has the POH, the pilot's operating handbook, calling for a ground run of 790 feet. On a standard day, pressure altitude and density altitude sit at the same level.",
+            "Now make the day 20 °C warmer than standard. The warm air expands, and the density altitude rises above 7,000 feet. The ground run in the example comes out closer to 1,000 feet.",
+            "Same runway, same aeroplane, same pilot. Those are the handbook's example figures, and your own aeroplane's numbers come from the manufacturer's performance charts."
+          ],
+          "table": {
+            "caption": "One pressure altitude, two temperatures, from the example in FAA-H-8083-25 chapter 11.",
+            "columns": [
+              "Temperature",
+              "Density altitude",
+              "Ground run"
+            ],
+            "rows": [
+              [
+                "Standard, at 5,000 ft pressure altitude",
+                "Same as pressure altitude",
+                "790 ft"
+              ],
+              [
+                "20 °C above standard, at 5,000 ft pressure altitude",
+                "Above 7,000 ft",
+                "Closer to 1,000 ft"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Why rising ground past the runway matters more",
+          "paragraphs": [
+            "Getting off the ground is only half the job. Once airborne, you still have to climb away from whatever lies past the departure end.",
+            "Thin air cuts your rate of climb, because the engine and propeller have less to give. You also fly the climb at the usual indicated airspeed, which is a faster true airspeed. Covering more ground each minute while gaining less height gives a shallower climb angle.",
+            "On a hot day at a high field, both effects land together. You leave the ground later, further down the runway, then climb more gently from that later point. Hills you clear easily on a cold morning sit closer to your path.",
+            "So a runway that is long enough is not the same as a departure that works. The climb out over the ground beyond it needs checking against the same conditions."
           ]
         },
         {
-          "heading": "The climb you have left",
+          "heading": "Working out density altitude before you go",
           "paragraphs": [
-            "The same thinness that lengthened the roll takes away climb gradient. Reduced thrust and reduced lift do not stop mattering at the moment the wheels come up.",
-            "So the two effects compound. You leave the ground further down the runway, then climb away more shallowly from that later point. Both put you lower over anything that rises ahead.",
-            "Rising ground past the departure end has not moved. Your gradient has, and that is what narrows the gap between the two."
-          ]
-        },
-        {
-          "heading": "Where your own numbers live",
-          "paragraphs": [
-            "Generalities stop here. The performance section of your AFM or POH holds the takeoff and climb figures for the aeroplane you fly. The handbook treats the use of that data as mandatory for safe and efficient operation.",
-            "It is not presented the same way by every manufacturer. Some print tables and some print graphs. The basis differs too, and a chart may be built on standard conditions, on pressure altitude, or on density altitude.",
-            "Read the basis before you read the distance off it. A figure pulled from a chart whose basis you never checked is worth very little, whatever it says."
+            "You start with pressure altitude. Set 29.92 inHg on the altimeter and read it, or correct field elevation for the current altimeter setting.",
+            "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
+            "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
+            "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
           ]
         }
       ],
