@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T19:46:12+00:00",
+  "generated": "2026-09-24T19:55:06+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -127,7 +127,88 @@
         }
       ],
       "short": "carburettor-ice",
-      "article": [],
+      "article": [
+        {
+          "heading": "Where the cold comes from",
+          "paragraphs": [
+            "Picture a warm, muggy afternoon and a long stretch at low power. The air you are flying through feels nothing like icing weather. Inside the engine, though, the air is about to get colder.",
+            "That air first enters the carburettor, the part that mixes fuel into the air before it reaches the cylinders. It flows down the bore, the tube the air travels through, and into the venturi. The venturi is a narrow throat in that tube.",
+            "Two things happen in the throat. The air speeds up and its pressure drops. At the same point, fuel sprays from a nozzle and turns from liquid into vapour.",
+            "Both steps take heat out of the air. So the air leaving the venturi is colder than the air outside the aeroplane. Everything else in this article follows from that one fact."
+          ]
+        },
+        {
+          "heading": "Why a pressure drop cools the air",
+          "paragraphs": [
+            "You have met this effect before, in weather. A parcel of air that rises moves into lower pressure and expands. Expanding takes energy, and that energy comes out of the air as heat.",
+            "The FAA's Aviation Weather handbook, AC 00-6B, gives the rate for the atmosphere. Dry rising air cools approximately 3 °C per 1,000 feet. That rate is called the dry adiabatic lapse rate, adiabatic meaning no heat moves in or out of the parcel.",
+            "The venturi works on the same idea, only across a few inches of metal instead of thousands of feet. The source gives no figure for how far the air cools there. Take the lapse rate as proof of the physics, and don't treat it as a measure of the carburettor.",
+            "Fuel vaporising adds a second drop on top. Liquid fuel needs heat to become vapour. It takes that heat from the air right around the spray."
+          ]
+        },
+        {
+          "heading": "Where the water in the ice comes from",
+          "paragraphs": [
+            "Ice needs water. Humid air carries plenty of it as vapour you cannot see. The dewpoint is the temperature at which that air would be saturated, holding all the vapour it can.",
+            "When air cools, its temperature falls toward its dewpoint. The gap between the two is the temperature-dewpoint spread. As the spread closes, the relative humidity climbs.",
+            "AC 00-6B works an example. A parcel starts at 18 °C with a dewpoint of 13 °C. It cools 3 °C per 1,000 feet as it rises while its dewpoint falls only 0.5 °C, so it saturates at 2,000 feet.",
+            "Once air is saturated, more cooling forces water out of it. In the sky that water becomes cloud. In the carburettor throat, it is the moisture that freezes onto the throttle plate in the picture above."
+          ],
+          "table": {
+            "caption": "How an air parcel's temperature, dewpoint and humidity change as it moves, from AC 00-6B Table 11-1.",
+            "columns": [
+              "Parcel",
+              "Temperature change",
+              "Dewpoint change",
+              "Relative humidity"
+            ],
+            "rows": [
+              [
+                "Unsaturated, rising",
+                "-3 °C/1,000 ft",
+                "-0.5 °C/1,000 ft",
+                "Increases"
+              ],
+              [
+                "Saturated, rising",
+                "-1.2 °C to -3 °C/1,000 ft",
+                "Identical to temperature change",
+                "100%"
+              ],
+              [
+                "Unsaturated, descending",
+                "+3 °C/1,000 ft",
+                "+0.5 °C/1,000 ft",
+                "Decreases"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Why a warm day still allows ice",
+          "paragraphs": [
+            "Your outside air temperature, the OAT, describes the air outside the cowling. It tells you nothing direct about the air in the venturi. That air has already been cooled on its way in.",
+            "The temperature that matters is the one inside the carburettor. That is why carburettor ice is possible with the OAT well above freezing. The warm number on the gauge is measured in the wrong place for this problem.",
+            "This is also what makes carburettor ice easy to miss. A warm day feels like the wrong day for it. A pilot who judges the risk by the OAT alone may never think of it at all."
+          ]
+        },
+        {
+          "heading": "When the risk is highest",
+          "paragraphs": [
+            "Two conditions raise the risk most. The first is high humidity, and the section on dewpoint explains why. Moist air already sits close to its dewpoint, so it takes less cooling to reach saturation.",
+            "The second is reduced power. The throttle controls the flow of fuel and air to the engine through the throttle plate, a flap across the bore. At a low power setting that plate sits partly closed.",
+            "The picture above shows what that costs you. Ice builds on the edge of the plate and shrinks the gap the air still has. Put humid air and a low power setting together and you have the conditions the risk favours."
+          ]
+        },
+        {
+          "heading": "Humidity and low power are not limits",
+          "paragraphs": [
+            "Read the wording closely. Carburettor ice is possible particularly at high humidity and reduced power. Particularly marks the most likely cases and leaves the rest open.",
+            "Drier air or a higher power setting lowers the odds. Neither one rules ice out. Treat those conditions as the likely cases, and never as the only ones.",
+            "The source gives no temperature range and no humidity figure that marks a safe day. Without one, a warm OAT and a dry feel to the air are no reason to stop thinking about it."
+          ]
+        }
+      ],
       "related": []
     },
     {
