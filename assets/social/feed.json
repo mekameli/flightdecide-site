@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T23:05:15+00:00",
+  "generated": "2026-09-24T23:10:55+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1871,7 +1871,88 @@
         }
       ],
       "short": "lee-side",
-      "article": [],
+      "article": [
+        {
+          "heading": "Where the air goes after a ridge",
+          "paragraphs": [
+            "Picture a steady wind blowing across a long ridge. The ridge forces that air up its windward face, the side the wind meets first. Once the air clears the crest, it heads back down the other side.",
+            "Why it comes back down is about stability. In stable air, air that has been lifted ends up heavier than the air around it. Gravity then pulls it back toward the level it came from.",
+            "It does not stop neatly at that level. Its momentum carries it too far, and on the way down it is warmed by compression until it is lighter than its surroundings. So it rises again, overshoots again, and keeps swinging up and down until the motion dies out.",
+            "That repeating up and down is a mountain wave, a wave in the air set up by the terrain. The handbook says a wave forms when the wind is strong enough and the air is stable. In unstable air with enough moisture, the same lift builds deep clouds or thunderstorms instead."
+          ]
+        },
+        {
+          "heading": "Why the lee side sinks so hard",
+          "paragraphs": [
+            "The downwind side of a ridge is called the lee side. When the wind blows roughly at right angles to the ridge, the air is pushed up and then sped up as it crosses the crest and runs down the lee slopes.",
+            "So on the lee side you are not in still air with a little sink in it. You are in air that is travelling downhill, and travelling fast. The handbook warns that these downdrafts can be faster than an aircraft can climb.",
+            "It singles out airplanes with high wing loading and high power loading. Wing loading is the weight each part of the wing has to carry. Power loading is the weight each unit of engine power has to lift.",
+            "How big the wave gets depends on the terrain and the wind. Its amplitude, how far the air is pushed up and down, is larger when the range stands higher above the land around it. A stronger wind across the ridge at mountaintop level also makes it larger.",
+            "Big mountains are not required. The handbook says even very modest terrain can produce appreciable wave activity when conditions are right."
+          ]
+        },
+        {
+          "heading": "Why nose up does not mean going up",
+          "paragraphs": [
+            "Your aircraft climbs relative to the air it is flying in. Pitch up, set climb power, and it rises through that body of air at its normal rate.",
+            "Now let that whole body of air sink faster than your climb rate. The two add together, and the result is a loss of height. You are climbing through the air while the air carries you down.",
+            "This is what makes the lee side confusing. The attitude indicator shows a climb attitude and the engine is at climb power. The altimeter keeps unwinding anyway.",
+            "The picture in the windscreen and the feel of the controls both say climb. Only the altimeter and the vertical speed indicator tell you the truth. On the lee side of a ridge, those are the instruments to believe."
+          ]
+        },
+        {
+          "heading": "How strong the downdrafts get",
+          "paragraphs": [
+            "The handbook gives figures for takeoff and landing near mountains in strong wind. Downdrafts greater than 1,500 fpm are possible. So are localized gusts in excess of 50 kt.",
+            "It also quotes a yardstick that some references use for severe wind shear. One version is wind shear that exceeds what the aircraft can do. Another is a vertical speed change greater than 500 fpm, or an airspeed change greater than 15 kt.",
+            "Put those side by side. A 1,500 fpm downdraft is three times the 500 fpm vertical change that already counts as severe by that yardstick.",
+            "Being low makes it worse. The handbook calls wind shear near the ground especially hazardous because the aircraft is so close to the terrain. It does not give a figure for sink rates at cruise height over a ridge, so none is offered here."
+          ],
+          "table": {
+            "caption": "Figures the handbook gives for mountain downdrafts and for severe wind shear",
+            "columns": [
+              "What is measured",
+              "Figure in the handbook"
+            ],
+            "rows": [
+              [
+                "Downdrafts near mountains, takeoff and landing",
+                "greater than 1,500 fpm"
+              ],
+              [
+                "Localized gusts near mountains, takeoff and landing",
+                "in excess of 50 kt"
+              ],
+              [
+                "Severe wind shear, vertical speed change",
+                "greater than 500 fpm"
+              ],
+              [
+                "Severe wind shear, airspeed change",
+                "greater than 15 kt"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "What the handbook tells you to do",
+          "paragraphs": [
+            "When your route crosses air flowing in a mountain wave, the handbook gives two pieces of advice. Fly at turbulence penetration speed. Stay away from flying over terrain that drops away abruptly.",
+            "Turbulence penetration speed is a speed chosen for flying through rough air. The handbook passage does not give a number for it.",
+            "The terrain advice follows from how the wave works. The air follows the lee slopes downhill and speeds up as it goes. Flying over a sharp drop puts you straight into that descending flow.",
+            "The handbook adds that wind shear, a sudden change in wind speed or direction, is greatly intensified in mountain wave conditions. That holds for shear in the vertical and in the horizontal."
+          ]
+        },
+        {
+          "heading": "Why a clear sky proves nothing",
+          "paragraphs": [
+            "The classic sign of a wave is lenticular cloud. These are smooth lens or airfoil shaped clouds that sit still downwind of a range, in bands parallel to it with clear gaps between. Rotor clouds and blowing dust are other signs.",
+            "Whether any cloud forms depends on the moisture in the air upwind. The handbook says these waves frequently occur with no cloud at all. It warns that extremely severe wind events can arrive with little or no visual warning.",
+            "So the advice holds with or without lenticulars. A blue sky over a ridge on a windy day is not evidence that the air behind it is calm.",
+            "The effects are not confined to low levels. Wave effects can reach far above the peaks, at times beyond 60,000 ft. The most severe mountain wind events usually come from late autumn to early spring, when the large-scale winds are strongest."
+          ]
+        }
+      ],
       "related": []
     },
     {
