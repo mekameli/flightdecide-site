@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T22:48:11+00:00",
+  "generated": "2026-09-24T22:50:17+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1048,7 +1048,10 @@
       ],
       "teaches": [
         "An approach over unlit terrain or water removes the visual cues normally used to judge height and distance.",
-        "The result tends toward an approach lower than intended."
+        "With no surrounding ground features, the aircraft can seem higher than it actually is.",
+        "The result tends toward an approach lower than intended.",
+        "In the worst case, the aircraft lands short of the runway.",
+        "Bright runway lights with few lights around them can do the opposite, making the runway seem closer and leading to a higher approach."
       ],
       "intent": "With no lit features between you and the runway there is no visual slope information, so the approach is flown on an impression.",
       "citations": [
@@ -1090,90 +1093,7 @@
         }
       ],
       "short": "black-hole",
-      "article": [
-        {
-          "heading": "What a dark final looks like",
-          "paragraphs": [
-            "Picture a night landing at a field on the shore, with the final approach over open water. Below you there are no streetlights, no house windows and no moving cars.",
-            "Ahead sits the runway, a small frame of edge and threshold lights. That frame is the only lit thing in the whole scene.",
-            "You get the same picture over unlit farmland, desert or forest. This is called a black hole approach. It happens when you land over water or dark terrain and the runway lights are the only source of light.",
-            "On a lit approach you would barely think about this. Here the runway lights have to do all the work the ground normally does for you."
-          ]
-        },
-        {
-          "heading": "Why your eyes lose track of height",
-          "paragraphs": [
-            "On a normal night approach you judge height from much more than the runway. Roads, rooftops and lit yards slide past below you and at the edges of your view.",
-            "Those lights sit at fixed places on the ground. As you descend they spread apart and shift against the runway, and your brain reads that change as height and distance.",
-            "Your peripheral vision, the part of sight outside the spot you are looking at, does much of this work without you noticing. Over black water it has nothing to pick up.",
-            "That leaves the shape of the runway frame. On its own that shape tells you very little, so it gets hard to stay oriented. The runway can even seem to slope up or down."
-          ]
-        },
-        {
-          "heading": "Why the error pushes you low",
-          "paragraphs": [
-            "With the ground cues gone, the scene can make you feel higher than you really are. The FAA calls this the featureless terrain illusion, and it causes pilots to fly a lower approach than they want.",
-            "A pilot who feels high does the natural thing and descends a little more. Nothing outside says stop. So the extra sink carries on and the approach ends up lower than intended.",
-            "Snow can do the same thing. A blanket of fresh snow wipes out the texture of the ground, and the pilot flies low for the same reason.",
-            "Other lighting patterns near a runway push you in both directions. The table sets out the cases the FAA handbooks describe.",
-            "Notice the pattern. Anything that makes the runway seem farther away, or makes you feel higher, pulls you low. Bright runway lights against a dark surround pull you high instead."
-          ],
-          "table": {
-            "caption": "Night lighting scenes around a runway, and the approach each one tends to produce.",
-            "columns": [
-              "What you see",
-              "Tendency"
-            ],
-            "rows": [
-              [
-                "Runway lights only, over water or unlit terrain",
-                "Lower approach than desired"
-              ],
-              [
-                "Only a few lights on the terrain, so the runway looks farther away",
-                "Lower-than-normal approach"
-              ],
-              [
-                "A city in the distance on higher terrain beyond the runway",
-                "Lower-than-normal approach"
-              ],
-              [
-                "Bright runway and approach lights with few lights around them",
-                "Higher approach"
-              ]
-            ]
-          }
-        },
-        {
-          "heading": "How a low approach ends",
-          "paragraphs": [
-            "A low approach keeps you under the path you meant to fly, all the way down. In the worst case the aeroplane touches down before the runway starts.",
-            "From the seat it feels normal. The runway gets closer every second but never looks wrong enough to make you correct.",
-            "The runway frame itself gives no warning, because it still looks like a runway. So the check has to come from inside the cockpit.",
-            "Illusions are among the factors most often cited in fatal aviation accidents. That is why the FAA handbooks treat the black hole approach as a trap you plan for in advance."
-          ]
-        },
-        {
-          "heading": "What to fly by instead",
-          "paragraphs": [
-            "Your eyes cannot give you the slope here, so take it from something built for the job. An electronic glide slope shows the path on an instrument, so use it whenever there is one.",
-            "A VASI or PAPI is a set of lights beside the runway that gives you a visual reference for the approach slope. VASI stands for visual approach slope indicator and PAPI for precision approach path indicator. Use one whenever the field has it.",
-            "With no slope guidance at all, fly the approach on your flight instruments to stay oriented. Check the altimeter often, on every approach, day or night.",
-            "Many nonprecision instrument approach charts show a visual descent point, or VDP. That is the marked spot where the visual descent to the runway begins. If you ever doubt your height or your position relative to the runway, go around.",
-            "Distraction makes all of this worse. An emergency, or any other task that pulls you away from your usual routine, raises the chance of an approach accident."
-          ]
-        },
-        {
-          "heading": "How to prepare before a night flight",
-          "paragraphs": [
-            "The trap is easier to beat when you expect it. Before a night approach to an unfamiliar field, read the airport diagram and the Chart Supplement, the FAA's directory of airport details. Look for runway slope, terrain and lighting.",
-            "Check the NOTAMs, the notices that report changes and outages, for the lighting at your destination. A runway with its lights out is darker than the picture you briefed.",
-            "Review the airfield layout and its boundaries before you begin the approach. If you can, fly over an unfamiliar airport and look at it before you land.",
-            "Get instrument training before you fly in visibility under 3 miles, or where you cannot see a horizon. The FAA's own example of that case is flying over open water at night.",
-            "Give your eyes time to adjust to the dark. Full dark adaptation can take up to 30 minutes. A bright light that lasts 1 second or more sets it back for a while."
-          ]
-        }
-      ],
+      "article": [],
       "related": []
     },
     {
