@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T19:55:06+00:00",
+  "generated": "2026-09-24T20:00:11+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1493,7 +1493,84 @@
         }
       ],
       "short": "wind-correction",
-      "article": [],
+      "article": [
+        {
+          "heading": "Why your nose and your path disagree",
+          "paragraphs": [
+            "Picture yourself flying at 90 knots with a 10 knot wind blowing from right to left. Through the air you still move forward at 90 knots. But the air is moving too, so it carries you 10 nautical miles to the left every hour.",
+            "Double your speed to 180 knots and that sideways drift does not shrink. You still move 10 nautical miles left each hour. Once you are airborne, you go wherever the air mass goes, whichever way the nose points.",
+            "That leaves you with two directions. Your heading is the way the nose points. Your track is the path you actually trace over the ground. In a crosswind they differ, and the angle between them is the wind correction angle."
+          ]
+        },
+        {
+          "heading": "How far to turn into the wind",
+          "paragraphs": [
+            "To fly a straight line over the ground, you angle the nose into the wind. Point far enough upwind and the sideways push is cancelled. Your track then runs straight to where you want to go.",
+            "Three things set the size of that angle. They are the wind speed, the angle between the wind and your longitudinal axis (the line from nose to tail), and your airspeed. More wind needs a bigger angle, and more airspeed needs a smaller one.",
+            "The handbook gives a worked pair. At 100 knots with 20 knots of wind straight from the side, you turn 12° into the wind. Halve the wind to 10 knots and the correction halves to six degrees.",
+            "A boat crossing a river works the same way. The captain angles the bow upstream so the boat's own motion matches the current pushing it downstream. A slower boat or a faster river needs a bigger angle."
+          ],
+          "table": {
+            "caption": "Wind correction angle for a wind directly from the side, from the handbook's example.",
+            "columns": [
+              "Airspeed",
+              "Wind from the side",
+              "Turn into the wind"
+            ],
+            "rows": [
+              [
+                "100 knots",
+                "20 knots",
+                "12°"
+              ],
+              [
+                "100 knots",
+                "10 knots",
+                "6°"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "What happens if you point at the runway",
+          "paragraphs": [
+            "Now put yourself on final with the wind from the left. The runway sits dead ahead, so aiming the nose straight at it feels right. With no correction applied, the wind moves you sideways and you drift downwind of the centreline.",
+            "That drift builds up to the speed of the crosswind component, the part of the wind acting across your path. A wind directly from the side drifts you at its full speed. A wind at 45°, halfway between the nose and the side, drifts you at just over 70 percent of its speed.",
+            "So a nose aimed at the threshold tells you nothing about your track. Scan between references far ahead and close to the aeroplane. That is how you see whether you are holding the line or sliding off it."
+          ]
+        },
+        {
+          "heading": "Holding the crab down final",
+          "paragraphs": [
+            "The crab method, holding your heading off into the wind, puts the wind correction angle to work directly. You turn toward the wind until your wings-level ground track lines up with the runway centreline. The nose now sits off to the upwind side while you track straight down the extended centreline.",
+            "The wind rarely stays the same all the way down. Make small heading changes as needed to keep that alignment. You are flying the track, and the heading is whatever it takes to hold it.",
+            "The handbook calls the crab the easier method to keep up on final. The price comes at the bottom. Taking the crab out needs judgment and precise timing."
+          ]
+        },
+        {
+          "heading": "Taking the crab out before touchdown",
+          "paragraphs": [
+            "Tyres do not like landing sideways. When a loaded tyre's path and its heading differ, that difference is called the cornering angle, and it creates a side load. As little as 10° of cornering angle produces a side load equal to half the weight the tyre carries.",
+            "So you hold the crab until the instant before touchdown. Then you use rudder to swing the longitudinal axis into line with the direction you are moving. Straighten up too early or too late and the wheels meet the runway with a side load.",
+            "The round out, the flare just above the runway, is flown much like a normal one. You keep applying crosswind correction as needed to stop any drift. As you slow, the controls lose effect, so the correction you are holding becomes too small unless you add more."
+          ]
+        },
+        {
+          "heading": "The wing-low method holds both together",
+          "paragraphs": [
+            "The handbook recommends the wing-low method, also called a sideslip, in most cases. It keeps your track and your longitudinal axis on the centreline all the way to the ground. There is no heading change to time at the last moment.",
+            "First you use rudder to line the heading up with the runway. That leaves you in an uncorrected crosswind, so you start to drift. You then bank into the wind with aileron, just enough to cancel the drift.",
+            "More bank moves you upwind and less lets you slide downwind. Adjust both controls until you are tracking the centreline with the nose already straight. On a long final you can crab first and change smoothly to wing-low before the round out.",
+            "Keep the upwind wing down through the round out. Level the wings and the drift comes back, so you touch down moving sideways. Done well, the upwind main wheel touches first.",
+            "In a strong crosswind you lower the upwind wing further and need a lot of opposite rudder to stop the turn. If full opposite rudder still cannot hold the nose straight, the wind is too strong for that runway. Land on a better-aligned runway there or at an alternate."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/wind-correction-angle-fig1.webp",
+            "caption": "Both methods keep you on the centreline, but the crab angles the nose into the wind while the wing-low method banks into it with the nose straight.",
+            "alt": "Both methods keep you on the centreline, but the crab angles the nose into the wind while the wing-low method banks into it with the nose straight."
+          }
+        }
+      ],
       "related": []
     },
     {
