@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T20:50:04+00:00",
+  "generated": "2026-09-24T21:00:12+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1094,35 +1094,85 @@
       "short": "black-hole",
       "article": [
         {
-          "heading": "How you normally judge height",
+          "heading": "What a dark final looks like",
           "paragraphs": [
-            "Fly a night approach into a town and the ground keeps telling you where you are. Streetlights, driveways and lit rooftops slide under the nose at a rate you already know. The runway sits inside all that light.",
-            "None of it is deliberate. Your eyes compare the runway against the lit ground around it, and against the roads and houses sliding past the side windows. Height and distance come out of that comparison. Take it away and the reading stops."
+            "Picture a night landing at a field on the shore, with the final approach over open water. Below you there are no streetlights, no house windows and no moving cars.",
+            "Ahead sits the runway, a small frame of edge and threshold lights. That frame is the only lit thing in the whole scene.",
+            "You get the same picture over unlit farmland, desert or forest. This is called a black hole approach. It happens when you land over water or dark terrain and the runway lights are the only source of light.",
+            "On a lit approach you would barely think about this. Here the runway lights have to do all the work the ground normally does for you."
           ]
         },
         {
-          "heading": "Why dark ground hides the slope",
+          "heading": "Why your eyes lose track of height",
           "paragraphs": [
-            "Now put the same runway on the far side of a lake, or behind unlit farmland. The runway edge lights and the threshold lamps are the only light in the windscreen. Between you and them, nothing is lit.",
-            "Your peripheral vision, the wide outer part of your sight that reads movement, is getting nothing. The pattern that normally tells you how fast the ground is coming up is absent. So the approach gets flown on the lights alone.",
-            "A patch of lights at the far end of the dark is a poor ruler. It is hard to tell how far off it is, and harder to tell what angle you are seeing it from. That is the black hole approach, and it is a picture problem rather than a flying problem."
+            "On a normal night approach you judge height from much more than the runway. Roads, rooftops and lit yards slide past below you and at the edges of your view.",
+            "Those lights sit at fixed places on the ground. As you descend they spread apart and shift against the runway, and your brain reads that change as height and distance.",
+            "Your peripheral vision, the part of sight outside the spot you are looking at, does much of this work without you noticing. Over black water it has nothing to pick up.",
+            "That leaves the shape of the runway frame. On its own that shape tells you very little, so it gets hard to stay oriented. The runway can even seem to slope up or down."
           ]
         },
         {
-          "heading": "Which way the error goes",
+          "heading": "Why the error pushes you low",
           "paragraphs": [
-            "The impression is that you are high. Nothing contradicts it, so it sits there while you make the reasonable correction for being high, which is to let the aeroplane down. The path ends up below the one you meant to fly.",
-            "Distance drifts the same way. Dark ground with only a few lights on it makes the runway look as though it is receding, further away than it really is. A town beyond the field on higher ground pulls you the same way.",
-            "The runway can also look tilted, sloping up or down when it is doing neither. You fly the picture in front of you, because that is all there is. In the worst case it ends in a landing short of the runway."
+            "With the ground cues gone, the scene can make you feel higher than you really are. The FAA calls this the featureless terrain illusion, and it causes pilots to fly a lower approach than they want.",
+            "A pilot who feels high does the natural thing and descends a little more. Nothing outside says stop. So the extra sink carries on and the approach ends up lower than intended.",
+            "Snow can do the same thing. A blanket of fresh snow wipes out the texture of the ground, and the pilot flies low for the same reason.",
+            "Other lighting patterns near a runway push you in both directions. The table sets out the cases the FAA handbooks describe.",
+            "Notice the pattern. Anything that makes the runway seem farther away, or makes you feel higher, pulls you low. Bright runway lights against a dark surround pull you high instead."
+          ],
+          "table": {
+            "caption": "Night lighting scenes around a runway, and the approach each one tends to produce.",
+            "columns": [
+              "What you see",
+              "Tendency"
+            ],
+            "rows": [
+              [
+                "Runway lights only, over water or unlit terrain",
+                "Lower approach than desired"
+              ],
+              [
+                "Only a few lights on the terrain, so the runway looks farther away",
+                "Lower-than-normal approach"
+              ],
+              [
+                "A city in the distance on higher terrain beyond the runway",
+                "Lower-than-normal approach"
+              ],
+              [
+                "Bright runway and approach lights with few lights around them",
+                "Higher approach"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "How a low approach ends",
+          "paragraphs": [
+            "A low approach keeps you under the path you meant to fly, all the way down. In the worst case the aeroplane touches down before the runway starts.",
+            "From the seat it feels normal. The runway gets closer every second but never looks wrong enough to make you correct.",
+            "The runway frame itself gives no warning, because it still looks like a runway. So the check has to come from inside the cockpit.",
+            "Illusions are among the factors most often cited in fatal aviation accidents. That is why the FAA handbooks treat the black hole approach as a trap you plan for in advance."
           ]
         },
         {
-          "heading": "What to fly instead",
+          "heading": "What to fly by instead",
           "paragraphs": [
-            "Find a slope you are not guessing at. A visual approach slope indicator is a light system beside the runway that shows whether you are on the correct angle. An electronic glide slope, the vertical guidance on an instrument approach, does the same job.",
-            "With neither on offer, fly the panel. Altitude and rate of descent do not care how dark the ground is. They hold a normal approach when the view will not.",
-            "Read the field before you start down. Knowing the layout and where the airport ends means the lights ahead arrive as something you were expecting. Expect the illusion at an unfamiliar airport at night.",
-            "If you are unsure how high you are, or where you are against the runway, go around. Doubt is the trigger by itself."
+            "Your eyes cannot give you the slope here, so take it from something built for the job. An electronic glide slope shows the path on an instrument, so use it whenever there is one.",
+            "A VASI or PAPI is a set of lights beside the runway that gives you a visual reference for the approach slope. VASI stands for visual approach slope indicator and PAPI for precision approach path indicator. Use one whenever the field has it.",
+            "With no slope guidance at all, fly the approach on your flight instruments to stay oriented. Check the altimeter often, on every approach, day or night.",
+            "Many nonprecision instrument approach charts show a visual descent point, or VDP. That is the marked spot where the visual descent to the runway begins. If you ever doubt your height or your position relative to the runway, go around.",
+            "Distraction makes all of this worse. An emergency, or any other task that pulls you away from your usual routine, raises the chance of an approach accident."
+          ]
+        },
+        {
+          "heading": "How to prepare before a night flight",
+          "paragraphs": [
+            "The trap is easier to beat when you expect it. Before a night approach to an unfamiliar field, read the airport diagram and the Chart Supplement, the FAA's directory of airport details. Look for runway slope, terrain and lighting.",
+            "Check the NOTAMs, the notices that report changes and outages, for the lighting at your destination. A runway with its lights out is darker than the picture you briefed.",
+            "Review the airfield layout and its boundaries before you begin the approach. If you can, fly over an unfamiliar airport and look at it before you land.",
+            "Get instrument training before you fly in visibility under 3 miles, or where you cannot see a horizon. The FAA's own example of that case is flying over open water at night.",
+            "Give your eyes time to adjust to the dark. Full dark adaptation can take up to 30 minutes. A bright light that lasts 1 second or more sets it back for a while."
           ]
         }
       ],
@@ -1194,38 +1244,54 @@
       "short": "attention-narrowing",
       "article": [
         {
-          "heading": "Why the scan shrinks",
+          "heading": "What fatigue takes from your attention",
           "paragraphs": [
-            "Attention is not one supply that you either have or do not have. Part of it is the work of splitting attention across several jobs that all need some. Fatigue degrades both of those.",
-            "The task in front of you holds on to its share. The one you only glance at loses turns, and the gap between glances gets longer.",
-            "Nothing goes dark when that happens. The part of the view you take in gets narrower, and it narrows around whatever you are working on.",
-            "You go heads down to set up the approach. When you look up, the airplane has been in a slow left turn for longer than you would have allowed."
+            "You're three hours into a cross-country late in the afternoon. You're holding a heading, glancing at the engine gauges and listening for your call sign. Each of those jobs uses up some of your attention, the mental focus you spend on whatever you're watching or doing.",
+            "Fatigue is the tiredness that comes from too little sleep, and it wears that focus down. The FAA's Risk Management Handbook says fatigue can degrade your thinking skills and your ability to make decisions. Attention is one of the first things those skills depend on.",
+            "The handbook also records that fatigued pilots have fallen asleep while flying. That is the obvious failure, and it is rare. The more common effects are subtle, and they don't come with anything as clear as your eyes closing."
           ]
         },
         {
-          "heading": "Why self-assessment misses it",
+          "heading": "Why juggling two jobs gets harder",
           "paragraphs": [
-            "The degradation is difficult to judge from inside your own head. The judgement about whether you are fit to fly runs on the faculty the fatigue is degrading.",
-            "There is also nothing that presents as missing. A narrow scan returns a sharp read of a small area, and it reports nothing at all about the rest.",
-            "So the picture you hold of your own coverage stays wide while the coverage itself shrinks. You are working from the version you had on a rested morning flight.",
-            "Traffic is the plain case. It sits in the windscreen, outside the band you are sampling, and leaves nothing behind for you to remember afterwards."
+            "Flying alone means running several tasks at once. You keep the wings level while copying a frequency change. You check the fuel while watching the sky ahead. Keeping more than one of these going is called dividing your attention.",
+            "Fatigue degrades your ability to divide attention between tasks. One job keeps its full share and the others get less than they need. The airplane keeps flying, so from the inside it feels like normal work.",
+            "This is what narrowing means here. Your scan is the regular sweep of your eyes across the instruments and outside. It covers less than you think it does, and no warning light comes on when it shrinks.",
+            "Look at what that does to a normal cockpit task. Copying a squawk code is a small job, but on a tired day it can take all your attention. For those seconds, nothing else is being watched."
           ]
         },
         {
-          "heading": "Where it costs the most",
+          "heading": "Why you can't feel it happening",
           "paragraphs": [
-            "Workload is not level from taxi to shutdown. The tasks increase sharply in the landing phase, and that phase demands more precision and attention than cruise does.",
-            "It is also the phase that asks you to hold several jobs at once. You watch airspeed and path while you change configuration, work the radio and look for other airplanes.",
-            "The accident record is concentrated in the same places. Landing accounts for 24.1 percent of general aviation accidents and takeoff for 23.4 percent. Approximately 80 percent of all aviation accidents are related to human factors.",
-            "The hours that tire you out come before the approach, not after it. Your narrowest scan of the day and the busiest flying of the day arrive together."
+            "The handbook calls fatigue one of the most insidious hazards to flight safety. Insidious means it does its damage quietly. You may not notice it at all until you have already made a serious error.",
+            "The reason is that you are checking yourself. The handbook describes the single pilot as their own quality control. When you're fatigued, the inspector is worn down along with the work being inspected.",
+            "It gives a plain example. Ask a pilot who has flown 16 hours whether they are too tired to keep flying. The answer may well be no.",
+            "Wanting to finish the trip makes that answer less reliable. Most pilots are goal oriented, the handbook says. When offered a flight, they tend to play down their own limits and give too much weight to things that don't matter to the flight."
           ]
         },
         {
-          "heading": "What to use instead",
+          "heading": "Why flying alone makes it harder to catch",
           "paragraphs": [
-            "Fitness gets judged against a written checklist because the feeling is not evidence. A list asks you things you answer by counting and by looking at a clock.",
-            "Personal minimums work the same way. You set them in advance and build them into habit, so the number exists before you have to apply it.",
-            "A written answer will never tell you that you are sharp. It tells you whether you are inside a limit you drew while you could still see well enough to draw it."
+            "A single pilot has no other crew member to consult. Nobody else is there to weigh the hazards with you. The handbook says this gives the single pilot a greater vulnerability than a full crew.",
+            "It points to helicopter emergency medical pilots as an example. They have been known to give heavy weight to the patient's welfare. Meanwhile they fail to properly count real hazards such as fatigue or weather.",
+            "You probably won't have a patient on board. Anything you badly want from the flight can play the same part, though. A passenger waiting at the other end is enough to make tiredness seem smaller than it is."
+          ]
+        },
+        {
+          "heading": "Why a checklist judges your fitness",
+          "paragraphs": [
+            "Your own sense of alertness is hard to trust, so the handbook relies on a checklist instead. It names IMSAFE as one of the best ways a single pilot can judge physical and mental readiness. The letters stand for Illness, Medication, Stress, Alcohol, Fatigue and Emotion.",
+            "The fatigue item asks two things. Are you tired, and have you had enough rest? Those are facts about your sleep, and you can answer them without trusting how you feel.",
+            "The handbook says risk tools like this share one aim, which is judging risk objectively. The question stays the same however badly you want to go. That matters most on the days when your feeling says you're fine."
+          ]
+        },
+        {
+          "heading": "What sleep fixes and what it doesn't",
+          "paragraphs": [
+            "Fatigue can come from not sleeping enough, and a good sleep corrects that kind. The handbook calls it acute fatigue, meaning the short-term kind. One night of rest takes care of it.",
+            "Chronic fatigue, the kind that builds up over time and hangs on, is different. It can have several causes at once. The handbook says it needs more looking into and more of a fix than sleep alone.",
+            "Two other things can make fatigue worse. Hypoxia, a shortage of oxygen reaching your body, can intensify it. Your emotional state can do the same.",
+            "That's why a full night's sleep answers only part of the fatigue question. A long, stressful day before a flight can leave your attention narrower than the hours of rest suggest."
           ]
         }
       ],
