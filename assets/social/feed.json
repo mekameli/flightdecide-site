@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T21:10:17+00:00",
+  "generated": "2026-09-24T21:20:07+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1790,43 +1790,63 @@
       "short": "lee-side",
       "article": [
         {
-          "heading": "Why the air sinks there",
+          "heading": "What the wind does at a ridge",
           "paragraphs": [
-            "The wind does not stop at the ridge. When the air is stable and the wind is strong, the whole layer gets lifted over the top.",
-            "Gravity pulls it back down, and it does not stop at the level it came from. Momentum then carries it well below that height before it begins to rise once more.",
-            "That descending stretch is the lee-side downdraft. It sits on the downwind side, right where you are still trying to climb."
+            "Picture yourself flying toward a ridge with the wind at your back. The air ahead of you reaches the ridge first. It has to go somewhere, and most often it goes over or around.",
+            "The side of the ridge facing into the wind is the windward side. The side facing away is the lee side. That is the side you arrive on after you cross.",
+            "What the air does next depends on how stable it is. Stable air is air that resists being pushed up or down. When stable air meets a ridge in a strong enough wind, a wave forms.",
+            "Unstable air behaves differently. It tends to keep rising and, given enough moisture, builds deep clouds or thunderstorms. This article is about the stable case, where the lifted air comes back down."
           ]
         },
         {
-          "heading": "Climbing through air that is falling",
+          "heading": "Why the air sinks behind the ridge",
           "paragraphs": [
-            "Your climb rate is measured against the air around you, not against the ground. When that air is sinking faster than you climb, your height falls while the wing keeps climbing.",
-            "A light aircraft does not have a large climb rate to spend. Set a descending air mass against it and the sum can come out below zero. You sink.",
-            "Nothing in the cockpit picture changes while this happens. The attitude holds and the airspeed sits where you put it. Only the vertical speed and the terrain ahead tell you anything is wrong."
+            "Stable air that has been lifted ends up heavier than the air around it at its new height. Gravity pulls it back toward the level it started from. Once it clears the crest, nothing holds it up.",
+            "So it drops down the lee side, and it gathers speed as it goes. The handbook describes the air accelerating as it passes over the crest and down the lee slopes.",
+            "The fall does not stop neatly at the old level. Momentum carries the air past it. Squeezed by the higher pressure lower down, it warms and becomes lighter than its surroundings.",
+            "Now it rises again, overshoots again, and keeps swinging up and down until the motion dies out. That swing is a gravity wave, named for the force that keeps pulling the air back.",
+            "The first downward leg of that swing sits right behind the ridge. That is exactly where you are in the minutes after a crossing."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/lee-side-downdraft-fig1.webp",
+            "caption": "Lifted stable air falls back past its starting level behind the ridge, then oscillates downwind until the swings fade.",
+            "alt": "Lifted stable air falls back past its starting level behind the ridge, then oscillates downwind until the swings fade."
+          }
+        },
+        {
+          "heading": "How fast the sinking air can go",
+          "paragraphs": [
+            "Your climb rate in a light aircraft has a ceiling. The weight, the air density and the power you have set it. The sinking air on the lee side does not care what that number is.",
+            "The handbook's turbulence chapter lists downdrafts faster than an aircraft can climb as a real concern near mountains. It says downdrafts greater than 1,500 fpm are possible, with localized gusts over 50 kt.",
+            "Find your own best rate of climb in your POH, the pilot's operating handbook for your airplane. Put it next to 1,500 fpm. If the air sinks faster than you climb through it, you lose height.",
+            "The handbook does not give one downdraft speed for every ridge. How strongly the wave moves the air depends on the wind across the ridge, the stability of the air, and the height and shape of the terrain."
           ]
         },
         {
-          "heading": "When a ridge makes waves",
+          "heading": "Nose up and still losing height",
           "paragraphs": [
-            "A wave needs strong wind and stable air upwind of the ridge. Take away either one and the air behaves in another way.",
-            "Weak wind can leave the mountains acting as a dam, holding the air back on the upwind side. Unstable air that carries enough moisture tends to build convective cloud rather than a smooth wave. Neither of those is the lee-side case.",
-            "Season matters. Late autumn through early spring is when the large-scale winds run strongest, and that is when the worst mountain wind events show up."
+            "Now put yourself in the cockpit on the lee side. Climb power is set and the nose sits at your usual climb attitude. Out the windshield it looks like every climb you have flown.",
+            "That attitude sets how fast you climb through the air around you. It tells you nothing about what that air is doing. If the whole mass of air is sinking, you are climbing inside something that is going down.",
+            "Your height over the ground is the two added together. Your climb through the air, minus the air's own descent, can come out below zero.",
+            "When it does, you are pitched up, at climb power, and losing height. The picture outside stays steady the whole time. Nothing in the attitude changes to warn you."
           ]
         },
         {
-          "heading": "Where the sinking air sits",
+          "heading": "The instruments that show the sink",
           "paragraphs": [
-            "The descending air is part of a wave, so it repeats. Past the first trough the air swings back up and then overshoots once more. The oscillation fades downstream.",
-            "That gives you bands of sinking air separated by bands of rising air. Crossing them, the vertical speed swings one way and then the other. One good climb through a rising band does not mean the sink is behind you.",
-            "The handbook names two shapes for this. A vertically propagating mountain wave and a trapped lee wave can both be present, and each can be hazardous. The name matters less than the sink."
+            "Pitch and power are what you put in. The altimeter shows what you actually get. So does the vertical speed indicator, the gauge that shows your rate of climb or descent.",
+            "In calm air the inputs and the outputs agree. Because they usually agree, it is easy to treat a climb attitude as proof of a climb.",
+            "Behind a ridge they can disagree. The attitude says climb while the altimeter unwinds and the vertical speed needle points down.",
+            "When that happens, the altimeter is the one telling you where you are. The attitude only tells you what you asked the airplane to do."
           ]
         },
         {
-          "heading": "What you might see first",
+          "heading": "Where else the sinking air turns up",
           "paragraphs": [
-            "Sometimes the flow announces itself. Lenticular cloud and blowing dust mark mountain flow that is under way. Rotor cloud under the wave is another sign.",
-            "The handbook is direct about the other case, where severe wind events happen with little or no visual warning. A clear sky over a ridge is not a promise that the lee side is quiet.",
-            "The ridge bends the wind and breaks it into eddies at the same time. Those run from a few centimeters to tens or hundreds of kilometers across. The ride through them can be smooth or violent."
+            "The sink is not limited to the slope right behind the crest. Some waves carry on far downwind as a train of rises and falls. These are called trapped lee waves, because their energy stays below a certain height.",
+            "They often show up as lens-shaped clouds lined up in bands parallel to the ridge, downstream from it. They also often form with no cloud at all. The handbook flags them for takeoff, landing and en route flight below flight level 250.",
+            "The size of the ridge is not a safe guide either. The handbook notes that even modest terrain can produce real wave activity. Its own simulation of trapped lee waves sits behind a 300-m-high mountain.",
+            "Other waves travel upward instead of downwind. Their effects can reach far above the peaks, at times beyond 60,000 ft. Aircraft at almost any height can meet the altitude swings they cause."
           ]
         }
       ],
