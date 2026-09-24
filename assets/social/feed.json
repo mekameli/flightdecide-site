@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T21:00:12+00:00",
+  "generated": "2026-09-24T21:10:17+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -671,35 +671,52 @@
       "short": "fuel-cannot",
       "article": [
         {
-          "heading": "Why full tanks are not full",
+          "heading": "What a full tank does not tell you",
           "paragraphs": [
-            "You top the tanks, watch the fuel rise to the filler neck, and call them full. Full is the tanks holding all they can. Some of what is in there will never reach the engine.",
-            "Fuel leaves the tank through a pickup, an opening the fuel line feeds from. That pickup sits a short way above the floor of the tank. Fuel lying below that opening has nothing there to draw it up.",
-            "So the tank carries two quantities at the same time. Total fuel is all of it. Usable fuel is the part the engine can be fed, and it is the smaller figure."
+            "You fill the tanks to the top of the filler neck and cap them. The number printed on the tank, or on the fuel gauge placard, is the total the tanks hold. Some of that fuel will never reach the engine.",
+            "That leftover share is called unusable fuel, the fuel that stays in the tanks and lines and cannot be relied on in flight. Whatever is left after you take it away is usable fuel, the fuel the engine can actually burn.",
+            "Pilots often treat the gap between the two as a rounding error. It is not. The manufacturer measures it and publishes it for your aircraft type. A full tank tells you what you carry, and the usable figure tells you what you can burn."
           ]
         },
         {
-          "heading": "Why engines quit with fuel aboard",
+          "heading": "Why some fuel never reaches the engine",
           "paragraphs": [
-            "Between the tank and the cylinders sits a pump, and pumps are built to move liquid. Once the fuel level drops below the pickup, the pump is drawing air. The engine gets nothing it can burn.",
-            "Picture the last of it sliding along the tank floor while the propeller winds down. That is fuel starvation, fuel aboard the aircraft that never arrives at the engine. The tanks are not empty. The engine is.",
-            "Some engines are fuel injected, with the fuel sprayed in at the cylinder intake ports. Others mix it with the incoming air in a carburetor first. Neither one can use fuel the pump cannot lift out of the tank."
+            "Fuel has a long way to travel before it burns. In a fuel-injected engine it leaves the tank and passes through an engine-driven fuel pump. Then it goes to a fuel-air control unit, which does the job a carburetor would do.",
+            "From there the fuel runs to a fuel manifold, the valve that splits it between cylinders. Discharge nozzles in each cylinder head then spray it into the intake ports. An auxiliary fuel pump backs up the engine-driven pump for starting and emergencies.",
+            "The whole chain draws from the tank through an outlet called the pickup. Fuel lying below that outlet, or trapped in the shape of the tank floor, cannot be drawn into the lines. It is still fuel, and it still shows as part of the total, but the engine cannot use it."
           ]
         },
         {
-          "heading": "Where the real number lives",
+          "heading": "Where the usable number comes from",
           "paragraphs": [
-            "The flight manual approved for your aircraft gives the usable figure, and that is the one you plan with. It is a published number. Somebody wrote that figure into the table for this aircraft, and it is there to be read before you fly.",
-            "Find the fuel section of the manual and read the usable figure for your aircraft. Write it down before you work out anything else. Every later number in the plan rests on that one line.",
-            "The gap between the two figures is not slack in the measurement. It is a stated quantity for that aircraft. Treat it as a rounding error and your plan ends up counting on fuel you were told not to count on."
+            "You do not work out unusable fuel yourself. The manufacturer establishes it, and it is written in the approved flight manual for your aircraft. That manual is called the airplane flight manual (AFM) or the pilot's operating handbook (POH).",
+            "This is the same place the manufacturer publishes other limits you must respect. The fore and aft limits for the center of gravity, the balance point of the loaded aircraft, sit in the AFM or POH. They also appear in the Type Certificate Data Sheet (TCDS), the aircraft's official specification.",
+            "Look in the fuel section of your AFM or POH. You will find total capacity and usable capacity listed as separate figures. Two aircraft that look alike on the ramp can carry different numbers, so read the manual for the one you are flying."
           ]
         },
         {
-          "heading": "What this changes in your planning",
+          "heading": "What the unusable fuel still costs you",
           "paragraphs": [
-            "Run the numbers against total capacity and you've spent fuel that was never yours. It does not show up early. The shortfall turns up at the end of the leg, which is the worst end to find it.",
-            "The hours you can stay up and the distance you can cover both come off the usable figure. Start from the wrong one and every line after it is wrong by the same amount. The error travels all the way to the bottom of the page.",
-            "The unusable part has weight, and you carry it the whole flight. Weight aboard costs you performance whether or not you can burn it. So it belongs in the weight you plan, not in the fuel you plan."
+            "Unusable fuel gives you no range, but it does not weigh nothing. Gasoline weighs 6 pounds per gallon. Every gallon trapped in the tank is 6 pounds you carry for the whole flight.",
+            "Weight matters because too much of it hurts nearly every part of performance. An overloaded aircraft needs a longer takeoff run and climbs more slowly. It also stalls at a higher speed and needs a longer landing roll.",
+            "During a flight, burning fuel is normally the only change in weight. As the usable fuel goes, the aircraft gets lighter and performs better. The unusable fuel stays aboard, so it counts as weight from engine start to shutdown.",
+            "Where fuel sits also affects balance. If you feed the engine unevenly from tanks on one side, the aircraft becomes wing-heavy. Holding it level with trim or control pressure adds drag and wastes fuel you had planned to use."
+          ]
+        },
+        {
+          "heading": "What happens when the plan uses total fuel",
+          "paragraphs": [
+            "Picture two plans for the same trip. One divides the total capacity by the fuel burn. The other divides the usable capacity. The first plan promises you minutes of flight that the tanks cannot deliver.",
+            "When the usable fuel runs out, the engine stops getting fuel even though the tanks are not dry. That is fuel starvation, the engine quitting because fuel no longer reaches it. The gauge and the tank may both suggest fuel is still aboard.",
+            "Restarting is not a sure thing either. Fuel-injected engines have a known weakness here. Restarting one that quit from fuel starvation brings its own problems, so an engine that stops this way does not reliably come back."
+          ]
+        },
+        {
+          "heading": "How to plan from the usable figure",
+          "paragraphs": [
+            "Start every fuel calculation with the usable capacity from the AFM or POH, never the total. If the tanks are not full, work out how much usable fuel is actually aboard. Only that quantity goes into your time and range sums.",
+            "Treat the usable figure as a ceiling, not a target. Your plan should land with fuel still in the tanks, including the reserve the regulations require. Those reserve rules come from the regulations, and the source here does not give their figures.",
+            "Carrying less fuel to save weight is a fair choice, but it trades away range. If you remove fuel to get under a weight limit, redo the fuel plan with the smaller usable quantity. Then check the new figure still covers the trip and the reserve."
           ]
         }
       ],
