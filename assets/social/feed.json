@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T20:25:13+00:00",
+  "generated": "2026-09-24T20:50:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1298,43 +1298,81 @@
       "short": "stall-speed",
       "article": [
         {
-          "heading": "What the wing has to do",
+          "heading": "Why a steep turn stalls sooner",
           "paragraphs": [
-            "You roll into a bank at altitude and hold your height. The wing now has two jobs. It still carries the weight of the airplane, and on top of that it has to bend your path into a circle.",
-            "Doing both takes more lift than flying straight took. You get that lift by pulling back. Back pressure raises the angle of attack, which is the angle at which the wing meets the oncoming air.",
-            "Steepen the bank and the wing needs more lift again. That is the chain the whole subject hangs on. Bank costs lift, and lift costs angle."
+            "Picture yourself holding altitude at a steady airspeed and rolling into a 60 degree bank. The airspeed has not changed. Yet the airplane is now closer to a stall than it was a moment ago.",
+            "The reason is the extra work the wing is doing. In a level turn it has to hold up the airplane's weight and pull it around the corner at the same time. The steeper the bank, the harder the wing works.",
+            "That extra work has a name, load factor, and the stall speed rises with it. At 60 degrees of bank, the FAA's Airplane Flying Handbook puts the rise at 41 percent over the wings level stall speed."
           ]
         },
         {
-          "heading": "Where the extra load comes from",
+          "heading": "What load factor means",
           "paragraphs": [
-            "Lift you add has to be felt somewhere. Load factor is the name for it. It compares the lift the wing is making with what the airplane weighs.",
-            "Wings level, that figure is 1 G. The wing lifts what the airplane weighs and no more. Steepen the bank in a level turn and the figure climbs with it.",
-            "The outward pull of a turn, which handbooks call centrifugal force, adds to the weight the wing has to support. Keep the ball centered and hold a level turn at 60 degrees of bank. The load factor is 2 G."
+            "Load factor is the load the wing carries compared with the airplane's weight. Flying straight and level, the wing carries exactly the weight, and that is 1G. At 2G the wing is carrying twice the weight.",
+            "In a turn, the wing's lift tilts with the airplane. Part of it now points toward the center of the turn and pulls you around. Only the rest is left pointing up against the weight.",
+            "To stay level, you ask the wing for more lift in total. The more you bank, the more of that lift goes sideways, and the more total lift you need. So in a level turn, load factor grows with bank angle.",
+            "In a coordinated, level 60 degree bank, the load factor is 2G. Coordinated means the ball in the slip/skid indicator is centered. The wing is now holding up twice the airplane's weight at the same airspeed."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/stall-speed-rising-with-bank-angle-fig1.webp",
+            "caption": "In the bank, the tilted lift has to grow to twice the weight so that its upward part still matches the weight.",
+            "alt": "In the bank, the tilted lift has to grow to twice the weight so that its upward part still matches the weight."
+          }
+        },
+        {
+          "heading": "How the square root sets the number",
+          "paragraphs": [
+            "Stall speed does not rise at the same rate as load factor. It rises with the square root of the load factor. So when the load doubles, the stall speed goes up by 41 percent rather than doubling.",
+            "That softens the jump, but only a little. A 41 percent rise is a big change to a number that is easy to treat as fixed.",
+            "Take the wings level stall speed you learned for your own airplane. In a coordinated, level 60 degree bank, the stall comes at that figure plus 41 percent. The handbook gives no stall speed for any one airplane, so do the sum with yours."
+          ],
+          "table": {
+            "caption": "The same airplane at the same airspeed, wings level and in a level 60 degree turn.",
+            "columns": [
+              "Condition",
+              "Load factor",
+              "Stall speed"
+            ],
+            "rows": [
+              [
+                "Wings level",
+                "1G",
+                "The 1G stall speed"
+              ],
+              [
+                "Coordinated, level 60 degree bank",
+                "2G",
+                "41 percent above the 1G stall speed"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Why the stall follows angle of attack",
+          "paragraphs": [
+            "To make that extra lift at the same airspeed, you raise the angle of attack. Angle of attack is the angle at which the wing's chord, a straight line from leading to trailing edge, meets the oncoming air.",
+            "As that angle grows, lift grows and so does drag. Each wing has a limit to that angle. Beyond it, the airflow separates from the top surface, lift drops and drag climbs. That is a stall.",
+            "The handbook is firm here. A stall comes from exceeding that limiting angle, not from a lack of airspeed. Stall speed is only the airspeed at which you reach the limit under one set of conditions.",
+            "In a 2G turn you are already holding a higher angle of attack than you did wings level. You sit closer to the limit, and so closer to the higher stall speed. That is why the handbook says you can stall at any airspeed, in any attitude and at any power setting.",
+            "Load factor is one of several things that set stall speed. Gross weight, center of gravity and flap setting move it too. Stall speed is not a constant, and the handbook wants you to understand what moves it."
           ]
         },
         {
-          "heading": "Why the stall speed climbs",
+          "heading": "What changes when you are already slow",
           "paragraphs": [
-            "A wing stalls at an angle. Take the angle of attack far enough and the air stops following the top of the wing. Lift drops off hard at that point and the wing is stalled.",
-            "Every airplane has one angle where that happens, the stalling angle, somewhere around 16 to 20 degrees depending on the design. That angle does not move. Weight and load change the speed at which you reach it, and the angle stays put.",
-            "Load the wing to 2 G and it reaches that angle at a higher speed than it would at 1 G. The speed does not climb as fast as the load does. It goes up with the square root of the load factor, so doubling the load adds 41 percent."
+            "In slow flight practice you fly a target speed just above the stall warning. The handbook suggests 5 to 10 knots above the 1G stall speed. That margin is measured against a wings level stall.",
+            "At that speed, any further increase in angle of attack or load factor, or any cut in power, brings a stall warning. Rolling into a steeper bank is exactly that kind of load factor increase.",
+            "Put the two numbers side by side. Your margin was 5 to 10 knots over the 1G stall speed. Steepen the bank and the stall speed itself climbs toward the speed you are flying.",
+            "Reduced airspeeds are normal on takeoff and departure, and on approach and landing. Those are also the phases flown close to the ground. A turn there adds load factor to a speed that was already low."
           ]
         },
         {
-          "heading": "What the published number assumes",
+          "heading": "What the airplane tells you first",
           "paragraphs": [
-            "The stall speed in your handbook is one condition. It assumes 1 G flight at a given weight and flap setting. Change the load and you have changed what that number refers to.",
-            "In a level turn at 60 degrees of bank the wing is carrying 2 G. The speed that stalls it sits 41 percent above the book figure.",
-            "You are closer to the stalling angle there than you were wings level. The pull that held your altitude is what took you closer."
-          ]
-        },
-        {
-          "heading": "Getting the angle back",
-          "paragraphs": [
-            "The buffet, a shake you feel through the airframe, is one warning. The horn is the other. In a steep turn both arrive at a speed that reads fine on the dial.",
-            "Ease the back pressure. Lowering the angle of attack is what unstalls a wing, and it is the first thing to do at any bank angle.",
-            "Rolling out works on the cause. Less bank means less load factor, and less load brings the stall speed back toward the 1 G figure."
+            "A stall warning comes before the stall itself. It shows up as buffet, a shaking you feel through the airframe, or as the stall horn sounding.",
+            "The handbook says to react to and correct for any stall indication. A stall can lead to loss of control if the angle of attack is not reduced.",
+            "The stall speeds you learn for your airplane are 1G figures for one weight and configuration. In a steep level turn, the warning arrives at a speed that would give you room to spare wings level. Knowing why keeps it from being a surprise.",
+            "The aim, in slow flight and in turns, is to maneuver without setting off the stall warning at all. Knowing that 60 degrees of bank means 2G and a 41 percent higher stall speed is what lets you do it."
           ]
         }
       ],
