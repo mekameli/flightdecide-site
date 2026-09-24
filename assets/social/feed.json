@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T22:50:17+00:00",
+  "generated": "2026-09-24T22:58:58+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1093,7 +1093,88 @@
         }
       ],
       "short": "black-hole",
-      "article": [],
+      "article": [
+        {
+          "heading": "What a dark final looks like",
+          "paragraphs": [
+            "Picture a night approach to a runway on the shore, with the whole final leg over open water. Ahead are two lines of edge lights and a row of threshold lights. Below and around you, nothing is lit at all.",
+            "On a daytime approach you judge height from many small clues. Fields, trees, roads and buildings grow larger as you descend and slide past the edge of your view. Over black water or unlit ground, every one of those clues is gone.",
+            "Nothing about the scene feels alarming. The runway looks clear and bright, and the approach seems easy.",
+            "This is the black hole approach. It happens when you land from over water or unlit terrain and the runway lights are the only source of light."
+          ]
+        },
+        {
+          "heading": "Why you feel higher than you are",
+          "paragraphs": [
+            "Normally the ground around the runway helps you judge how high you are and how far you have to go. Part of that comes from peripheral cues, the things you notice at the edge of your vision.",
+            "Without those cues, the handbook says, orientation is difficult. Your eyes still hand you an answer, and it tends to be wrong. With nothing around the runway to compare against, the airplane seems higher than it actually is.",
+            "Water is the classic case, but it is not the only one. Unlit land does the same, and so does terrain left blank by snow. What matters is that there is nothing on the ground to read.",
+            "The runway itself can look out of place as well. It can seem to slope down away from you, or slope up toward you."
+          ]
+        },
+        {
+          "heading": "How that ends up short of the runway",
+          "paragraphs": [
+            "When the picture tells you that you are high, you correct for it by descending. The correction feels right, because it makes the view look the way you expect.",
+            "The result is an approach lower than you meant to fly. From the seat nothing looks wrong, because the error is in the picture you are flying by.",
+            "Over water or unlit land there is nothing between you and the threshold to warn you. In the worst case, the airplane lands short of the runway.",
+            "Your eyes are not failing here. They are doing their normal job with far too little to work on, so the approach ends up flown on an impression."
+          ]
+        },
+        {
+          "heading": "When bright runway lights push you high",
+          "paragraphs": [
+            "The lights around a runway can bend the error the other way. Picture a runway with bright edge and approach lights, and very few lights on the ground around it.",
+            "Bright lights make a runway look closer than it is. The handbook says this setup can create the illusion of being lower, or of having less distance to go. A pilot who misses it tends to fly a higher approach.",
+            "Now change the ground under you. Flying over terrain with only a few lights makes the runway seem to recede, or look farther away. Here the tendency is a lower than normal approach.",
+            "A city in the distance on higher ground beyond the runway also tends to pull you low. So the same dark night can push you high or low, depending on what is lit in front of you. Neither error is safe to assume."
+          ],
+          "table": {
+            "caption": "What each lighting picture tends to do to your approach, as the handbooks describe it.",
+            "columns": [
+              "What you see",
+              "How it looks",
+              "Tendency"
+            ],
+            "rows": [
+              [
+                "Landing from over water or non-lighted terrain, runway lights the only source of light",
+                "Aircraft seems higher than it actually is",
+                "Lower approach"
+              ],
+              [
+                "Terrain with only a few lights",
+                "Runway recedes or appears farther away",
+                "Lower-than-normal approach"
+              ],
+              [
+                "Bright runway and approach lights, few lights on the surrounding terrain",
+                "Being lower, or less distance to the runway",
+                "Higher approach"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Where to expect it",
+          "paragraphs": [
+            "The classic setting is an airport by the water, approached from over the water at night. The handbook also points to airports in sparsely populated areas, where there are few if any surface references.",
+            "A missing horizon or surface reference is common over water, at night and in low visibility. When all three stack up on one final, you have the conditions for this illusion.",
+            "Airports you have never flown into deserve the most suspicion. Go in expecting to be fooled, especially at night or in poor weather.",
+            "Before the flight, read the airport diagram and the Chart Supplement, which used to be called the Airport/Facility Directory. Both tell you about runway slope, the terrain around the field and the lighting. Knowing the layout and boundaries before you start down helps you hold a safe approach angle."
+          ]
+        },
+        {
+          "heading": "What to fly by instead of the view",
+          "paragraphs": [
+            "Since the view is what misleads you, judge the slope with something that does not depend on it. If there is an electronic glide slope, a descent path you follow on your instruments rather than by eye, use it.",
+            "If the runway has a visual approach slope indicator, or VASI, use that as well. It is a lighting aid at the runway that gives you a visual reference for the slope, and the handbook says to use it whenever one is available.",
+            "Where neither exists, your flight instruments help you keep your orientation and fly a normal approach. The handbook's wider advice on illusions is to rely on the instruments over what your senses report.",
+            "If at any point you doubt your altitude or your position relative to the runway, do not press on. The handbook's instruction is to go around.",
+            "Practice is part of it too. The handbook recommends keeping night currency and proficiency, flying both cross-country and local operations at a range of airfields."
+          ]
+        }
+      ],
       "related": []
     },
     {
