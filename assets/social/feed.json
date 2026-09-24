@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T22:45:16+00:00",
+  "generated": "2026-09-24T22:48:11+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -948,7 +948,81 @@
         }
       ],
       "short": "narrow-runway",
-      "article": [],
+      "article": [
+        {
+          "heading": "What a narrow runway does to your eyes",
+          "paragraphs": [
+            "Most of your landings have been at one airport, on one runway. Today you're on final somewhere new, and the strip ahead is clearly narrower than the one you know.",
+            "A runway narrower than you're used to can make you feel higher above the ground than you really are. The FAA calls this the runway width illusion.",
+            "The FAA's Pilot's Handbook of Aeronautical Knowledge says the effect is strongest when the two runways' length-to-width relationships are comparable. Nothing about the view looks wrong. It just tells you that you have height to spare."
+          ]
+        },
+        {
+          "heading": "Why feeling high makes you fly low",
+          "paragraphs": [
+            "If you think you're high, you fix it the way you were taught. The Airplane Flying Handbook says you steepen an approach that looks too high by cutting power and lowering the nose.",
+            "Except you weren't high. Once you've corrected for height you never had, you're on a lower-than-normal approach path, the line your aeroplane is really flying down toward the runway.",
+            "The AIM is firm about the outcome. A pilot who doesn't recognise the illusion will fly a lower approach. The word that matters is recognise, because the pilots it catches are the ones who aren't expecting it."
+          ]
+        },
+        {
+          "heading": "What a low approach puts in your way",
+          "paragraphs": [
+            "A low path brings you closer to everything short of the runway. The AIM names two risks. You can hit objects along the approach path, or you can land short, touching down before the runway begins.",
+            "If you find yourself low and undershooting, the handbook says to raise the nose and add power to level off, holding the correct airspeed. When you reach the glide path you want, reduce power and lower the nose to stay on it.",
+            "Trying to stretch the approach by raising the nose without adding power is almost always a bad idea, the handbook warns. If you're very low, you may not manage a stabilized approach at all, meaning one flown at a constant angle toward a chosen point. Then the normal answer is a go-around."
+          ]
+        },
+        {
+          "heading": "A wide runway fools you the other way",
+          "paragraphs": [
+            "The same illusion runs in reverse. A runway wider than you're used to can make you feel lower than you are.",
+            "The FAA's runway illusion figure says this leads to a higher approach. The AIM lists what goes wrong next. You may level off too high and land hard, or overshoot the runway.",
+            "Knowing both directions helps. Every new airport gets measured against your home runway, whether you want it to or not."
+          ],
+          "table": {
+            "caption": "The runway width illusion in both directions, from the FAA's runway illusion figure and the AIM",
+            "columns": [
+              "Runway compared with usual",
+              "It makes you feel",
+              "Approach you fly",
+              "Risk"
+            ],
+            "rows": [
+              [
+                "Narrower",
+                "Higher than you are",
+                "Lower approach",
+                "Striking objects along the approach path, or landing short"
+              ],
+              [
+                "Wider",
+                "Lower than you are",
+                "Higher approach",
+                "Levelling out high and landing hard, or overshooting the runway"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "How to read the runway picture",
+          "paragraphs": [
+            "Start with the aiming point, the spot on the ground your aeroplane is heading straight for. On a steady descent it seems to stay put. It doesn't slide under the nose, and it doesn't creep away ahead of you.",
+            "Keep an eye on the gap between the aiming point and the horizon. At a constant angle that gap stays the same. If the aiming point rises toward the horizon, the point you'll really reach is closer than you think.",
+            "The runway's shape gives clues too. From final it looks like a trapezoid, and on a stabilized approach it keeps the same shape as it grows. A shallower approach makes it look shorter and wider. A steeper one makes it look longer and narrower.",
+            "Don't stare at one spot. The handbook suggests scanning from the aiming point to the horizon, to objects along the runway, to an area well short of it, and back again. It's easier to spot a drift off the path when your eyes keep moving."
+          ]
+        },
+        {
+          "heading": "Cross-checks that don't depend on width",
+          "paragraphs": [
+            "Expect illusions before you arrive at an unfamiliar airport, especially at night or in bad weather. Look at the airport diagram and the Chart Supplement U.S., the FAA's airport directory, for runway slope, terrain and lighting. If you can, look the airport over from the air before you land.",
+            "On every approach, day or night, check the altimeter often. Use a Visual Approach Slope Indicator (VASI) or Precision Approach Path Indicator (PAPI) whenever one is there. Both are lighting systems that give you a visual reference for the descent.",
+            "On an instrument approach, use the electronic glideslope if there is one. On nonprecision approaches, use the visual descent point (VDP) printed on many charts. None of these depends on how wide the runway looks.",
+            "Watch out for distraction as well. The handbook says the chance of an approach accident goes up when an emergency or some other task pulls you away from your usual routine."
+          ]
+        }
+      ],
       "related": []
     },
     {
