@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T06:13:36+00:00",
+  "generated": "2026-09-24T07:25:14+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1332,6 +1332,63 @@
           ]
         }
       ],
+      "related": []
+    },
+    {
+      "id": "wx-freezing-level",
+      "slug": "freezing-level-inside-a-cloud-layer",
+      "page": "/explainers/freezing-level-inside-a-cloud-layer/",
+      "title": "Freezing level inside a cloud layer",
+      "headline": "In cloud, you cross the freezing level without seeing it.",
+      "pillar": "weather",
+      "topic": "Weather",
+      "alt": "Freezing level inside a cloud layer: an illustrated diagram for pilots. In cloud, you cross the freezing level without seeing it.",
+      "image": "/assets/social/wx-freezing-level.webp",
+      "image_full": "/assets/explainers/freezing-level-inside-a-cloud-layer.webp",
+      "image_px": 1003,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "Structural icing needs visible moisture and an airframe surface at or below freezing, and a cold-soaked airframe can be below freezing in air that is not.",
+        "A climb through a cloud layer can cross the freezing level inside the cloud."
+      ],
+      "intent": "Cloud and sub-zero temperature are two separate conditions, and structural ice needs both, so the climb is the decision.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-28 ch 20",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 20",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 20",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 20
+        },
+        {
+          "ref": "AC 00-6",
+          "title": "Advisory Circular 00-6B, Aviation Weather",
+          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-6B.pdf",
+          "kind": "advisory-circular",
+          "note": "FAA advisory circular",
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "FREEZING LEVEL, INSIDE CLOUD",
+          "points_at": "The thin dashed zero-degree line where it runs through the middle of the cloud layer."
+        },
+        {
+          "label": "AIR STILL ABOVE ZERO",
+          "points_at": "The ghost aircraft in the lower part of the cloud, below the freezing level."
+        },
+        {
+          "label": "SAME CLOUD, NOW BELOW ZERO",
+          "points_at": "The solid aircraft in the upper part of the cloud, above the freezing level, at its wing leading edge."
+        }
+      ],
+      "short": "freezing-level",
+      "article": [],
       "related": []
     }
   ]
