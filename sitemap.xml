@@ -561,10 +561,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/freezing-level-inside-a-cloud-layer/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <!-- explainers:end -->
 </urlset>
