@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T20:20:06+00:00",
+  "generated": "2026-09-24T20:25:13+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1402,7 +1402,98 @@
         }
       ],
       "short": "losing-headwind",
-      "article": [],
+      "article": [
+        {
+          "heading": "What it looks like on final",
+          "paragraphs": [
+            "You are established on final, trimmed and descending toward your aiming point. Then the airspeed sags without you touching the throttle or the yoke. A moment later the view through the windscreen says you are lower than you planned.",
+            "It is natural to blame your own flying and start chasing the needle. In this case the cause is the air. The headwind you had higher up has grown weaker as you came down.",
+            "That change is wind shear, a sudden change in wind speed or direction over a short distance, usually from one height to another. It can be reported, but it often goes undetected until you fly into it.",
+            "Moderate turbulence usually brings variations in indicated airspeed too. This is different. It is a loss tied to your descent through one layer of air into another."
+          ]
+        },
+        {
+          "heading": "Why a weaker headwind costs airspeed",
+          "paragraphs": [
+            "Your wing only responds to the air flowing over it. Indicated airspeed, the speed on your airspeed indicator, measures that flow. It says nothing about your speed over the ground.",
+            "In a strong headwind, the air is streaming toward you as you fly into it. Descend into a layer where that stream is slower, and the airplane at first carries its old motion. Less air now meets the wing, so indicated airspeed drops.",
+            "Nothing is wrong with the engine or the trim. The airplane has simply not caught up with the new air yet. That lag is why the loss is momentary.",
+            "The Aviation Weather Handbook notes that shear causes abrupt changes in an airplane's horizontal movement. On final, a weakening headwind is one of those changes, and you feel it as lost airspeed."
+          ]
+        },
+        {
+          "heading": "Why getting the speed back is not enough",
+          "paragraphs": [
+            "While the speed is low, the wing makes less lift than it did a moment before. The airplane sinks faster than your planned descent. The handbooks tie slow airspeed and too little lift directly to an airplane settling.",
+            "Your glidepath, the planned line from you down to the aiming point, stays where it was. The airplane has dropped under it. As the airplane settles into the new air, the airspeed returns.",
+            "Getting that speed back does not lift you back to the line. You come out of the sag at the right speed and the wrong height. The gap stays until you fix it.",
+            "This is why the timing matters. Low level shear is especially hazardous because the airplane is close to the ground. On final there is very little height left to lose."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/losing-the-headwind-on-final-fig1.webp",
+            "caption": "The airspeed comes back without any help from you, but the height lost during the dip stays lost until you add power.",
+            "alt": "The airspeed comes back without any help from you, but the height lost during the dip stays lost until you add power."
+          }
+        },
+        {
+          "heading": "How to get back on the path",
+          "paragraphs": [
+            "The recovery is about the height as much as the speed. Add power promptly, and adjust pitch to correct for what the wind did to your descent. Waiting for the speed to return by itself leaves you low.",
+            "Pitch alone will not do it. The Airplane Flying Handbook explains that when you are slow, raising the nose cuts airspeed further and greatly steepens the descent. Raise it too far and the airplane settles rapidly on too little lift.",
+            "The same handbook warns never to try to stretch a glide to reach a spot. Pulling back to hold the path without adding power is exactly that stretch.",
+            "It helps to know your margin. In its accuracy approaches, the handbook uses 1.3 VSO on final, where VSO is the stall speed with the airplane configured to land. A sag in airspeed comes straight out of that margin.",
+            "Correcting the wind's effect on your descent is the real goal. The airspeed is only the first thing the shear took from you."
+          ]
+        },
+        {
+          "heading": "What makes the wind change near the ground",
+          "paragraphs": [
+            "Wind that changes sharply at low height has many sources. The handbook lists terrain, temperature inversions, sea breezes, frontal systems and strong surface winds.",
+            "A temperature inversion is a layer where the air gets warmer with height instead of cooler. Inversions often sit in the lowest few thousand feet after the ground cools overnight. Strong wind shear often forms across them.",
+            "Thunderstorms add their own version. The gust front, the leading edge of wind flowing out from a storm, often runs as far as 15 mi ahead of the rain. It changes the surface wind rapidly and sometimes drastically.",
+            "A line of dust or debris along the ground, or spray across water, often marks where the gust front is at the surface."
+          ]
+        },
+        {
+          "heading": "How big a change counts as shear",
+          "paragraphs": [
+            "The handbook puts numbers on low level wind shear that does not come from storms. It is a change of 10 kt or more for every 100 ft of height.",
+            "That change has to happen in a layer more than 200 ft thick, within 2,000 ft of the surface. The handbook's practice patterns begin at approximately 1,000 feet above the ground, so your whole final sits inside that band.",
+            "This kind of shear is commonly tied to passing fronts, temperature inversions and strong upper-level winds, meaning greater than 25 kt. Some references also use the term severe wind shear, with thresholds of their own.",
+            "Severe wind shear can also mean shear that exceeds what the airplane is able to do. Wind shear can affect a flight at any altitude. Near the ground, it has long been counted a serious hazard on takeoff and approach."
+          ],
+          "table": {
+            "caption": "Wind shear figures from the Aviation Weather Handbook, chapter 19.",
+            "columns": [
+              "Term",
+              "Figure",
+              "What it describes"
+            ],
+            "rows": [
+              [
+                "Non-convective low level wind shear",
+                "10 kt or more per 100 ft",
+                "In a layer more than 200 ft thick, within 2,000 ft of the surface"
+              ],
+              [
+                "Strong upper-level winds",
+                "Greater than 25 kt",
+                "Commonly associated with non-convective low level wind shear"
+              ],
+              [
+                "Severe wind shear, airspeed",
+                "Greater than 15 kt",
+                "Change in airspeed"
+              ],
+              [
+                "Severe wind shear, vertical speed",
+                "Greater than 500 fpm",
+                "Change in vertical speed"
+              ]
+            ]
+          }
+        }
+      ],
       "related": []
     },
     {
