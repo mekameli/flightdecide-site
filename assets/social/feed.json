@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T08:29:15+00:00",
+  "generated": "2026-09-24T10:25:02+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -23,7 +23,9 @@
       ],
       "teaches": [
         "Structural icing needs visible moisture and an airframe surface at or below freezing, and a cold-soaked airframe can be below freezing in air that is not.",
-        "A climb through a cloud layer can cross the freezing level inside the cloud."
+        "A climb through a cloud layer can cross a freezing level inside the cloud.",
+        "Below a front, rain from warmer air above can fall into below-freezing air, become supercooled, and freeze on impact with an aircraft.",
+        "Icing in freezing precipitation often covers a broad area, and a pilot may be unable to escape it by descending."
       ],
       "intent": "Cloud and sub-zero temperature are two separate conditions, and structural ice needs both, so the climb is the decision.",
       "citations": [
