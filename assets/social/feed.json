@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T22:30:23+00:00",
+  "generated": "2026-09-24T22:40:40+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1259,7 +1259,96 @@
         }
       ],
       "short": "attention-narrowing",
-      "article": [],
+      "article": [
+        {
+          "heading": "What fatigue does before you feel it",
+          "paragraphs": [
+            "You have been up since before dawn, and the last leg home feels routine. The radios make sense, the aircraft is trimmed, and you feel fine. That feeling is what this article is about.",
+            "The FAA's Risk Management Handbook says fatigued pilots have fallen asleep while flying. That is the obvious end of it. The handbook's warning is that the earlier effects are subtle.",
+            "Fatigue can wear down your thinking skills and your ability to make decisions. You are still flying, still looking outside, still answering ATC. The quality of that work drops, and nothing in the cockpit tells you so.",
+            "The Pilot's Handbook of Aeronautical Knowledge goes further. It warns that a pilot may not notice fatigue at all until serious errors have been made. By the time you see the sign, the mistake is already behind you."
+          ]
+        },
+        {
+          "heading": "Why asking yourself gives the wrong answer",
+          "paragraphs": [
+            "Flying alone, you are your own quality control. Nobody else checks your decisions. So the judge of whether you are fit is the same brain that is tired.",
+            "The handbook gives an example. Ask a fatigued pilot who has flown 16 hours whether they are too tired to keep going. The answer may well be no.",
+            "It explains why that happens. Most pilots are goal oriented. Offered a flight, they tend to play down their own limits and give extra weight to things that have nothing to do with flying it safely.",
+            "Helicopter emergency medical pilots are the handbook's case. They have been known to weigh the patient's welfare heavily and fail to count real hazards like fatigue or weather properly.",
+            "A single pilot has no crew member to talk the decision through with. The handbook says that leaves you more vulnerable than a full crew would be."
+          ]
+        },
+        {
+          "heading": "Where the tiredness comes from",
+          "paragraphs": [
+            "Most people link fatigue with a short night, and the handbook agrees that too little sleep is one cause. It is not the only one.",
+            "Acute fatigue, the short-term kind, is what a proper night's sleep fixes. Chronic fatigue, the longer-running kind, can involve several factors at once. Sleep alone does not correct it, and the handbook says it needs more analysis and its own remedy.",
+            "Two other things make fatigue worse. Hypoxia, a shortage of oxygen reaching your body, intensifies it. So does your emotional state.",
+            "Emotion counts on its own as well. The handbook notes that strong feelings may affect your normal ability to focus. A long day and upsetting news on the same afternoon means two items on the checklist, not one."
+          ]
+        },
+        {
+          "heading": "Checking yourself with IMSAFE",
+          "paragraphs": [
+            "Since your feelings are a poor gauge, the handbooks hand you a checklist instead. IMSAFE is an acronym for Illness, Medication, Stress, Alcohol, Fatigue and Emotion.",
+            "Each letter is a question to answer before you commit to the flight. For the F, you ask whether you are tired and whether you have had enough rest. That is why the checklist helps here. It asks about your rest, not about how you feel.",
+            "Some publications fold Emotion into Stress and use the E for Eating. The Risk Management Handbook says food and water affect wellness and safety, so plan both before a long flight.",
+            "The Pilot's Handbook also shows a sample risk assessment sheet that turns these questions into scores. A higher score means more risk, and the lines are added into a total. The rows below are the ones that bear on fatigue.",
+            "Look at how the sleep line works. A bad night or under 8 hours scores points even if you feel great. The sheet counts the rest you actually got, separately from your opinion of it."
+          ],
+          "table": {
+            "caption": "Fatigue-related lines from the sample risk assessment sheet in FAA-H-8083-25, chapter 2",
+            "columns": [
+              "Sheet line",
+              "Your answer",
+              "Score"
+            ],
+            "rows": [
+              [
+                "Sleep",
+                "Did not sleep well or less than 8 hours",
+                "2"
+              ],
+              [
+                "Sleep",
+                "Slept well",
+                "0"
+              ],
+              [
+                "How do you feel",
+                "Have a cold or ill",
+                "4"
+              ],
+              [
+                "How do you feel",
+                "Feel a bit off",
+                "2"
+              ],
+              [
+                "How do you feel",
+                "Feel great",
+                "0"
+              ],
+              [
+                "How is the day going",
+                "Seems like one thing after another (late, making errors, out of step)",
+                "3"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "What to do with an honest answer",
+          "paragraphs": [
+            "The handbook's risk rules say risk decisions belong with the person who can put controls in place. As pilot in command, that person is you. Passengers and ATC do not make that call for you.",
+            "Another rule is to accept no unnecessary risk. The handbook defines that as risk that brings no matching return. A leg flown tired just to be home tonight is exactly the trade that rule asks you to weigh.",
+            "When an assessment comes out high, the handbook gives two options. Don't fly, or fly only once you've found a way to reduce, remove or control the risk. For short-term fatigue, the remedy it names is sleep.",
+            "For a weather example, its list of ways to cut risk includes delaying the flight, cancelling it, or driving. You have the same options on a tired day.",
+            "The handbook also says risk management runs through every stage of a flight, and that includes the last leg. Errors are how fatigue may first show itself. If you catch yourself making one late in the day, go back to your IMSAFE answer."
+          ]
+        }
+      ],
       "related": []
     },
     {
