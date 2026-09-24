@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T20:10:06+00:00",
+  "generated": "2026-09-24T20:20:06+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -511,7 +511,100 @@
         }
       ],
       "short": "rotor-cloud",
-      "article": [],
+      "article": [
+        {
+          "heading": "How a ridge sets the air bouncing",
+          "paragraphs": [
+            "Picture a strong wind blowing straight across a ridge. The air has to go up and over, and what it does next depends on how stable it is.",
+            "Stable air is air that resists being pushed up or down. Lift it over the ridge and it ends up heavier than the air around it. Gravity pulls it back toward the level it came from.",
+            "It doesn't stop at that level. Its momentum carries it lower, where it warms as it's squeezed and becomes lighter than the air around it. So it rises again, overshoots again, and keeps swinging until the motion dies out.",
+            "That swinging is a gravity wave, a wave driven by gravity pulling displaced air back into place. You need both parts. With a weak wind the ridge can act like a dam and hold the air back, and unstable air builds deep convective clouds or thunderstorms instead of a wave."
+          ]
+        },
+        {
+          "heading": "Two kinds of wave, both a hazard",
+          "paragraphs": [
+            "The wave behind a ridge takes one of two main forms. In a vertically propagating mountain wave, the wave's energy travels upward. The wave stands above the mountain and leans into the wind as it climbs.",
+            "In a trapped lee wave, wind shear above ridge level holds the energy down. Wind shear is a sharp change in wind speed or direction with height. The wave runs downwind of the mountain instead, stays fairly low and doesn't lean.",
+            "The handbook treats both kinds as hazardous to aviation. They can exist at the same time, and they can blend into a wave that is only partly trapped.",
+            "For a vertically propagating wave, having a wave at all isn't the problem. The danger depends on how strong it is and whether part of it breaks into turbulent motion. At the extreme, that breaking can damage or fail part of the aircraft."
+          ]
+        },
+        {
+          "heading": "What a lenticular cloud is telling you",
+          "paragraphs": [
+            "Trapped lee waves often show up as a train of altocumulus standing lenticular clouds, lens-shaped clouds downwind of the mountains. They form fairly straight bands parallel to the range, with clear gaps between them.",
+            "Depending on how the moisture is layered upwind, they can stack in several layers. That stacked, polished look is what makes them easy to trust.",
+            "Don't trust it. The handbook says these clouds can look turbulent or smooth. A clean edge shows you where the wave is, and it says nothing about how rough the air is.",
+            "These waves matter for takeoff, landing and en route flight below FL250. Down at those lower altitudes, trapped lee waves can give you strong turbulence."
+          ]
+        },
+        {
+          "heading": "Where the rotor cloud comes from",
+          "paragraphs": [
+            "When a vertically propagating wave breaks high above the ridge, it often drives very strong wind down the lee slope. That's the downwind side of the mountain. The handbook gives gusts reaching 100 kt there, a low-level turbulence hazard for every aircraft.",
+            "That fast downslope wind often stops abruptly in a jump. The jump sits some distance down the lee slope, or well downwind of the mountains.",
+            "The jump region is frequently an area of extreme turbulence. It reaches 10,000 ft or more above the surface. A strong shear layer at the jump is one source of that turbulence.",
+            "A line of ragged rotor clouds sometimes marks the jump, and those clouds churn visibly. Downwind of the jump the turbulence eases, though it can still be quite strong."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/rotor-cloud-under-a-mountain-wave-fig1.webp",
+            "caption": "The rotor line sits over the jump, where the fast wind down the lee slope ends and extreme turbulence is frequent.",
+            "alt": "The rotor line sits over the jump, where the fast wind down the lee slope ends and extreme turbulence is frequent."
+          }
+        },
+        {
+          "heading": "How high each wave reaches",
+          "paragraphs": [
+            "A vertically propagating wave gets stronger as it climbs, because the air thins with height. A strong inversion, a layer where temperature rises with height, or a shear layer can soak up or reflect some of that energy.",
+            "Without one, the mountain's effects can reach far above the peaks, at times beyond 60,000 ft. Where the wave breaks you get local updrafts, downdrafts and possibly sudden severe or extreme turbulence.",
+            "Trapped lee waves work the other way. They weaken with height inside the trapping layer, which usually starts within a few thousand feet of the ridge crest. When the shear layer is too weak or shallow to trap them fully, they reach higher.",
+            "Size matters too. A taller range above the land around it makes a bigger wave, and so does a stronger wind across the ridge at mountaintop level. Even modest terrain can set up an appreciable wave in the right conditions."
+          ],
+          "table": {
+            "caption": "Heights and speeds the handbook gives for mountain wave hazards",
+            "columns": [
+              "Feature",
+              "What the handbook gives"
+            ],
+            "rows": [
+              [
+                "Vertically propagating wave",
+                "Effects at times reaching in excess of 60,000 ft"
+              ],
+              [
+                "Breaking wave turbulence",
+                "Typically between 20,000 ft and 39,000 ft MSL"
+              ],
+              [
+                "Downslope winds on the lee slopes",
+                "Gusts can reach 100 kt"
+              ],
+              [
+                "Jump region",
+                "Extreme turbulence extending to 10,000 ft or more above the surface"
+              ],
+              [
+                "Trapped lee waves",
+                "Concern for takeoff, landing and en route flight below FL250"
+              ],
+              [
+                "Trapping layer",
+                "Typically based within a few thousand feet of the ridge crest"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "When the sky gives no warning",
+          "paragraphs": [
+            "These flows often come with signs you can see, such as lenticular clouds, rotor clouds or blowing dust. The handbook is clear that they don't always.",
+            "Extremely severe wind events can happen with little or no visual warning. Trapped lee waves in particular frequently occur without any cloud at all.",
+            "The most severe mountain wind events usually come when the large-scale winds are strongest, from late autumn to early spring. The rest of the year, hazardous winds near mountains are more often tied to thunderstorms and their outflow.",
+            "The eddies terrain throws off range from a few centimeters to tens or hundreds of kilometers across. Some leave you in fairly smooth air. Others bring turbulence strong enough to destroy an aircraft, and a real chance of losing control."
+          ]
+        }
+      ],
       "related": []
     },
     {
