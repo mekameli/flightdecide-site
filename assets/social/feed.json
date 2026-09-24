@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T21:30:22+00:00",
+  "generated": "2026-09-24T22:26:37+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -2238,6 +2238,196 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
+          ]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "airspace-cloud-clearance",
+      "slug": "room-vfr-leaves-around-a-cloud",
+      "page": "/explainers/room-vfr-leaves-around-a-cloud/",
+      "title": "The room VFR leaves around a cloud",
+      "headline": "Beside a cloud you need the most room.",
+      "pillar": "airspace",
+      "topic": "Airspace",
+      "alt": "The room VFR leaves around a cloud: an illustrated diagram for pilots. Beside a cloud you need the most room.",
+      "image": "/assets/social/airspace-cloud-clearance.webp",
+      "image_full": "/assets/explainers/room-vfr-leaves-around-a-cloud.webp",
+      "image_px": 1254,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "VFR cloud clearance requirements differ by airspace class and altitude.",
+        "In Class C, Class D and Class E below 10,000 feet MSL the requirement is 500 feet below, 1,000 feet above and 2,000 feet horizontally.",
+        "Class B is different: the requirement there is to remain clear of clouds, with no numeric separation.",
+        "Within the lateral boundaries of controlled airspace designated to the surface for an airport, you may not fly VFR beneath a ceiling below 1,000 feet.",
+        "In a controlled surface area, taking off, landing or entering the pattern needs 3 statute miles ground visibility, or flight visibility if none is reported.",
+        "ATC separation for VFR aircraft in Class B can be as little as target resolution, and it never relieves you of the 91.155 minimums."
+      ],
+      "intent": "The required clearance is a set of distances that differ by airspace class, and in the classes that have them the horizontal figure is the largest.",
+      "citations": [
+        {
+          "ref": "14 CFR 91.155",
+          "title": "14 CFR 91.155",
+          "url": "https://www.ecfr.gov/current/title-14/section-91.155",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "AIM 3-2-3",
+          "title": "Aeronautical Information Manual, paragraph 3-2-3",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html",
+          "kind": "aim",
+          "note": "Aeronautical Information Manual",
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "CLASS D: 2,000 FEET HORIZONTALLY",
+          "points_at": "The long horizontal dimension rule spanning the clear air between the aeroplane's wingtip and the cloud's right flank."
+        },
+        {
+          "label": "1,000 FEET ABOVE",
+          "points_at": "The short vertical dimension rule rising from the crown of the cloud's tallest turret to the upper datum line."
+        },
+        {
+          "label": "500 FEET BELOW",
+          "points_at": "The shortest vertical dimension rule dropping from the cloud base to the lower datum line."
+        },
+        {
+          "label": "CLASS B, CLEAR OF CLOUDS",
+          "points_at": "The ghosted aeroplane pressed against the cloud's left flank beneath the stepped shelf edge."
+        }
+      ],
+      "short": "room-vfr",
+      "article": [
+        {
+          "heading": "What cloud clearance means",
+          "paragraphs": [
+            "Picture yourself at 4,500 feet with a line of puffy cloud ahead. You can see well past it, but the rules still set how close you may pass. That distance is cloud clearance, the least room you must keep between the aircraft and the cloud.",
+            "The rule is 14 CFR 91.155, the basic VFR weather minimums. It gives each block of airspace two limits. One is flight visibility, how far ahead you can see from the cockpit. The other is distance from clouds.",
+            "Neither limit is fixed. Both change with the class of airspace, the lettered blocks from A to G, and with your altitude. So the first step near any cloud is knowing which class you are in and how high you are."
+          ]
+        },
+        {
+          "heading": "Three distances in Classes C, D and E",
+          "paragraphs": [
+            "In Class C, Class D and Class E below 10,000 feet MSL, the rule gives the same three distances. You stay 500 feet below a cloud and 1,000 feet above it. Sideways, you stay 2,000 feet away.",
+            "Each figure is measured from the cloud itself. Below runs from the cloud base down to you. Above runs from the cloud top up to you, and horizontal is the gap between you and its side.",
+            "The horizontal figure is the big one. At 2,000 feet it is four times the room you need below and twice the room above. Passing beside a cloud, you owe it more space than going over or under it.",
+            "All three classes also ask for 3 statute miles of flight visibility. Meeting the visibility while missing one distance still puts you below VFR minimums. You need every limit at once."
+          ],
+          "table": {
+            "caption": "Flight visibility and distance from clouds by airspace class, from 14 CFR 91.155",
+            "columns": [
+              "Airspace",
+              "Flight visibility",
+              "Distance from clouds"
+            ],
+            "rows": [
+              [
+                "Class B",
+                "3 statute miles",
+                "Clear of clouds"
+              ],
+              [
+                "Class C",
+                "3 statute miles",
+                "500 feet below, 1,000 feet above, 2,000 feet horizontal"
+              ],
+              [
+                "Class D",
+                "3 statute miles",
+                "500 feet below, 1,000 feet above, 2,000 feet horizontal"
+              ],
+              [
+                "Class E, less than 10,000 feet MSL",
+                "3 statute miles",
+                "500 feet below, 1,000 feet above, 2,000 feet horizontal"
+              ],
+              [
+                "Class E, at or above 10,000 feet MSL",
+                "5 statute miles",
+                "1,000 feet below, 1,000 feet above, 1 statute mile horizontal"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "How the numbers change with altitude",
+          "paragraphs": [
+            "Climb into Class E at or above 10,000 feet MSL and the figures change. Visibility rises to 5 statute miles. You now keep 1,000 feet below a cloud as well as 1,000 feet above it.",
+            "The horizontal figure becomes 1 statute mile. It stays the largest of the three, so the side of a cloud still asks for the most room.",
+            "Class G is the one class the table also splits by height above the ground. At 1,200 feet or less above the surface, an aeroplane by day needs 1 statute mile and only has to stay clear of clouds. At night that becomes 3 statute miles with the full 500, 1,000 and 2,000 feet.",
+            "There is a night exception low down in Class G. In a traffic pattern within 1/2 mile of the runway, you may fly clear of clouds with visibility down to 1 statute mile.",
+            "One edge case catches people out. If you fly at the exact base altitude of a Class E area, the rule counts you as being in the airspace directly below it."
+          ],
+          "table": {
+            "caption": "Class G minimums for aircraft other than helicopters, from 14 CFR 91.155",
+            "columns": [
+              "Where and when",
+              "Flight visibility",
+              "Distance from clouds"
+            ],
+            "rows": [
+              [
+                "1,200 feet or less above the surface, day",
+                "1 statute mile",
+                "Clear of clouds"
+              ],
+              [
+                "1,200 feet or less above the surface, night",
+                "3 statute miles",
+                "500 feet below, 1,000 feet above, 2,000 feet horizontal"
+              ],
+              [
+                "More than 1,200 feet above the surface but less than 10,000 feet MSL, day",
+                "1 statute mile",
+                "500 feet below, 1,000 feet above, 2,000 feet horizontal"
+              ],
+              [
+                "More than 1,200 feet above the surface but less than 10,000 feet MSL, night",
+                "3 statute miles",
+                "500 feet below, 1,000 feet above, 2,000 feet horizontal"
+              ],
+              [
+                "More than 1,200 feet above the surface and at or above 10,000 feet MSL",
+                "5 statute miles",
+                "1,000 feet below, 1,000 feet above, 1 statute mile horizontal"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Why Class B only asks clear of clouds",
+          "paragraphs": [
+            "Class B surrounds the nation's busiest airports, generally from the surface to 10,000 feet MSL. You need an ATC clearance to enter it, whatever the weather is doing.",
+            "Once cleared, every aircraft inside gets separation, meaning controllers keep it apart from other traffic. The AIM sets the clear of clouds rule right beside that service. You still need 3 statute miles of flight visibility.",
+            "Clear of clouds carries no number. You can pass close beside a cloud in Class B, provided you never go into it.",
+            "The spacing ATC gives you in Class B can be very small. From aircraft of 19,000 pounds or less, it is target resolution, 500 feet vertical, or visual separation. Target resolution is a radar standard, and the AIM puts no distance on it.",
+            "From aircraft over 19,000 pounds and from turbojets, the minimum is 1 1/2 miles lateral. The other two options are again 500 feet vertical or visual separation."
+          ]
+        },
+        {
+          "heading": "ATC separation never replaces your weather minimums",
+          "paragraphs": [
+            "A clearance through Class B can tempt you to leave the weather to the controller. The AIM is direct that separation does not relieve you of the 91.155 minimums.",
+            "You also keep the job of seeing and avoiding traffic. Wake, the turbulence trailing other aircraft, stays yours to avoid, and so do terrain and obstacles.",
+            "Say an assigned heading or altitude would put you closer to a cloud than the minimums allow. Tell approach control and get a revised clearance or instruction. Flying the assignment into the cloud is not the answer.",
+            "Separation also depends on radar. If the radar goes down, ATC suspends sequencing and separation and tells you so. You then get wind, runway information and the time or place to call the tower."
+          ]
+        },
+        {
+          "heading": "Extra limits inside an airport surface area",
+          "paragraphs": [
+            "At some airports the controlled airspace reaches all the way to the ground. This is the surface area, and inside its lateral boundaries the rule adds two more limits.",
+            "The first is about the ceiling, the base of the cloud layer covering the sky above you. When the ceiling is less than 1,000 feet, you may not fly VFR beneath it there.",
+            "The second covers the busiest moments of a flight. To take off, land or enter the traffic pattern, ground visibility at the airport must be at least 3 statute miles.",
+            "If the airport reports no ground visibility, your own flight visibility must be 3 statute miles instead. This holds in the surface areas of Class B, C, D and E alike. The only way around these limits is a separate section, 14 CFR 91.157."
           ]
         }
       ],
