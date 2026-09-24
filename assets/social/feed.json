@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T21:20:07+00:00",
+  "generated": "2026-09-24T21:30:22+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1685,43 +1685,105 @@
       "short": "temperature-inversion",
       "article": [
         {
-          "heading": "What a temperature inversion is",
+          "heading": "Why the air goes smooth and milky",
           "paragraphs": [
-            "Air normally gets colder as you climb away from the ground. An inversion is a layer where that order turns over, with warmer air lying above cooler air.",
-            "Forecasters judge a layer by what happens to a small parcel of air pushed up into it. Inside an inversion, that parcel arrives colder and denser than the air around it. Being heavier, it settles back to the level it came from.",
-            "A profile like that is classed as absolute stability. Every parcel you could test in the layer resists being lifted, whether it is saturated or not."
+            "You level off on a warm, still morning and the ride goes glassy. The wings barely move. At the same time the horizon has turned soft and the ground ahead looks washed out.",
+            "One of those feels like good news and the other feels like bad news. They come from the same layer of air. That layer is a temperature inversion, a band where the air gets warmer as you climb instead of colder.",
+            "Making sense of it takes one idea from the handbook's chapter on stability. Stability is how strongly the air resists being moved up or down."
           ]
         },
         {
-          "heading": "Why the air stops mixing",
+          "heading": "How air decides whether to rise",
           "paragraphs": [
-            "Stability is a property of the air you are flying through, and it decides whether vertical motion grows or dies. A stable layer answers every upward nudge with a push back down. Motion that starts inside it does not get far.",
-            "Vertical motion is how low air and high air trade places. With that exchange shut off, the air under the layer stays under the layer.",
-            "The ride smooths out for the same reason. Bumps in the low levels are parcels rising and sinking, and a stable layer does not allow them to."
+            "Picture a small bubble of air, which forecasters call a parcel, pushed up from the surface. As it rises it expands and cools. What it does next depends on the air around it.",
+            "If the lifted parcel ends up colder than its surroundings, it is denser and sinks back to where it started. That air is stable, because it resists being lifted. If the parcel ends up the same temperature, it simply stays put, which is called neutral.",
+            "If it ends up warmer and lighter, it keeps rising on its own until it matches the air around it. That air is unstable. The bigger the temperature difference, the faster the parcel moves.",
+            "So the way temperature changes with height decides how much up and down motion you get. That change is the lapse rate, the rate at which temperature falls as you climb."
           ]
         },
         {
-          "heading": "Why the haze stays below",
+          "heading": "Why an inversion is so stable",
           "paragraphs": [
-            "Haze and smoke go where the air goes. Carried upward, they spread through a deep column and thin out. Held down, they stay in the shallow slice of air near the surface.",
-            "Under an inversion the second case applies. Whatever was already in the low air remains there, and anything added to it joins the same shallow layer. Concentration climbs because the volume available to it has stopped growing.",
-            "That slice is the air you look through in the pattern and on a low cross country. How far you can see is set by how much has gathered in it, not by how clear the sky is overhead."
+            "In most air the temperature drops as you go up. In an inversion it does the opposite. Warmer air sits on top of cooler air.",
+            "Run the parcel test inside that layer. A parcel pushed upward cools as it rises, while the air around it gets warmer with height. It is soon colder and heavier than its neighbors, so it sinks back.",
+            "The handbook puts inversions under absolute stability. That means a lapse rate smaller than the moist adiabatic lapse rate, the lesser rate at which saturated rising air cools. Layers where temperature stays the same with height, called isothermal, count too.",
+            "Its stability chapter closes on the point that matters here. Stable air holds vertical motion down, and unstable air speeds it up."
           ]
         },
         {
-          "heading": "What the smooth ride reports",
+          "heading": "Why the haze stays trapped underneath",
           "paragraphs": [
-            "Comfort in the cockpit is a readout of how little the air is moving up and down. It carries no information about what that same stillness has collected underneath you.",
-            "Both conditions come from one property of one layer. One layer damped the turbulence and stopped the ventilation at the same time.",
-            "Plan for the visibility to be poorest on the mornings the air feels best. A glassy climb out of a valley is a reason to check the reported visibility again, not a reason to relax about it."
+            "Smoke is fine particles in the air from fires, industrial burning and other sources. For visibility to improve near the ground, moving air has to spread those particles out.",
+            "Vertical mixing, air rising and sinking through the low layers, does much of that work. It carries particles upward and spreads them through a deeper layer. Less is then left in the air near the ground.",
+            "An inversion shuts that down. Air rising from below meets the stable layer and is pushed back, so the particles it carries stop at the same height.",
+            "They collect in the air beneath with nowhere higher to go. Whatever is being added near the ground keeps building up under the lid. The same particles are packed into a shallower slice of air, so the view through it gets worse."
           ]
         },
         {
-          "heading": "When the trap lets go",
+          "heading": "What the smooth ride is telling you",
           "paragraphs": [
-            "Stability follows how fast temperature falls with height. Steepen that fall and stability drops.",
-            "Sun on the ground warms the air in contact with it, which steepens the profile from below. Once the heating has worked up through the layer, vertical motion returns. The load of haze then has a much deeper column to spread through.",
-            "Heating is not the only lever. Most changes in stability come from air moving in from somewhere else, so a layer can be built or broken by what arrives aloft."
+            "The stable layer resists vertical motion of every kind. That same resistance is why the air within the inversion is smooth to fly through. The calm and the murk have one cause.",
+            "So treat a glassy ride as information about the air. It tells you vertical motion is being held down. When vertical motion is held down, whatever is in the low air stays there.",
+            "A milky horizon at the same moment fits the picture. The two together point to a stable layer, and to haze concentrated underneath it.",
+            "Keep the smooth air and the poor visibility in the same thought. Enjoying one while ignoring the other means reading only half of what the layer is telling you."
+          ]
+        },
+        {
+          "heading": "How daytime heating can lift the lid",
+          "paragraphs": [
+            "Stability is not fixed through the day. Sun heating the ground makes temperature fall faster with height, which lowers stability. Cooling of the ground at night does the reverse and raises it.",
+            "With clear skies above a surface layer of haze or smoke, visibility generally improves during the day. The heating drives convective mixing, rising currents that carry the particles higher. Spread through a deeper layer, they thin out near the ground.",
+            "That improvement comes slowly, because the particles have to be carried off by moving air. A thick layer of cloud above the haze blocks the sunlight that drives the mixing. Visibility then improves little, if at all, through the day.",
+            "How big the day and night swing gets depends on the setting. The handbook lists what makes the temperature and stability change large or small."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/temperature-inversion-trapping-haze-fig1.webp",
+            "caption": "Daytime heating stirs the air and spreads the same haze through a deeper layer, so less of it sits near the ground.",
+            "alt": "Daytime heating stirs the air and spreads the same haze through a deeper layer, so less of it sits near the ground."
+          },
+          "table": {
+            "caption": "What the handbook says makes the day and night change in temperature and stability large or small.",
+            "columns": [
+              "Factor",
+              "Large change",
+              "Small change"
+            ],
+            "rows": [
+              [
+                "Surface",
+                "Land",
+                "Large bodies of water"
+              ],
+              [
+                "Latitude",
+                "Low",
+                "High"
+              ],
+              [
+                "Sky",
+                "Clear",
+                "Cloudy"
+              ],
+              [
+                "Air",
+                "Dry",
+                "Moist"
+              ],
+              [
+                "Wind",
+                "Light",
+                "Strong"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "What a new inversion does to dust",
+          "paragraphs": [
+            "Dust in the air shows the same stability from the other side. Strong cooling after sunset quickly steadies the lowest air, forms an inversion, and lets the dust settle.",
+            "With no turbulence to hold it up, dust generally settles at 1,000 ft (300 m) per hour. Settling completely takes many hours, or even days. Rain and other precipitation remove dust far more effectively.",
+            "Looking down through it is harder than looking across. Slant range visibility, your line of sight angled down to the ground, is generally worse in dust than reported surface visibility. You may not be able to pick out an airfield from above even with 3 mi or more reported.",
+            "The settling happens because the stable air has taken away the stirring that held the dust up. It is the same stability that traps haze, doing a different job."
           ]
         }
       ],
