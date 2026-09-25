@@ -931,10 +931,6 @@ footer.site-footer {
 .social-card-title a::after { content: ""; position: absolute; inset: 0; }
 .social-card-title a:focus-visible { outline: none; }
 .social-card:focus-within { outline: 2px solid var(--link); outline-offset: 2px; }
-/* Pushed to the bottom so the dates line up across a row whose titles wrap to
-   different depths. */
-.social-card-meta { font-size: 12px; color: var(--text-dim); margin: 10px 0 0; }
-.social-card-body .social-card-meta { margin-top: auto; padding-top: 10px; }
 .social-follow-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -967,6 +963,13 @@ footer.site-footer {
   border-color: var(--accent-blue);
   color: var(--link-hover);
 }
+/* The guide pages put the grid inside .prose, whose heading and link rules
+   (higher specificity) pushed each title 30px below its topic and repainted
+   the pills as underlined blue text. */
+.prose .social-card-title { margin: 0; }
+.prose a.social-follow { color: var(--text); text-decoration: none; }
+.prose a.social-follow:hover, .prose a.social-follow:focus-visible { color: #FF7AA8; }
+.prose a.social-all:hover, .prose a.social-all:focus-visible { color: var(--link-hover); }
 /* One column on a phone, because the illustration is the content and it stops
    being readable much below full width. Six of those is a lot of scrolling for
    a section the reader did not come for, so the tail is trimmed instead of
@@ -1052,16 +1055,143 @@ footer.site-footer {
 }
 .fk-points { flex: 1 1 260px; color: var(--text-muted); font-size: 15px; }
 .src-note { display: block; color: var(--text-muted); font-size: 13.5px; margin-top: 2px; }
+/* The end of the page: where the post lives, what to read next, the app.
+   Under one phone screen since 2026-09-24; it used to take nearly two. */
 .explainer-share {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 12px 18px;
-  margin: 28px 0;
-  padding-top: 22px;
+  gap: 10px 20px;
+  margin: 32px 0 0;
+  padding-top: 16px;
   border-top: 1px solid var(--border);
-  color: var(--text-muted);
+}
+.prose a.explainer-ig { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; }
+.prose h2.explainer-more-h { font-size: 19px; margin: 32px 0 12px; }
+.prose ul.explainer-more {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+}
+.prose .explainer-more li { margin: 0; }
+.prose .explainer-more a {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  height: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.prose .explainer-more a:hover {
+  border-color: rgba(59,130,246,0.45);
+  background: var(--bg-card-hover);
+  color: var(--text);
+}
+.prose .explainer-more a:focus-visible { outline: 2px solid var(--link); outline-offset: -2px; }
+.em-icon {
+  flex: 0 0 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: rgba(59,130,246,0.14);
+  color: var(--link);
+}
+.em-tool { background: rgba(34,197,94,0.14); color: var(--accent-green); }
+.em-aircraft { background: rgba(234,179,8,0.14); color: var(--accent-amber); }
+.em-text { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.em-kind {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.em-title {
   font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+/* The chevron belongs to the phone's list rows; a tile is plainly a tile. */
+.em-go { display: none; flex: 0 0 auto; color: var(--text-dim); }
+.cta-band.explainer-cta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "icon title" "icon text" "icon btn";
+  column-gap: 16px;
+  margin-top: 36px;
+  padding: 20px 22px;
+  text-align: left;
+}
+/* 22.5% is the corner an app icon has on the home screen. */
+.explainer-cta .cta-icon { grid-area: icon; width: 48px; height: 48px; border-radius: 22.5%; }
+.prose .explainer-cta h2 {
+  grid-area: title;
+  margin: 0 0 4px;
+  font-size: 19px;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+.prose .explainer-cta p {
+  grid-area: text;
+  max-width: none;
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.explainer-cta .btn-primary { grid-area: btn; justify-self: start; }
+/* .prose p (higher specificity) paints the fine print as body text; the
+   shared .advisory-note rule wants it dim. */
+.prose p.explainer-note { color: var(--text-dim); }
+/* On a phone the related links stack into one grouped list, the way a
+   settings screen stacks its rows, and the app banner puts its words
+   under the icon instead of squeezing them beside it. */
+@media (max-width: 640px) {
+  .prose ul.explainer-more {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    overflow: hidden;
+  }
+  .prose .explainer-more a { align-items: center; border: 0; border-radius: 0; background: none; }
+  .prose .explainer-more li + li a { border-top: 1px solid var(--border); }
+  .em-go { display: block; }
+  .cta-band.explainer-cta {
+    grid-template-areas: "icon title" "text text" "btn btn";
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+  }
+  .explainer-cta .cta-icon { width: 40px; height: 40px; }
+  .prose .explainer-cta h2, .prose .explainer-cta p { margin: 0; }
+  .explainer-cta .btn-primary {
+    justify-self: stretch;
+    justify-content: center;
+    padding: 12px 16px;
+    text-align: center;
+  }
+}
+/* Very narrow: a small phone, or any phone with the page zoomed well past
+   100%. The icons go so the words keep the width. */
+@media (max-width: 340px) {
+  .em-icon, .em-go, .explainer-cta .cta-icon { display: none; }
+  .cta-band.explainer-cta { grid-template-columns: minmax(0, 1fr); grid-template-areas: "title" "text" "btn"; }
+  .explainer-share .social-follow { padding-inline: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .prose .explainer-more a { transition: none; }
 }
 .explainer-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 6px; }
 .explainer-filter {

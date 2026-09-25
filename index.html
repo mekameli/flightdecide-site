@@ -1900,10 +1900,6 @@
 .social-card-title a::after { content: ""; position: absolute; inset: 0; }
 .social-card-title a:focus-visible { outline: none; }
 .social-card:focus-within { outline: 2px solid var(--link); outline-offset: 2px; }
-/* Pushed to the bottom so the dates line up across a row whose titles wrap to
-   different depths. */
-.social-card-meta { font-size: 12px; color: var(--text-dim); margin: 10px 0 0; }
-.social-card-body .social-card-meta { margin-top: auto; padding-top: 10px; }
 .social-follow-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -1936,6 +1932,13 @@
   border-color: var(--accent-blue);
   color: var(--link-hover);
 }
+/* The guide pages put the grid inside .prose, whose heading and link rules
+   (higher specificity) pushed each title 30px below its topic and repainted
+   the pills as underlined blue text. */
+.prose .social-card-title { margin: 0; }
+.prose a.social-follow { color: var(--text); text-decoration: none; }
+.prose a.social-follow:hover, .prose a.social-follow:focus-visible { color: #FF7AA8; }
+.prose a.social-all:hover, .prose a.social-all:focus-visible { color: var(--link-hover); }
 /* One column on a phone, because the illustration is the content and it stops
    being readable much below full width. Six of those is a lot of scrolling for
    a section the reader did not come for, so the tail is trimmed instead of
@@ -2654,7 +2657,6 @@
             <div class="social-card-body">
               <span class="social-card-topic">Weather</span>
               <h3 class="social-card-title"><a href="/explainers/freezing-level-inside-a-cloud-layer/">Freezing level inside a cloud layer</a></h3>
-              <p class="social-card-meta"><time datetime="2026-09-24">Sep 24, 2026</time></p>
             </div>
           </article>
           <article class="social-card">
@@ -2664,7 +2666,6 @@
             <div class="social-card-body">
               <span class="social-card-topic">Systems</span>
               <h3 class="social-card-title"><a href="/explainers/carburettor-ice-on-a-warm-day/">Carburettor ice on a warm day</a></h3>
-              <p class="social-card-meta"><time datetime="2026-09-23">Sep 23, 2026</time></p>
             </div>
           </article>
           <article class="social-card">
@@ -2674,7 +2675,6 @@
             <div class="social-card-body">
               <span class="social-card-topic">Visual illusions</span>
               <h3 class="social-card-title"><a href="/explainers/acceleration-that-feels-like-a-climb/">Acceleration that feels like a climb</a></h3>
-              <p class="social-card-meta"><time datetime="2026-09-22">Sep 22, 2026</time></p>
             </div>
           </article>
           <article class="social-card">
@@ -2684,7 +2684,6 @@
             <div class="social-card-body">
               <span class="social-card-topic">Weather</span>
               <h3 class="social-card-title"><a href="/explainers/rotor-cloud-under-a-mountain-wave/">Rotor cloud under a mountain wave</a></h3>
-              <p class="social-card-meta"><time datetime="2026-09-20">Sep 20, 2026</time></p>
             </div>
           </article>
         </div>
