@@ -1,130 +1,32 @@
 <!DOCTYPE html>
+<!-- Built by scripts/build_site.py from site/content/index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Primary Meta -->
   <title>FlightDecide: A Preflight Second Opinion for Pilots</title>
   <meta name="description" content="FlightDecide reads your TAFs, NOTAMs, fuel, and weight and balance for the planned flight window, then gives you a scored go/no-go advisor and an AI briefing you can verify against raw data. The final call is always yours." />
   <meta name="keywords" content="pilot app, go no go advisor, preflight second opinion, preflight planning, preflight flight planning, flight planning app, aviation weather, TAF interpretation, NOTAM summary, online E6B flight computer, E6B calculator, cross-country flight planning, GA pilot, IFR VFR, weight and balance, fuel planning, free pilot tools" />
   <link rel="canonical" href="https://flightdecide.com/" />
-
-  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
   <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://flightdecide.com/" />
+  <meta property="og:site_name" content="FlightDecide" />
   <meta property="og:title" content="FlightDecide: A Preflight Second Opinion for Pilots" />
   <meta property="og:description" content="Should you fly today? FlightDecide reads your weather, NOTAMs, fuel, and W&amp;B for your planned window and gives you a scored go/no-go advisor you can verify against raw data." />
-  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:url" content="https://flightdecide.com/" />
   <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="FlightDecide: Should you fly today? App showing a GO verdict for a GA flight" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FlightDecide: A Preflight Second Opinion for Pilots" />
   <meta name="twitter:description" content="Should you fly today? FlightDecide reads your weather, NOTAMs, fuel, and W&amp;B for your planned window and gives you a scored go/no-go advisor you can verify against raw data." />
   <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <meta name="twitter:image:alt" content="FlightDecide: Should you fly today? App showing a GO verdict for a GA flight" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://flightdecide.com/#organization",
-        "name": "FlightDecide",
-        "url": "https://flightdecide.com",
-        "logo": "https://flightdecide.com/assets/brand/icon-512.png",
-        "email": "support@flightdecide.com",
-        "sameAs": [
-        "https://apps.apple.com/app/flightdecide/id6761793626",
-        "https://www.instagram.com/flightdecide/",
-        "https://www.facebook.com/flightdecide"
-      ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://flightdecide.com/#website",
-        "name": "FlightDecide",
-        "url": "https://flightdecide.com",
-        "publisher": { "@id": "https://flightdecide.com/#organization" }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://flightdecide.com/#app",
-        "name": "FlightDecide",
-        "operatingSystem": "iOS",
-        "applicationCategory": "UtilitiesApplication",
-        "description": "FlightDecide is a go/no-go preflight decision-support app for general aviation pilots. It computes your fuel, weight and balance, and performance from your aircraft's numbers and scores the weather and NOTAMs for the planned flight window against your personal minimums, giving a GO, CAUTION, or NO GO verdict with a plain-language briefing you can verify against the raw data. Advisory only, not an official weather briefing.",
-        "url": "https://flightdecide.com",
-        "installUrl": "https://apps.apple.com/app/flightdecide/id6761793626",
-        "image": "https://flightdecide.com/assets/brand/og-image.png",
-        "screenshot": "https://flightdecide.com/assets/brand/og-image.png",
-        "featureList": "Route weather analysis for a time window; scored GO/CAUTION/NO GO advisory; AI preflight briefing verifiable against raw METAR/TAF/NOTAM; NOTAM analysis filtered by flight window; fuel planning with Part 91 VFR/IFR reserves; weight and balance; enroute winds aloft, freezing levels, and PIREPs; customizable aircraft profiles and personal minimums",
-        "publisher": { "@id": "https://flightdecide.com/#organization" },
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "Free",
-            "price": "0",
-            "priceCurrency": "USD",
-            "description": "3 flight analyses per month"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pilot",
-            "price": "9.99",
-            "priceCurrency": "USD",
-            "description": "Unlimited analyses and custom aircraft profiles, per month"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pilot Annual",
-            "price": "79.99",
-            "priceCurrency": "USD",
-            "description": "Unlimited analyses and custom aircraft profiles, per year"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pilot Annual first-year intro offer",
-            "price": "49.99",
-            "priceCurrency": "USD",
-            "availabilityStarts": "2026-09-15",
-            "availabilityEnds": "2026-11-30",
-            "priceValidUntil": "2026-11-30",
-            "description": "First year of the annual Pilot plan for subscriptions started between September 15 and November 30, 2026; renews at 79.99 USD per year"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pro",
-            "price": "19.99",
-            "priceCurrency": "USD",
-            "description": "Everything in Pilot plus fleet management, per month"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pro Annual",
-            "price": "159.99",
-            "priceCurrency": "USD",
-            "description": "Everything in Pilot plus fleet management, per year"
-          }
-        ]
-      }
-    ]
-  }
-  </script>
-
   <link rel="stylesheet" href="/assets/tokens.css" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1991,6 +1893,94 @@
     }
 /* social-feed:end */
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://flightdecide.com/#organization",
+        "name": "FlightDecide",
+        "url": "https://flightdecide.com",
+        "logo": "https://flightdecide.com/assets/brand/icon-512.png",
+        "email": "support@flightdecide.com",
+        "sameAs": [
+        "https://apps.apple.com/app/flightdecide/id6761793626",
+        "https://www.instagram.com/flightdecide/",
+        "https://www.facebook.com/flightdecide"
+      ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://flightdecide.com/#website",
+        "name": "FlightDecide",
+        "url": "https://flightdecide.com",
+        "publisher": { "@id": "https://flightdecide.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://flightdecide.com/#app",
+        "name": "FlightDecide",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "FlightDecide is a go/no-go preflight decision-support app for general aviation pilots. It computes your fuel, weight and balance, and performance from your aircraft's numbers and scores the weather and NOTAMs for the planned flight window against your personal minimums, giving a GO, CAUTION, or NO GO verdict with a plain-language briefing you can verify against the raw data. Advisory only, not an official weather briefing.",
+        "url": "https://flightdecide.com",
+        "installUrl": "https://apps.apple.com/app/flightdecide/id6761793626",
+        "image": "https://flightdecide.com/assets/brand/og-image.png",
+        "screenshot": "https://flightdecide.com/assets/brand/og-image.png",
+        "featureList": "Route weather analysis for a time window; scored GO/CAUTION/NO GO advisory; AI preflight briefing verifiable against raw METAR/TAF/NOTAM; NOTAM analysis filtered by flight window; fuel planning with Part 91 VFR/IFR reserves; weight and balance; enroute winds aloft, freezing levels, and PIREPs; customizable aircraft profiles and personal minimums",
+        "publisher": { "@id": "https://flightdecide.com/#organization" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "3 flight analyses per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot",
+            "price": "9.99",
+            "priceCurrency": "USD",
+            "description": "Unlimited analyses and custom aircraft profiles, per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot Annual",
+            "price": "79.99",
+            "priceCurrency": "USD",
+            "description": "Unlimited analyses and custom aircraft profiles, per year"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot Annual first-year intro offer",
+            "price": "49.99",
+            "priceCurrency": "USD",
+            "availabilityStarts": "2026-09-15",
+            "availabilityEnds": "2026-11-30",
+            "priceValidUntil": "2026-11-30",
+            "description": "First year of the annual Pilot plan for subscriptions started between September 15 and November 30, 2026; renews at 79.99 USD per year"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "19.99",
+            "priceCurrency": "USD",
+            "description": "Everything in Pilot plus fleet management, per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro Annual",
+            "price": "159.99",
+            "priceCurrency": "USD",
+            "description": "Everything in Pilot plus fleet management, per year"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
 <script defer src="/assets/meta-pixel.js"></script>
 </head>
