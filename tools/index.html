@@ -60,7 +60,17 @@
     .tool-grid.single { grid-template-columns: 1fr; }
     .tools-about { font-size: 14.5px; line-height: 1.6; color: var(--text-muted); margin: 30px 0 0; }
 
-    @media (max-width: 520px) { .tool-grid { grid-template-columns: 1fr; } }
+    /* On a phone each tool is one row, icon beside the words (2026-09-25);
+       stacked tiles made 14 tools 2,500px long. */
+    @media (max-width: 520px) {
+      .tool-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 28px; }
+      .tool-tile { display: grid; grid-template-columns: 36px 1fr; column-gap: 12px; row-gap: 2px;
+        padding: 12px 14px; border-radius: var(--radius-sm); }
+      .tool-ic { grid-row: span 2; width: 36px; height: 36px; border-radius: 9px; }
+      .tool-ic svg { width: 19px; height: 19px; }
+      .tool-tile h3 { font-size: 15px; align-self: end; }
+      .tool-tile p { font-size: 13px; }
+    }
     @media (prefers-reduced-motion: reduce) { .tool-tile, .tool-tile::after { transition: none; } }
   </style>
   <script type="application/ld+json">
@@ -201,15 +211,17 @@
     </div>
   </nav>
 
-  <div class="page-hero">
-    <span class="page-label">FlightDecide</span>
-    <h1>Free Pilot Tools &amp; Preflight Planning Calculators</h1>
-    <p class="page-sub">An online E6B flight computer and preflight planning suite: the calculators and worksheets for the numbers every flight-planning and go/no-go decision runs on. No sign-up, no download. They work right in your browser.</p>
-    <div class="hero-chips">
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>14 free tools</span>
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Runs in your browser</span>
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>No sign-up</span>
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Free</span>
+  <div class="page-hero tool-hero hub-hero">
+    <div class="hero-inner">
+      <span class="page-label">FlightDecide</span>
+      <h1>Free Pilot Tools &amp; Preflight Planning Calculators</h1>
+      <p class="page-sub">An online E6B flight computer and preflight planning suite: the calculators and worksheets for the numbers every flight-planning and go/no-go decision runs on. No sign-up, no download. They work right in your browser.</p>
+      <div class="hero-chips">
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>14 free tools</span>
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Runs in your browser</span>
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>No sign-up</span>
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Free</span>
+      </div>
     </div>
   </div>
 

@@ -522,9 +522,23 @@ nav.tool-switcher {
 .tool-hero h1 { font-size: 26px; letter-spacing: -0.5px; margin-bottom: 4px; }
 .tool-hero .page-sub { margin: 0; max-width: 640px; font-size: 15px; color: var(--text-dim); }
 .tool-hero + .page-wrap { padding-top: 28px; }
+/* Section hubs use the tool pages' compact header (2026-09-25), with the text
+   on the content column's edge and the introduction as plain muted text
+   instead of a highlighted box, so the first links sit above the fold. */
+.hub-hero .hero-inner { max-width: calc(var(--max-content) - 80px); }
+.hub-hero .hero-chips { justify-content: flex-start; margin-top: 12px; }
+@media (max-width: 640px) { .hub-hero .hero-chips { display: none; } }
+.prose p.hub-intro {
+  max-width: 680px;
+  margin: 0 0 22px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.prose p.hub-intro strong { color: var(--text); font-weight: 600; }
 @media (max-width: 640px) {
   .page-hero.tool-hero { padding: 18px 20px 16px; }
-  .tool-hero h1 { font-size: 22px; }
+  .page-hero.tool-hero h1 { font-size: 22px; }
   .tool-hero .page-sub { font-size: 14px; }
 }
 
@@ -684,15 +698,23 @@ nav.tool-switcher {
 .faq-answer-inner p:last-child { margin-bottom: 0; }
 .faq-answer-inner ul { margin: 0 0 10px 20px; }
 
-/* CARD LIST (hub pages, related links) */
-.card-list { display: grid; gap: 14px; margin: 8px 0 32px; }
+/* CARD LIST (hub pages, related links)
+   Compact tiles since 2026-09-25: two columns where there is room, one on a
+   phone, the description held to two lines. The stacked full-width cards put
+   a 42-aircraft hub at 9,300px on a phone. */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin: 8px 0 28px;
+}
 .card-link {
   position: relative;
   display: block;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 20px 52px 20px 22px;
+  border-radius: var(--radius-sm);
+  padding: 14px 38px 14px 16px;
   text-decoration: none;
   color: var(--text);
   transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
@@ -704,12 +726,21 @@ nav.tool-switcher {
 }
 /* .prose a (higher specificity) must not repaint these as underlined links */
 .prose a.card-link, .prose a.card-link:hover { color: var(--text); text-decoration: none; }
-.card-link h3 { font-size: 17px; font-weight: 700; margin: 0 0 4px; color: var(--text); }
-.card-link p { font-size: 14px; color: var(--text-muted); margin: 0; }
+.card-link h3 { font-size: 15.5px; font-weight: 650; line-height: 1.35; margin: 0 0 3px; color: var(--text); }
+.card-link p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0;
+}
 .card-link::after {
   content: '\2192';
   position: absolute;
-  right: 20px;
+  right: 16px;
   top: 50%;
   color: var(--accent-blue);
   font-size: 16px;
