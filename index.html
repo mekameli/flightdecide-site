@@ -1913,7 +1913,8 @@
   text-transform: uppercase;
   color: var(--accent-blue);
 }
-/* Two classes, so the guide pages' .prose h3 (19px, 30px above) cannot win. */
+/* Two classes, so the guide pages' .prose h2/h3 (size, spacing, tracking)
+   cannot win: the archive's titles are h2, the strips' h3. */
 .social-card .social-card-title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1922,6 +1923,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
+  letter-spacing: normal;
   margin: 0;
   overflow-wrap: break-word;
 }
