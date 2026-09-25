@@ -1,0 +1,24 @@
+/* GENERATED from the :root block of pages.css by scripts/gen_tokens_css.py.
+   Do not edit: change the value in pages.css and rerun the script. */
+:root {
+  --bg: #0F172A;
+  --bg-card: rgba(255,255,255,0.04);
+  --bg-card-hover: rgba(255,255,255,0.07);
+  --border: rgba(255,255,255,0.08);
+  --border-bright: rgba(255,255,255,0.15);
+  --accent-green: #22C55E;
+  --accent-blue: #3B82F6;
+  --accent-amber: #EAB308;
+  --accent-red: #EF4444;
+  /* Inline text links: a softer, more luminous sky blue than --accent-blue,
+     tuned to sit with the body text on the dark navy (~7.3:1 contrast). */
+  --link: #6EA8FA;
+  --link-hover: #9BC1FF;
+  --link-underline: rgba(110,168,250,0.4);
+  --text: #F0F0F5;
+  --text-muted: #94A3B8;
+  --text-dim: #8494AB;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --max-content: 800px;
+}
