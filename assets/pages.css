@@ -886,45 +886,76 @@ footer.site-footer {
   gap: 18px;
   margin: 22px 0 26px;
 }
+/* Image first, no box around the words (2026-09-24). The picture is the
+   card and the title sits under it, the way a video or an album does; a
+   caption under an image already reads as one thing (Material 3 card
+   guidance: do not force content into cards when spacing does the job). */
 .social-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
-.social-card:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--border-bright);
-  transform: translateY(-3px);
+/* The picture is always shown whole. Its headline is drawn into the top of
+   it, and the old square crop cut that line off every portrait post (and all
+   of it on a 2:3 one). The frame is 4:5, the shape new posts are drawn in. A
+   square or 2:3 post is fitted inside it, centred, so what it leaves is an
+   even mat on two sides: the same picture blurred and darkened, keeping its
+   colour. Pinned to the top, a square left one grey band along the bottom,
+   and a reviewer read that as an empty placeholder. */
+.social-card-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #0B1220;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.social-card-fill {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  filter: blur(30px) brightness(0.42);
 }
 .social-card-img {
+  position: relative;
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  background: #0B1220;
+  height: 100%;
+  object-fit: contain;
+}
+.social-card:hover .social-card-media {
+  border-color: var(--border-bright);
+  transform: translateY(-3px);
 }
 .social-card-body {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 14px 16px 16px;
+  gap: 4px;
+  padding: 10px 2px 0;
 }
 .social-card-topic {
-  display: inline-block;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent-blue);
-  margin-bottom: 6px;
 }
-.social-card-title { font-size: 16px; line-height: 1.35; margin: 0; }
+/* Two classes, so the guide pages' .prose h3 (19px, 30px above) cannot win. */
+.social-card .social-card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  overflow-wrap: break-word;
+}
 .social-card-title a { color: var(--text); text-decoration: none; }
 /* Stretch the title link over the card so the whole thing is clickable while
    the accessible name stays the title alone. */
@@ -963,24 +994,30 @@ footer.site-footer {
   border-color: var(--accent-blue);
   color: var(--link-hover);
 }
-/* The guide pages put the grid inside .prose, whose heading and link rules
-   (higher specificity) pushed each title 30px below its topic and repainted
-   the pills as underlined blue text. */
-.prose .social-card-title { margin: 0; }
+/* The guide pages put the pills inside .prose, whose link rule (higher
+   specificity) repainted them as underlined blue text. The card title
+   answers the same kind of rule with two classes, above. */
 .prose a.social-follow { color: var(--text); text-decoration: none; }
 .prose a.social-follow:hover, .prose a.social-follow:focus-visible { color: #FF7AA8; }
 .prose a.social-all:hover, .prose a.social-all:focus-visible { color: var(--link-hover); }
-/* One column on a phone, because the illustration is the content and it stops
-   being readable much below full width. Six of those is a lot of scrolling for
-   a section the reader did not come for, so the tail is trimmed instead of
-   shrunk; the follow button right below it is where the rest lives. */
+/* Two columns on a phone (Mehdi, 2026-09-24: more on a screen). It used to be
+   one, so the drawn text stayed large; at two it is small, so the title under
+   the picture carries the meaning and a tap opens the full picture on its own
+   page. A strip the reader did not come for still stops at four cards, two
+   rows; the follow button right below it is where the rest lives. */
 @media (max-width: 560px) {
-  .social-grid { grid-template-columns: 1fr; gap: 14px; }
+  .social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; }
   .social-grid > :nth-child(n+5) { display: none; }
+  .social-card .social-card-title { font-size: 14px; }
+}
+/* Very narrow (a small phone, or any phone zoomed to 200%): two columns would
+   be 70px tiles, smaller than at 100%, so it goes back to one. */
+@media (max-width: 320px) {
+  .social-grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .social-card { transition: border-color 0.2s, background 0.2s; }
-  .social-card:hover { transform: none; }
+  .social-card-media { transition: border-color 0.2s; }
+  .social-card:hover .social-card-media { transform: none; }
 }
 /* social-feed:end */
 
@@ -1193,10 +1230,37 @@ footer.site-footer {
 @media (prefers-reduced-motion: reduce) {
   .prose .explainer-more a { transition: none; }
 }
-.explainer-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 6px; }
+/* The archive is a gallery (2026-09-24). It gets the compact header the tool
+   pages use (title and one line, left-aligned on the grid's edge) and a
+   gallery's width. The centred hero, the boxed introduction and three rows
+   of topics put the first picture below the fold on a phone; a reader skips
+   an introduction anyway, and the subtitle already says what it said. */
+.page-hero.tool-hero.xa-hero .hero-inner { max-width: 1120px; }
+.xa-hero h1, .xa-hero .page-sub { text-wrap: balance; }
+.page-wrap.explainer-archive { max-width: 1200px; }
+.explainer-archive .explainer-grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 26px 18px;
+  margin-top: 20px;
+}
+/* The end of the page keeps the grid's edges: the app banner runs its full
+   width, words left and button right, and the fine print starts where the
+   grid starts (at a readable measure). */
+.explainer-archive .advisory-note { max-width: var(--max-content); }
+@media (min-width: 900px) {
+  .explainer-archive .cta-band.explainer-cta {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "icon title btn" "icon text btn";
+    align-items: center;
+  }
+  .explainer-archive .explainer-cta .btn-primary { justify-self: end; margin-left: 12px; }
+  .explainer-archive.prose .explainer-cta p { margin-bottom: 0; max-width: 68ch; }
+}
+.explainer-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
 .explainer-filter {
   font: inherit;
   font-size: 14px;
+  min-height: 36px;
   padding: 6px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
@@ -1215,6 +1279,42 @@ footer.site-footer {
    to four cards is for a strip the reader did not come for, not for this. */
 @media (max-width: 560px) {
   .social-grid.explainer-grid > :nth-child(n+5) { display: flex; }
+}
+/* On a phone or a tablet the topics are one row you swipe, with the next one
+   cut at the edge to show there is more, not rows you scroll past to reach
+   the first picture. Only on a touch screen: a mouse wheel cannot scroll a
+   row sideways, so with a mouse the topics wrap. */
+@media (max-width: 820px) and (pointer: coarse) {
+  .explainer-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 -40px;
+    padding: 0 40px 2px;
+    scrollbar-width: none;
+  }
+  .explainer-filters::-webkit-scrollbar { display: none; }
+  .explainer-filter { flex: 0 0 auto; }
+}
+/* A finger needs 44px; a mouse pointer does not. */
+@media (pointer: coarse) {
+  .explainer-filter { min-height: 44px; }
+}
+@media (max-width: 640px) and (pointer: coarse) {
+  .explainer-filters { margin: 0 -20px; padding: 0 20px 2px; }
+}
+@media (max-width: 640px) {
+  /* The shared phone rule for .page-hero h1 (30px) comes later in the file
+     than the tool hero's 22px and wins; three classes put it back. */
+  .page-hero.xa-hero h1 { font-size: 22px; }
+  .xa-hero + .page-wrap.explainer-archive { padding-top: 18px; }
+  .explainer-archive .explainer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 12px;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .explainer-archive .explainer-grid { grid-template-columns: minmax(0, 1fr); }
 }
 .explainer-grid .social-card[hidden] { display: none !important; }
 /* explainers:end */
