@@ -1,4 +1,4 @@
-/* GENERATED from the :root block of pages.css by scripts/gen_tokens_css.py.
+/* GENERATED from the :root and site-footer blocks of pages.css by scripts/gen_tokens_css.py.
    Do not edit: change the value in pages.css and rerun the script. */
 :root {
   --bg: #0F172A;
@@ -22,3 +22,75 @@
   --radius-sm: 10px;
   --max-content: 800px;
 }
+
+/* site-footer:start */
+/* The site footer (FD-748 P5): one design on every page. The markup is
+   site/components/footer-site.html.j2; scripts/gen_tokens_css.py copies this
+   block into tokens.css for the pages that do not load this file. */
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 40px;
+  text-align: center;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 24px;
+  margin-bottom: 14px;
+}
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--text); }
+.footer-copy { font-size: 13px; color: var(--text-dim); }
+/* The footer sits inside pages whose own sheets style body, ul, li and p
+   (the homepage body is 18px, the legal pages indent lists). Pin what it
+   inherits so it renders the same on every one of them. */
+footer.site-footer { color: var(--text); font-size: 17px; line-height: 1.7; }
+footer.site-footer .footer-links { color: inherit; margin: 0 0 14px; padding: 0; }
+footer.site-footer li { color: inherit; margin: 0; }
+footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
+@media (max-width: 640px) {
+  footer.site-footer { padding: 24px 20px; }
+}
+/* Footer profile icons; their URLs live in scripts/gen_social_links.py. */
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding: 0;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.social-link:hover, .social-link:focus-visible {
+  background: var(--bg-card-hover);
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+}
+/* Brand colour on hover only. At rest the pair reads as one quiet row rather
+   than two logos competing with the footer links above them. */
+.social-instagram:hover, .social-instagram:focus-visible { color: #E1306C; }
+.social-facebook:hover, .social-facebook:focus-visible { color: #1877F2; }
+.social-link:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .social-link { transition: color 0.2s, border-color 0.2s, background 0.2s; }
+  .social-link:hover, .social-link:focus-visible { transform: none; }
+}
+/* site-footer:end */
