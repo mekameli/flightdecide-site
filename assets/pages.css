@@ -826,8 +826,8 @@ footer.site-footer {
    (the homepage body is 18px, the legal pages indent lists). Pin what it
    inherits so it renders the same on every one of them. */
 footer.site-footer { color: var(--text); font-size: 17px; line-height: 1.7; }
-footer.site-footer .footer-links { margin: 0 0 14px; padding: 0; }
-footer.site-footer li { margin: 0; }
+footer.site-footer .footer-links { color: inherit; margin: 0 0 14px; padding: 0; }
+footer.site-footer li { color: inherit; margin: 0; }
 footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
 @media (max-width: 640px) {
   footer.site-footer { padding: 24px 20px; }
