@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26T02:55:25+00:00",
+  "generated": "2026-09-26T08:21:38+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -78,7 +78,12 @@
             "That arc is the gust front, the front line of the cool air the storm has pushed out. The handbook likens it to a small cold front, and its glossary says it may also be called an outflow boundary.",
             "The comparison fits. A gust front is the edge of a body of cool air shoving into the air ahead, and air gets lifted along that edge. That lift can set off new cells, sometimes well ahead of the one that made the outflow.",
             "The handbook puts no number on how far ahead the gust front runs. Well ahead is as precise as it gets, so there's no mileage in it to treat as a safe margin."
-          ]
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/gust-front-ahead-of-a-thunderstorm-ca898ddf.webp",
+            "caption": "From above, the gust front bows out ahead of the cell, so a track that misses the cloud can still cross the outflow.",
+            "alt": "From above, the gust front bows out ahead of the cell, so a track that misses the cloud can still cross the outflow."
+          }
         },
         {
           "heading": "What the gust front can look like",
@@ -87,7 +92,12 @@
             "A shelf cloud is a low wedge of cloud lying level, still joined to the base of the storm cloud above it. It's the more familiar of the two.",
             "A roll cloud is a low tube of cloud lying on its side. It sits completely apart from the storm's base, and that gap is what tells it from a shelf cloud. Roll clouds are relatively rare.",
             "The word that matters here is sometimes. A gust front doesn't always bring either cloud, so clear air ahead of a storm doesn't show you where its wind stops."
-          ]
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/gust-front-ahead-of-a-thunderstorm-e9d19dbc.webp",
+            "caption": "A shelf cloud stays joined to the storm's base, while a roll cloud floats free of it and is the rarer sight.",
+            "alt": "A shelf cloud stays joined to the storm's base, while a roll cloud floats free of it and is the rarer sight."
+          }
         },
         {
           "heading": "Why you can't judge the outflow by eye",
