@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26T08:21:38+00:00",
+  "generated": "2026-09-26T09:00:24+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1130,7 +1130,12 @@
             "Keep an eye on the gap between the aiming point and the horizon. At a constant angle that gap stays the same. If the aiming point rises toward the horizon, the point you'll really reach is closer than you think.",
             "The runway's shape gives clues too. From final it looks like a trapezoid, and on a stabilized approach it keeps the same shape as it grows. A shallower approach makes it look shorter and wider. A steeper one makes it look longer and narrower.",
             "Don't stare at one spot. The handbook suggests scanning from the aiming point to the horizon, to objects along the runway, to an area well short of it, and back again. It's easier to spot a drift off the path when your eyes keep moving."
-          ]
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/narrow-runway-and-a-low-approach-18f45664.webp",
+            "caption": "As the approach angle changes, the runway's outline changes too, so a runway that's getting shorter and wider means your path is getting shallower.",
+            "alt": "As the approach angle changes, the runway's outline changes too, so a runway that's getting shorter and wider means your path is getting shallower."
+          }
         },
         {
           "heading": "Cross-checks that don't depend on width",
