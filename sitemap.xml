@@ -612,5 +612,13 @@
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/gust-front-ahead-of-a-thunderstorm/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/gust-front-ahead-of-a-thunderstorm.webp</image:loc>
+    </image:image>
+  </url>
   <!-- explainers:end -->
 </urlset>
