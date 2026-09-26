@@ -522,23 +522,9 @@ nav.tool-switcher {
 .tool-hero h1 { font-size: 26px; letter-spacing: -0.5px; margin-bottom: 4px; }
 .tool-hero .page-sub { margin: 0; max-width: 640px; font-size: 15px; color: var(--text-dim); }
 .tool-hero + .page-wrap { padding-top: 28px; }
-/* Section hubs use the tool pages' compact header (2026-09-25), with the text
-   on the content column's edge and the introduction as plain muted text
-   instead of a highlighted box, so the first links sit above the fold. */
-.hub-hero .hero-inner { max-width: calc(var(--max-content) - 80px); }
-.hub-hero .hero-chips { justify-content: flex-start; margin-top: 12px; }
-@media (max-width: 640px) { .hub-hero .hero-chips { display: none; } }
-.prose p.hub-intro {
-  max-width: 680px;
-  margin: 0 0 22px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--text-muted);
-}
-.prose p.hub-intro strong { color: var(--text); font-weight: 600; }
 @media (max-width: 640px) {
   .page-hero.tool-hero { padding: 18px 20px 16px; }
-  .page-hero.tool-hero h1 { font-size: 22px; }
+  .tool-hero h1 { font-size: 22px; }
   .tool-hero .page-sub { font-size: 14px; }
 }
 
@@ -698,23 +684,15 @@ nav.tool-switcher {
 .faq-answer-inner p:last-child { margin-bottom: 0; }
 .faq-answer-inner ul { margin: 0 0 10px 20px; }
 
-/* CARD LIST (hub pages, related links)
-   Compact tiles since 2026-09-25: two columns where there is room, one on a
-   phone, the description held to two lines. The stacked full-width cards put
-   a 42-aircraft hub at 9,300px on a phone. */
-.card-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 10px;
-  margin: 8px 0 28px;
-}
+/* CARD LIST (hub pages, related links) */
+.card-list { display: grid; gap: 14px; margin: 8px 0 32px; }
 .card-link {
   position: relative;
   display: block;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 14px 38px 14px 16px;
+  border-radius: var(--radius);
+  padding: 20px 52px 20px 22px;
   text-decoration: none;
   color: var(--text);
   transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
@@ -726,21 +704,12 @@ nav.tool-switcher {
 }
 /* .prose a (higher specificity) must not repaint these as underlined links */
 .prose a.card-link, .prose a.card-link:hover { color: var(--text); text-decoration: none; }
-.card-link h3 { font-size: 15.5px; font-weight: 650; line-height: 1.35; margin: 0 0 3px; color: var(--text); }
-.card-link p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  font-size: 13.5px;
-  line-height: 1.5;
-  color: var(--text-muted);
-  margin: 0;
-}
+.card-link h3 { font-size: 17px; font-weight: 700; margin: 0 0 4px; color: var(--text); }
+.card-link p { font-size: 14px; color: var(--text-muted); margin: 0; }
 .card-link::after {
   content: '\2192';
   position: absolute;
-  right: 16px;
+  right: 20px;
   top: 50%;
   color: var(--accent-blue);
   font-size: 16px;
@@ -788,19 +757,7 @@ nav.tool-switcher {
 }
 .advisory-note a { color: var(--text-muted); }
 
-@media (max-width: 640px) {
-  .nav-inner { padding: 0 20px; }
-  .page-hero { padding: 48px 20px 40px; }
-  .page-hero h1 { font-size: 30px; letter-spacing: -1px; }
-  .page-wrap { padding: 40px 20px 72px; }
-  .calc-grid { grid-template-columns: 1fr; }
-  .prose h2 { font-size: 22px; }
-}
-
-/* site-footer:start */
-/* The site footer (FD-748 P5): one design on every page. The markup is
-   site/components/footer-site.html.j2; scripts/gen_tokens_css.py copies this
-   block into tokens.css for the pages that do not load this file. */
+/* FOOTER */
 footer.site-footer {
   border-top: 1px solid var(--border);
   padding: 32px 40px;
@@ -822,52 +779,16 @@ footer.site-footer {
 }
 .footer-links a:hover { color: var(--text); }
 .footer-copy { font-size: 13px; color: var(--text-dim); }
-/* The footer sits inside pages whose own sheets style body, ul, li and p
-   (the homepage body is 18px, the legal pages indent lists). Pin what it
-   inherits so it renders the same on every one of them. */
-footer.site-footer { color: var(--text); font-size: 17px; line-height: 1.7; }
-footer.site-footer .footer-links { color: inherit; margin: 0 0 14px; padding: 0; }
-footer.site-footer li { color: inherit; margin: 0; }
-footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
+
 @media (max-width: 640px) {
+  .nav-inner { padding: 0 20px; }
+  .page-hero { padding: 48px 20px 40px; }
+  .page-hero h1 { font-size: 30px; letter-spacing: -1px; }
+  .page-wrap { padding: 40px 20px 72px; }
+  .calc-grid { grid-template-columns: 1fr; }
+  .prose h2 { font-size: 22px; }
   footer.site-footer { padding: 24px 20px; }
 }
-/* Footer profile icons; their URLs live in scripts/gen_social_links.py. */
-.social-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 0 0 14px;
-  padding: 0;
-}
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  background: var(--bg-card);
-  color: var(--text-muted);
-  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
-}
-.social-link:hover, .social-link:focus-visible {
-  background: var(--bg-card-hover);
-  border-color: var(--border-bright);
-  transform: translateY(-2px);
-}
-/* Brand colour on hover only. At rest the pair reads as one quiet row rather
-   than two logos competing with the footer links above them. */
-.social-instagram:hover, .social-instagram:focus-visible { color: #E1306C; }
-.social-facebook:hover, .social-facebook:focus-visible { color: #1877F2; }
-.social-link:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
-@media (prefers-reduced-motion: reduce) {
-  .social-link { transition: color 0.2s, border-color 0.2s, background 0.2s; }
-  .social-link:hover, .social-link:focus-visible { transform: none; }
-}
-/* site-footer:end */
 
 /* PRINT (worksheet pages) */
 /* Cross-tool prefill chip: a value another tool computed, offered under a field. */
@@ -904,6 +825,56 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
   a { color: #111; text-decoration: none; }
 }
 
+/* social-links:start */
+/* Footer profile icons. Generated by scripts/gen_social_links.py, which is
+   also where the URLs live: edit them there, not here. */
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding: 0;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.social-link:hover, .social-link:focus-visible {
+  background: var(--bg-card-hover);
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+}
+/* Brand colour on hover only. At rest the pair reads as one quiet row rather
+   than two logos competing with the footer links above them. */
+.social-instagram:hover, .social-instagram:focus-visible { color: #E1306C; }
+.social-facebook:hover, .social-facebook:focus-visible { color: #1877F2; }
+.social-link:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .social-link { transition: color 0.2s, border-color 0.2s, background 0.2s; }
+  .social-link:hover, .social-link:focus-visible { transform: none; }
+}
+/* index.html and demo.html lay the footer out as a three-column grid. The icon
+   row is a full-width second line under it, not a fourth column, so the three
+   originals have to be pinned to row 1: a full-width item dropped into
+   auto-placement pushes the copyright onto a third row of its own. Below the
+   820px breakpoint those pages collapse to one column and auto-placement is
+   right again, so the pinning is scoped above it. */
+@media (min-width: 821px) {
+  .footer-inner .footer-logo { grid-row: 1; grid-column: 1; }
+  .footer-inner .footer-links { grid-row: 1; grid-column: 2; }
+  .footer-inner .footer-copy { grid-row: 1; grid-column: 3; }
+  .footer-inner .social-links { grid-row: 2; grid-column: 1 / -1; margin: 4px 0 0; }
+}
+/* social-links:end */
 
 /* social-feed:start */
 /* The published Instagram grid. Generated by scripts/gen_social_feed.py. */
@@ -973,8 +944,7 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
   text-transform: uppercase;
   color: var(--accent-blue);
 }
-/* Two classes, so the guide pages' .prose h2/h3 (size, spacing, tracking)
-   cannot win: the archive's titles are h2, the strips' h3. */
+/* Two classes, so the guide pages' .prose h3 (19px, 30px above) cannot win. */
 .social-card .social-card-title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -983,7 +953,6 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: normal;
   margin: 0;
   overflow-wrap: break-word;
 }

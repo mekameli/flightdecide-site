@@ -1,14 +1,14 @@
 {
- "data_version": 2,
+ "data_version": 3,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
+ "generated": "2026-09-26",
  "icao_type": "C182",
  "limits": {
-  "empty_weight_lbs": 2010,
+  "empty_weight_lbs": 1924,
   "max_gross_weight_lbs": 3100,
   "service_ceiling_ft": 18100,
   "usable_fuel_gal": 87,
-  "useful_load_lbs": 1090
+  "useful_load_lbs": 1186
  },
  "manufacturer": "Cessna",
  "name": "Cessna 182T Skylane",

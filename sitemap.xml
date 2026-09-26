@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://flightdecide.com/</loc>
     <lastmod>2026-07-18</lastmod>
@@ -473,153 +473,99 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/gust-front-ahead-of-a-thunderstorm/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/gust-front-ahead-of-a-thunderstorm.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/freezing-level-inside-a-cloud-layer/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/freezing-level-inside-a-cloud-layer.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/carburettor-ice-on-a-warm-day/</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/carburettor-ice-on-a-warm-day.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/acceleration-that-feels-like-a-climb/</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/acceleration-that-feels-like-a-climb.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/rotor-cloud-under-a-mountain-wave/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/rotor-cloud-under-a-mountain-wave.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/fuel-you-cannot-use/</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/fuel-you-cannot-use.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/ground-effect-in-the-flare/</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/ground-effect-in-the-flare.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/narrow-runway-and-a-low-approach/</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/narrow-runway-and-a-low-approach.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/black-hole-approach/</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/black-hole-approach.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/attention-narrowing-under-fatigue/</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/attention-narrowing-under-fatigue.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/stall-speed-rising-with-bank-angle/</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/stall-speed-rising-with-bank-angle.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/losing-the-headwind-on-final/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/losing-the-headwind-on-final.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/temperature-inversion-trapping-haze/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/temperature-inversion-trapping-haze.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/wind-correction-angle/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/wind-correction-angle.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/lee-side-downdraft/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/lee-side-downdraft.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/density-altitude/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
-    </image:image>
   </url>
   <!-- explainers:end -->
 </urlset>

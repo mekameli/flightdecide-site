@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Built by scripts/build_site.py from site/content/tools__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -61,17 +60,7 @@
     .tool-grid.single { grid-template-columns: 1fr; }
     .tools-about { font-size: 14.5px; line-height: 1.6; color: var(--text-muted); margin: 30px 0 0; }
 
-    /* On a phone each tool is one row, icon beside the words (2026-09-25);
-       stacked tiles made 14 tools 2,500px long. */
-    @media (max-width: 520px) {
-      .tool-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 28px; }
-      .tool-tile { display: grid; grid-template-columns: 36px 1fr; column-gap: 12px; row-gap: 2px;
-        padding: 12px 14px; border-radius: var(--radius-sm); }
-      .tool-ic { grid-row: span 2; width: 36px; height: 36px; border-radius: 9px; }
-      .tool-ic svg { width: 19px; height: 19px; }
-      .tool-tile h3 { font-size: 15px; align-self: end; }
-      .tool-tile p { font-size: 13px; }
-    }
+    @media (max-width: 520px) { .tool-grid { grid-template-columns: 1fr; } }
     @media (prefers-reduced-motion: reduce) { .tool-tile, .tool-tile::after { transition: none; } }
   </style>
   <script type="application/ld+json">
@@ -204,23 +193,23 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         Back to Home
       </a>
     </div>
   </nav>
 
-  <div class="page-hero tool-hero hub-hero">
-    <div class="hero-inner">
-      <span class="page-label">FlightDecide</span>
-      <h1>Free Pilot Tools &amp; Preflight Planning Calculators</h1>
-      <p class="page-sub">An online E6B flight computer and preflight planning suite: the calculators and worksheets for the numbers every flight-planning and go/no-go decision runs on. No sign-up, no download. They work right in your browser.</p>
-      <div class="hero-chips">
-        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>14 free tools</span>
-        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Runs in your browser</span>
-        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>No sign-up</span>
-        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Free</span>
-      </div>
+  <div class="page-hero">
+    <span class="page-label">FlightDecide</span>
+    <h1>Free Pilot Tools &amp; Preflight Planning Calculators</h1>
+    <p class="page-sub">An online E6B flight computer and preflight planning suite: the calculators and worksheets for the numbers every flight-planning and go/no-go decision runs on. No sign-up, no download. They work right in your browser.</p>
+    <div class="hero-chips">
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>14 free tools</span>
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Runs in your browser</span>
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>No sign-up</span>
+      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Free</span>
     </div>
   </div>
 
@@ -352,11 +341,8 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
-      <li><a href="/explainers/">Explainers</a></li>
-      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
-      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>

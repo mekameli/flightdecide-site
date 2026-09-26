@@ -1,39 +1,153 @@
 <!DOCTYPE html>
-<!-- Built by scripts/build_site.py from site/content/index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
   <title>FlightDecide: A Preflight Second Opinion for Pilots</title>
   <meta name="description" content="FlightDecide reads your TAFs, NOTAMs, fuel, and weight and balance for the planned flight window, then gives you a scored go/no-go advisor and an AI briefing you can verify against raw data. The final call is always yours." />
   <meta name="keywords" content="pilot app, go no go advisor, preflight second opinion, preflight planning, preflight flight planning, flight planning app, aviation weather, TAF interpretation, NOTAM summary, online E6B flight computer, E6B calculator, cross-country flight planning, GA pilot, IFR VFR, weight and balance, fuel planning, free pilot tools" />
   <link rel="canonical" href="https://flightdecide.com/" />
+
+  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
   <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:url" content="https://flightdecide.com/" />
   <meta property="og:title" content="FlightDecide: A Preflight Second Opinion for Pilots" />
   <meta property="og:description" content="Should you fly today? FlightDecide reads your weather, NOTAMs, fuel, and W&amp;B for your planned window and gives you a scored go/no-go advisor you can verify against raw data." />
-  <meta property="og:url" content="https://flightdecide.com/" />
+  <meta property="og:site_name" content="FlightDecide" />
   <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="FlightDecide: Should you fly today? App showing a GO verdict for a GA flight" />
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FlightDecide: A Preflight Second Opinion for Pilots" />
   <meta name="twitter:description" content="Should you fly today? FlightDecide reads your weather, NOTAMs, fuel, and W&amp;B for your planned window and gives you a scored go/no-go advisor you can verify against raw data." />
   <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <meta name="twitter:image:alt" content="FlightDecide: Should you fly today? App showing a GO verdict for a GA flight" />
-  <link rel="stylesheet" href="/assets/tokens.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://flightdecide.com/#organization",
+        "name": "FlightDecide",
+        "url": "https://flightdecide.com",
+        "logo": "https://flightdecide.com/assets/brand/icon-512.png",
+        "email": "support@flightdecide.com",
+        "sameAs": [
+        "https://apps.apple.com/app/flightdecide/id6761793626",
+        "https://www.instagram.com/flightdecide/",
+        "https://www.facebook.com/flightdecide"
+      ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://flightdecide.com/#website",
+        "name": "FlightDecide",
+        "url": "https://flightdecide.com",
+        "publisher": { "@id": "https://flightdecide.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://flightdecide.com/#app",
+        "name": "FlightDecide",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "FlightDecide is a go/no-go preflight decision-support app for general aviation pilots. It computes your fuel, weight and balance, and performance from your aircraft's numbers and scores the weather and NOTAMs for the planned flight window against your personal minimums, giving a GO, CAUTION, or NO GO verdict with a plain-language briefing you can verify against the raw data. Advisory only, not an official weather briefing.",
+        "url": "https://flightdecide.com",
+        "installUrl": "https://apps.apple.com/app/flightdecide/id6761793626",
+        "image": "https://flightdecide.com/assets/brand/og-image.png",
+        "screenshot": "https://flightdecide.com/assets/brand/og-image.png",
+        "featureList": "Route weather analysis for a time window; scored GO/CAUTION/NO GO advisory; AI preflight briefing verifiable against raw METAR/TAF/NOTAM; NOTAM analysis filtered by flight window; fuel planning with Part 91 VFR/IFR reserves; weight and balance; enroute winds aloft, freezing levels, and PIREPs; customizable aircraft profiles and personal minimums",
+        "publisher": { "@id": "https://flightdecide.com/#organization" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "3 flight analyses per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot",
+            "price": "9.99",
+            "priceCurrency": "USD",
+            "description": "Unlimited analyses and custom aircraft profiles, per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot Annual",
+            "price": "79.99",
+            "priceCurrency": "USD",
+            "description": "Unlimited analyses and custom aircraft profiles, per year"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pilot Annual first-year intro offer",
+            "price": "49.99",
+            "priceCurrency": "USD",
+            "availabilityStarts": "2026-09-15",
+            "availabilityEnds": "2026-11-30",
+            "priceValidUntil": "2026-11-30",
+            "description": "First year of the annual Pilot plan for subscriptions started between September 15 and November 30, 2026; renews at 79.99 USD per year"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "19.99",
+            "priceCurrency": "USD",
+            "description": "Everything in Pilot plus fleet management, per month"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro Annual",
+            "price": "159.99",
+            "priceCurrency": "USD",
+            "description": "Everything in Pilot plus fleet management, per year"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
+      --bg: #0F172A;
+      --bg-card: rgba(255,255,255,0.04);
+      --bg-card-hover: rgba(255,255,255,0.07);
+      --border: rgba(255,255,255,0.08);
+      --border-bright: rgba(255,255,255,0.18);
+      --accent-green: #22C55E;
+      --accent-blue: #3B82F6;
+      --link: #6EA8FA;
+      --link-hover: #9BC1FF;
+      --link-underline: rgba(110,168,250,0.4);
+      --accent-amber: #EAB308;
+      --accent-red: #EF4444;
       --accent-purple: #A855F7;
       --accent-cyan: #06B6D4;
+      --text: #F0F0F5;
+      --text-muted: #94A3B8;
+      --text-dim: #7C8299;
+      --radius: 16px;
+      --radius-sm: 10px;
       --max-content: 1200px;
       --max-nav: 1280px;
     }
@@ -1430,6 +1544,63 @@
     }
 
     /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 44px 40px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-content);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .footer-logo-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 5px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-dim);
+      text-align: right;
+    }
+
     /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
@@ -1579,6 +1750,9 @@
       .verdict-mockup { width: min(280px, 80vw); }
       .steps { grid-template-columns: 1fr; }
       .efb-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; text-align: center; gap: 16px; }
+      .footer-copy { text-align: center; }
+      .footer-links { justify-content: center; }
     }
 
     @media (max-width: 640px) {
@@ -1614,8 +1788,62 @@
       .efb-grid { gap: 12px; }
       .cta-section { padding: 72px 20px; }
       .cta-sub { font-size: 16px; }
+      footer { padding: 32px 20px; }
+      .footer-inner { grid-template-columns: 1fr; text-align: center; gap: 16px; }
+      .footer-copy { text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
     }
   
+/* social-links:start */
+/* Footer profile icons. Generated by scripts/gen_social_links.py, which is
+   also where the URLs live: edit them there, not here. */
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding: 0;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.social-link:hover, .social-link:focus-visible {
+  background: var(--bg-card-hover);
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+}
+/* Brand colour on hover only. At rest the pair reads as one quiet row rather
+   than two logos competing with the footer links above them. */
+.social-instagram:hover, .social-instagram:focus-visible { color: #E1306C; }
+.social-facebook:hover, .social-facebook:focus-visible { color: #1877F2; }
+.social-link:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .social-link { transition: color 0.2s, border-color 0.2s, background 0.2s; }
+  .social-link:hover, .social-link:focus-visible { transform: none; }
+}
+/* index.html and demo.html lay the footer out as a three-column grid. The icon
+   row is a full-width second line under it, not a fourth column, so the three
+   originals have to be pinned to row 1: a full-width item dropped into
+   auto-placement pushes the copyright onto a third row of its own. Below the
+   820px breakpoint those pages collapse to one column and auto-placement is
+   right again, so the pinning is scoped above it. */
+@media (min-width: 821px) {
+  .footer-inner .footer-logo { grid-row: 1; grid-column: 1; }
+  .footer-inner .footer-links { grid-row: 1; grid-column: 2; }
+  .footer-inner .footer-copy { grid-row: 1; grid-column: 3; }
+  .footer-inner .social-links { grid-row: 2; grid-column: 1 / -1; margin: 4px 0 0; }
+}
+/* social-links:end */
   
 /* social-feed:start */
 /* The published Instagram grid. Generated by scripts/gen_social_feed.py. */
@@ -1685,8 +1913,7 @@
   text-transform: uppercase;
   color: var(--accent-blue);
 }
-/* Two classes, so the guide pages' .prose h2/h3 (size, spacing, tracking)
-   cannot win: the archive's titles are h2, the strips' h3. */
+/* Two classes, so the guide pages' .prose h3 (19px, 30px above) cannot win. */
 .social-card .social-card-title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1695,7 +1922,6 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: normal;
   margin: 0;
   overflow-wrap: break-word;
 }
@@ -1779,94 +2005,6 @@
     }
 /* social-feed:end */
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://flightdecide.com/#organization",
-        "name": "FlightDecide",
-        "url": "https://flightdecide.com",
-        "logo": "https://flightdecide.com/assets/brand/icon-512.png",
-        "email": "support@flightdecide.com",
-        "sameAs": [
-        "https://apps.apple.com/app/flightdecide/id6761793626",
-        "https://www.instagram.com/flightdecide/",
-        "https://www.facebook.com/flightdecide"
-      ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://flightdecide.com/#website",
-        "name": "FlightDecide",
-        "url": "https://flightdecide.com",
-        "publisher": { "@id": "https://flightdecide.com/#organization" }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://flightdecide.com/#app",
-        "name": "FlightDecide",
-        "operatingSystem": "iOS",
-        "applicationCategory": "UtilitiesApplication",
-        "description": "FlightDecide is a go/no-go preflight decision-support app for general aviation pilots. It computes your fuel, weight and balance, and performance from your aircraft's numbers and scores the weather and NOTAMs for the planned flight window against your personal minimums, giving a GO, CAUTION, or NO GO verdict with a plain-language briefing you can verify against the raw data. Advisory only, not an official weather briefing.",
-        "url": "https://flightdecide.com",
-        "installUrl": "https://apps.apple.com/app/flightdecide/id6761793626",
-        "image": "https://flightdecide.com/assets/brand/og-image.png",
-        "screenshot": "https://flightdecide.com/assets/brand/og-image.png",
-        "featureList": "Route weather analysis for a time window; scored GO/CAUTION/NO GO advisory; AI preflight briefing verifiable against raw METAR/TAF/NOTAM; NOTAM analysis filtered by flight window; fuel planning with Part 91 VFR/IFR reserves; weight and balance; enroute winds aloft, freezing levels, and PIREPs; customizable aircraft profiles and personal minimums",
-        "publisher": { "@id": "https://flightdecide.com/#organization" },
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "Free",
-            "price": "0",
-            "priceCurrency": "USD",
-            "description": "3 flight analyses per month"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pilot",
-            "price": "9.99",
-            "priceCurrency": "USD",
-            "description": "Unlimited analyses and custom aircraft profiles, per month"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pilot Annual",
-            "price": "79.99",
-            "priceCurrency": "USD",
-            "description": "Unlimited analyses and custom aircraft profiles, per year"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pilot Annual first-year intro offer",
-            "price": "49.99",
-            "priceCurrency": "USD",
-            "availabilityStarts": "2026-09-15",
-            "availabilityEnds": "2026-11-30",
-            "priceValidUntil": "2026-11-30",
-            "description": "First year of the annual Pilot plan for subscriptions started between September 15 and November 30, 2026; renews at 79.99 USD per year"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pro",
-            "price": "19.99",
-            "priceCurrency": "USD",
-            "description": "Everything in Pilot plus fleet management, per month"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pro Annual",
-            "price": "159.99",
-            "priceCurrency": "USD",
-            "description": "Everything in Pilot plus fleet management, per year"
-          }
-        ]
-      }
-    ]
-  }
-  </script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
 <script defer src="/assets/meta-pixel.js"></script>
 </head>
@@ -2549,19 +2687,6 @@
         <div class="social-grid social-grid-compact">
           <article class="social-card">
             <div class="social-card-media">
-              <img class="social-card-fill" src="/assets/social/wx-gust-front.webp" alt="" aria-hidden="true"
-                   width="512" height="640" loading="lazy" decoding="async" />
-              <img class="social-card-img" src="/assets/social/wx-gust-front.webp"
-                   alt="The gust front ahead of a thunderstorm: an illustrated diagram for pilots. Clear of the cloud isn&#x27;t clear of its wind. The picture shows a thunderstorm on the left with a dark rain shaft and a clean right-hand cloud edge; pale streamlines dropping out of the rain and running along the ground well past the cloud edge; a curling dust roll marking the gust front&#x27;s leading edge far to the right of the cloud; open sky with no cloud above the solid aircraft, which sits inside the streamlines. Flight training explainer from FlightDecide."
-                   width="512" height="640" loading="lazy" decoding="async" />
-            </div>
-            <div class="social-card-body">
-              <span class="social-card-topic">Weather</span>
-              <h3 class="social-card-title"><a href="/explainers/gust-front-ahead-of-a-thunderstorm/">The gust front ahead of a thunderstorm</a></h3>
-            </div>
-          </article>
-          <article class="social-card">
-            <div class="social-card-media">
               <img class="social-card-fill" src="/assets/social/wx-freezing-level.webp" alt="" aria-hidden="true"
                    width="512" height="640" loading="lazy" decoding="async" />
               <img class="social-card-img" src="/assets/social/wx-freezing-level.webp"
@@ -2599,51 +2724,68 @@
               <h3 class="social-card-title"><a href="/explainers/acceleration-that-feels-like-a-climb/">Acceleration that feels like a climb</a></h3>
             </div>
           </article>
+          <article class="social-card">
+            <div class="social-card-media">
+              <img class="social-card-fill" src="/assets/social/wx-mountain-rotor.webp" alt="" aria-hidden="true"
+                   width="512" height="640" loading="lazy" decoding="async" />
+              <img class="social-card-img" src="/assets/social/wx-mountain-rotor.webp"
+                   alt="Rotor cloud under a mountain wave: an illustrated diagram for pilots. In a mountain wave, the roughest low-level air is under that smooth cloud. The picture shows a mountain ridge in profile with the wind crossing it left to right; a smooth, hard-edged lens of lenticular cloud sitting at the wave crest downwind of the summit; a torn, ragged rotor cloud directly below that lenticular, at about ridge-top height; streamlines drawn unbroken from the lenticular down into the rotor, so the two clouds read as one wave. Flight training explainer from FlightDecide."
+                   width="512" height="640" loading="lazy" decoding="async" />
+            </div>
+            <div class="social-card-body">
+              <span class="social-card-topic">Weather</span>
+              <h3 class="social-card-title"><a href="/explainers/rotor-cloud-under-a-mountain-wave/">Rotor cloud under a mountain wave</a></h3>
+            </div>
+          </article>
         </div>
-        <p class="social-follow-wrap"><a class="social-follow social-all" href="/explainers/">All 16 explainers</a> <a class="social-follow" href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.42.56.21.96.47 1.38.9.43.42.69.82.9 1.38.17.43.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.21.56-.47.96-.9 1.38-.42.43-.82.69-1.38.9-.43.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.42-.56-.21-.96-.47-1.38-.9-.43-.42-.69-.82-.9-1.38-.17-.43-.37-1.06-.42-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.21-.56.47-.96.9-1.38.42-.43.82-.69 1.38-.9.43-.17 1.06-.37 2.23-.42 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 00-2.13 1.38A5.9 5.9 0 00.63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13a5.9 5.9 0 002.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 002.13-1.38 5.9 5.9 0 001.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 00-1.38-2.13A5.9 5.9 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.41a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" fill="currentColor"/></svg> Follow @flightdecide</a></p>
+        <p class="social-follow-wrap"><a class="social-follow social-all" href="/explainers/">All 15 explainers</a> <a class="social-follow" href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.42.56.21.96.47 1.38.9.43.42.69.82.9 1.38.17.43.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.21.56-.47.96-.9 1.38-.42.43-.82.69-1.38.9-.43.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.42-.56-.21-.96-.47-1.38-.9-.43-.42-.69-.82-.9-1.38-.17-.43-.37-1.06-.42-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.21-.56.47-.96.9-1.38.42-.43.82-.69 1.38-.9.43-.17 1.06-.37 2.23-.42 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 00-2.13 1.38A5.9 5.9 0 00.63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13a5.9 5.9 0 002.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 002.13-1.38 5.9 5.9 0 001.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 00-1.38-2.13A5.9 5.9 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.41a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" fill="currentColor"/></svg> Follow @flightdecide</a></p>
       </div>
     </section>
     <!-- social-feed:end -->
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <ul class="footer-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/tools/">Free Tools</a></li>
-      <li><a href="/learn/">Pilot Guides</a></li>
-      <li><a href="/explainers/">Explainers</a></li>
-      <li><a href="/aircraft/">Aircraft</a></li>
-      <li><a href="/guide.html">App Guide</a></li>
-      <li><a href="/support.html">Support</a></li>
-      <li><a href="/press.html">Press</a></li>
-      <li><a href="/privacy.html">Privacy</a></li>
-      <li><a href="/terms.html">Terms</a></li>
-      <li><a href="/disclaimer.html">Disclaimer</a></li>
-    </ul>
-    <!-- social-links:start -->
-    <ul class="social-links" role="list">
-      <li>
-        <a class="social-link social-instagram" href="https://www.instagram.com/flightdecide/"
-           target="_blank" rel="me noopener"
-           aria-label="FlightDecide on Instagram (opens in a new tab)">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" fill="currentColor"/>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="social-link social-facebook" href="https://www.facebook.com/flightdecide"
-           target="_blank" rel="me noopener"
-           aria-label="FlightDecide on Facebook (opens in a new tab)">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-            <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 011.141.195v3.325a8.623 8.623 0 00-.653-.036 26.805 26.805 0 00-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 00-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647z" fill="currentColor"/>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <!-- social-links:end -->
-    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo" aria-label="FlightDecide home">
+        <span class="footer-logo-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2a1.5 1.5 0 0 0-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="white"/></svg>
+        </span>
+        FlightDecide
+      </a>
+      <ul class="footer-links" role="list">
+        <li><a href="guide.html">Pilot Guide</a></li>
+        <li><a href="/tools/">Free Tools</a></li>
+        <li><a href="/learn/">Pilot Guides</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+      <!-- social-links:start -->
+      <ul class="social-links" role="list">
+        <li>
+          <a class="social-link social-instagram" href="https://www.instagram.com/flightdecide/"
+             target="_blank" rel="me noopener"
+             aria-label="FlightDecide on Instagram (opens in a new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link social-facebook" href="https://www.facebook.com/flightdecide"
+             target="_blank" rel="me noopener"
+             aria-label="FlightDecide on Facebook (opens in a new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 011.141.195v3.325a8.623 8.623 0 00-.653-.036 26.805 26.805 0 00-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 00-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647z" fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- social-links:end -->
+      <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
