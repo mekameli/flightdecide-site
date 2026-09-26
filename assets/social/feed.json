@@ -1,7 +1,116 @@
 {
-  "generated": "2026-09-26T02:50:45+00:00",
+  "generated": "2026-09-26T02:55:25+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "wx-gust-front",
+      "slug": "gust-front-ahead-of-a-thunderstorm",
+      "page": "/explainers/gust-front-ahead-of-a-thunderstorm/",
+      "title": "The gust front ahead of a thunderstorm",
+      "headline": "Clear of the cloud isn't clear of its wind.",
+      "pillar": "weather",
+      "topic": "Weather",
+      "alt": "The gust front ahead of a thunderstorm: an illustrated diagram for pilots. Clear of the cloud isn't clear of its wind. The picture shows a thunderstorm on the left with a dark rain shaft and a clean right-hand cloud edge; pale streamlines dropping out of the rain and running along the ground well past the cloud edge; a curling dust roll marking the gust front's leading edge far to the right of the cloud; open sky with no cloud above the solid aircraft, which sits inside the streamlines. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/wx-gust-front.webp",
+      "image_full": "/assets/explainers/gust-front-ahead-of-a-thunderstorm.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/p/DdvAp3GFBU1/",
+      "posted": "2026-09-26",
+      "caption": [
+        "What's a gust front, and how far ahead of the storm can it run?",
+        "A thunderstorm's downdraft hits the ground and spreads outward as a gust front. That wind can run many miles ahead of the cell. It is easy to read clear air around the cloud as distance from the storm, but the outflow may already be under you.",
+        "Full explainer, and the FAA sources, at the link in our bio."
+      ],
+      "teaches": [
+        "A thunderstorm's downdraft spreads outward at the surface as a gust front that can precede the cell by many miles.",
+        "Staying clear of the visible cloud is not the same as staying clear of the storm's wind."
+      ],
+      "intent": "The hazard reaches well ahead of the visible cloud, because the outflow spreads out along the surface before the cell arrives.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-28 ch 22",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 22",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 22",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 22
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "OUTSIDE CLOUD, INSIDE OUTFLOW",
+          "points_at": "The solid aircraft flying low in open sky between the cloud's edge and the dust roll, inside the streamlines."
+        },
+        {
+          "label": "GUST FRONT, MILES AHEAD",
+          "points_at": "The curling dust roll at the gust front's leading edge, far to the right of the cloud's edge."
+        },
+        {
+          "label": "CLEAR OF THE OUTFLOW",
+          "points_at": "The translucent ghost aircraft beyond the dust roll, in still air."
+        }
+      ],
+      "short": "gust-front",
+      "article": [
+        {
+          "heading": "Why missing the cloud isn't enough",
+          "paragraphs": [
+            "Picture a thunderstorm off your left wing, with open blue sky between you and the edge of its cloud. You've given the cloud plenty of room. Then the airplane starts to buck in gusts you didn't plan for.",
+            "Those gusts belong to the storm's outflow, the cool air it has driven down to the ground and out along the surface. The outflow spreads well ahead of the storm, into sky that can look perfectly clear.",
+            "The cloud is only the part of a thunderstorm you can see. Its wind reaches past that edge, so staying clear of the cloud isn't the same as staying clear of its wind."
+          ]
+        },
+        {
+          "heading": "How a storm makes its own wind",
+          "paragraphs": [
+            "Every thunderstorm comes from a cumulonimbus, the towering cloud that makes lightning and thunder. A storm is made of one or more cells, each a column of rising and sinking air with its own life cycle.",
+            "A cell starts with an updraft, a current of warm air rising through the cloud. In this first stage, called towering cumulus, the updraft can top 3,000 feet per minute.",
+            "The cell becomes mature, its second stage, when precipitation starts reaching the ground. As rain or hail falls, it pulls the surrounding air down with it and builds a strong downdraft, a column of sinking air. It sits right beside the updraft.",
+            "The ground stops that sinking air, so it spreads out sideways along the surface. This spreading air is the outflow, cool and gusty, and it gets well out ahead of the cell that made it.",
+            "The weather is at its worst late in the mature stage, the same stage that sends the outflow out. A single cell's whole life cycle is typically about 30 minutes."
+          ]
+        },
+        {
+          "heading": "What the gust front is",
+          "paragraphs": [
+            "Picture the storm from above, and the outflow fans out across the ground from under the cell. Its front edge forms an arc, bowed out ahead of the storm.",
+            "That arc is the gust front, the front line of the cool air the storm has pushed out. The handbook likens it to a small cold front, and its glossary says it may also be called an outflow boundary.",
+            "The comparison fits. A gust front is the edge of a body of cool air shoving into the air ahead, and air gets lifted along that edge. That lift can set off new cells, sometimes well ahead of the one that made the outflow.",
+            "The handbook puts no number on how far ahead the gust front runs. Well ahead is as precise as it gets, so there's no mileage in it to treat as a safe margin."
+          ]
+        },
+        {
+          "heading": "What the gust front can look like",
+          "paragraphs": [
+            "Sometimes a gust front brings a low cloud along its edge, which gives you something to see. The handbook names two, the shelf cloud and the roll cloud.",
+            "A shelf cloud is a low wedge of cloud lying level, still joined to the base of the storm cloud above it. It's the more familiar of the two.",
+            "A roll cloud is a low tube of cloud lying on its side. It sits completely apart from the storm's base, and that gap is what tells it from a shelf cloud. Roll clouds are relatively rare.",
+            "The word that matters here is sometimes. A gust front doesn't always bring either cloud, so clear air ahead of a storm doesn't show you where its wind stops."
+          ]
+        },
+        {
+          "heading": "Why you can't judge the outflow by eye",
+          "paragraphs": [
+            "Not every thunderstorm holds every hazard, but the handbook says you can't tell which ones a storm holds by looking. The handbook's list of storm hazards includes adverse winds and turbulence.",
+            "So don't read a missing rain shaft as a missing outflow. The life cycle explains where a downdraft comes from. It isn't a test you can run by eye from a distance.",
+            "A dying cell isn't harmless either. Its last stage, called dissipating, is marked by a strong downdraft inside the area of rain. Sinking air takes over the whole cloud, and the rain tapers off and ends.",
+            "The handbook also warns that rain and dust between the cloud base and the ground can cut visibility. And the outflow spreads along the surface, so it's the air you fly through close to the ground.",
+            "The handbook's rule is to treat any weather you recognize as a thunderstorm as hazardous. With the outflow in mind, that has to mean the storm's wind as well as its cloud."
+          ]
+        },
+        {
+          "heading": "How the gust front can shift a storm",
+          "paragraphs": [
+            "The handbook asks you to think of a thunderstorm as something happening, not a thing parked in the sky. Air rises, rains out and sinks, while cells form and die.",
+            "Almost all storms are multicell, a cluster of cells at different stages of life. A cluster can last several hours or more, so the 30 minutes belongs to one cell and not the storm.",
+            "A storm moves in two ways at once. Its cells drift with the average wind through the depth of the cloud, which the handbook calls advection. Old cells dying and new ones forming is the other way, called propagation.",
+            "New cells set off by a gust front are part of that propagation. When one forms well ahead of the parent, the storm has spread that way without any cell drifting there. The handbook warns that storm motion can differ a lot from the motion of its cells."
+          ]
+        }
+      ],
+      "related": []
+    },
     {
       "id": "wx-freezing-level",
       "slug": "freezing-level-inside-a-cloud-layer",
