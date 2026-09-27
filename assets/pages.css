@@ -891,6 +891,50 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
 .prefill-chip:hover { background: rgba(34, 197, 94, 0.2); }
 .prefill-chip[hidden] { display: none; }
 
+/* SHARE ROW (2026-09-26): under a calculator's result, a link that carries
+   the inputs, then one quiet follow line. build_site.tool_share() renders
+   it, assets/tools.js (FD.share) wires it. Two classes on the follow line and
+   its links, so .prose p and .prose a (0,1,1) cannot repaint them. */
+.tool-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.tool-share .share-copy { min-height: 44px; }
+.tool-share .share-status { font-size: 13px; color: var(--text-dim); }
+.tool-share .share-status.ok { color: var(--accent-green); font-weight: 650; }
+.tool-share .share-url {
+  flex: 1 1 100%;
+  width: 100%;
+  min-width: 0;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 13px;
+  padding: 9px 11px;
+}
+.tool-share .share-url[hidden] { display: none; }
+.prose p.tool-follow, p.tool-follow {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+.prose .tool-follow a, .tool-follow a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--border-bright);
+  text-underline-offset: 3px;
+}
+.prose .tool-follow a:hover, .tool-follow a:hover { color: var(--text); text-decoration-color: currentColor; }
+@media print { .tool-share, .tool-follow { display: none !important; } }
+
 @media print {
   nav.site-nav, footer.site-footer, .cta-band, .no-print { display: none !important; }
   body { background: #fff; color: #111; font-size: 12pt; }

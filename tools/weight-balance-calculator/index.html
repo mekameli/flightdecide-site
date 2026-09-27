@@ -111,6 +111,7 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -199,6 +200,16 @@
           <span class="result-note">inches aft of datum</span>
         </div>
       </div>
+      <div class="tool-share">
+        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Copy link to this result
+        </button>
+        <span class="share-status" data-share-status aria-live="polite"></span>
+        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
+      </div>
+      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
+      <script type="application/json" id="fd-tool-params">{"slug":"weight-balance-calculator","event":"weight-balance-calculator","params":[{"name":"item","type":"list","repeat":true},{"name":"gw","field":"lim-gw","type":"number","min":0,"max":200000},{"name":"fwd","field":"lim-fwd","type":"number","min":-1000,"max":2000},{"name":"aft","field":"lim-aft","type":"number","min":-1000,"max":2000},{"name":"total","field":"ws-tw","type":"number","min":1,"max":1000000},{"name":"cgchange","field":"ws-dcg","type":"number","min":-100,"max":100},{"name":"move","field":"ws-darm","type":"number","min":-2000,"max":2000}]}</script>
     </div>
 
     <p class="lede"><strong>Moment = weight × arm. CG = total moment ÷ total weight.</strong> That is the entire method: every item in the airplane multiplied by its distance from the datum, summed, and divided. What matters is what you do with the answer: check it against the envelope at takeoff <em>and</em> at landing fuel, and move weight, not hope, when it falls outside. Arms and limits come from <em>your</em> aircraft's papers. Entries stay on this device.</p>
@@ -305,7 +316,7 @@
     <div class="cta-band">
       <h2>W&amp;B is one of eight risk categories</h2>
       <p>FlightDecide carries your aircraft's real station arms and limits in its profile and checks every flight's loading automatically, alongside weather, NOTAMs, fuel, and performance.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, your aircraft's current weight-and-balance report, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Aircraft Weight and Balance Handbook</em> (FAA-H-8083-1B); <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 10. Last reviewed: July 17, 2026.</p>
@@ -423,12 +434,19 @@
       }
 
       function compute() {
-        try {
-          localStorage.setItem(STORE, JSON.stringify({ items: items,
-            gw: $('lim-gw').value, fwd: $('lim-fwd').value, aft: $('lim-aft').value }));
-          $('save-status').textContent = 'Saved on this device';
-          $('save-status').className = 'save-status saved';
-        } catch (e) {}
+        // A loading opened from a link is not saved over this device's own
+        // until the visitor changes something (FD.share.canSave).
+        if (FD.share.canSave()) {
+          try {
+            localStorage.setItem(STORE, JSON.stringify({ items: items,
+              gw: $('lim-gw').value, fwd: $('lim-fwd').value, aft: $('lim-aft').value }));
+            $('save-status').textContent = 'Saved on this device';
+            $('save-status').className = 'save-status saved';
+          } catch (e) {}
+        } else {
+          $('save-status').textContent = 'From a link, not saved on this device';
+          $('save-status').className = 'save-status';
+        }
 
         let W = 0, M = 0, complete = items.length > 0;
         items.forEach(function (it) {
@@ -519,9 +537,11 @@
       ['ws-tw', 'ws-dcg', 'ws-darm'].forEach(function (id) { $(id).addEventListener('input', shift); });
       shift();
 
-      // restore
+      // restore (not when the address carries a loading of its own)
       let saved = null;
-      try { saved = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
+      if (!FD.share.present()) {
+        try { saved = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
+      }
       if (saved && saved.items && saved.items.length) {
         items = saved.items;
         if (saved.gw) $('lim-gw').value = saved.gw;
@@ -537,6 +557,47 @@
         ];
       }
       render(); compute();
+
+      // ?item=Front+seats,380,64 (one per item; the moment instead of the arm
+      // is written m24320) plus gw, fwd, aft and the weight-shift solver's
+      // total, cgchange, move
+      const cut = (x) => Math.round(x * 100) / 100;
+      function itemIn(row) {
+        const f = row.split(',').map(function (x) { return x.trim(); });
+        const name = (f[0] || '').slice(0, 30);
+        const wt = parseFloat(f[1]);
+        if (!isFinite(wt) || wt < 0 || wt > 100000) return null;
+        const it = { name: name || 'Item', wt: wt, last: 'arm' };
+        const third = f[2] || '';
+        if (/^m/i.test(third)) {
+          const mom = parseFloat(third.slice(1));
+          if (isFinite(mom)) { it.mom = mom; it.last = 'mom'; }
+        } else if (third !== '') {
+          const arm = parseFloat(third);
+          if (isFinite(arm) && Math.abs(arm) <= 2000) it.arm = arm;
+        }
+        return it;
+      }
+      function itemOut(it) {
+        const name = String(it.name || '').replace(/,/g, ' ').trim();
+        if (!isFinite(it.wt)) return null;
+        let third = '';
+        if (it.last === 'mom' && isFinite(it.mom)) third = 'm' + Math.round(it.mom);
+        else if (isFinite(it.arm)) third = String(cut(it.arm));
+        return name + ',' + cut(it.wt) + (third ? ',' + third : '');
+      }
+      FD.share.init({
+        get: { item: function () { return items.map(itemOut).filter(Boolean); } },
+        set: {
+          item: function (rows) {
+            const got = rows.map(itemIn).filter(Boolean);
+            if (!got.length) return false;
+            items = got;
+            return true;
+          }
+        },
+        after: function () { render(); compute(); shift(); }
+      });
     })();
 
   </script>

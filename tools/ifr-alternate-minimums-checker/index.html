@@ -127,6 +127,7 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -246,6 +247,16 @@
           <div class="verdict-line v-dim" id="verdict2" aria-live="polite">Enter the alternate forecast.</div>
         </div>
       </div>
+      <div class="tool-share">
+        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Copy link to this result
+        </button>
+        <span class="share-status" data-share-status aria-live="polite"></span>
+        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
+      </div>
+      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
+      <script type="application/json" id="fd-tool-params">{"slug":"ifr-alternate-minimums-checker","event":"ifr-alternate-minimums-checker","params":[{"name":"ceil","field":"dceil","type":"number","min":0,"max":30000},{"name":"vis","field":"dvis","type":"visibility","min":0,"max":30},{"name":"iap","field":"hasiap","type":"bool"},{"name":"atype","field":"atype","type":"enum","values":["precision","nonprecision","none"],"aliases":{"ils":"precision","non-precision":"nonprecision","np":"nonprecision"}},{"name":"aceil","field":"aceil","type":"number","min":0,"max":30000},{"name":"avis","field":"avis","type":"visibility","min":0,"max":30}]}</script>
     </div>
 
     <p class="lede"><strong>The 1-2-3 rule: from 1 hour before to 1 hour after your ETA, the destination forecast must show at least a 2,000 ft ceiling and 3 SM visibility, or you must file an alternate.</strong> The alternate itself has to qualify: standard minima are 600-2 with a precision approach and 800-2 without one, unless the chart publishes different numbers. A TAF showing 1,500 broken at your ETA means you're filing an alternate.</p>
@@ -325,7 +336,7 @@
     <div class="cta-band">
       <h2>The app reads the TAF window for you</h2>
       <p>FlightDecide pulls the METARs and TAFs for your route and your specific flight window, flags the groups that fail your minimums, and scores the flight GO, CAUTION, or NO GO with the raw reports one tap away.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It applies the standard 14 CFR 91.169 tests and standard alternate minimums; published non-standard minimums, equipment-specific GPS rules, and operator requirements override it. Advisory only, and not a substitute for the regulations, current charts, an official briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: 14 CFR §§91.167, 91.169; AIM 1-1-17, 1-1-18; CAR 602.122. Last reviewed: August 26, 2026.</p>
@@ -467,6 +478,10 @@
       $('atype').addEventListener('change', step2);
       step1();
       step2();
+
+      // ?ceil=2000&vis=3&iap=yes (and atype, aceil, avis for step 2) fills
+      // the fields and checks
+      FD.share.init();
     })();
   </script>
 

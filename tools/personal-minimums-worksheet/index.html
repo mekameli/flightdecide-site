@@ -151,6 +151,7 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -290,6 +291,16 @@
         <span class="save-status" id="pm-status"></span>
       </div>
       <p class="calc-hint no-print" style="margin-top:10px">Entries save automatically in this browser (nothing is uploaded anywhere). Print a copy and keep it with your kneeboard or flight bag.</p>
+      <div class="tool-share">
+        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Copy link to this result
+        </button>
+        <span class="share-status" data-share-status aria-live="polite"></span>
+        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
+      </div>
+      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
+      <script type="application/json" id="fd-tool-params">{"slug":"personal-minimums-worksheet","event":"personal-minimums-worksheet","params":[{"name":"ceil-day","field":"pm-ceil-day","type":"text","maxlen":24},{"name":"ceil-night","field":"pm-ceil-night","type":"text","maxlen":24},{"name":"ceil-ifr","field":"pm-ceil-ifr","type":"text","maxlen":24},{"name":"vis-day","field":"pm-vis-day","type":"text","maxlen":24},{"name":"vis-night","field":"pm-vis-night","type":"text","maxlen":24},{"name":"vis-ifr","field":"pm-vis-ifr","type":"text","maxlen":24},{"name":"xwind-day","field":"pm-xwind-day","type":"text","maxlen":24},{"name":"xwind-night","field":"pm-xwind-night","type":"text","maxlen":24},{"name":"xwind-ifr","field":"pm-xwind-ifr","type":"text","maxlen":24},{"name":"wind-day","field":"pm-wind-day","type":"text","maxlen":24},{"name":"wind-night","field":"pm-wind-night","type":"text","maxlen":24},{"name":"wind-ifr","field":"pm-wind-ifr","type":"text","maxlen":24},{"name":"rwy","field":"pm-rwy","type":"text","maxlen":60},{"name":"fuel","field":"pm-fuel","type":"text","maxlen":40},{"name":"da","field":"pm-da","type":"text","maxlen":24},{"name":"notes","field":"pm-notes","type":"text","maxlen":80},{"name":"adj","type":"flags","flags":{"unfam":"pm-adj-unfam","landings":"pm-adj-landings","gap":"pm-adj-gap","newtype":"pm-adj-newtype","pressure":"pm-adj-pressure","nightterrain":"pm-adj-nightterrain","marginal":"pm-adj-marginal","imsafe":"pm-adj-imsafe"}}]}</script>
     </div>
 
     <div class="no-print">
@@ -349,7 +360,7 @@
     <div class="cta-band">
       <h2>Your minimums, checked automatically</h2>
       <p>FlightDecide compares the actual forecast for your flight window against risk thresholds across eight categories (winds, ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B) and tells you exactly which of your numbers today's forecast busts, before you drive to the airport.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     </div>
@@ -401,7 +412,7 @@
   <script>
     (function () {
       const KEY = 'fd-personal-minimums-v1';
-      const fields = Array.from(document.querySelectorAll('#worksheet input'));
+      const fields = Array.from(document.querySelectorAll('#worksheet input:not([data-share-url])'));
 
       function save() {
         const data = {};
@@ -437,7 +448,9 @@
         el.addEventListener('input', save);
         el.addEventListener('change', save);
       });
-      restore();
+      // A worksheet opened from a link shows the link's numbers only, and is
+      // not saved over this device's own until the visitor edits a field.
+      if (!FD.share.present()) restore();
 
       const clearBtn = document.getElementById('pm-clear');
       let clearArmed = false;
@@ -463,8 +476,17 @@
         fields.forEach(function (el) {
           if (el.type === 'checkbox') { el.checked = false; } else { el.value = ''; }
         });
-        try { localStorage.removeItem(KEY); } catch (e) { /* storage unavailable */ }
+        // Clearing a worksheet that came from a link clears what is on screen,
+        // not the visitor's own saved worksheet, which they cannot see here.
+        if (!FD.share.present()) {
+          try { localStorage.removeItem(KEY); } catch (e) { /* storage unavailable */ }
+        }
       });
+
+      // ?ceil-day=3000&vis-day=5&adj=unfam,gap fills the worksheet. Filled
+      // silently: no input events, so nothing is saved until the visitor
+      // edits. Certificate, hours, name and review date never travel.
+      FD.share.init({ silent: true, scope: '#worksheet', hasResult: function () { return true; } });
     })();
 
   </script>

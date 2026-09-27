@@ -97,6 +97,18 @@ flight. No sign-up; everything runs locally.
 - [Personal Minimums Worksheet](https://flightdecide.com/tools/personal-minimums-worksheet/):
   printable worksheet for setting ceiling/visibility/wind/performance
   minimums, based on the FAA approach.
+- [METAR Decoder](https://flightdecide.com/tools/metar-decoder/):
+  paste a METAR or SPECI (US, Canadian or ICAO format) and read every group
+  in plain English, with the ceiling and the VFR/MVFR/IFR/LIFR flight
+  category; decoded in the browser.
+- [Online E6B Flight Computer](https://flightdecide.com/tools/e6b-flight-computer/):
+  the E6B's wind side and computer side mapped to the calculators above.
+
+Every calculator accepts URL parameters that fill its inputs and calculate at
+once, for example
+https://flightdecide.com/tools/crosswind-calculator/?rwy=19&wdir=240&wspd=18&gust=25
+(runway 19, wind 240 at 18 gusting 25). Each page's "Copy link to this
+result" button writes such a link.
 
 ## Pilot Guides (educational articles)
 

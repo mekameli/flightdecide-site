@@ -116,6 +116,7 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -216,6 +217,16 @@
           <span class="result-note" id="grad-note">ft per NM</span>
         </div>
       </div>
+      <div class="tool-share">
+        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Copy link to this result
+        </button>
+        <span class="share-status" data-share-status aria-live="polite"></span>
+        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
+      </div>
+      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
+      <script type="application/json" id="fd-tool-params">{"slug":"descent-glide-calculator","event":"descent-glide-calculator","params":[{"name":"solve","type":"enum","values":["tod","rate"],"aliases":{"distance":"tod","dist":"tod"},"pills":{"tod":"pill-tod","rate":"pill-rate"}},{"name":"alt","field":"alt","type":"number","min":0,"max":45000},{"name":"gs","field":"gs","type":"number","min":30,"max":600},{"name":"rate","field":"rate","type":"number","min":100,"max":4000},{"name":"dist","field":"dist","type":"number","min":1,"max":500},{"name":"ratio","field":"g-ratio","type":"number","min":1,"max":60},{"name":"agl","field":"g-agl","type":"number","min":0,"max":45000}]}</script>
     </div>
 
     <p class="lede"><strong>The 3° rule: start down at 3 NM per 1,000 ft to lose, and fly groundspeed × 5 as your rate.</strong> Losing 6,000 ft means a top of descent 18 NM out; at 120 kt that is 600 fpm. It is the same geometry an ILS glideslope uses, and it is the difference between a descent you planned and a dive you apologized for.</p>
@@ -313,7 +324,7 @@
     <div class="cta-band">
       <h2>Plan the whole arrival, not just the slope</h2>
       <p>FlightDecide checks weather, NOTAMs, fuel, performance, and W&amp;B for your specific route and window, and scores the flight GO, CAUTION, or NO GO with the data behind every call.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, current charts, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Airplane Flying Handbook</em> (FAA-H-8083-3C), Ch. 4 and 18; <em>Instrument Procedures Handbook</em> (FAA-H-8083-16B), Ch. 3. Last reviewed: July 17, 2026.</p>
@@ -498,6 +509,10 @@
       }
       ['g-ratio', 'g-agl'].forEach(function (id) { $(id).addEventListener('input', glide); });
       glide();
+
+      // ?alt=6000&gs=120&rate=500 (solve=rate takes dist instead of rate)
+      // picks the pill, fills the fields and calculates
+      FD.share.init();
     })();
   </script>
 
