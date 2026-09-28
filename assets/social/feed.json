@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T03:13:45+00:00",
+  "generated": "2026-09-28T03:14:02+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -2593,118 +2593,6 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
-          ]
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": "perf-cg-aft",
-      "slug": "centre-of-gravity-aft-of-the-limit",
-      "page": "/explainers/centre-of-gravity-aft-of-the-limit/",
-      "title": "Centre of gravity aft of the limit",
-      "headline": "Past the aft limit, you have less nose-down elevator.",
-      "pillar": "performance",
-      "topic": "Performance",
-      "alt": "Centre of gravity aft of the limit: an illustrated diagram for pilots. Past the aft limit, you have less nose-down elevator.",
-      "image": "/assets/social/perf-cg-aft.webp",
-      "image_full": "/assets/explainers/centre-of-gravity-aft-of-the-limit.webp",
-      "image_px": 1003,
-      "permalink": null,
-      "posted": "",
-      "caption": [],
-      "teaches": [
-        "Loading aft of the rearward CG limit reduces longitudinal stability.",
-        "Stall recovery is degraded with an aft CG because elevator authority to lower the nose is reduced."
-      ],
-      "intent": "An aft CG shortens the tail's lever arm, so the aeroplane becomes less stable in pitch and harder to recover from a stall.",
-      "citations": [
-        {
-          "ref": "FAA-H-8083-25 ch 10",
-          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 10",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
-          "kind": "handbook",
-          "note": "see Chapter 10",
-          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
-          "chapter": 10
-        }
-      ],
-      "figure_key": [
-        {
-          "label": "CG BEHIND THE AFT LIMIT",
-          "points_at": "The small red quartered-circle CG marker on the solid aeroplane's fuselage, just behind the pale aft-limit tick."
-        },
-        {
-          "label": "FULL FORWARD, NOSE STILL HIGH",
-          "points_at": "The solid aeroplane's raised spinner, still about twenty degrees above the horizon."
-        },
-        {
-          "label": "WITHIN LIMITS, NOSE ALREADY DOWN",
-          "points_at": "The ghost aeroplane's lowered spinner, a few degrees below the horizon."
-        }
-      ],
-      "short": "centre-gravity",
-      "article": [
-        {
-          "heading": "What the centre of gravity is",
-          "paragraphs": [
-            "Picture your loaded aeroplane hanging from a single hook. The centre of gravity, or CG, is the one point where you could hang it and it would balance.",
-            "The CG doesn't have to stay in one place. Where it sits depends on how the weight is spread through the aeroplane, so it shifts when load is moved or used up. A heavy bag moved aft takes the CG aft with it.",
-            "Balance side to side counts too, but the FAA's handbook treats the fore-and-aft position as the one that matters most. With the CG too far forward, the aeroplane is nose heavy. Too far aft, it's tail heavy.",
-            "The manufacturer sets a forward limit and an aft limit for the CG. The distance between them is the CG range, and the CG must sit inside it during flight."
-          ]
-        },
-        {
-          "heading": "What the aft limit is set for",
-          "paragraphs": [
-            "The aft limit is the furthest back the CG can sit and still suit the most demanding manoeuvre or operation. In other words, it's drawn for the worst case.",
-            "You'll find the limits in the aeroplane's Type Certificate Data Sheet (TCDS) or its aircraft specification. They're also in the aircraft flight manual (AFM) or pilot's operating handbook (POH).",
-            "A regulation, 14 CFR 23.23, requires that safe ranges of weight and CG be established for the aeroplane. The manufacturer supplies them, and they go into the approved AFM, TCDS or aircraft specifications.",
-            "The aft limit isn't always one fixed spot. For some aeroplanes both limits may move as the aeroplane's total weight changes. They may also change for aerobatic flight, for retracting the landing gear, or for special loads and devices that alter how it flies."
-          ]
-        },
-        {
-          "heading": "Why a tail-heavy aeroplane is less stable",
-          "paragraphs": [
-            "Fly into turbulence and a bump knocks the nose up. A stable aeroplane then rights itself, with the nose settling back where it was. That ability to right itself in pitch, nose up and nose down, is longitudinal stability.",
-            "As the CG moves aft, that ability shrinks. The aeroplane becomes less stable, and less able to right itself after turbulence or after you manoeuvre.",
-            "The handbook calls the effect of tail-heavy loading on longitudinal stability serious. The less the aeroplane corrects by itself, the more correcting is left to you.",
-            "At the far end, the handbook says it's possible the pilot could not control an aeroplane whose CG made it unstable. Extreme control difficulty is also on its list of possible effects of a CG aft of the range."
-          ]
-        },
-        {
-          "heading": "How stalls and spins change",
-          "paragraphs": [
-            "Now suppose the tail-heavy aeroplane stalls, or enters a spin. Tail-heavy loading reduces your capability to recover from either one.",
-            "Put simply, a recovery that works with the CG within limits works less well once the CG is behind the aft limit. The handbook states this outright for tail-heavy loading.",
-            "The stall itself may be worse too. Among the possible effects of a CG aft of the allowable range, the handbook lists violent stall characteristics.",
-            "Both of these come from the same tail-heavy load as the loss of stability. On one flight, the aeroplane is less able to right itself and you're less able to recover it from a stall or spin."
-          ]
-        },
-        {
-          "heading": "Why very light controls are a hazard",
-          "paragraphs": [
-            "In a tail-heavy aeroplane it takes very little push or pull on the controls to move them. That push or pull is the control force, and tail-heavy loading makes it very light.",
-            "Light controls sound pleasant, but the handbook counts them as another undesirable trait. With so little force needed, it's easy to overstress the aeroplane, loading its structure beyond what it's built for, without meaning to.",
-            "When the aeroplane is out of balance fore and aft, the natural fix is a trim change that takes away the pressure you're holding. Too much trim costs you something, though. It makes the aeroplane less efficient in the air, and it shortens the travel the control has left in the direction you trimmed.",
-            "Flying an aeroplane that's out of balance can also leave you more tired. That fatigue has its own cost to the safety and efficiency of the flight."
-          ]
-        },
-        {
-          "heading": "How the load moves the CG",
-          "paragraphs": [
-            "Most of the time, you're the one who decides where the CG ends up. Where the baggage and cargo go sets it, and so does who sits in which seat.",
-            "If the loading comes out tail heavy, the handbook's fix is the obvious one. Put the heavy passengers in the forward seats.",
-            "How far fuel burn moves the CG depends on where the tanks are. In most small aeroplanes the fuel is in the wings, very near the CG, so the loaded CG hardly moves as it burns.",
-            "Changes to the aeroplane itself move the CG too. Adding or removing equipment shifts it, and without up-to-date weight and balance records you have nothing to base the calculation on."
-          ]
-        },
-        {
-          "heading": "Checking the CG before you fly",
-          "paragraphs": [
-            "In many modern aeroplanes you can't fill every seat, baggage compartment and tank and stay inside the weight and balance limits. With the maximum passenger load aboard, you'll often have to carry less fuel or less baggage.",
-            "Before any flight, work out the weight and balance with the manufacturer's procedure and the charts in the AFM. If the loaded CG isn't within limits, move items before you attempt the flight.",
-            "The Part 91 operating rules have no specific requirement for a weight and balance calculation before every flight. What 14 CFR 91.9 does require is that you, as pilot in command, comply with the AFM's operating limits. Those include weight and balance."
           ]
         }
       ],
