@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T03:35:30+00:00",
+  "generated": "2026-09-28T17:50:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -113,7 +113,12 @@
             "In many modern aeroplanes you can't fill every seat, baggage compartment and tank and stay inside the weight and balance limits. With the maximum passenger load aboard, you'll often have to carry less fuel or less baggage.",
             "Before any flight, work out the weight and balance with the manufacturer's procedure and the charts in the AFM. If the loaded CG isn't within limits, move items before you attempt the flight.",
             "The Part 91 operating rules have no specific requirement for a weight and balance calculation before every flight. What 14 CFR 91.9 does require is that you, as pilot in command, comply with the AFM's operating limits. Those include weight and balance."
-          ]
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/centre-of-gravity-aft-of-the-limit-4a360cbc.webp",
+            "caption": "Moving items sends you back to work out the loaded CG again, and the flight waits until it comes out within limits.",
+            "alt": "Moving items sends you back to work out the loaded CG again, and the flight waits until it comes out within limits."
+          }
         }
       ],
       "related": []
