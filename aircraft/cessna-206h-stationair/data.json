@@ -1857,15 +1857,17 @@
           ]
         }
       ],
-      "handbook_misprints_bounded": [
+      "handbook_misprints_bounded": [],
+      "handbook_misprints_kept": [
         {
           "pressure_altitude": 1000,
           "oat_c": 30,
           "weight_lbs": 3600,
           "series": 1,
           "printed_in_handbook": 1790,
-          "published_instead": 1530,
-          "method": "bounded by the 40 C cell of the same table",
+          "bound": 1530,
+          "published": 1790,
+          "method": "printed value kept: it is already the more conservative of the two (longer than or equal to the 40 C cell's 1530)",
           "reason": "Handbook prints 1790 ft; the sea-level row ends 1490 and the 2000 ft row reads 1530, so 1490 is intended. Conservative direction, but wrong."
         }
       ],
@@ -1967,7 +1969,7 @@
         "pressure_altitude": 1000,
         "oat_c": 30,
         "weight_lbs": 3600,
-        "distance_ft": 1530
+        "distance_ft": 1790
       },
       {
         "pressure_altitude": 1000,
@@ -2213,15 +2215,17 @@
           ]
         }
       ],
-      "handbook_misprints_bounded": [
+      "handbook_misprints_bounded": [],
+      "handbook_misprints_kept": [
         {
           "pressure_altitude": 1000,
           "oat_c": 30,
           "weight_lbs": 3600,
           "series": 1,
           "printed_in_handbook": 1790,
-          "published_instead": 1530,
-          "method": "bounded by the 40 C cell of the same table",
+          "bound": 1530,
+          "published": 1790,
+          "method": "printed value kept: it is already the more conservative of the two (longer than or equal to the 40 C cell's 1530)",
           "reason": "Handbook prints 1790 ft; the sea-level row ends 1490 and the 2000 ft row reads 1530, so 1490 is intended. Conservative direction, but wrong."
         }
       ],
@@ -2266,7 +2270,7 @@
         "pdf_sha256": "17260ff037b4a9d76620d897bd42cc115662c85531ed99ac4d25b261f286ad2a",
         "problems": 0,
         "read": "every row re-read from the PDF",
-        "rows_sha256": "a306f7b6f08fa437e6a3e099e28b99df61cb38042456cd5fee08bcb008e59b08",
+        "rows_sha256": "ecac2412756e0d37419ebc500a8dd4d87e5711a10c6425b248b5ebe5ab206dda",
         "basis": "poh_verbatim"
       }
     },

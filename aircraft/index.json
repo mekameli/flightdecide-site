@@ -619,40 +619,23 @@
   "cessna-177-cardinal": {
    "module_id": "c177",
    "data_url": "https://flightdecide.com/aircraft/cessna-177-cardinal/data.json",
-   "sha256": "f8178582f66af4611c175135cedd261df753e1c27db1b4e910addd201cabc343",
+   "sha256": "6da491ab09c71ed4accb2c26ff6bf612f2ebc07e2f03256b4df4f42731a6201d",
    "updated": "2026-09-28",
    "in_app_since": "2026-07-16",
    "tables": {
-    "from_handbook": 0,
+    "from_handbook": 1,
     "total": 6
    },
-   "legacy_blocks": 31,
+   "legacy_blocks": 14,
    "legacy": [
     "empty_weight",
     "empty_weight_arm",
-    "engine",
-    "form_schema",
-    "fuel_weight_per_gal",
-    "max_gross_weight",
-    "performance.cruise",
     "performance.landing_ground_roll",
     "performance.landing_over_50ft",
     "performance.rate_of_climb",
     "performance.takeoff_ground_roll",
     "performance.takeoff_over_50ft",
-    "prop",
-    "service_ceiling_ft",
-    "usable_fuel_gal",
     "useful_load",
-    "v_speeds.best_glide",
-    "v_speeds.va",
-    "v_speeds.vfe",
-    "v_speeds.vne",
-    "v_speeds.vno",
-    "v_speeds.vs0",
-    "v_speeds.vs1",
-    "v_speeds.vx",
-    "v_speeds.vy",
     "weight_balance.cg_envelope",
     "weight_balance.stations.baggage_arm",
     "weight_balance.stations.empty_weight_arm",
@@ -778,7 +761,7 @@
   "cessna-206h-stationair": {
    "module_id": "c206h",
    "data_url": "https://flightdecide.com/aircraft/cessna-206h-stationair/data.json",
-   "sha256": "9386a42c0112f7d14b93e49087787df188e580de34d513971fbeeb987ac16dd4",
+   "sha256": "7585369daed21d35a9645f8499b9cc07c813b372927d9353126ba263594dc4ef",
    "updated": "2026-09-28",
    "in_app_since": "2026-07-16",
    "tables": {
@@ -960,6 +943,19 @@
     "weight_balance.stations.fuel_arm",
     "weight_balance.stations.rear_seats_arm"
    ]
+  },
+  "cessna-t206h-turbo-stationair": {
+   "module_id": "t206h",
+   "data_url": "https://flightdecide.com/aircraft/cessna-t206h-turbo-stationair/data.json",
+   "sha256": "b384307861ee1bf77843724ef6bcfe1153be461072da1ae7c4e0b9cb0e507163",
+   "updated": "2026-09-28",
+   "in_app_since": null,
+   "tables": {
+    "from_handbook": 8,
+    "total": 8
+   },
+   "legacy_blocks": 0,
+   "legacy": []
   },
   "cirrus-sf50-vision-jet": {
    "module_id": "sf50",
@@ -1840,8 +1836,8 @@
   }
  },
  "totals": {
-  "aircraft": 42,
-  "data_files": 33,
-  "legacy_blocks": 1248
+  "aircraft": 43,
+  "data_files": 34,
+  "legacy_blocks": 1231
  }
 }
