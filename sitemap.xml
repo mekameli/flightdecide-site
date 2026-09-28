@@ -485,9 +485,18 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/centre-of-gravity-aft-of-the-limit/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/centre-of-gravity-aft-of-the-limit.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/room-vfr-leaves-around-a-cloud/</loc>
@@ -640,14 +649,6 @@
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/centre-of-gravity-aft-of-the-limit/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/centre-of-gravity-aft-of-the-limit.webp</image:loc>
     </image:image>
   </url>
   <!-- explainers:end -->
