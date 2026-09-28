@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Built by scripts/build_site.py from site/content/tools__density-altitude-calculator__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -116,7 +115,9 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         All Free Tools
       </a>
     </div>
@@ -127,7 +128,6 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill active" aria-current="page" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
-      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -236,16 +236,6 @@
         </div>
       </div>
       <p class="calc-hint" style="margin-top:14px" id="humid-note"></p>
-      <div class="tool-share">
-        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Copy link to this result
-        </button>
-        <span class="share-status" data-share-status aria-live="polite"></span>
-        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
-      </div>
-      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
-      <script type="application/json" id="fd-tool-params">{"slug":"density-altitude-calculator","event":"density-altitude-calculator","params":[{"name":"elev","field":"elev","type":"number","min":-1000,"max":15000},{"name":"altim","field":"altim","type":"altimeter","min":27,"max":32},{"name":"temp","field":"oat","type":"temperature","min":-60,"max":60},{"name":"dew","field":"dew","type":"temperature","min":-60,"max":40}]}</script>
     </div>
 
     <p class="lede"><strong>Pressure altitude ≈ field elevation + (29.92 − altimeter setting) × 1,000 (this calculator uses the exact standard-atmosphere form). Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft. Your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
@@ -348,7 +338,7 @@
     <div class="cta-band">
       <h2>Performance is one of eight risk categories</h2>
       <p>FlightDecide computes density altitude and runway performance for your specific aircraft and flight window (alongside winds, ceilings, visibility, NOTAMs, fuel, and W&amp;B), then scores the flight GO, CAUTION, or NO GO with runway margin computed against the actual pavement, not just a DA number.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 4 &amp; 11; FAA <em>Density Altitude</em> pamphlet (FAA-P-8740-2). Last reviewed: July 17, 2026.</p>
@@ -360,11 +350,8 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
-      <li><a href="/explainers/">Explainers</a></li>
-      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
-      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>
@@ -550,9 +537,6 @@
       // Offer values other tools produced
       FD.attachPrefill($('oat'), 'oatC', 'density-altitude', 'Density Altitude');
       FD.attachPrefill($('altim'), 'altimeterInHg', 'density-altitude', 'Density Altitude');
-
-      // ?elev=5000&altim=29.92&temp=30 fills the fields and calculates
-      FD.share.init();
     })();
 
   </script>

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Built by scripts/build_site.py from site/content/tools__fuel-burn-calculator__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -100,7 +99,9 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         All Free Tools
       </a>
     </div>
@@ -111,7 +112,6 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
-      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill active" aria-current="page" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -211,16 +211,6 @@
           <span class="result-note">flight time beyond the reserve</span>
         </div>
       </div>
-      <div class="tool-share">
-        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Copy link to this result
-        </button>
-        <span class="share-status" data-share-status aria-live="polite"></span>
-        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
-      </div>
-      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
-      <script type="application/json" id="fd-tool-params">{"slug":"fuel-burn-calculator","event":"fuel-burn-calculator","params":[{"name":"gph","field":"rate","type":"number","min":1,"max":200},{"name":"fuel","field":"fuel","type":"number","min":0,"max":500},{"name":"min","field":"leg","type":"number","min":0,"max":900},{"name":"res","field":"resv","type":"enum","values":["30","45","60"]}]}</script>
     </div>
 
     <p class="lede"><strong>Endurance = usable fuel ÷ fuel flow. Leg burn = fuel flow × time.</strong> 38 gallons at 9.5 GPH is 4 hours to dry tanks; after a 45-minute reserve it is a 3:15 airplane, and a 2:30 leg lands with 45 minutes above the reserve. Fuel exhaustion still makes the NTSB reports every month, and almost every case had this arithmetic available before takeoff.</p>
@@ -293,7 +283,7 @@
     <div class="cta-band">
       <h2>Fuel is one of eight risk categories</h2>
       <p>FlightDecide checks your fuel plan alongside winds, ceilings, visibility, NOTAMs, performance, and W&amp;B for your specific flight window and aircraft, and flags a thin margin before you commit.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: 14 CFR §§91.151, 91.167; FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 7. Last reviewed: July 17, 2026.</p>
@@ -305,11 +295,8 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
-      <li><a href="/explainers/">Explainers</a></li>
-      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
-      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>
@@ -447,9 +434,6 @@
         FD.shared.publish('fuelFlowGph', parseFloat($('rate').value), TOOLID, TOOLNAME);
       });
       FD.attachPrefill($('rate'), 'fuelFlowGph', TOOLID, TOOLNAME);
-
-      // ?gph=9.5&fuel=38&min=150&res=45 fills the fields and calculates
-      FD.share.init();
     })();
 
   </script>

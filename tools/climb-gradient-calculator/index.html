@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Built by scripts/build_site.py from site/content/tools__climb-gradient-calculator__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -108,7 +107,9 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         All Free Tools
       </a>
     </div>
@@ -119,7 +120,6 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
-      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -219,16 +219,6 @@
           <div class="verdict-line v-dim" id="verdict2" aria-live="polite">Enter your climb rate and groundspeed.</div>
         </div>
       </div>
-      <div class="tool-share">
-        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Copy link to this result
-        </button>
-        <span class="share-status" data-share-status aria-live="polite"></span>
-        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
-      </div>
-      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
-      <script type="application/json" id="fd-tool-params">{"slug":"climb-gradient-calculator","event":"climb-gradient-calculator","params":[{"name":"grad","field":"grad","type":"number","min":0,"max":2000},{"name":"gs","field":"gs","type":"number","min":1,"max":600},{"name":"fpm","field":"fpm2","type":"number","min":0,"max":10000},{"name":"gs2","field":"gs2","type":"number","min":1,"max":600}]}</script>
     </div>
 
     <p class="lede"><strong>Required rate of climb (fpm) = gradient (ft/NM) × groundspeed (kt) ÷ 60.</strong> The standard 200 ft/NM departure gradient at 90 knots groundspeed is only 300 fpm; a mountain SID demanding 425 ft/NM at 100 knots wants 708 fpm, which is a real number for a loaded single on a warm day. Convert the chart's gradient into fpm before you take the runway, not after the trees get big.</p>
@@ -302,7 +292,7 @@
     <div class="cta-band">
       <h2>Performance is one of eight risk categories</h2>
       <p>FlightDecide checks density altitude, runway performance, and weight and balance for your specific aircraft and flight window, alongside weather and NOTAMs, and shows the numbers behind every call.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, current charts, an official briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Instrument Procedures Handbook</em> (FAA-H-8083-16B), Ch. 1; FAA Order 8260.3 (TERPS); AIM 5-2-9. Last reviewed: August 26, 2026.</p>
@@ -314,11 +304,8 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
-      <li><a href="/explainers/">Explainers</a></li>
-      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
-      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>
@@ -442,10 +429,6 @@
       $('gs').addEventListener('input', function () { FD.shared.publish('groundspeedKt', parseFloat($('gs').value), 'climbgradient', 'Climb Gradient'); });
       FD.attachPrefill($('gs'), 'groundspeedKt', 'climbgradient', 'Climb Gradient');
       FD.attachPrefill($('gs2'), 'groundspeedKt', 'climbgradient', 'Climb Gradient');
-
-      // ?grad=425&gs=100 (and fpm, gs2 for the second card) fills the fields
-      // and calculates
-      FD.share.init();
     })();
   </script>
 

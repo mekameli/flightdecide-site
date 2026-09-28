@@ -1,7 +1,7 @@
 {
  "data_version": 2,
  "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
+ "generated": "2026-09-28",
  "icao_type": "C152",
  "limits": {
   "empty_weight_lbs": 1080,
@@ -13,6 +13,224 @@
  "manufacturer": "Cessna",
  "name": "Cessna 152",
  "performance": {
+  "climb": {
+   "cells": {
+    "1670": {
+     "0": {
+      "-20": {
+       "basis": "poh",
+       "v": 835
+      },
+      "0": {
+       "basis": "poh",
+       "v": 765
+      },
+      "20": {
+       "basis": "poh",
+       "v": 700
+      },
+      "40": {
+       "basis": "poh",
+       "v": 630
+      }
+     },
+     "1000": {
+      "-20": {
+       "basis": "interp",
+       "v": 785
+      },
+      "0": {
+       "basis": "interp",
+       "v": 718
+      },
+      "20": {
+       "basis": "interp",
+       "v": 650
+      },
+      "40": {
+       "basis": "interp",
+       "v": 582
+      }
+     },
+     "10000": {
+      "-20": {
+       "basis": "poh",
+       "v": 340
+      },
+      "0": {
+       "basis": "poh",
+       "v": 285
+      },
+      "20": {
+       "basis": "poh",
+       "v": 230
+      },
+      "40": {
+       "basis": "poh",
+       "v": 175
+      }
+     },
+     "2000": {
+      "-20": {
+       "basis": "poh",
+       "v": 735
+      },
+      "0": {
+       "basis": "poh",
+       "v": 670
+      },
+      "20": {
+       "basis": "poh",
+       "v": 600
+      },
+      "40": {
+       "basis": "poh",
+       "v": 535
+      }
+     },
+     "3000": {
+      "-20": {
+       "basis": "interp",
+       "v": 685
+      },
+      "0": {
+       "basis": "interp",
+       "v": 620
+      },
+      "20": {
+       "basis": "interp",
+       "v": 552
+      },
+      "40": {
+       "basis": "interp",
+       "v": 490
+      }
+     },
+     "4000": {
+      "-20": {
+       "basis": "poh",
+       "v": 635
+      },
+      "0": {
+       "basis": "poh",
+       "v": 570
+      },
+      "20": {
+       "basis": "poh",
+       "v": 505
+      },
+      "40": {
+       "basis": "poh",
+       "v": 445
+      }
+     },
+     "5000": {
+      "-20": {
+       "basis": "interp",
+       "v": 585
+      },
+      "0": {
+       "basis": "interp",
+       "v": 522
+      },
+      "20": {
+       "basis": "interp",
+       "v": 460
+      },
+      "40": {
+       "basis": "interp",
+       "v": 400
+      }
+     },
+     "6000": {
+      "-20": {
+       "basis": "poh",
+       "v": 535
+      },
+      "0": {
+       "basis": "poh",
+       "v": 475
+      },
+      "20": {
+       "basis": "poh",
+       "v": 415
+      },
+      "40": {
+       "basis": "poh",
+       "v": 355
+      }
+     },
+     "7000": {
+      "-20": {
+       "basis": "interp",
+       "v": 488
+      },
+      "0": {
+       "basis": "interp",
+       "v": 428
+      },
+      "20": {
+       "basis": "interp",
+       "v": 368
+      },
+      "40": {
+       "basis": "interp",
+       "v": 310
+      }
+     },
+     "8000": {
+      "-20": {
+       "basis": "poh",
+       "v": 440
+      },
+      "0": {
+       "basis": "poh",
+       "v": 380
+      },
+      "20": {
+       "basis": "poh",
+       "v": 320
+      },
+      "40": {
+       "basis": "poh",
+       "v": 265
+      }
+     },
+     "9000": {
+      "-20": {
+       "basis": "interp",
+       "v": 390
+      },
+      "0": {
+       "basis": "interp",
+       "v": 332
+      },
+      "20": {
+       "basis": "interp",
+       "v": 275
+      },
+      "40": {
+       "basis": "interp",
+       "v": 220
+      }
+     }
+    }
+   },
+   "cells_are": "rate_of_climb",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps up, full throttle",
+   "counts": {
+    "extrap": 0,
+    "interp": 20,
+    "poh": 24
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": null,
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 152 \u00b7 Figure 5-5 \u00b7 Rate of Climb - Maximum",
+   "weights_lbs": [
+    1670
+   ]
+  },
   "cruise": {
    "axes": [
     "pressure_altitude",
@@ -878,6 +1096,615 @@
    ],
    "source": "Figure 5-7"
   },
+  "landing": {
+   "cells": {
+    "1670": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 450
+      },
+      "10": {
+       "basis": "poh",
+       "v": 465
+      },
+      "20": {
+       "basis": "poh",
+       "v": 485
+      },
+      "30": {
+       "basis": "poh",
+       "v": 500
+      },
+      "40": {
+       "basis": "poh",
+       "v": 515
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 465
+      },
+      "10": {
+       "basis": "poh",
+       "v": 485
+      },
+      "20": {
+       "basis": "poh",
+       "v": 500
+      },
+      "30": {
+       "basis": "poh",
+       "v": 520
+      },
+      "40": {
+       "basis": "poh",
+       "v": 535
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 647
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 683
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 703
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 728
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 748
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 485
+      },
+      "10": {
+       "basis": "poh",
+       "v": 500
+      },
+      "20": {
+       "basis": "poh",
+       "v": 520
+      },
+      "30": {
+       "basis": "poh",
+       "v": 535
+      },
+      "40": {
+       "basis": "poh",
+       "v": 555
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 500
+      },
+      "10": {
+       "basis": "poh",
+       "v": 520
+      },
+      "20": {
+       "basis": "poh",
+       "v": 540
+      },
+      "30": {
+       "basis": "poh",
+       "v": 560
+      },
+      "40": {
+       "basis": "poh",
+       "v": 575
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 520
+      },
+      "10": {
+       "basis": "poh",
+       "v": 540
+      },
+      "20": {
+       "basis": "poh",
+       "v": 560
+      },
+      "30": {
+       "basis": "poh",
+       "v": 580
+      },
+      "40": {
+       "basis": "poh",
+       "v": 600
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 540
+      },
+      "10": {
+       "basis": "poh",
+       "v": 560
+      },
+      "20": {
+       "basis": "poh",
+       "v": 580
+      },
+      "30": {
+       "basis": "poh",
+       "v": 600
+      },
+      "40": {
+       "basis": "poh",
+       "v": 620
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 560
+      },
+      "10": {
+       "basis": "poh",
+       "v": 580
+      },
+      "20": {
+       "basis": "poh",
+       "v": 605
+      },
+      "30": {
+       "basis": "poh",
+       "v": 625
+      },
+      "40": {
+       "basis": "poh",
+       "v": 645
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 585
+      },
+      "10": {
+       "basis": "poh",
+       "v": 605
+      },
+      "20": {
+       "basis": "poh",
+       "v": 625
+      },
+      "30": {
+       "basis": "poh",
+       "v": 650
+      },
+      "40": {
+       "basis": "poh",
+       "v": 670
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 605
+      },
+      "10": {
+       "basis": "poh",
+       "v": 630
+      },
+      "20": {
+       "basis": "poh",
+       "v": 650
+      },
+      "30": {
+       "basis": "poh",
+       "v": 675
+      },
+      "40": {
+       "basis": "poh",
+       "v": 695
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 626
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 656
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 676
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 701
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 721
+      }
+     }
+    }
+   },
+   "cells_are": "landing_ground_roll",
+   "cells_trimmed_for_rectangular_grid": [],
+   "conditions": "Flaps 30 deg, power off, maximum braking, paved level dry runway, zero wind",
+   "counts": {
+    "extrap": 10,
+    "interp": 0,
+    "poh": 45
+   },
+   "handbook_misprints_bounded": [],
+   "over_50ft": {
+    "1670": {
+     "0": {
+      "0": {
+       "basis": "poh",
+       "v": 1160
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1185
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1215
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1240
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1265
+      }
+     },
+     "1000": {
+      "0": {
+       "basis": "poh",
+       "v": 1185
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1215
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1240
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1270
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1295
+      }
+     },
+     "10000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1483
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1533
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1563
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1603
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1638
+      }
+     },
+     "2000": {
+      "0": {
+       "basis": "poh",
+       "v": 1215
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1240
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1270
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1300
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1330
+      }
+     },
+     "3000": {
+      "0": {
+       "basis": "poh",
+       "v": 1240
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1275
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1305
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1360
+      }
+     },
+     "4000": {
+      "0": {
+       "basis": "poh",
+       "v": 1275
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1305
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1400
+      }
+     },
+     "5000": {
+      "0": {
+       "basis": "poh",
+       "v": 1305
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1335
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1400
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1435
+      }
+     },
+     "6000": {
+      "0": {
+       "basis": "poh",
+       "v": 1340
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1370
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1410
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1440
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1475
+      }
+     },
+     "7000": {
+      "0": {
+       "basis": "poh",
+       "v": 1375
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1410
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1440
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1480
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1515
+      }
+     },
+     "8000": {
+      "0": {
+       "basis": "poh",
+       "v": 1410
+      },
+      "10": {
+       "basis": "poh",
+       "v": 1450
+      },
+      "20": {
+       "basis": "poh",
+       "v": 1480
+      },
+      "30": {
+       "basis": "poh",
+       "v": 1520
+      },
+      "40": {
+       "basis": "poh",
+       "v": 1555
+      }
+     },
+     "9000": {
+      "0": {
+       "basis": "extrap",
+       "v": 1446
+      },
+      "10": {
+       "basis": "extrap",
+       "v": 1491
+      },
+      "20": {
+       "basis": "extrap",
+       "v": 1521
+      },
+      "30": {
+       "basis": "extrap",
+       "v": 1561
+      },
+      "40": {
+       "basis": "extrap",
+       "v": 1596
+      }
+     }
+    }
+   },
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 152 \u00b7 Figure 5-10 \u00b7 Landing Distance - Short Field",
+   "weights_lbs": [
+    1670
+   ]
+  },
+  "stall": {
+   "conditions": "Power off, most forward center of gravity, 1670 lb",
+   "rows": [
+    {
+     "bank_angle_deg": 0,
+     "cg": null,
+     "flap_setting": "up",
+     "kcas": 48,
+     "kias": 40,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": null,
+     "flap_setting": "up",
+     "kcas": 52,
+     "kias": 43,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": null,
+     "flap_setting": "up",
+     "kcas": 57,
+     "kias": 48,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": null,
+     "flap_setting": "up",
+     "kcas": 68,
+     "kias": 57,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": null,
+     "flap_setting": "10",
+     "kcas": 46,
+     "kias": 40,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": null,
+     "flap_setting": "10",
+     "kcas": 49,
+     "kias": 43,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": null,
+     "flap_setting": "10",
+     "kcas": 55,
+     "kias": 48,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": null,
+     "flap_setting": "10",
+     "kcas": 65,
+     "kias": 57,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 0,
+     "cg": null,
+     "flap_setting": "30",
+     "kcas": 43,
+     "kias": 35,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 30,
+     "cg": null,
+     "flap_setting": "30",
+     "kcas": 46,
+     "kias": 38,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 45,
+     "cg": null,
+     "flap_setting": "30",
+     "kcas": 51,
+     "kias": 42,
+     "weight_lbs": 1670
+    },
+    {
+     "bank_angle_deg": 60,
+     "cg": null,
+     "flap_setting": "30",
+     "kcas": 61,
+     "kias": 49,
+     "weight_lbs": 1670
+    }
+   ],
+   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 152 \u00b7 Figure 5-3 \u00b7 Stall Speeds"
+  },
   "takeoff": {
    "cells": {
     "1670": {
@@ -1127,7 +1954,7 @@
    },
    "cells_are": "takeoff_ground_roll",
    "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "Flaps up, full throttle prior to brake release, paved level dry runway, zero wind",
+   "conditions": "Flaps 10 deg, full throttle prior to brake release, paved level dry runway, zero wind",
    "counts": {
     "extrap": 10,
     "interp": 0,
