@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Built by scripts/build_site.py from site/content/tools__navlog-generator__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -147,9 +148,7 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         All Free Tools
       </a>
     </div>
@@ -160,6 +159,7 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -324,6 +324,16 @@
         <button type="button" class="btn-primary" id="print-log">Print / save as PDF</button>
         <span class="calc-hint" style="margin:0">Prints a landscape textbook-format log with blank Actual rows</span>
       </div>
+      <div class="tool-share">
+        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Copy link to this result
+        </button>
+        <span class="share-status" data-share-status aria-live="polite"></span>
+        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
+      </div>
+      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
+      <script type="application/json" id="fd-tool-params">{"slug":"navlog-generator","event":"navlog-generator","params":[{"name":"from","field":"g-from","type":"text","maxlen":12},{"name":"acft","field":"g-acft","type":"text","maxlen":30},{"name":"tas","field":"g-tas","type":"number","min":30,"max":500},{"name":"gph","field":"g-rate","type":"number","min":1,"max":200},{"name":"fuel","field":"g-fuel","type":"number","min":0,"max":500},{"name":"res","field":"g-resv","type":"enum","values":["30","45","60"]},{"name":"var","field":"g-var","type":"variation","min":0,"max":40,"dir_field":"g-var-dir"},{"name":"dev","field":"g-dev","type":"number","min":-15,"max":15},{"name":"dep","field":"g-dep","type":"time"},{"name":"leg","type":"list","repeat":true}]}</script>
     </div>
 
     <p class="lede"><strong>This builds the full navigation log a checkride expects: every checkpoint leg solved from true course to compass heading, with groundspeed, ETE, ETA, and a running fuel column.</strong> Enter the legs you measured on the chart and the forecast winds aloft; the math updates as you type. The print button produces a clean landscape sheet in the standard training-log format, with an empty Actual row under every leg for times and groundspeeds you measure in flight. Your entries stay on this device.</p>
@@ -430,7 +440,7 @@
     <div class="cta-band">
       <h2>The nav log is the arithmetic; the decision is the flight</h2>
       <p>FlightDecide checks the weather, NOTAMs, fuel, performance, and W&amp;B for your specific route and window, scores it GO, CAUTION, or NO GO, and shows the raw data behind every call.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Pilot's Handbook of Aeronautical Knowledge</em> (FAA-H-8083-25C), Ch. 16; FAA Private Pilot ACS (FAA-S-ACS-6C), Task I.D. Last reviewed: August 26, 2026.</p>
@@ -446,8 +456,11 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/explainers/">Explainers</a></li>
+      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
+      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>
@@ -610,15 +623,22 @@
         const dep = $('g-dep').value;
         varHint();
 
-        try {
-          localStorage.setItem(STORE, JSON.stringify({
-            pilot: $('g-pilot').value, date: $('g-date').value, acft: $('g-acft').value,
-            from: $('g-from').value, notes: $('g-notes').value,
-            tas: tas, rate: rate, fuel: fuel, resv: resv, mvar: mvar, dev: dev, dep: dep, legs: legs
-          }));
-          $('save-status').textContent = 'Saved on this device';
-          $('save-status').className = 'save-status saved';
-        } catch (e) {}
+        // A log opened from a link is not saved over this device's own until
+        // the visitor changes something (FD.share.canSave).
+        if (FD.share.canSave()) {
+          try {
+            localStorage.setItem(STORE, JSON.stringify({
+              pilot: $('g-pilot').value, date: $('g-date').value, acft: $('g-acft').value,
+              from: $('g-from').value, notes: $('g-notes').value,
+              tas: tas, rate: rate, fuel: fuel, resv: resv, mvar: mvar, dev: dev, dep: dep, legs: legs
+            }));
+            $('save-status').textContent = 'Saved on this device';
+            $('save-status').className = 'save-status saved';
+          } catch (e) {}
+        } else {
+          $('save-status').textContent = 'From a link, not saved on this device';
+          $('save-status').className = 'save-status';
+        }
 
         if (isNaN(tas) || tas <= 0 || legs.length === 0) { reset(); return; }
 
@@ -842,14 +862,17 @@
         window.print();
       });
 
-      // restore; a trip saved by the retired trip planner migrates in once
+      // restore; a trip saved by the retired trip planner migrates in once.
+      // Not when the address carries a log of its own.
       let saved = null;
-      try { saved = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
-      if (!(saved && saved.legs && saved.legs.length)) {
-        try {
-          const old = JSON.parse(localStorage.getItem('fd-trip-plan'));
-          if (old && old.legs && old.legs.length) saved = old;
-        } catch (e) {}
+      if (!FD.share.present()) {
+        try { saved = JSON.parse(localStorage.getItem(STORE)); } catch (e) {}
+        if (!(saved && saved.legs && saved.legs.length)) {
+          try {
+            const old = JSON.parse(localStorage.getItem('fd-trip-plan'));
+            if (old && old.legs && old.legs.length) saved = old;
+          } catch (e) {}
+        }
       }
       if (saved && saved.legs && saved.legs.length) {
         $('g-pilot').value = saved.pilot || ''; $('g-acft').value = saved.acft || '';
@@ -871,6 +894,43 @@
       FD.attachPrefill($('g-rate'), 'fuelFlowGph', TOOLID, TOOLNAME);
       const varPrefill = FD.attachPrefill($('g-var'), 'magVarDeg', TOOLID, TOOLNAME, { read: varSigned, write: setVar, label: fmtVar });
       $('g-var-dir').addEventListener('change', varPrefill);
+
+      // ?leg=S18,92.3,288,4500,350,3 (one per checkpoint: name, NM, true
+      // course, altitude, wind from, wind speed; empty fields allowed) plus
+      // from, acft, tas, gph, fuel, res, var, dev and dep. The pilot's name,
+      // the date and the notes stay on this device.
+      const LEG = [['dist', 0, 10000], ['tc', 0, 360], ['alt', -1500, 60000], ['wd', 0, 360], ['ws', 0, 300]];
+      function legIn(row) {
+        const f = row.split(',').map(function (x) { return x.trim(); });
+        const leg = { name: (f[0] || '').slice(0, 20) };
+        let any = !!leg.name;
+        LEG.forEach(function (d, i) {
+          const raw = f[i + 1];
+          if (raw === undefined || raw === '' || !/^[-+]?(\d+\.?\d*|\.\d+)$/.test(raw)) return;
+          const v = parseFloat(raw);
+          if (v >= d[1] && v <= d[2]) { leg[d[0]] = v; any = true; }
+        });
+        return any ? leg : null;
+      }
+      function legOut(leg) {
+        const f = [String(leg.name || '').replace(/,/g, ' ').trim()].concat(LEG.map(function (d) {
+          const v = leg[d[0]];
+          return typeof v === 'number' && isFinite(v) ? String(Math.round(v * 10) / 10) : '';
+        }));
+        return f.join('') === '' ? null : f.join(',').replace(/,+$/, '');
+      }
+      FD.share.init({
+        get: { leg: function () { return legs.map(legOut).filter(Boolean); } },
+        set: {
+          leg: function (rows) {
+            const got = rows.map(legIn).filter(Boolean);
+            if (!got.length) return false;
+            legs = got;
+            return true;
+          }
+        },
+        after: function () { render(); compute(); }
+      });
     })();
 
   </script>

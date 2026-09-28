@@ -1,28 +1,21 @@
 {
- "data_version": 1,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "DA40",
- "limits": {
-  "empty_weight_lbs": 1655,
-  "max_gross_weight_lbs": 2535,
-  "service_ceiling_ft": 16400,
-  "usable_fuel_gal": 40,
-  "useful_load_lbs": 880
- },
- "manufacturer": "Diamond",
- "name": "Diamond DA40 Diamond Star",
- "performance": {},
- "slug": "diamond-da40-diamond-star",
- "v_speeds": {
-  "best_glide": 73,
-  "va": 108,
-  "vfe": 91,
-  "vne": 178,
-  "vno": 129,
-  "vs0": 49,
-  "vs1": 52,
-  "vx": 66,
-  "vy": 76
- }
+  "type": "DA40",
+  "name": "Diamond DA40 Diamond Star",
+  "marketing_name": "Diamond DA40 Diamond Star",
+  "manufacturer": "Diamond",
+  "icao_type": "DA40",
+  "app_status": {
+    "module_id": "da40",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
+  },
+  "source_files": {
+    "spec": "scripts/poh/specs/da40.json",
+    "extracted": "scripts/poh/extracted/da40.json",
+    "pdf": "Diamond/Diamond-DA40-POH.pdf",
+    "draft": null
+  }
 }

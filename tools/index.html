@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!-- Built by scripts/build_site.py from site/content/tools__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Pilot Tools &amp; Preflight Planning Calculators (Online E6B) | FlightDecide</title>
-  <meta name="description" content="Free preflight planning tools and an online E6B flight computer that run in your browser, no sign-up: crosswind, density altitude, cloud base, true airspeed, time-speed-distance, fuel &amp; endurance, wind triangle, a cross-country planner with a printable VFR nav log, weight &amp; balance, descent &amp; glide, climb gradient, holding-entry, and IFR-alternate calculators, plus a printable personal minimums worksheet, built by the FlightDecide team." />
+  <meta name="description" content="Free preflight planning tools and an online E6B flight computer that run in your browser, no sign-up: crosswind, density altitude, cloud base, true airspeed, time-speed-distance, fuel &amp; endurance, wind triangle, a cross-country planner with a printable VFR nav log, weight &amp; balance, descent &amp; glide, climb gradient, holding-entry, and IFR-alternate calculators, a METAR decoder, plus a printable personal minimums worksheet, built by the FlightDecide team." />
   <link rel="canonical" href="https://flightdecide.com/tools/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
@@ -60,7 +61,17 @@
     .tool-grid.single { grid-template-columns: 1fr; }
     .tools-about { font-size: 14.5px; line-height: 1.6; color: var(--text-muted); margin: 30px 0 0; }
 
-    @media (max-width: 520px) { .tool-grid { grid-template-columns: 1fr; } }
+    /* On a phone each tool is one row, icon beside the words (2026-09-25);
+       stacked tiles made 14 tools 2,500px long. */
+    @media (max-width: 520px) {
+      .tool-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 28px; }
+      .tool-tile { display: grid; grid-template-columns: 36px 1fr; column-gap: 12px; row-gap: 2px;
+        padding: 12px 14px; border-radius: var(--radius-sm); }
+      .tool-ic { grid-row: span 2; width: 36px; height: 36px; border-radius: 9px; }
+      .tool-ic svg { width: 19px; height: 19px; }
+      .tool-tile h3 { font-size: 15px; align-self: end; }
+      .tool-tile p { font-size: 13px; }
+    }
     @media (prefers-reduced-motion: reduce) { .tool-tile, .tool-tile::after { transition: none; } }
   </style>
   <script type="application/ld+json">
@@ -72,7 +83,7 @@
         "@id": "https://flightdecide.com/tools/#page",
         "name": "Free Pilot Tools",
         "url": "https://flightdecide.com/tools/",
-        "description": "A free online E6B flight computer and preflight planning suite for general aviation pilots: crosswind components, density altitude, cloud base, true airspeed, time-speed-distance, fuel and endurance, the wind triangle, multi-leg cross-country flight planning, weight and balance, descent and glide, climb gradients, holding entries, IFR alternate minimums, and personal minimums. No sign-up, everything runs in the browser.",
+        "description": "A free online E6B flight computer and preflight planning suite for general aviation pilots: crosswind components, density altitude, cloud base, true airspeed, time-speed-distance, fuel and endurance, the wind triangle, multi-leg cross-country flight planning, weight and balance, descent and glide, climb gradients, holding entries, IFR alternate minimums, METAR decoding, and personal minimums. No sign-up, everything runs in the browser.",
         "publisher": { "@type": "Organization", "name": "FlightDecide", "url": "https://flightdecide.com" }
       },
       {
@@ -163,6 +174,12 @@
             "position": 14,
             "name": "Personal Minimums Worksheet",
             "url": "https://flightdecide.com/tools/personal-minimums-worksheet/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "name": "METAR Decoder",
+            "url": "https://flightdecide.com/tools/metar-decoder/"
           }
         ]
       },
@@ -193,23 +210,23 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Back to Home
       </a>
     </div>
   </nav>
 
-  <div class="page-hero">
-    <span class="page-label">FlightDecide</span>
-    <h1>Free Pilot Tools &amp; Preflight Planning Calculators</h1>
-    <p class="page-sub">An online E6B flight computer and preflight planning suite: the calculators and worksheets for the numbers every flight-planning and go/no-go decision runs on. No sign-up, no download. They work right in your browser.</p>
-    <div class="hero-chips">
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>14 free tools</span>
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Runs in your browser</span>
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>No sign-up</span>
-      <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Free</span>
+  <div class="page-hero tool-hero hub-hero">
+    <div class="hero-inner">
+      <span class="page-label">FlightDecide</span>
+      <h1>Free Pilot Tools &amp; Preflight Planning Calculators</h1>
+      <p class="page-sub">An online E6B flight computer and preflight planning suite: the calculators and worksheets for the numbers every flight-planning and go/no-go decision runs on. No sign-up, no download. They work right in your browser.</p>
+      <div class="hero-chips">
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>15 free tools</span>
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Runs in your browser</span>
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>No sign-up</span>
+        <span class="hero-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Free</span>
+      </div>
     </div>
   </div>
 
@@ -233,6 +250,11 @@
         <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 18H7a4 4 0 1 1 .7-7.94A5.5 5.5 0 0 1 18.3 11.6 3.25 3.25 0 0 1 17.5 18z"/></svg></span>
         <h3>Cloud Base Calculator</h3>
         <p>Estimated cumulus base from the temp/dew point spread.</p>
+      </a>
+      <a class="tool-tile" href="/tools/metar-decoder/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/><path d="M13.5 6l-3 12"/></svg></span>
+        <h3>METAR Decoder</h3>
+        <p>Any METAR in plain English, with the ceiling and flight category.</p>
       </a>
       <a class="tool-tile" href="/tools/true-airspeed-calculator/">
         <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19a8 8 0 1 1 16 0"/><path d="M12 15l4.5-4"/></svg></span>
@@ -293,6 +315,11 @@
 
     <span class="section-label">Guides</span>
     <div class="tool-grid">
+      <a class="tool-tile" href="/tools/e6b-flight-computer/">
+        <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v4.5M12 16.5V21"/></svg></span>
+        <h3>Online E6B Flight Computer</h3>
+        <p>Both sides of the E6B, mapped to the calculators above.</p>
+      </a>
       <a class="tool-tile" href="/learn/go-no-go-decision-framework/">
         <span class="tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l2.5 2.5L10 5"/><path d="M15 5l4 4M19 5l-4 4"/><path d="M4 15h16M4 19h10"/></svg></span>
         <h3>The Go/No-Go Decision Framework</h3>
@@ -327,7 +354,7 @@
     <div class="cta-band">
       <h2>One tool that checks all of it</h2>
       <p>FlightDecide runs winds, ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B for your specific flight window and aircraft, then scores it GO, CAUTION, or NO GO and shows the raw data behind every call.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="tools-about">Every calculator runs in your browser with nothing uploaded, and each comes with the formula, a worked example, and the judgment to use the number. They're built by the FlightDecide team, and built into the app's Tools tab too, where they work offline and stay free on every plan.</p>
@@ -341,8 +368,11 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/explainers/">Explainers</a></li>
+      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
+      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>

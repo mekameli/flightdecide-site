@@ -1,28 +1,59 @@
 {
- "data_version": 1,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "P28A",
- "limits": {
-  "empty_weight_lbs": 1760,
-  "max_gross_weight_lbs": 2900,
-  "service_ceiling_ft": 18000,
-  "usable_fuel_gal": 84,
-  "useful_load_lbs": 1140
- },
- "manufacturer": "Piper",
- "name": "Piper PA-28-235 Cherokee 235",
- "performance": {},
- "slug": "piper-pa-28-235-cherokee-235",
- "v_speeds": {
-  "best_glide": 82,
-  "va": 120,
-  "vfe": 100,
-  "vne": 171,
-  "vno": 136,
-  "vs0": 52,
-  "vs1": 61,
-  "vx": 78,
-  "vy": 87
- }
+  "type": "PA-28-235",
+  "name": "Piper PA-28-235 Cherokee 235",
+  "marketing_name": "Piper PA-28-235 Cherokee 235",
+  "manufacturer": "Piper",
+  "icao_type": "P28A",
+  "weight_balance": {
+    "stations": {
+      "front_seats_arm": 85.5,
+      "baggage_arm": 142.8,
+      "fuel_arm": 95.0
+    },
+    "provenance": {
+      "source_doc": "FAA TCDS 2A13 (Piper PA-28), Model PA-28-235 (Cherokee 235 / Pathfinder), Item VI, 4 PCLM Normal Category, 2900 lb",
+      "revision": "Revision 48, 2006-08-07",
+      "page": "TCDS pp. 8-9 (Item VI: C.G. Range for S/N 28-7110001 through 28-7210023, Max Weight, No. of Seats, Max Baggage, Fuel Capacity); Datum from DATA PERTINENT TO ALL MODELS",
+      "datum": "78.4 in forward of wing leading edge (straight wing) / inboard intersection of straight and tapered sections (semi-tapered)",
+      "basis": "TCDS-verbatim",
+      "confidence": "high",
+      "verified_on": "2026-07-26",
+      "verified_by": "FD-419 S2 (claude-opus-4-8)",
+      "sources": [
+        "FAA TCDS 2A13 Rev 48 (2006-08-07): https://www.touringmachine.com/Cherokee/PDFs/Cherokee%20Type%20Certificate%20Data%20Sheet%202A13.pdf"
+      ],
+      "notes": "Module models the basic short-body PA-28-235 (gross 2900 lb, 84 gal fuel, front arm +85.5 = TCDS Item VI, NOT the stretched Item XIII Pathfinder which is 3000 lb / front +80.5). Certified CG envelope transcribed from Item VI's LATER serial group (S/N 28-7110001 through 28-7210023), a 3-breakpoint taper matching the module structure: (+85.1) to (+93.5) at 2100 lb or less; (+86.0) to (+93.5) at 2600 lb; (+91.5) to (+93.5) at 2900 lb (straight-line variation). Two safety-direction corrections: (a) forward limit was a near-flat 82.0 rising only to 84.0 at 2900 lb -> certified 91.5 at gross = up to 7.5 in MORE nose-heavy-permissive than the TC (worst forward-limit defect in the S2 batch); (b) aft limit 95.5 -> certified 93.5 (module was 2.0 in too permissive AFT). The EARLIER serial group (S/N 28-10001 through 28-11378, NOTE 16) is a 2-point straight line (+81.5)@<=2100 -> (+91.5)@2900 also at aft 93.5 — the later group chosen as it is the higher-production 3-point taper and is more restrictive at low weight. Station arms front 85.5 / rear 118.1 / baggage 142.8 (200 lb at +142.8) / fuel 95.0 (84 gal: 50 wing + 34 tip, all at +95) confirmed CORRECT against TCDS Item VI. DEFERRED (Track B): empty_weight/empty_weight_arm nominal (TCDS Empty Weight C.G. Range: None); inverted climb cube (CLIMB_INVERSION_FD419) is a Track-B perf fix. Full findings: docs/fd-419-s2-piper-singles-wb-findings-2026-07-26.md."
+    },
+    "cg_envelope": [
+      {
+        "weight_lbs": 2100,
+        "forward_cg": 85.1,
+        "aft_cg": 93.5
+      },
+      {
+        "weight_lbs": 2600,
+        "forward_cg": 86.0,
+        "aft_cg": 93.5
+      },
+      {
+        "weight_lbs": 2900,
+        "forward_cg": 91.5,
+        "aft_cg": 93.5
+      }
+    ]
+  },
+  "app_status": {
+    "module_id": "pa28_235",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
+  },
+  "source_files": {
+    "spec": "scripts/poh/specs/pa28_235.json",
+    "extracted": "scripts/poh/extracted/pa28_235.json",
+    "pdf": "Piper/Piper-PA-28-235-Cherokee-235-1973-POH.pdf",
+    "draft": null
+  }
 }

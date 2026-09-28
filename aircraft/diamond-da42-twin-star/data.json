@@ -1,167 +1,22 @@
 {
- "data_version": 1,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "DA42",
- "limits": {
-  "empty_weight_lbs": 2656,
-  "max_gross_weight_lbs": 3935,
-  "service_ceiling_ft": 18000,
-  "usable_fuel_gal": 50,
-  "useful_load_lbs": 1279
- },
- "manufacturer": "Diamond",
- "name": "Diamond DA42 Twin Star",
- "performance": {
-  "cruise": {
-   "axes": [
-    "pressure_altitude",
-    "pct_power"
-   ],
-   "row_count": 21,
-   "rows": [
-    {
-     "gph": 16.6,
-     "pct_power": 92,
-     "pressure_altitude": 2000,
-     "tas_kts": 166
-    },
-    {
-     "gph": 13.2,
-     "pct_power": 75,
-     "pressure_altitude": 2000,
-     "tas_kts": 153
-    },
-    {
-     "gph": 10.3,
-     "pct_power": 60,
-     "pressure_altitude": 2000,
-     "tas_kts": 139
-    },
-    {
-     "gph": 16.6,
-     "pct_power": 92,
-     "pressure_altitude": 4000,
-     "tas_kts": 169
-    },
-    {
-     "gph": 13.2,
-     "pct_power": 75,
-     "pressure_altitude": 4000,
-     "tas_kts": 156
-    },
-    {
-     "gph": 10.3,
-     "pct_power": 60,
-     "pressure_altitude": 4000,
-     "tas_kts": 142
-    },
-    {
-     "gph": 16.6,
-     "pct_power": 92,
-     "pressure_altitude": 6000,
-     "tas_kts": 173
-    },
-    {
-     "gph": 13.2,
-     "pct_power": 75,
-     "pressure_altitude": 6000,
-     "tas_kts": 159
-    },
-    {
-     "gph": 10.3,
-     "pct_power": 60,
-     "pressure_altitude": 6000,
-     "tas_kts": 144
-    },
-    {
-     "gph": 16.6,
-     "pct_power": 92,
-     "pressure_altitude": 8000,
-     "tas_kts": 176
-    },
-    {
-     "gph": 13.2,
-     "pct_power": 75,
-     "pressure_altitude": 8000,
-     "tas_kts": 162
-    },
-    {
-     "gph": 10.3,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "tas_kts": 147
-    },
-    {
-     "gph": 16.6,
-     "pct_power": 92,
-     "pressure_altitude": 10000,
-     "tas_kts": 179
-    },
-    {
-     "gph": 13.2,
-     "pct_power": 75,
-     "pressure_altitude": 10000,
-     "tas_kts": 165
-    },
-    {
-     "gph": 10.3,
-     "pct_power": 60,
-     "pressure_altitude": 10000,
-     "tas_kts": 150
-    },
-    {
-     "gph": 16.6,
-     "pct_power": 92,
-     "pressure_altitude": 12000,
-     "tas_kts": 183
-    },
-    {
-     "gph": 13.2,
-     "pct_power": 75,
-     "pressure_altitude": 12000,
-     "tas_kts": 168
-    },
-    {
-     "gph": 10.3,
-     "pct_power": 60,
-     "pressure_altitude": 12000,
-     "tas_kts": 152
-    },
-    {
-     "gph": 16.8,
-     "pct_power": 92,
-     "pressure_altitude": 16000,
-     "tas_kts": 190
-    },
-    {
-     "gph": 13.2,
-     "pct_power": 75,
-     "pressure_altitude": 16000,
-     "tas_kts": 175
-    },
-    {
-     "gph": 10.3,
-     "pct_power": 60,
-     "pressure_altitude": 16000,
-     "tas_kts": 157
-    }
-   ],
-   "source": "5.3.10"
+  "type": "DA42",
+  "name": "Diamond DA42 Twin Star",
+  "marketing_name": "Diamond DA42 Twin Star",
+  "manufacturer": "Diamond",
+  "icao_type": "DA42",
+  "is_twin": true,
+  "app_status": {
+    "module_id": "da42",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
+  },
+  "source_files": {
+    "spec": "scripts/poh/specs/da42.json",
+    "extracted": "scripts/poh/extracted/da42.json",
+    "pdf": "Diamond/Diamond-DA42-Twin-Star-AFM.pdf",
+    "draft": null
   }
- },
- "slug": "diamond-da42-twin-star",
- "v_speeds": {
-  "best_glide": 90,
-  "vfe": 113,
-  "vmc": 68,
-  "vne": 188,
-  "vno": 151,
-  "vs0": 62,
-  "vs1": 68,
-  "vx": 80,
-  "vxse": 80,
-  "vy": 89,
-  "vyse": 85
- }
 }

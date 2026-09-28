@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Built by scripts/build_site.py from site/content/tools__holding-pattern-calculator__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -99,9 +100,7 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         All Free Tools
       </a>
     </div>
@@ -112,6 +111,7 @@
       <a class="tool-pill" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -205,6 +205,16 @@
           <span class="result-note" id="outbound-note">after crossing the fix</span>
         </div>
       </div>
+      <div class="tool-share">
+        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Copy link to this result
+        </button>
+        <span class="share-status" data-share-status aria-live="polite"></span>
+        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
+      </div>
+      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
+      <script type="application/json" id="fd-tool-params">{"slug":"holding-pattern-calculator","event":"holding-pattern-calculator","params":[{"name":"hdg","field":"hdg","type":"number","min":0,"max":360},{"name":"radial","field":"radial","type":"number","min":0,"max":360},{"name":"turns","field":"turns","type":"enum","values":["R","L"],"aliases":{"right":"R","left":"L","standard":"R","nonstandard":"L"}}]}</script>
     </div>
 
     <p class="lede"><strong>Holding entries follow the AIM 70° sector rule: direct from the 180° sector facing the hold, teardrop from the 70° wedge on the holding side, parallel from the 110° wedge on the other.</strong> The CX-3 flight computer's holding function does exactly this; here it is with the sectors drawn around your heading so the geometry finally makes sense.</p>
@@ -275,7 +285,7 @@
     <div class="cta-band">
       <h2>Brief the whole flight, not just the hold</h2>
       <p>FlightDecide checks weather, NOTAMs, fuel, performance, and W&amp;B for your specific route and window, and scores the flight GO, CAUTION, or NO GO with the data behind every call.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for current charts, the AIM, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: AIM 5-3-8; FAA <em>Instrument Flying Handbook</em> (FAA-H-8083-15B), Ch. 10. Last reviewed: July 17, 2026.</p>
@@ -287,8 +297,11 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/explainers/">Explainers</a></li>
+      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
+      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>
@@ -469,6 +482,9 @@
       $('turns').addEventListener('change', compute);
       FD.dial($('compass'), $('hdgGroup'), $('hdg'), 5);
       compute();
+
+      // ?hdg=155&radial=270&turns=R fills the fields and calculates
+      FD.share.init();
     })();
   </script>
 

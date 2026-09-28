@@ -1,690 +1,1978 @@
 {
- "data_version": 2,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "P28A",
- "limits": {
-  "empty_weight_lbs": 1250,
-  "max_gross_weight_lbs": 2150,
-  "service_ceiling_ft": 12700,
-  "usable_fuel_gal": 36,
-  "useful_load_lbs": 900
- },
- "manufacturer": "Piper",
- "name": "Piper PA-28-140 Cherokee",
- "performance": {
-  "climb": {
-   "cells": {
-    "2150": {
-     "0": {
-      "20": {
-       "basis": "poh",
-       "v": 595
+  "type": "PA-28-140",
+  "name": "Piper PA-28-140 Cherokee",
+  "marketing_name": "Piper PA-28-140 Cherokee",
+  "manufacturer": "Piper",
+  "icao_type": "P28A",
+  "performance": {
+    "takeoff_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 785
       },
-      "40": {
-       "basis": "poh",
-       "v": 490
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 855
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 930
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 1000
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 1070
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 860
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 930
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 1000
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 1070
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 930
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 1005
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 1070
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 1210
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 1005
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 1075
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 1145
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 1215
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 1290
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 1080
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 1150
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 1220
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 1290
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 1360
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 1150
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 1220
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 1295
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 1365
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 1430
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 1225
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 1295
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 1365
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 1435
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 1505
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 880
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 950
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1030
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1110
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1190
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 960
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1035
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1110
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1190
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1270
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1040
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1120
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1200
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1270
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1350
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1120
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1200
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1280
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1360
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1430
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1200
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1280
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1360
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1440
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1515
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1280
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1360
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1440
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1520
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1595
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1370
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1440
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1520
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1600
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1670
       }
-     },
-     "1000": {
-      "20": {
-       "basis": "poh",
-       "v": 540
+    ],
+    "takeoff_ground_roll_provenance": {
+      "title": "Takeoff",
+      "conditions": "TAKEOFF PERFORMANCE. FLAPS 0 deg. PAVED LEVEL DRY RUNWAY. FULL POWER BEFORE BRAKE RELEASE. ZERO WIND. EXTRAPOLATION OF CHART ABOVE 7000 FT. IS INVALID. GROSS WEIGHT: 1950 LBS. (solid curves) / 2150 LBS. (dashed curves). AIRSPEED THROUGH 50 FEET: 1950 LBS. - 72 MPH CAS; 2150 LBS. - 76 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE - FEET (0 to 7000) against TAKE-OFF DISTANCE - FEET (500 to 4000). GROUND ROLL and OVER 50 FT. are separate labelled curves, each drawn twice, once per weight; only the 2150 lb (dashed) pair was read. The sheet is plotted against DENSITY altitude and carries no temperature axis, so each cell here is the chart read at the density altitude its pressure altitude and OAT give. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 105,
+          "figure": "9-2",
+          "title": "TAKEOFF PERFORMANCE"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 105,
+          "figure": "9-2",
+          "title": "TAKEOFF PERFORMANCE"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 2150,
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "density_altitude_ft": 0,
+        "value": 800,
+        "read_value": 795,
+        "how": "The sheet prints no worked example and no dashed reference path - its dashed lines ARE the 2150 lb curves. The anchor is the handbook's own printed sea-level figure: GENERAL SPECIFICATIONS, printed page 1-1 (PDF p15, revised 22 October 1973), 'Takeoff Ground Run, flaps up, sea level (ft) 800', under 'Published figures are for standard airplanes flown at gross weight under standard conditions at sea level' and 'Each performance figure below is subject to the same conditions as on the corresponding performance chart'. Standard day at sea level is density altitude 0, which is the bottom of this sheet's own axis. My calibrated read of the 2150 lb GROUND ROLL curve at density altitude 0 is 797 ft (rounded 795), 3 ft under the printed 800. The same page's second figure checks the other curve: 'Takeoff Distance Over 50-ft Obstacle, flaps up, sea level (ft) 1700' against a read of 1708 ft, 8 ft over."
       },
-      "40": {
-       "basis": "poh",
-       "v": 430
+      "reference_point_error": 10.0,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2",
+        "reader 3",
+        "reader 4"
+      ],
+      "cells_agreed": 140,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974",
+        "publisher": "Piper Aircraft Corporation",
+        "applicability": "PA-28-140 serial numbers 28-7425001 and up. Lycoming O-320-E3D, 150 hp at 2700 RPM; Sensenich M74DM; gross weight 2150 lb.",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number.",
+        "figures_reviewed": [
+          "p15 (printed 1-1) General Specifications: a sea-level performance summary as a label/value list, not a grid; no altitude or temperature axis, so no profile fits it",
+          "p46 (printed 3-2) Airspeed limitations and instrument markings: limitations, not performance",
+          "p52 (printed 3-3) AFM Section III Performance: the stall speed vs angle of bank table described above",
+          "p104-p114 (printed 9-1 to 9-11) Performance Charts: charts throughout"
+        ]
+      },
+      "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+      "grid": {
+        "weights_lbs": [
+          1950,
+          2150
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000
+        ],
+        "oat_c": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      "poh_cells_published": 70,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/pa28_140.json",
+        "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "fe46eee91ebb0cb8ba2019db421c6976ce2e963a0d1c0e384bbc820e5d409c40",
+        "basis": "poh_chart"
       }
-     },
-     "2000": {
-      "20": {
-       "basis": "poh",
-       "v": 480
-      },
-      "40": {
-       "basis": "poh",
-       "v": 370
-      }
-     },
-     "3000": {
-      "20": {
-       "basis": "poh",
-       "v": 430
-      },
-      "40": {
-       "basis": "poh",
-       "v": 320
-      }
-     },
-     "4000": {
-      "20": {
-       "basis": "extrap",
-       "v": 380
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 270
-      }
-     }
-    }
-   },
-   "cells_are": "rate_of_climb",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "CLIMB PERFORMANCE. TAKEOFF GROSS WEIGHT 2150 LBS. FLAPS 0 deg. POWER - FULL THROTTLE. MIXTURE - LEAN PER LYCOMING INSTRUCTIONS. 89 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE-FEET (0 to 14000) against RATE OF CLIMB-FEET PER MINUTE (0 to 1400, labelled every 200). A single line; no temperature axis. The drawn line stops at about 20 fpm / 12,900 ft density altitude and does not reach the axis. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
-   "counts": {
-    "extrap": 2,
-    "interp": 0,
-    "poh": 8
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": null,
-   "source": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974 \u00b7 Climb",
-   "weights_lbs": [
-    2150
-   ]
-  },
-  "landing": {
-   "cells": {
-    "2150": {
-     "0": {
-      "10": {
-       "basis": "extrap",
-       "v": 511
-      },
-      "20": {
-       "basis": "poh",
-       "v": 540
-      },
-      "30": {
-       "basis": "poh",
-       "v": 565
-      },
-      "40": {
-       "basis": "poh",
-       "v": 585
-      }
-     },
-     "1000": {
-      "10": {
-       "basis": "extrap",
-       "v": 546
-      },
-      "20": {
-       "basis": "poh",
-       "v": 565
-      },
-      "30": {
-       "basis": "poh",
-       "v": 590
-      },
-      "40": {
-       "basis": "poh",
-       "v": 610
-      }
-     },
-     "2000": {
-      "10": {
-       "basis": "extrap",
-       "v": 570
-      },
-      "20": {
-       "basis": "poh",
-       "v": 590
-      },
-      "30": {
-       "basis": "poh",
-       "v": 610
-      },
-      "40": {
-       "basis": "poh",
-       "v": 630
-      }
-     },
-     "3000": {
-      "10": {
-       "basis": "extrap",
-       "v": 590
-      },
-      "20": {
-       "basis": "poh",
-       "v": 610
-      },
-      "30": {
-       "basis": "poh",
-       "v": 630
-      },
-      "40": {
-       "basis": "poh",
-       "v": 650
-      }
-     },
-     "4000": {
-      "10": {
-       "basis": "extrap",
-       "v": 611
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 631
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 650
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 670
-      }
-     }
-    }
-   },
-   "cells_are": "landing_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "LANDING PERFORMANCE. GROSS WEIGHT 2150 LBS. PAVED LEVEL DRY RUNWAY. POWER OFF. 40 deg FLAPS. ZERO WIND. MAXIMUM BRAKING. APPROACH AIRSPEED 71 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE, FEET (0 to 7000) against LANDING DISTANCE, FEET (200 to 1400). One weight only; GROUND ROLL and OVER 50 FT. are two labelled solid curves. Plotted against DENSITY altitude with no temperature axis. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
-   "counts": {
-    "extrap": 8,
-    "interp": 0,
-    "poh": 12
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "2150": {
-     "0": {
-      "10": {
-       "basis": "extrap",
-       "v": 1051
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1090
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1125
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1160
-      }
-     },
-     "1000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1096
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1125
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1160
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1190
-      }
-     },
-     "2000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1121
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1160
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1195
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1230
-      }
-     },
-     "3000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1180
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1200
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1230
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1270
-      }
-     },
-     "4000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1242
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1241
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1271
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1311
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974 \u00b7 Landing",
-   "weights_lbs": [
-    2150
-   ]
-  },
-  "takeoff": {
-   "cells": {
-    "1950": {
-     "0": {
-      "10": {
-       "basis": "extrap",
-       "v": 662
-      },
-      "20": {
-       "basis": "poh",
-       "v": 785
-      },
-      "30": {
-       "basis": "poh",
-       "v": 930
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1070
-      }
-     },
-     "1000": {
-      "10": {
-       "basis": "extrap",
-       "v": 796
-      },
-      "20": {
-       "basis": "poh",
-       "v": 930
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1070
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1210
-      }
-     },
-     "2000": {
-      "10": {
-       "basis": "extrap",
-       "v": 953
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1080
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1220
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1360
-      }
-     },
-     "3000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1096
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1225
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1365
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1505
-      }
-     },
-     "4000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1261
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1390
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1517
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1667
-      }
-     }
     },
-    "2150": {
-     "0": {
-      "10": {
-       "basis": "extrap",
-       "v": 755
+    "takeoff_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 1620
       },
-      "20": {
-       "basis": "poh",
-       "v": 880
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 1750
       },
-      "30": {
-       "basis": "poh",
-       "v": 1030
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 1875
       },
-      "40": {
-       "basis": "poh",
-       "v": 1190
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 2005
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 2140
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 1755
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 1880
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 2010
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 2140
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 2280
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 1885
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 2015
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 2150
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 2285
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 2430
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 2020
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 2150
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 2290
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 2440
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 2600
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 2160
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 2300
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 2445
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 2610
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 2785
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 2300
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 2450
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 2615
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 2790
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 2990
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 1950,
+        "distance_ft": 2455
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 25,
+        "weight_lbs": 1950,
+        "distance_ft": 2620
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 1950,
+        "distance_ft": 2800
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 35,
+        "weight_lbs": 1950,
+        "distance_ft": 3000
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 1950,
+        "distance_ft": 3220
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1850
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1980
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 2110
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 2260
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 2410
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1985
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 2120
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 2260
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 2415
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 2575
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 2130
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 2270
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 2420
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 2585
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 2760
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 2275
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 2425
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 2590
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 2765
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 2950
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 2435
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 2595
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 2770
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 2960
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 3165
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 2605
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 2780
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 2970
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 3170
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 3395
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 2785
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 2975
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 3180
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 3400
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 3640
       }
-     },
-     "1000": {
-      "10": {
-       "basis": "extrap",
-       "v": 897
+    ],
+    "takeoff_over_50ft_provenance": {
+      "title": "Takeoff",
+      "conditions": "TAKEOFF PERFORMANCE. FLAPS 0 deg. PAVED LEVEL DRY RUNWAY. FULL POWER BEFORE BRAKE RELEASE. ZERO WIND. EXTRAPOLATION OF CHART ABOVE 7000 FT. IS INVALID. GROSS WEIGHT: 1950 LBS. (solid curves) / 2150 LBS. (dashed curves). AIRSPEED THROUGH 50 FEET: 1950 LBS. - 72 MPH CAS; 2150 LBS. - 76 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE - FEET (0 to 7000) against TAKE-OFF DISTANCE - FEET (500 to 4000). GROUND ROLL and OVER 50 FT. are separate labelled curves, each drawn twice, once per weight; only the 2150 lb (dashed) pair was read. The sheet is plotted against DENSITY altitude and carries no temperature axis, so each cell here is the chart read at the density altitude its pressure altitude and OAT give. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 105,
+          "figure": "9-2",
+          "title": "TAKEOFF PERFORMANCE"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 105,
+          "figure": "9-2",
+          "title": "TAKEOFF PERFORMANCE"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 2150,
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "density_altitude_ft": 0,
+        "value": 800,
+        "read_value": 795,
+        "how": "The sheet prints no worked example and no dashed reference path - its dashed lines ARE the 2150 lb curves. The anchor is the handbook's own printed sea-level figure: GENERAL SPECIFICATIONS, printed page 1-1 (PDF p15, revised 22 October 1973), 'Takeoff Ground Run, flaps up, sea level (ft) 800', under 'Published figures are for standard airplanes flown at gross weight under standard conditions at sea level' and 'Each performance figure below is subject to the same conditions as on the corresponding performance chart'. Standard day at sea level is density altitude 0, which is the bottom of this sheet's own axis. My calibrated read of the 2150 lb GROUND ROLL curve at density altitude 0 is 797 ft (rounded 795), 3 ft under the printed 800. The same page's second figure checks the other curve: 'Takeoff Distance Over 50-ft Obstacle, flaps up, sea level (ft) 1700' against a read of 1708 ft, 8 ft over."
       },
-      "20": {
-       "basis": "poh",
-       "v": 1040
+      "reference_point_error": 10.0,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2",
+        "reader 3",
+        "reader 4"
+      ],
+      "cells_agreed": 140,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974",
+        "publisher": "Piper Aircraft Corporation",
+        "applicability": "PA-28-140 serial numbers 28-7425001 and up. Lycoming O-320-E3D, 150 hp at 2700 RPM; Sensenich M74DM; gross weight 2150 lb.",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number.",
+        "figures_reviewed": [
+          "p15 (printed 1-1) General Specifications: a sea-level performance summary as a label/value list, not a grid; no altitude or temperature axis, so no profile fits it",
+          "p46 (printed 3-2) Airspeed limitations and instrument markings: limitations, not performance",
+          "p52 (printed 3-3) AFM Section III Performance: the stall speed vs angle of bank table described above",
+          "p104-p114 (printed 9-1 to 9-11) Performance Charts: charts throughout"
+        ]
       },
-      "30": {
-       "basis": "poh",
-       "v": 1200
+      "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+      "grid": {
+        "weights_lbs": [
+          1950,
+          2150
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000
+        ],
+        "oat_c": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
       },
-      "40": {
-       "basis": "poh",
-       "v": 1350
+      "poh_cells_published": 70,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/pa28_140.json",
+        "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "195157f46cd75ced6bc268d693b5f0a8feb5156e13fe25d61a26fed09bc5d793",
+        "basis": "poh_chart"
       }
-     },
-     "2000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1055
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1200
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1360
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1515
-      }
-     },
-     "3000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1240
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1370
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1520
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1670
-      }
-     },
-     "4000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1483
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1569
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1694
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1831
-      }
-     }
-    }
-   },
-   "cells_are": "takeoff_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "TAKEOFF PERFORMANCE. FLAPS 0 deg. PAVED LEVEL DRY RUNWAY. FULL POWER BEFORE BRAKE RELEASE. ZERO WIND. EXTRAPOLATION OF CHART ABOVE 7000 FT. IS INVALID. GROSS WEIGHT: 1950 LBS. (solid curves) / 2150 LBS. (dashed curves). AIRSPEED THROUGH 50 FEET: 1950 LBS. - 72 MPH CAS; 2150 LBS. - 76 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE - FEET (0 to 7000) against TAKE-OFF DISTANCE - FEET (500 to 4000). GROUND ROLL and OVER 50 FT. are separate labelled curves, each drawn twice, once per weight; only the 2150 lb (dashed) pair was read. The sheet is plotted against DENSITY altitude and carries no temperature axis, so each cell here is the chart read at the density altitude its pressure altitude and OAT give. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
-   "counts": {
-    "extrap": 16,
-    "interp": 0,
-    "poh": 24
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "1950": {
-     "0": {
-      "10": {
-       "basis": "extrap",
-       "v": 1388
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1620
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1875
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2140
-      }
-     },
-     "1000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1650
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1885
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2150
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2430
-      }
-     },
-     "2000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1905
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2160
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2445
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2785
-      }
-     },
-     "3000": {
-      "10": {
-       "basis": "extrap",
-       "v": 2156
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2455
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2800
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3220
-      }
-     },
-     "4000": {
-      "10": {
-       "basis": "extrap",
-       "v": 2438
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2797
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3210
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3734
-      }
-     }
     },
-    "2150": {
-     "0": {
-      "10": {
-       "basis": "extrap",
-       "v": 1615
+    "landing_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 540
       },
-      "20": {
-       "basis": "poh",
-       "v": 1850
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 555
       },
-      "30": {
-       "basis": "poh",
-       "v": 2110
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 565
       },
-      "40": {
-       "basis": "poh",
-       "v": 2410
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 575
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 585
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 555
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 565
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 575
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 590
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 565
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 575
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 590
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 610
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 580
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 590
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 610
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 620
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 590
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 610
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 620
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 630
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 610
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 620
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 630
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 640
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 610
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 620
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 630
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 640
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 650
       }
-     },
-     "1000": {
-      "10": {
-       "basis": "extrap",
-       "v": 1875
+    ],
+    "landing_ground_roll_provenance": {
+      "title": "Landing",
+      "conditions": "LANDING PERFORMANCE. GROSS WEIGHT 2150 LBS. PAVED LEVEL DRY RUNWAY. POWER OFF. 40 deg FLAPS. ZERO WIND. MAXIMUM BRAKING. APPROACH AIRSPEED 71 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE, FEET (0 to 7000) against LANDING DISTANCE, FEET (200 to 1400). One weight only; GROUND ROLL and OVER 50 FT. are two labelled solid curves. Plotted against DENSITY altitude with no temperature axis. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 114,
+          "figure": "9-11",
+          "title": "LANDING PERFORMANCE"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 114,
+          "figure": "9-11",
+          "title": "LANDING PERFORMANCE"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 2150,
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "value": 535,
+        "how": "Figure 9-11 carries NO worked example and no dashed reference path - there is nothing printed on the landing sheet that a reading can be made to reproduce. The anchor is therefore the handbook specification page, p1-2 GENERAL SPECIFICATIONS (revised 13 July 1984), 'Landing Roll, flaps down (ft) ... 535', quoted for gross weight under standard conditions at sea level, i.e. density altitude 0. The GROUND ROLL curve read at density altitude 0 gives 532 ft, within 3 ft. Neither specification page prints a landing distance over a 50 ft obstacle, so the OVER 50 FT. column has no printed anchor of its own."
       },
-      "20": {
-       "basis": "poh",
-       "v": 2130
+      "reference_point_error": 10.0,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 70,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974",
+        "publisher": "Piper Aircraft Corporation",
+        "applicability": "PA-28-140 serial numbers 28-7425001 and up. Lycoming O-320-E3D, 150 hp at 2700 RPM; Sensenich M74DM; gross weight 2150 lb.",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number.",
+        "figures_reviewed": [
+          "p15 (printed 1-1) General Specifications: a sea-level performance summary as a label/value list, not a grid; no altitude or temperature axis, so no profile fits it",
+          "p46 (printed 3-2) Airspeed limitations and instrument markings: limitations, not performance",
+          "p52 (printed 3-3) AFM Section III Performance: the stall speed vs angle of bank table described above",
+          "p104-p114 (printed 9-1 to 9-11) Performance Charts: charts throughout"
+        ]
       },
-      "30": {
-       "basis": "poh",
-       "v": 2420
+      "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+      "grid": {
+        "weights_lbs": [
+          2150
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000
+        ],
+        "oat_c": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
       },
-      "40": {
-       "basis": "poh",
-       "v": 2760
+      "poh_cells_published": 35,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/pa28_140.json",
+        "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "40d3f55ea63e8512aab2def7543407cd1abc1548747bd3b8484d842e80be61f0",
+        "basis": "poh_chart"
       }
-     },
-     "2000": {
-      "10": {
-       "basis": "extrap",
-       "v": 2144
+    },
+    "landing_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1090
       },
-      "20": {
-       "basis": "poh",
-       "v": 2435
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1110
       },
-      "30": {
-       "basis": "poh",
-       "v": 2770
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1125
       },
-      "40": {
-       "basis": "poh",
-       "v": 3165
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1160
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1110
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1125
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1160
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1175
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1125
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1160
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1180
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1190
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1160
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1180
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1210
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1160
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1180
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1210
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1230
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1180
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1210
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1230
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1250
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "distance_ft": 1200
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "distance_ft": 1210
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "distance_ft": 1230
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "distance_ft": 1250
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "distance_ft": 1270
       }
-     },
-     "3000": {
-      "10": {
-       "basis": "extrap",
-       "v": 2441
+    ],
+    "landing_over_50ft_provenance": {
+      "title": "Landing",
+      "conditions": "LANDING PERFORMANCE. GROSS WEIGHT 2150 LBS. PAVED LEVEL DRY RUNWAY. POWER OFF. 40 deg FLAPS. ZERO WIND. MAXIMUM BRAKING. APPROACH AIRSPEED 71 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE, FEET (0 to 7000) against LANDING DISTANCE, FEET (200 to 1400). One weight only; GROUND ROLL and OVER 50 FT. are two labelled solid curves. Plotted against DENSITY altitude with no temperature axis. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 114,
+          "figure": "9-11",
+          "title": "LANDING PERFORMANCE"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 114,
+          "figure": "9-11",
+          "title": "LANDING PERFORMANCE"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 2150,
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "value": 535,
+        "how": "Figure 9-11 carries NO worked example and no dashed reference path - there is nothing printed on the landing sheet that a reading can be made to reproduce. The anchor is therefore the handbook specification page, p1-2 GENERAL SPECIFICATIONS (revised 13 July 1984), 'Landing Roll, flaps down (ft) ... 535', quoted for gross weight under standard conditions at sea level, i.e. density altitude 0. The GROUND ROLL curve read at density altitude 0 gives 532 ft, within 3 ft. Neither specification page prints a landing distance over a 50 ft obstacle, so the OVER 50 FT. column has no printed anchor of its own."
       },
-      "20": {
-       "basis": "poh",
-       "v": 2785
+      "reference_point_error": 10.0,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 70,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974",
+        "publisher": "Piper Aircraft Corporation",
+        "applicability": "PA-28-140 serial numbers 28-7425001 and up. Lycoming O-320-E3D, 150 hp at 2700 RPM; Sensenich M74DM; gross weight 2150 lb.",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number.",
+        "figures_reviewed": [
+          "p15 (printed 1-1) General Specifications: a sea-level performance summary as a label/value list, not a grid; no altitude or temperature axis, so no profile fits it",
+          "p46 (printed 3-2) Airspeed limitations and instrument markings: limitations, not performance",
+          "p52 (printed 3-3) AFM Section III Performance: the stall speed vs angle of bank table described above",
+          "p104-p114 (printed 9-1 to 9-11) Performance Charts: charts throughout"
+        ]
       },
-      "30": {
-       "basis": "poh",
-       "v": 3180
+      "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+      "grid": {
+        "weights_lbs": [
+          2150
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000
+        ],
+        "oat_c": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
       },
-      "40": {
-       "basis": "poh",
-       "v": 3640
+      "poh_cells_published": 35,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/pa28_140.json",
+        "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "a56af2aac780f0e588fa57ea6cd521a7c4dd1857663c12614a7d40a399082ad5",
+        "basis": "poh_chart"
       }
-     },
-     "4000": {
-      "10": {
-       "basis": "extrap",
-       "v": 2779
+    },
+    "rate_of_climb": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "fpm": 595
       },
-      "20": {
-       "basis": "extrap",
-       "v": 3183
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "fpm": 570
       },
-      "30": {
-       "basis": "extrap",
-       "v": 3646
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "fpm": 540
       },
-      "40": {
-       "basis": "extrap",
-       "v": 4184
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "fpm": 510
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "fpm": 490
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "fpm": 570
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "fpm": 540
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "fpm": 510
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "fpm": 490
+      },
+      {
+        "pressure_altitude": 500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "fpm": 460
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "fpm": 540
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "fpm": 510
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "fpm": 485
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "fpm": 460
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "fpm": 430
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "fpm": 510
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "fpm": 480
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "fpm": 460
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "fpm": 430
+      },
+      {
+        "pressure_altitude": 1500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "fpm": 400
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "fpm": 480
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "fpm": 460
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "fpm": 430
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "fpm": 400
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "fpm": 370
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "fpm": 455
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "fpm": 430
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "fpm": 400
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "fpm": 370
+      },
+      {
+        "pressure_altitude": 2500,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "fpm": 345
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2150,
+        "fpm": 430
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 25,
+        "weight_lbs": 2150,
+        "fpm": 400
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2150,
+        "fpm": 370
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 35,
+        "weight_lbs": 2150,
+        "fpm": 340
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2150,
+        "fpm": 320
       }
-     }
+    ],
+    "rate_of_climb_provenance": {
+      "title": "Climb",
+      "conditions": "CLIMB PERFORMANCE. TAKEOFF GROSS WEIGHT 2150 LBS. FLAPS 0 deg. POWER - FULL THROTTLE. MIXTURE - LEAN PER LYCOMING INSTRUCTIONS. 89 MPH CAS. NOTE: SEE SECTION 7 FOR EFFECTS OF AIR CONDITIONING INSTALLATION ON PERFORMANCE. Axes: DENSITY ALTITUDE-FEET (0 to 14000) against RATE OF CLIMB-FEET PER MINUTE (0 to 1400, labelled every 200). A single line; no temperature axis. The drawn line stops at about 20 fpm / 12,900 ft density altitude and does not reach the axis. This sheet is plotted against DENSITY altitude and has no temperature axis; each figure here is the chart read at the density altitude that pressure altitude and temperature give.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "fpm",
+          "page": 106,
+          "figure": "9-3",
+          "title": "CLIMB PERFORMANCE"
+        }
+      ],
+      "reference_point": {
+        "field": "fpm",
+        "weight_lbs": 2150,
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "density_altitude_ft": 0,
+        "value": 631,
+        "read_value": 625,
+        "how": "This sheet prints no worked example either. The anchor is GENERAL SPECIFICATIONS, printed 1-1 (PDF p15): 'Rate of Climb (ft per min) 631' at gross weight, standard conditions, sea level - density altitude 0, the bottom of this sheet's axis. My calibrated read there is 623 fpm (rounded 625), 8 fpm / 1.3 percent under the printed figure. The same list's 'Service Ceiling (ft) 10,950' and 'Absolute Ceiling (ft) 13,000' check the far end and are looser: the drawn line reads 118 fpm at 10,950 ft where the service ceiling implies 100, and it simply stops at about 20 fpm / 12,900 ft rather than meeting the axis at 13,000, so the sheet and the summary page are not exactly consistent with each other up there. The grid read here tops out at 6,676 ft, well inside the drawn line."
+      },
+      "reference_point_error": 11.0,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 35,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974",
+        "publisher": "Piper Aircraft Corporation",
+        "applicability": "PA-28-140 serial numbers 28-7425001 and up. Lycoming O-320-E3D, 150 hp at 2700 RPM; Sensenich M74DM; gross weight 2150 lb.",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number.",
+        "figures_reviewed": [
+          "p15 (printed 1-1) General Specifications: a sea-level performance summary as a label/value list, not a grid; no altitude or temperature axis, so no profile fits it",
+          "p46 (printed 3-2) Airspeed limitations and instrument markings: limitations, not performance",
+          "p52 (printed 3-3) AFM Section III Performance: the stall speed vs angle of bank table described above",
+          "p104-p114 (printed 9-1 to 9-11) Performance Charts: charts throughout"
+        ]
+      },
+      "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+      "grid": {
+        "weights_lbs": [
+          2150
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000
+        ],
+        "oat_c": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      "poh_cells_published": 35,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/pa28_140.json",
+        "pdf_sha256": "2de6c61ee3791d4dfffe0263e90c1335f06448c648a335475520faa59542af32",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "6e6faa2e1fecf6efe5d50c2a3b166ffe06af3105103c874250d6f45725846172",
+        "basis": "poh_chart"
+      }
     }
-   },
-   "source": "Pilot's Operating Manual, Piper PA-28-140 Cherokee Cruiser, incorporating FAA Approved Airplane Flight Manual Report VB-557 (FAA approved 14 May 1973); performance charts issued 6 July 1973, revised 13 June 1974 \u00b7 Takeoff",
-   "weights_lbs": [
-    2150,
-    1950
-   ]
+  },
+  "weight_balance": {
+    "stations": {
+      "rear_seats_arm": 117.0,
+      "baggage_arm": 117.0
+    },
+    "provenance": {
+      "source_doc": "FAA TCDS 2A13 (Piper PA-28), Model PA-28-140 (Cherokee), Item VIII (4 PCLM Normal Category, 2150 lb)",
+      "revision": "Revision 48, 2006-08-07",
+      "page": "TCDS pp. 10-12 (C.G. range, No. of Seats, Max Baggage, Fuel Capacity), p. 34 (Datum, Leveling Means, NOTE 1 unusable fuel); corroborated by Piper PA-28-140 POH/AFM Report VB-546 p. 5-9 (Sample Loading Problem arms) and p. 5-14 (C.G. Range and Weights graph)",
+      "datum": "78.4 in forward of wing leading edge (straight wing) / inboard intersection of straight and tapered sections (semi-tapered)",
+      "basis": "TCDS-verbatim + POH-corroborated",
+      "confidence": "high",
+      "verified_on": "2026-07-26",
+      "verified_by": "FD-419 S1 (claude-opus-4-8)",
+      "sources": [
+        "FAA TCDS 2A13 Rev 48 (2006-08-07): https://www.touringmachine.com/Cherokee/PDFs/Cherokee%20Type%20Certificate%20Data%20Sheet%202A13.pdf",
+        "FAA TCDS 2A13 Rev 63 (independent second revision, identical PA-28-140 values)",
+        "Piper PA-28-140 POH/AFM Report VB-546 (issued 1973, rev 1975), Section 5 Weight & Balance"
+      ],
+      "notes": "CG envelope forward-limit taper + aft limit + rear-seat & baggage arms corrected to TCDS 2A13 Item VIII / POH VB-546 Section 5. Rear-seat arm 118.1->117.0 and baggage arm 142.8->117.0 were PA-28-181 Archer values (the Archer section of the SAME TCDS lists rear +118.1 / baggage +142.8); the short-body PA-28-140 uses rear +117.0, baggage +117.0 (Area 1) with an aft Baggage Area 2 at +133.3 (POH p.5-9). Forward limit was a near-flat 82.0-83.0 (up to 5.4 in MORE permissive than certified at 2150 lb) -> certified taper 84.0@<=1650 / 85.9@1975 / 88.4@2150. Aft limit 93.0 (2.9 in over-restrictive) -> certified 95.9. front_seats_arm 85.5, fuel_arm 95.0, max_gross_weight 2150, and fuel density 6.0 (80/87 avgas) confirmed CORRECT against TCDS. NOT changed this slice (fingerprint/drift-coupled scalars, deferred to a Track-B slice that owns data_version + iOS regen): usable_fuel_gal (module 36 = POH 'standard' 36-gal tank CAPACITY; POH VB-546 gives 34 gal usable standard / 48 gal usable with the 50-gal max tanks) and nominal empty_weight/empty_weight_arm (serial-specific; TCDS Empty Weight C.G. Range: None; POH standard sample empty ~1230 lb). Full findings: docs/fd-419-pa28_140-wb-findings-2026-07-26.md."
+    },
+    "cg_envelope": [
+      {
+        "weight_lbs": 1650,
+        "forward_cg": 84.0,
+        "aft_cg": 95.9
+      },
+      {
+        "weight_lbs": 1975,
+        "forward_cg": 85.9,
+        "aft_cg": 95.9
+      },
+      {
+        "weight_lbs": 2150,
+        "forward_cg": 88.4,
+        "aft_cg": 95.9
+      }
+    ]
+  },
+  "app_status": {
+    "module_id": "pa28_140",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
+  },
+  "source_files": {
+    "spec": "scripts/poh/specs/pa28_140.json",
+    "extracted": "scripts/poh/extracted/pa28_140.json",
+    "pdf": "Piper/Piper-PA-28-140-Cherokee-140-POH.pdf",
+    "draft": null
   }
- },
- "slug": "piper-pa-28-140-cherokee",
- "v_speeds": {
-  "best_glide": 72,
-  "va": 112,
-  "vfe": 100,
-  "vne": 149,
-  "vno": 122,
-  "vs0": 48,
-  "vs1": 56,
-  "vx": 64,
-  "vy": 74
- }
 }

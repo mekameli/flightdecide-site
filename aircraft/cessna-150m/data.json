@@ -1,2161 +1,1683 @@
 {
- "data_version": 2,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "C150",
- "limits": {
-  "empty_weight_lbs": 1060,
-  "max_gross_weight_lbs": 1600,
-  "service_ceiling_ft": 14000,
-  "usable_fuel_gal": 22.5,
-  "useful_load_lbs": 540
- },
- "manufacturer": "Cessna",
- "name": "Cessna 150M",
- "performance": {
-  "climb": {
-   "cells": {
-    "1600": {
-     "0": {
-      "-20": {
-       "basis": "poh",
-       "v": 770
+  "type": "C150",
+  "name": "Cessna 150M",
+  "marketing_name": "Cessna 150M",
+  "manufacturer": "Cessna",
+  "icao_type": "C150",
+  "performance": {
+    "takeoff_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 655
       },
-      "0": {
-       "basis": "poh",
-       "v": 710
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 710
       },
-      "20": {
-       "basis": "poh",
-       "v": 655
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 765
       },
-      "40": {
-       "basis": "poh",
-       "v": 595
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 820
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 880
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 720
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 775
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 835
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 900
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 970
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 790
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 855
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 920
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 990
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1065
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 870
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 935
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1010
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1090
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1170
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 955
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1030
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1115
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1200
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1290
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1050
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1230
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1325
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1430
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1160
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1255
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1360
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1465
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1580
       }
-     },
-     "1000": {
-      "-20": {
-       "basis": "interp",
-       "v": 722
+    ],
+    "takeoff_ground_roll_provenance": {
+      "title": "Takeoff Distance",
+      "conditions": "Flaps up, full throttle prior to brake release, paved level dry runway, zero wind",
+      "note": "Figure 5-4, printed page 5-11. The handbook deletes the 7000 ft / 40 C and 8000 ft / 30 C and 40 C cells because climb performance after lift-off there is less than 150 fpm; those rows are absent rather than zero.",
+      "sheets": [
+        {
+          "page": 37,
+          "printed_page": null,
+          "weight_lbs": 1600,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 150M (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook with no usable PDF text layer on the upright half of each sheet, so every table is read by macOS Vision OCR (scripts/poh/ocr.py). The scan holds TWO facing book pages on one PDF page, so each sheet carries a clip naming its own half; without it the takeoff and stall figures are read as one nine-column table. Takeoff and landing distance are printed sideways and are read rotated 90 degrees. Every sheet sets strip_pt 1000 / overlap_pt 0, which collapses the overlapping-strip series to a single full-frame read: on this scan the strips add duplicate tokens rather than recover missing ones, and the duplicates misread 1815 as 18 on the takeoff sheet and pushed the 0-degree-bank column off the stall sheet. Every sheet is at 1600 lb, the only weight this handbook tabulates."
       },
-      "0": {
-       "basis": "interp",
-       "v": 662
+      "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+      "grid": {
+        "weights_lbs": [
+          1600
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "interp",
-       "v": 608
-      },
-      "40": {
-       "basis": "interp",
-       "v": 548
+      "poh_cells_published": 42,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 8000,
+          "poh_cells_lost": 3
+        },
+        {
+          "axis": "pressure_altitude",
+          "value": 7000,
+          "poh_cells_lost": 4
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c150.json",
+        "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "3048d140958014f974de25495d5bb5df8304263d6942e5148481f1cbf8616c02",
+        "basis": "poh_verbatim"
       }
-     },
-     "10000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 295
-      },
-      "0": {
-       "basis": "extrap",
-       "v": 240
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 185
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 120
-      }
-     },
-     "2000": {
-      "-20": {
-       "basis": "poh",
-       "v": 675
-      },
-      "0": {
-       "basis": "poh",
-       "v": 615
-      },
-      "20": {
-       "basis": "poh",
-       "v": 560
-      },
-      "40": {
-       "basis": "poh",
-       "v": 500
-      }
-     },
-     "3000": {
-      "-20": {
-       "basis": "interp",
-       "v": 628
-      },
-      "0": {
-       "basis": "interp",
-       "v": 568
-      },
-      "20": {
-       "basis": "interp",
-       "v": 512
-      },
-      "40": {
-       "basis": "interp",
-       "v": 452
-      }
-     },
-     "4000": {
-      "-20": {
-       "basis": "poh",
-       "v": 580
-      },
-      "0": {
-       "basis": "poh",
-       "v": 520
-      },
-      "20": {
-       "basis": "poh",
-       "v": 465
-      },
-      "40": {
-       "basis": "poh",
-       "v": 405
-      }
-     },
-     "5000": {
-      "-20": {
-       "basis": "interp",
-       "v": 532
-      },
-      "0": {
-       "basis": "interp",
-       "v": 475
-      },
-      "20": {
-       "basis": "interp",
-       "v": 420
-      },
-      "40": {
-       "basis": "interp",
-       "v": 358
-      }
-     },
-     "6000": {
-      "-20": {
-       "basis": "poh",
-       "v": 485
-      },
-      "0": {
-       "basis": "poh",
-       "v": 430
-      },
-      "20": {
-       "basis": "poh",
-       "v": 375
-      },
-      "40": {
-       "basis": "poh",
-       "v": 310
-      }
-     },
-     "7000": {
-      "-20": {
-       "basis": "interp",
-       "v": 438
-      },
-      "0": {
-       "basis": "interp",
-       "v": 382
-      },
-      "20": {
-       "basis": "interp",
-       "v": 328
-      },
-      "40": {
-       "basis": "interp",
-       "v": 262
-      }
-     },
-     "8000": {
-      "-20": {
-       "basis": "poh",
-       "v": 390
-      },
-      "0": {
-       "basis": "poh",
-       "v": 335
-      },
-      "20": {
-       "basis": "poh",
-       "v": 280
-      },
-      "40": {
-       "basis": "poh",
-       "v": 215
-      }
-     },
-     "9000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 342
-      },
-      "0": {
-       "basis": "extrap",
-       "v": 288
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 232
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 168
-      }
-     }
-    }
-   },
-   "cells_are": "rate_of_climb",
-   "cells_trimmed_for_rectangular_grid": [
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 2,
-     "value": 12000
     },
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 3,
-     "value": 10000
+    "takeoff_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1245
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1335
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1435
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1540
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1650
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1365
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1465
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1575
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1690
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1815
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1500
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1615
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1735
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1865
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 2005
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1650
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1780
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1915
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 2065
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 2225
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1820
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1965
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 2125
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 2290
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 2475
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 2015
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 2185
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 2360
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 2555
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 2770
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 2245
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 2435
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 2640
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 2870
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 3120
+      }
+    ],
+    "takeoff_over_50ft_provenance": {
+      "title": "Takeoff Distance",
+      "conditions": "Flaps up, full throttle prior to brake release, paved level dry runway, zero wind",
+      "note": "Figure 5-4, printed page 5-11. The handbook deletes the 7000 ft / 40 C and 8000 ft / 30 C and 40 C cells because climb performance after lift-off there is less than 150 fpm; those rows are absent rather than zero.",
+      "sheets": [
+        {
+          "page": 37,
+          "printed_page": null,
+          "weight_lbs": 1600,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 150M (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook with no usable PDF text layer on the upright half of each sheet, so every table is read by macOS Vision OCR (scripts/poh/ocr.py). The scan holds TWO facing book pages on one PDF page, so each sheet carries a clip naming its own half; without it the takeoff and stall figures are read as one nine-column table. Takeoff and landing distance are printed sideways and are read rotated 90 degrees. Every sheet sets strip_pt 1000 / overlap_pt 0, which collapses the overlapping-strip series to a single full-frame read: on this scan the strips add duplicate tokens rather than recover missing ones, and the duplicates misread 1815 as 18 on the takeoff sheet and pushed the 0-degree-bank column off the stall sheet. Every sheet is at 1600 lb, the only weight this handbook tabulates."
+      },
+      "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+      "grid": {
+        "weights_lbs": [
+          1600
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "poh_cells_published": 42,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 8000,
+          "poh_cells_lost": 3
+        },
+        {
+          "axis": "pressure_altitude",
+          "value": 7000,
+          "poh_cells_lost": 4
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c150.json",
+        "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "3ff1329c6d69de637704d755ee814c42424c090bbf4028b59b5048affb83377e",
+        "basis": "poh_verbatim"
+      }
+    },
+    "landing_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 425
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 440
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 455
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 470
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 485
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 440
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 455
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 470
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 485
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 505
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 455
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 470
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 490
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 505
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 520
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 470
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 490
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 505
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 525
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 540
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 490
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 505
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 525
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 545
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 560
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 510
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 525
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 545
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 565
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 585
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 530
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 545
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 565
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 585
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 605
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 550
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 570
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 590
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 610
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 630
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 570
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 590
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 610
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 630
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 655
+      }
+    ],
+    "landing_ground_roll_provenance": {
+      "title": "Landing Distance",
+      "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
+      "note": "Figure 5-10, printed page 5-19. Approach speed at 50 ft is 52 KIAS.",
+      "sheets": [
+        {
+          "page": 41,
+          "printed_page": null,
+          "weight_lbs": 1600,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 150M (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook with no usable PDF text layer on the upright half of each sheet, so every table is read by macOS Vision OCR (scripts/poh/ocr.py). The scan holds TWO facing book pages on one PDF page, so each sheet carries a clip naming its own half; without it the takeoff and stall figures are read as one nine-column table. Takeoff and landing distance are printed sideways and are read rotated 90 degrees. Every sheet sets strip_pt 1000 / overlap_pt 0, which collapses the overlapping-strip series to a single full-frame read: on this scan the strips add duplicate tokens rather than recover missing ones, and the duplicates misread 1815 as 18 on the takeoff sheet and pushed the 0-degree-bank column off the stall sheet. Every sheet is at 1600 lb, the only weight this handbook tabulates."
+      },
+      "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+      "grid": {
+        "weights_lbs": [
+          1600
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "poh_cells_published": 45,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c150.json",
+        "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "ae2056b372f316f4b4f814b164660516829464b1a6a9327299a93fbbb0ffcd3a",
+        "basis": "poh_verbatim"
+      }
+    },
+    "landing_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1045
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1065
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1090
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1110
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1135
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1065
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1090
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1110
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1135
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1165
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1090
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1115
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1165
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1185
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1115
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1165
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1215
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1140
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1165
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1225
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1245
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1170
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1225
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1255
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1285
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1200
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1225
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1255
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1285
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1315
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1230
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1260
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1290
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1320
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1350
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "distance_ft": 1260
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 1600,
+        "distance_ft": 1290
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "distance_ft": 1320
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 1600,
+        "distance_ft": 1350
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "distance_ft": 1385
+      }
+    ],
+    "landing_over_50ft_provenance": {
+      "title": "Landing Distance",
+      "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
+      "note": "Figure 5-10, printed page 5-19. Approach speed at 50 ft is 52 KIAS.",
+      "sheets": [
+        {
+          "page": 41,
+          "printed_page": null,
+          "weight_lbs": 1600,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 150M (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook with no usable PDF text layer on the upright half of each sheet, so every table is read by macOS Vision OCR (scripts/poh/ocr.py). The scan holds TWO facing book pages on one PDF page, so each sheet carries a clip naming its own half; without it the takeoff and stall figures are read as one nine-column table. Takeoff and landing distance are printed sideways and are read rotated 90 degrees. Every sheet sets strip_pt 1000 / overlap_pt 0, which collapses the overlapping-strip series to a single full-frame read: on this scan the strips add duplicate tokens rather than recover missing ones, and the duplicates misread 1815 as 18 on the takeoff sheet and pushed the 0-degree-bank column off the stall sheet. Every sheet is at 1600 lb, the only weight this handbook tabulates."
+      },
+      "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+      "grid": {
+        "weights_lbs": [
+          1600
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
+      },
+      "poh_cells_published": 45,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c150.json",
+        "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "c39941ae693007643bfa0184fad640bfcf9520a1f62dc3d2aa1be566ffcba49d",
+        "basis": "poh_verbatim"
+      }
+    },
+    "rate_of_climb": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -20,
+        "weight_lbs": 1600,
+        "fpm": 770
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "fpm": 710
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "fpm": 655
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "fpm": 595
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -20,
+        "weight_lbs": 1600,
+        "fpm": 675
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "fpm": 615
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "fpm": 560
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "fpm": 500
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -20,
+        "weight_lbs": 1600,
+        "fpm": 580
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "fpm": 520
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "fpm": 465
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "fpm": 405
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -20,
+        "weight_lbs": 1600,
+        "fpm": 485
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "fpm": 430
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "fpm": 375
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "fpm": 310
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -20,
+        "weight_lbs": 1600,
+        "fpm": 390
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 1600,
+        "fpm": 335
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 1600,
+        "fpm": 280
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 1600,
+        "fpm": 215
+      }
+    ],
+    "rate_of_climb_provenance": {
+      "title": "Rate of Climb",
+      "conditions": "Flaps up, full throttle",
+      "note": "Figure 5-5, printed page 5-12. The handbook deletes 10,000 ft / 40 C and 12,000 ft / 20 C and 40 C; those are absent rather than zero.",
+      "sheets": [
+        {
+          "page": 38,
+          "printed_page": null,
+          "weight_lbs": 1600,
+          "altitudes": [
+            0,
+            2000,
+            4000,
+            6000,
+            8000,
+            10000,
+            12000
+          ],
+          "temps": [
+            -20,
+            0,
+            20,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 150M (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook with no usable PDF text layer on the upright half of each sheet, so every table is read by macOS Vision OCR (scripts/poh/ocr.py). The scan holds TWO facing book pages on one PDF page, so each sheet carries a clip naming its own half; without it the takeoff and stall figures are read as one nine-column table. Takeoff and landing distance are printed sideways and are read rotated 90 degrees. Every sheet sets strip_pt 1000 / overlap_pt 0, which collapses the overlapping-strip series to a single full-frame read: on this scan the strips add duplicate tokens rather than recover missing ones, and the duplicates misread 1815 as 18 on the takeoff sheet and pushed the 0-degree-bank column off the stall sheet. Every sheet is at 1600 lb, the only weight this handbook tabulates."
+      },
+      "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+      "grid": {
+        "weights_lbs": [
+          1600
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000,
+          8000
+        ],
+        "oat_c": [
+          -20,
+          0,
+          20,
+          40
+        ]
+      },
+      "poh_cells_published": 25,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 12000,
+          "poh_cells_lost": 2
+        },
+        {
+          "axis": "pressure_altitude",
+          "value": 10000,
+          "poh_cells_lost": 3
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c150.json",
+        "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "b7e6f7dd61e77f792c1abdd4131211c95a9cb4597f7fb20306228c8dfe16e3b1",
+        "basis": "poh_verbatim"
+      }
+    },
+    "stall_speeds": [
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "up",
+        "bank_angle_deg": 0,
+        "kias": 47,
+        "kcas": 49
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "up",
+        "bank_angle_deg": 30,
+        "kias": 51,
+        "kcas": 53
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "up",
+        "bank_angle_deg": 45,
+        "kias": 56,
+        "kcas": 58
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "up",
+        "bank_angle_deg": 60,
+        "kias": 66,
+        "kcas": 69
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "10",
+        "bank_angle_deg": 0,
+        "kias": 45,
+        "kcas": 46
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "10",
+        "bank_angle_deg": 30,
+        "kias": 48,
+        "kcas": 49
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "10",
+        "bank_angle_deg": 45,
+        "kias": 54,
+        "kcas": 55
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "10",
+        "bank_angle_deg": 60,
+        "kias": 64,
+        "kcas": 65
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "40",
+        "bank_angle_deg": 0,
+        "kias": 42,
+        "kcas": 42
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "40",
+        "bank_angle_deg": 30,
+        "kias": 45,
+        "kcas": 45
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "40",
+        "bank_angle_deg": 45,
+        "kias": 50,
+        "kcas": 50
+      },
+      {
+        "weight_lbs": 1600,
+        "cg": null,
+        "flap_setting": "40",
+        "bank_angle_deg": 60,
+        "kias": 59,
+        "kcas": 59
+      }
+    ],
+    "stall_speeds_provenance": {
+      "title": "Stall Speeds",
+      "conditions": "Power off, most forward center of gravity, 1600 lb",
+      "note": "Figure 5-3, printed page 5-10, prints two blocks: most REARWARD and most FORWARD C.G. Only the most-forward block is carried, and the clip is set to that block alone. It is the conservative one (1 to 2 kt higher at every flap and bank setting except 40 deg flap, where the two agree), and it is the only one that can be carried unambiguously: the shared extractor reads its C.G. block labels from the PDF text layer, which on this scanned sheet is unusable, so a two-block extraction returns both blocks with cg null and no way to tell them apart. The cg field is therefore null on every row and the C.G. condition is stated here instead. KIAS values are approximate, per the handbook's own note.",
+      "sheets": [
+        {
+          "page": 37,
+          "printed_page": null,
+          "weight_lbs": 1600
+        }
+      ],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 150M (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook with no usable PDF text layer on the upright half of each sheet, so every table is read by macOS Vision OCR (scripts/poh/ocr.py). The scan holds TWO facing book pages on one PDF page, so each sheet carries a clip naming its own half; without it the takeoff and stall figures are read as one nine-column table. Takeoff and landing distance are printed sideways and are read rotated 90 degrees. Every sheet sets strip_pt 1000 / overlap_pt 0, which collapses the overlapping-strip series to a single full-frame read: on this scan the strips add duplicate tokens rather than recover missing ones, and the duplicates misread 1815 as 18 on the takeoff sheet and pushed the 0-degree-bank column off the stall sheet. Every sheet is at 1600 lb, the only weight this handbook tabulates."
+      },
+      "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+      "row_count": 12,
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c150.json",
+        "pdf_sha256": "1950b168ad8b7a853c4bab0cbcd4b48b42fbf8f70bf04fb7253dfad49597dfb5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "a3df34db1f6860eb4cf6b0dc5595ac8ab05f27851671d7523c93387d28c8aeaa",
+        "basis": "poh_verbatim"
+      }
     }
-   ],
-   "conditions": "Flaps up, full throttle",
-   "counts": {
-    "extrap": 8,
-    "interp": 16,
-    "poh": 20
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": null,
-   "source": "Pilot's Operating Handbook, Cessna Model 150M (1976) \u00b7 Rate of Climb",
-   "weights_lbs": [
-    1600
-   ]
   },
-  "cruise": {
-   "axes": [
-    "pressure_altitude",
-    "rpm"
-   ],
-   "row_count": 90,
-   "rows": [
-    {
-     "gph": 5.9,
-     "isa_offset_c": 0,
-     "oat_c": 11.0,
-     "pct_power": 78,
-     "pressure_altitude": 2000,
-     "rpm": 2650,
-     "tas_kts": 103
-    },
-    {
-     "gph": 5.4,
-     "isa_offset_c": 20,
-     "oat_c": 31.0,
-     "pct_power": 72,
-     "pressure_altitude": 2000,
-     "rpm": 2650,
-     "tas_kts": 102
-    },
-    {
-     "gph": 5.5,
-     "isa_offset_c": 0,
-     "oat_c": 11.0,
-     "pct_power": 73,
-     "pressure_altitude": 2000,
-     "rpm": 2600,
-     "tas_kts": 101
-    },
-    {
-     "gph": 6.0,
-     "isa_offset_c": -20,
-     "oat_c": -9.0,
-     "pct_power": 80,
-     "pressure_altitude": 2000,
-     "rpm": 2600,
-     "tas_kts": 102
-    },
-    {
-     "gph": 5.1,
-     "isa_offset_c": 20,
-     "oat_c": 31.0,
-     "pct_power": 68,
-     "pressure_altitude": 2000,
-     "rpm": 2600,
-     "tas_kts": 100
-    },
-    {
-     "gph": 4.9,
-     "isa_offset_c": 0,
-     "oat_c": 11.0,
-     "pct_power": 65,
-     "pressure_altitude": 2000,
-     "rpm": 2500,
-     "tas_kts": 96
-    },
-    {
-     "gph": 5.3,
-     "isa_offset_c": -20,
-     "oat_c": -9.0,
-     "pct_power": 70,
-     "pressure_altitude": 2000,
-     "rpm": 2500,
-     "tas_kts": 97
-    },
-    {
-     "gph": 4.6,
-     "isa_offset_c": 20,
-     "oat_c": 31.0,
-     "pct_power": 60,
-     "pressure_altitude": 2000,
-     "rpm": 2500,
-     "tas_kts": 95
-    },
-    {
-     "gph": 4.3,
-     "isa_offset_c": 0,
-     "oat_c": 11.0,
-     "pct_power": 57,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 91
-    },
-    {
-     "gph": 4.7,
-     "isa_offset_c": -20,
-     "oat_c": -9.0,
-     "pct_power": 62,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 92
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": 20,
-     "oat_c": 31.0,
-     "pct_power": 53,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 91
-    },
-    {
-     "gph": 3.9,
-     "isa_offset_c": 0,
-     "oat_c": 11.0,
-     "pct_power": 50,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 87
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": -20,
-     "oat_c": -9.0,
-     "pct_power": 54,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 87
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": 20,
-     "oat_c": 31.0,
-     "pct_power": 47,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 86
-    },
-    {
-     "gph": 3.5,
-     "isa_offset_c": 0,
-     "oat_c": 11.0,
-     "pct_power": 44,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 82
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": -20,
-     "oat_c": -9.0,
-     "pct_power": 47,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 83
-    },
-    {
-     "gph": 3.3,
-     "isa_offset_c": 20,
-     "oat_c": 31.0,
-     "pct_power": 42,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 81
-    },
-    {
-     "gph": 5.8,
-     "isa_offset_c": 0,
-     "oat_c": 7.0,
-     "pct_power": 78,
-     "pressure_altitude": 4000,
-     "rpm": 2700,
-     "tas_kts": 105
-    },
-    {
-     "gph": 5.4,
-     "isa_offset_c": 20,
-     "oat_c": 27.0,
-     "pct_power": 72,
-     "pressure_altitude": 4000,
-     "rpm": 2700,
-     "tas_kts": 104
-    },
-    {
-     "gph": 5.2,
-     "isa_offset_c": 0,
-     "oat_c": 7.0,
-     "pct_power": 69,
-     "pressure_altitude": 4000,
-     "rpm": 2600,
-     "tas_kts": 100
-    },
-    {
-     "gph": 5.6,
-     "isa_offset_c": -20,
-     "oat_c": -13.0,
-     "pct_power": 75,
-     "pressure_altitude": 4000,
-     "rpm": 2600,
-     "tas_kts": 101
-    },
-    {
-     "gph": 4.8,
-     "isa_offset_c": 20,
-     "oat_c": 27.0,
-     "pct_power": 64,
-     "pressure_altitude": 4000,
-     "rpm": 2600,
-     "tas_kts": 99
-    },
-    {
-     "gph": 4.6,
-     "isa_offset_c": 0,
-     "oat_c": 7.0,
-     "pct_power": 61,
-     "pressure_altitude": 4000,
-     "rpm": 2500,
-     "tas_kts": 95
-    },
-    {
-     "gph": 5.0,
-     "isa_offset_c": -20,
-     "oat_c": -13.0,
-     "pct_power": 66,
-     "pressure_altitude": 4000,
-     "rpm": 2500,
-     "tas_kts": 96
-    },
-    {
-     "gph": 4.3,
-     "isa_offset_c": 20,
-     "oat_c": 27.0,
-     "pct_power": 57,
-     "pressure_altitude": 4000,
-     "rpm": 2500,
-     "tas_kts": 95
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": 0,
-     "oat_c": 7.0,
-     "pct_power": 54,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 91
-    },
-    {
-     "gph": 4.4,
-     "isa_offset_c": -20,
-     "oat_c": -13.0,
-     "pct_power": 58,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 91
-    },
-    {
-     "gph": 3.9,
-     "isa_offset_c": 20,
-     "oat_c": 27.0,
-     "pct_power": 50,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 90
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": 0,
-     "oat_c": 7.0,
-     "pct_power": 48,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 86
-    },
-    {
-     "gph": 3.9,
-     "isa_offset_c": -20,
-     "oat_c": -13.0,
-     "pct_power": 51,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 87
-    },
-    {
-     "gph": 3.5,
-     "isa_offset_c": 20,
-     "oat_c": 27.0,
-     "pct_power": 45,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 85
-    },
-    {
-     "gph": 3.3,
-     "isa_offset_c": 0,
-     "oat_c": 7.0,
-     "pct_power": 42,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 81
-    },
-    {
-     "gph": 3.5,
-     "isa_offset_c": -20,
-     "oat_c": -13.0,
-     "pct_power": 45,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 82
-    },
-    {
-     "gph": 3.2,
-     "isa_offset_c": 20,
-     "oat_c": 27.0,
-     "pct_power": 40,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 80
-    },
-    {
-     "gph": 5.8,
-     "isa_offset_c": 0,
-     "oat_c": 3.0,
-     "pct_power": 77,
-     "pressure_altitude": 6000,
-     "rpm": 2750,
-     "tas_kts": 107
-    },
-    {
-     "gph": 5.3,
-     "isa_offset_c": 20,
-     "oat_c": 23.0,
-     "pct_power": 71,
-     "pressure_altitude": 6000,
-     "rpm": 2750,
-     "tas_kts": 105
-    },
-    {
-     "gph": 5.4,
-     "isa_offset_c": 0,
-     "oat_c": 3.0,
-     "pct_power": 73,
-     "pressure_altitude": 6000,
-     "rpm": 2700,
-     "tas_kts": 104
-    },
-    {
-     "gph": 5.9,
-     "isa_offset_c": -20,
-     "oat_c": -17.0,
-     "pct_power": 79,
-     "pressure_altitude": 6000,
-     "rpm": 2700,
-     "tas_kts": 105
-    },
-    {
-     "gph": 5.1,
-     "isa_offset_c": 20,
-     "oat_c": 23.0,
-     "pct_power": 67,
-     "pressure_altitude": 6000,
-     "rpm": 2700,
-     "tas_kts": 103
-    },
-    {
-     "gph": 4.8,
-     "isa_offset_c": 0,
-     "oat_c": 3.0,
-     "pct_power": 64,
-     "pressure_altitude": 6000,
-     "rpm": 2600,
-     "tas_kts": 99
-    },
-    {
-     "gph": 5.2,
-     "isa_offset_c": -20,
-     "oat_c": -17.0,
-     "pct_power": 70,
-     "pressure_altitude": 6000,
-     "rpm": 2600,
-     "tas_kts": 100
-    },
-    {
-     "gph": 4.5,
-     "isa_offset_c": 20,
-     "oat_c": 23.0,
-     "pct_power": 60,
-     "pressure_altitude": 6000,
-     "rpm": 2600,
-     "tas_kts": 98
-    },
-    {
-     "gph": 4.3,
-     "isa_offset_c": 0,
-     "oat_c": 3.0,
-     "pct_power": 57,
-     "pressure_altitude": 6000,
-     "rpm": 2500,
-     "tas_kts": 95
-    },
-    {
-     "gph": 4.7,
-     "isa_offset_c": -20,
-     "oat_c": -17.0,
-     "pct_power": 62,
-     "pressure_altitude": 6000,
-     "rpm": 2500,
-     "tas_kts": 95
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": 20,
-     "oat_c": 23.0,
-     "pct_power": 53,
-     "pressure_altitude": 6000,
-     "rpm": 2500,
-     "tas_kts": 94
-    },
-    {
-     "gph": 3.9,
-     "isa_offset_c": 0,
-     "oat_c": 3.0,
-     "pct_power": 51,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 90
-    },
-    {
-     "gph": 4.2,
-     "isa_offset_c": -20,
-     "oat_c": -17.0,
-     "pct_power": 54,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 91
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": 20,
-     "oat_c": 23.0,
-     "pct_power": 48,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 89
-    },
-    {
-     "gph": 3.5,
-     "isa_offset_c": 0,
-     "oat_c": 3.0,
-     "pct_power": 45,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 85
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": -20,
-     "oat_c": -17.0,
-     "pct_power": 48,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 86
-    },
-    {
-     "gph": 3.4,
-     "isa_offset_c": 20,
-     "oat_c": 23.0,
-     "pct_power": 42,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 84
-    },
-    {
-     "gph": 5.1,
-     "isa_offset_c": 0,
-     "oat_c": -1.0,
-     "pct_power": 68,
-     "pressure_altitude": 8000,
-     "rpm": 2700,
-     "tas_kts": 103
-    },
-    {
-     "gph": 5.5,
-     "isa_offset_c": -20,
-     "oat_c": -21.0,
-     "pct_power": 74,
-     "pressure_altitude": 8000,
-     "rpm": 2700,
-     "tas_kts": 104
-    },
-    {
-     "gph": 4.8,
-     "isa_offset_c": 20,
-     "oat_c": 19.0,
-     "pct_power": 63,
-     "pressure_altitude": 8000,
-     "rpm": 2700,
-     "tas_kts": 102
-    },
-    {
-     "gph": 4.6,
-     "isa_offset_c": 0,
-     "oat_c": -1.0,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "rpm": 2600,
-     "tas_kts": 99
-    },
-    {
-     "gph": 4.9,
-     "isa_offset_c": -20,
-     "oat_c": -21.0,
-     "pct_power": 65,
-     "pressure_altitude": 8000,
-     "rpm": 2600,
-     "tas_kts": 99
-    },
-    {
-     "gph": 4.3,
-     "isa_offset_c": 20,
-     "oat_c": 19.0,
-     "pct_power": 57,
-     "pressure_altitude": 8000,
-     "rpm": 2600,
-     "tas_kts": 98
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": 0,
-     "oat_c": -1.0,
-     "pct_power": 54,
-     "pressure_altitude": 8000,
-     "rpm": 2500,
-     "tas_kts": 94
-    },
-    {
-     "gph": 4.4,
-     "isa_offset_c": -20,
-     "oat_c": -21.0,
-     "pct_power": 58,
-     "pressure_altitude": 8000,
-     "rpm": 2500,
-     "tas_kts": 95
-    },
-    {
-     "gph": 3.9,
-     "isa_offset_c": 20,
-     "oat_c": 19.0,
-     "pct_power": 51,
-     "pressure_altitude": 8000,
-     "rpm": 2500,
-     "tas_kts": 93
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": 0,
-     "oat_c": -1.0,
-     "pct_power": 48,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 89
-    },
-    {
-     "gph": 4.0,
-     "isa_offset_c": -20,
-     "oat_c": -21.0,
-     "pct_power": 52,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 90
-    },
-    {
-     "gph": 3.5,
-     "isa_offset_c": 20,
-     "oat_c": 19.0,
-     "pct_power": 45,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 88
-    },
-    {
-     "gph": 3.4,
-     "isa_offset_c": 0,
-     "oat_c": -1.0,
-     "pct_power": 43,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 84
-    },
-    {
-     "gph": 3.6,
-     "isa_offset_c": -20,
-     "oat_c": -21.0,
-     "pct_power": 46,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 85
-    },
-    {
-     "gph": 3.2,
-     "isa_offset_c": 20,
-     "oat_c": 19.0,
-     "pct_power": 40,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 82
-    },
-    {
-     "gph": 4.8,
-     "isa_offset_c": 0,
-     "oat_c": -5.0,
-     "pct_power": 64,
-     "pressure_altitude": 10000,
-     "rpm": 2700,
-     "tas_kts": 102
-    },
-    {
-     "gph": 5.2,
-     "isa_offset_c": -20,
-     "oat_c": -25.0,
-     "pct_power": 69,
-     "pressure_altitude": 10000,
-     "rpm": 2700,
-     "tas_kts": 103
-    },
-    {
-     "gph": 4.5,
-     "isa_offset_c": 20,
-     "oat_c": 15.0,
-     "pct_power": 59,
-     "pressure_altitude": 10000,
-     "rpm": 2700,
-     "tas_kts": 102
-    },
-    {
-     "gph": 4.3,
-     "isa_offset_c": 0,
-     "oat_c": -5.0,
-     "pct_power": 57,
-     "pressure_altitude": 10000,
-     "rpm": 2600,
-     "tas_kts": 98
-    },
-    {
-     "gph": 4.6,
-     "isa_offset_c": -20,
-     "oat_c": -25.0,
-     "pct_power": 61,
-     "pressure_altitude": 10000,
-     "rpm": 2600,
-     "tas_kts": 99
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": 20,
-     "oat_c": 15.0,
-     "pct_power": 53,
-     "pressure_altitude": 10000,
-     "rpm": 2600,
-     "tas_kts": 97
-    },
-    {
-     "gph": 3.9,
-     "isa_offset_c": 0,
-     "oat_c": -5.0,
-     "pct_power": 51,
-     "pressure_altitude": 10000,
-     "rpm": 2500,
-     "tas_kts": 93
-    },
-    {
-     "gph": 4.2,
-     "isa_offset_c": -20,
-     "oat_c": -25.0,
-     "pct_power": 55,
-     "pressure_altitude": 10000,
-     "rpm": 2500,
-     "tas_kts": 94
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": 20,
-     "oat_c": 15.0,
-     "pct_power": 48,
-     "pressure_altitude": 10000,
-     "rpm": 2500,
-     "tas_kts": 92
-    },
-    {
-     "gph": 3.6,
-     "isa_offset_c": 0,
-     "oat_c": -5.0,
-     "pct_power": 45,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 88
-    },
-    {
-     "gph": 3.8,
-     "isa_offset_c": -20,
-     "oat_c": -25.0,
-     "pct_power": 49,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 89
-    },
-    {
-     "gph": 3.4,
-     "isa_offset_c": 20,
-     "oat_c": 15.0,
-     "pct_power": 43,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 87
-    },
-    {
-     "gph": 4.3,
-     "isa_offset_c": 0,
-     "oat_c": -9.0,
-     "pct_power": 57,
-     "pressure_altitude": 12000,
-     "rpm": 2650,
-     "tas_kts": 99
-    },
-    {
-     "gph": 4.6,
-     "isa_offset_c": -20,
-     "oat_c": -29.0,
-     "pct_power": 61,
-     "pressure_altitude": 12000,
-     "rpm": 2650,
-     "tas_kts": 100
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": 20,
-     "oat_c": 11.0,
-     "pct_power": 53,
-     "pressure_altitude": 12000,
-     "rpm": 2650,
-     "tas_kts": 98
-    },
-    {
-     "gph": 4.1,
-     "isa_offset_c": 0,
-     "oat_c": -9.0,
-     "pct_power": 54,
-     "pressure_altitude": 12000,
-     "rpm": 2600,
-     "tas_kts": 97
-    },
-    {
-     "gph": 4.4,
-     "isa_offset_c": -20,
-     "oat_c": -29.0,
-     "pct_power": 58,
-     "pressure_altitude": 12000,
-     "rpm": 2600,
-     "tas_kts": 98
-    },
-    {
-     "gph": 3.9,
-     "isa_offset_c": 20,
-     "oat_c": 11.0,
-     "pct_power": 50,
-     "pressure_altitude": 12000,
-     "rpm": 2600,
-     "tas_kts": 96
-    },
-    {
-     "gph": 3.7,
-     "isa_offset_c": 0,
-     "oat_c": -9.0,
-     "pct_power": 48,
-     "pressure_altitude": 12000,
-     "rpm": 2500,
-     "tas_kts": 92
-    },
-    {
-     "gph": 4.0,
-     "isa_offset_c": -20,
-     "oat_c": -29.0,
-     "pct_power": 52,
-     "pressure_altitude": 12000,
-     "rpm": 2500,
-     "tas_kts": 93
-    },
-    {
-     "gph": 3.5,
-     "isa_offset_c": 20,
-     "oat_c": 11.0,
-     "pct_power": 45,
-     "pressure_altitude": 12000,
-     "rpm": 2500,
-     "tas_kts": 91
-    },
-    {
-     "gph": 3.4,
-     "isa_offset_c": 0,
-     "oat_c": -9.0,
-     "pct_power": 43,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 87
-    },
-    {
-     "gph": 3.6,
-     "isa_offset_c": -20,
-     "oat_c": -29.0,
-     "pct_power": 46,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 89
-    },
-    {
-     "gph": 3.3,
-     "isa_offset_c": 20,
-     "oat_c": 11.0,
-     "pct_power": 41,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 84
-    }
-   ],
-   "source": "Figure 5-7"
+  "weight_balance": {
+    "stations": {
+      "front_seats_arm": 39.0,
+      "fuel_arm": 42.0
+    },
+    "provenance": {
+      "source_doc": "FAA TCDS 3A19 (Cessna 150 series), Model 150M, Section VII (2 PCLM Normal Category, 1600 lb)",
+      "revision": "Revision 50, 2017-07-21 (Model 150M W&B block unchanged across revisions; independently confirmed against a Rev 46 mirror)",
+      "page": "TCDS 3A19 'Data Pertinent to All Models' (Datum) + Section VII Model 150M (C.G. Range, No. of Seats, Fuel Capacity, Empty Weight C.G. Range: None); baggage arm from Cessna 150M POH P/N D1080-13 Section 6 Figure 6-3 Loading Arrangements p.6-7 (TCDS publishes no baggage arm)",
+      "datum": "Fuselage station 0.0 = front face of firewall",
+      "basis": "TCDS-verbatim (CG envelope, front-seat/fuel arms) + POH-sourced (baggage arm)",
+      "confidence": "high",
+      "verified_on": "2026-07-26",
+      "verified_by": "FD-419 S3 (claude-opus-4-8; research + adversarial-verify workflow)",
+      "sources": [
+        "FAA TCDS 3A19 Rev 50 (2017-07-21): https://data.ntsb.gov/Docket/Document/docBLOB?ID=18317640&FileExtension=pdf&FileName=Airplane+TCDS+3A19+Rev+50-Rel.pdf",
+        "FAA TCDS 3A19 (independent Rev 46 mirror, cessna150152.com — identical Model 150M W&B)",
+        "Cessna 150M POH P/N D1080-13 (1977), Section 6 Weight & Balance, Figure 6-3 Loading Arrangements p.6-7"
+      ],
+      "notes": "CG envelope corrected to TCDS 3A19 Section VII Model 150M: forward limit was a near-flat 31.0-32.0 (up to ~0.9 in more nose-heavy-permissive than certified at gross) -> certified taper 31.5@<=1280 / 32.9@1600 (moves AFT = more restrictive); aft limit 40.5 was 3.0 in TOO PERMISSIVE AFT -> certified constant 37.5 (moves FORWARD = more restrictive). Both changes are SAFE DIRECTION. Station arms de-contaminated to certified: front_seats_arm 37.0->39.0 (TCDS 'No. of Seats 2 at +39'), fuel_arm 37.5->42.0 (TCDS 'two 13 gal tanks in wings at +42.0'; standard 26 gal / 22.5 usable = module usable_fuel_gal), baggage_arm 80.0->64.0 (POH D1080-13 Fig 6-3 Area 1 main compartment; aft child-seat/Area 2 is +84, not modeled in a single station). rear_seats_arm null CORRECT (2-place aircraft). empty_weight_arm 36.0 UNCHANGED (TCDS Empty Weight C.G. Range: None -> no certified empty-CG arm; not invented per Hard Constraint; lies within corrected envelope [31.5, 37.5]). NOT changed this slice (drift-coupled, Track B): empty_weight 1060 lb (below POH standard 1111/1129 lb -> flag), usable_fuel_gal 22.5 (matches standard tanks). Full findings: docs/fd-419-s3-cessna-singles-wb-findings-2026-07-26.md."
+    },
+    "cg_envelope": [
+      {
+        "weight_lbs": 1100,
+        "forward_cg": 31.5,
+        "aft_cg": 37.5
+      },
+      {
+        "weight_lbs": 1280,
+        "forward_cg": 31.5,
+        "aft_cg": 37.5
+      },
+      {
+        "weight_lbs": 1600,
+        "forward_cg": 32.9,
+        "aft_cg": 37.5
+      }
+    ]
   },
-  "landing": {
-   "cells": {
-    "1600": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 425
-      },
-      "10": {
-       "basis": "poh",
-       "v": 440
-      },
-      "20": {
-       "basis": "poh",
-       "v": 455
-      },
-      "30": {
-       "basis": "poh",
-       "v": 470
-      },
-      "40": {
-       "basis": "poh",
-       "v": 485
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 440
-      },
-      "10": {
-       "basis": "poh",
-       "v": 455
-      },
-      "20": {
-       "basis": "poh",
-       "v": 470
-      },
-      "30": {
-       "basis": "poh",
-       "v": 485
-      },
-      "40": {
-       "basis": "poh",
-       "v": 505
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 612
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 632
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 652
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 672
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 708
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 455
-      },
-      "10": {
-       "basis": "poh",
-       "v": 470
-      },
-      "20": {
-       "basis": "poh",
-       "v": 490
-      },
-      "30": {
-       "basis": "poh",
-       "v": 505
-      },
-      "40": {
-       "basis": "poh",
-       "v": 520
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 470
-      },
-      "10": {
-       "basis": "poh",
-       "v": 490
-      },
-      "20": {
-       "basis": "poh",
-       "v": 505
-      },
-      "30": {
-       "basis": "poh",
-       "v": 525
-      },
-      "40": {
-       "basis": "poh",
-       "v": 540
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 490
-      },
-      "10": {
-       "basis": "poh",
-       "v": 505
-      },
-      "20": {
-       "basis": "poh",
-       "v": 525
-      },
-      "30": {
-       "basis": "poh",
-       "v": 545
-      },
-      "40": {
-       "basis": "poh",
-       "v": 560
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 510
-      },
-      "10": {
-       "basis": "poh",
-       "v": 525
-      },
-      "20": {
-       "basis": "poh",
-       "v": 545
-      },
-      "30": {
-       "basis": "poh",
-       "v": 565
-      },
-      "40": {
-       "basis": "poh",
-       "v": 585
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 530
-      },
-      "10": {
-       "basis": "poh",
-       "v": 545
-      },
-      "20": {
-       "basis": "poh",
-       "v": 565
-      },
-      "30": {
-       "basis": "poh",
-       "v": 585
-      },
-      "40": {
-       "basis": "poh",
-       "v": 605
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 550
-      },
-      "10": {
-       "basis": "poh",
-       "v": 570
-      },
-      "20": {
-       "basis": "poh",
-       "v": 590
-      },
-      "30": {
-       "basis": "poh",
-       "v": 610
-      },
-      "40": {
-       "basis": "poh",
-       "v": 630
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 570
-      },
-      "10": {
-       "basis": "poh",
-       "v": 590
-      },
-      "20": {
-       "basis": "poh",
-       "v": 610
-      },
-      "30": {
-       "basis": "poh",
-       "v": 630
-      },
-      "40": {
-       "basis": "poh",
-       "v": 655
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 591
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 611
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 631
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 651
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 681
-      }
-     }
-    }
-   },
-   "cells_are": "landing_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
-   "counts": {
-    "extrap": 10,
-    "interp": 0,
-    "poh": 45
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "1600": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1045
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1065
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1090
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1110
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1135
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1065
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1090
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1110
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1135
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1165
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1322
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1352
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1382
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1412
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1458
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1090
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1115
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1140
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1165
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1185
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1115
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1140
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1165
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1195
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1215
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1140
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1165
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1195
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1225
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1245
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1170
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1195
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1225
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1255
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1285
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1200
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1225
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1255
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1285
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1315
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1230
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1260
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1290
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1320
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1350
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 1260
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1290
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1320
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1350
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1385
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1291
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1321
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1351
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1381
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1421
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook, Cessna Model 150M (1976) \u00b7 Landing Distance",
-   "weights_lbs": [
-    1600
-   ]
+  "app_status": {
+    "module_id": "c150",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
   },
-  "stall": {
-   "conditions": "Power off, most forward center of gravity, 1600 lb",
-   "rows": [
-    {
-     "bank_angle_deg": 0,
-     "cg": null,
-     "flap_setting": "up",
-     "kcas": 49,
-     "kias": 47,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": null,
-     "flap_setting": "up",
-     "kcas": 53,
-     "kias": 51,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": null,
-     "flap_setting": "up",
-     "kcas": 58,
-     "kias": 56,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": null,
-     "flap_setting": "up",
-     "kcas": 69,
-     "kias": 66,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": null,
-     "flap_setting": "10",
-     "kcas": 46,
-     "kias": 45,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": null,
-     "flap_setting": "10",
-     "kcas": 49,
-     "kias": 48,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": null,
-     "flap_setting": "10",
-     "kcas": 55,
-     "kias": 54,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": null,
-     "flap_setting": "10",
-     "kcas": 65,
-     "kias": 64,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": null,
-     "flap_setting": "40",
-     "kcas": 42,
-     "kias": 42,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": null,
-     "flap_setting": "40",
-     "kcas": 45,
-     "kias": 45,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": null,
-     "flap_setting": "40",
-     "kcas": 50,
-     "kias": 50,
-     "weight_lbs": 1600
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": null,
-     "flap_setting": "40",
-     "kcas": 59,
-     "kias": 59,
-     "weight_lbs": 1600
-    }
-   ],
-   "source": "Pilot's Operating Handbook, Cessna Model 150M (1976) \u00b7 Stall Speeds"
-  },
-  "takeoff": {
-   "cells": {
-    "1600": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 655
-      },
-      "10": {
-       "basis": "poh",
-       "v": 710
-      },
-      "20": {
-       "basis": "poh",
-       "v": 765
-      },
-      "30": {
-       "basis": "poh",
-       "v": 820
-      },
-      "40": {
-       "basis": "poh",
-       "v": 880
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 720
-      },
-      "10": {
-       "basis": "poh",
-       "v": 775
-      },
-      "20": {
-       "basis": "poh",
-       "v": 835
-      },
-      "30": {
-       "basis": "poh",
-       "v": 900
-      },
-      "40": {
-       "basis": "poh",
-       "v": 970
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 790
-      },
-      "10": {
-       "basis": "poh",
-       "v": 855
-      },
-      "20": {
-       "basis": "poh",
-       "v": 920
-      },
-      "30": {
-       "basis": "poh",
-       "v": 990
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1065
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 870
-      },
-      "10": {
-       "basis": "poh",
-       "v": 935
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1010
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1090
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1170
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 955
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1030
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1115
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1200
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1290
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1050
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1140
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1230
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1325
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1430
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1160
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1255
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1360
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1465
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1580
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1282
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1382
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1504
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1620
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1746
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1416
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1521
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1663
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1791
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1929
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1564
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1674
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1838
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1980
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2131
-      }
-     }
-    }
-   },
-   "cells_are": "takeoff_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 3,
-     "value": 8000
-    },
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 4,
-     "value": 7000
-    }
-   ],
-   "conditions": "Flaps up, full throttle prior to brake release, paved level dry runway, zero wind",
-   "counts": {
-    "extrap": 15,
-    "interp": 0,
-    "poh": 35
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "1600": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1245
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1335
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1435
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1540
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1650
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1365
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1465
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1575
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1690
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1815
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1500
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1615
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1735
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1865
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2005
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1650
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1780
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1915
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2065
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2225
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1820
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1965
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2125
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2290
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2475
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 2015
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2185
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2360
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2555
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2770
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 2245
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2435
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2640
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2870
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3120
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2501
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2714
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2953
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3224
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3514
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2787
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3024
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3304
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3621
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3958
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 3105
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3370
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3696
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 4068
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 4458
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook, Cessna Model 150M (1976) \u00b7 Takeoff Distance",
-   "weights_lbs": [
-    1600
-   ]
+  "source_files": {
+    "spec": "scripts/poh/specs/c150.json",
+    "extracted": "scripts/poh/extracted/c150.json",
+    "pdf": "Cessna/Cessna-150M-1976-Owners-Manual.pdf",
+    "draft": null
   }
- },
- "slug": "cessna-150m",
- "v_speeds": {
-  "best_glide": 60,
-  "va": 97,
-  "vfe": 85,
-  "vne": 141,
-  "vno": 107,
-  "vs0": 42,
-  "vs1": 47,
-  "vx": 56,
-  "vy": 68
- }
 }

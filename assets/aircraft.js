@@ -4,7 +4,8 @@
  * absent (every weight panel is plain HTML, the first one visible). Anything
  * richer we add later - charts, a conditions picker, unit toggles - belongs
  * here and in aircraft.css, so it ships to all 40+ pages without regenerating
- * a single one. Each page also publishes its numbers at ./data.json.
+ * a single one. A page whose aircraft has handbook data publishes it at
+ * ./data.json (FD-715): the handbook-only record the page is rendered from.
  */
 (function () {
   "use strict";

@@ -1,28 +1,62 @@
 {
- "data_version": 1,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "PA24",
- "limits": {
-  "empty_weight_lbs": 1940,
-  "max_gross_weight_lbs": 3100,
-  "service_ceiling_ft": 20000,
-  "usable_fuel_gal": 60,
-  "useful_load_lbs": 1160
- },
- "manufacturer": "Piper",
- "name": "Piper PA-24 Comanche",
- "performance": {},
- "slug": "piper-pa-24-comanche",
- "v_speeds": {
-  "best_glide": 90,
-  "va": 125,
-  "vfe": 108,
-  "vne": 197,
-  "vno": 156,
-  "vs0": 56,
-  "vs1": 64,
-  "vx": 73,
-  "vy": 91
- }
+  "type": "PA-24",
+  "name": "Piper PA-24 Comanche",
+  "marketing_name": "Piper PA-24 Comanche",
+  "manufacturer": "Piper",
+  "icao_type": "PA24",
+  "weight_balance": {
+    "stations": {
+      "front_seats_arm": 85.0,
+      "rear_seats_arm": 120.5,
+      "baggage_arm": 142.0,
+      "fuel_arm": 90.0
+    },
+    "provenance": {
+      "source_doc": "FAA TCDS 1A15 (Piper PA-24 Comanche), Model PA-24-260 (Model IV), serial group B (S/N 24-4247, 24-4300 through 24-4782, 24-4784 through 24-4803), 3100 lb takeoff / 2945 lb landing",
+      "revision": "Revision 34, 2006-08-07",
+      "page": "TCDS pp. 6-8 (Model PA-24-260: C.G. Range serial group B, No. of Seats, Max Baggage, Fuel Capacity, Datum); corroborated by Piper AFM Report 1545 (PA-24-260) p. 3 (datum, CG-range table) and p. 4 (sample loading form station arms)",
+      "datum": "79 in forward of wing leading edge at Wing Station 65.5 (intersection of straight and tapered leading-edge sections)",
+      "basis": "TCDS-verbatim + AFM-corroborated",
+      "confidence": "high",
+      "verified_on": "2026-07-26",
+      "verified_by": "FD-419 S2 (claude-opus-4-8)",
+      "sources": [
+        "FAA TCDS 1A15 Rev 34 (2006-08-07), Aircraft Specification, Piper PA-24/PA-24-250/PA-24-260/PA-24-400",
+        "Piper AFM Report 1545, Model PA-24-260 (FAA approved 1969-04-11, rev 1971-09-24), p.3 CG-range table + p.4 sample loading form",
+        "Comanche 'B' PA-24-260 Owner's Handbook, Piper P/N 753-696 (rev 1972-12): gross/landing weight, fuel, baggage corroboration"
+      ],
+      "notes": "Module is the 3100 lb PA-24-260 'B' variant (TCDS serial group B). This module was on the CORRECT Comanche datum (79 in fwd of wing LE at WS 65.5), but its CG envelope and two station arms were contaminated. CG envelope corrected to TCDS group B: (+80.5) to (+93.0) at 2000 lb or less; (+82.5) to (+93.0) at 2600 lb; (+88.4) to (+93.0) at 3100 lb (straight-line variation; envelope stated gear-extended, gear-retract moment +1266 in-lb). Two safety-direction corrections: (a) forward limit was a near-flat 82.0 rising only to 84.0 at 3100 lb -> certified 88.4 at gross = up to 4.4 in MORE nose-heavy-permissive than the TC; (b) aft limit 97.0 -> certified 93.0 (module was 4.0 in too permissive AFT — a large unsafe over-aft allowance). Station arms: rear_seats_arm 118.0 -> 120.5 (the 118.0 was PA-28 Cherokee contamination; TCDS 1A15 'Number of Seats 4 (2 at +85, 2 at +120.5)'); fuel_arm 95.0 -> 90.0 (TCDS main tanks '56 gallons at (+90)'; the +95 was PA-28 contamination); front_seats_arm 85.5 -> 85.0 (TCDS +85); baggage_arm 142.5 -> 142.0 (TCDS '250 lb at (+142)'). empty_weight_arm 87.5 left unchanged (within the corrected envelope; TCDS Empty Weight C.G. Range: None — no primary sample empty-CG arm, not invented). DEFERRED (Track B): usable_fuel_gal 60 (TCDS certifies 56 gal standard mains at +90 + optional 30 gal aux at +97; the module models a single ~60-gal main config at +90); inverted climb cube (CLIMB_INVERSION_FD419) is a Track-B perf fix. Full findings: docs/fd-419-s2-piper-singles-wb-findings-2026-07-26.md."
+    },
+    "cg_envelope": [
+      {
+        "weight_lbs": 2000,
+        "forward_cg": 80.5,
+        "aft_cg": 93.0
+      },
+      {
+        "weight_lbs": 2600,
+        "forward_cg": 82.5,
+        "aft_cg": 93.0
+      },
+      {
+        "weight_lbs": 3100,
+        "forward_cg": 88.4,
+        "aft_cg": 93.0
+      }
+    ]
+  },
+  "app_status": {
+    "module_id": "pa24",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
+  },
+  "source_files": {
+    "spec": "scripts/poh/specs/pa24.json",
+    "extracted": "scripts/poh/extracted/pa24.json",
+    "pdf": "Piper/Piper-PA-24-260-Comanche-1965-Owners-Handbook.pdf",
+    "draft": null
+  }
 }

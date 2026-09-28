@@ -1,1668 +1,1902 @@
 {
- "data_version": 2,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": null,
- "limits": {
-  "empty_weight_lbs": 1639,
-  "max_gross_weight_lbs": 2450,
-  "service_ceiling_ft": 13500,
-  "usable_fuel_gal": 53,
-  "useful_load_lbs": 818
- },
- "manufacturer": "Cessna",
- "name": "Cessna 172R Skyhawk",
- "performance": {
-  "climb": {
-   "cells": {
-    "2450": {
-     "0": {
-      "-20": {
-       "basis": "poh",
-       "v": 830
+  "type": "c172r",
+  "name": "Cessna 172R Skyhawk",
+  "marketing_name": "Cessna 172R Skyhawk",
+  "manufacturer": "Cessna",
+  "icao_type": null,
+  "performance": {
+    "takeoff_ground_roll": [
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 925
       },
-      "0": {
-       "basis": "poh",
-       "v": 770
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1000
       },
-      "20": {
-       "basis": "poh",
-       "v": 705
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1075
       },
-      "40": {
-       "basis": "poh",
-       "v": 640
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1160
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1245
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1015
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1095
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1185
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1275
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1365
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1115
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1205
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1305
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1400
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1505
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1230
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1330
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1435
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1545
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1655
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1355
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1470
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1585
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1705
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1830
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1500
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1625
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1750
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1880
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 2020
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1660
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1795
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1935
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 2085
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 2240
       }
-     },
-     "1000": {
-      "-20": {
-       "basis": "interp",
-       "v": 775
+    ],
+    "takeoff_ground_roll_provenance": {
+      "figure": "Figure 5-5",
+      "title": "Short Field Takeoff Distance",
+      "conditions": "Flaps 10 deg, full throttle prior to brake release, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 126,
+          "printed_page": "5-14",
+          "weight_lbs": 2450,
+          "altitudes": [
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
       },
-      "0": {
-       "basis": "interp",
-       "v": 712
+      "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+      "grid": {
+        "weights_lbs": [
+          2450
+        ],
+        "pressure_altitudes_ft": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "interp",
-       "v": 650
-      },
-      "40": {
-       "basis": "interp",
-       "v": 588
+      "poh_cells_published": 39,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 8000,
+          "poh_cells_lost": 4
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c172r.json",
+        "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "9f47874159fd3ae3fb91636e82857ea0f056c9240c2e6e3841cb503ac6e611f5",
+        "basis": "poh_verbatim"
       }
-     },
-     "10000": {
-      "-20": {
-       "basis": "poh",
-       "v": 310
+    },
+    "takeoff_over_50ft": [
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1660
       },
-      "0": {
-       "basis": "poh",
-       "v": 255
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1790
       },
-      "20": {
-       "basis": "poh",
-       "v": 200
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1925
       },
-      "40": {
-       "basis": "poh",
-       "v": 145
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 2070
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 2220
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1830
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1970
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 2125
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 2290
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 2455
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 2020
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 2185
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 2360
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 2540
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 2730
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 2245
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 2430
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 2630
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 2830
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 3045
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 2500
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 2715
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 2945
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 3175
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 3430
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 2805
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 3060
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 3315
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 3590
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 3895
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 3170
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 3470
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 3770
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 4105
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 4485
       }
-     },
-     "2000": {
-      "-20": {
-       "basis": "poh",
-       "v": 720
+    ],
+    "takeoff_over_50ft_provenance": {
+      "figure": "Figure 5-5",
+      "title": "Short Field Takeoff Distance",
+      "conditions": "Flaps 10 deg, full throttle prior to brake release, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 126,
+          "printed_page": "5-14",
+          "weight_lbs": 2450,
+          "altitudes": [
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
       },
-      "0": {
-       "basis": "poh",
-       "v": 655
+      "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+      "grid": {
+        "weights_lbs": [
+          2450
+        ],
+        "pressure_altitudes_ft": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 595
-      },
-      "40": {
-       "basis": "poh",
-       "v": 535
+      "poh_cells_published": 39,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 8000,
+          "poh_cells_lost": 4
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c172r.json",
+        "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "8996384120df378e7b46e8856e26671d3157c4ed2c098535228f68c78f8815f6",
+        "basis": "poh_verbatim"
       }
-     },
-     "3000": {
-      "-20": {
-       "basis": "interp",
-       "v": 682
+    },
+    "landing_ground_roll": [
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 545
       },
-      "0": {
-       "basis": "interp",
-       "v": 620
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 560
       },
-      "20": {
-       "basis": "interp",
-       "v": 560
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 580
       },
-      "40": {
-       "basis": "interp",
-       "v": 500
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 620
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 565
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 585
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 605
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 625
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 645
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 585
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 605
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 625
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 650
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 670
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 605
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 630
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 650
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 670
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 695
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 630
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 650
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 675
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 700
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 720
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 655
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 675
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 700
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 725
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 750
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 680
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 705
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 730
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 755
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 775
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 705
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 730
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 755
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 780
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 810
       }
-     },
-     "4000": {
-      "-20": {
-       "basis": "poh",
-       "v": 645
+    ],
+    "landing_ground_roll_provenance": {
+      "figure": "Figure 5-11",
+      "title": "Short Field Landing Distance",
+      "conditions": "Flaps 30 deg, power off, maximum braking, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 133,
+          "printed_page": null,
+          "weight_lbs": 2450,
+          "altitudes": [
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
       },
-      "0": {
-       "basis": "poh",
-       "v": 585
+      "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+      "grid": {
+        "weights_lbs": [
+          2450
+        ],
+        "pressure_altitudes_ft": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 525
-      },
-      "40": {
-       "basis": "poh",
-       "v": 465
+      "poh_cells_published": 40,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c172r.json",
+        "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "bc7044279bb80b175204ecfd1613e69412e8afabd1d8820994ad827880f25351",
+        "basis": "poh_verbatim"
       }
-     },
-     "5000": {
-      "-20": {
-       "basis": "interp",
-       "v": 588
+    },
+    "landing_over_50ft": [
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1280
       },
-      "0": {
-       "basis": "interp",
-       "v": 530
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1310
       },
-      "20": {
-       "basis": "interp",
-       "v": 470
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1345
       },
-      "40": {
-       "basis": "interp",
-       "v": 412
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1375
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1405
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1310
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1345
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1375
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1410
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1440
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1345
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1380
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1415
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1445
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1480
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1380
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1415
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1450
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1485
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1520
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1415
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1455
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1490
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1525
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1560
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1455
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1490
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1530
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1565
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1605
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1495
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1535
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1570
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1610
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1650
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "distance_ft": 1535
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 2450,
+        "distance_ft": 1575
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "distance_ft": 1615
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 2450,
+        "distance_ft": 1655
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "distance_ft": 1695
       }
-     },
-     "6000": {
-      "-20": {
-       "basis": "poh",
-       "v": 530
+    ],
+    "landing_over_50ft_provenance": {
+      "figure": "Figure 5-11",
+      "title": "Short Field Landing Distance",
+      "conditions": "Flaps 30 deg, power off, maximum braking, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 133,
+          "printed_page": null,
+          "weight_lbs": 2450,
+          "altitudes": [
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
       },
-      "0": {
-       "basis": "poh",
-       "v": 475
+      "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+      "grid": {
+        "weights_lbs": [
+          2450
+        ],
+        "pressure_altitudes_ft": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 415
-      },
-      "40": {
-       "basis": "poh",
-       "v": 360
+      "poh_cells_published": 40,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c172r.json",
+        "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "cbe9ac221847f5c783ed13a10b67d6d512a6bbfb9962122f36a819f4704d4777",
+        "basis": "poh_verbatim"
       }
-     },
-     "7000": {
-      "-20": {
-       "basis": "interp",
-       "v": 475
+    },
+    "rate_of_climb": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -20,
+        "weight_lbs": 2450,
+        "fpm": 830
       },
-      "0": {
-       "basis": "interp",
-       "v": 420
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "fpm": 770
       },
-      "20": {
-       "basis": "interp",
-       "v": 362
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "fpm": 705
       },
-      "40": {
-       "basis": "interp",
-       "v": 305
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "fpm": 640
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -20,
+        "weight_lbs": 2450,
+        "fpm": 720
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "fpm": 655
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "fpm": 595
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "fpm": 535
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -20,
+        "weight_lbs": 2450,
+        "fpm": 645
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "fpm": 585
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "fpm": 525
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "fpm": 465
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -20,
+        "weight_lbs": 2450,
+        "fpm": 530
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "fpm": 475
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "fpm": 415
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "fpm": 360
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -20,
+        "weight_lbs": 2450,
+        "fpm": 420
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "fpm": 365
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "fpm": 310
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "fpm": 250
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": -20,
+        "weight_lbs": 2450,
+        "fpm": 310
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 2450,
+        "fpm": 255
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 2450,
+        "fpm": 200
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 2450,
+        "fpm": 145
       }
-     },
-     "8000": {
-      "-20": {
-       "basis": "poh",
-       "v": 420
+    ],
+    "rate_of_climb_provenance": {
+      "figure": "Figure 5-6",
+      "title": "Maximum Rate of Climb",
+      "conditions": "Flaps up, full throttle",
+      "sheets": [
+        {
+          "page": 127,
+          "printed_page": "5-15",
+          "weight_lbs": 2450,
+          "altitudes": [
+            0,
+            2000,
+            4000,
+            6000,
+            8000,
+            10000,
+            12000
+          ],
+          "temps": [
+            -20,
+            0,
+            20,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
       },
-      "0": {
-       "basis": "poh",
-       "v": 365
+      "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+      "grid": {
+        "weights_lbs": [
+          2450
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000,
+          8000,
+          10000
+        ],
+        "oat_c": [
+          -20,
+          0,
+          20,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 310
-      },
-      "40": {
-       "basis": "poh",
-       "v": 250
+      "poh_cells_published": 26,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 12000,
+          "poh_cells_lost": 2
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c172r.json",
+        "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "a570fb2ec3b4286926991766b252a5a4c6000e7d7c6e86f464a5a2a3d43200c4",
+        "basis": "poh_verbatim"
       }
-     },
-     "9000": {
-      "-20": {
-       "basis": "interp",
-       "v": 365
+    },
+    "stall_speeds": [
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "up",
+        "bank_angle_deg": 0,
+        "kias": 44,
+        "kcas": 51
       },
-      "0": {
-       "basis": "interp",
-       "v": 310
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "up",
+        "bank_angle_deg": 30,
+        "kias": 48,
+        "kcas": 55
       },
-      "20": {
-       "basis": "interp",
-       "v": 255
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "up",
+        "bank_angle_deg": 45,
+        "kias": 53,
+        "kcas": 61
       },
-      "40": {
-       "basis": "interp",
-       "v": 198
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "up",
+        "bank_angle_deg": 60,
+        "kias": 63,
+        "kcas": 73
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "10",
+        "bank_angle_deg": 0,
+        "kias": 35,
+        "kcas": 48
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "10",
+        "bank_angle_deg": 30,
+        "kias": 38,
+        "kcas": 52
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "10",
+        "bank_angle_deg": 45,
+        "kias": 42,
+        "kcas": 58
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "10",
+        "bank_angle_deg": 60,
+        "kias": 50,
+        "kcas": 69
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "30",
+        "bank_angle_deg": 0,
+        "kias": 33,
+        "kcas": 47
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "30",
+        "bank_angle_deg": 30,
+        "kias": 36,
+        "kcas": 50
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "30",
+        "bank_angle_deg": 45,
+        "kias": 40,
+        "kcas": 56
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_rearward",
+        "flap_setting": "30",
+        "bank_angle_deg": 60,
+        "kias": 47,
+        "kcas": 66
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "up",
+        "bank_angle_deg": 0,
+        "kias": 44,
+        "kcas": 52
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "up",
+        "bank_angle_deg": 30,
+        "kias": 48,
+        "kcas": 56
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "up",
+        "bank_angle_deg": 45,
+        "kias": 53,
+        "kcas": 62
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "up",
+        "bank_angle_deg": 60,
+        "kias": 63,
+        "kcas": 74
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "10",
+        "bank_angle_deg": 0,
+        "kias": 37,
+        "kcas": 50
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "10",
+        "bank_angle_deg": 30,
+        "kias": 40,
+        "kcas": 53
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "10",
+        "bank_angle_deg": 45,
+        "kias": 44,
+        "kcas": 59
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "10",
+        "bank_angle_deg": 60,
+        "kias": 53,
+        "kcas": 70
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "30",
+        "bank_angle_deg": 0,
+        "kias": 33,
+        "kcas": 47
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "30",
+        "bank_angle_deg": 30,
+        "kias": 36,
+        "kcas": 50
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "30",
+        "bank_angle_deg": 45,
+        "kias": 40,
+        "kcas": 56
+      },
+      {
+        "weight_lbs": 2450,
+        "cg": "most_forward",
+        "flap_setting": "30",
+        "bank_angle_deg": 60,
+        "kias": 47,
+        "kcas": 66
       }
-     }
+    ],
+    "stall_speeds_provenance": {
+      "title": "Stall Speeds",
+      "conditions": "Power off",
+      "sheets": [
+        {
+          "page": 124,
+          "printed_page": "5-12",
+          "weight_lbs": 2450
+        }
+      ],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
+      },
+      "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+      "row_count": 24,
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c172r.json",
+        "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "865302cb2090ed93d4d45fe9e95be1db45e0386415b695683c6ae9280d845b25",
+        "basis": "poh_verbatim"
+      }
+    },
+    "time_fuel_distance_to_climb": [
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 0,
+        "temp_c": 15,
+        "climb_speed_kias": 79,
+        "fpm": 720,
+        "time_min": 0,
+        "fuel_gal": 0.0,
+        "distance_nm": 0
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 1000,
+        "temp_c": 13,
+        "climb_speed_kias": 78,
+        "fpm": 670,
+        "time_min": 1,
+        "fuel_gal": 0.4,
+        "distance_nm": 2
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 2000,
+        "temp_c": 11,
+        "climb_speed_kias": 77,
+        "fpm": 625,
+        "time_min": 3,
+        "fuel_gal": 0.7,
+        "distance_nm": 4
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 3000,
+        "temp_c": 9,
+        "climb_speed_kias": 76,
+        "fpm": 575,
+        "time_min": 5,
+        "fuel_gal": 1.2,
+        "distance_nm": 6
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 4000,
+        "temp_c": 7,
+        "climb_speed_kias": 76,
+        "fpm": 560,
+        "time_min": 6,
+        "fuel_gal": 1.5,
+        "distance_nm": 8
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 5000,
+        "temp_c": 5,
+        "climb_speed_kias": 75,
+        "fpm": 515,
+        "time_min": 8,
+        "fuel_gal": 1.8,
+        "distance_nm": 11
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 6000,
+        "temp_c": 3,
+        "climb_speed_kias": 74,
+        "fpm": 465,
+        "time_min": 10,
+        "fuel_gal": 2.1,
+        "distance_nm": 14
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 7000,
+        "temp_c": 1,
+        "climb_speed_kias": 73,
+        "fpm": 415,
+        "time_min": 13,
+        "fuel_gal": 2.5,
+        "distance_nm": 17
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 8000,
+        "climb_speed_kias": 72,
+        "fpm": 365,
+        "time_min": 15,
+        "fuel_gal": 3.0,
+        "distance_nm": 21
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 9000,
+        "climb_speed_kias": 72,
+        "fpm": 315,
+        "time_min": 18,
+        "fuel_gal": 3.4,
+        "distance_nm": 25
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 10000,
+        "climb_speed_kias": 71,
+        "fpm": 270,
+        "time_min": 22,
+        "fuel_gal": 4.0,
+        "distance_nm": 29
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 11000,
+        "climb_speed_kias": 70,
+        "fpm": 220,
+        "time_min": 26,
+        "fuel_gal": 4.6,
+        "distance_nm": 35
+      },
+      {
+        "weight_lbs": 2450,
+        "pressure_altitude": 12000,
+        "climb_speed_kias": 69,
+        "fpm": 170,
+        "time_min": 31,
+        "fuel_gal": 5.4,
+        "distance_nm": 43
+      }
+    ],
+    "time_fuel_distance_to_climb_provenance": {
+      "title": "Time, Fuel and Distance to Climb",
+      "conditions": "Flaps up, full throttle, standard temperature",
+      "sheets": [
+        {
+          "page": 128,
+          "printed_page": "5-16",
+          "weight_lbs": 2450
+        }
+      ],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
+      },
+      "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+      "row_count": 13,
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c172r.json",
+        "pdf_sha256": "1318de643481c0de131509a451e951251652a1b0fc04e3fa1c447b87def0f874",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "a22826b93f532c4d6739a6cba42a4b364156b2bf98d29eb2bb5f146ce8590b2a",
+        "basis": "poh_verbatim"
+      }
     }
-   },
-   "cells_are": "rate_of_climb",
-   "cells_trimmed_for_rectangular_grid": [
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 2,
-     "value": 12000
-    }
-   ],
-   "conditions": "Flaps up, full throttle",
-   "counts": {
-    "extrap": 0,
-    "interp": 20,
-    "poh": 24
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": null,
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R \u00b7 Figure 5-6 \u00b7 Maximum Rate of Climb \u00b7 page 5-15",
-   "weights_lbs": [
-    2450
-   ]
   },
-  "climbprofile": {
-   "conditions": "Flaps up, full throttle, standard temperature",
-   "rows": [
-    {
-     "climb_speed_kias": 79,
-     "distance_nm": 0,
-     "fpm": 720,
-     "fuel_gal": 0.0,
-     "pressure_altitude": 0,
-     "temp_c": 15,
-     "time_min": 0,
-     "weight_lbs": 2450
+  "weight_balance": {
+    "cg_envelope": [
+      {
+        "weight_lbs": 1500,
+        "forward_cg": 35.0,
+        "aft_cg": 47.3
+      },
+      {
+        "weight_lbs": 1950,
+        "forward_cg": 35.0,
+        "aft_cg": 47.3
+      },
+      {
+        "weight_lbs": 2450,
+        "forward_cg": 40.0,
+        "aft_cg": 47.3
+      }
+    ],
+    "stations": {
+      "front_seats_arm": 37.0,
+      "rear_seats_arm": 73.0,
+      "baggage_arm": 95.0,
+      "baggage_arm_2": 123.0,
+      "fuel_arm": 48.0
     },
-    {
-     "climb_speed_kias": 78,
-     "distance_nm": 2,
-     "fpm": 670,
-     "fuel_gal": 0.4,
-     "pressure_altitude": 1000,
-     "temp_c": 13,
-     "time_min": 1,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 77,
-     "distance_nm": 4,
-     "fpm": 625,
-     "fuel_gal": 0.7,
-     "pressure_altitude": 2000,
-     "temp_c": 11,
-     "time_min": 3,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 76,
-     "distance_nm": 6,
-     "fpm": 575,
-     "fuel_gal": 1.2,
-     "pressure_altitude": 3000,
-     "temp_c": 9,
-     "time_min": 5,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 76,
-     "distance_nm": 8,
-     "fpm": 560,
-     "fuel_gal": 1.5,
-     "pressure_altitude": 4000,
-     "temp_c": 7,
-     "time_min": 6,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 75,
-     "distance_nm": 11,
-     "fpm": 515,
-     "fuel_gal": 1.8,
-     "pressure_altitude": 5000,
-     "temp_c": 5,
-     "time_min": 8,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 74,
-     "distance_nm": 14,
-     "fpm": 465,
-     "fuel_gal": 2.1,
-     "pressure_altitude": 6000,
-     "temp_c": 3,
-     "time_min": 10,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 73,
-     "distance_nm": 17,
-     "fpm": 415,
-     "fuel_gal": 2.5,
-     "pressure_altitude": 7000,
-     "temp_c": 1,
-     "time_min": 13,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 72,
-     "distance_nm": 21,
-     "fpm": 365,
-     "fuel_gal": 3.0,
-     "pressure_altitude": 8000,
-     "time_min": 15,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 72,
-     "distance_nm": 25,
-     "fpm": 315,
-     "fuel_gal": 3.4,
-     "pressure_altitude": 9000,
-     "time_min": 18,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 71,
-     "distance_nm": 29,
-     "fpm": 270,
-     "fuel_gal": 4.0,
-     "pressure_altitude": 10000,
-     "time_min": 22,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 70,
-     "distance_nm": 35,
-     "fpm": 220,
-     "fuel_gal": 4.6,
-     "pressure_altitude": 11000,
-     "time_min": 26,
-     "weight_lbs": 2450
-    },
-    {
-     "climb_speed_kias": 69,
-     "distance_nm": 43,
-     "fpm": 170,
-     "fuel_gal": 5.4,
-     "pressure_altitude": 12000,
-     "time_min": 31,
-     "weight_lbs": 2450
+    "provenance": {
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R",
+        "issue": "2 December 1996",
+        "publisher": "Cessna Aircraft Company"
+      },
+      "reference_datum": "Lower portion of front face of firewall",
+      "pages": {
+        "cg_limits_page": "2-7",
+        "loading_arrangements_page": "6-11 (Figure 6-3)"
+      },
+      "notes": [
+        "Forward limit 35.0 in at 1950 lb or less, straight-line variation to 40.0 in at 2450 lb; aft limit 47.3 in at all weights.",
+        "Baggage Area 1 arm 95 in; Area 2 arm 123 in; rear cabin wall at station 108."
+      ],
+      "station_keys_not_published_by_the_handbook": [],
+      "corrections_applied": [],
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "problems": 0,
+        "spec": "scripts/poh/specs/c172r.json",
+        "read": "the spec's transcription of the cited pages; verify.py checks the block against the spec, it does not re-read the PDF for W&B",
+        "covers": [
+          "baggage_arm",
+          "baggage_arm_2",
+          "front_seats_arm",
+          "fuel_arm",
+          "rear_seats_arm"
+        ],
+        "rows_sha256": "45ba8e34a1234a49d9d43f407e851138b55967b09fc3a8a4729cb210f4fb9d59"
+      }
     }
-   ],
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R \u00b7 Time, Fuel and Distance to Climb \u00b7 page 5-16"
   },
-  "cruise": {
-   "axes": [
-    "pressure_altitude",
-    "rpm"
-   ],
-   "row_count": 8,
-   "rows": [
-    {
-     "gph": 9.0,
-     "pct_power": 79,
-     "pressure_altitude": 2000,
-     "rpm": 2250,
-     "tas_kts": 115
-    },
-    {
-     "gph": 7.5,
-     "pct_power": 65,
-     "pressure_altitude": 2000,
-     "rpm": 2100,
-     "tas_kts": 106
-    },
-    {
-     "gph": 8.6,
-     "pct_power": 75,
-     "pressure_altitude": 4000,
-     "rpm": 2250,
-     "tas_kts": 114
-    },
-    {
-     "gph": 7.1,
-     "pct_power": 62,
-     "pressure_altitude": 4000,
-     "rpm": 2100,
-     "tas_kts": 105
-    },
-    {
-     "gph": 8.6,
-     "pct_power": 75,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 117
-    },
-    {
-     "gph": 7.7,
-     "pct_power": 67,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 111
-    },
-    {
-     "gph": 8.7,
-     "pct_power": 76,
-     "pressure_altitude": 8000,
-     "rpm": 2350,
-     "tas_kts": 119
-    },
-    {
-     "gph": 7.3,
-     "pct_power": 64,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 110
-    }
-   ],
-   "source": "Figure 5-8"
+  "app_status": {
+    "module_id": "c172r",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
   },
-  "landing": {
-   "cells": {
-    "2450": {
-     "0": {
-      "0": {
-       "basis": "extrap",
-       "v": 526
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 536
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 556
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 576
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 596
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 545
-      },
-      "10": {
-       "basis": "poh",
-       "v": 560
-      },
-      "20": {
-       "basis": "poh",
-       "v": 580
-      },
-      "30": {
-       "basis": "poh",
-       "v": 600
-      },
-      "40": {
-       "basis": "poh",
-       "v": 620
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 758
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 783
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 808
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 833
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 885
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 565
-      },
-      "10": {
-       "basis": "poh",
-       "v": 585
-      },
-      "20": {
-       "basis": "poh",
-       "v": 605
-      },
-      "30": {
-       "basis": "poh",
-       "v": 625
-      },
-      "40": {
-       "basis": "poh",
-       "v": 645
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 585
-      },
-      "10": {
-       "basis": "poh",
-       "v": 605
-      },
-      "20": {
-       "basis": "poh",
-       "v": 625
-      },
-      "30": {
-       "basis": "poh",
-       "v": 650
-      },
-      "40": {
-       "basis": "poh",
-       "v": 670
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 605
-      },
-      "10": {
-       "basis": "poh",
-       "v": 630
-      },
-      "20": {
-       "basis": "poh",
-       "v": 650
-      },
-      "30": {
-       "basis": "poh",
-       "v": 670
-      },
-      "40": {
-       "basis": "poh",
-       "v": 695
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 630
-      },
-      "10": {
-       "basis": "poh",
-       "v": 650
-      },
-      "20": {
-       "basis": "poh",
-       "v": 675
-      },
-      "30": {
-       "basis": "poh",
-       "v": 700
-      },
-      "40": {
-       "basis": "poh",
-       "v": 720
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 655
-      },
-      "10": {
-       "basis": "poh",
-       "v": 675
-      },
-      "20": {
-       "basis": "poh",
-       "v": 700
-      },
-      "30": {
-       "basis": "poh",
-       "v": 725
-      },
-      "40": {
-       "basis": "poh",
-       "v": 750
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 680
-      },
-      "10": {
-       "basis": "poh",
-       "v": 705
-      },
-      "20": {
-       "basis": "poh",
-       "v": 730
-      },
-      "30": {
-       "basis": "poh",
-       "v": 755
-      },
-      "40": {
-       "basis": "poh",
-       "v": 775
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 705
-      },
-      "10": {
-       "basis": "poh",
-       "v": 730
-      },
-      "20": {
-       "basis": "poh",
-       "v": 755
-      },
-      "30": {
-       "basis": "poh",
-       "v": 780
-      },
-      "40": {
-       "basis": "poh",
-       "v": 810
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 731
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 756
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 781
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 806
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 847
-      }
-     }
-    }
-   },
-   "cells_are": "landing_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "Flaps 30 deg, power off, maximum braking, paved level dry runway, zero wind",
-   "counts": {
-    "extrap": 15,
-    "interp": 0,
-    "poh": 40
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "2450": {
-     "0": {
-      "0": {
-       "basis": "extrap",
-       "v": 1251
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1276
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1316
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1341
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1371
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1280
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1310
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1345
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1375
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1405
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1618
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1658
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1709
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1749
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1789
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1310
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1345
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1375
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1410
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1440
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1345
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1380
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1415
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1445
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1480
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1380
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1415
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1450
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1485
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1520
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1415
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1455
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1490
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1525
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1560
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1455
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1490
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1530
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1565
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1605
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1495
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1535
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1570
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1610
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1650
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 1535
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1575
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1615
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1655
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1695
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1576
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1616
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1661
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1701
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1741
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R \u00b7 Figure 5-11 \u00b7 Short Field Landing Distance",
-   "weights_lbs": [
-    2450
-   ]
-  },
-  "stall": {
-   "conditions": "Power off",
-   "rows": [
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_rearward",
-     "flap_setting": "up",
-     "kcas": 51,
-     "kias": 44,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_rearward",
-     "flap_setting": "up",
-     "kcas": 55,
-     "kias": 48,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_rearward",
-     "flap_setting": "up",
-     "kcas": 61,
-     "kias": 53,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_rearward",
-     "flap_setting": "up",
-     "kcas": 73,
-     "kias": 63,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_rearward",
-     "flap_setting": "10",
-     "kcas": 48,
-     "kias": 35,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_rearward",
-     "flap_setting": "10",
-     "kcas": 52,
-     "kias": 38,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_rearward",
-     "flap_setting": "10",
-     "kcas": 58,
-     "kias": 42,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_rearward",
-     "flap_setting": "10",
-     "kcas": 69,
-     "kias": 50,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_rearward",
-     "flap_setting": "30",
-     "kcas": 47,
-     "kias": 33,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_rearward",
-     "flap_setting": "30",
-     "kcas": 50,
-     "kias": 36,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_rearward",
-     "flap_setting": "30",
-     "kcas": 56,
-     "kias": 40,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_rearward",
-     "flap_setting": "30",
-     "kcas": 66,
-     "kias": 47,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_forward",
-     "flap_setting": "up",
-     "kcas": 52,
-     "kias": 44,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_forward",
-     "flap_setting": "up",
-     "kcas": 56,
-     "kias": 48,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_forward",
-     "flap_setting": "up",
-     "kcas": 62,
-     "kias": 53,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_forward",
-     "flap_setting": "up",
-     "kcas": 74,
-     "kias": 63,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_forward",
-     "flap_setting": "10",
-     "kcas": 50,
-     "kias": 37,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_forward",
-     "flap_setting": "10",
-     "kcas": 53,
-     "kias": 40,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_forward",
-     "flap_setting": "10",
-     "kcas": 59,
-     "kias": 44,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_forward",
-     "flap_setting": "10",
-     "kcas": 70,
-     "kias": 53,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_forward",
-     "flap_setting": "30",
-     "kcas": 47,
-     "kias": 33,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_forward",
-     "flap_setting": "30",
-     "kcas": 50,
-     "kias": 36,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_forward",
-     "flap_setting": "30",
-     "kcas": 56,
-     "kias": 40,
-     "weight_lbs": 2450
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_forward",
-     "flap_setting": "30",
-     "kcas": 66,
-     "kias": 47,
-     "weight_lbs": 2450
-    }
-   ],
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R \u00b7 Stall Speeds \u00b7 page 5-12"
-  },
-  "takeoff": {
-   "cells": {
-    "2450": {
-     "0": {
-      "0": {
-       "basis": "extrap",
-       "v": 843
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 913
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 975
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1055
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1136
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 925
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1000
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1075
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1160
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1245
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2250
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2419
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2616
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 2844
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3054
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1015
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1095
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1185
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1275
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1365
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1115
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1205
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1305
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1400
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1505
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1230
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1330
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1435
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1545
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1655
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1355
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1470
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1585
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1705
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1830
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1500
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1625
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1750
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1880
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2020
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1660
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1795
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1935
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2085
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2240
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1837
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1983
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2140
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 2312
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2484
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2033
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2190
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2366
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 2564
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2754
-      }
-     }
-    }
-   },
-   "cells_are": "takeoff_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 4,
-     "value": 8000
-    }
-   ],
-   "conditions": "Flaps 10 deg, full throttle prior to brake release, paved level dry runway, zero wind",
-   "counts": {
-    "extrap": 20,
-    "interp": 0,
-    "poh": 35
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "2450": {
-     "0": {
-      "0": {
-       "basis": "extrap",
-       "v": 1506
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1626
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1744
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1871
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2007
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1660
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1790
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1925
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2070
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2220
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 4575
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 5060
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 5545
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 6137
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 6847
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1830
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1970
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2125
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2290
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2455
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 2020
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2185
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2360
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2540
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2730
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 2245
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2430
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2630
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2830
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3045
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 2500
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2715
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2945
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3175
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3430
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 2805
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3060
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3315
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3590
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3895
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 3170
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3470
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3770
-      },
-      "30": {
-       "basis": "poh",
-       "v": 4105
-      },
-      "40": {
-       "basis": "poh",
-       "v": 4485
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 3582
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3935
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 4287
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 4694
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 5164
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 4049
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 4462
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 4876
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 5367
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 5947
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cessna Model 172R \u00b7 Figure 5-5 \u00b7 Short Field Takeoff Distance \u00b7 page 5-14",
-   "weights_lbs": [
-    2450
-   ]
+  "source_files": {
+    "spec": "scripts/poh/specs/c172r.json",
+    "extracted": "scripts/poh/extracted/c172r.json",
+    "pdf": "Cessna/Cessna-172R-1996-POH.pdf",
+    "draft": null
   }
- },
- "slug": "cessna-172r-skyhawk",
- "v_speeds": {
-  "best_glide": 65,
-  "va": 99,
-  "vfe": 85,
-  "vne": 163,
-  "vno": 129,
-  "vs0": 33,
-  "vs1": 44,
-  "vx": 60,
-  "vy": 79
- }
 }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Built by scripts/build_site.py from site/content/tools__crosswind-calculator__index.html.j2. Edit that file, not this one (FD-748). -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -115,9 +116,7 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         All Free Tools
       </a>
     </div>
@@ -128,6 +127,7 @@
       <a class="tool-pill active" aria-current="page" href="/tools/crosswind-calculator/">Crosswind</a>
       <a class="tool-pill" href="/tools/density-altitude-calculator/">Density Altitude</a>
       <a class="tool-pill" href="/tools/cloud-base-calculator/">Cloud Base</a>
+      <a class="tool-pill" href="/tools/metar-decoder/">METAR Decoder</a>
       <a class="tool-pill" href="/tools/true-airspeed-calculator/">True Airspeed</a>
       <a class="tool-pill" href="/tools/flight-time-calculator/">Time-Speed-Distance</a>
       <a class="tool-pill" href="/tools/fuel-burn-calculator/">Fuel &amp; Endurance</a>
@@ -248,6 +248,16 @@
           <span class="result-note">what arrives in the flare</span>
         </div>
       </div>
+      <div class="tool-share">
+        <button type="button" class="btn-secondary-sm share-copy" data-share-copy>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Copy link to this result
+        </button>
+        <span class="share-status" data-share-status aria-live="polite"></span>
+        <input class="share-url" data-share-url type="text" readonly hidden aria-label="Link to this result" />
+      </div>
+      <p class="tool-follow"><a href="https://www.instagram.com/flightdecide/" target="_blank" rel="me noopener">A 20-second pilot quiz every day on Instagram</a> <span aria-hidden="true">&middot;</span> <a href="https://www.facebook.com/flightdecide" target="_blank" rel="me noopener">Also on Facebook</a></p>
+      <script type="application/json" id="fd-tool-params">{"slug":"crosswind-calculator","event":"crosswind-calculator","params":[{"name":"rwy","field":"rwy","type":"runway","min":1,"max":360},{"name":"wdir","field":"wdir","type":"number","min":0,"max":360},{"name":"wspd","field":"wspd","type":"number","min":0,"max":150},{"name":"gust","field":"wgst","type":"number","min":0,"max":200}]}</script>
     </div>
 
     <p class="lede"><strong>Crosswind component = wind speed × sin(angle between wind and runway); headwind component = wind speed × cos(angle).</strong> A 20-knot wind 40° off the runway is a 13-knot crosswind and a 15-knot headwind. Use the calculator below with the gust value to see the worst case, then compare it against your personal maximum, not the POH's demonstrated number.</p>
@@ -335,7 +345,7 @@
     <div class="cta-band">
       <h2>Winds are one of eight risk categories</h2>
       <p>FlightDecide scores winds alongside ceilings, visibility, NOTAMs, fuel, performance, and W&amp;B for your specific flight window and aircraft, and flags any wind that busts your personal maximum, with the METAR behind it one tap away.</p>
-      <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
+      <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-tools" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
     <p class="advisory-note">Educational tool for flight-planning practice. It is advisory only and not a substitute for your POH, an official weather briefing, or your own judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Sources: FAA <em>Airplane Flying Handbook</em> (FAA-H-8083-3C), Ch. 9; 14 CFR §23.2135. Last reviewed: July 17, 2026.</p>
@@ -347,8 +357,11 @@
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/explainers/">Explainers</a></li>
+      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
+      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>
@@ -536,6 +549,10 @@
           ' at ' + w.speed + (w.gust ? ' gusting ' + w.gust : '') + ' kt. Remember: METAR direction is true.';
         changed.forEach((id) => $(id).dispatchEvent(new Event('input', { bubbles: true })));
       });
+
+      // ?rwy=19&wdir=240&wspd=18&gust=25 fills the fields and calculates; the
+      // personal maximum stays this device's own and never travels in a link
+      FD.share.init();
     })();
 
   </script>

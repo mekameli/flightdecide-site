@@ -36,8 +36,8 @@
       "headline": "Cirrus SR20 Specs: Weights, V-Speeds, Cruise",
       "description": "Cirrus SR20 specs from the POH: weights, useful load, service ceiling, V-speeds, cruise performance, fuel, takeoff and landing distances.",
       "url": "https://flightdecide.com/aircraft/cirrus-sr20/",
-      "datePublished": "2026-09-20",
-      "dateModified": "2026-09-20",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
       "author": {
         "@type": "Organization",
         "name": "FlightDecide",
@@ -59,7 +59,7 @@
           "name": "How fast does a Cirrus SR20 cruise?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Per the POH cruise table, up to about 157 KTAS at 8000 ft on a standard day, burning roughly 11 GPH at that setting. Typical everyday cruise settings are slower and leaner."
+            "text": "Per the library's cruise table, not yet verified against the handbook, up to about 157 KTAS at 8000 ft on a standard day, burning roughly 11 GPH at that setting. Typical everyday cruise settings are slower and leaner."
           }
         },
         {
@@ -130,9 +130,7 @@
       <a href="/explainers/" class="nav-site">Explainers</a>
       <!-- site-nav:end -->
       <a href="/aircraft/" class="nav-back">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         All Aircraft
       </a>
     </div>
@@ -148,9 +146,11 @@
 
     <p class="crumbs"><a href="/">Home</a> › <a href="/aircraft/">Aircraft</a> › Cirrus SR20</p>
 
-    <p class="lede"><strong>Cirrus SR20 preflight numbers at a glance:</strong> max gross weight 3050 lb, typical useful load 1050 lb, 56 gal usable fuel, cruise up to about 157 KTAS (reference figure at 8000 ft, standard day). Figures below are transcribed from the published POH/AFM and each table cites its figure and page. Use them for planning and study, and confirm against the POH for your specific serial number before flight.</p>
+    <p class="ac-status"><strong>In the FlightDecide app since 2026-07-16.</strong> Reviewed 2026-09-28. 7 of 8 tables from the handbook. Anything marked “Not yet verified against the handbook” comes from FlightDecide&#x27;s earlier library and hasn&#x27;t been checked against the printed page.</p>
+    <p class="lede"><strong>Cirrus SR20 preflight numbers at a glance:</strong> max gross weight 3050 lb, typical useful load 1050 lb, 56 gal usable fuel, cruise up to about 157 KTAS (reference figure at 8000 ft, standard day). 7 of the 8 performance tables below are read from the published POH/AFM; treat the ones marked “Not yet verified against the handbook” as estimates. Use them for planning and study, and confirm against the POH for your specific serial number before flight.</p>
 
     <h2>Cirrus SR20 specs and key numbers</h2>
+    <p class="legacy-head">Not yet verified against the handbook</p>
     <div class="table-scroll"><table>
       <tbody>
         <tr><td>Engine</td><td>Continental IO-360-ES</td></tr>
@@ -164,6 +164,7 @@
     </table></div>
 
     <h2>Cirrus SR20 V-speeds</h2>
+    <p class="legacy-head">Not yet verified against the handbook</p>
     <p>Knots indicated (KIAS) unless the POH states otherwise. Speeds vary by model year and serial; the placarded speeds and your POH govern.</p>
     <div class="table-scroll"><table>
       <thead><tr><th>Speed</th><th>Value</th><th>Meaning</th></tr></thead>
@@ -183,7 +184,8 @@
 
 
     <h2>Cirrus SR20 cruise performance</h2>
-    <p>Interpolated between the handbook's published cruise points. True airspeed and fuel flow depend on altitude, power setting, temperature, and leaning technique.</p>
+    <p class="legacy-head">Not yet verified against the handbook</p>
+    <p>Source not verified: the library's record cites no handbook page for these rows. True airspeed and fuel flow depend on altitude, power setting, temperature, and leaning technique.</p>
     <div class="table-scroll"><table>
       <thead><tr><th>Pressure alt (ft)</th><th>% power</th><th>Mixture</th><th>TAS (kt)</th><th>Fuel (GPH)</th></tr></thead>
       <tbody>
@@ -346,17 +348,19 @@
 
     <h2 id="stall">Stall speeds</h2>
     <p class="perf-cond">Power idle</p>
-    <p class="perf-src">Source: Pilot&#x27;s Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 · Stall Speeds · page 5-10</p>
+    <p class="perf-src">Source: Pilot&#x27;s Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR20 · Stall Speeds · Section 9 Supplements, 11934-S37 (3050 lb gross weight increase) · S37 page 21 of 46</p>
+    <p class="perf-cond">The handbook's conditions: Weight 3050 LB; Power Idle (S37 page 21 of 46).</p>
+    <ul class="perf-notes"><li>Altitude loss during wings level stall may be 250 feet or more. (S37 page 21 of 46)</li><li>KIAS values may not be accurate at stall. (S37 page 21 of 46)</li></ul>
     <div class="table-scroll" data-perf="stall">
   <table class="perf-table" data-table="stall">
     <caption>KIAS (bold) over KCAS, Most forward C.G.</caption>
     <thead><tr><th scope="col">Flap setting</th><th>0°</th><th>15°</th><th>30°</th><th>45°</th><th>60°</th></tr></thead>
-    <tbody><tr><th scope="row">Flaps 0% (up)°</th><td><b>65</b><i class="sep"> / </i><span>67</span></td><td><b>66</b><i class="sep"> / </i><span>68</span></td><td><b>70</b><i class="sep"> / </i><span>72</span></td><td><b>78</b><i class="sep"> / </i><span>80</span></td><td><b>92</b><i class="sep"> / </i><span>95</span></td></tr><tr><th scope="row">Flaps 50%°</th><td><b>61</b><i class="sep"> / </i><span>63</span></td><td><b>62</b><i class="sep"> / </i><span>64</span></td><td><b>65</b><i class="sep"> / </i><span>68</span></td><td><b>72</b><i class="sep"> / </i><span>75</span></td><td><b>86</b><i class="sep"> / </i><span>89</span></td></tr><tr><th scope="row">Flaps 100% (down)°</th><td><b>56</b><i class="sep"> / </i><span>59</span></td><td><b>57</b><i class="sep"> / </i><span>60</span></td><td><b>61</b><i class="sep"> / </i><span>63</span></td><td><b>67</b><i class="sep"> / </i><span>70</span></td><td><b>80</b><i class="sep"> / </i><span>83</span></td></tr></tbody>
+    <tbody><tr><th scope="row">Flaps 0% (up)°</th><td><b>69</b><i class="sep"> / </i><span>67</span></td><td><b>70</b><i class="sep"> / </i><span>68</span></td><td><b>74</b><i class="sep"> / </i><span>72</span></td><td><b>81</b><i class="sep"> / </i><span>80</span></td><td><b>95</b><i class="sep"> / </i><span>95</span></td></tr><tr><th scope="row">Flaps 50%°</th><td><b>66</b><i class="sep"> / </i><span>63</span></td><td><b>67</b><i class="sep"> / </i><span>65</span></td><td><b>70</b><i class="sep"> / </i><span>68</span></td><td><b>76</b><i class="sep"> / </i><span>75</span></td><td><b>89</b><i class="sep"> / </i><span>90</span></td></tr><tr><th scope="row">Flaps 100% (down)°</th><td><b>61</b><i class="sep"> / </i><span>59</span></td><td><b>62</b><i class="sep"> / </i><span>60</span></td><td><b>64</b><i class="sep"> / </i><span>63</span></td><td><b>70</b><i class="sep"> / </i><span>70</span></td><td><b>83</b><i class="sep"> / </i><span>83</span></td></tr></tbody>
   </table>
   <table class="perf-table" data-table="stall">
     <caption>KIAS (bold) over KCAS, Most rearward C.G.</caption>
     <thead><tr><th scope="col">Flap setting</th><th>0°</th><th>15°</th><th>30°</th><th>45°</th><th>60°</th></tr></thead>
-    <tbody><tr><th scope="row">Flaps 0% (up)°</th><td><b>64</b><i class="sep"> / </i><span>66</span></td><td><b>65</b><i class="sep"> / </i><span>67</span></td><td><b>69</b><i class="sep"> / </i><span>71</span></td><td><b>76</b><i class="sep"> / </i><span>78</span></td><td><b>90</b><i class="sep"> / </i><span>93</span></td></tr><tr><th scope="row">Flaps 50%°</th><td><b>59</b><i class="sep"> / </i><span>62</span></td><td><b>60</b><i class="sep"> / </i><span>63</span></td><td><b>64</b><i class="sep"> / </i><span>66</span></td><td><b>71</b><i class="sep"> / </i><span>73</span></td><td><b>84</b><i class="sep"> / </i><span>87</span></td></tr><tr><th scope="row">Flaps 100% (down)°</th><td><b>54</b><i class="sep"> / </i><span>57</span></td><td><b>55</b><i class="sep"> / </i><span>58</span></td><td><b>58</b><i class="sep"> / </i><span>61</span></td><td><b>64</b><i class="sep"> / </i><span>68</span></td><td><b>76</b><i class="sep"> / </i><span>81</span></td></tr></tbody>
+    <tbody><tr><th scope="row">Flaps 0% (up)°</th><td><b>69</b><i class="sep"> / </i><span>67</span></td><td><b>75</b><i class="sep"> / </i><span>68</span></td><td><b>77</b><i class="sep"> / </i><span>72</span></td><td><b>83</b><i class="sep"> / </i><span>79</span></td><td><b>99</b><i class="sep"> / </i><span>94</span></td></tr><tr><th scope="row">Flaps 50%°</th><td><b>63</b><i class="sep"> / </i><span>60</span></td><td><b>64</b><i class="sep"> / </i><span>61</span></td><td><b>66</b><i class="sep"> / </i><span>64</span></td><td><b>72</b><i class="sep"> / </i><span>71</span></td><td><b>85</b><i class="sep"> / </i><span>85</span></td></tr><tr><th scope="row">Flaps 100% (down)°</th><td><b>59</b><i class="sep"> / </i><span>56</span></td><td><b>60</b><i class="sep"> / </i><span>57</span></td><td><b>62</b><i class="sep"> / </i><span>60</span></td><td><b>68</b><i class="sep"> / </i><span>67</span></td><td><b>79</b><i class="sep"> / </i><span>79</span></td></tr></tbody>
   </table>
     </div>
 
@@ -382,7 +386,7 @@
           <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-answer"><div class="faq-answer-inner">
-          <p>Per the POH cruise table, up to about <strong>157 KTAS</strong> at 8000 ft on a standard day, burning roughly 11 GPH at that setting. Typical everyday cruise settings run slower and leaner; see the table above.</p>
+          <p>Per the library's cruise table, not yet verified against the handbook, up to about <strong>157 KTAS</strong> at 8000 ft on a standard day, burning roughly 11 GPH at that setting. Typical everyday cruise settings run slower and leaner; see the table above.</p>
         </div></div>
       </div>
       <div class="faq-item">
@@ -424,17 +428,20 @@
       <a href="https://apps.apple.com/app/flightdecide/id6761793626" class="btn-primary">Get FlightDecide on the App Store</a>
     </div>
 
-    <p class="advisory-note">Reference data for planning and study: approximate, and not a substitute for the FAA-approved AFM/POH for your specific aircraft, an official weather briefing, or your judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Source: Cirrus SR20 Pilot&#x27;s Operating Handbook, Cirrus Aircraft. FD-125 audit (ADR-006, 2026-06-01): cruise rows tagged mixture_mode=recommended_lean — current rows match the POH Section 5 Performance, Cruise Performance (Recommended Lean Mixture) column; SR20 standard POH publishes only this single column. A Best Power column would require a Cirrus Service Manual extract; queued under constraint #5. Data synced from the FlightDecide aircraft library on 2026-09-20.</p>
+    <p class="advisory-note">Reference data for planning and study: approximate, and not a substitute for the FAA-approved AFM/POH for your specific aircraft, an official weather briefing, or your judgment as pilot in command (<a href="/disclaimer.html">14 CFR 91.3</a>). Source: Cirrus SR20 Pilot&#x27;s Operating Handbook, Cirrus Aircraft. FD-125 audit (ADR-006, 2026-06-01): cruise rows tagged mixture_mode=recommended_lean — current rows match the POH Section 5 Performance, Cruise Performance (Recommended Lean Mixture) column; SR20 standard POH publishes only this single column. A Best Power column would require a Cirrus Service Manual extract; queued under constraint #5. Data synced from the FlightDecide aircraft library on 2026-09-28.</p>
 
   </div>
 
   <footer class="site-footer">
     <ul class="footer-links">
       <li><a href="/">Home</a></li>
-      <li><a href="/aircraft/">Aircraft</a></li>
       <li><a href="/tools/">Free Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/explainers/">Explainers</a></li>
+      <li><a href="/aircraft/">Aircraft</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
+      <li><a href="/press.html">Press</a></li>
       <li><a href="/privacy.html">Privacy</a></li>
       <li><a href="/terms.html">Terms</a></li>
       <li><a href="/disclaimer.html">Disclaimer</a></li>

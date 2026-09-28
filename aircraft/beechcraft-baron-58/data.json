@@ -1,1395 +1,1800 @@
 {
- "data_version": 2,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "BE58",
- "limits": {
-  "empty_weight_lbs": 3400,
-  "max_gross_weight_lbs": 5500,
-  "service_ceiling_ft": 20688,
-  "usable_fuel_gal": 166,
-  "useful_load_lbs": 2100
- },
- "manufacturer": "Beechcraft",
- "name": "Beechcraft Baron 58",
- "performance": {
-  "climb": {
-   "cells": {
-    "5500": {
-     "0": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1920
+  "type": "BE-58",
+  "name": "Beechcraft Baron 58",
+  "marketing_name": "Beechcraft Baron 58",
+  "manufacturer": "Beechcraft",
+  "icao_type": "BE58",
+  "is_twin": true,
+  "performance": {
+    "takeoff_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 1140
       },
-      "0": {
-       "basis": "poh",
-       "v": 1805
+      {
+        "pressure_altitude": 0,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 1180
       },
-      "20": {
-       "basis": "poh",
-       "v": 1690
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 1220
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 1270
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 1320
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 1370
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 1430
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 1480
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 1540
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 1600
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 1350
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 1410
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 1465
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 1525
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 1585
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 1650
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 1710
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 1775
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 1840
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 1910
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 1630
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 1700
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 1765
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 1835
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 1905
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 1980
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 2050
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 2130
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 2215
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 2300
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 1980
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 2065
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 2150
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 2235
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 2325
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 2415
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 2510
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 2600
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 2700
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 2810
       }
-     },
-     "1000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1815
+    ],
+    "takeoff_ground_roll_provenance": {
+      "title": "Takeoff",
+      "conditions": "POWER: take-off power set before brake release. MIXTURE: full rich (TH-1472 thru TH-1840 not in compliance with Raytheon Aircraft S.B. 28-3052); as required by field elevation (TH-1841 and after, and prior airplanes in compliance with S.B. 28-3052). FLAPS: up. LANDING GEAR: retract after positive climb established. COWL FLAPS: open. RUNWAY: paved, level, dry surface. Take-off speeds (all weights): rotation 85 kt, 50 ft 100 kt.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 162,
+          "figure": "5-27",
+          "title": "Take-Off Distance (both engines, normal take-off)"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 162,
+          "figure": "5-27",
+          "title": "Take-Off Distance - obstacle-height panel of the same sheet"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 5500,
+        "pressure_altitude": 5653,
+        "oat_c": 15,
+        "value": 2348,
+        "how": "the sheet's worked example where its dashed path meets the WEIGHT reference line, before the wind panel - measured at 2344 ft; NOT the printed 2200 ft answer, which has already been through the 10 kt headwind panel"
       },
-      "0": {
-       "basis": "interp",
-       "v": 1708
+      "reference_point_error": 8.5,
+      "unanchored": null,
+      "read_tolerance": 52,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 80,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003",
+        "publisher": "Raytheon Aircraft Company",
+        "faa_afm": "This book IS the FAA Approved Airplane Flight Manual as well as the POH; Section V Performance is the FAA-approved performance section (5-1 thru 5-62)",
+        "airframe": "Beech Baron 58: two Teledyne Continental IO-550-C, 300 HP each, normally aspirated, fuel-injected, six-cylinder; two McCauley three-blade constant-speed propellers, 77 in diameter. Model 58 max take-off 5500 lb / max landing 5400 lb / max ramp 5524 lb; these tables are for the Model 58 only, not for the lower-gross sibling model the same handbook also covers. Fuel standard 142 gal total / 136 usable, optional 172/166 or 200/194 (Section I General, Descriptive Data, printed pages 1-12 thru 1-15).",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number."
       },
-      "20": {
-       "basis": "interp",
-       "v": 1598
+      "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+      "grid": {
+        "weights_lbs": [
+          5500
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000
+        ],
+        "oat_c": [
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      "poh_cells_published": 40,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/be58.json",
+        "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "f1d4137116ca026600d6f676bcad99d5fad753746a1e2f9742661ec2c59a3b93",
+        "basis": "poh_chart"
       }
-     },
-     "10000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 970
+    },
+    "takeoff_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 1965
       },
-      "0": {
-       "basis": "poh",
-       "v": 870
+      {
+        "pressure_altitude": 0,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 2030
       },
-      "20": {
-       "basis": "poh",
-       "v": 770
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 2100
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 2175
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 2255
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 2330
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 2420
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 2505
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 2595
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 2690
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 2295
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 2390
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 2480
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 2570
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 2670
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 2760
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 2865
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 2985
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 3110
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 3230
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 2735
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 2840
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 2965
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 3090
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 3225
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 3360
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 3500
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 3640
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 3790
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 3960
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "distance_ft": 3360
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "distance_ft": 3515
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "distance_ft": 3670
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "distance_ft": 3830
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "distance_ft": 4010
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "distance_ft": 4215
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "distance_ft": 4430
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 25,
+        "weight_lbs": 5500,
+        "distance_ft": 4650
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 5500,
+        "distance_ft": 4875
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 35,
+        "weight_lbs": 5500,
+        "distance_ft": 5110
       }
-     },
-     "2000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1710
+    ],
+    "takeoff_over_50ft_provenance": {
+      "title": "Takeoff",
+      "conditions": "POWER: take-off power set before brake release. MIXTURE: full rich (TH-1472 thru TH-1840 not in compliance with Raytheon Aircraft S.B. 28-3052); as required by field elevation (TH-1841 and after, and prior airplanes in compliance with S.B. 28-3052). FLAPS: up. LANDING GEAR: retract after positive climb established. COWL FLAPS: open. RUNWAY: paved, level, dry surface. Take-off speeds (all weights): rotation 85 kt, 50 ft 100 kt.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 162,
+          "figure": "5-27",
+          "title": "Take-Off Distance (both engines, normal take-off)"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 162,
+          "figure": "5-27",
+          "title": "Take-Off Distance - obstacle-height panel of the same sheet"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 5500,
+        "pressure_altitude": 5653,
+        "oat_c": 15,
+        "value": 2348,
+        "how": "the sheet's worked example where its dashed path meets the WEIGHT reference line, before the wind panel - measured at 2344 ft; NOT the printed 2200 ft answer, which has already been through the 10 kt headwind panel"
       },
-      "0": {
-       "basis": "poh",
-       "v": 1610
+      "reference_point_error": 8.5,
+      "unanchored": null,
+      "read_tolerance": 52,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 80,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003",
+        "publisher": "Raytheon Aircraft Company",
+        "faa_afm": "This book IS the FAA Approved Airplane Flight Manual as well as the POH; Section V Performance is the FAA-approved performance section (5-1 thru 5-62)",
+        "airframe": "Beech Baron 58: two Teledyne Continental IO-550-C, 300 HP each, normally aspirated, fuel-injected, six-cylinder; two McCauley three-blade constant-speed propellers, 77 in diameter. Model 58 max take-off 5500 lb / max landing 5400 lb / max ramp 5524 lb; these tables are for the Model 58 only, not for the lower-gross sibling model the same handbook also covers. Fuel standard 142 gal total / 136 usable, optional 172/166 or 200/194 (Section I General, Descriptive Data, printed pages 1-12 thru 1-15).",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number."
       },
-      "20": {
-       "basis": "poh",
-       "v": 1505
+      "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+      "grid": {
+        "weights_lbs": [
+          5500
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000
+        ],
+        "oat_c": [
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      "poh_cells_published": 40,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/be58.json",
+        "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "2e70900a657bd8932f76b114bc3667a031eb545c7250cca1aeda7f94afd4a400",
+        "basis": "poh_chart"
       }
-     },
-     "3000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1628
+    },
+    "landing_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 1310
       },
-      "0": {
-       "basis": "interp",
-       "v": 1520
+      {
+        "pressure_altitude": 0,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 1330
       },
-      "20": {
-       "basis": "interp",
-       "v": 1415
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 1355
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 1380
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 1400
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 1425
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 1450
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 1470
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 1500
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 1400
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 1425
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 1450
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 1480
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 1505
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 1530
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 1555
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 1585
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 1610
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 1510
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 1540
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 1565
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 1590
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 1615
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 1645
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 1670
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 1700
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 1730
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 1625
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 1655
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 1685
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 1715
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 1750
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 1780
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 1810
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 1845
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 1880
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 1745
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 1780
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 1810
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 1845
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 1880
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 1915
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 1950
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 1990
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 2025
       }
-     },
-     "4000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1545
+    ],
+    "landing_ground_roll_provenance": {
+      "title": "Landing",
+      "conditions": "POWER: retarded to maintain 800 ft/min on final approach. FLAPS: down. LANDING GEAR: down. APPROACH SPEED: IAS as tabulated (5400 lb 95 kt, 5000 lb 91 kt, 4600 lb 87 kt, 4000 lb 81 kt). BRAKING: maximum. RUNWAY: paved, level, dry surface.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 196,
+          "figure": "5-61",
+          "title": "Landing Distance"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 196,
+          "figure": "5-61",
+          "title": "Landing Distance - obstacle-height panel of the same sheet"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 5400,
+        "pressure_altitude": 3965,
+        "oat_c": 25,
+        "value": 1705,
+        "how": "the sheet's worked example where its dashed path meets the WEIGHT reference line (reference weight 5400 lb, zero wind) - measured at 1717 ft; NOT the printed 1450 ft answer, which has been through the 5039 lb weight panel and a 9.5 kt headwind"
       },
-      "0": {
-       "basis": "poh",
-       "v": 1430
+      "reference_point_error": 7.0,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 90,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003",
+        "publisher": "Raytheon Aircraft Company",
+        "faa_afm": "This book IS the FAA Approved Airplane Flight Manual as well as the POH; Section V Performance is the FAA-approved performance section (5-1 thru 5-62)",
+        "airframe": "Beech Baron 58: two Teledyne Continental IO-550-C, 300 HP each, normally aspirated, fuel-injected, six-cylinder; two McCauley three-blade constant-speed propellers, 77 in diameter. Model 58 max take-off 5500 lb / max landing 5400 lb / max ramp 5524 lb; these tables are for the Model 58 only, not for the lower-gross sibling model the same handbook also covers. Fuel standard 142 gal total / 136 usable, optional 172/166 or 200/194 (Section I General, Descriptive Data, printed pages 1-12 thru 1-15).",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number."
       },
-      "20": {
-       "basis": "poh",
-       "v": 1325
+      "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+      "grid": {
+        "weights_lbs": [
+          5400
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000,
+          8000
+        ],
+        "oat_c": [
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      "poh_cells_published": 45,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/be58.json",
+        "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "5c5c977a168a5b78ecc0c0fff93bab58bb4ad4a360d1b6189ee3b7020f048ad6",
+        "basis": "poh_chart"
       }
-     },
-     "5000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1442
+    },
+    "landing_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 2255
       },
-      "0": {
-       "basis": "interp",
-       "v": 1335
+      {
+        "pressure_altitude": 0,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 2300
       },
-      "20": {
-       "basis": "interp",
-       "v": 1228
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 2340
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 2380
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 2420
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 2460
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 2500
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 2540
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 2580
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 2420
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 2465
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 2510
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 2550
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 2590
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 2630
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 2675
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 2720
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 2760
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 2600
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 2645
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 2685
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 2725
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 2770
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 2810
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 2850
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 2900
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 2940
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 2785
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 2830
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 2880
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 2925
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 2970
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 3010
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 3060
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 3100
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 3150
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -10,
+        "weight_lbs": 5400,
+        "distance_ft": 2970
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -5,
+        "weight_lbs": 5400,
+        "distance_ft": 3010
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 5400,
+        "distance_ft": 3060
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 5,
+        "weight_lbs": 5400,
+        "distance_ft": 3100
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 5400,
+        "distance_ft": 3150
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 15,
+        "weight_lbs": 5400,
+        "distance_ft": 3200
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 5400,
+        "distance_ft": 3245
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 25,
+        "weight_lbs": 5400,
+        "distance_ft": 3295
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 5400,
+        "distance_ft": 3340
       }
-     },
-     "6000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1340
+    ],
+    "landing_over_50ft_provenance": {
+      "title": "Landing",
+      "conditions": "POWER: retarded to maintain 800 ft/min on final approach. FLAPS: down. LANDING GEAR: down. APPROACH SPEED: IAS as tabulated (5400 lb 95 kt, 5000 lb 91 kt, 4600 lb 87 kt, 4000 lb 81 kt). BRAKING: maximum. RUNWAY: paved, level, dry surface.",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "ground_roll_ft",
+          "page": 196,
+          "figure": "5-61",
+          "title": "Landing Distance"
+        },
+        {
+          "field": "over_50ft_ft",
+          "page": 196,
+          "figure": "5-61",
+          "title": "Landing Distance - obstacle-height panel of the same sheet"
+        }
+      ],
+      "reference_point": {
+        "field": "ground_roll_ft",
+        "weight_lbs": 5400,
+        "pressure_altitude": 3965,
+        "oat_c": 25,
+        "value": 1705,
+        "how": "the sheet's worked example where its dashed path meets the WEIGHT reference line (reference weight 5400 lb, zero wind) - measured at 1717 ft; NOT the printed 1450 ft answer, which has been through the 5039 lb weight panel and a 9.5 kt headwind"
       },
-      "0": {
-       "basis": "poh",
-       "v": 1240
+      "reference_point_error": 7.0,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 90,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003",
+        "publisher": "Raytheon Aircraft Company",
+        "faa_afm": "This book IS the FAA Approved Airplane Flight Manual as well as the POH; Section V Performance is the FAA-approved performance section (5-1 thru 5-62)",
+        "airframe": "Beech Baron 58: two Teledyne Continental IO-550-C, 300 HP each, normally aspirated, fuel-injected, six-cylinder; two McCauley three-blade constant-speed propellers, 77 in diameter. Model 58 max take-off 5500 lb / max landing 5400 lb / max ramp 5524 lb; these tables are for the Model 58 only, not for the lower-gross sibling model the same handbook also covers. Fuel standard 142 gal total / 136 usable, optional 172/166 or 200/194 (Section I General, Descriptive Data, printed pages 1-12 thru 1-15).",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number."
       },
-      "20": {
-       "basis": "poh",
-       "v": 1130
+      "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+      "grid": {
+        "weights_lbs": [
+          5400
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000,
+          8000
+        ],
+        "oat_c": [
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30
+        ]
+      },
+      "poh_cells_published": 45,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/be58.json",
+        "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "5bfd370db28c4664fc9cc2f5c485c8670be49445015b7a00c948a73419d28440",
+        "basis": "poh_chart"
       }
-     },
-     "7000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1245
+    },
+    "rate_of_climb": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 1860
       },
-      "0": {
-       "basis": "interp",
-       "v": 1145
+      {
+        "pressure_altitude": 0,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 1830
       },
-      "20": {
-       "basis": "interp",
-       "v": 1040
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 1805
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 1775
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 1750
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 1720
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 1690
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 1660
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 1635
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 1610
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 1585
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 1555
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 1530
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 1505
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 1485
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 1455
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 1430
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 1405
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 1380
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 1350
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 1325
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 1290
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 1265
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 1240
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 1210
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 1190
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 1160
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 1130
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 1100
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 1075
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 1050
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 1020
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 1000
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 970
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 950
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 920
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 895
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 870
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 840
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 820
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 790
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 770
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 740
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 720
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 690
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 670
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 640
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 620
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 590
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": -10,
+        "weight_lbs": 5500,
+        "fpm": 570
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": -5,
+        "weight_lbs": 5500,
+        "fpm": 545
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 0,
+        "weight_lbs": 5500,
+        "fpm": 520
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 5,
+        "weight_lbs": 5500,
+        "fpm": 500
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 10,
+        "weight_lbs": 5500,
+        "fpm": 470
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 15,
+        "weight_lbs": 5500,
+        "fpm": 450
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 20,
+        "weight_lbs": 5500,
+        "fpm": 430
       }
-     },
-     "8000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1150
+    ],
+    "rate_of_climb_provenance": {
+      "title": "Climb",
+      "conditions": "POWER: maximum continuous. MIXTURE: full rich (TH-1472 thru TH-1840 not in compliance with Raytheon Aircraft S.B. 28-3052); as required by altitude (TH-1841 and after, and prior airplanes in compliance with S.B. 28-3052). FLAPS: up. LANDING GEAR: up. COWL FLAPS: open. CLIMB SPEED: 105 knots (all weights).",
+      "read_from": "chart",
+      "figures": [
+        {
+          "field": "rate_of_climb_fpm",
+          "page": 166,
+          "figure": "5-31",
+          "title": "Climb - Two Engine"
+        }
+      ],
+      "reference_point": {
+        "field": "fpm",
+        "weight_lbs": 5500,
+        "pressure_altitude": 11500,
+        "oat_c": -5,
+        "value": 802,
+        "how": "the sheet's worked example; its weight IS the reference weight 5500 lb, so its printed answer is already the weight-reference-line value - the drawn horizontal measures 798 ft/min. My own curves interpolate to 761 ft/min at PA 11,500 / -5 C, 39 ft/min (5%) below it; see reference_check"
       },
-      "0": {
-       "basis": "poh",
-       "v": 1050
+      "reference_point_error": 38.2,
+      "unanchored": null,
+      "read_tolerance": 25,
+      "read_by": [
+        "reader 1",
+        "reader 2"
+      ],
+      "cells_agreed": 56,
+      "cells_disagreed": 0,
+      "basis": "poh_chart",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003",
+        "publisher": "Raytheon Aircraft Company",
+        "faa_afm": "This book IS the FAA Approved Airplane Flight Manual as well as the POH; Section V Performance is the FAA-approved performance section (5-1 thru 5-62)",
+        "airframe": "Beech Baron 58: two Teledyne Continental IO-550-C, 300 HP each, normally aspirated, fuel-injected, six-cylinder; two McCauley three-blade constant-speed propellers, 77 in diameter. Model 58 max take-off 5500 lb / max landing 5400 lb / max ramp 5524 lb; these tables are for the Model 58 only, not for the lower-gross sibling model the same handbook also covers. Fuel standard 142 gal total / 136 usable, optional 172/166 or 200/194 (Section I General, Descriptive Data, printed pages 1-12 thru 1-15).",
+        "note": "This handbook publishes performance as charts, not tables. The figures carried here were READ off its curves against a calibrated rule (scripts/poh/chart_rule.py) by two readers working independently, and are published only where the two agreed. They carry the basis \"poh_chart\" and are not as exact as a printed number."
       },
-      "20": {
-       "basis": "poh",
-       "v": 950
+      "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+      "grid": {
+        "weights_lbs": [
+          5500
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000,
+          8000,
+          10000,
+          12000,
+          14000
+        ],
+        "oat_c": [
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "poh_cells_published": 56,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/be58.json",
+        "pdf_sha256": "51a2d2d47f88e1c42bb4cdbd422b71b12829d5b33e13120bf52c169d96497c02",
+        "problems": 0,
+        "read": "chart reading checked against the spec and its worked example",
+        "rows_sha256": "4ff80ef6db90e0b5fbb49c2a68465a84b58eaf435f5cd7ca135bf25df95f17dd",
+        "basis": "poh_chart"
       }
-     },
-     "9000": {
-      "-20": {
-       "basis": "extrap",
-       "v": 1060
-      },
-      "0": {
-       "basis": "interp",
-       "v": 960
-      },
-      "20": {
-       "basis": "interp",
-       "v": 860
-      }
-     }
     }
-   },
-   "cells_are": "rate_of_climb",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "POWER: maximum continuous. MIXTURE: full rich (TH-1472 thru TH-1840 not in compliance with Raytheon Aircraft S.B. 28-3052); as required by altitude (TH-1841 and after, and prior airplanes in compliance with S.B. 28-3052). FLAPS: up. LANDING GEAR: up. COWL FLAPS: open. CLIMB SPEED: 105 knots (all weights).",
-   "counts": {
-    "extrap": 11,
-    "interp": 10,
-    "poh": 12
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": null,
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Baron 58/58A, Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003 \u00b7 Climb",
-   "weights_lbs": [
-    5500
-   ]
   },
-  "cruise": {
-   "axes": [
-    "pressure_altitude",
-    "rpm",
-    "mp_inhg",
-    "mixture_mode",
-    "power_label"
-   ],
-   "row_count": 18,
-   "rows": [
-    {
-     "gph": 33.6,
-     "mixture_mode": "best_power",
-     "mp_inhg": 25,
-     "power_label": "max_cruise",
-     "pressure_altitude": 2000,
-     "rpm": 2500,
-     "tas_kts": 195
-    },
-    {
-     "gph": 35.0,
-     "mixture_mode": "best_power",
-     "mp_inhg": 25,
-     "power_label": "max_cruise",
-     "pressure_altitude": 4000,
-     "rpm": 2500,
-     "tas_kts": 201
-    },
-    {
-     "gph": 34.0,
-     "mixture_mode": "best_power",
-     "mp_inhg": 24,
-     "power_label": "max_cruise",
-     "pressure_altitude": 6000,
-     "rpm": 2500,
-     "tas_kts": 202
-    },
-    {
-     "gph": 31.6,
-     "mixture_mode": "best_power",
-     "mp_inhg": 22,
-     "power_label": "max_cruise",
-     "pressure_altitude": 8000,
-     "rpm": 2500,
-     "tas_kts": 200
-    },
-    {
-     "gph": 29.6,
-     "mixture_mode": "best_power",
-     "mp_inhg": 21,
-     "power_label": "max_cruise",
-     "pressure_altitude": 10000,
-     "rpm": 2500,
-     "tas_kts": 198
-    },
-    {
-     "gph": 27.6,
-     "mixture_mode": "best_power",
-     "mp_inhg": 19,
-     "power_label": "max_cruise",
-     "pressure_altitude": 12000,
-     "rpm": 2500,
-     "tas_kts": 195
-    },
-    {
-     "gph": 27.0,
-     "mixture_mode": "best_power",
-     "mp_inhg": 23,
-     "power_label": "normal_cruise",
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 177
-    },
-    {
-     "gph": 28.4,
-     "mixture_mode": "best_power",
-     "mp_inhg": 23,
-     "power_label": "normal_cruise",
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 183
-    },
-    {
-     "gph": 29.4,
-     "mixture_mode": "best_power",
-     "mp_inhg": 23,
-     "power_label": "normal_cruise",
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 190
-    },
-    {
-     "gph": 29.0,
-     "mixture_mode": "best_power",
-     "mp_inhg": 22,
-     "power_label": "normal_cruise",
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 192
-    },
-    {
-     "gph": 27.0,
-     "mixture_mode": "best_power",
-     "mp_inhg": 21,
-     "power_label": "normal_cruise",
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 189
-    },
-    {
-     "gph": 25.4,
-     "mixture_mode": "best_power",
-     "mp_inhg": 19,
-     "power_label": "normal_cruise",
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 186
-    },
-    {
-     "gph": 21.0,
-     "mixture_mode": "best_power",
-     "mp_inhg": 21,
-     "power_label": "economy_cruise",
-     "pressure_altitude": 2000,
-     "rpm": 2100,
-     "tas_kts": 156
-    },
-    {
-     "gph": 21.6,
-     "mixture_mode": "best_power",
-     "mp_inhg": 21,
-     "power_label": "economy_cruise",
-     "pressure_altitude": 4000,
-     "rpm": 2100,
-     "tas_kts": 162
-    },
-    {
-     "gph": 22.6,
-     "mixture_mode": "best_power",
-     "mp_inhg": 21,
-     "power_label": "economy_cruise",
-     "pressure_altitude": 6000,
-     "rpm": 2100,
-     "tas_kts": 167
-    },
-    {
-     "gph": 23.4,
-     "mixture_mode": "best_power",
-     "mp_inhg": 21,
-     "power_label": "economy_cruise",
-     "pressure_altitude": 8000,
-     "rpm": 2100,
-     "tas_kts": 173
-    },
-    {
-     "gph": 23.6,
-     "mixture_mode": "best_power",
-     "mp_inhg": 21,
-     "power_label": "economy_cruise",
-     "pressure_altitude": 10000,
-     "rpm": 2100,
-     "tas_kts": 177
-    },
-    {
-     "gph": 22.0,
-     "mixture_mode": "best_power",
-     "mp_inhg": 19,
-     "power_label": "economy_cruise",
-     "pressure_altitude": 12000,
-     "rpm": 2100,
-     "tas_kts": 173
-    }
-   ],
-   "source": "Max/Recommended/Economy Cruise Power Settings, 20 deg ROP"
+  "app_status": {
+    "module_id": "be58",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
   },
-  "landing": {
-   "cells": {
-    "5400": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1355
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1400
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1450
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1500
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1562
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "interp",
-       "v": 1402
-      },
-      "10": {
-       "basis": "interp",
-       "v": 1452
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1502
-      },
-      "30": {
-       "basis": "interp",
-       "v": 1555
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1612
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1944
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2020
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2101
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 2181
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2252
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1450
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1505
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1555
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1610
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1661
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "interp",
-       "v": 1508
-      },
-      "10": {
-       "basis": "interp",
-       "v": 1560
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1612
-      },
-      "30": {
-       "basis": "interp",
-       "v": 1670
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1726
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1565
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1615
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1670
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1730
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1792
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "interp",
-       "v": 1625
-      },
-      "10": {
-       "basis": "interp",
-       "v": 1682
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1740
-      },
-      "30": {
-       "basis": "interp",
-       "v": 1805
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1872
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1685
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1750
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1810
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1880
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1952
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "interp",
-       "v": 1748
-      },
-      "10": {
-       "basis": "interp",
-       "v": 1815
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1880
-      },
-      "30": {
-       "basis": "interp",
-       "v": 1952
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2024
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 1810
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1880
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1950
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2025
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2097
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1876
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1949
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2024
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 2102
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2173
-      }
-     }
-    }
-   },
-   "cells_are": "landing_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "POWER: retarded to maintain 800 ft/min on final approach. FLAPS: down. LANDING GEAR: down. APPROACH SPEED: IAS as tabulated (5400 lb 95 kt, 5000 lb 91 kt, 4600 lb 87 kt, 4000 lb 81 kt). BRAKING: maximum. RUNWAY: paved, level, dry surface.",
-   "counts": {
-    "extrap": 19,
-    "interp": 16,
-    "poh": 20
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "5400": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 2340
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2420
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2500
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2580
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2662
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "interp",
-       "v": 2425
-      },
-      "10": {
-       "basis": "interp",
-       "v": 2505
-      },
-      "20": {
-       "basis": "interp",
-       "v": 2588
-      },
-      "30": {
-       "basis": "interp",
-       "v": 2670
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2752
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 3251
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3341
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3441
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3541
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3621
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 2510
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2590
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2675
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2760
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2842
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "interp",
-       "v": 2598
-      },
-      "10": {
-       "basis": "interp",
-       "v": 2680
-      },
-      "20": {
-       "basis": "interp",
-       "v": 2762
-      },
-      "30": {
-       "basis": "interp",
-       "v": 2850
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2932
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 2685
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2770
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2850
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2940
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3022
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "interp",
-       "v": 2782
-      },
-      "10": {
-       "basis": "interp",
-       "v": 2870
-      },
-      "20": {
-       "basis": "interp",
-       "v": 2955
-      },
-      "30": {
-       "basis": "interp",
-       "v": 3045
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3137
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 2880
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2970
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3060
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3150
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3252
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "interp",
-       "v": 2970
-      },
-      "10": {
-       "basis": "interp",
-       "v": 3060
-      },
-      "20": {
-       "basis": "interp",
-       "v": 3152
-      },
-      "30": {
-       "basis": "interp",
-       "v": 3245
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3342
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 3060
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3150
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3245
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3340
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3432
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 3154
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3244
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3342
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3439
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3525
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Baron 58/58A, Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003 \u00b7 Landing",
-   "weights_lbs": [
-    5400
-   ]
-  },
-  "takeoff": {
-   "cells": {
-    "5500": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1220
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1320
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1430
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1540
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1662
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "interp",
-       "v": 1342
-      },
-      "10": {
-       "basis": "interp",
-       "v": 1452
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1570
-      },
-      "30": {
-       "basis": "interp",
-       "v": 1690
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1823
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 3190
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3463
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3763
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 4012
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 4385
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1465
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1585
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1710
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1840
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1983
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "interp",
-       "v": 1615
-      },
-      "10": {
-       "basis": "interp",
-       "v": 1745
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1880
-      },
-      "30": {
-       "basis": "interp",
-       "v": 2028
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2185
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1765
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1905
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2050
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2215
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2388
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "interp",
-       "v": 1958
-      },
-      "10": {
-       "basis": "interp",
-       "v": 2115
-      },
-      "20": {
-       "basis": "interp",
-       "v": 2280
-      },
-      "30": {
-       "basis": "interp",
-       "v": 2458
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2656
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 2150
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2325
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2510
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2700
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2924
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2373
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2569
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2777
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 2981
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3236
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2619
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2838
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3073
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3291
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3581
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2891
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3135
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3401
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3634
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3963
-      }
-     }
-    }
-   },
-   "cells_are": "takeoff_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "POWER: take-off power set before brake release. MIXTURE: full rich (TH-1472 thru TH-1840 not in compliance with Raytheon Aircraft S.B. 28-3052); as required by field elevation (TH-1841 and after, and prior airplanes in compliance with S.B. 28-3052). FLAPS: up. LANDING GEAR: retract after positive climb established. COWL FLAPS: open. RUNWAY: paved, level, dry surface. Take-off speeds (all weights): rotation 85 kt, 50 ft 100 kt.",
-   "counts": {
-    "extrap": 27,
-    "interp": 12,
-    "poh": 16
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "5500": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 2100
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2255
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2420
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2595
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 2788
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "interp",
-       "v": 2290
-      },
-      "10": {
-       "basis": "interp",
-       "v": 2462
-      },
-      "20": {
-       "basis": "interp",
-       "v": 2642
-      },
-      "30": {
-       "basis": "interp",
-       "v": 2852
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3072
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 5623
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 6200
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 7097
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 8066
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 8976
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 2480
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2670
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2865
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3110
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3355
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "interp",
-       "v": 2722
-      },
-      "10": {
-       "basis": "interp",
-       "v": 2948
-      },
-      "20": {
-       "basis": "interp",
-       "v": 3182
-      },
-      "30": {
-       "basis": "interp",
-       "v": 3450
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3746
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 2965
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3225
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3500
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3790
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 4138
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "interp",
-       "v": 3318
-      },
-      "10": {
-       "basis": "interp",
-       "v": 3618
-      },
-      "20": {
-       "basis": "interp",
-       "v": 3965
-      },
-      "30": {
-       "basis": "interp",
-       "v": 4332
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 4747
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 3670
-      },
-      "10": {
-       "basis": "poh",
-       "v": 4010
-      },
-      "20": {
-       "basis": "poh",
-       "v": 4430
-      },
-      "30": {
-       "basis": "poh",
-       "v": 4875
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 5356
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "extrap",
-       "v": 4083
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 4471
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 4984
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 5529
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 6094
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 4543
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 4986
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 5607
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 6271
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 6934
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 5054
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 5560
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 6308
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 7112
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 7889
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Beech Baron 58 (Baron 58/58A, Serials TH-1472 and After, except TH-1476, TH-1487, TH-1489 and TH-1498), P/N 58-590000-39, Revision B1 - June 2004; Section V Performance pages are dated June 2003 \u00b7 Takeoff",
-   "weights_lbs": [
-    5500
-   ]
+  "source_files": {
+    "spec": "scripts/poh/specs/be58.json",
+    "extracted": "scripts/poh/extracted/be58.json",
+    "pdf": "Beechcraft/Beechcraft-B58-Baron-POH.pdf",
+    "draft": null
   }
- },
- "slug": "beechcraft-baron-58",
- "v_speeds": {
-  "best_glide": 115,
-  "va": 156,
-  "vfe": 122,
-  "vmc": 84,
-  "vne": 223,
-  "vno": 195,
-  "vs0": 67,
-  "vs1": 78,
-  "vx": 92,
-  "vxse": 96,
-  "vy": 105,
-  "vyse": 101
- }
 }

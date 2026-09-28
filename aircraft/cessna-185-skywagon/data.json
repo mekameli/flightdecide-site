@@ -1,27 +1,41 @@
 {
- "data_version": 1,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "C185",
- "limits": {
-  "empty_weight_lbs": 2050,
-  "max_gross_weight_lbs": 3350,
-  "service_ceiling_ft": 17150,
-  "usable_fuel_gal": 84,
-  "useful_load_lbs": 1300
- },
- "manufacturer": "Cessna",
- "name": "Cessna 185 Skywagon",
- "performance": {},
- "slug": "cessna-185-skywagon",
- "v_speeds": {
-  "best_glide": 72,
-  "vfe": 100,
-  "vne": 182,
-  "vno": 148,
-  "vs0": 47,
-  "vs1": 55,
-  "vx": 75,
-  "vy": 88
- }
+  "type": "C185",
+  "name": "Cessna 185 Skywagon",
+  "marketing_name": "Cessna 185 Skywagon",
+  "manufacturer": "Cessna",
+  "icao_type": "C185",
+  "weight_balance": {
+    "stations": {
+      "rear_seats_arm": 73.0,
+      "fuel_arm": 46.5
+    },
+    "provenance": {
+      "source_doc": "FAA TCDS 3A24 (Cessna 180/185 series), Model A185F Landplane (Continental IO-520-D, MTOW 3350 lb) [A185E S/N 185-1236 up shares the same 3350 lb envelope]",
+      "revision": "Revision 40",
+      "page": "3A24 Section IV Model A185F (C.G. Range Landplane, No. of Seats, Fuel Capacity) + Section III Model A185E + 'Data Pertinent to All Models' (Datum, Empty Weight C.G. Range: None)",
+      "datum": "Fuselage station 0.0 (front face of firewall)",
+      "basis": "TCDS-verbatim (CG envelope, aft limit, fuel arm) + confirmed (rear-seat arm = TCDS option) + POH-nominal (front-seat arm within TCDS adjustable range)",
+      "confidence": "high",
+      "verified_on": "2026-07-26",
+      "verified_by": "FD-419 S4 (claude-opus-4-8; primary-TCDS PDF extraction 3A24 Rev 40)",
+      "sources": [
+        "FAA TCDS 3A24 Rev 40, Model A185F Landplane: C.G. Range (+41.9) to (+46.5) at 3350 lb, (+34.5) to (+46.5) at 2100 lb or less, straight line variation; Number of Seats 6 (2 at +36 to +50 [front], 2 at +65 or +73 [center], 2 at +97 [aft]); Fuel 88 gal / 84 usable, two 44.0 gal tanks in wings at +46.5 (S/N 18502300, 18503684 and on); Empty Weight C.G. Range None; Datum front face of firewall (fuselage station 0.0)"
+      ],
+      "notes": "FD-413 forward-limit-taper + aft-limit correction. Aft limit 47.0 -> 46.5 (certified A185E/F aft is +46.5; module was 0.5 in TOO PERMISSIVE AFT -> moved FORWARD = more restrictive = SAFE DIRECTION). Forward limit was a near-flat 29.0@<=2800 / 30.5@3350 on a ~5-11 in-too-forward scale -> certified taper 34.5@<=2100 / 41.9@3350 (module permitted CG up to 11.4 in more nose-heavy than certified at gross -> moved AFT = more restrictive = SAFE DIRECTION; worst forward-CG defect in this batch, same class as S3 c175). Certified forward limit is a single straight line 34.5 at <=2100 lb to 41.9 at 3350 lb; the middle breakpoint (2800, 38.6) lies on that line; app clamps below 2100 to 34.5. fuel_arm 46.0 -> 46.5 (module usable_fuel 84 = the 88 gal / 84 usable config whose two 44.0 gal tanks are at +46.5; the +48 arm belongs to the 65/61 gal configs). front_seats_arm 37.0 UNCHANGED (TCDS +36 to +50 adjustable, POH-nominal in range); rear_seats_arm 73.0 UNCHANGED (TCDS '+65 or +73', 73 is a certified option). baggage_arm 95.0 UNCHANGED + FLAG (TCDS 'reference weight and balance data' publishes no single baggage arm; verify against A185F POH Section 6 in Track B). empty_weight_arm 38.5 UNCHANGED (TCDS Empty Weight C.G. Range None; within corrected envelope [34.5, 46.5]). NOT changed this slice (drift-coupled, Track B): usable_fuel_gal 84, empty_weight 2050. Full findings: docs/fd-419-s4-cessna-singles-wb-batch-b-findings-2026-07-26.md."
+    }
+  },
+  "app_status": {
+    "module_id": "c185",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
+  },
+  "source_files": {
+    "spec": "scripts/poh/specs/c185.json",
+    "extracted": "scripts/poh/extracted/c185.json",
+    "pdf": "Cessna/Cessna-185-Skywagon-POH.pdf",
+    "draft": null
+  }
 }

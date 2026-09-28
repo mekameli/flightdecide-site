@@ -1,2559 +1,3446 @@
 {
- "data_version": 2,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "SR22",
- "limits": {
-  "empty_weight_lbs": 2334,
-  "max_gross_weight_lbs": 3400,
-  "service_ceiling_ft": 17500,
-  "usable_fuel_gal": 81,
-  "useful_load_lbs": 1066
- },
- "manufacturer": "Cirrus",
- "name": "Cirrus SR22",
- "performance": {
-  "climb": {
-   "cells": {
-    "2900": {
-     "0": {
-      "-20": {
-       "basis": "poh",
-       "v": 1761
+  "type": "SR22",
+  "name": "Cirrus SR22",
+  "marketing_name": "Cirrus SR22",
+  "manufacturer": "Cirrus",
+  "icao_type": "SR22",
+  "performance": {
+    "takeoff_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 605
       },
-      "0": {
-       "basis": "poh",
-       "v": 1748
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 654
       },
-      "20": {
-       "basis": "poh",
-       "v": 1726
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 704
       },
-      "40": {
-       "basis": "poh",
-       "v": 1698
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 757
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 811
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 668
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 721
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 777
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 835
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 895
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 737
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 796
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 857
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 921
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 989
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 815
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 880
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 948
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1018
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1092
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 901
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 973
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1048
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1126
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1207
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 998
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1078
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1161
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1248
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1337
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1107
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1287
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1383
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1483
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1229
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1327
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1429
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1535
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1646
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1366
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1475
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1588
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1706
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1829
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1520
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1641
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1767
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1899
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 2035
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1683
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1828
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1969
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 2115
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 2267
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 910
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 982
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1058
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1137
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1219
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1003
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1084
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1167
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1254
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1344
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1108
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1196
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1289
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1385
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1484
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1224
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1322
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1424
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1530
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1640
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1354
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1463
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1575
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1693
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1814
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1500
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1620
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1746
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1875
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2009
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1663
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1796
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1935
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2078
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2228
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1846
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1994
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2147
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2307
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2473
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2052
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2216
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2387
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2564
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2748
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2284
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2466
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2656
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2853
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3058
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2544
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2748
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2959
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 3179
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3407
       }
-     },
-     "1000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1695
+    ],
+    "takeoff_ground_roll_provenance": {
+      "figure": "Figure 5-9",
+      "title": "Takeoff Distance",
+      "conditions": "Flaps 50%, takeoff power, dry paved runway",
+      "sheets": [
+        {
+          "page": 123,
+          "printed_page": "5-19",
+          "weight_lbs": 3400,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "page": 124,
+          "printed_page": "5-20",
+          "weight_lbs": 2900,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [
+        {
+          "pressure_altitude": 8000,
+          "oat_c": 30,
+          "weight_lbs": 3400,
+          "series": 1,
+          "printed_in_handbook": 2823,
+          "published_instead": 4080,
+          "method": "bounded by the 40 C cell of the same table",
+          "reason": "Handbook prints 2823 ft; the run 3103/3335/3575/-/4080 and the later GTSx revision (3871 ft) both show this is a typographical error, optimistic by ~1000 ft."
+        }
+      ],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
       },
-      "0": {
-       "basis": "interp",
-       "v": 1679
+      "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+      "grid": {
+        "weights_lbs": [
+          2900,
+          3400
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "interp",
-       "v": 1655
-      },
-      "40": {
-       "basis": "interp",
-       "v": 1625
+      "poh_cells_published": 110,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/sr22.json",
+        "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "7dfd1aacbcb930c8be98ed7b3ce25614f2442d11b63bf1cd335dd7fd979429d6",
+        "basis": "poh_verbatim"
       }
-     },
-     "10000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1084
-      },
-      "0": {
-       "basis": "poh",
-       "v": 1046
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1004
-      },
-      "40": {
-       "basis": "poh",
-       "v": 958
-      }
-     },
-     "2000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1629
-      },
-      "0": {
-       "basis": "poh",
-       "v": 1610
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1584
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1552
-      }
-     },
-     "3000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1562
-      },
-      "0": {
-       "basis": "interp",
-       "v": 1540
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1512
-      },
-      "40": {
-       "basis": "interp",
-       "v": 1478
-      }
-     },
-     "4000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1494
-      },
-      "0": {
-       "basis": "poh",
-       "v": 1471
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1441
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1405
-      }
-     },
-     "5000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1426
-      },
-      "0": {
-       "basis": "interp",
-       "v": 1401
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1368
-      },
-      "40": {
-       "basis": "interp",
-       "v": 1331
-      }
-     },
-     "6000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1359
-      },
-      "0": {
-       "basis": "poh",
-       "v": 1331
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1296
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1257
-      }
-     },
-     "7000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1290
-      },
-      "0": {
-       "basis": "interp",
-       "v": 1260
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1224
-      },
-      "40": {
-       "basis": "interp",
-       "v": 1182
-      }
-     },
-     "8000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1222
-      },
-      "0": {
-       "basis": "poh",
-       "v": 1189
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1151
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1108
-      }
-     },
-     "9000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1153
-      },
-      "0": {
-       "basis": "interp",
-       "v": 1118
-      },
-      "20": {
-       "basis": "interp",
-       "v": 1078
-      },
-      "40": {
-       "basis": "interp",
-       "v": 1033
-      }
-     }
     },
-    "3400": {
-     "0": {
-      "-20": {
-       "basis": "poh",
-       "v": 1428
+    "takeoff_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 958
       },
-      "0": {
-       "basis": "poh",
-       "v": 1414
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1029
       },
-      "20": {
-       "basis": "poh",
-       "v": 1392
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1103
       },
-      "40": {
-       "basis": "poh",
-       "v": 1366
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1180
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1259
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1053
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1131
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1212
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1297
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1383
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1158
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1244
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1334
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1426
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1522
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1275
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1370
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1469
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1570
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1676
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1408
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1510
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1619
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1731
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 1847
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1552
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1667
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1787
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 1911
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 2039
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1714
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 1842
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 1974
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 2111
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 2253
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 1896
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 2037
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 2184
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 2335
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 2492
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 2100
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 2257
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 2419
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 2587
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 2760
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 2329
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 2503
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 2682
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 2868
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 3061
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "distance_ft": 2586
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 10,
+        "weight_lbs": 2900,
+        "distance_ft": 2779
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "distance_ft": 2978
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 30,
+        "weight_lbs": 2900,
+        "distance_ft": 3185
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "distance_ft": 3399
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1414
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1520
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1629
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1742
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1860
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1554
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1670
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1790
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1915
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2044
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1710
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1837
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1970
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2107
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2248
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1883
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2024
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2169
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2320
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2476
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2076
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2231
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2392
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2558
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2730
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2291
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2462
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2640
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2823
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3013
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2532
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2721
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2917
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 3120
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3330
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2801
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 3010
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 3227
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 3452
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3684
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 3103
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 3335
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 3575
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 4080
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 4080
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 3442
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 3698
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 3965
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 4240
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 4526
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 3822
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 4107
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 4403
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 4709
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 5026
       }
-     },
-     "1000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1370
+    ],
+    "takeoff_over_50ft_provenance": {
+      "figure": "Figure 5-9",
+      "title": "Takeoff Distance",
+      "conditions": "Flaps 50%, takeoff power, dry paved runway",
+      "sheets": [
+        {
+          "page": 123,
+          "printed_page": "5-19",
+          "weight_lbs": 3400,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "page": 124,
+          "printed_page": "5-20",
+          "weight_lbs": 2900,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [
+        {
+          "pressure_altitude": 8000,
+          "oat_c": 30,
+          "weight_lbs": 3400,
+          "series": 1,
+          "printed_in_handbook": 2823,
+          "published_instead": 4080,
+          "method": "bounded by the 40 C cell of the same table",
+          "reason": "Handbook prints 2823 ft; the run 3103/3335/3575/-/4080 and the later GTSx revision (3871 ft) both show this is a typographical error, optimistic by ~1000 ft."
+        }
+      ],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
       },
-      "0": {
-       "basis": "interp",
-       "v": 1353
+      "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+      "grid": {
+        "weights_lbs": [
+          2900,
+          3400
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "interp",
-       "v": 1330
-      },
-      "40": {
-       "basis": "interp",
-       "v": 1302
+      "poh_cells_published": 110,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/sr22.json",
+        "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "138634d351ec7e3c54c32c2dc9ff459aaa83ff433b9c5826526208f381540fdc",
+        "basis": "poh_verbatim"
       }
-     },
-     "10000": {
-      "-20": {
-       "basis": "poh",
-       "v": 830
+    },
+    "landing_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1082
       },
-      "0": {
-       "basis": "poh",
-       "v": 794
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1121
       },
-      "20": {
-       "basis": "poh",
-       "v": 754
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1161
       },
-      "40": {
-       "basis": "poh",
-       "v": 712
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1200
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1240
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1122
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1163
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1204
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1245
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1286
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1163
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1206
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1248
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1291
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1334
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1207
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1251
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1295
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1339
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1384
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1252
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1298
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1344
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1390
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1436
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1300
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1348
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1395
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1443
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1490
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1350
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1399
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1449
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1498
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1547
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1402
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1453
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1504
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1556
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1607
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1456
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1509
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1563
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1616
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1669
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1513
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1569
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1624
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1679
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1735
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 1573
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 1630
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 1688
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 1746
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 1803
       }
-     },
-     "2000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1311
+    ],
+    "landing_ground_roll_provenance": {
+      "title": "Landing Distance",
+      "sheets": [
+        {
+          "page": 139,
+          "printed_page": "5-35",
+          "weight_lbs": 3400,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
       },
-      "0": {
-       "basis": "poh",
-       "v": 1292
+      "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+      "grid": {
+        "weights_lbs": [
+          3400
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 1267
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1238
+      "poh_cells_published": 55,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/sr22.json",
+        "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "cdc1a173ec5ebbe1cc39b5639b95ba6e46834b26bd2361e68d2238152ce95d00",
+        "basis": "poh_verbatim"
       }
-     },
-     "3000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1252
+    },
+    "landing_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2244
       },
-      "0": {
-       "basis": "interp",
-       "v": 1231
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2298
       },
-      "20": {
-       "basis": "interp",
-       "v": 1204
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2352
       },
-      "40": {
-       "basis": "interp",
-       "v": 1173
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2408
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2464
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2298
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2355
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2412
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2470
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2529
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2356
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2415
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2476
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2537
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2598
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2417
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2479
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2543
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2607
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2672
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2481
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2547
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2614
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2681
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2749
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2550
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2619
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2689
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2759
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2831
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2622
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2694
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2768
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2842
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 2917
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2698
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2775
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2852
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 2930
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3008
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2779
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2860
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 2941
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 3022
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3105
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2865
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 2949
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 3035
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 3121
+      },
+      {
+        "pressure_altitude": 9000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3207
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "distance_ft": 2956
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 10,
+        "weight_lbs": 3400,
+        "distance_ft": 3045
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "distance_ft": 3134
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 30,
+        "weight_lbs": 3400,
+        "distance_ft": 3225
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "distance_ft": 3316
       }
-     },
-     "4000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1193
+    ],
+    "landing_over_50ft_provenance": {
+      "title": "Landing Distance",
+      "sheets": [
+        {
+          "page": 139,
+          "printed_page": "5-35",
+          "weight_lbs": 3400,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
       },
-      "0": {
-       "basis": "poh",
-       "v": 1170
+      "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+      "grid": {
+        "weights_lbs": [
+          3400
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 1141
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1108
+      "poh_cells_published": 55,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/sr22.json",
+        "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "da0b6b739c306d13fad3b2caacd3bbc3f1f8eae9051ba765b7d9e40b3310502b",
+        "basis": "poh_verbatim"
       }
-     },
-     "5000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1134
+    },
+    "rate_of_climb": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 1761
       },
-      "0": {
-       "basis": "interp",
-       "v": 1108
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 1748
       },
-      "20": {
-       "basis": "interp",
-       "v": 1077
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 1726
       },
-      "40": {
-       "basis": "interp",
-       "v": 1042
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 1698
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 1629
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 1610
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 1584
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 1552
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 1494
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 1471
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 1441
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 1405
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 1359
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 1331
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 1296
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 1257
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 1222
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 1189
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 1151
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 1108
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 1084
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 1046
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 1004
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 958
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 945
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 902
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 855
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 806
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 804
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 757
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 706
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 653
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": -20,
+        "weight_lbs": 2900,
+        "fpm": 662
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": 0,
+        "weight_lbs": 2900,
+        "fpm": 610
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": 20,
+        "weight_lbs": 2900,
+        "fpm": 556
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": 40,
+        "weight_lbs": 2900,
+        "fpm": 499
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 1428
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 1414
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 1392
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 1366
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 1311
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 1292
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 1267
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 1238
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 1193
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 1170
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 1141
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 1108
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 1074
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 1046
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 1013
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 977
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 953
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 921
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 884
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 845
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 830
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 794
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 754
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 712
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 706
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 666
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 623
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 577
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 581
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 537
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 490
+      },
+      {
+        "pressure_altitude": 14000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 441
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": -20,
+        "weight_lbs": 3400,
+        "fpm": 454
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": 0,
+        "weight_lbs": 3400,
+        "fpm": 406
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": 20,
+        "weight_lbs": 3400,
+        "fpm": 355
+      },
+      {
+        "pressure_altitude": 16000,
+        "oat_c": 40,
+        "weight_lbs": 3400,
+        "fpm": 303
       }
-     },
-     "6000": {
-      "-20": {
-       "basis": "poh",
-       "v": 1074
+    ],
+    "rate_of_climb_provenance": {
+      "title": "Enroute Rate of Climb",
+      "conditions": "Full throttle, mixture as required, flaps 0% (up), best rate of climb airspeed",
+      "note": "The handbook also publishes Takeoff Rate of Climb and Balked Landing Rate of Climb; this is the enroute table.",
+      "sheets": [
+        {
+          "page": 128,
+          "printed_page": null,
+          "weight_lbs": [
+            2900,
+            3400
+          ],
+          "altitudes": [
+            0,
+            2000,
+            4000,
+            6000,
+            8000,
+            10000,
+            12000,
+            14000,
+            16000
+          ],
+          "temps": [
+            -20,
+            0,
+            20,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
       },
-      "0": {
-       "basis": "poh",
-       "v": 1046
+      "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+      "grid": {
+        "weights_lbs": [
+          2900,
+          3400
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000,
+          8000,
+          10000,
+          12000,
+          14000,
+          16000
+        ],
+        "oat_c": [
+          -20,
+          0,
+          20,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 1013
-      },
-      "40": {
-       "basis": "poh",
-       "v": 977
+      "poh_cells_published": 72,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/sr22.json",
+        "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "3c1cab4f76cdb127e79539f0435064cc913ba52c57b4dc0cb50f58bc5c0b0f06",
+        "basis": "poh_verbatim"
       }
-     },
-     "7000": {
-      "-20": {
-       "basis": "interp",
-       "v": 1014
+    },
+    "stall_speeds": [
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 0,
+        "kias": 70,
+        "kcas": 69
       },
-      "0": {
-       "basis": "interp",
-       "v": 984
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 0,
+        "kias": 67,
+        "kcas": 64
       },
-      "20": {
-       "basis": "interp",
-       "v": 948
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 0,
+        "kias": 59,
+        "kcas": 59
       },
-      "40": {
-       "basis": "interp",
-       "v": 911
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 15,
+        "kias": 71,
+        "kcas": 70
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 15,
+        "kias": 68,
+        "kcas": 65
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 15,
+        "kias": 62,
+        "kcas": 60
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 30,
+        "kias": 75,
+        "kcas": 74
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 30,
+        "kias": 72,
+        "kcas": 69
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 30,
+        "kias": 66,
+        "kcas": 64
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 45,
+        "kias": 84,
+        "kcas": 82
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 45,
+        "kias": 80,
+        "kcas": 76
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 45,
+        "kias": 73,
+        "kcas": 70
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 60,
+        "kias": 99,
+        "kcas": 97
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 60,
+        "kias": 95,
+        "kcas": 90
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_forward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 60,
+        "kias": 87,
+        "kcas": 84
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 0,
+        "kias": 68,
+        "kcas": 67
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 0,
+        "kias": 66,
+        "kcas": 62
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 0,
+        "kias": 61,
+        "kcas": 59
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 15,
+        "kias": 69,
+        "kcas": 68
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 15,
+        "kias": 67,
+        "kcas": 63
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 15,
+        "kias": 62,
+        "kcas": 60
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 30,
+        "kias": 73,
+        "kcas": 72
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 30,
+        "kias": 71,
+        "kcas": 67
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 30,
+        "kias": 65,
+        "kcas": 63
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 45,
+        "kias": 81,
+        "kcas": 79
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 45,
+        "kias": 78,
+        "kcas": 74
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 45,
+        "kias": 72,
+        "kcas": 70
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "0% (up)",
+        "bank_angle_deg": 60,
+        "kias": 96,
+        "kcas": 94
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "50%",
+        "bank_angle_deg": 60,
+        "kias": 93,
+        "kcas": 88
+      },
+      {
+        "weight_lbs": 3400,
+        "cg": "most_rearward",
+        "flap_setting": "100% (down)",
+        "bank_angle_deg": 60,
+        "kias": 86,
+        "kcas": 83
       }
-     },
-     "8000": {
-      "-20": {
-       "basis": "poh",
-       "v": 953
+    ],
+    "stall_speeds_provenance": {
+      "title": "Stall Speeds",
+      "conditions": "Power idle",
+      "sheets": [
+        {
+          "page": 120,
+          "printed_page": "5-16",
+          "weight_lbs": 3400
+        }
+      ],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
       },
-      "0": {
-       "basis": "poh",
-       "v": 921
-      },
-      "20": {
-       "basis": "poh",
-       "v": 884
-      },
-      "40": {
-       "basis": "poh",
-       "v": 845
+      "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+      "row_count": 30,
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/sr22.json",
+        "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "a6bb7c2dabc23d1c26355aa40074723446e20f794ee30a46f6a2d791037c12b8",
+        "basis": "poh_verbatim"
       }
-     },
-     "9000": {
-      "-20": {
-       "basis": "interp",
-       "v": 892
+    },
+    "range_endurance": [
+      {
+        "pressure_altitude": 0,
+        "block": "65% power",
+        "climb_fuel_gal": 0.0,
+        "fuel_remaining_for_cruise_gal": 70.8,
+        "ktas": 158,
+        "fuel_flow_gph": 15.4,
+        "endurance_hours": 4.6,
+        "range_nm": 725,
+        "specific_range_nm_per_gal": 10.3
       },
-      "0": {
-       "basis": "interp",
-       "v": 858
+      {
+        "pressure_altitude": 2000,
+        "block": "65% power",
+        "climb_fuel_gal": 0.7,
+        "fuel_remaining_for_cruise_gal": 69.0,
+        "ktas": 161,
+        "fuel_flow_gph": 15.4,
+        "endurance_hours": 4.5,
+        "range_nm": 735,
+        "specific_range_nm_per_gal": 10.5
       },
-      "20": {
-       "basis": "interp",
-       "v": 819
+      {
+        "pressure_altitude": 4000,
+        "block": "65% power",
+        "climb_fuel_gal": 1.3,
+        "fuel_remaining_for_cruise_gal": 67.2,
+        "ktas": 165,
+        "fuel_flow_gph": 15.4,
+        "endurance_hours": 4.5,
+        "range_nm": 745,
+        "specific_range_nm_per_gal": 10.7
       },
-      "40": {
-       "basis": "interp",
-       "v": 778
+      {
+        "pressure_altitude": 6000,
+        "block": "65% power",
+        "climb_fuel_gal": 2.0,
+        "fuel_remaining_for_cruise_gal": 65.3,
+        "ktas": 168,
+        "fuel_flow_gph": 15.4,
+        "endurance_hours": 4.5,
+        "range_nm": 755,
+        "specific_range_nm_per_gal": 11.0
+      },
+      {
+        "pressure_altitude": 8000,
+        "block": "65% power",
+        "climb_fuel_gal": 2.7,
+        "fuel_remaining_for_cruise_gal": 63.5,
+        "ktas": 171,
+        "fuel_flow_gph": 15.4,
+        "endurance_hours": 4.4,
+        "range_nm": 765,
+        "specific_range_nm_per_gal": 11.2
+      },
+      {
+        "pressure_altitude": 10000,
+        "block": "65% power",
+        "climb_fuel_gal": 3.5,
+        "fuel_remaining_for_cruise_gal": 61.6,
+        "ktas": 174,
+        "fuel_flow_gph": 15.4,
+        "endurance_hours": 4.4,
+        "range_nm": 775,
+        "specific_range_nm_per_gal": 11.5
+      },
+      {
+        "pressure_altitude": 12000,
+        "block": "65% power",
+        "climb_fuel_gal": 4.4,
+        "fuel_remaining_for_cruise_gal": 59.8,
+        "ktas": 178,
+        "fuel_flow_gph": 15.4,
+        "endurance_hours": 4.3,
+        "range_nm": 785,
+        "specific_range_nm_per_gal": 11.8
+      },
+      {
+        "pressure_altitude": 0,
+        "block": "55% power",
+        "climb_fuel_gal": 0.0,
+        "fuel_remaining_for_cruise_gal": 70.8,
+        "ktas": 149,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.4,
+        "range_nm": 806,
+        "specific_range_nm_per_gal": 11.4
+      },
+      {
+        "pressure_altitude": 2000,
+        "block": "55% power",
+        "climb_fuel_gal": 0.7,
+        "fuel_remaining_for_cruise_gal": 69.0,
+        "ktas": 152,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.4,
+        "range_nm": 815,
+        "specific_range_nm_per_gal": 11.6
+      },
+      {
+        "pressure_altitude": 4000,
+        "block": "55% power",
+        "climb_fuel_gal": 1.3,
+        "fuel_remaining_for_cruise_gal": 67.2,
+        "ktas": 154,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.3,
+        "range_nm": 825,
+        "specific_range_nm_per_gal": 11.9
+      },
+      {
+        "pressure_altitude": 6000,
+        "block": "55% power",
+        "climb_fuel_gal": 2.0,
+        "fuel_remaining_for_cruise_gal": 65.3,
+        "ktas": 157,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.3,
+        "range_nm": 835,
+        "specific_range_nm_per_gal": 12.2
+      },
+      {
+        "pressure_altitude": 8000,
+        "block": "55% power",
+        "climb_fuel_gal": 2.7,
+        "fuel_remaining_for_cruise_gal": 63.5,
+        "ktas": 160,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.2,
+        "range_nm": 845,
+        "specific_range_nm_per_gal": 12.4
+      },
+      {
+        "pressure_altitude": 10000,
+        "block": "55% power",
+        "climb_fuel_gal": 3.5,
+        "fuel_remaining_for_cruise_gal": 61.6,
+        "ktas": 163,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.1,
+        "range_nm": 856,
+        "specific_range_nm_per_gal": 12.7
+      },
+      {
+        "pressure_altitude": 12000,
+        "block": "55% power",
+        "climb_fuel_gal": 4.4,
+        "fuel_remaining_for_cruise_gal": 59.8,
+        "ktas": 166,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.1,
+        "range_nm": 865,
+        "specific_range_nm_per_gal": 13.0
+      },
+      {
+        "pressure_altitude": 14000,
+        "block": "55% power",
+        "climb_fuel_gal": 5.3,
+        "fuel_remaining_for_cruise_gal": 57.8,
+        "ktas": 169,
+        "fuel_flow_gph": 13.1,
+        "endurance_hours": 5.0,
+        "range_nm": 875,
+        "specific_range_nm_per_gal": 13.4
       }
-     }
+    ],
+    "range_endurance_provenance": {
+      "title": "Range / Endurance Profile",
+      "conditions": "Mixture = best power",
+      "sheets": [
+        {
+          "page": 134,
+          "printed_page": "5-30",
+          "weight_lbs": null
+        }
+      ],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
+      },
+      "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+      "row_count": 15,
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/sr22.json",
+        "pdf_sha256": "11b875e700362fd039fb3dcd3ac21e62747759e5a3a835b38125f15118f974c5",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "7982b1d07e29e849b730f37372cdd0a3dea533d9cf06a7360e1c67535a57d04d",
+        "basis": "poh_verbatim"
+      }
     }
-   },
-   "cells_are": "rate_of_climb",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "Full throttle, mixture as required, flaps 0% (up), best rate of climb airspeed",
-   "counts": {
-    "extrap": 0,
-    "interp": 40,
-    "poh": 48
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": null,
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22 \u00b7 P/N 13772-001 \u00b7 Enroute Rate of Climb",
-   "weights_lbs": [
-    3400,
-    2900
-   ]
   },
-  "cruise": {
-   "axes": [
-    "pressure_altitude",
-    "power_pct",
-    "mixture_mode"
-   ],
-   "row_count": 24,
-   "rows": [
-    {
-     "gph": 13.3,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 55,
-     "pressure_altitude": 0,
-     "tas_kts": 143
+  "weight_balance": {
+    "cg_envelope": [
+      {
+        "weight_lbs": 2200,
+        "forward_cg": 138.0,
+        "aft_cg": 148.1
+      },
+      {
+        "weight_lbs": 2700,
+        "forward_cg": 139.1,
+        "aft_cg": 148.1
+      },
+      {
+        "weight_lbs": 3210,
+        "forward_cg": 141.4,
+        "aft_cg": 148.1
+      },
+      {
+        "weight_lbs": 3400,
+        "forward_cg": 143.8,
+        "aft_cg": 148.1
+      }
+    ],
+    "stations": {
+      "front_seats_arm": 143.5,
+      "rear_seats_arm": 180.0,
+      "baggage_arm": 208.0,
+      "fuel_arm": 154.9
     },
-    {
-     "gph": 14.9,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 65,
-     "pressure_altitude": 0,
-     "tas_kts": 155
-    },
-    {
-     "gph": 16.5,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 75,
-     "pressure_altitude": 0,
-     "tas_kts": 164
-    },
-    {
-     "gph": 18.3,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 85,
-     "pressure_altitude": 0,
-     "tas_kts": 173
-    },
-    {
-     "gph": 13.0,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 55,
-     "pressure_altitude": 2000,
-     "tas_kts": 148
-    },
-    {
-     "gph": 14.6,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 65,
-     "pressure_altitude": 2000,
-     "tas_kts": 160
-    },
-    {
-     "gph": 16.2,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 75,
-     "pressure_altitude": 2000,
-     "tas_kts": 169
-    },
-    {
-     "gph": 18.0,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 85,
-     "pressure_altitude": 2000,
-     "tas_kts": 178
-    },
-    {
-     "gph": 12.8,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 55,
-     "pressure_altitude": 4000,
-     "tas_kts": 153
-    },
-    {
-     "gph": 14.3,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 65,
-     "pressure_altitude": 4000,
-     "tas_kts": 165
-    },
-    {
-     "gph": 15.9,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 75,
-     "pressure_altitude": 4000,
-     "tas_kts": 174
-    },
-    {
-     "gph": 17.7,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 85,
-     "pressure_altitude": 4000,
-     "tas_kts": 183
-    },
-    {
-     "gph": 12.5,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 55,
-     "pressure_altitude": 6000,
-     "tas_kts": 158
-    },
-    {
-     "gph": 14.0,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 65,
-     "pressure_altitude": 6000,
-     "tas_kts": 170
-    },
-    {
-     "gph": 15.6,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 75,
-     "pressure_altitude": 6000,
-     "tas_kts": 179
-    },
-    {
-     "gph": 17.4,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 85,
-     "pressure_altitude": 6000,
-     "tas_kts": 187
-    },
-    {
-     "gph": 12.2,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 55,
-     "pressure_altitude": 8000,
-     "tas_kts": 162
-    },
-    {
-     "gph": 13.8,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 65,
-     "pressure_altitude": 8000,
-     "tas_kts": 174
-    },
-    {
-     "gph": 15.3,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 75,
-     "pressure_altitude": 8000,
-     "tas_kts": 183
-    },
-    {
-     "gph": 17.1,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 85,
-     "pressure_altitude": 8000,
-     "tas_kts": 191
-    },
-    {
-     "gph": 12.0,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 55,
-     "pressure_altitude": 10000,
-     "tas_kts": 165
-    },
-    {
-     "gph": 13.6,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 65,
-     "pressure_altitude": 10000,
-     "tas_kts": 177
-    },
-    {
-     "gph": 15.0,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 75,
-     "pressure_altitude": 10000,
-     "tas_kts": 186
-    },
-    {
-     "gph": 16.8,
-     "mixture_mode": "recommended_lean",
-     "power_pct": 85,
-     "pressure_altitude": 10000,
-     "tas_kts": 194
+    "provenance": {
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22",
+        "part_number": "13772-001",
+        "publisher": "Cirrus Design"
+      },
+      "reference_datum": "100 inches forward of firewall",
+      "pages": {
+        "cg_limits_page": "2-9 (Figure 2-4)"
+      },
+      "notes": [
+        "Figure 2-4: forward limit FS 138.0 at 2200 lb, straight-line taper to FS 139.1 at 2700 lb, to FS 141.4 at 3210 lb, to FS 143.8 at 3400 lb. Aft limit FS 148.1 at all weights from 2200 lb to 3400 lb."
+      ],
+      "station_keys_not_published_by_the_handbook": [],
+      "corrections_applied": [],
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "problems": 0,
+        "spec": "scripts/poh/specs/sr22.json",
+        "read": "the spec's transcription of the cited pages; verify.py checks the block against the spec, it does not re-read the PDF for W&B",
+        "covers": [
+          "baggage_arm",
+          "front_seats_arm",
+          "fuel_arm",
+          "rear_seats_arm"
+        ],
+        "rows_sha256": "f850195dd545cc85fac3afe8ce2bf6c59c92a5e33f3208e59934ac01668882d0"
+      }
     }
-   ],
-   "source": ""
   },
-  "landing": {
-   "cells": {
-    "3400": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1082
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1121
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1161
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1200
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1240
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1122
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1163
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1204
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1245
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1286
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "poh",
-       "v": 1573
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1630
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1688
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1746
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1803
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1163
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1206
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1248
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1291
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1334
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1207
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1251
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1295
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1339
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1384
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1252
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1298
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1344
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1390
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1436
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1300
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1348
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1395
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1443
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1490
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1350
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1399
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1449
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1498
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1547
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1402
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1453
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1504
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1556
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1607
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 1456
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1509
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1563
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1616
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1669
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "poh",
-       "v": 1513
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1569
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1624
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1679
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1735
-      }
-     }
-    }
-   },
-   "cells_are": "landing_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": null,
-   "counts": {
-    "extrap": 0,
-    "interp": 0,
-    "poh": 55
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "3400": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 2244
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2298
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2352
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2408
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2464
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 2298
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2355
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2412
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2470
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2529
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "poh",
-       "v": 2956
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3045
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3134
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3225
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3316
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 2356
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2415
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2476
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2537
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2598
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 2417
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2479
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2543
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2607
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2672
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 2481
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2547
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2614
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2681
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2749
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 2550
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2619
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2689
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2759
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2831
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 2622
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2694
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2768
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2842
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2917
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 2698
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2775
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2852
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2930
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3008
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 2779
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2860
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2941
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3022
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3105
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "poh",
-       "v": 2865
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2949
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3035
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3121
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3207
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22 \u00b7 P/N 13772-001 \u00b7 Landing Distance \u00b7 page 5-35",
-   "weights_lbs": [
-    3400
-   ]
+  "app_status": {
+    "module_id": "sr22",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
   },
-  "rangeendurance": {
-   "conditions": "Mixture = best power",
-   "rows": [
-    {
-     "block": "65% power",
-     "climb_fuel_gal": 0.0,
-     "endurance_hours": 4.6,
-     "fuel_flow_gph": 15.4,
-     "fuel_remaining_for_cruise_gal": 70.8,
-     "ktas": 158,
-     "pressure_altitude": 0,
-     "range_nm": 725,
-     "specific_range_nm_per_gal": 10.3
-    },
-    {
-     "block": "65% power",
-     "climb_fuel_gal": 0.7,
-     "endurance_hours": 4.5,
-     "fuel_flow_gph": 15.4,
-     "fuel_remaining_for_cruise_gal": 69.0,
-     "ktas": 161,
-     "pressure_altitude": 2000,
-     "range_nm": 735,
-     "specific_range_nm_per_gal": 10.5
-    },
-    {
-     "block": "65% power",
-     "climb_fuel_gal": 1.3,
-     "endurance_hours": 4.5,
-     "fuel_flow_gph": 15.4,
-     "fuel_remaining_for_cruise_gal": 67.2,
-     "ktas": 165,
-     "pressure_altitude": 4000,
-     "range_nm": 745,
-     "specific_range_nm_per_gal": 10.7
-    },
-    {
-     "block": "65% power",
-     "climb_fuel_gal": 2.0,
-     "endurance_hours": 4.5,
-     "fuel_flow_gph": 15.4,
-     "fuel_remaining_for_cruise_gal": 65.3,
-     "ktas": 168,
-     "pressure_altitude": 6000,
-     "range_nm": 755,
-     "specific_range_nm_per_gal": 11.0
-    },
-    {
-     "block": "65% power",
-     "climb_fuel_gal": 2.7,
-     "endurance_hours": 4.4,
-     "fuel_flow_gph": 15.4,
-     "fuel_remaining_for_cruise_gal": 63.5,
-     "ktas": 171,
-     "pressure_altitude": 8000,
-     "range_nm": 765,
-     "specific_range_nm_per_gal": 11.2
-    },
-    {
-     "block": "65% power",
-     "climb_fuel_gal": 3.5,
-     "endurance_hours": 4.4,
-     "fuel_flow_gph": 15.4,
-     "fuel_remaining_for_cruise_gal": 61.6,
-     "ktas": 174,
-     "pressure_altitude": 10000,
-     "range_nm": 775,
-     "specific_range_nm_per_gal": 11.5
-    },
-    {
-     "block": "65% power",
-     "climb_fuel_gal": 4.4,
-     "endurance_hours": 4.3,
-     "fuel_flow_gph": 15.4,
-     "fuel_remaining_for_cruise_gal": 59.8,
-     "ktas": 178,
-     "pressure_altitude": 12000,
-     "range_nm": 785,
-     "specific_range_nm_per_gal": 11.8
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 0.0,
-     "endurance_hours": 5.4,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 70.8,
-     "ktas": 149,
-     "pressure_altitude": 0,
-     "range_nm": 806,
-     "specific_range_nm_per_gal": 11.4
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 0.7,
-     "endurance_hours": 5.4,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 69.0,
-     "ktas": 152,
-     "pressure_altitude": 2000,
-     "range_nm": 815,
-     "specific_range_nm_per_gal": 11.6
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 1.3,
-     "endurance_hours": 5.3,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 67.2,
-     "ktas": 154,
-     "pressure_altitude": 4000,
-     "range_nm": 825,
-     "specific_range_nm_per_gal": 11.9
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 2.0,
-     "endurance_hours": 5.3,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 65.3,
-     "ktas": 157,
-     "pressure_altitude": 6000,
-     "range_nm": 835,
-     "specific_range_nm_per_gal": 12.2
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 2.7,
-     "endurance_hours": 5.2,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 63.5,
-     "ktas": 160,
-     "pressure_altitude": 8000,
-     "range_nm": 845,
-     "specific_range_nm_per_gal": 12.4
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 3.5,
-     "endurance_hours": 5.1,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 61.6,
-     "ktas": 163,
-     "pressure_altitude": 10000,
-     "range_nm": 856,
-     "specific_range_nm_per_gal": 12.7
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 4.4,
-     "endurance_hours": 5.1,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 59.8,
-     "ktas": 166,
-     "pressure_altitude": 12000,
-     "range_nm": 865,
-     "specific_range_nm_per_gal": 13.0
-    },
-    {
-     "block": "55% power",
-     "climb_fuel_gal": 5.3,
-     "endurance_hours": 5.0,
-     "fuel_flow_gph": 13.1,
-     "fuel_remaining_for_cruise_gal": 57.8,
-     "ktas": 169,
-     "pressure_altitude": 14000,
-     "range_nm": 875,
-     "specific_range_nm_per_gal": 13.4
-    }
-   ],
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22 \u00b7 P/N 13772-001 \u00b7 Range / Endurance Profile \u00b7 page 5-30"
-  },
-  "stall": {
-   "conditions": "Power idle",
-   "rows": [
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_forward",
-     "flap_setting": "0% (up)",
-     "kcas": 69,
-     "kias": 70,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_forward",
-     "flap_setting": "50%",
-     "kcas": 64,
-     "kias": 67,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_forward",
-     "flap_setting": "100% (down)",
-     "kcas": 59,
-     "kias": 59,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 15,
-     "cg": "most_forward",
-     "flap_setting": "0% (up)",
-     "kcas": 70,
-     "kias": 71,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 15,
-     "cg": "most_forward",
-     "flap_setting": "50%",
-     "kcas": 65,
-     "kias": 68,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 15,
-     "cg": "most_forward",
-     "flap_setting": "100% (down)",
-     "kcas": 60,
-     "kias": 62,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_forward",
-     "flap_setting": "0% (up)",
-     "kcas": 74,
-     "kias": 75,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_forward",
-     "flap_setting": "50%",
-     "kcas": 69,
-     "kias": 72,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_forward",
-     "flap_setting": "100% (down)",
-     "kcas": 64,
-     "kias": 66,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_forward",
-     "flap_setting": "0% (up)",
-     "kcas": 82,
-     "kias": 84,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_forward",
-     "flap_setting": "50%",
-     "kcas": 76,
-     "kias": 80,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_forward",
-     "flap_setting": "100% (down)",
-     "kcas": 70,
-     "kias": 73,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_forward",
-     "flap_setting": "0% (up)",
-     "kcas": 97,
-     "kias": 99,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_forward",
-     "flap_setting": "50%",
-     "kcas": 90,
-     "kias": 95,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_forward",
-     "flap_setting": "100% (down)",
-     "kcas": 84,
-     "kias": 87,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_rearward",
-     "flap_setting": "0% (up)",
-     "kcas": 67,
-     "kias": 68,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_rearward",
-     "flap_setting": "50%",
-     "kcas": 62,
-     "kias": 66,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 0,
-     "cg": "most_rearward",
-     "flap_setting": "100% (down)",
-     "kcas": 59,
-     "kias": 61,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 15,
-     "cg": "most_rearward",
-     "flap_setting": "0% (up)",
-     "kcas": 68,
-     "kias": 69,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 15,
-     "cg": "most_rearward",
-     "flap_setting": "50%",
-     "kcas": 63,
-     "kias": 67,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 15,
-     "cg": "most_rearward",
-     "flap_setting": "100% (down)",
-     "kcas": 60,
-     "kias": 62,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_rearward",
-     "flap_setting": "0% (up)",
-     "kcas": 72,
-     "kias": 73,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_rearward",
-     "flap_setting": "50%",
-     "kcas": 67,
-     "kias": 71,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 30,
-     "cg": "most_rearward",
-     "flap_setting": "100% (down)",
-     "kcas": 63,
-     "kias": 65,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_rearward",
-     "flap_setting": "0% (up)",
-     "kcas": 79,
-     "kias": 81,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_rearward",
-     "flap_setting": "50%",
-     "kcas": 74,
-     "kias": 78,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 45,
-     "cg": "most_rearward",
-     "flap_setting": "100% (down)",
-     "kcas": 70,
-     "kias": 72,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_rearward",
-     "flap_setting": "0% (up)",
-     "kcas": 94,
-     "kias": 96,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_rearward",
-     "flap_setting": "50%",
-     "kcas": 88,
-     "kias": 93,
-     "weight_lbs": 3400
-    },
-    {
-     "bank_angle_deg": 60,
-     "cg": "most_rearward",
-     "flap_setting": "100% (down)",
-     "kcas": 83,
-     "kias": 86,
-     "weight_lbs": 3400
-    }
-   ],
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22 \u00b7 P/N 13772-001 \u00b7 Stall Speeds \u00b7 page 5-16"
-  },
-  "takeoff": {
-   "cells": {
-    "2900": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 605
-      },
-      "10": {
-       "basis": "poh",
-       "v": 654
-      },
-      "20": {
-       "basis": "poh",
-       "v": 704
-      },
-      "30": {
-       "basis": "poh",
-       "v": 757
-      },
-      "40": {
-       "basis": "poh",
-       "v": 811
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 668
-      },
-      "10": {
-       "basis": "poh",
-       "v": 721
-      },
-      "20": {
-       "basis": "poh",
-       "v": 777
-      },
-      "30": {
-       "basis": "poh",
-       "v": 835
-      },
-      "40": {
-       "basis": "poh",
-       "v": 895
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "poh",
-       "v": 1683
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1828
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1969
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2115
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2267
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 737
-      },
-      "10": {
-       "basis": "poh",
-       "v": 796
-      },
-      "20": {
-       "basis": "poh",
-       "v": 857
-      },
-      "30": {
-       "basis": "poh",
-       "v": 921
-      },
-      "40": {
-       "basis": "poh",
-       "v": 989
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 815
-      },
-      "10": {
-       "basis": "poh",
-       "v": 880
-      },
-      "20": {
-       "basis": "poh",
-       "v": 948
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1018
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1092
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 901
-      },
-      "10": {
-       "basis": "poh",
-       "v": 973
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1048
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1126
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1207
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 998
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1078
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1161
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1248
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1337
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1107
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1195
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1287
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1383
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1483
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1229
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1327
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1429
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1535
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1646
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 1366
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1475
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1588
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1706
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1829
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "poh",
-       "v": 1520
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1641
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1767
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1899
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2035
-      }
-     }
-    },
-    "3400": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 910
-      },
-      "10": {
-       "basis": "poh",
-       "v": 982
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1058
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1137
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1219
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1003
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1084
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1167
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1254
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1344
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "poh",
-       "v": 2544
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2748
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2959
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3179
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3407
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1108
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1196
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1289
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1385
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1484
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1224
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1322
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1424
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1530
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1640
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1354
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1463
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1575
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1693
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1814
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1500
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1620
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1746
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1875
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2009
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1663
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1796
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1935
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2078
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2228
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1846
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1994
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2147
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2307
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2473
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 2052
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2216
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2387
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2564
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2748
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "poh",
-       "v": 2284
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2466
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2656
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2853
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3058
-      }
-     }
-    }
-   },
-   "cells_are": "takeoff_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "Flaps 50%, takeoff power, dry paved runway",
-   "counts": {
-    "extrap": 0,
-    "interp": 0,
-    "poh": 110
-   },
-   "handbook_misprints_bounded": [
-    {
-     "method": "bounded by the 40 C cell of the same table",
-     "oat_c": 30,
-     "pressure_altitude": 8000,
-     "printed_in_handbook": 2823,
-     "published_instead": 4080,
-     "reason": "Handbook prints 2823 ft; the run 3103/3335/3575/-/4080 and the later GTSx revision (3871 ft) both show this is a typographical error, optimistic by ~1000 ft.",
-     "series": 1,
-     "weight_lbs": 3400
-    }
-   ],
-   "over_50ft": {
-    "2900": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 958
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1029
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1103
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1180
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1259
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1053
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1131
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1212
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1297
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1383
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "poh",
-       "v": 2586
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2779
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2978
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3185
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3399
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1158
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1244
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1334
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1426
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1522
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1275
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1370
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1469
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1570
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1676
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1408
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1510
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1619
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1731
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1847
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1552
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1667
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1787
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1911
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2039
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1714
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1842
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1974
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2111
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2253
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1896
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2037
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2184
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2335
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2492
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 2100
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2257
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2419
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2587
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2760
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "poh",
-       "v": 2329
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2503
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2682
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2868
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3061
-      }
-     }
-    },
-    "3400": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1414
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1520
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1629
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1742
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1860
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1554
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1670
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1790
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1915
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2044
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "poh",
-       "v": 3822
-      },
-      "10": {
-       "basis": "poh",
-       "v": 4107
-      },
-      "20": {
-       "basis": "poh",
-       "v": 4403
-      },
-      "30": {
-       "basis": "poh",
-       "v": 4709
-      },
-      "40": {
-       "basis": "poh",
-       "v": 5026
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1710
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1837
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1970
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2107
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2248
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1883
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2024
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2169
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2320
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2476
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 2076
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2231
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2392
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2558
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2730
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 2291
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2462
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2640
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2823
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3013
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 2532
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2721
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2917
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3120
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3330
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 2801
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3010
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3227
-      },
-      "30": {
-       "basis": "poh",
-       "v": 3452
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3684
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 3103
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3335
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3575
-      },
-      "30": {
-       "basis": "poh",
-       "v": 4080
-      },
-      "40": {
-       "basis": "poh",
-       "v": 4080
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "poh",
-       "v": 3442
-      },
-      "10": {
-       "basis": "poh",
-       "v": 3698
-      },
-      "20": {
-       "basis": "poh",
-       "v": 3965
-      },
-      "30": {
-       "basis": "poh",
-       "v": 4240
-      },
-      "40": {
-       "basis": "poh",
-       "v": 4526
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook and FAA Approved Airplane Flight Manual, Cirrus Design SR22 \u00b7 P/N 13772-001 \u00b7 Figure 5-9 \u00b7 Takeoff Distance \u00b7 pages 5-19, 5-20",
-   "weights_lbs": [
-    3400,
-    2900
-   ]
+  "source_files": {
+    "spec": "scripts/poh/specs/sr22.json",
+    "extracted": "scripts/poh/extracted/sr22.json",
+    "pdf": "Cirrus/Cirrus-SR22-POH.pdf",
+    "draft": null
   }
- },
- "slug": "cirrus-sr22",
- "v_speeds": {
-  "best_glide": 88,
-  "va": 133,
-  "vfe": 104,
-  "vne": 201,
-  "vno": 178,
-  "vpd": 133,
-  "vs0": 59,
-  "vs1": 70,
-  "vx": 78,
-  "vy": 101
- }
 }

@@ -1,4445 +1,4742 @@
 {
- "data_version": 2,
- "disclaimer": "Performance data is approximate and for reference/training only. Not a substitute for official POH calculations. Always refer to your aircraft's current FAA-approved AFM/POH.",
- "generated": "2026-09-20",
- "icao_type": "C182",
- "limits": {
-  "empty_weight_lbs": 1900,
-  "max_gross_weight_lbs": 2950,
-  "service_ceiling_ft": 17700,
-  "usable_fuel_gal": 56,
-  "useful_load_lbs": 1050
- },
- "manufacturer": "Cessna",
- "name": "Cessna 182P Skylane",
- "performance": {
-  "climb": {
-   "cells": {
-    "2950": {
-     "0": {
-      "-20": {
-       "basis": "poh",
-       "v": 1040
+  "type": "C182P",
+  "name": "Cessna 182P Skylane",
+  "marketing_name": "Cessna 182P Skylane",
+  "manufacturer": "Cessna",
+  "icao_type": "C182",
+  "performance": {
+    "takeoff_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 635
       },
-      "0": {
-       "basis": "poh",
-       "v": 955
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 680
       },
-      "20": {
-       "basis": "poh",
-       "v": 870
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 730
       },
-      "40": {
-       "basis": "extrap",
-       "v": 785
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 780
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 835
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 690
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 745
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 795
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 850
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 910
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 755
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 810
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 870
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 930
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 995
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 825
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 890
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 950
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1020
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1090
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 905
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 970
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1045
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1120
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1195
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 995
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1065
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1145
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1230
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1315
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1090
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1175
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1260
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1350
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1450
       }
-     },
-     "1000": {
-      "-20": {
-       "basis": "interp",
-       "v": 985
+    ],
+    "takeoff_ground_roll_provenance": {
+      "title": "Takeoff Distance - Maximum Weight 2950 LBS",
+      "conditions": "Flaps 20 deg, 2600 RPM and full throttle prior to brake release, cowl flaps open, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 76,
+          "printed_page": null,
+          "weight_lbs": 2950,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook: the tables are read by macOS Vision OCR in overlapping strips (scripts/poh/ocr.py), not from a PDF text layer, and re-read by the verifier the same way. Takeoff, landing and cruise are printed sideways on the page and are read rotated."
       },
-      "0": {
-       "basis": "interp",
-       "v": 900
+      "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+      "grid": {
+        "weights_lbs": [
+          2950
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "interp",
-       "v": 818
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 735
+      "poh_cells_published": 42,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 8000,
+          "poh_cells_lost": 3
+        },
+        {
+          "axis": "pressure_altitude",
+          "value": 7000,
+          "poh_cells_lost": 4
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c182p.json",
+        "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "cb3d8bc00de49b3e4f5fd27fe2d8145af1ebe49f7f77aed0aa3f5d8624c85a0b",
+        "basis": "poh_verbatim"
       }
-     },
-     "10000": {
-      "-20": {
-       "basis": "poh",
-       "v": 495
+    },
+    "takeoff_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1220
       },
-      "0": {
-       "basis": "poh",
-       "v": 425
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1305
       },
-      "20": {
-       "basis": "poh",
-       "v": 360
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1395
       },
-      "40": {
-       "basis": "extrap",
-       "v": 295
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1490
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1590
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1335
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1430
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1530
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1635
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1745
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1465
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1565
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1680
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1800
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1925
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1605
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1725
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1850
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1985
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 2130
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1770
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1905
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 2050
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 2205
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 2370
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1965
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 2115
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 2280
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 2460
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 2655
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 2185
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 2360
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 2555
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 2765
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 3005
       }
-     },
-     "2000": {
-      "-20": {
-       "basis": "poh",
-       "v": 930
+    ],
+    "takeoff_over_50ft_provenance": {
+      "title": "Takeoff Distance - Maximum Weight 2950 LBS",
+      "conditions": "Flaps 20 deg, 2600 RPM and full throttle prior to brake release, cowl flaps open, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 76,
+          "printed_page": null,
+          "weight_lbs": 2950,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook: the tables are read by macOS Vision OCR in overlapping strips (scripts/poh/ocr.py), not from a PDF text layer, and re-read by the verifier the same way. Takeoff, landing and cruise are printed sideways on the page and are read rotated."
       },
-      "0": {
-       "basis": "poh",
-       "v": 845
+      "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+      "grid": {
+        "weights_lbs": [
+          2950
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 765
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 685
+      "poh_cells_published": 42,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "pressure_altitude",
+          "value": 8000,
+          "poh_cells_lost": 3
+        },
+        {
+          "axis": "pressure_altitude",
+          "value": 7000,
+          "poh_cells_lost": 4
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c182p.json",
+        "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "7bff767f15dd8861dbabf38c8d6efe0c07fb7691206043f08d2536e08576e6c6",
+        "basis": "poh_verbatim"
       }
-     },
-     "3000": {
-      "-20": {
-       "basis": "interp",
-       "v": 875
+    },
+    "landing_ground_roll": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 560
       },
-      "0": {
-       "basis": "interp",
-       "v": 792
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 580
       },
-      "20": {
-       "basis": "interp",
-       "v": 712
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 600
       },
-      "40": {
-       "basis": "extrap",
-       "v": 632
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 620
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 640
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 580
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 620
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 645
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 665
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 600
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 625
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 645
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 670
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 690
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 625
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 645
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 670
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 695
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 715
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 650
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 670
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 695
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 720
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 740
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 670
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 695
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 720
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 745
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 770
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 700
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 725
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 750
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 775
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 800
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 725
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 750
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 780
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 805
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 830
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 755
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 780
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 810
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 835
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 865
       }
-     },
-     "4000": {
-      "-20": {
-       "basis": "poh",
-       "v": 820
+    ],
+    "landing_ground_roll_provenance": {
+      "title": "Landing Distance",
+      "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 91,
+          "printed_page": null,
+          "weight_lbs": 2950,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook: the tables are read by macOS Vision OCR in overlapping strips (scripts/poh/ocr.py), not from a PDF text layer, and re-read by the verifier the same way. Takeoff, landing and cruise are printed sideways on the page and are read rotated."
       },
-      "0": {
-       "basis": "poh",
-       "v": 740
+      "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+      "grid": {
+        "weights_lbs": [
+          2950
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 660
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 580
+      "poh_cells_published": 45,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c182p.json",
+        "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "172e9b819d3dfcb9e165a66b64ee4b186fd6df6c39470d1dcc4ddf6763212b1f",
+        "basis": "poh_verbatim"
       }
-     },
-     "5000": {
-      "-20": {
-       "basis": "interp",
-       "v": 765
+    },
+    "landing_over_50ft": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1300
       },
-      "0": {
-       "basis": "interp",
-       "v": 688
+      {
+        "pressure_altitude": 0,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1335
       },
-      "20": {
-       "basis": "interp",
-       "v": 610
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1365
       },
-      "40": {
-       "basis": "extrap",
-       "v": 532
+      {
+        "pressure_altitude": 0,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1400
+      },
+      {
+        "pressure_altitude": 0,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1435
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1335
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1365
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1400
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1440
+      },
+      {
+        "pressure_altitude": 1000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1475
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1370
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1405
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1440
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1480
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1515
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1410
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1445
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1485
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1525
+      },
+      {
+        "pressure_altitude": 3000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1560
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1450
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1485
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1525
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1565
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1600
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1485
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1525
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1565
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1610
+      },
+      {
+        "pressure_altitude": 5000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1650
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1530
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1575
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1615
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1660
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1700
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1575
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1615
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1665
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1710
+      },
+      {
+        "pressure_altitude": 7000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1750
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "distance_ft": 1625
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 10,
+        "weight_lbs": 2950,
+        "distance_ft": 1665
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "distance_ft": 1715
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 30,
+        "weight_lbs": 2950,
+        "distance_ft": 1760
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 40,
+        "weight_lbs": 2950,
+        "distance_ft": 1805
       }
-     },
-     "6000": {
-      "-20": {
-       "basis": "poh",
-       "v": 710
+    ],
+    "landing_over_50ft_provenance": {
+      "title": "Landing Distance",
+      "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
+      "sheets": [
+        {
+          "page": 91,
+          "printed_page": null,
+          "weight_lbs": 2950,
+          "altitudes": [
+            0,
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000
+          ],
+          "temps": [
+            0,
+            10,
+            20,
+            30,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook: the tables are read by macOS Vision OCR in overlapping strips (scripts/poh/ocr.py), not from a PDF text layer, and re-read by the verifier the same way. Takeoff, landing and cruise are printed sideways on the page and are read rotated."
       },
-      "0": {
-       "basis": "poh",
-       "v": 635
+      "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+      "grid": {
+        "weights_lbs": [
+          2950
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000
+        ],
+        "oat_c": [
+          0,
+          10,
+          20,
+          30,
+          40
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 560
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 485
+      "poh_cells_published": 45,
+      "cells_trimmed_for_rectangular_grid": [],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c182p.json",
+        "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "654ce27d86f9b3f568ceb4a7b27a83964f947866ed4ed5d2ffaf00f9bcc8e42d",
+        "basis": "poh_verbatim"
       }
-     },
-     "7000": {
-      "-20": {
-       "basis": "interp",
-       "v": 655
+    },
+    "rate_of_climb": [
+      {
+        "pressure_altitude": 0,
+        "oat_c": -20,
+        "weight_lbs": 2950,
+        "fpm": 1040
       },
-      "0": {
-       "basis": "interp",
-       "v": 582
+      {
+        "pressure_altitude": 0,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "fpm": 955
       },
-      "20": {
-       "basis": "interp",
-       "v": 510
+      {
+        "pressure_altitude": 0,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "fpm": 870
       },
-      "40": {
-       "basis": "extrap",
-       "v": 438
+      {
+        "pressure_altitude": 2000,
+        "oat_c": -20,
+        "weight_lbs": 2950,
+        "fpm": 930
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "fpm": 845
+      },
+      {
+        "pressure_altitude": 2000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "fpm": 765
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": -20,
+        "weight_lbs": 2950,
+        "fpm": 820
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "fpm": 740
+      },
+      {
+        "pressure_altitude": 4000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "fpm": 660
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": -20,
+        "weight_lbs": 2950,
+        "fpm": 710
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "fpm": 635
+      },
+      {
+        "pressure_altitude": 6000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "fpm": 560
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": -20,
+        "weight_lbs": 2950,
+        "fpm": 600
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "fpm": 530
+      },
+      {
+        "pressure_altitude": 8000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "fpm": 460
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": -20,
+        "weight_lbs": 2950,
+        "fpm": 495
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "fpm": 425
+      },
+      {
+        "pressure_altitude": 10000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "fpm": 360
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": -20,
+        "weight_lbs": 2950,
+        "fpm": 390
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 0,
+        "weight_lbs": 2950,
+        "fpm": 325
+      },
+      {
+        "pressure_altitude": 12000,
+        "oat_c": 20,
+        "weight_lbs": 2950,
+        "fpm": 265
       }
-     },
-     "8000": {
-      "-20": {
-       "basis": "poh",
-       "v": 600
+    ],
+    "rate_of_climb_provenance": {
+      "title": "Rate of Climb - Maximum",
+      "conditions": "Flaps up, 2600 RPM, full throttle, cowl flaps open",
+      "sheets": [
+        {
+          "page": 78,
+          "printed_page": null,
+          "weight_lbs": 2950,
+          "altitudes": [
+            0,
+            2000,
+            4000,
+            6000,
+            8000,
+            10000,
+            12000
+          ],
+          "temps": [
+            -20,
+            0,
+            20,
+            40
+          ]
+        }
+      ],
+      "handbook_misprints_bounded": [],
+      "basis": "poh_verbatim",
+      "source": {
+        "doc": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976)",
+        "publisher": "Cessna Aircraft Company",
+        "note": "Scanned handbook: the tables are read by macOS Vision OCR in overlapping strips (scripts/poh/ocr.py), not from a PDF text layer, and re-read by the verifier the same way. Takeoff, landing and cruise are printed sideways on the page and are read rotated."
       },
-      "0": {
-       "basis": "poh",
-       "v": 530
+      "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+      "grid": {
+        "weights_lbs": [
+          2950
+        ],
+        "pressure_altitudes_ft": [
+          0,
+          2000,
+          4000,
+          6000,
+          8000,
+          10000,
+          12000
+        ],
+        "oat_c": [
+          -20,
+          0,
+          20
+        ]
       },
-      "20": {
-       "basis": "poh",
-       "v": 460
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 390
+      "poh_cells_published": 26,
+      "cells_trimmed_for_rectangular_grid": [
+        {
+          "axis": "oat_c",
+          "value": 40,
+          "poh_cells_lost": 5
+        }
+      ],
+      "handbook_blank_cells": [],
+      "extracted_by": "scripts/poh/extract.py",
+      "verified_on": "2026-09-28",
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c182p.json",
+        "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+        "problems": 0,
+        "read": "every row re-read from the PDF",
+        "rows_sha256": "234b40b0a9e75e7bf02d29c1f455aa72c3c9fefd51497a5111de38dd7a96c50a",
+        "basis": "poh_verbatim"
       }
-     },
-     "9000": {
-      "-20": {
-       "basis": "interp",
-       "v": 548
+    },
+    "cruise": [
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 23,
+        "tas_kts": 139,
+        "gph": 14.1,
+        "pct_power": 76
       },
-      "0": {
-       "basis": "interp",
-       "v": 478
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2450,
+        "mp_inhg": 23,
+        "tas_kts": 140,
+        "gph": 13.6,
+        "pct_power": 73
       },
-      "20": {
-       "basis": "interp",
-       "v": 410
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 136,
+        "gph": 13.3,
+        "pct_power": 72
       },
-      "40": {
-       "basis": "extrap",
-       "v": 342
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 135,
+        "gph": 13.8,
+        "pct_power": 75
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 137,
+        "gph": 12.8,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 133,
+        "gph": 12.5,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 132,
+        "gph": 13.0,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 134,
+        "gph": 12.1,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 130,
+        "gph": 11.8,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 129,
+        "gph": 12.2,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 130,
+        "gph": 11.4,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 138,
+        "gph": 13.7,
+        "pct_power": 74
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 136,
+        "gph": 14.3,
+        "pct_power": 77
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 139,
+        "gph": 13.3,
+        "pct_power": 72
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 135,
+        "gph": 13.0,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 134,
+        "gph": 13.5,
+        "pct_power": 73
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 136,
+        "gph": 12.6,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 132,
+        "gph": 12.3,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 131,
+        "gph": 12.7,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 133,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 129,
+        "gph": 11.6,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 128,
+        "gph": 12.0,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 129,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 135,
+        "gph": 13.0,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 134,
+        "gph": 13.5,
+        "pct_power": 73
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 136,
+        "gph": 12.5,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 132,
+        "gph": 12.3,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 131,
+        "gph": 12.7,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 133,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 129,
+        "gph": 11.6,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 128,
+        "gph": 12.0,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 129,
+        "gph": 11.3,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 125,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 125,
+        "gph": 11.3,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 125,
+        "gph": 10.6,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 131,
+        "gph": 12.1,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 130,
+        "gph": 12.5,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 132,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 128,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 127,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 129,
+        "gph": 11.1,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 125,
+        "gph": 10.9,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 124,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 125,
+        "gph": 10.5,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 121,
+        "gph": 10.2,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 120,
+        "gph": 10.6,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 120,
+        "gph": 10.0,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 116,
+        "gph": 9.6,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 116,
+        "gph": 9.9,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 115,
+        "gph": 9.4,
+        "pct_power": 49
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 111,
+        "gph": 9.0,
+        "pct_power": 47
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 111,
+        "gph": 9.3,
+        "pct_power": 48
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 109,
+        "gph": 8.8,
+        "pct_power": 45
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 0,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 104,
+        "gph": 8.4,
+        "pct_power": 43
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": -20,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 106,
+        "gph": 8.6,
+        "pct_power": 44
+      },
+      {
+        "pressure_altitude": 2000,
+        "isa_offset_c": 20,
+        "oat_c": 31,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 103,
+        "gph": 8.2,
+        "pct_power": 41
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2450,
+        "mp_inhg": 23,
+        "tas_kts": 142,
+        "gph": 14.2,
+        "pct_power": 77
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2450,
+        "mp_inhg": 23,
+        "tas_kts": 143,
+        "gph": 13.7,
+        "pct_power": 74
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 139,
+        "gph": 13.4,
+        "pct_power": 73
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 138,
+        "gph": 14.0,
+        "pct_power": 75
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 140,
+        "gph": 13.0,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 136,
+        "gph": 12.7,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 135,
+        "gph": 13.1,
+        "pct_power": 71
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 137,
+        "gph": 12.3,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 133,
+        "gph": 11.9,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 132,
+        "gph": 12.4,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 133,
+        "gph": 11.6,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 141,
+        "gph": 13.9,
+        "pct_power": 75
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 139,
+        "gph": 14.5,
+        "pct_power": 78
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 142,
+        "gph": 13.4,
+        "pct_power": 72
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 138,
+        "gph": 13.1,
+        "pct_power": 71
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 137,
+        "gph": 13.6,
+        "pct_power": 74
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 139,
+        "gph": 12.7,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 135,
+        "gph": 12.4,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 134,
+        "gph": 12.9,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 136,
+        "gph": 12.0,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 132,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 131,
+        "gph": 12.1,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 132,
+        "gph": 11.4,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 138,
+        "gph": 13.1,
+        "pct_power": 71
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 137,
+        "gph": 13.6,
+        "pct_power": 74
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 139,
+        "gph": 12.7,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 135,
+        "gph": 12.5,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 134,
+        "gph": 12.9,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 136,
+        "gph": 12.1,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 132,
+        "gph": 11.8,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 131,
+        "gph": 12.2,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 133,
+        "gph": 11.4,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 128,
+        "gph": 11.1,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 128,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 128,
+        "gph": 10.8,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 135,
+        "gph": 12.3,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 134,
+        "gph": 12.8,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 135,
+        "gph": 11.9,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 131,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 131,
+        "gph": 12.1,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 132,
+        "gph": 11.3,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 128,
+        "gph": 11.1,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 127,
+        "gph": 11.4,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 128,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 124,
+        "gph": 10.4,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 124,
+        "gph": 10.8,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 123,
+        "gph": 10.1,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 119,
+        "gph": 9.8,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 119,
+        "gph": 10.1,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 118,
+        "gph": 9.6,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 114,
+        "gph": 9.2,
+        "pct_power": 48
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 115,
+        "gph": 9.5,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 112,
+        "gph": 9.0,
+        "pct_power": 46
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 0,
+        "oat_c": 7,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 107,
+        "gph": 8.6,
+        "pct_power": 44
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": -20,
+        "oat_c": -13,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 109,
+        "gph": 8.9,
+        "pct_power": 46
+      },
+      {
+        "pressure_altitude": 4000,
+        "isa_offset_c": 20,
+        "oat_c": 27,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 106,
+        "gph": 8.4,
+        "pct_power": 43
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2450,
+        "mp_inhg": 23,
+        "tas_kts": 145,
+        "gph": 14.3,
+        "pct_power": 77
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2450,
+        "mp_inhg": 23,
+        "tas_kts": 146,
+        "gph": 13.8,
+        "pct_power": 75
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 142,
+        "gph": 13.6,
+        "pct_power": 73
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 141,
+        "gph": 14.1,
+        "pct_power": 76
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2450,
+        "mp_inhg": 22,
+        "tas_kts": 143,
+        "gph": 13.1,
+        "pct_power": 71
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 139,
+        "gph": 12.8,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 138,
+        "gph": 13.3,
+        "pct_power": 72
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 140,
+        "gph": 12.4,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 136,
+        "gph": 12.1,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 135,
+        "gph": 12.5,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 136,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 144,
+        "gph": 14.0,
+        "pct_power": 76
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2400,
+        "mp_inhg": 23,
+        "tas_kts": 145,
+        "gph": 13.5,
+        "pct_power": 73
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 141,
+        "gph": 13.3,
+        "pct_power": 72
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 140,
+        "gph": 13.8,
+        "pct_power": 75
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2400,
+        "mp_inhg": 22,
+        "tas_kts": 142,
+        "gph": 12.8,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 138,
+        "gph": 12.6,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 137,
+        "gph": 13.0,
+        "pct_power": 71
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 139,
+        "gph": 12.1,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 135,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 134,
+        "gph": 12.3,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 135,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 141,
+        "gph": 13.3,
+        "pct_power": 72
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 140,
+        "gph": 13.8,
+        "pct_power": 75
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2300,
+        "mp_inhg": 23,
+        "tas_kts": 142,
+        "gph": 12.8,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 138,
+        "gph": 12.6,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 137,
+        "gph": 13.1,
+        "pct_power": 71
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2300,
+        "mp_inhg": 22,
+        "tas_kts": 139,
+        "gph": 12.2,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 135,
+        "gph": 12.0,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 134,
+        "gph": 12.4,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 136,
+        "gph": 11.6,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 132,
+        "gph": 11.3,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 131,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 132,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 138,
+        "gph": 12.6,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 137,
+        "gph": 13.0,
+        "pct_power": 71
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2200,
+        "mp_inhg": 23,
+        "tas_kts": 139,
+        "gph": 12.1,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 135,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 134,
+        "gph": 12.3,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2200,
+        "mp_inhg": 22,
+        "tas_kts": 135,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 131,
+        "gph": 11.3,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 131,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 131,
+        "gph": 10.9,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 127,
+        "gph": 10.6,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 127,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 127,
+        "gph": 10.3,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 122,
+        "gph": 10.0,
+        "pct_power": 53
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 123,
+        "gph": 10.4,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 121,
+        "gph": 9.7,
+        "pct_power": 51
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 117,
+        "gph": 9.4,
+        "pct_power": 49
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 118,
+        "gph": 9.7,
+        "pct_power": 51
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 115,
+        "gph": 9.2,
+        "pct_power": 48
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 0,
+        "oat_c": 3,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 110,
+        "gph": 8.8,
+        "pct_power": 45
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": -20,
+        "oat_c": -17,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 112,
+        "gph": 9.1,
+        "pct_power": 47
+      },
+      {
+        "pressure_altitude": 6000,
+        "isa_offset_c": 20,
+        "oat_c": 23,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 109,
+        "gph": 8.5,
+        "pct_power": 44
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 142,
+        "gph": 13.0,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 141,
+        "gph": 13.5,
+        "pct_power": 73
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2450,
+        "mp_inhg": 21,
+        "tas_kts": 143,
+        "gph": 12.5,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 139,
+        "gph": 12.3,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 138,
+        "gph": 12.7,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 139,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2450,
+        "mp_inhg": 19,
+        "tas_kts": 135,
+        "gph": 11.6,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2450,
+        "mp_inhg": 19,
+        "tas_kts": 135,
+        "gph": 12.0,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2450,
+        "mp_inhg": 19,
+        "tas_kts": 135,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 131,
+        "gph": 10.9,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 131,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 130,
+        "gph": 10.5,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 141,
+        "gph": 12.7,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 140,
+        "gph": 13.2,
+        "pct_power": 72
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2400,
+        "mp_inhg": 21,
+        "tas_kts": 142,
+        "gph": 12.3,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 138,
+        "gph": 12.0,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 137,
+        "gph": 12.5,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 138,
+        "gph": 11.6,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2400,
+        "mp_inhg": 19,
+        "tas_kts": 134,
+        "gph": 11.4,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2400,
+        "mp_inhg": 19,
+        "tas_kts": 133,
+        "gph": 11.8,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2400,
+        "mp_inhg": 19,
+        "tas_kts": 134,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 129,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 129,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 129,
+        "gph": 10.4,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 139,
+        "gph": 12.2,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 138,
+        "gph": 12.6,
+        "pct_power": 68
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2300,
+        "mp_inhg": 21,
+        "tas_kts": 139,
+        "gph": 11.8,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 135,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 134,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 135,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2300,
+        "mp_inhg": 19,
+        "tas_kts": 131,
+        "gph": 10.9,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2300,
+        "mp_inhg": 19,
+        "tas_kts": 131,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2300,
+        "mp_inhg": 19,
+        "tas_kts": 130,
+        "gph": 10.5,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 126,
+        "gph": 10.2,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 126,
+        "gph": 10.6,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 125,
+        "gph": 9.9,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 135,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 134,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2200,
+        "mp_inhg": 21,
+        "tas_kts": 135,
+        "gph": 11.1,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 130,
+        "gph": 10.8,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 130,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 130,
+        "gph": 10.5,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 126,
+        "gph": 10.2,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 126,
+        "gph": 10.6,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 125,
+        "gph": 9.9,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 120,
+        "gph": 9.6,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 121,
+        "gph": 9.9,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 119,
+        "gph": 9.3,
+        "pct_power": 49
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 114,
+        "gph": 9.0,
+        "pct_power": 47
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 115,
+        "gph": 9.3,
+        "pct_power": 48
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 112,
+        "gph": 8.7,
+        "pct_power": 45
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 0,
+        "oat_c": -1,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 106,
+        "gph": 8.4,
+        "pct_power": 43
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": -20,
+        "oat_c": -21,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 108,
+        "gph": 8.6,
+        "pct_power": 44
+      },
+      {
+        "pressure_altitude": 8000,
+        "isa_offset_c": 20,
+        "oat_c": 19,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 103,
+        "gph": 8.1,
+        "pct_power": 41
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 142,
+        "gph": 12.4,
+        "pct_power": 67
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 142,
+        "gph": 12.9,
+        "pct_power": 70
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2450,
+        "mp_inhg": 20,
+        "tas_kts": 143,
+        "gph": 12.0,
+        "pct_power": 65
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2450,
+        "mp_inhg": 19,
+        "tas_kts": 138,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2450,
+        "mp_inhg": 19,
+        "tas_kts": 138,
+        "gph": 12.1,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2450,
+        "mp_inhg": 19,
+        "tas_kts": 138,
+        "gph": 11.4,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 134,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 134,
+        "gph": 11.4,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 133,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2450,
+        "mp_inhg": 17,
+        "tas_kts": 128,
+        "gph": 10.4,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2450,
+        "mp_inhg": 17,
+        "tas_kts": 129,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2450,
+        "mp_inhg": 17,
+        "tas_kts": 127,
+        "gph": 10.0,
+        "pct_power": 53
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 141,
+        "gph": 12.2,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 140,
+        "gph": 12.6,
+        "pct_power": 69
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2400,
+        "mp_inhg": 20,
+        "tas_kts": 141,
+        "gph": 11.8,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2400,
+        "mp_inhg": 19,
+        "tas_kts": 137,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2400,
+        "mp_inhg": 19,
+        "tas_kts": 137,
+        "gph": 11.9,
+        "pct_power": 64
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2400,
+        "mp_inhg": 19,
+        "tas_kts": 137,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 132,
+        "gph": 10.9,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 132,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 132,
+        "gph": 10.5,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2400,
+        "mp_inhg": 17,
+        "tas_kts": 127,
+        "gph": 10.2,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2400,
+        "mp_inhg": 17,
+        "tas_kts": 127,
+        "gph": 10.5,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2400,
+        "mp_inhg": 17,
+        "tas_kts": 125,
+        "gph": 9.9,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 138,
+        "gph": 11.7,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 138,
+        "gph": 12.1,
+        "pct_power": 66
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2300,
+        "mp_inhg": 20,
+        "tas_kts": 138,
+        "gph": 11.3,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2300,
+        "mp_inhg": 19,
+        "tas_kts": 134,
+        "gph": 11.1,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2300,
+        "mp_inhg": 19,
+        "tas_kts": 134,
+        "gph": 11.5,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2300,
+        "mp_inhg": 19,
+        "tas_kts": 133,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 129,
+        "gph": 10.4,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 129,
+        "gph": 10.8,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 128,
+        "gph": 10.1,
+        "pct_power": 53
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2300,
+        "mp_inhg": 17,
+        "tas_kts": 123,
+        "gph": 9.8,
+        "pct_power": 51
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2300,
+        "mp_inhg": 17,
+        "tas_kts": 124,
+        "gph": 10.1,
+        "pct_power": 53
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2300,
+        "mp_inhg": 17,
+        "tas_kts": 121,
+        "gph": 9.5,
+        "pct_power": 49
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 134,
+        "gph": 11.1,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 134,
+        "gph": 11.4,
+        "pct_power": 62
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2200,
+        "mp_inhg": 20,
+        "tas_kts": 133,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 129,
+        "gph": 10.4,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 129,
+        "gph": 10.8,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2200,
+        "mp_inhg": 19,
+        "tas_kts": 128,
+        "gph": 10.1,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 123,
+        "gph": 9.8,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 125,
+        "gph": 10.1,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 122,
+        "gph": 9.5,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 117,
+        "gph": 9.2,
+        "pct_power": 48
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 119,
+        "gph": 9.5,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 115,
+        "gph": 8.9,
+        "pct_power": 46
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 0,
+        "oat_c": -5,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 109,
+        "gph": 8.5,
+        "pct_power": 44
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": -20,
+        "oat_c": -25,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 112,
+        "gph": 8.8,
+        "pct_power": 46
+      },
+      {
+        "pressure_altitude": 10000,
+        "isa_offset_c": 20,
+        "oat_c": 15,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 106,
+        "gph": 8.3,
+        "pct_power": 42
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 137,
+        "gph": 11.2,
+        "pct_power": 60
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 137,
+        "gph": 11.6,
+        "pct_power": 63
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 18,
+        "tas_kts": 136,
+        "gph": 10.9,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2450,
+        "mp_inhg": 17,
+        "tas_kts": 131,
+        "gph": 10.5,
+        "pct_power": 56
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2450,
+        "mp_inhg": 17,
+        "tas_kts": 132,
+        "gph": 10.9,
+        "pct_power": 58
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 17,
+        "tas_kts": 130,
+        "gph": 10.2,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2450,
+        "mp_inhg": 16,
+        "tas_kts": 125,
+        "gph": 9.8,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2450,
+        "mp_inhg": 16,
+        "tas_kts": 126,
+        "gph": 10.2,
+        "pct_power": 54
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 16,
+        "tas_kts": 123,
+        "gph": 9.5,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2450,
+        "mp_inhg": 15,
+        "tas_kts": 117,
+        "gph": 9.1,
+        "pct_power": 47
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2450,
+        "mp_inhg": 15,
+        "tas_kts": 119,
+        "gph": 9.4,
+        "pct_power": 49
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2450,
+        "mp_inhg": 15,
+        "tas_kts": 114,
+        "gph": 8.9,
+        "pct_power": 46
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 135,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 136,
+        "gph": 11.4,
+        "pct_power": 61
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 18,
+        "tas_kts": 135,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 17,
+        "tas_kts": 130,
+        "gph": 10.3,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2400,
+        "mp_inhg": 17,
+        "tas_kts": 131,
+        "gph": 10.7,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 17,
+        "tas_kts": 128,
+        "gph": 10.0,
+        "pct_power": 53
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 16,
+        "tas_kts": 123,
+        "gph": 9.7,
+        "pct_power": 51
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2400,
+        "mp_inhg": 16,
+        "tas_kts": 125,
+        "gph": 10.0,
+        "pct_power": 53
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 16,
+        "tas_kts": 121,
+        "gph": 9.4,
+        "pct_power": 49
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2400,
+        "mp_inhg": 15,
+        "tas_kts": 115,
+        "gph": 9.0,
+        "pct_power": 46
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2400,
+        "mp_inhg": 15,
+        "tas_kts": 117,
+        "gph": 9.3,
+        "pct_power": 48
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2400,
+        "mp_inhg": 15,
+        "tas_kts": 112,
+        "gph": 8.7,
+        "pct_power": 45
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 132,
+        "gph": 10.6,
+        "pct_power": 57
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 133,
+        "gph": 11.0,
+        "pct_power": 59
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 18,
+        "tas_kts": 131,
+        "gph": 10.3,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 17,
+        "tas_kts": 126,
+        "gph": 10.0,
+        "pct_power": 52
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2300,
+        "mp_inhg": 17,
+        "tas_kts": 127,
+        "gph": 10.3,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 17,
+        "tas_kts": 124,
+        "gph": 9.7,
+        "pct_power": 51
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 16,
+        "tas_kts": 119,
+        "gph": 9.3,
+        "pct_power": 48
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2300,
+        "mp_inhg": 16,
+        "tas_kts": 121,
+        "gph": 9.6,
+        "pct_power": 50
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 16,
+        "tas_kts": 116,
+        "gph": 9.0,
+        "pct_power": 47
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2300,
+        "mp_inhg": 15,
+        "tas_kts": 109,
+        "gph": 8.5,
+        "pct_power": 44
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2300,
+        "mp_inhg": 15,
+        "tas_kts": 113,
+        "gph": 8.8,
+        "pct_power": 46
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2300,
+        "mp_inhg": 15,
+        "tas_kts": 105,
+        "gph": 8.3,
+        "pct_power": 42
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 127,
+        "gph": 10.0,
+        "pct_power": 53
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 128,
+        "gph": 10.4,
+        "pct_power": 55
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 18,
+        "tas_kts": 125,
+        "gph": 9.7,
+        "pct_power": 51
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 120,
+        "gph": 9.4,
+        "pct_power": 49
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 122,
+        "gph": 9.7,
+        "pct_power": 51
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 17,
+        "tas_kts": 118,
+        "gph": 9.1,
+        "pct_power": 47
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 112,
+        "gph": 8.7,
+        "pct_power": 45
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 115,
+        "gph": 9.0,
+        "pct_power": 47
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 16,
+        "tas_kts": 109,
+        "gph": 8.5,
+        "pct_power": 43
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 0,
+        "oat_c": -9,
+        "rpm": 2200,
+        "mp_inhg": 15,
+        "tas_kts": 102,
+        "gph": 8.1,
+        "pct_power": 41
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": -20,
+        "oat_c": -29,
+        "rpm": 2200,
+        "mp_inhg": 15,
+        "tas_kts": 106,
+        "gph": 8.4,
+        "pct_power": 43
+      },
+      {
+        "pressure_altitude": 12000,
+        "isa_offset_c": 20,
+        "oat_c": 11,
+        "rpm": 2200,
+        "mp_inhg": 15,
+        "tas_kts": 97,
+        "gph": 7.9,
+        "pct_power": 40
       }
-     }
+    ],
+    "cruise_provenance": {
+      "source_doc": "Cessna 182P Skylane Pilot's Operating Handbook (1976 model)",
+      "edition": "1976 model",
+      "figure": "Figure 5-7",
+      "sheet": "Sheets 1 of 6 through 6 of 6",
+      "page": "5-17 / 5-18 / 5-19 / 5-20 / 5-21 / 5-22",
+      "mixture_basis": "recommended_lean",
+      "temp_column": "multi",
+      "basis": "POH-verbatim",
+      "confidence": "high",
+      "verified_on": "2026-09-20",
+      "confirmed_by_reextraction": {
+        "rows_reread": 304,
+        "rows_published": 320,
+        "disagreements": 0,
+        "by": "scripts/poh/extract.py",
+        "on": "2026-09-28"
+      },
+      "verify_stamp": {
+        "tool": "scripts/poh/verify.py",
+        "on": "2026-09-28",
+        "spec": "scripts/poh/specs/c182p.json",
+        "pdf_sha256": "612f5da06ecb475cadb2413ffe24fd22d6c94934d4a84afe05b58dab208d7a83",
+        "problems": 0,
+        "read": "304 of 320 rows re-read from the PDF and confirmed; the other 16 are the published transcription they agree with",
+        "rows_sha256": "8f0e31c7bdf621ff142be5b2954f1cbf1f0d269ce829113944ae3d0e6c8687dd",
+        "basis": "poh_verbatim"
+      }
     }
-   },
-   "cells_are": "rate_of_climb",
-   "cells_trimmed_for_rectangular_grid": [
-    {
-     "axis": "oat_c",
-     "poh_cells_lost": 5,
-     "value": 40
-    }
-   ],
-   "conditions": "Flaps up, 2600 RPM, full throttle, cowl flaps open",
-   "counts": {
-    "extrap": 11,
-    "interp": 15,
-    "poh": 18
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": null,
-   "source": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976) \u00b7 Rate of Climb - Maximum",
-   "weights_lbs": [
-    2950
-   ]
   },
-  "cruise": {
-   "axes": [
-    "pressure_altitude",
-    "rpm",
-    "mp_inhg"
-   ],
-   "row_count": 320,
-   "rows": [
-    {
-     "gph": 14.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 11,
-     "pct_power": 76,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 139
-    },
-    {
-     "gph": 13.6,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 31,
-     "pct_power": 73,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 140
-    },
-    {
-     "gph": 13.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 11,
-     "pct_power": 72,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 136
-    },
-    {
-     "gph": 13.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -9,
-     "pct_power": 75,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 31,
-     "pct_power": 70,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 137
-    },
-    {
-     "gph": 12.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 11,
-     "pct_power": 68,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 133
-    },
-    {
-     "gph": 13.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -9,
-     "pct_power": 70,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 132
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 31,
-     "pct_power": 66,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 11,
-     "pct_power": 64,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 130
-    },
-    {
-     "gph": 12.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -9,
-     "pct_power": 66,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 129
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 31,
-     "pct_power": 62,
-     "pressure_altitude": 2000,
-     "rpm": 2450,
-     "tas_kts": 130
-    },
-    {
-     "gph": 13.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 11,
-     "pct_power": 74,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 138
-    },
-    {
-     "gph": 14.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -9,
-     "pct_power": 77,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 136
-    },
-    {
-     "gph": 13.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 31,
-     "pct_power": 72,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 139
-    },
-    {
-     "gph": 13.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 11,
-     "pct_power": 70,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 135
-    },
-    {
-     "gph": 13.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -9,
-     "pct_power": 73,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 134
-    },
-    {
-     "gph": 12.6,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 31,
-     "pct_power": 68,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 136
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 11,
-     "pct_power": 66,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 132
-    },
-    {
-     "gph": 12.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -9,
-     "pct_power": 69,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 31,
-     "pct_power": 64,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 133
-    },
-    {
-     "gph": 11.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 11,
-     "pct_power": 62,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 129
-    },
-    {
-     "gph": 12.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -9,
-     "pct_power": 65,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 128
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 31,
-     "pct_power": 60,
-     "pressure_altitude": 2000,
-     "rpm": 2400,
-     "tas_kts": 129
-    },
-    {
-     "gph": 13.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 11,
-     "pct_power": 70,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 135
-    },
-    {
-     "gph": 13.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -9,
-     "pct_power": 73,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 134
-    },
-    {
-     "gph": 12.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 31,
-     "pct_power": 68,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 136
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 11,
-     "pct_power": 67,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 132
-    },
-    {
-     "gph": 12.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -9,
-     "pct_power": 69,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 31,
-     "pct_power": 64,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 133
-    },
-    {
-     "gph": 11.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 11,
-     "pct_power": 63,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 129
-    },
-    {
-     "gph": 12.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -9,
-     "pct_power": 65,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 128
-    },
-    {
-     "gph": 11.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 31,
-     "pct_power": 61,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 129
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 11,
-     "pct_power": 59,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 125
-    },
-    {
-     "gph": 11.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -9,
-     "pct_power": 61,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 125
-    },
-    {
-     "gph": 10.6,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 31,
-     "pct_power": 57,
-     "pressure_altitude": 2000,
-     "rpm": 2300,
-     "tas_kts": 125
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 11,
-     "pct_power": 66,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 131
-    },
-    {
-     "gph": 12.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -9,
-     "pct_power": 68,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 130
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 31,
-     "pct_power": 63,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 132
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 11,
-     "pct_power": 62,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 128
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -9,
-     "pct_power": 64,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 127
-    },
-    {
-     "gph": 11.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 31,
-     "pct_power": 60,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 129
-    },
-    {
-     "gph": 10.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 11,
-     "pct_power": 58,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 125
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -9,
-     "pct_power": 60,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 124
-    },
-    {
-     "gph": 10.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 31,
-     "pct_power": 56,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 125
-    },
-    {
-     "gph": 10.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 11,
-     "pct_power": 54,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 121
-    },
-    {
-     "gph": 10.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -9,
-     "pct_power": 56,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 120
-    },
-    {
-     "gph": 10.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 31,
-     "pct_power": 52,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 120
-    },
-    {
-     "gph": 9.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": 11,
-     "pct_power": 50,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 116
-    },
-    {
-     "gph": 9.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -9,
-     "pct_power": 52,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 116
-    },
-    {
-     "gph": 9.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 31,
-     "pct_power": 49,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 115
-    },
-    {
-     "gph": 9.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": 11,
-     "pct_power": 47,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 111
-    },
-    {
-     "gph": 9.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -9,
-     "pct_power": 48,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 111
-    },
-    {
-     "gph": 8.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 31,
-     "pct_power": 45,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 109
-    },
-    {
-     "gph": 8.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": 11,
-     "pct_power": 43,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 104
-    },
-    {
-     "gph": 8.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -9,
-     "pct_power": 44,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 106
-    },
-    {
-     "gph": 8.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 31,
-     "pct_power": 41,
-     "pressure_altitude": 2000,
-     "rpm": 2200,
-     "tas_kts": 103
-    },
-    {
-     "gph": 14.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 7,
-     "pct_power": 77,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 142
-    },
-    {
-     "gph": 13.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 27,
-     "pct_power": 74,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 143
-    },
-    {
-     "gph": 13.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 7,
-     "pct_power": 73,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 139
-    },
-    {
-     "gph": 14.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -13,
-     "pct_power": 75,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 138
-    },
-    {
-     "gph": 13.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 27,
-     "pct_power": 70,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 140
-    },
-    {
-     "gph": 12.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 7,
-     "pct_power": 69,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 136
-    },
-    {
-     "gph": 13.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -13,
-     "pct_power": 71,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 27,
-     "pct_power": 66,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 137
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 7,
-     "pct_power": 65,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 133
-    },
-    {
-     "gph": 12.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -13,
-     "pct_power": 67,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 132
-    },
-    {
-     "gph": 11.6,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 27,
-     "pct_power": 62,
-     "pressure_altitude": 4000,
-     "rpm": 2450,
-     "tas_kts": 133
-    },
-    {
-     "gph": 13.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 7,
-     "pct_power": 75,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 141
-    },
-    {
-     "gph": 14.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -13,
-     "pct_power": 78,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 139
-    },
-    {
-     "gph": 13.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 27,
-     "pct_power": 72,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 142
-    },
-    {
-     "gph": 13.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 7,
-     "pct_power": 71,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 138
-    },
-    {
-     "gph": 13.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -13,
-     "pct_power": 74,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 137
-    },
-    {
-     "gph": 12.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 27,
-     "pct_power": 69,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 139
-    },
-    {
-     "gph": 12.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 7,
-     "pct_power": 67,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -13,
-     "pct_power": 70,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 134
-    },
-    {
-     "gph": 12.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 27,
-     "pct_power": 65,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 136
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 7,
-     "pct_power": 63,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 132
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -13,
-     "pct_power": 66,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 27,
-     "pct_power": 61,
-     "pressure_altitude": 4000,
-     "rpm": 2400,
-     "tas_kts": 132
-    },
-    {
-     "gph": 13.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 7,
-     "pct_power": 71,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 138
-    },
-    {
-     "gph": 13.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -13,
-     "pct_power": 74,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 137
-    },
-    {
-     "gph": 12.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 27,
-     "pct_power": 69,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 139
-    },
-    {
-     "gph": 12.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 7,
-     "pct_power": 67,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -13,
-     "pct_power": 70,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 134
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 27,
-     "pct_power": 65,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 136
-    },
-    {
-     "gph": 11.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 7,
-     "pct_power": 64,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 132
-    },
-    {
-     "gph": 12.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -13,
-     "pct_power": 66,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 27,
-     "pct_power": 62,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 133
-    },
-    {
-     "gph": 11.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 7,
-     "pct_power": 60,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 128
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -13,
-     "pct_power": 62,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 128
-    },
-    {
-     "gph": 10.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 27,
-     "pct_power": 58,
-     "pressure_altitude": 4000,
-     "rpm": 2300,
-     "tas_kts": 128
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 7,
-     "pct_power": 67,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -13,
-     "pct_power": 69,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 27,
-     "pct_power": 65,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 135
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 7,
-     "pct_power": 63,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 131
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -13,
-     "pct_power": 65,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 27,
-     "pct_power": 61,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 132
-    },
-    {
-     "gph": 11.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 7,
-     "pct_power": 59,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 128
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -13,
-     "pct_power": 62,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 127
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 27,
-     "pct_power": 57,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 128
-    },
-    {
-     "gph": 10.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 7,
-     "pct_power": 56,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 124
-    },
-    {
-     "gph": 10.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -13,
-     "pct_power": 58,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 124
-    },
-    {
-     "gph": 10.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 27,
-     "pct_power": 54,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 123
-    },
-    {
-     "gph": 9.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": 7,
-     "pct_power": 52,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 119
-    },
-    {
-     "gph": 10.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -13,
-     "pct_power": 54,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 119
-    },
-    {
-     "gph": 9.6,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 27,
-     "pct_power": 50,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 118
-    },
-    {
-     "gph": 9.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": 7,
-     "pct_power": 48,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 114
-    },
-    {
-     "gph": 9.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -13,
-     "pct_power": 50,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 115
-    },
-    {
-     "gph": 9.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 27,
-     "pct_power": 46,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 112
-    },
-    {
-     "gph": 8.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": 7,
-     "pct_power": 44,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 107
-    },
-    {
-     "gph": 8.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -13,
-     "pct_power": 46,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 109
-    },
-    {
-     "gph": 8.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 27,
-     "pct_power": 43,
-     "pressure_altitude": 4000,
-     "rpm": 2200,
-     "tas_kts": 106
-    },
-    {
-     "gph": 14.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 3,
-     "pct_power": 77,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 145
-    },
-    {
-     "gph": 13.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 23,
-     "pct_power": 75,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 146
-    },
-    {
-     "gph": 13.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 3,
-     "pct_power": 73,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 142
-    },
-    {
-     "gph": 14.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -17,
-     "pct_power": 76,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 141
-    },
-    {
-     "gph": 13.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 23,
-     "pct_power": 71,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 143
-    },
-    {
-     "gph": 12.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 3,
-     "pct_power": 69,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 139
-    },
-    {
-     "gph": 13.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -17,
-     "pct_power": 72,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 138
-    },
-    {
-     "gph": 12.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 23,
-     "pct_power": 67,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 140
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 3,
-     "pct_power": 65,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 136
-    },
-    {
-     "gph": 12.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -17,
-     "pct_power": 68,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 135
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 23,
-     "pct_power": 63,
-     "pressure_altitude": 6000,
-     "rpm": 2450,
-     "tas_kts": 136
-    },
-    {
-     "gph": 14.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 3,
-     "pct_power": 76,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 144
-    },
-    {
-     "gph": 13.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 23,
-     "pct_power": 73,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 145
-    },
-    {
-     "gph": 13.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 3,
-     "pct_power": 72,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 141
-    },
-    {
-     "gph": 13.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -17,
-     "pct_power": 75,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 140
-    },
-    {
-     "gph": 12.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 23,
-     "pct_power": 69,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 142
-    },
-    {
-     "gph": 12.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 3,
-     "pct_power": 68,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 138
-    },
-    {
-     "gph": 13.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -17,
-     "pct_power": 71,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 137
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 23,
-     "pct_power": 66,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 139
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 3,
-     "pct_power": 64,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -17,
-     "pct_power": 67,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 23,
-     "pct_power": 62,
-     "pressure_altitude": 6000,
-     "rpm": 2400,
-     "tas_kts": 135
-    },
-    {
-     "gph": 13.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 3,
-     "pct_power": 72,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 141
-    },
-    {
-     "gph": 13.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -17,
-     "pct_power": 75,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 140
-    },
-    {
-     "gph": 12.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 23,
-     "pct_power": 70,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 142
-    },
-    {
-     "gph": 12.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 3,
-     "pct_power": 68,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 138
-    },
-    {
-     "gph": 13.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -17,
-     "pct_power": 71,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 137
-    },
-    {
-     "gph": 12.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 23,
-     "pct_power": 66,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 139
-    },
-    {
-     "gph": 12.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 3,
-     "pct_power": 65,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -17,
-     "pct_power": 67,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.6,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 23,
-     "pct_power": 63,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 136
-    },
-    {
-     "gph": 11.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 3,
-     "pct_power": 61,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 132
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -17,
-     "pct_power": 63,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 23,
-     "pct_power": 59,
-     "pressure_altitude": 6000,
-     "rpm": 2300,
-     "tas_kts": 132
-    },
-    {
-     "gph": 12.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 23,
-     "oat_c": 3,
-     "pct_power": 68,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 138
-    },
-    {
-     "gph": 13.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 23,
-     "oat_c": -17,
-     "pct_power": 71,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 137
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 23,
-     "oat_c": 23,
-     "pct_power": 66,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 139
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 22,
-     "oat_c": 3,
-     "pct_power": 64,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 22,
-     "oat_c": -17,
-     "pct_power": 67,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 22,
-     "oat_c": 23,
-     "pct_power": 62,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 135
-    },
-    {
-     "gph": 11.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": 3,
-     "pct_power": 61,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -17,
-     "pct_power": 63,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 131
-    },
-    {
-     "gph": 10.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 23,
-     "pct_power": 59,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 131
-    },
-    {
-     "gph": 10.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": 3,
-     "pct_power": 57,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 127
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -17,
-     "pct_power": 59,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 127
-    },
-    {
-     "gph": 10.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 23,
-     "pct_power": 55,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 127
-    },
-    {
-     "gph": 10.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": 3,
-     "pct_power": 53,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 122
-    },
-    {
-     "gph": 10.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -17,
-     "pct_power": 55,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 123
-    },
-    {
-     "gph": 9.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 23,
-     "pct_power": 51,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 121
-    },
-    {
-     "gph": 9.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": 3,
-     "pct_power": 49,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 117
-    },
-    {
-     "gph": 9.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -17,
-     "pct_power": 51,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 118
-    },
-    {
-     "gph": 9.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 23,
-     "pct_power": 48,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 115
-    },
-    {
-     "gph": 8.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": 3,
-     "pct_power": 45,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 110
-    },
-    {
-     "gph": 9.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -17,
-     "pct_power": 47,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 112
-    },
-    {
-     "gph": 8.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 23,
-     "pct_power": 44,
-     "pressure_altitude": 6000,
-     "rpm": 2200,
-     "tas_kts": 109
-    },
-    {
-     "gph": 13.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": -1,
-     "pct_power": 70,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 142
-    },
-    {
-     "gph": 13.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -21,
-     "pct_power": 73,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 141
-    },
-    {
-     "gph": 12.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 19,
-     "pct_power": 68,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 143
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -1,
-     "pct_power": 66,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 139
-    },
-    {
-     "gph": 12.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -21,
-     "pct_power": 69,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 138
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 19,
-     "pct_power": 64,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 139
-    },
-    {
-     "gph": 11.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -1,
-     "pct_power": 62,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 135
-    },
-    {
-     "gph": 12.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -21,
-     "pct_power": 65,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 135
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 19,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 135
-    },
-    {
-     "gph": 10.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -1,
-     "pct_power": 58,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -21,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 131
-    },
-    {
-     "gph": 10.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 19,
-     "pct_power": 56,
-     "pressure_altitude": 8000,
-     "rpm": 2450,
-     "tas_kts": 130
-    },
-    {
-     "gph": 12.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": -1,
-     "pct_power": 69,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 141
-    },
-    {
-     "gph": 13.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -21,
-     "pct_power": 72,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 140
-    },
-    {
-     "gph": 12.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 19,
-     "pct_power": 67,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 142
-    },
-    {
-     "gph": 12.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -1,
-     "pct_power": 65,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 138
-    },
-    {
-     "gph": 12.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -21,
-     "pct_power": 68,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 137
-    },
-    {
-     "gph": 11.6,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 19,
-     "pct_power": 63,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 138
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -1,
-     "pct_power": 61,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -21,
-     "pct_power": 63,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 133
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 19,
-     "pct_power": 59,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 134
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -1,
-     "pct_power": 57,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 129
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -21,
-     "pct_power": 59,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 129
-    },
-    {
-     "gph": 10.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 19,
-     "pct_power": 55,
-     "pressure_altitude": 8000,
-     "rpm": 2400,
-     "tas_kts": 129
-    },
-    {
-     "gph": 12.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": -1,
-     "pct_power": 66,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 139
-    },
-    {
-     "gph": 12.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -21,
-     "pct_power": 68,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 138
-    },
-    {
-     "gph": 11.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 19,
-     "pct_power": 64,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 139
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -1,
-     "pct_power": 62,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 135
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -21,
-     "pct_power": 64,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 19,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 135
-    },
-    {
-     "gph": 10.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -1,
-     "pct_power": 58,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 131
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -21,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 131
-    },
-    {
-     "gph": 10.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 19,
-     "pct_power": 56,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 130
-    },
-    {
-     "gph": 10.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -1,
-     "pct_power": 54,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 126
-    },
-    {
-     "gph": 10.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -21,
-     "pct_power": 56,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 126
-    },
-    {
-     "gph": 9.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 19,
-     "pct_power": 52,
-     "pressure_altitude": 8000,
-     "rpm": 2300,
-     "tas_kts": 125
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 21,
-     "oat_c": -1,
-     "pct_power": 62,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 135
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 21,
-     "oat_c": -21,
-     "pct_power": 64,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 21,
-     "oat_c": 19,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 135
-    },
-    {
-     "gph": 10.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -1,
-     "pct_power": 58,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 130
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -21,
-     "pct_power": 60,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 130
-    },
-    {
-     "gph": 10.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 19,
-     "pct_power": 56,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 130
-    },
-    {
-     "gph": 10.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -1,
-     "pct_power": 54,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 126
-    },
-    {
-     "gph": 10.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -21,
-     "pct_power": 56,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 126
-    },
-    {
-     "gph": 9.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 19,
-     "pct_power": 52,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 125
-    },
-    {
-     "gph": 9.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -1,
-     "pct_power": 50,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 120
-    },
-    {
-     "gph": 9.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -21,
-     "pct_power": 52,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 121
-    },
-    {
-     "gph": 9.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 19,
-     "pct_power": 49,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 119
-    },
-    {
-     "gph": 9.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -1,
-     "pct_power": 47,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 114
-    },
-    {
-     "gph": 9.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -21,
-     "pct_power": 48,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 115
-    },
-    {
-     "gph": 8.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 19,
-     "pct_power": 45,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 112
-    },
-    {
-     "gph": 8.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 16,
-     "oat_c": -1,
-     "pct_power": 43,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 106
-    },
-    {
-     "gph": 8.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 16,
-     "oat_c": -21,
-     "pct_power": 44,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 108
-    },
-    {
-     "gph": 8.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 16,
-     "oat_c": 19,
-     "pct_power": 41,
-     "pressure_altitude": 8000,
-     "rpm": 2200,
-     "tas_kts": 103
-    },
-    {
-     "gph": 12.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -5,
-     "pct_power": 67,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 142
-    },
-    {
-     "gph": 12.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -25,
-     "pct_power": 70,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 142
-    },
-    {
-     "gph": 12.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 15,
-     "pct_power": 65,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 143
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -5,
-     "pct_power": 63,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 138
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -25,
-     "pct_power": 66,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 138
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 15,
-     "pct_power": 61,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 138
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -5,
-     "pct_power": 59,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -25,
-     "pct_power": 62,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 134
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 15,
-     "pct_power": 57,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 133
-    },
-    {
-     "gph": 10.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -5,
-     "pct_power": 55,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 128
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -25,
-     "pct_power": 57,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 129
-    },
-    {
-     "gph": 10.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 15,
-     "pct_power": 53,
-     "pressure_altitude": 10000,
-     "rpm": 2450,
-     "tas_kts": 127
-    },
-    {
-     "gph": 12.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -5,
-     "pct_power": 66,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 141
-    },
-    {
-     "gph": 12.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -25,
-     "pct_power": 69,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 140
-    },
-    {
-     "gph": 11.8,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 15,
-     "pct_power": 64,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 141
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -5,
-     "pct_power": 62,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 137
-    },
-    {
-     "gph": 11.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -25,
-     "pct_power": 64,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 137
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 15,
-     "pct_power": 60,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 137
-    },
-    {
-     "gph": 10.9,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -5,
-     "pct_power": 58,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 132
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -25,
-     "pct_power": 60,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 132
-    },
-    {
-     "gph": 10.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 15,
-     "pct_power": 56,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 132
-    },
-    {
-     "gph": 10.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -5,
-     "pct_power": 54,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 127
-    },
-    {
-     "gph": 10.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -25,
-     "pct_power": 56,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 127
-    },
-    {
-     "gph": 9.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 15,
-     "pct_power": 52,
-     "pressure_altitude": 10000,
-     "rpm": 2400,
-     "tas_kts": 125
-    },
-    {
-     "gph": 11.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -5,
-     "pct_power": 63,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 138
-    },
-    {
-     "gph": 12.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -25,
-     "pct_power": 66,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 138
-    },
-    {
-     "gph": 11.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 15,
-     "pct_power": 61,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 138
-    },
-    {
-     "gph": 11.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -5,
-     "pct_power": 59,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -25,
-     "pct_power": 62,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 134
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 15,
-     "pct_power": 57,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 133
-    },
-    {
-     "gph": 10.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -5,
-     "pct_power": 55,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 129
-    },
-    {
-     "gph": 10.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -25,
-     "pct_power": 58,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 129
-    },
-    {
-     "gph": 10.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 15,
-     "pct_power": 53,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 128
-    },
-    {
-     "gph": 9.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -5,
-     "pct_power": 51,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 123
-    },
-    {
-     "gph": 10.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -25,
-     "pct_power": 53,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 124
-    },
-    {
-     "gph": 9.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 15,
-     "pct_power": 49,
-     "pressure_altitude": 10000,
-     "rpm": 2300,
-     "tas_kts": 121
-    },
-    {
-     "gph": 11.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 20,
-     "oat_c": -5,
-     "pct_power": 59,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 134
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 20,
-     "oat_c": -25,
-     "pct_power": 62,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 134
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 20,
-     "oat_c": 15,
-     "pct_power": 57,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 133
-    },
-    {
-     "gph": 10.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 19,
-     "oat_c": -5,
-     "pct_power": 55,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 129
-    },
-    {
-     "gph": 10.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 19,
-     "oat_c": -25,
-     "pct_power": 58,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 129
-    },
-    {
-     "gph": 10.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 19,
-     "oat_c": 15,
-     "pct_power": 54,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 128
-    },
-    {
-     "gph": 9.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -5,
-     "pct_power": 52,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 123
-    },
-    {
-     "gph": 10.1,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -25,
-     "pct_power": 54,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 125
-    },
-    {
-     "gph": 9.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 15,
-     "pct_power": 50,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 122
-    },
-    {
-     "gph": 9.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -5,
-     "pct_power": 48,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 117
-    },
-    {
-     "gph": 9.5,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -25,
-     "pct_power": 50,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 119
-    },
-    {
-     "gph": 8.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 15,
-     "pct_power": 46,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 115
-    },
-    {
-     "gph": 8.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 16,
-     "oat_c": -5,
-     "pct_power": 44,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 109
-    },
-    {
-     "gph": 8.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 16,
-     "oat_c": -25,
-     "pct_power": 46,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 112
-    },
-    {
-     "gph": 8.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 16,
-     "oat_c": 15,
-     "pct_power": 42,
-     "pressure_altitude": 10000,
-     "rpm": 2200,
-     "tas_kts": 106
-    },
-    {
-     "gph": 11.2,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -9,
-     "pct_power": 60,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 137
-    },
-    {
-     "gph": 11.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -29,
-     "pct_power": 63,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 137
-    },
-    {
-     "gph": 10.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 11,
-     "pct_power": 58,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 136
-    },
-    {
-     "gph": 10.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -9,
-     "pct_power": 56,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 131
-    },
-    {
-     "gph": 10.9,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -29,
-     "pct_power": 58,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 132
-    },
-    {
-     "gph": 10.2,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 11,
-     "pct_power": 54,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 130
-    },
-    {
-     "gph": 9.8,
-     "isa_offset_c": 0,
-     "mp_inhg": 16,
-     "oat_c": -9,
-     "pct_power": 52,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 125
-    },
-    {
-     "gph": 10.2,
-     "isa_offset_c": -20,
-     "mp_inhg": 16,
-     "oat_c": -29,
-     "pct_power": 54,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 126
-    },
-    {
-     "gph": 9.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 16,
-     "oat_c": 11,
-     "pct_power": 50,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 123
-    },
-    {
-     "gph": 9.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 15,
-     "oat_c": -9,
-     "pct_power": 47,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 117
-    },
-    {
-     "gph": 9.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 15,
-     "oat_c": -29,
-     "pct_power": 49,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 119
-    },
-    {
-     "gph": 8.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 15,
-     "oat_c": 11,
-     "pct_power": 46,
-     "pressure_altitude": 12000,
-     "rpm": 2450,
-     "tas_kts": 114
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -9,
-     "pct_power": 59,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 135
-    },
-    {
-     "gph": 11.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -29,
-     "pct_power": 61,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 136
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 11,
-     "pct_power": 57,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 135
-    },
-    {
-     "gph": 10.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -9,
-     "pct_power": 55,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 130
-    },
-    {
-     "gph": 10.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -29,
-     "pct_power": 57,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 131
-    },
-    {
-     "gph": 10.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 11,
-     "pct_power": 53,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 128
-    },
-    {
-     "gph": 9.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 16,
-     "oat_c": -9,
-     "pct_power": 51,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 123
-    },
-    {
-     "gph": 10.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 16,
-     "oat_c": -29,
-     "pct_power": 53,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 125
-    },
-    {
-     "gph": 9.4,
-     "isa_offset_c": 20,
-     "mp_inhg": 16,
-     "oat_c": 11,
-     "pct_power": 49,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 121
-    },
-    {
-     "gph": 9.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 15,
-     "oat_c": -9,
-     "pct_power": 46,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 115
-    },
-    {
-     "gph": 9.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 15,
-     "oat_c": -29,
-     "pct_power": 48,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 117
-    },
-    {
-     "gph": 8.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 15,
-     "oat_c": 11,
-     "pct_power": 45,
-     "pressure_altitude": 12000,
-     "rpm": 2400,
-     "tas_kts": 112
-    },
-    {
-     "gph": 10.6,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -9,
-     "pct_power": 57,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 132
-    },
-    {
-     "gph": 11.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -29,
-     "pct_power": 59,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 133
-    },
-    {
-     "gph": 10.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 11,
-     "pct_power": 55,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 131
-    },
-    {
-     "gph": 10.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -9,
-     "pct_power": 52,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 126
-    },
-    {
-     "gph": 10.3,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -29,
-     "pct_power": 55,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 127
-    },
-    {
-     "gph": 9.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 11,
-     "pct_power": 51,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 124
-    },
-    {
-     "gph": 9.3,
-     "isa_offset_c": 0,
-     "mp_inhg": 16,
-     "oat_c": -9,
-     "pct_power": 48,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 119
-    },
-    {
-     "gph": 9.6,
-     "isa_offset_c": -20,
-     "mp_inhg": 16,
-     "oat_c": -29,
-     "pct_power": 50,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 121
-    },
-    {
-     "gph": 9.0,
-     "isa_offset_c": 20,
-     "mp_inhg": 16,
-     "oat_c": 11,
-     "pct_power": 47,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 116
-    },
-    {
-     "gph": 8.5,
-     "isa_offset_c": 0,
-     "mp_inhg": 15,
-     "oat_c": -9,
-     "pct_power": 44,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 109
-    },
-    {
-     "gph": 8.8,
-     "isa_offset_c": -20,
-     "mp_inhg": 15,
-     "oat_c": -29,
-     "pct_power": 46,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 113
-    },
-    {
-     "gph": 8.3,
-     "isa_offset_c": 20,
-     "mp_inhg": 15,
-     "oat_c": 11,
-     "pct_power": 42,
-     "pressure_altitude": 12000,
-     "rpm": 2300,
-     "tas_kts": 105
-    },
-    {
-     "gph": 10.0,
-     "isa_offset_c": 0,
-     "mp_inhg": 18,
-     "oat_c": -9,
-     "pct_power": 53,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 127
-    },
-    {
-     "gph": 10.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 18,
-     "oat_c": -29,
-     "pct_power": 55,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 128
-    },
-    {
-     "gph": 9.7,
-     "isa_offset_c": 20,
-     "mp_inhg": 18,
-     "oat_c": 11,
-     "pct_power": 51,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 125
-    },
-    {
-     "gph": 9.4,
-     "isa_offset_c": 0,
-     "mp_inhg": 17,
-     "oat_c": -9,
-     "pct_power": 49,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 120
-    },
-    {
-     "gph": 9.7,
-     "isa_offset_c": -20,
-     "mp_inhg": 17,
-     "oat_c": -29,
-     "pct_power": 51,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 122
-    },
-    {
-     "gph": 9.1,
-     "isa_offset_c": 20,
-     "mp_inhg": 17,
-     "oat_c": 11,
-     "pct_power": 47,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 118
-    },
-    {
-     "gph": 8.7,
-     "isa_offset_c": 0,
-     "mp_inhg": 16,
-     "oat_c": -9,
-     "pct_power": 45,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 112
-    },
-    {
-     "gph": 9.0,
-     "isa_offset_c": -20,
-     "mp_inhg": 16,
-     "oat_c": -29,
-     "pct_power": 47,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 115
-    },
-    {
-     "gph": 8.5,
-     "isa_offset_c": 20,
-     "mp_inhg": 16,
-     "oat_c": 11,
-     "pct_power": 43,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 109
-    },
-    {
-     "gph": 8.1,
-     "isa_offset_c": 0,
-     "mp_inhg": 15,
-     "oat_c": -9,
-     "pct_power": 41,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 102
-    },
-    {
-     "gph": 8.4,
-     "isa_offset_c": -20,
-     "mp_inhg": 15,
-     "oat_c": -29,
-     "pct_power": 43,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 106
-    },
-    {
-     "gph": 7.9,
-     "isa_offset_c": 20,
-     "mp_inhg": 15,
-     "oat_c": 11,
-     "pct_power": 40,
-     "pressure_altitude": 12000,
-     "rpm": 2200,
-     "tas_kts": 97
-    }
-   ],
-   "source": "Figure 5-7"
+  "app_status": {
+    "module_id": "c182p",
+    "in_app_since": "2026-07-16",
+    "reviewed_on": "2026-09-28",
+    "approved_on": null,
+    "approved_by": null,
+    "approved_content_sha256": null
   },
-  "landing": {
-   "cells": {
-    "2950": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 560
-      },
-      "10": {
-       "basis": "poh",
-       "v": 580
-      },
-      "20": {
-       "basis": "poh",
-       "v": 600
-      },
-      "30": {
-       "basis": "poh",
-       "v": 620
-      },
-      "40": {
-       "basis": "poh",
-       "v": 640
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 580
-      },
-      "10": {
-       "basis": "poh",
-       "v": 600
-      },
-      "20": {
-       "basis": "poh",
-       "v": 620
-      },
-      "30": {
-       "basis": "poh",
-       "v": 645
-      },
-      "40": {
-       "basis": "poh",
-       "v": 665
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 819
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 844
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 874
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 898
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 939
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 600
-      },
-      "10": {
-       "basis": "poh",
-       "v": 625
-      },
-      "20": {
-       "basis": "poh",
-       "v": 645
-      },
-      "30": {
-       "basis": "poh",
-       "v": 670
-      },
-      "40": {
-       "basis": "poh",
-       "v": 690
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 625
-      },
-      "10": {
-       "basis": "poh",
-       "v": 645
-      },
-      "20": {
-       "basis": "poh",
-       "v": 670
-      },
-      "30": {
-       "basis": "poh",
-       "v": 695
-      },
-      "40": {
-       "basis": "poh",
-       "v": 715
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 650
-      },
-      "10": {
-       "basis": "poh",
-       "v": 670
-      },
-      "20": {
-       "basis": "poh",
-       "v": 695
-      },
-      "30": {
-       "basis": "poh",
-       "v": 720
-      },
-      "40": {
-       "basis": "poh",
-       "v": 740
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 670
-      },
-      "10": {
-       "basis": "poh",
-       "v": 695
-      },
-      "20": {
-       "basis": "poh",
-       "v": 720
-      },
-      "30": {
-       "basis": "poh",
-       "v": 745
-      },
-      "40": {
-       "basis": "poh",
-       "v": 770
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 700
-      },
-      "10": {
-       "basis": "poh",
-       "v": 725
-      },
-      "20": {
-       "basis": "poh",
-       "v": 750
-      },
-      "30": {
-       "basis": "poh",
-       "v": 775
-      },
-      "40": {
-       "basis": "poh",
-       "v": 800
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 725
-      },
-      "10": {
-       "basis": "poh",
-       "v": 750
-      },
-      "20": {
-       "basis": "poh",
-       "v": 780
-      },
-      "30": {
-       "basis": "poh",
-       "v": 805
-      },
-      "40": {
-       "basis": "poh",
-       "v": 830
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 755
-      },
-      "10": {
-       "basis": "poh",
-       "v": 780
-      },
-      "20": {
-       "basis": "poh",
-       "v": 810
-      },
-      "30": {
-       "basis": "poh",
-       "v": 835
-      },
-      "40": {
-       "basis": "poh",
-       "v": 865
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 786
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 811
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 841
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 866
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 901
-      }
-     }
-    }
-   },
-   "cells_are": "landing_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [],
-   "conditions": "Flaps 40 deg, power off, maximum braking, paved level dry runway, zero wind",
-   "counts": {
-    "extrap": 10,
-    "interp": 0,
-    "poh": 45
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "2950": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1300
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1335
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1365
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1400
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1435
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1335
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1365
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1400
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1440
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1475
-      }
-     },
-     "10000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1730
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1770
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1820
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1864
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1920
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1370
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1405
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1440
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1480
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1515
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1410
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1445
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1485
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1525
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1560
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1450
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1485
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1525
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1565
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1600
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1485
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1525
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1565
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1610
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1650
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1530
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1575
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1615
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1660
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1700
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "poh",
-       "v": 1575
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1615
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1665
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1710
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1750
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "poh",
-       "v": 1625
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1665
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1715
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1760
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1805
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1677
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1717
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1767
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1811
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1862
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976) \u00b7 Landing Distance",
-   "weights_lbs": [
-    2950
-   ]
-  },
-  "takeoff": {
-   "cells": {
-    "2950": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 635
-      },
-      "10": {
-       "basis": "poh",
-       "v": 680
-      },
-      "20": {
-       "basis": "poh",
-       "v": 730
-      },
-      "30": {
-       "basis": "poh",
-       "v": 780
-      },
-      "40": {
-       "basis": "poh",
-       "v": 835
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 690
-      },
-      "10": {
-       "basis": "poh",
-       "v": 745
-      },
-      "20": {
-       "basis": "poh",
-       "v": 795
-      },
-      "30": {
-       "basis": "poh",
-       "v": 850
-      },
-      "40": {
-       "basis": "poh",
-       "v": 910
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 755
-      },
-      "10": {
-       "basis": "poh",
-       "v": 810
-      },
-      "20": {
-       "basis": "poh",
-       "v": 870
-      },
-      "30": {
-       "basis": "poh",
-       "v": 930
-      },
-      "40": {
-       "basis": "poh",
-       "v": 995
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 825
-      },
-      "10": {
-       "basis": "poh",
-       "v": 890
-      },
-      "20": {
-       "basis": "poh",
-       "v": 950
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1020
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1090
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 905
-      },
-      "10": {
-       "basis": "poh",
-       "v": 970
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1045
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1120
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1195
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 995
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1065
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1145
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1230
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1315
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 1090
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1175
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1260
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1350
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1450
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1194
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1296
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1387
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1482
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1599
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1308
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1430
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1526
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1626
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1763
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 1433
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 1578
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 1679
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 1785
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 1944
-      }
-     }
-    }
-   },
-   "cells_are": "takeoff_ground_roll",
-   "cells_trimmed_for_rectangular_grid": [
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 3,
-     "value": 8000
-    },
-    {
-     "axis": "pressure_altitude",
-     "poh_cells_lost": 4,
-     "value": 7000
-    }
-   ],
-   "conditions": "Flaps 20 deg, 2600 RPM and full throttle prior to brake release, cowl flaps open, paved level dry runway, zero wind",
-   "counts": {
-    "extrap": 15,
-    "interp": 0,
-    "poh": 35
-   },
-   "handbook_misprints_bounded": [],
-   "over_50ft": {
-    "2950": {
-     "0": {
-      "0": {
-       "basis": "poh",
-       "v": 1220
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1305
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1395
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1490
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1590
-      }
-     },
-     "1000": {
-      "0": {
-       "basis": "poh",
-       "v": 1335
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1430
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1530
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1635
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1745
-      }
-     },
-     "2000": {
-      "0": {
-       "basis": "poh",
-       "v": 1465
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1565
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1680
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1800
-      },
-      "40": {
-       "basis": "poh",
-       "v": 1925
-      }
-     },
-     "3000": {
-      "0": {
-       "basis": "poh",
-       "v": 1605
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1725
-      },
-      "20": {
-       "basis": "poh",
-       "v": 1850
-      },
-      "30": {
-       "basis": "poh",
-       "v": 1985
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2130
-      }
-     },
-     "4000": {
-      "0": {
-       "basis": "poh",
-       "v": 1770
-      },
-      "10": {
-       "basis": "poh",
-       "v": 1905
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2050
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2205
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2370
-      }
-     },
-     "5000": {
-      "0": {
-       "basis": "poh",
-       "v": 1965
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2115
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2280
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2460
-      },
-      "40": {
-       "basis": "poh",
-       "v": 2655
-      }
-     },
-     "6000": {
-      "0": {
-       "basis": "poh",
-       "v": 2185
-      },
-      "10": {
-       "basis": "poh",
-       "v": 2360
-      },
-      "20": {
-       "basis": "poh",
-       "v": 2555
-      },
-      "30": {
-       "basis": "poh",
-       "v": 2765
-      },
-      "40": {
-       "basis": "poh",
-       "v": 3005
-      }
-     },
-     "7000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2430
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2633
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 2863
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3108
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3401
-      }
-     },
-     "8000": {
-      "0": {
-       "basis": "extrap",
-       "v": 2702
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 2938
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3209
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3493
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 3850
-      }
-     },
-     "9000": {
-      "0": {
-       "basis": "extrap",
-       "v": 3004
-      },
-      "10": {
-       "basis": "extrap",
-       "v": 3279
-      },
-      "20": {
-       "basis": "extrap",
-       "v": 3595
-      },
-      "30": {
-       "basis": "extrap",
-       "v": 3926
-      },
-      "40": {
-       "basis": "extrap",
-       "v": 4357
-      }
-     }
-    }
-   },
-   "source": "Pilot's Operating Handbook, Cessna Model 182P Skylane (1976) \u00b7 Takeoff Distance - Maximum Weight 2950 LBS",
-   "weights_lbs": [
-    2950
-   ]
+  "source_files": {
+    "spec": "scripts/poh/specs/c182p.json",
+    "extracted": "scripts/poh/extracted/c182p.json",
+    "pdf": "Cessna/Cessna-182P-1976-POH.pdf",
+    "draft": null
   }
- },
- "slug": "cessna-182p-skylane",
- "v_speeds": {
-  "best_glide": 70,
-  "va": 110,
-  "vfe": 95,
-  "vne": 176,
-  "vno": 141,
-  "vs0": 48,
-  "vs1": 53,
-  "vx": 59,
-  "vy": 80
- }
 }
