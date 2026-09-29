@@ -3035,6 +3035,16 @@
     "time_fuel_distance_to_climb": [
       {
         "weight_lbs": 2550,
+        "pressure_altitude": 0,
+        "temp_c": 15,
+        "climb_speed_kias": 74,
+        "fpm": 730,
+        "time_min": 0,
+        "fuel_gal": 0.0,
+        "distance_nm": 0
+      },
+      {
+        "weight_lbs": 2550,
         "pressure_altitude": 1000,
         "temp_c": 13,
         "climb_speed_kias": 73,
@@ -3152,6 +3162,7 @@
     "time_fuel_distance_to_climb_provenance": {
       "title": "Time, Fuel and Distance to Climb",
       "conditions": "Flaps up, full throttle, standard temperature",
+      "note": "Figure 5-7, printed page 5-19, 2550 lb, sea level to 12,000 ft by 1000 ft; profile_args.altitudes declares that printed ladder, so the left-aligned Sea Level row is read (it was dropped before 2026-09-28). The standard temperature is printed below zero from 8000 ft up and is declared blank there, so those five cells come back absent. All 78 printed values proven against the rendered page, 73 published and 5 absent as declared: backlog/evidence/FD-714/takeover/c172sp/tfd_sl/proof_time_fuel_distance_to_climb.txt.",
       "sheets": [
         {
           "page": 173,
@@ -3165,7 +3176,7 @@
         "publisher": "Cessna Aircraft Company"
       },
       "pdf_sha256": "11bb6be70757984fc7b05a69bc8242bdcbc79cf73604c5837364bd8013aa9b0a",
-      "row_count": 12,
+      "row_count": 13,
       "extracted_by": "scripts/poh/extract.py",
       "verified_on": "2026-09-28",
       "verify_stamp": {
@@ -3175,7 +3186,7 @@
         "pdf_sha256": "11bb6be70757984fc7b05a69bc8242bdcbc79cf73604c5837364bd8013aa9b0a",
         "problems": 0,
         "read": "every row re-read from the PDF",
-        "rows_sha256": "48c12a5359b42bbb510ddd6f350a737ad6e4574573261fcfcd2feb6cb8010fca",
+        "rows_sha256": "ee466b7644535b87f520cafe3ed897dd6a8591797f0eaff3b04bad1cb60e0a8c",
         "basis": "poh_verbatim"
       }
     }

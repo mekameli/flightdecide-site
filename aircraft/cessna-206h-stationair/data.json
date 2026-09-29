@@ -2726,6 +2726,15 @@
     "time_fuel_distance_to_climb": [
       {
         "weight_lbs": 3600,
+        "pressure_altitude": 0,
+        "climb_speed_kias": 86,
+        "fpm": 990,
+        "time_min": 0,
+        "fuel_gal": 0.0,
+        "distance_nm": 0
+      },
+      {
+        "weight_lbs": 3600,
         "pressure_altitude": 2000,
         "climb_speed_kias": 85,
         "fpm": 875,
@@ -2791,7 +2800,7 @@
     "time_fuel_distance_to_climb_provenance": {
       "title": "Time, Fuel and Distance to Climb - Maximum Rate of Climb",
       "conditions": "Flaps up, full throttle, standard temperature",
-      "note": "The handbook also prints a Normal Climb (95 KIAS) version on page 5-23; this is the maximum-rate table, matching the other Cessnas.",
+      "note": "Figure 5-8 (Sheet 1 of 4), printed page 5-21, 3600 lb, sea level to 14,000 ft by 2000 ft; profile_args.altitudes declares that printed ladder, so the left-aligned Sea Level row is read (it was dropped before 2026-09-28). The handbook prints the same maximum-rate table at 3300 lb (Sheet 2, page 5-22) and 3000 lb (Sheet 3, page 5-23), not carried here, and a Normal Climb (95 KIAS) table as Sheet 4 (page 5-24); this is the maximum-rate table, matching the other Cessnas. All 40 values proven against the rendered page: backlog/evidence/FD-714/takeover/c206h/tfd_sl/proof_time_fuel_distance_to_climb.txt.",
       "sheets": [
         {
           "page": 173,
@@ -2805,7 +2814,7 @@
         "publisher": "Cessna Aircraft Company"
       },
       "pdf_sha256": "17260ff037b4a9d76620d897bd42cc115662c85531ed99ac4d25b261f286ad2a",
-      "row_count": 7,
+      "row_count": 8,
       "extracted_by": "scripts/poh/extract.py",
       "verified_on": "2026-09-28",
       "verify_stamp": {
@@ -2815,7 +2824,7 @@
         "pdf_sha256": "17260ff037b4a9d76620d897bd42cc115662c85531ed99ac4d25b261f286ad2a",
         "problems": 0,
         "read": "every row re-read from the PDF",
-        "rows_sha256": "be733890211e22ca5159003cb76f505ebefa9152099670a0d9475d11a4bfc8c3",
+        "rows_sha256": "4a62e5a1dc0b9ccfd7b036f0a5b9cbecd2c84142b46cdec317049488b238116a",
         "basis": "poh_verbatim"
       }
     }

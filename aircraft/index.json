@@ -541,7 +541,7 @@
   "cessna-172sp-skyhawk": {
    "module_id": "c172sp",
    "data_url": "https://flightdecide.com/aircraft/cessna-172sp-skyhawk/data.json",
-   "sha256": "af43b8c813958bbeaf4e635d8f35ab403f0dd450fea13c139148f10c15c72f27",
+   "sha256": "f2510aca4fd8360279a9fcbb592271ed0987255981ccaccf95e4e3f4200702ff",
    "updated": "2026-09-28",
    "in_app_since": "2026-07-16",
    "tables": {
@@ -761,7 +761,7 @@
   "cessna-206h-stationair": {
    "module_id": "c206h",
    "data_url": "https://flightdecide.com/aircraft/cessna-206h-stationair/data.json",
-   "sha256": "7585369daed21d35a9645f8499b9cc07c813b372927d9353126ba263594dc4ef",
+   "sha256": "446f81dd94d5f240bb6e7b7e8d8cadb42afc2a2d592ad253d02679e64640586f",
    "updated": "2026-09-28",
    "in_app_since": "2026-07-16",
    "tables": {
