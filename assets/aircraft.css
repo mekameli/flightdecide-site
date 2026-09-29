@@ -5,21 +5,6 @@
  * pages.css so a theme change carries through without touching this file.
  */
 
-/* FD-715: the status line (in the app or not, reviewed when, how many tables
- * are from the handbook) and the heading on a section still drawn from the
- * app's library rather than the handbook data file. Two classes deep, so
- * .prose p (0,1,1) cannot repaint them. */
-.prose p.ac-status {
-  margin: 0 0 18px; padding: 10px 14px; font-size: 0.92rem; line-height: 1.5;
-  color: var(--text-muted); border: 1px solid var(--border); border-radius: var(--radius-sm);
-  background: var(--bg-card);
-}
-.prose p.ac-status strong { color: var(--text); font-weight: 650; }
-.prose p.legacy-head {
-  margin: -6px 0 10px; padding-left: 10px; font-size: 0.88rem; font-weight: 650;
-  line-height: 1.4; color: var(--accent-amber); border-left: 3px solid var(--accent-amber);
-}
-
 .perf-cond { margin: 2px 0 2px; font-size: 0.95rem; color: var(--text); }
 .perf-src  { margin: 0 0 14px; font-size: 0.82rem; color: var(--text-dim); }
 
@@ -90,8 +75,3 @@ td.c-ext { background: rgba(148,163,184,0.10); }
   table.perf-table td i.sep { display: inline; }
   table.perf-table td span { display: inline; }
 }
-
-/* FD-715: a cell the handbook itself prints in gray ("may not be achievable"). */
-td.c-gray { color: var(--text-dim); background: rgba(148,163,184,0.10); }
-.perf-key .k-gray { background: rgba(148,163,184,0.35); }
-@media print { td.c-gray { color: #666; } }
