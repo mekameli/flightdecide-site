@@ -491,9 +491,18 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/upsloping-runway-and-a-low-approach/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/upsloping-runway-and-a-low-approach.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/centre-of-gravity-aft-of-the-limit/</loc>
@@ -655,14 +664,6 @@
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/upsloping-runway-and-a-low-approach/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/upsloping-runway-and-a-low-approach.webp</image:loc>
     </image:image>
   </url>
   <!-- explainers:end -->
