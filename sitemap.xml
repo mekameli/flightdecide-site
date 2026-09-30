@@ -657,5 +657,13 @@
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/upsloping-runway-and-a-low-approach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/upsloping-runway-and-a-low-approach.webp</image:loc>
+    </image:image>
+  </url>
   <!-- explainers:end -->
 </urlset>

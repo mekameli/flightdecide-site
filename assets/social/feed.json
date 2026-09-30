@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T17:50:04+00:00",
+  "generated": "2026-09-30T00:26:09+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -2715,6 +2715,158 @@
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
           ]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "illusion-runway-slope",
+      "slug": "upsloping-runway-and-a-low-approach",
+      "page": "/explainers/upsloping-runway-and-a-low-approach/",
+      "title": "An upsloping runway and a low approach",
+      "headline": "An upsloping runway fools you into flying low.",
+      "pillar": "illusions",
+      "topic": "Visual illusions",
+      "alt": "An upsloping runway and a low approach: an illustrated diagram for pilots. An upsloping runway fools you into flying low.",
+      "image": "/assets/social/illusion-runway-slope.webp",
+      "image_full": "/assets/explainers/upsloping-runway-and-a-low-approach.webp",
+      "image_px": 1003,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "An upsloping runway creates the illusion of being higher on the approach than actual.",
+        "Flying that illusion produces a lower than normal approach."
+      ],
+      "intent": "An upsloping runway makes the approach look steeper than it is, so the correction is to fly lower.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 17",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 17",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 17",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 17
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+          "kind": "handbook",
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "NORMAL PATH, FEELS HIGH",
+          "points_at": "The ghost aircraft on the upper, normal approach path."
+        },
+        {
+          "label": "LOWER THAN NORMAL",
+          "points_at": "The solid aircraft on the lower, shallower approach path."
+        },
+        {
+          "label": "RUNWAY RISES AWAY",
+          "points_at": "The far, raised end of the upsloping runway surface."
+        }
+      ],
+      "short": "upsloping-runway",
+      "article": [
+        {
+          "heading": "What an upsloping runway makes you feel",
+          "paragraphs": [
+            "Picture a runway whose far end sits higher than the end you touch down on. The ground under your approach may rise toward it as well.",
+            "An upsloping runway, upsloping terrain, or both can give you the illusion of being higher than you really are. The FAA's pilot handbook, FAA-H-8083-25, files this among the optical illusions it ties mainly to landing.",
+            "The pilot handbook calls it the runway and terrain slopes illusion. It gives no figure for how much slope it takes to fool you, only which way the error runs.",
+            "Downsloping runways and downsloping approach terrain can have the opposite effect. They can make you feel lower than you are, which leads to a higher approach."
+          ],
+          "table": {
+            "caption": "Which way each slope tilts your judgment, from Figure 17-7 of FAA-H-8083-25 and the text beside it.",
+            "columns": [
+              "Slope",
+              "The aircraft seems",
+              "The approach flown"
+            ],
+            "rows": [
+              [
+                "Upsloping runway",
+                "Higher than it actually is",
+                "Lower approach"
+              ],
+              [
+                "Upsloping terrain",
+                "Higher than it actually is",
+                "Lower approach"
+              ],
+              [
+                "Downsloping runway",
+                "Lower than it actually is",
+                "Higher approach"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "How you judge your approach by eye",
+          "paragraphs": [
+            "FAA-H-8083-3, the FAA's airplane flying handbook, teaches you to judge your descent partly from the runway ahead. Seen from the air, its rectangle looks like a trapezoid, with the far end narrower and the edges converging. That effect is called perspective.",
+            "On a stabilized approach, one held at a constant angle toward a chosen point on the runway, the trapezoid keeps its shape. It only grows as you close in.",
+            "On a shallow approach the runway seems to shorten and widen. On a steep one it seems to stretch longer and narrower.",
+            "You also watch the aiming point, the spot on the ground your descent line points at. On a constant-angle path it seems to stay still, and its distance below the horizon doesn't change.",
+            "Every one of these cues comes through your eyes. The pilot handbook warns that the surface below and the air around you on landing can create illusions of being on the wrong approach path."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/upsloping-runway-and-a-low-approach-2960a6db.webp",
+            "caption": "The outline keeps its shape while the angle holds and changes as soon as the angle does.",
+            "alt": "The outline keeps its shape while the angle holds and changes as soon as the angle does."
+          }
+        },
+        {
+          "heading": "Why feeling high leaves you low",
+          "paragraphs": [
+            "Neither handbook says which of those cues an upslope distorts. The pilot handbook says what you end up believing, which is that you're higher than you are.",
+            "When you feel high on final, the natural move is to come down. Over an upsloping runway that move fixes a problem you don't have. A pilot who doesn't recognize the illusion will fly a lower approach than normal.",
+            "The slope paragraph stops there, but the runway width illusion ends the same way. A runway narrower than usual can also make you feel high and lead you into a lower approach.",
+            "For that case the pilot handbook names the risks of flying low. They are striking objects along the approach path and landing short.",
+            "The same chapter says illusions are among the most often cited contributors to fatal aviation accidents. It says so of visual illusions as a group, without singling out slope."
+          ]
+        },
+        {
+          "heading": "Learning the slope before you arrive",
+          "paragraphs": [
+            "The first defense the pilot handbook lists is to expect visual illusions on approaches to unfamiliar airports. It singles out approaches at night or in adverse weather.",
+            "Before you go, read the airport diagram and the Chart Supplement U.S., the publication formerly called the Airport/Facility Directory. The pilot handbook sends you to both for runway slope, terrain and lighting.",
+            "Check the ground on the approach path as well as the runway itself. Upsloping terrain can create the same illusion, alone or together with an upsloping runway.",
+            "If you can, fly over an unfamiliar airport and look at it before you land. The pilot handbook calls this an aerial visual inspection."
+          ]
+        },
+        {
+          "heading": "Cross-checking the view on final",
+          "paragraphs": [
+            "On final, don't fly the picture alone. Refer to the altimeter often on every approach, by day and by night.",
+            "Use a Visual Approach Slope Indicator (VASI) or a Precision Approach Path Indicator (PAPI) whenever one is available. The pilot handbook lists both as a visual reference, alongside an electronic glideslope, the vertical guidance on some instrument approaches.",
+            "It also points to the visual descent point (VDP), a point marked on many nonprecision instrument approach charts. Those are approaches flown without an electronic glideslope.",
+            "At the end of an instrument approach you switch from instruments to outside cues for the landing. That switch is why the pilot handbook wants you alert to these illusions.",
+            "Watch for distraction as well. The pilot handbook warns that an emergency or anything else pulling you from usual procedures raises your chance of an approach accident."
+          ]
+        },
+        {
+          "heading": "Fixing a low approach once you spot it",
+          "paragraphs": [
+            "The aiming point tells you when you've gone low. If it seems to creep up toward the horizon, the true aiming point is closer than it looks. You're undershooting, heading short of where you aimed.",
+            "The flying handbook's fix is power and pitch together. Add power and raise the nose to level off, holding the correct airspeed. That can take a large increase in power.",
+            "As you meet the glide path, the line you meant to descend along, reduce power and lower the nose to stay on it. Catch the error early and the corrections left for short final stay small.",
+            "Two shortcuts make it worse. Raising the nose without adding power bleeds off airspeed, and ends in an excessive rate of descent, a low-altitude stall, or both. Retracting the flaps can cause a sudden loss of lift and an excessive sink rate.",
+            "If you're very low, a stabilized approach may no longer be possible. The normal answer then is a go-around, abandoning the landing and climbing away to set up again."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/upsloping-runway-and-a-low-approach-63d6ac4f.webp",
+            "caption": "Whether you level off and rejoin the path or go around depends on how low you are.",
+            "alt": "Whether you level off and rejoin the path or go around depends on how low you are."
+          }
         }
       ],
       "related": []
