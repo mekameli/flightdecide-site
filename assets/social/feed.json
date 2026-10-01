@@ -1,7 +1,173 @@
 {
-  "generated": "2026-10-01T07:20:58+00:00",
+  "generated": "2026-10-01T07:25:26+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "sys-vacuum-failure",
+      "slug": "attitude-indicator-failing-slowly",
+      "page": "/explainers/attitude-indicator-failing-slowly/",
+      "title": "An attitude indicator failing slowly",
+      "headline": "Your attitude indicator can be wrong without looking broken.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "An attitude indicator failing slowly: an illustrated diagram for pilots. Your attitude indicator can be wrong without looking broken. The picture shows the vacuum system as Figure 8-20 draws it: heading indicator, attitude indicator, suction gauge, air filter, relief valve, pump and the hoses connecting them, the two gyro instruments side by side between the filter and the pump; the vacuum pump cold and still, nothing flowing in any hose; the suction gauge needle resting well below the short green arc that marks its normal range; the attitude indicator intact and convincing but showing a left bank as the FAA draws one: horizon and bank scale turned together, the orange miniature airplane level. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/sys-vacuum-failure.webp",
+      "image_full": "/assets/explainers/attitude-indicator-failing-slowly.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/p/Dd8Xh7BG7tq/",
+      "posted": "2026-10-01",
+      "caption": [
+        "Would you spot an attitude indicator drifting slowly after a vacuum failure?",
+        "After a vacuum pump failure the gyros slow down, and the attitude indicator can wander and show a wrong picture while still looking normal. Cross-check it against every other instrument. An electric turn coordinator still shows direction and rate of turn. Many small aircraft have no vacuum warning, so watch the suction gauge for a reading below its normal range.",
+        "Full explainer, and the FAA sources, at the link in our bio."
+      ],
+      "teaches": [
+        "After a vacuum pump failure the attitude and heading indicators can fail progressively: as their gyros slow down they may wander, so the attitude indicator can show a wrong picture without looking broken and lead an unsuspecting pilot into an unusual attitude.",
+        "Where the vacuum system drives the attitude and heading indicators and the electrical system drives the turn coordinator, the turn coordinator keeps showing the direction and rate of turn while the attitude indicator wanders. It does not display a specific angle of bank.",
+        "Many small aircraft have no warning system for a vacuum failure, so the pilot has to watch the suction gauge: a reading below its normal range means the vacuum system is not supplying the suction the gyros need."
+      ],
+      "intent": "When the vacuum pump quits, the attitude indicator does not go blank; its gyro spins down and the picture drifts away from the truth while still looking like a picture.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 8",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 8",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 8",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 8
+        },
+        {
+          "ref": "FAA-H-8083-15 ch 11",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 11",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": "see Chapter 11",
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 11
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "VACUUM PUMP HAS FAILED",
+          "points_at": "The vacuum pump, the base-mounted cylinder splined at its left end, cold and still."
+        },
+        {
+          "label": "SUCTION BELOW NORMAL RANGE",
+          "points_at": "The suction gauge's needle, resting near 1, well below the green arc."
+        },
+        {
+          "label": "A BANK THAT ISN'T THERE",
+          "points_at": "The attitude indicator's tilted horizon line, showing a left bank while the airplane is level."
+        },
+        {
+          "label": "STILL SHOWS NO TURN",
+          "points_at": "The turn coordinator's miniature airplane, wings level on the upper marks."
+        }
+      ],
+      "short": "attitude-indicator",
+      "article": [
+        {
+          "heading": "Why a failing attitude indicator looks normal",
+          "paragraphs": [
+            "Imagine you're in cloud, with no outside horizon to look at. Your best picture of pitch, whether the nose is up or down, and bank, how far the wings tilt, comes from one instrument.",
+            "That instrument is the attitude indicator. Its face shows a miniature aircraft set against a horizon bar. The handbook calls it reliable and the most realistic flight instrument on the panel.",
+            "That trust is what makes a failed vacuum pump, the engine-driven pump that supplies this instrument's suction, so dangerous. When it quits, the instrument can show a wrong picture without looking broken.",
+            "An unsuspecting pilot who follows that picture can be led into a dangerous unusual attitude, a pitch or bank far from what was intended. Getting out of it then takes a partial panel recovery, flown on whatever instruments are still working."
+          ]
+        },
+        {
+          "heading": "How the gyro holds the horizon",
+          "paragraphs": [
+            "Inside the attitude indicator is a gyro, a wheel kept spinning in a horizontal plane. The horizon bar on the face is fixed to that gyro.",
+            "A spinning gyro resists anything that would tip its path of spin. This resistance to being tipped is called rigidity in space, and the instrument depends on it.",
+            "So when you pitch or bank, the gyro and its horizon bar stay level with the true horizon. The airplane actually rotates around the spinning gyro, not the other way around. Read the miniature aircraft against the bar, and you are reading your airplane against the real horizon.",
+            "All of this assumes the gyro is spinning fast enough. In a vacuum-driven attitude indicator, the suction that keeps it at speed comes from the vacuum system."
+          ]
+        },
+        {
+          "heading": "What happens as the gyro slows",
+          "paragraphs": [
+            "That suction comes from the vacuum pump, which is driven mechanically off the engine. Occasionally a pump fails, and with it go the attitude indicator and the heading indicator, the gyro instrument showing which way you're pointed.",
+            "The gyros don't stop dead. Once the vacuum system stops making enough suction to hold their speed, they begin to slow down.",
+            "As a gyro slows, it is pushed off its plane of spin more easily. It can precess, which means it creeps away from the position it was holding. It is simply no longer spinning fast enough to keep its alignment.",
+            "That is why the handbook says these instruments can fail progressively. As the gyros slow, the attitude picture and the heading may wander, and an autopilot connected to them can move the airplane wrongly.",
+            "In the handbook's figure of a vacuum failure, the airplane is level at 2,000 feet above mean sea level. A pilot who misses the off or failed flags, the warnings on the instrument faces, may still read a left turn. Rolling out of a turn that isn't happening puts a level airplane into a bank."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/attitude-indicator-failing-slowly-ce01ed13.webp",
+            "caption": "The vacuum pump pulls air through the filter and the two gyro instruments, and the suction gauge shows how much suction it is making. The electric turn coordinator is not on that line, so a failed pump leaves it working.",
+            "alt": "The vacuum pump pulls air through the filter and the two gyro instruments, and the suction gauge shows how much suction it is making. The electric turn coordinator is not on that line, so a failed pump leaves it working."
+          }
+        },
+        {
+          "heading": "How the suction gauge warns you",
+          "paragraphs": [
+            "Many small aircraft have no warning system for a vacuum failure. Some aircraft do have a warning light for low vacuum, but others have only a gauge that shows the suction.",
+            "In those airplanes the suction gauge is the warning, so it belongs in your cross-check, the habit of moving your eyes across the instruments. A reading below its normal range means low suction, and the gyros aren't getting what they need.",
+            "The gauge reads the cause directly. The attitude indicator shows only the effect, and it may show it without looking broken."
+          ]
+        },
+        {
+          "heading": "Why the turn coordinator keeps working",
+          "paragraphs": [
+            "The turn coordinator shows how fast you're turning and which way. Picture a panel where the vacuum system drives the attitude and heading indicators and the electrical system drives the turn coordinator. The handbook's own drawing of a turn coordinator has D.C. ELEC. printed on its face.",
+            "In that panel, a vacuum pump failure leaves the turn coordinator alone. It keeps showing the direction and rate of turn even while the attitude indicator wanders.",
+            "Rate of turn is how many degrees your heading changes each second. Marks on the instrument's left and right sides show a standard-rate turn, defined as 3° per second.",
+            "Know what it leaves out. It doesn't show the angle of bank, and its face carries the words NO PITCH INFORMATION.",
+            "Once you know the attitude indicator has failed, the turn coordinator becomes your reference for turning. When the small airplane on its face sits level, it shows no rate of turn, so your heading is holding steady."
+          ]
+        },
+        {
+          "heading": "Catching the failure in your cross-check",
+          "paragraphs": [
+            "Without a warning light, a failure usually gives itself away as a disagreement. The attitude indicator stops agreeing with the instruments that back it up.",
+            "One quick check compares the attitude indicator with the turn coordinator and the vertical speed indicator, which shows climb or descent. That single comparison sets three separate systems against each other, the suction system, the electrical system and the static system. The static system is the one that feeds the vertical speed indicator, along with the airspeed indicator and altimeter.",
+            "The fault can be a single instrument or a whole system. A vacuum failure is a system failure, so expect both the attitude and heading indicators to be affected. A suction gauge below its normal range confirms which system it is."
+          ],
+          "table": {
+            "caption": "Where each sign of a vacuum failure shows up, in a panel whose turn coordinator runs on electrical power.",
+            "columns": [
+              "Where you look",
+              "What it shows after the pump quits"
+            ],
+            "rows": [
+              [
+                "Warning light, in some aircraft",
+                "A low vacuum situation"
+              ],
+              [
+                "Suction gauge",
+                "A reading below its normal range"
+              ],
+              [
+                "Attitude indicator",
+                "A picture that may wander without looking broken"
+              ],
+              [
+                "Heading indicator",
+                "A heading that may wander"
+              ],
+              [
+                "Turn coordinator",
+                "Still the direction and rate of turn"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Flying on once the gyros have failed",
+          "paragraphs": [
+            "Keep control of the airplane while you work out what has failed. Speed up your cross-check and include every flight instrument in it.",
+            "Then fly on the instruments that still work. Covering the failed attitude and heading indicators may help, because a wrong picture you can't see can't lead you anywhere.",
+            "Look for a fix next. Check the power source, switch to a backup or alternate system if there is one, and reset the instrument if you can.",
+            "Then tell air traffic control what has happened. If you need to, declare an emergency early, while the situation is still within your ability to recover.",
+            "The handbook calls it important to practice instrument flight without the attitude and heading indicators. Do that, and partial panel flying won't be new to you when a pump quits for real."
+          ]
+        }
+      ],
+      "related": []
+    },
     {
       "id": "illusion-runway-slope",
       "slug": "upsloping-runway-and-a-low-approach",
@@ -2870,168 +3036,6 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
-          ]
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": "sys-vacuum-failure",
-      "slug": "attitude-indicator-failing-slowly",
-      "page": "/explainers/attitude-indicator-failing-slowly/",
-      "title": "An attitude indicator failing slowly",
-      "headline": "Your attitude indicator can be wrong without looking broken.",
-      "pillar": "systems",
-      "topic": "Systems",
-      "alt": "An attitude indicator failing slowly: an illustrated diagram for pilots. Your attitude indicator can be wrong without looking broken.",
-      "image": "/assets/social/sys-vacuum-failure.webp",
-      "image_full": "/assets/explainers/attitude-indicator-failing-slowly.webp",
-      "image_px": 1003,
-      "permalink": null,
-      "posted": "",
-      "caption": [],
-      "teaches": [
-        "After a vacuum pump failure the attitude and heading indicators can fail progressively: as their gyros slow down they may wander, so the attitude indicator can show a wrong picture without looking broken and lead an unsuspecting pilot into an unusual attitude.",
-        "Where the vacuum system drives the attitude and heading indicators and the electrical system drives the turn coordinator, the turn coordinator keeps showing the direction and rate of turn while the attitude indicator wanders. It does not display a specific angle of bank.",
-        "Many small aircraft have no warning system for a vacuum failure, so the pilot has to watch the suction gauge: a reading below its normal range means the vacuum system is not supplying the suction the gyros need."
-      ],
-      "intent": "When the vacuum pump quits, the attitude indicator does not go blank; its gyro spins down and the picture drifts away from the truth while still looking like a picture.",
-      "citations": [
-        {
-          "ref": "FAA-H-8083-25 ch 8",
-          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 8",
-          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
-          "kind": "handbook",
-          "note": "see Chapter 8",
-          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
-          "chapter": 8
-        },
-        {
-          "ref": "FAA-H-8083-15 ch 11",
-          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 11",
-          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
-          "kind": "handbook",
-          "note": "see Chapter 11",
-          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
-          "chapter": 11
-        }
-      ],
-      "figure_key": [
-        {
-          "label": "VACUUM PUMP HAS FAILED",
-          "points_at": "The vacuum pump, the base-mounted cylinder splined at its left end, cold and still."
-        },
-        {
-          "label": "SUCTION BELOW NORMAL RANGE",
-          "points_at": "The suction gauge's needle, resting near 1, well below the green arc."
-        },
-        {
-          "label": "A BANK THAT ISN'T THERE",
-          "points_at": "The attitude indicator's tilted horizon line, showing a left bank while the airplane is level."
-        },
-        {
-          "label": "STILL SHOWS NO TURN",
-          "points_at": "The turn coordinator's miniature airplane, wings level on the upper marks."
-        }
-      ],
-      "short": "attitude-indicator",
-      "article": [
-        {
-          "heading": "Why a failing attitude indicator looks normal",
-          "paragraphs": [
-            "Imagine you're in cloud, with no outside horizon to look at. Your best picture of pitch, whether the nose is up or down, and bank, how far the wings tilt, comes from one instrument.",
-            "That instrument is the attitude indicator. Its face shows a miniature aircraft set against a horizon bar. The handbook calls it reliable and the most realistic flight instrument on the panel.",
-            "That trust is what makes a failed vacuum pump, the engine-driven pump that supplies this instrument's suction, so dangerous. When it quits, the instrument can show a wrong picture without looking broken.",
-            "An unsuspecting pilot who follows that picture can be led into a dangerous unusual attitude, a pitch or bank far from what was intended. Getting out of it then takes a partial panel recovery, flown on whatever instruments are still working."
-          ]
-        },
-        {
-          "heading": "How the gyro holds the horizon",
-          "paragraphs": [
-            "Inside the attitude indicator is a gyro, a wheel kept spinning in a horizontal plane. The horizon bar on the face is fixed to that gyro.",
-            "A spinning gyro resists anything that would tip its path of spin. This resistance to being tipped is called rigidity in space, and the instrument depends on it.",
-            "So when you pitch or bank, the gyro and its horizon bar stay level with the true horizon. The airplane actually rotates around the spinning gyro, not the other way around. Read the miniature aircraft against the bar, and you are reading your airplane against the real horizon.",
-            "All of this assumes the gyro is spinning fast enough. In a vacuum-driven attitude indicator, the suction that keeps it at speed comes from the vacuum system."
-          ]
-        },
-        {
-          "heading": "What happens as the gyro slows",
-          "paragraphs": [
-            "That suction comes from the vacuum pump, which is driven mechanically off the engine. Occasionally a pump fails, and with it go the attitude indicator and the heading indicator, the gyro instrument showing which way you're pointed.",
-            "The gyros don't stop dead. Once the vacuum system stops making enough suction to hold their speed, they begin to slow down.",
-            "As a gyro slows, it is pushed off its plane of spin more easily. It can precess, which means it creeps away from the position it was holding. It is simply no longer spinning fast enough to keep its alignment.",
-            "That is why the handbook says these instruments can fail progressively. As the gyros slow, the attitude picture and the heading may wander, and an autopilot connected to them can move the airplane wrongly.",
-            "In the handbook's figure of a vacuum failure, the airplane is level at 2,000 feet above mean sea level. A pilot who misses the off or failed flags, the warnings on the instrument faces, may still read a left turn. Rolling out of a turn that isn't happening puts a level airplane into a bank."
-          ],
-          "figure": {
-            "src": "/assets/explainers/figures/attitude-indicator-failing-slowly-ce01ed13.webp",
-            "caption": "The vacuum pump pulls air through the filter and the two gyro instruments, and the suction gauge shows how much suction it is making. The electric turn coordinator is not on that line, so a failed pump leaves it working.",
-            "alt": "The vacuum pump pulls air through the filter and the two gyro instruments, and the suction gauge shows how much suction it is making. The electric turn coordinator is not on that line, so a failed pump leaves it working."
-          }
-        },
-        {
-          "heading": "How the suction gauge warns you",
-          "paragraphs": [
-            "Many small aircraft have no warning system for a vacuum failure. Some aircraft do have a warning light for low vacuum, but others have only a gauge that shows the suction.",
-            "In those airplanes the suction gauge is the warning, so it belongs in your cross-check, the habit of moving your eyes across the instruments. A reading below its normal range means low suction, and the gyros aren't getting what they need.",
-            "The gauge reads the cause directly. The attitude indicator shows only the effect, and it may show it without looking broken."
-          ]
-        },
-        {
-          "heading": "Why the turn coordinator keeps working",
-          "paragraphs": [
-            "The turn coordinator shows how fast you're turning and which way. Picture a panel where the vacuum system drives the attitude and heading indicators and the electrical system drives the turn coordinator. The handbook's own drawing of a turn coordinator has D.C. ELEC. printed on its face.",
-            "In that panel, a vacuum pump failure leaves the turn coordinator alone. It keeps showing the direction and rate of turn even while the attitude indicator wanders.",
-            "Rate of turn is how many degrees your heading changes each second. Marks on the instrument's left and right sides show a standard-rate turn, defined as 3° per second.",
-            "Know what it leaves out. It doesn't show the angle of bank, and its face carries the words NO PITCH INFORMATION.",
-            "Once you know the attitude indicator has failed, the turn coordinator becomes your reference for turning. When the small airplane on its face sits level, it shows no rate of turn, so your heading is holding steady."
-          ]
-        },
-        {
-          "heading": "Catching the failure in your cross-check",
-          "paragraphs": [
-            "Without a warning light, a failure usually gives itself away as a disagreement. The attitude indicator stops agreeing with the instruments that back it up.",
-            "One quick check compares the attitude indicator with the turn coordinator and the vertical speed indicator, which shows climb or descent. That single comparison sets three separate systems against each other, the suction system, the electrical system and the static system. The static system is the one that feeds the vertical speed indicator, along with the airspeed indicator and altimeter.",
-            "The fault can be a single instrument or a whole system. A vacuum failure is a system failure, so expect both the attitude and heading indicators to be affected. A suction gauge below its normal range confirms which system it is."
-          ],
-          "table": {
-            "caption": "Where each sign of a vacuum failure shows up, in a panel whose turn coordinator runs on electrical power.",
-            "columns": [
-              "Where you look",
-              "What it shows after the pump quits"
-            ],
-            "rows": [
-              [
-                "Warning light, in some aircraft",
-                "A low vacuum situation"
-              ],
-              [
-                "Suction gauge",
-                "A reading below its normal range"
-              ],
-              [
-                "Attitude indicator",
-                "A picture that may wander without looking broken"
-              ],
-              [
-                "Heading indicator",
-                "A heading that may wander"
-              ],
-              [
-                "Turn coordinator",
-                "Still the direction and rate of turn"
-              ]
-            ]
-          }
-        },
-        {
-          "heading": "Flying on once the gyros have failed",
-          "paragraphs": [
-            "Keep control of the airplane while you work out what has failed. Speed up your cross-check and include every flight instrument in it.",
-            "Then fly on the instruments that still work. Covering the failed attitude and heading indicators may help, because a wrong picture you can't see can't lead you anywhere.",
-            "Look for a fix next. Check the power source, switch to a backup or alternate system if there is one, and reset the instrument if you can.",
-            "Then tell air traffic control what has happened. If you need to, declare an emergency early, while the situation is still within your ability to recover.",
-            "The handbook calls it important to practice instrument flight without the attitude and heading indicators. Do that, and partial panel flying won't be new to you when a pump quits for real."
           ]
         }
       ],
