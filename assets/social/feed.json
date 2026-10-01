@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T20:00:05+00:00",
+  "generated": "2026-10-01T20:20:05+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1279,39 +1279,39 @@
       "short": "rotor-cloud",
       "article": [
         {
-          "heading": "How a ridge sets the air bouncing",
+          "heading": "How a ridge sets the air waving",
           "paragraphs": [
-            "Picture a strong wind blowing straight across a ridge. The air has to go up and over, and what it does next depends on how stable it is.",
-            "Stable air is air that resists being pushed up or down. Lift it over the ridge and it ends up heavier than the air around it. Gravity pulls it back toward the level it came from.",
-            "It doesn't stop at that level. Its momentum carries it lower, where it warms as it's squeezed and becomes lighter than the air around it. So it rises again, overshoots again, and keeps swinging until the motion dies out.",
-            "That swinging is a gravity wave, a wave driven by gravity pulling displaced air back into place. You need both parts. With a weak wind the ridge can act like a dam and hold the air back, and unstable air builds deep convective clouds or thunderstorms instead of a wave."
+            "Picture a strong wind blowing across a mountain ridge on a stable day. Stable air resists being lifted, because once it is pushed up it is heavier than the air around it.",
+            "After the air clears the top of the ridge, gravity pulls it back down. Momentum carries it below its starting level, and compression warms it as it sinks, until it is lighter than the air around it. Up it goes again, overshoots again, and keeps bobbing downstream until the motion dies out.",
+            "That train of rises and falls is a mountain wave, and its high points are its crests. Air climbing toward a crest cools as it expands. With enough moisture, its water vapor condenses into cloud.",
+            "The cloud at a crest is a lenticular, named for its lens or airfoil shape. Lenticulars often line up in fairly straight bands parallel to the ridge but downwind of it, with clear sky between. Each band sits on a crest, so a row of them draws the wave for you."
           ]
         },
         {
-          "heading": "Two kinds of wave, both a hazard",
+          "heading": "What a lenticular's edges tell you",
           "paragraphs": [
-            "The wave behind a ridge takes one of two main forms. In a vertically propagating mountain wave, the wave's energy travels upward. The wave stands above the mountain and leans into the wind as it climbs.",
-            "In a trapped lee wave, wind shear above ridge level holds the energy down. Wind shear is a sharp change in wind speed or direction with height. The wave runs downwind of the mountain instead, stays fairly low and doesn't lean.",
-            "The handbook treats both kinds as hazardous to aviation. They can exist at the same time, and they can blend into a wave that is only partly trapped.",
-            "For a vertically propagating wave, having a wave at all isn't the problem. The danger depends on how strong it is and whether part of it breaks into turbulent motion. At the extreme, that breaking can damage or fail part of the aircraft."
+            "The edges of a wave cloud give you a clue to the air inside it. Smooth, laminar edges and tops, meaning they look sleek and layered, go with little or no turbulence.",
+            "A lumpy, uneven cloud says the opposite. So does any sense that it is rolling around an axis running along the cloud. Lenticulars themselves can look either smooth or turbulent, so read each one on its own.",
+            "A smooth-looking lenticular layer can still be rough at the bottom. Inside the layer, the air typically runs from turbulent near its base to smooth near its top.",
+            "The wave also roughens the air at its crests and at its troughs, the low points between them. It moves strong wind up and down, which sharpens the wind shear, a sudden change in wind speed or direction over a short distance. Shear like that stirs up turbulence."
           ]
         },
         {
-          "heading": "What a lenticular cloud is telling you",
+          "heading": "Why the air under the crest rolls",
           "paragraphs": [
-            "Trapped lee waves often show up as a train of altocumulus standing lenticular clouds, lens-shaped clouds downwind of the mountains. They form fairly straight bands parallel to the range, with clear gaps between them.",
-            "Depending on how the moisture is layered upwind, they can stack in several layers. That stacked, polished look is what makes them easy to trust.",
-            "Don't trust it. The handbook says these clouds can look turbulent or smooth. A clean edge shows you where the wave is, and it says nothing about how rough the air is.",
-            "These waves matter for takeoff, landing and en route flight below FL250. Down at those lower altitudes, trapped lee waves can give you strong turbulence."
+            "When a mountain wave is present, a rotor quite commonly forms on the downwind side of the mountain. A rotor is a horizontal roll of air that stays put, near or below ridge height, beneath a wave crest. With enough moisture, it shows up as a rotor cloud under the lenticular.",
+            "The rotor zone is an area of possibly severe to extreme wind shear and turbulence. Some references call shear severe when it shifts your airspeed by more than 15 kt. They also count a change in vertical speed of more than 500 feet per minute, or fpm.",
+            "The roughness comes with big changes in the wind below cloud level. Just downwind of the mountains, a strong shear layer often sits near the cloud base. It splits a turbulent wake below mountaintop height, the churned air behind the mountain, from the faster air above that carries the cloud.",
+            "The wind beneath lenticulars can swing and gust a lot, but it is usually not extremely strong. Pilots flying near these clouds often report moderate to severe turbulence underneath them.",
+            "Those cloud bases typically sit one to several thousand feet above ridge level. The rotor turns lower, near or below the ridge, and at that level it is usually the most turbulent part of the wave."
           ]
         },
         {
-          "heading": "Where the rotor cloud comes from",
+          "heading": "Where the downslope windstorm ends",
           "paragraphs": [
-            "When a vertically propagating wave breaks high above the ridge, it often drives very strong wind down the lee slope. That's the downwind side of the mountain. The handbook gives gusts reaching 100 kt there, a low-level turbulence hazard for every aircraft.",
-            "That fast downslope wind often stops abruptly in a jump. The jump sits some distance down the lee slope, or well downwind of the mountains.",
-            "The jump region is frequently an area of extreme turbulence. It reaches 10,000 ft or more above the surface. A strong shear layer at the jump is one source of that turbulence.",
-            "A line of ragged rotor clouds sometimes marks the jump, and those clouds churn visibly. Downwind of the jump the turbulence eases, though it can still be quite strong."
+            "Rotors typically sit at the far end of a downslope windstorm. That is strong wind racing down the lee slope, the downwind side of the mountain, after the wave breaks high above. Gusts on those slopes can reach 100 kt.",
+            "That fast flow does not fade out gently. It often stops abruptly, some distance down the lee slope or well downwind of the mountains, and that stopping place is called the jump. When a rotor marks the end of the windstorm, it belongs to the jump itself.",
+            "Extreme turbulence often fills the jump, stretching 10,000 ft or more above the ground. A line of ragged rotor clouds sometimes marks it. Beyond the jump the air calms somewhat, but the turbulence can still be strong."
           ],
           "figure": {
             "src": "/assets/explainers/figures/rotor-cloud-under-a-mountain-wave-fig1.webp",
@@ -1320,54 +1320,65 @@
           }
         },
         {
-          "heading": "How high each wave reaches",
+          "heading": "How to spot a rotor cloud early",
           "paragraphs": [
-            "A vertically propagating wave gets stronger as it climbs, because the air thins with height. A strong inversion, a layer where temperature rises with height, or a shear layer can soak up or reflect some of that energy.",
-            "Without one, the mountain's effects can reach far above the peaks, at times beyond 60,000 ft. Where the wave breaks you get local updrafts, downdrafts and possibly sudden severe or extreme turbulence.",
-            "Trapped lee waves work the other way. They weaken with height inside the trapping layer, which usually starts within a few thousand feet of the ridge crest. When the shear layer is too weak or shallow to trap them fully, they reach higher.",
-            "Size matters too. A taller range above the land around it makes a bigger wave, and so does a stronger wind across the ridge at mountaintop level. Even modest terrain can set up an appreciable wave in the right conditions."
+            "A rotor and its cloud are usually spinning hard. From a moving airplane, though, you may not see the spin until you are quite close.",
+            "From far off, a rotor cloud can pass for a harmless cumulus, the billowy cloud of a sunny afternoon. Look at its downwind side. It is typically rounded in the direction the rotor turns.",
+            "Then look along the bottom for ragged tags or streamers of cloud. They seem to form and vanish quickly, and that flicker is what gives you a sense of the spin inside."
+          ]
+        },
+        {
+          "heading": "What a rotor does to your airplane",
+          "paragraphs": [
+            "The advice on rotor zones is to stay out of them. Strong turbulence is likely around a rotor, most of all on its upwind side.",
+            "The spinning air can also produce rolling moments, forces that bank the airplane, stronger than your controls can counter. That can end in a loss of control.",
+            "Low altitude is where a rotor is most dangerous, and takeoff and landing top the list. You are slow then, and the airplane is set up for relatively high drag.",
+            "Close to the runway in mountain winds, local gusts above 50 kt are possible, with downdrafts greater than 1,500 fpm. A downdraft can sink you faster than your airplane can climb. Airplanes with high wing and power loading, meaning lots of weight for their wing and engine, are most exposed."
           ],
           "table": {
-            "caption": "Heights and speeds the handbook gives for mountain wave hazards",
+            "caption": "Low-level wind figures for flying near mountains, from FAA-H-8083-28 chapters 16 and 19.",
             "columns": [
-              "Feature",
-              "What the handbook gives"
+              "Where",
+              "What",
+              "Figure"
             ],
             "rows": [
               [
-                "Vertically propagating wave",
-                "Effects at times reaching in excess of 60,000 ft"
+                "Wind flow at ridge level",
+                "Suspect disturbances downwind of rugged terrain",
+                "exceeds about 20 kt"
               ],
               [
-                "Breaking wave turbulence",
-                "Typically between 20,000 ft and 39,000 ft MSL"
-              ],
-              [
-                "Downslope winds on the lee slopes",
-                "Gusts can reach 100 kt"
+                "Lee slopes",
+                "Downslope wind gusts",
+                "100 kt"
               ],
               [
                 "Jump region",
-                "Extreme turbulence extending to 10,000 ft or more above the surface"
+                "Extreme turbulence",
+                "10,000 ft or more above the surface"
               ],
               [
-                "Trapped lee waves",
-                "Concern for takeoff, landing and en route flight below FL250"
+                "Takeoff and landing",
+                "Localized gusts",
+                "in excess of 50 kt"
               ],
               [
-                "Trapping layer",
-                "Typically based within a few thousand feet of the ridge crest"
+                "Takeoff and landing",
+                "Downdrafts",
+                "greater than 1,500 fpm"
               ]
             ]
           }
         },
         {
-          "heading": "When the sky gives no warning",
+          "heading": "When the wave leaves no clouds",
           "paragraphs": [
-            "These flows often come with signs you can see, such as lenticular clouds, rotor clouds or blowing dust. The handbook is clear that they don't always.",
-            "Extremely severe wind events can happen with little or no visual warning. Trapped lee waves in particular frequently occur without any cloud at all.",
-            "The most severe mountain wind events usually come when the large-scale winds are strongest, from late autumn to early spring. The rest of the year, hazardous winds near mountains are more often tied to thunderstorms and their outflow.",
-            "The eddies terrain throws off range from a few centimeters to tens or hundreds of kilometers across. Some leave you in fairly smooth air. Others bring turbulence strong enough to destroy an aircraft, and a real chance of losing control."
+            "Lenticulars and rotor clouds need enough moisture in the air arriving at the mountain. Mountain waves often come with them, or with blowing dust. That is not always so, and extremely severe winds can arrive with little or no visual warning.",
+            "So a clear sky downwind of a ridge does not mean there is no wave. Trapped lee waves, waves whose energy stays below a certain height, frequently occur without any cloud.",
+            "Watch the wind instead. Suspect hidden disturbances whenever you fly downwind of rugged terrain with ridge-level wind above about 20 kt. That figure is the prevailing wind at the ridge crest, upwind of you, not a local gust.",
+            "Fly low over mountains with 20 kt or more at ridge level and you can expect moderate or greater turbulence. You can also expect strong updrafts and downdrafts, and very strong rotor and shear zones. That holds most of all for general aviation airplanes, the kind you likely train in.",
+            "The worst mountain wind events tend to fall between late autumn and early spring, when the big weather-map winds blow hardest. In a wave flow, fly at turbulence penetration speed, the speed meant for rough air. Stay clear of terrain that drops away sharply, even with no lenticular in sight."
           ]
         }
       ],
@@ -1970,11 +1981,20 @@
         "On a long day, the checklist is the only honest opinion in the cockpit."
       ],
       "teaches": [
-        "The effects of fatigue may be subtle, and fatigue may degrade cognitive skills and decision-making ability.",
+        "Fatigue degrades attention and the ability to divide it between tasks.",
         "Fatigue is hard to judge from how you feel: a pilot who has flown 16 hours may still say they are not too tired, so the IMSAFE checklist helps identify it."
       ],
       "intent": "Fatigue narrows the field of attention before it feels like impairment, so the scan stops covering what you think it covers.",
       "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 17",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 17",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 17",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 17
+        },
         {
           "ref": "FAA-H-8083-25 ch 2",
           "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 2",
