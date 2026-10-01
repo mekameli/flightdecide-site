@@ -666,5 +666,13 @@
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/attitude-indicator-failing-slowly/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/attitude-indicator-failing-slowly.webp</image:loc>
+    </image:image>
+  </url>
   <!-- explainers:end -->
 </urlset>
