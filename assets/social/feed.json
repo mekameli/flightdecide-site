@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:10:06+00:00",
+  "generated": "2026-10-02T05:25:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1589,90 +1589,72 @@
       "short": "ground-effect",
       "article": [
         {
-          "heading": "What the float feels like",
+          "heading": "What you feel just before touchdown",
           "paragraphs": [
-            "You're over the numbers at idle, easing back to hold the landing attitude. The wheels should be close to touching. Instead the airplane stays a few feet up and the runway keeps sliding by underneath.",
-            "That hold-off is ground effect. It's a change in how the wing works when it flies very close to the surface, and the handbook calls it improved performance. Near the ground the wing does the same job with less drag.",
-            "It matters most when you hold a steady attitude at low speed and low height. That happens in two places on every flight. One is the flare before touchdown, and the other is the first moments after lift-off."
+            "You've closed the throttle and eased the nose up for the flare, the gentle pitch-up just before touchdown. Now you're waiting for the wheels to touch, but the runway keeps sliding past and the airplane keeps flying just above it. It doesn't seem to want to come down.",
+            "Pilots have noticed this since the first flights, and it feels like a cushion of air trapped under the wing. Its name is ground effect, the change in airflow around an airplane flying close to the ground or water.",
+            "Ground effect normally reaches up to about one wingspan above the surface. Inside that height the wing loses part of its induced drag, the drag that comes with making lift. With less drag to slow it, the airplane gives up its speed slowly and floats."
           ]
         },
         {
-          "heading": "Why drag drops near the runway",
+          "heading": "Where induced drag comes from",
           "paragraphs": [
-            "Every wing that makes lift also makes induced drag, the drag that comes with producing lift. It's tied to the air the wing disturbs. Some air rises ahead of the wing, called upwash, and some is pushed down behind it, called downwash.",
-            "At each tip that disturbed air rolls up into wingtip vortices, the swirls that trail behind each wingtip. Close to the ground, upwash, downwash and those vortices all get weaker. Weaker vortices mean less induced drag.",
-            "Less drag means the airplane needs less thrust to hold a low airspeed in level flight. Near the surface, the same power goes further.",
-            "This only counts at low speed. At high speed, most of the total drag is parasite drag, the drag of pushing the airframe through the air. Induced drag is then a small share, so ground effect is mostly a takeoff and landing matter."
+            "A wing holds the airplane up by pushing air downward. The air streaming down behind the wing is called downwash, and the harder the wing works, the more of it there is.",
+            "The air under the wing is at higher pressure than the air above it. Near each tip it flows sideways around the edge and rolls up into a spinning tube called a wingtip vortex. Making the downwash and the vortices takes energy, and that energy is paid for as induced drag.",
+            "Slow flight makes it worse. To hold the airplane up at lower speed you need a higher angle of attack, the angle between the wing and the oncoming air. A higher angle means a bigger pressure difference, stronger vortices and more induced drag.",
+            "Induced drag rises as the inverse square of airspeed, so slowing down makes it grow fast. At high speed, parasite drag, the drag of moving the airframe itself through the air, makes up most of the total. In the flare you are slow, so induced drag is the part that dominates."
           ]
         },
         {
-          "heading": "How close the ground has to be",
+          "heading": "What the runway does to the airflow",
           "paragraphs": [
-            "You can detect ground effect up to a height equal to one wingspan above the surface, and that's normally where it starts. Climb above that and you're out of it.",
-            "The effect grows quickly as you get lower. With the wing a quarter of a span above the surface, induced drag falls by about 25 percent. At a tenth of a span, it falls by about 50 percent.",
-            "The source gives no percentage for a full wingspan up, or for the heights in between. What its two figures do show is that the effect is strongest nearest the runway, in the last part of the descent."
+            "Now bring that wing down near the runway. The air it pushes down has nowhere to go, because the surface blocks its path downward. The ground is interfering with the airflow, and that interference is ground effect.",
+            "That blocked flow weakens the upwash, the air rising to meet the front of the wing. It weakens the downwash behind the wing and the wingtip vortices too.",
+            "Smaller vortices change how lift is spread along the span, and induced drag falls. The wing now needs a lower angle of attack to make the same lift. Hold the old angle and it makes more lift than it did."
+          ]
+        },
+        {
+          "heading": "How close the wing has to be",
+          "paragraphs": [
+            "As you descend through that last wingspan, ground effect grows, and most of it arrives very close to the runway. The Pilot's Handbook of Aeronautical Knowledge gives the figures.",
+            "With the wing one wingspan above the ground, induced drag drops by only 1.4 percent. At 1/4 of the span the drop is 23.5 percent. At 1/10 of the span it is 47.6 percent, close to half.",
+            "The Airplane Flying Handbook rounds those two lower figures to about 25 percent and about 50 percent. Either way, the big saving only comes with the wing very near the surface.",
+            "So one wingspan marks where ground effect can first be detected, and the lower heights show where it does real work. Because the saving sits so low, you notice it most just after lift-off and just before touchdown."
           ],
-          "table": {
-            "caption": "How much induced drag falls away at different wing heights above the surface.",
-            "columns": [
-              "Wing height above the surface",
-              "Reduction in induced drag"
-            ],
-            "rows": [
-              [
-                "One wingspan",
-                "Ground effect normally occurs up to this height (no percentage given)"
-              ],
-              [
-                "1/4 of the span",
-                "About 25 percent"
-              ],
-              [
-                "1/10 of the span",
-                "About 50 percent"
-              ]
-            ]
+          "figure": {
+            "src": "/assets/explainers/figures/ground-effect-in-the-flare-2c5d1a1f.webp",
+            "caption": "Induced drag barely changes at one wingspan up, but nearly half of it is gone by 1/10 of the span.",
+            "alt": "Induced drag barely changes at one wingspan up, but nearly half of it is gone by 1/10 of the span."
           }
         },
         {
-          "heading": "Why you float in the flare",
+          "heading": "Why extra speed becomes a long float",
           "paragraphs": [
-            "In the flare you're doing exactly what ground effect rewards. The power is back, the speed is low, and you're holding a steady nose-up attitude as the wing sinks toward the runway.",
-            "As the wing drops into the last wingspan, induced drag falls away. With less drag slowing it down, the airplane keeps flying longer than you expected. That extra flying is the float.",
-            "Every second of float is runway passing under you. Knowing the drag drops just where you flare means you can expect the float instead of being caught out by it."
+            "Back in the flare, you hold a steady nose-up attitude at low speed, just off the runway. Those are exactly the conditions where ground effect is strongest.",
+            "Thrust required, the push needed to hold a speed in level flight, is parasite drag and induced drag added together. Ground effect cuts the induced part, so thrust required drops sharply at low speed.",
+            "With the power off, drag is what slows you down. Take a big share of it away and the airplane loses speed slowly. Any extra speed you carry into the flare can then become a long float down the runway.",
+            "The lift changes too. If the wing arrives in ground effect at the same angle of attack, it makes more lift and the airplane can float.",
+            "So as you near the ground at the end of the approach, you take some power off. Leave it in and the airplane will tend to climb."
           ]
         },
         {
-          "heading": "Why you can lift off too slow",
+          "heading": "Why a slow lift-off can settle back",
           "paragraphs": [
-            "The same drop in drag works on takeoff. The takeoff roll, the lift-off and the start of the climb all happen inside the ground effect area. With less drag, the airplane can seem ready to fly below the recommended airspeed.",
-            "Then it climbs past the last wingspan and loses that help. Drag and the thrust needed both go up. If you're still slow, the climb will be much weaker than at VY or even VX, the best rate and best angle of climb speeds.",
-            "That's how an airplane lifts off and then settles back. Pulling it off too early, or climbing too steeply, can put it back on the runway. Even if it stays up, the climb stays flat until you reach VX.",
-            "High density altitude, high temperature or maximum gross weight make this worse. The airplane may lift off and then be unable to climb out of ground effect or clear obstacles.",
-            "In some airplanes, flying 5 knots off the recommended speed may cut climb performance a lot. When conditions are marginal, take off at the speed your POH, the pilot's operating handbook, gives for a proper initial climb."
-          ]
-        },
-        {
-          "heading": "What changes as you climb out",
-          "paragraphs": [
-            "Down in ground effect, the static pressure around the airplane rises. That's the pressure of the surrounding air, sensed by a small port called the static source. Your airspeed indicator, altimeter and vertical speed indicator all use it.",
-            "So on the takeoff roll and just after lift-off, the airspeed indicator and altimeter read slightly lower than they should. The vertical speed indicator usually shows a descent.",
-            "As you climb out, the wing needs a higher angle of attack to keep making the same lift. Angle of attack is the angle between the wing and the oncoming air. At the same time, induced drag and thrust required both go up.",
-            "More downwash now reaches the tail. The nose tends to pitch up, and you need less elevator travel. Static pressure falls back, so indicated airspeed goes up."
+            "On takeoff the same physics runs the other way. The roll, the lift-off and the start of the climb all happen inside ground effect, where induced drag is reduced. That can make the airplane seem ready to fly well below its recommended takeoff speed.",
+            "Your instruments read differently here too. Ground effect usually raises the pressure at the static source, the port that feeds the airspeed indicator and altimeter, so both read slightly low. You can be airborne at an indicated airspeed below the one normally needed.",
+            "Climb out of ground effect and all of this reverses. The wing needs a higher angle of attack for the same lift, and induced drag and thrust required both rise. The nose tends to pitch up, stability decreases, and the airspeed indicator reads higher as static pressure falls.",
+            "If you lifted off short of speed, that extra drag arrives as you leave ground effect. Your climb will be much weaker than at Vy, the best rate of climb speed, or even Vx, the best angle of climb speed.",
+            "The worst case is a heavy airplane on a hot day at high density altitude, where the air is thin. There the airplane can lift off yet be unable to climb out of ground effect and settle back onto the runway. So you never force it into the air before the manufacturer's recommended takeoff speed."
           ]
         },
         {
           "heading": "Using ground effect on purpose",
           "paragraphs": [
-            "Ground effect is a normal part of flying, and it can help you. On a long enough runway, or with no obstacles ahead, the lower drag gives you better acceleration early in the takeoff.",
-            "On a soft or rough surface you want the wheels off early. Put as much weight on the wings as you can during the ground run, and let ground effect hold you up before true flying speed. Then lower the nose and gain normal airspeed before you climb out of it.",
-            "Some airplanes tend to lift off well before VX. In those, let it fly off in ground effect and bring the pitch down to level. Keep the wheels just clear of the runway until the airplane has accelerated to VX."
-          ],
-          "figure": {
-            "src": "/assets/explainers/figures/ground-effect-in-the-flare-fig1.webp",
-            "caption": "An early lift-off is fine if you stay level inside ground effect until you reach VX, and only then climb.",
-            "alt": "An early lift-off is fine if you stay level inside ground effect until you reach VX, and only then climb."
-          }
+            "Ground effect also has its uses. With a long enough runway or no obstacles, the reduced drag can help the airplane accelerate after lift-off.",
+            "A soft-field takeoff is built around it. Tall grass, soft sand, mud and snow drag at the wheels, so you hold the nose high and let the wing lift the airplane off early. It leaves the ground below a safe climb speed, held up by ground effect.",
+            "Once airborne, you lower the nose gently and let it accelerate with the wheels just clear of the surface. If it rises out of ground effect too soon, it tends to settle back even at full power. So you keep it in ground effect until it reaches at least Vx.",
+            "Some airplanes tend to lift off well before Vx on a short field. It is better to let one lift off and hold it level, wheels just clear, until it reaches Vx. Pinning it to the runway with forward pressure overloads the nosewheel and slows the acceleration."
+          ]
         }
       ],
       "related": []
