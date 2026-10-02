@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T17:00:03+00:00",
+  "generated": "2026-10-02T18:50:01+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -3209,7 +3209,7 @@
             "The same tab also works as the Cherokee's trim device. It relieves the control pressure and keeps the stabilator where you set it. You use it as you would an elevator tab, trimming away whatever pressure you are holding once the attitude is set."
           ],
           "figure": {
-            "src": "/assets/explainers/figures/which-way-the-trim-tab-moves-e6376af1.webp",
+            "src": "/assets/explainers/figures/which-way-the-trim-tab-moves-da85d597.webp",
             "caption": "On a stabilator, pulling back raises the trailing edge; the antiservo tab moves the same way, and the air on it pushes back, which is the firmer feel.",
             "alt": "On a stabilator, pulling back raises the trailing edge; the antiservo tab moves the same way, and the air on it pushes back, which is the firmer feel."
           }
