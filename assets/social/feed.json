@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T19:00:04+00:00",
+  "generated": "2026-10-02T19:25:01+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -3167,6 +3167,11 @@
                 "Tail down, nose up"
               ]
             ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/which-way-the-trim-tab-moves-170f5357.webp",
+            "caption": "Nose-up trim on a 172: the tab goes down, the air pushing on it holds the elevator's trailing edge up.",
+            "alt": "Nose-up trim on a 172: the tab goes down, the air pushing on it holds the elevator's trailing edge up."
           }
         },
         {
