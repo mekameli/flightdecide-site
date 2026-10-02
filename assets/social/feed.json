@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T05:25:04+00:00",
+  "generated": "2026-10-02T17:00:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -3057,6 +3057,162 @@
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
           ]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "sys-trim-tabs",
+      "slug": "which-way-the-trim-tab-moves",
+      "page": "/explainers/which-way-the-trim-tab-moves/",
+      "title": "Which way the trim tab moves",
+      "headline": "Trim nose up and the tab goes down.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "Which way the trim tab moves: an illustrated diagram for pilots. Trim nose up and the tab goes down.",
+      "image": "/assets/social/sys-trim-tabs.webp",
+      "image_full": "/assets/explainers/which-way-the-trim-tab-moves.webp",
+      "image_px": 1088,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "On an elevator with a trim tab, such as a Cessna 172's, nose-up trim moves the tab down; the airflow under the tail pushes on the tab and holds the elevator's trailing edge up, relieving the back pressure the pilot was holding.",
+        "A stabilator, as on a Piper Cherokee, carries an antiservo tab that moves in the same direction as the stabilator's trailing edge, which firms up the control feel, and the same tab works as the trim device.",
+        "Set the attitude first and hold it with control pressure, then trim that pressure away; trim is not used to fly the airplane to an attitude.",
+        "In the Cessna 172S, forward rotation of the trim wheel trims nose down and aft rotation trims nose up."
+      ],
+      "intent": "Nose-up trim moves the elevator trim tab down, and the airflow on the tab holds the elevator up, so the back pressure the pilot was holding goes away.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 6",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 6",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 6",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 6
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 3",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 3",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/04_afh_ch3.pdf",
+          "kind": "handbook",
+          "note": "Chapter 3 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 3
+        },
+        {
+          "ref": "Cessna 172S POH p168",
+          "title": "Cessna 172S POH p168",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "TAB DOWN FOR NOSE UP",
+          "points_at": "The trim tab at the elevator's trailing edge, deflected down."
+        },
+        {
+          "label": "AIRFLOW ON THE TAB",
+          "points_at": "The bunched streamlines pressing against the underside of the down-turned trim tab."
+        },
+        {
+          "label": "ELEVATOR UP, NO BACK PRESSURE",
+          "points_at": "The elevator's raised trailing edge."
+        }
+      ],
+      "short": "which-way",
+      "article": [
+        {
+          "heading": "Why you end up holding back pressure",
+          "paragraphs": [
+            "Picture the start of a climb in a Cessna 172. You have chosen a pitch attitude, a place for the nose against the horizon. As the airspeed bleeds off, the nose wants to sink below it.",
+            "So you pull back on the control wheel, which pilots call back pressure. That raises the elevator, the hinged surface on the back of the horizontal tail.",
+            "Once the elevator is out of line with the airflow, the moving air pushes against it. That push is the force you feel through the wheel, and you have to keep resisting it.",
+            "Holding it ties up a hand and some of your attention for as long as the climb lasts. A trim system takes that steady pressure off you, so you can turn to other tasks.",
+            "The most common trim system on small airplanes is a single trim tab, a small hinged strip on the elevator's trailing edge. That is the back edge, the one the air leaves last. The 172S has one, worked by a trim wheel in the cockpit."
+          ]
+        },
+        {
+          "heading": "Why the tab goes down for nose up",
+          "paragraphs": [
+            "Roll in nose-up trim and the tab swings down, below the line of the elevator. Now it sticks out into the air flowing under the tail.",
+            "That air strikes the underside of the tab and pushes it up. The tab is hinged to the elevator, so the push lifts the elevator's trailing edge with it.",
+            "A raised elevator makes a downward force on the tail, so the tail moves down and the nose comes up. The air on the tab now holds the elevator up, which was your hand's job. That is why the back pressure goes away.",
+            "Nose-down trim is the mirror image. The tab goes up into the air flowing over the tail, which forces the elevator's trailing edge down. The tail rises and the nose lowers."
+          ],
+          "table": {
+            "caption": "The tab always goes one way and the elevator's trailing edge the other.",
+            "columns": [
+              "Trim set to",
+              "Tab moves to",
+              "Elevator trailing edge",
+              "Tail and nose"
+            ],
+            "rows": [
+              [
+                "Full nose-down",
+                "Full up position",
+                "Forced down",
+                "Tail up, nose down"
+              ],
+              [
+                "Full nose-up",
+                "Full down position",
+                "Forced up",
+                "Tail down, nose up"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Which way to turn the trim wheel",
+          "paragraphs": [
+            "On an elevator with a trim tab, the tab and the elevator always move in opposite directions. You never need to picture the tab to trim correctly, though.",
+            "The 172S uses a vertically mounted trim wheel. Roll it aft and you trim nose up, and roll it forward to trim nose down.",
+            "That lines up with the control wheel, where aft raises the nose too. The trim control in the flight deck includes a trim tab position indicator, so you can see where the tab is set.",
+            "Let the pressure tell you what to do. If you are holding steady back pressure, you need nose-up trim. Keep rolling the wheel until that nose-heavy feel is gone.",
+            "In the climb from the top of this page, that means rolling the trim wheel aft. Nose-up trim lets you keep the climb attitude without holding back on the control wheel."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/which-way-the-trim-tab-moves-43eab801.webp",
+            "caption": "Roll the 172's trim wheel aft, the rim facing you moving down, and the pointer moves toward NOSE UP.",
+            "alt": "Roll the 172's trim wheel aft, the rim facing you moving down, and the pointer moves toward NOSE UP."
+          }
+        },
+        {
+          "heading": "Set the attitude first, then trim",
+          "paragraphs": [
+            "Trim holds an attitude. It is not how you get to one. First set the power, the pitch attitude and the configuration, such as the flap setting, and hold the attitude with control pressure.",
+            "Then trim that pressure away until the airplane keeps the attitude with no force from you. Any force you feel after that should be one you chose, for a planned change of attitude.",
+            "The common mistake is the reverse, winding the trim wheel to move the nose. That is flying the airplane with the trim, and experienced pilots slip into it too. A related error is overcontrolling with trim, cranking in more than the airplane needs.",
+            "Each change of power, pitch attitude or configuration brings new control pressures. In most airplanes, the nose tends to drop as you reduce power, since less air from the propeller then flows over the tail. Set the new attitude, hold it, and retrim.",
+            "Steep turns are a good example. Once the bank goes beyond 30°, trimming away some of the extra back pressure may help. You may then need forward pressure on the rollout until you adjust the trim."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/which-way-the-trim-tab-moves-f82ffb5c.webp",
+            "caption": "First hold the attitude you want with control pressure; then trim until that pressure is gone.",
+            "alt": "First hold the attitude you want with control pressure; then trim until that pressure is gone."
+          }
+        },
+        {
+          "heading": "Why a stabilator tab moves the same way",
+          "paragraphs": [
+            "Everything so far is about an elevator with a trim tab, like the 172's. A Piper Cherokee has a stabilator instead, a one-piece horizontal tail that swings about a central pivot point.",
+            "Pull back and the stabilator's trailing edge rises, raising the nose. Because the entire surface moves, it is very sensitive to your inputs and to air loads.",
+            "To make it less touchy, it carries an antiservo tab, a tab that moves the same way as the stabilator's trailing edge. A linkage raises the tab when the trailing edge rises and lowers it when the trailing edge drops. That is the reverse of the 172's elevator tab.",
+            "Air on a tab that moves with the surface pushes the stabilator back into line with the airflow, against your hand. So it takes more force to move, and you are less likely to overcontrol it.",
+            "The same tab also works as the Cherokee's trim device. It relieves the control pressure and keeps the stabilator where you set it. You use it as you would an elevator tab, trimming away whatever pressure you are holding once the attitude is set."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/which-way-the-trim-tab-moves-e6376af1.webp",
+            "caption": "On a stabilator, pulling back raises the trailing edge; the antiservo tab moves the same way, and the air on it pushes back, which is the firmer feel.",
+            "alt": "On a stabilator, pulling back raises the trailing edge; the antiservo tab moves the same way, and the air on it pushes back, which is the firmer feel."
+          }
         }
       ],
       "related": []
