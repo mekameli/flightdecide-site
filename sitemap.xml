@@ -675,13 +675,5 @@
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
     </image:image>
   </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/which-way-the-trim-tab-moves/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/which-way-the-trim-tab-moves.webp</image:loc>
-    </image:image>
-  </url>
   <!-- explainers:end -->
 </urlset>
