@@ -1,7 +1,170 @@
 {
-  "generated": "2026-10-03T17:55:41+00:00",
+  "generated": "2026-10-03T18:01:12+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "adm-three-nights",
+      "slug": "three-different-nights",
+      "page": "/explainers/three-different-nights/",
+      "title": "Three different nights",
+      "headline": "Your night starts three times in one evening.",
+      "pillar": "adm",
+      "topic": "Decision making",
+      "alt": "Three different nights: an illustrated diagram for pilots. Your night starts three times in one evening. The picture shows a sky that darkens from left to right, from a narrow pale rim of last light at the far left to full dark with stars on the right; three thin vertical lines rising from the horizon, in order from left to right: sunset, end of civil twilight, one hour after sunset; a runway running across the lower third with small pale edge lights; the house aircraft touching down just right of the third line, its small position lights lit. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/adm-three-nights.webp",
+      "image_full": "/assets/explainers/three-different-nights.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/p/DeCpypVHYYK/",
+      "posted": "2026-10-03",
+      "caption": [
+        "When does night start for your logbook, and when does it start for passengers?",
+        "Position lights go on at sunset. Night you can log starts later, when evening civil twilight ends. For carrying passengers, the three takeoffs and three full-stop landings you need within 90 days count only from one hour after sunset.",
+        "Full explainer, and the FAA sources, at the link in our bio."
+      ],
+      "teaches": [
+        "Night for logging runs from the end of evening civil twilight to the beginning of morning civil twilight.",
+        "To carry passengers from one hour after sunset to one hour before sunrise, you need three takeoffs and three full-stop landings in that window within 90 days, as sole manipulator, in the same category, class and, if required, type.",
+        "Position lights must be on from sunset to sunrise."
+      ],
+      "intent": "The rules use three different nights, so the time you log, the time passengers need your currency and the time your lights go on all start at different moments.",
+      "citations": [
+        {
+          "ref": "14 CFR 1.1",
+          "title": "14 CFR 1.1",
+          "url": "https://www.ecfr.gov/current/title-14/section-1.1",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "14 CFR 61.57",
+          "title": "14 CFR 61.57",
+          "url": "https://www.ecfr.gov/current/title-14/section-61.57",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "14 CFR 91.209",
+          "title": "14 CFR 91.209",
+          "url": "https://www.ecfr.gov/current/title-14/section-91.209",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "SUNSET, POSITION LIGHTS ON",
+          "points_at": "The first vertical line, where the pale rim of last light meets the horizon at the far left."
+        },
+        {
+          "label": "CIVIL TWILIGHT ENDS, LOG NIGHT",
+          "points_at": "The second vertical line at the horizon, where the glow has thinned to faint grey."
+        },
+        {
+          "label": "TOO EARLY FOR PASSENGER CURRENCY",
+          "points_at": "The main wheels of the ghost aircraft touching down under the second line."
+        },
+        {
+          "label": "HOUR AFTER SUNSET, LANDING COUNTS",
+          "points_at": "The main wheels of the solid house aircraft touching down just right of the third line."
+        }
+      ],
+      "short": "three-different",
+      "article": [
+        {
+          "heading": "Three rules switch on after sunset",
+          "paragraphs": [
+            "Picture an evening flight that leaves just before the sun goes down. As the light fades, three separate rules switch on, and each one picks its own moment.",
+            "Your position lights, the lights that show other pilots where you are, must be on from sunset. The night you log starts when evening civil twilight, the fading glow after sunset, has ended. Passenger currency, the recent night landings you need before flying people, starts one hour after sunset.",
+            "Each rule sits in a different part of the regulations and does a different job. So the word night can mean three different times on the clock, depending on which rule you're reading."
+          ],
+          "table": {
+            "caption": "Each night has its own start, its own end and its own job.",
+            "columns": [
+              "Rule",
+              "Starts",
+              "Ends",
+              "What it governs"
+            ],
+            "rows": [
+              [
+                "14 CFR 91.209",
+                "Sunset",
+                "Sunrise",
+                "Lighted position lights"
+              ],
+              [
+                "14 CFR 1.1",
+                "End of evening civil twilight",
+                "Beginning of morning civil twilight",
+                "Night time you log"
+              ],
+              [
+                "14 CFR 61.57(b)",
+                "1 hour after sunset",
+                "1 hour before sunrise",
+                "Carrying persons, and which landings count"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Position lights go on at sunset",
+          "paragraphs": [
+            "Taxi out at sunset and the lighting rule has already started. Under 14 CFR 91.209, your position lights must be lit whenever you operate an aircraft between sunset and sunrise. It's the first of the three rules to begin and the last to end.",
+            "The rule doesn't wait for the sky to look dark. Your aircraft is lit through all of evening twilight, before the logbook counts a single minute of night.",
+            "The same hours cover parking or moving in or near an airport's night flight operations area. There the aircraft must be clearly illuminated, show lit position lights, or sit in an area marked by obstruction lights.",
+            "Alaska uses a different trigger, tied to the light rather than to sunset. There it applies whenever the sun is over 6 degrees below the horizon, or a prominent unlighted object can't be seen from 3 statute miles."
+          ]
+        },
+        {
+          "heading": "Logged night waits for twilight to end",
+          "paragraphs": [
+            "Right after sunset the sky keeps a glow for a while. That stretch is evening civil twilight, and the definition of night in 14 CFR 1.1 leaves it out.",
+            "Night, as the regulations define it, runs from the end of evening civil twilight to the beginning of morning civil twilight. That is the night you log, so only flight time inside it counts as night time.",
+            "The times come from the Air Almanac, converted to local time. You look the moment up rather than judge it by how dark the cockpit feels.",
+            "The definition sets no fixed number of minutes after sunset. Read the published time for your date and place instead of adding a guess to sunset."
+          ]
+        },
+        {
+          "heading": "Passenger currency starts an hour after sunset",
+          "paragraphs": [
+            "Now put a friend in the right seat for a flight that runs late. From one hour after sunset to one hour before sunrise, 14 CFR 61.57(b) sets what you need, and its window does two jobs.",
+            "The first job is deciding when you need night currency. If you act as pilot in command, the pilot responsible for the flight, carrying anyone inside that window, you must be current.",
+            "The second job is deciding which landings count. In the 90 days before the flight, you need three takeoffs and three landings to a full stop, all inside that same window. Full stop means the aircraft actually stops, so a touch and go, where you add power and leave without stopping, doesn't count.",
+            "You must be the sole manipulator, the only person working the controls. The landings must also be in the same category of aircraft, meaning the broad grouping such as airplane.",
+            "They must be in the same class too, a group within a category such as single engine or multiengine, land or water. If a type rating, a rating for one specific model, is required, the type must match as well."
+          ]
+        },
+        {
+          "heading": "Early landings log night but don't count",
+          "paragraphs": [
+            "Say civil twilight ends well before the one-hour mark on the evening you fly. Between those two moments is a stretch where the logbook calls it night and the passenger window is still shut.",
+            "Fly three full-stop landings in that stretch and the time goes in your logbook as night. The landings still don't make you current for passengers, because they came before the window opened.",
+            "The same stretch matters if a passenger comes along. The night rule hasn't started yet. The general rule for carrying anyone still applies, with its three takeoffs and three landings in the preceding 90 days.",
+            "Once the clock passes the hour mark with that passenger still aboard, the night rule applies as well. If you might still be flying then, check your night currency before you leave.",
+            "Before an evening flight, note three times. Sunset is for the lights, the end of civil twilight is for the logbook, and sunset plus one hour is for passengers."
+          ]
+        },
+        {
+          "heading": "At dawn the three windows close",
+          "paragraphs": [
+            "The morning runs the same rules from the other side. The passenger window closes one hour before sunrise, so landings for currency have to be done by then.",
+            "Logged night ends when morning civil twilight begins, the first light before sunrise. Your position lights stay on longest, until sunrise itself.",
+            "Picture a departure in full darkness before dawn, with a passenger aboard and well inside the passenger window. You need night currency at takeoff, the logbook is counting night, and your lights are on.",
+            "As the sky brightens, those three conditions end one at a time. The lights always go last, because sunrise comes after both of the other closing times."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/three-different-nights-f9c6eaaf.webp",
+            "caption": "Over a whole night, the lights rule spans sunset to sunrise, and the other two windows open later and close earlier.",
+            "alt": "Over a whole night, the lights rule spans sunset to sunrise, and the other two windows open later and close earlier."
+          }
+        }
+      ],
+      "related": []
+    },
     {
       "id": "sys-vacuum-failure",
       "slug": "attitude-indicator-failing-slowly",
@@ -3057,165 +3220,6 @@
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
           ]
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": "adm-three-nights",
-      "slug": "three-different-nights",
-      "page": "/explainers/three-different-nights/",
-      "title": "Three different nights",
-      "headline": "Your night starts three times in one evening.",
-      "pillar": "adm",
-      "topic": "Decision making",
-      "alt": "Three different nights: an illustrated diagram for pilots. Your night starts three times in one evening.",
-      "image": "/assets/social/adm-three-nights.webp",
-      "image_full": "/assets/explainers/three-different-nights.webp",
-      "image_px": 1003,
-      "permalink": null,
-      "posted": "",
-      "caption": [],
-      "teaches": [
-        "Night for logging runs from the end of evening civil twilight to the beginning of morning civil twilight.",
-        "To carry passengers from one hour after sunset to one hour before sunrise, you need three takeoffs and three full-stop landings in that window within 90 days, as sole manipulator, in the same category, class and, if required, type.",
-        "Position lights must be on from sunset to sunrise."
-      ],
-      "intent": "The rules use three different nights, so the time you log, the time passengers need your currency and the time your lights go on all start at different moments.",
-      "citations": [
-        {
-          "ref": "14 CFR 1.1",
-          "title": "14 CFR 1.1",
-          "url": "https://www.ecfr.gov/current/title-14/section-1.1",
-          "kind": "regulation",
-          "note": "the regulation itself, on eCFR",
-          "book_url": null
-        },
-        {
-          "ref": "14 CFR 61.57",
-          "title": "14 CFR 61.57",
-          "url": "https://www.ecfr.gov/current/title-14/section-61.57",
-          "kind": "regulation",
-          "note": "the regulation itself, on eCFR",
-          "book_url": null
-        },
-        {
-          "ref": "14 CFR 91.209",
-          "title": "14 CFR 91.209",
-          "url": "https://www.ecfr.gov/current/title-14/section-91.209",
-          "kind": "regulation",
-          "note": "the regulation itself, on eCFR",
-          "book_url": null
-        }
-      ],
-      "figure_key": [
-        {
-          "label": "SUNSET, POSITION LIGHTS ON",
-          "points_at": "The first vertical line, where the pale rim of last light meets the horizon at the far left."
-        },
-        {
-          "label": "CIVIL TWILIGHT ENDS, LOG NIGHT",
-          "points_at": "The second vertical line at the horizon, where the glow has thinned to faint grey."
-        },
-        {
-          "label": "TOO EARLY FOR PASSENGER CURRENCY",
-          "points_at": "The main wheels of the ghost aircraft touching down under the second line."
-        },
-        {
-          "label": "HOUR AFTER SUNSET, LANDING COUNTS",
-          "points_at": "The main wheels of the solid house aircraft touching down just right of the third line."
-        }
-      ],
-      "short": "three-different",
-      "article": [
-        {
-          "heading": "Three rules switch on after sunset",
-          "paragraphs": [
-            "Picture an evening flight that leaves just before the sun goes down. As the light fades, three separate rules switch on, and each one picks its own moment.",
-            "Your position lights, the lights that show other pilots where you are, must be on from sunset. The night you log starts when evening civil twilight, the fading glow after sunset, has ended. Passenger currency, the recent night landings you need before flying people, starts one hour after sunset.",
-            "Each rule sits in a different part of the regulations and does a different job. So the word night can mean three different times on the clock, depending on which rule you're reading."
-          ],
-          "table": {
-            "caption": "Each night has its own start, its own end and its own job.",
-            "columns": [
-              "Rule",
-              "Starts",
-              "Ends",
-              "What it governs"
-            ],
-            "rows": [
-              [
-                "14 CFR 91.209",
-                "Sunset",
-                "Sunrise",
-                "Lighted position lights"
-              ],
-              [
-                "14 CFR 1.1",
-                "End of evening civil twilight",
-                "Beginning of morning civil twilight",
-                "Night time you log"
-              ],
-              [
-                "14 CFR 61.57(b)",
-                "1 hour after sunset",
-                "1 hour before sunrise",
-                "Carrying persons, and which landings count"
-              ]
-            ]
-          }
-        },
-        {
-          "heading": "Position lights go on at sunset",
-          "paragraphs": [
-            "Taxi out at sunset and the lighting rule has already started. Under 14 CFR 91.209, your position lights must be lit whenever you operate an aircraft between sunset and sunrise. It's the first of the three rules to begin and the last to end.",
-            "The rule doesn't wait for the sky to look dark. Your aircraft is lit through all of evening twilight, before the logbook counts a single minute of night.",
-            "The same hours cover parking or moving in or near an airport's night flight operations area. There the aircraft must be clearly illuminated, show lit position lights, or sit in an area marked by obstruction lights.",
-            "Alaska uses a different trigger, tied to the light rather than to sunset. There it applies whenever the sun is over 6 degrees below the horizon, or a prominent unlighted object can't be seen from 3 statute miles."
-          ]
-        },
-        {
-          "heading": "Logged night waits for twilight to end",
-          "paragraphs": [
-            "Right after sunset the sky keeps a glow for a while. That stretch is evening civil twilight, and the definition of night in 14 CFR 1.1 leaves it out.",
-            "Night, as the regulations define it, runs from the end of evening civil twilight to the beginning of morning civil twilight. That is the night you log, so only flight time inside it counts as night time.",
-            "The times come from the Air Almanac, converted to local time. You look the moment up rather than judge it by how dark the cockpit feels.",
-            "The definition sets no fixed number of minutes after sunset. Read the published time for your date and place instead of adding a guess to sunset."
-          ]
-        },
-        {
-          "heading": "Passenger currency starts an hour after sunset",
-          "paragraphs": [
-            "Now put a friend in the right seat for a flight that runs late. From one hour after sunset to one hour before sunrise, 14 CFR 61.57(b) sets what you need, and its window does two jobs.",
-            "The first job is deciding when you need night currency. If you act as pilot in command, the pilot responsible for the flight, carrying anyone inside that window, you must be current.",
-            "The second job is deciding which landings count. In the 90 days before the flight, you need three takeoffs and three landings to a full stop, all inside that same window. Full stop means the aircraft actually stops, so a touch and go, where you add power and leave without stopping, doesn't count.",
-            "You must be the sole manipulator, the only person working the controls. The landings must also be in the same category of aircraft, meaning the broad grouping such as airplane.",
-            "They must be in the same class too, a group within a category such as single engine or multiengine, land or water. If a type rating, a rating for one specific model, is required, the type must match as well."
-          ]
-        },
-        {
-          "heading": "Early landings log night but don't count",
-          "paragraphs": [
-            "Say civil twilight ends well before the one-hour mark on the evening you fly. Between those two moments is a stretch where the logbook calls it night and the passenger window is still shut.",
-            "Fly three full-stop landings in that stretch and the time goes in your logbook as night. The landings still don't make you current for passengers, because they came before the window opened.",
-            "The same stretch matters if a passenger comes along. The night rule hasn't started yet. The general rule for carrying anyone still applies, with its three takeoffs and three landings in the preceding 90 days.",
-            "Once the clock passes the hour mark with that passenger still aboard, the night rule applies as well. If you might still be flying then, check your night currency before you leave.",
-            "Before an evening flight, note three times. Sunset is for the lights, the end of civil twilight is for the logbook, and sunset plus one hour is for passengers."
-          ]
-        },
-        {
-          "heading": "At dawn the three windows close",
-          "paragraphs": [
-            "The morning runs the same rules from the other side. The passenger window closes one hour before sunrise, so landings for currency have to be done by then.",
-            "Logged night ends when morning civil twilight begins, the first light before sunrise. Your position lights stay on longest, until sunrise itself.",
-            "Picture a departure in full darkness before dawn, with a passenger aboard and well inside the passenger window. You need night currency at takeoff, the logbook is counting night, and your lights are on.",
-            "As the sky brightens, those three conditions end one at a time. The lights always go last, because sunrise comes after both of the other closing times."
-          ],
-          "figure": {
-            "src": "/assets/explainers/figures/three-different-nights-f9c6eaaf.webp",
-            "caption": "Over a whole night, the lights rule spans sunset to sunrise, and the other two windows open later and close earlier.",
-            "alt": "Over a whole night, the lights rule spans sunset to sunrise, and the other two windows open later and close earlier."
-          }
         }
       ],
       "related": []
