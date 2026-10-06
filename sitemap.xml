@@ -693,5 +693,13 @@
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/when-the-radio-goes-quiet-light-gun-signals/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/when-the-radio-goes-quiet-light-gun-signals.webp</image:loc>
+    </image:image>
+  </url>
   <!-- explainers:end -->
 </urlset>
