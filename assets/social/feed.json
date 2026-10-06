@@ -1,7 +1,152 @@
 {
-  "generated": "2026-10-06T01:09:14+00:00",
+  "generated": "2026-10-06T01:15:34+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "aero-stall-to-spin",
+      "slug": "stall-that-turns-into-a-spin",
+      "page": "/explainers/stall-that-turns-into-a-spin/",
+      "title": "The stall that turns into a spin",
+      "headline": "Stop the yaw and the stall stays a stall.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "The stall that turns into a spin: an illustrated diagram for pilots. Stop the yaw and the stall stays a stall. The picture shows the solid house aircraft right of centre, nose high and stalled, its nose on a thin dashed line of flight; the solid aircraft's rudder visibly deflected, with the green tag's leader line landing on it; a translucent ghost of the house aircraft to the left and lower, in the same nose-high attitude, with its nose swung clearly off the line of flight; the ghost's left wing dropping as it starts to roll toward it. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/aero-stall-to-spin.webp",
+      "image_full": "/assets/explainers/stall-that-turns-into-a-spin.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/p/DeIlKV6mjGZ/",
+      "posted": "2026-10-06",
+      "caption": [
+        "Why does a stall sometimes turn into a spin?",
+        "Poor yaw control during a stall makes a spin entry more likely. So your feet are part of the recovery. As you recover, cancel any yaw with the rudder so the stall doesn't progress into a spin.",
+        "Full explainer, and the FAA sources, at the link in our bio."
+      ],
+      "teaches": [
+        "Poor yaw control during a stall increases the likelihood of a spin entry.",
+        "In a stall recovery, cancel any yaw with the rudder so the stall does not progress into a spin."
+      ],
+      "intent": "A stall turns into a spin when the airplane is yawing as the wing quits, which is why the rudder matters most at that moment.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 5",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 5",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/06_afh_ch5.pdf",
+          "kind": "handbook",
+          "note": "Chapter 5 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 5
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "YAWING AS THE WING QUITS",
+          "points_at": "The ghost's nose, where it has swung off the dashed line of flight."
+        },
+        {
+          "label": "STALL BECOMING A SPIN",
+          "points_at": "The pale spiral trace curling down beneath the ghost's dropping left wing."
+        },
+        {
+          "label": "RUDDER IN, NOSE STRAIGHT",
+          "points_at": "The deflected rudder of the solid house aircraft."
+        }
+      ],
+      "short": "stall-that",
+      "article": [
+        {
+          "heading": "What turns a stall into a spin",
+          "paragraphs": [
+            "You're slow, the nose is high, and the wing quits. That is a stall, and it comes from too much angle of attack, the angle between the wing and the air meeting it. If the nose stays pointed straight ahead, lowering that angle gets the wing flying again.",
+            "Now let the nose swing left or right just as the wing quits. That sideways swing is yaw. A spin starts when at least one wing is stalled while yaw acts on the airplane, at the stall or beyond it.",
+            "Once it starts, each wing is making different lift and drag. The airplane rotates around its vertical axis, the up-and-down line the nose swings about when it yaws. It descends, rolling, yawing and pitching along a corkscrew path.",
+            "The FAA's Airplane Flying Handbook calls a spin an aggravated stall, one that can follow once a stall has happened. Poor yaw control during the stall makes a spin entry more likely. Since a spin needs both the stall and the yaw, keeping the yaw out leaves the stall as just a stall."
+          ]
+        },
+        {
+          "heading": "Where the yaw comes from",
+          "paragraphs": [
+            "Misused rudder is the obvious source of yaw, and it is only one of several. Moving the ailerons creates adverse yaw, a sideways swing of the nose that comes from the aileron deflection itself. The engine and propeller add yaw of their own.",
+            "Wind shear can yaw the airplane too, and the handbook counts wake turbulence from other aircraft as part of that. None of these come from your feet.",
+            "Yaw you cause with the wrong rudder has its own trap. You may not notice the wing has stalled until the airplane yaws out of control toward the dropping wing.",
+            "In a slipping or skidding turn, the rudder and ailerons are out of balance. A stall there can start a spin in the direction of the rudder you're holding, whichever wingtip is raised.",
+            "So the defense starts before any recovery does. Use the right amount of rudder to keep the nose from yawing and the wings from banking."
+          ]
+        },
+        {
+          "heading": "Why the base-to-final turn is the trap",
+          "paragraphs": [
+            "You're on base with a tailwind you haven't noticed. Your groundspeed is higher than you think, so you turn late or too shallow and overshoot the runway centerline.",
+            "The fix feels obvious. You steepen the bank, pull back, and push too much rudder toward the inside of the turn to swing the nose onto the runway. That inside push is called bottom rudder, and it makes the turn a skidding one.",
+            "Each input feeds the next. The difference in lift between the two wings grows, so the bank keeps steepening without you asking for it. The nose slices down through the horizon, and the natural reaction may be to pull back, raising the angle of attack toward the stall.",
+            "The handbook calls this a skidding cross-control stall, and it names this turn as the most likely place for one. Cross-control means aileron pressure in one direction and rudder pressure in the other. If the wing stalls with those inputs held, the airplane may rapidly enter a spin.",
+            "The safest answer to an overshoot is a go-around. At that low height, the handbook says to be reluctant to bank past 30 degrees, and not to skid the turn as a correction."
+          ]
+        },
+        {
+          "heading": "How the rudder fits into stall recovery",
+          "paragraphs": [
+            "The handbook's stall recovery has six steps. A single-engine trainer without an autopilot would likely use only four of them. In that airplane, the actual first step is lowering the angle of attack until the stall warning goes away.",
+            "Nose-down trim may be needed if the elevator alone is not enough, though too much trim may make things worse. In a trainer that is less of a concern, because most pilots can overpower the trim and correct it on the way back.",
+            "Next, roll the wings level, but only after the angle of attack is down. Roll control is far better once the wing is flying again. This is where the rudder comes in, canceling any yaw so the stall does not progress into a spin.",
+            "Then add power as needed, promptly but smoothly, with rudder and elevator stopping any yaw or unwanted pitching. Power usually cuts the altitude you lose, but it does not end a stall.",
+            "Finally, fly back to your intended path. Keep the inputs smooth and coordinated, with rudder and ailerons working together, and watch for a secondary stall, the wing stalling again."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/stall-that-turns-into-a-spin-af076adf.webp",
+            "caption": "Canceling yaw is not a separate step, because the rudder works under all four of them.",
+            "alt": "Canceling yaw is not a separate step, because the rudder works under all four of them."
+          }
+        },
+        {
+          "heading": "What a spin costs once it starts",
+          "paragraphs": [
+            "A spin has four phases, named entry, incipient, developed and recovery. The incipient phase, the early part, runs from the stall and the start of rotation until the spin is fully developed. In the developed phase, rotation, airspeed and descent rate have settled into a nearly vertical path.",
+            "For most airplanes the incipient phase can take two to four turns. The handbook says to start recovery before 360 degrees of rotation, with full rudder opposite the rotation.",
+            "In typical single-engine airplanes the rudder tends to be the most important recovery control. Apply it briskly. Slow, overly cautious rudder can let the airplane keep spinning even with recovery inputs in.",
+            "The first turn of a spin loses about 1,000 feet, and each turn after it loses about half that. Intentional spins should start high enough to finish recovering at or above 1,500 feet above ground level, or AGL. The turn from base to final is flown at a relatively low height."
+          ],
+          "table": {
+            "caption": "Every figure here comes from the handbook's spin section, in the order a spin unfolds.",
+            "columns": [
+              "Point in the spin",
+              "What the handbook gives"
+            ],
+            "rows": [
+              [
+                "Incipient phase, most airplanes",
+                "Two to four turns"
+              ],
+              [
+                "Start incipient spin recovery",
+                "Before 360° of rotation"
+              ],
+              [
+                "First turn of a spin",
+                "About 1,000 feet of altitude lost"
+              ],
+              [
+                "Each turn after the first",
+                "About half the first turn's loss"
+              ],
+              [
+                "Intentional spins, recovery complete",
+                "At or above 1,500 feet AGL"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Why recovery is no safety net",
+          "paragraphs": [
+            "Modern airplanes tend to be more reluctant to spin than older designs, but they can still spin. Mishandled turns, stalls and slow flight with the controls out of balance can put even a reluctant airplane into an accidental spin. Continued stall practice helps you react promptly, and by instinct, when a spin is approaching.",
+            "Normal category single-engine airplanes certified under 14 CFR 23.221(a) only had to recover from a one-turn spin or a three-second spin, whichever takes longer. Recovery had to come within one more turn after the first recovery input. The other option was to meet that section's optional spin-resistant requirements.",
+            "So many of these airplanes were never required to recover from a fully developed spin. That rule still applies to airplanes certified under it, while section 23.2150 sets spin requirements going forward.",
+            "The pilot's operating handbook for your airplane gives its own spin recovery technique, and that takes precedence over general guidance. Some airplanes carry a placard prohibiting intentional spins. In those, there is no assurance that recovery from a fully developed spin is possible, so assume the airplane could become uncontrollable in one."
+          ]
+        }
+      ],
+      "related": []
+    },
     {
       "id": "adm-three-nights",
       "slug": "three-different-nights",
@@ -3219,147 +3364,6 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
-          ]
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": "aero-stall-to-spin",
-      "slug": "stall-that-turns-into-a-spin",
-      "page": "/explainers/stall-that-turns-into-a-spin/",
-      "title": "The stall that turns into a spin",
-      "headline": "Stop the yaw and the stall stays a stall.",
-      "pillar": "performance",
-      "topic": "Performance",
-      "alt": "The stall that turns into a spin: an illustrated diagram for pilots. Stop the yaw and the stall stays a stall.",
-      "image": "/assets/social/aero-stall-to-spin.webp",
-      "image_full": "/assets/explainers/stall-that-turns-into-a-spin.webp",
-      "image_px": 1003,
-      "permalink": null,
-      "posted": "",
-      "caption": [],
-      "teaches": [
-        "Poor yaw control during a stall increases the likelihood of a spin entry.",
-        "In a stall recovery, cancel any yaw with the rudder so the stall does not progress into a spin."
-      ],
-      "intent": "A stall turns into a spin when the airplane is yawing as the wing quits, which is why the rudder matters most at that moment.",
-      "citations": [
-        {
-          "ref": "FAA-H-8083-3 ch 5",
-          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 5",
-          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/06_afh_ch5.pdf",
-          "kind": "handbook",
-          "note": "Chapter 5 as a PDF",
-          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
-          "chapter": 5
-        }
-      ],
-      "figure_key": [
-        {
-          "label": "YAWING AS THE WING QUITS",
-          "points_at": "The ghost's nose, where it has swung off the dashed line of flight."
-        },
-        {
-          "label": "STALL BECOMING A SPIN",
-          "points_at": "The pale spiral trace curling down beneath the ghost's dropping left wing."
-        },
-        {
-          "label": "RUDDER IN, NOSE STRAIGHT",
-          "points_at": "The deflected rudder of the solid house aircraft."
-        }
-      ],
-      "short": "stall-that",
-      "article": [
-        {
-          "heading": "What turns a stall into a spin",
-          "paragraphs": [
-            "You're slow, the nose is high, and the wing quits. That is a stall, and it comes from too much angle of attack, the angle between the wing and the air meeting it. If the nose stays pointed straight ahead, lowering that angle gets the wing flying again.",
-            "Now let the nose swing left or right just as the wing quits. That sideways swing is yaw. A spin starts when at least one wing is stalled while yaw acts on the airplane, at the stall or beyond it.",
-            "Once it starts, each wing is making different lift and drag. The airplane rotates around its vertical axis, the up-and-down line the nose swings about when it yaws. It descends, rolling, yawing and pitching along a corkscrew path.",
-            "The FAA's Airplane Flying Handbook calls a spin an aggravated stall, one that can follow once a stall has happened. Poor yaw control during the stall makes a spin entry more likely. Since a spin needs both the stall and the yaw, keeping the yaw out leaves the stall as just a stall."
-          ]
-        },
-        {
-          "heading": "Where the yaw comes from",
-          "paragraphs": [
-            "Misused rudder is the obvious source of yaw, and it is only one of several. Moving the ailerons creates adverse yaw, a sideways swing of the nose that comes from the aileron deflection itself. The engine and propeller add yaw of their own.",
-            "Wind shear can yaw the airplane too, and the handbook counts wake turbulence from other aircraft as part of that. None of these come from your feet.",
-            "Yaw you cause with the wrong rudder has its own trap. You may not notice the wing has stalled until the airplane yaws out of control toward the dropping wing.",
-            "In a slipping or skidding turn, the rudder and ailerons are out of balance. A stall there can start a spin in the direction of the rudder you're holding, whichever wingtip is raised.",
-            "So the defense starts before any recovery does. Use the right amount of rudder to keep the nose from yawing and the wings from banking."
-          ]
-        },
-        {
-          "heading": "Why the base-to-final turn is the trap",
-          "paragraphs": [
-            "You're on base with a tailwind you haven't noticed. Your groundspeed is higher than you think, so you turn late or too shallow and overshoot the runway centerline.",
-            "The fix feels obvious. You steepen the bank, pull back, and push too much rudder toward the inside of the turn to swing the nose onto the runway. That inside push is called bottom rudder, and it makes the turn a skidding one.",
-            "Each input feeds the next. The difference in lift between the two wings grows, so the bank keeps steepening without you asking for it. The nose slices down through the horizon, and the natural reaction may be to pull back, raising the angle of attack toward the stall.",
-            "The handbook calls this a skidding cross-control stall, and it names this turn as the most likely place for one. Cross-control means aileron pressure in one direction and rudder pressure in the other. If the wing stalls with those inputs held, the airplane may rapidly enter a spin.",
-            "The safest answer to an overshoot is a go-around. At that low height, the handbook says to be reluctant to bank past 30 degrees, and not to skid the turn as a correction."
-          ]
-        },
-        {
-          "heading": "How the rudder fits into stall recovery",
-          "paragraphs": [
-            "The handbook's stall recovery has six steps. A single-engine trainer without an autopilot would likely use only four of them. In that airplane, the actual first step is lowering the angle of attack until the stall warning goes away.",
-            "Nose-down trim may be needed if the elevator alone is not enough, though too much trim may make things worse. In a trainer that is less of a concern, because most pilots can overpower the trim and correct it on the way back.",
-            "Next, roll the wings level, but only after the angle of attack is down. Roll control is far better once the wing is flying again. This is where the rudder comes in, canceling any yaw so the stall does not progress into a spin.",
-            "Then add power as needed, promptly but smoothly, with rudder and elevator stopping any yaw or unwanted pitching. Power usually cuts the altitude you lose, but it does not end a stall.",
-            "Finally, fly back to your intended path. Keep the inputs smooth and coordinated, with rudder and ailerons working together, and watch for a secondary stall, the wing stalling again."
-          ],
-          "figure": {
-            "src": "/assets/explainers/figures/stall-that-turns-into-a-spin-af076adf.webp",
-            "caption": "Canceling yaw is not a separate step, because the rudder works under all four of them.",
-            "alt": "Canceling yaw is not a separate step, because the rudder works under all four of them."
-          }
-        },
-        {
-          "heading": "What a spin costs once it starts",
-          "paragraphs": [
-            "A spin has four phases, named entry, incipient, developed and recovery. The incipient phase, the early part, runs from the stall and the start of rotation until the spin is fully developed. In the developed phase, rotation, airspeed and descent rate have settled into a nearly vertical path.",
-            "For most airplanes the incipient phase can take two to four turns. The handbook says to start recovery before 360 degrees of rotation, with full rudder opposite the rotation.",
-            "In typical single-engine airplanes the rudder tends to be the most important recovery control. Apply it briskly. Slow, overly cautious rudder can let the airplane keep spinning even with recovery inputs in.",
-            "The first turn of a spin loses about 1,000 feet, and each turn after it loses about half that. Intentional spins should start high enough to finish recovering at or above 1,500 feet above ground level, or AGL. The turn from base to final is flown at a relatively low height."
-          ],
-          "table": {
-            "caption": "Every figure here comes from the handbook's spin section, in the order a spin unfolds.",
-            "columns": [
-              "Point in the spin",
-              "What the handbook gives"
-            ],
-            "rows": [
-              [
-                "Incipient phase, most airplanes",
-                "Two to four turns"
-              ],
-              [
-                "Start incipient spin recovery",
-                "Before 360° of rotation"
-              ],
-              [
-                "First turn of a spin",
-                "About 1,000 feet of altitude lost"
-              ],
-              [
-                "Each turn after the first",
-                "About half the first turn's loss"
-              ],
-              [
-                "Intentional spins, recovery complete",
-                "At or above 1,500 feet AGL"
-              ]
-            ]
-          }
-        },
-        {
-          "heading": "Why recovery is no safety net",
-          "paragraphs": [
-            "Modern airplanes tend to be more reluctant to spin than older designs, but they can still spin. Mishandled turns, stalls and slow flight with the controls out of balance can put even a reluctant airplane into an accidental spin. Continued stall practice helps you react promptly, and by instinct, when a spin is approaching.",
-            "Normal category single-engine airplanes certified under 14 CFR 23.221(a) only had to recover from a one-turn spin or a three-second spin, whichever takes longer. Recovery had to come within one more turn after the first recovery input. The other option was to meet that section's optional spin-resistant requirements.",
-            "So many of these airplanes were never required to recover from a fully developed spin. That rule still applies to airplanes certified under it, while section 23.2150 sets spin requirements going forward.",
-            "The pilot's operating handbook for your airplane gives its own spin recovery technique, and that takes precedence over general guidance. Some airplanes carry a placard prohibiting intentional spins. In those, there is no assurance that recovery from a fully developed spin is possible, so assume the airplane could become uncontrollable in one."
           ]
         }
       ],
