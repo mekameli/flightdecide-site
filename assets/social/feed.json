@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T23:15:03+00:00",
+  "generated": "2026-10-07T01:50:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -22,14 +22,13 @@
         "Full explainer, and the FAA sources, at the link in our bio."
       ],
       "teaches": [
-        "To an aircraft in flight, steady green means cleared to land, and flashing green means return for landing, to be followed by steady green at the proper time.",
-        "To an aircraft in flight, steady red means give way to other aircraft and continue circling, and flashing red means the airport is unsafe, do not land.",
-        "To an aircraft on the ground, steady green means cleared for takeoff and flashing green means cleared for taxi.",
-        "To an aircraft on the ground, steady red means stop and flashing red means taxi clear of the runway in use.",
-        "Flashing white means return to starting point on the airport and applies only to an aircraft on the ground; alternating red and green means exercise extreme caution, on the ground and in flight.",
-        "If the aircraft radio fails in flight under VFR in Class D airspace, the pilot in command may operate the aircraft and land if the weather is at or above basic VFR minimums, visual contact with the tower is maintained, and a clearance to land is received.",
-        "Pilots acknowledge light signals by moving the ailerons or rudder during daylight and by blinking the landing or navigation lights at night.",
-        "A pilot departing the primary airport, or a satellite airport with an operating control tower, in Class D airspace must establish and maintain two-way radio communication with the control tower, and thereafter as instructed by ATC while operating in the Class D airspace area; an ATC authorization issued by the facility having jurisdiction over the airspace can permit a deviation from this requirement."
+        "In flight, steady green means cleared to land, and flashing green means return for landing, to be followed by steady green at the proper time.",
+        "In flight, steady red means give way to other aircraft and continue circling, and flashing red means airport unsafe, do not land.",
+        "On the ground, steady green means cleared for takeoff, flashing green cleared to taxi, steady red stop, and flashing red taxi clear of the runway in use.",
+        "Flashing white, a ground-only signal, means return to starting point on the airport, and alternating red and green means exercise extreme caution everywhere.",
+        "If the radio fails in flight under VFR in Class D airspace, you may land with at least basic VFR weather, the tower in sight, and a clearance to land.",
+        "Acknowledge light signals by moving the ailerons or rudder in daylight and by blinking the landing or navigation lights at night.",
+        "Departing a towered airport in Class D airspace requires two-way radio communication with the tower, and ATC can authorize a deviation."
       ],
       "intent": "When your radio goes quiet, the tower still talks to you in colours, and the same light means something different on the ground and in the air.",
       "citations": [
@@ -62,49 +61,13 @@
       "short": "radio-goes",
       "article": [
         {
-          "heading": "How a tower talks without a radio",
+          "heading": "The short version",
           "paragraphs": [
-            "Picture yourself flying toward an airport with a control tower when the radio goes silent. The tower still controls you with a light gun, a signal lamp that aims an intense, narrow beam of a selected colour at your aircraft. To an aircraft in flight every signal is green, red or the two alternating. The one white signal, flashing white, applies only on the ground.",
-            "Towers use these signals for aircraft that carry no radio at all. They use the same ones for a radio-equipped aircraft whenever contact cannot be made. The lights also direct vehicles and people moving around the field.",
-            "A light says very little. It approves or refuses the move the tower expects you to make next. The only extra message it can add is the General Warning Signal, which tells you to be on the alert.",
-            "The move it answers depends on where you are. On final approach that move is usually the landing, and when you are ready to depart it is usually the takeoff. That is why one colour answers a different move on the ground than in the air.",
-            "Class D airspace has its own rule for a radio that fails. Flying VFR there with a dead radio, you may keep flying and land if the weather is at or above basic VFR minimums, you keep visual contact with the tower, and you receive a clearance to land. To an aircraft in flight, a steady green light means cleared to land."
-          ]
-        },
-        {
-          "heading": "What the lights mean in the air",
-          "paragraphs": [
-            "Steady green, a beam held on you without a break, means cleared to land. It is the only signal in the table that means cleared to land.",
-            "Flashing green, a beam that pulses on and off, means return for landing. The tower is calling you back toward the airport, and the light signal table says a steady green is to follow at the proper time. Come back toward the airport while you watch the tower, and land only on a steady green.",
-            "Here is the trap. Green looks like good news, so a flashing green can be mistaken for a clearance to land. Only a steady green carries that clearance.",
-            "Steady red means give way to other aircraft and continue circling. Other traffic goes first, and you stay out of its way while you circle and watch the tower for the next signal.",
-            "Flashing red means the airport is unsafe, so do not land. This time the trouble is the airport itself, where steady red was about other aircraft. Flashing does not work the same way for both colours: flashing green brings you back to land later, while flashing red tells you not to land here.",
-            "Flashing white is not applicable to an aircraft in flight. Alternating red and green means exercise extreme caution, in the air and on the ground alike."
-          ]
-        },
-        {
-          "heading": "What the lights mean on the ground",
-          "paragraphs": [
-            "On the ground the same lights answer different moves. If your radio quits after you leave the parking area, watch the tower. Its light approves or refuses your next move, as it does in the air.",
-            "Steady green means cleared for takeoff. Flashing green means cleared to taxi, and it is not a clearance to take off. Steady red means stop. Flashing red means taxi clear of the runway in use.",
-            "A radio that is already dead before you go is a different case. Departing a towered airport in Class D airspace, you must establish and maintain two-way radio communication with the tower. A takeoff without a working radio takes an ATC authorization first. The radio-failure rule above is for a radio that fails once you are flying.",
-            "Flashing white is the one signal used only on the ground, and it means return to starting point on the airport. Alternating red and green keeps its meaning here too: exercise extreme caution."
-          ],
-          "figure": {
-            "src": "/assets/explainers/figures/when-the-radio-goes-quiet-light-gun-signals-ground.webp",
-            "caption": "The same six lights, read for an aircraft on the ground.",
-            "alt": "Light gun signals with no radio contact, on the ground: an illustrated card for pilots. Wait for steady green before you take off. At dusk a control tower aims a steady green beam at a Cessna 172 waiting on a taxiway. Below, the same six signals and their meaning to an aircraft on the ground: steady green, cleared for takeoff; flashing green, cleared to taxi; steady red, stop; flashing red, taxi clear of the runway in use; flashing white, return to starting point on the airport; alternating red and green, exercise extreme caution. Flight training explainer from FlightDecide."
-          }
-        },
-        {
-          "heading": "The pattern under both cards",
-          "paragraphs": [
-            "Set the ground meanings beside the flight meanings and a pattern shows. Steady green means cleared for takeoff on the ground and cleared to land in the air. Flashing green is the step before each: cleared for taxi on the ground, return for landing in the air.",
-            "Red follows the same idea. On the ground steady red means stop, and in the air, where you cannot stop, it means give way and continue circling.",
-            "Flashing red differs between the two. On the ground it means taxi clear of the runway in use. In the air it means the airport itself is unsafe, so you do not land there."
+            "Only a steady green clears you to land in the air or to take off on the ground.",
+            "Alternating red and green means exercise extreme caution everywhere. The other five signals change meaning between the ground and the air, and the table puts the two side by side."
           ],
           "table": {
-            "caption": "Each light gun signal, with its meaning for an aircraft on the ground and in flight.",
+            "caption": "All six light gun signals, with their meaning on the ground and in flight.",
             "columns": [
               "Signal",
               "Aircraft on the ground",
@@ -145,19 +108,55 @@
           }
         },
         {
-          "heading": "Seeing the signal and answering it",
+          "heading": "Three easy mistakes",
           "paragraphs": [
-            "A light only helps if you see it. The beam is narrow and aimed at your aircraft, and the tower might send it while you are looking elsewhere.",
-            "If the radio fails after you leave the parking area, watch the tower for light signals. You can also keep listening on the tower's frequency.",
-            "Acknowledge each signal. By day, move the ailerons or the rudder, and at night, blink the landing or navigation lights. The same answers acknowledge a call you hear from the tower on the radio.",
-            "Between sunset and sunrise, you may need to catch the tower's attention first. Turn on a landing light. Then taxi to a spot clear of the active runway, the runway in use, where the tower can see the light.",
-            "Keep the landing light on until the tower sends you a signal. Then answer it with a blink, as you would any signal at night."
+            "Don't land on a flashing green. In the air it means return for landing, to be followed by steady green at the proper time.",
+            "Don't treat both reds the same. Steady red in flight means give way to other aircraft and continue circling, while flashing red means the airport is unsafe, so do not land there.",
+            "Don't expect white in the air: flashing white is a ground signal only, and it means return to starting point on the airport."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/when-the-radio-goes-quiet-light-gun-signals-ground.webp",
+            "caption": "The same six lights, read for an aircraft on the ground.",
+            "alt": "Light gun signals with no radio contact, on the ground: an illustrated card for pilots. Wait for steady green before you take off. At dusk a control tower aims a steady green beam at a Cessna 172 waiting on a taxiway. Below, the same six signals and their meaning to an aircraft on the ground: steady green, cleared for takeoff; flashing green, cleared to taxi; steady red, stop; flashing red, taxi clear of the runway in use; flashing white, return to starting point on the airport; alternating red and green, exercise extreme caution. Flight training explainer from FlightDecide."
+          }
+        },
+        {
+          "heading": "If your radio quits",
+          "paragraphs": [
+            "If the radio fails after you leave the parking area, watch the tower for light signals and keep listening on the tower frequency.",
+            "In Class D airspace, a VFR pilot whose radio has failed may still land, on three conditions. The weather must be at or above basic VFR minimums, the tower must stay in sight, and a clearance to land must be received.",
+            "Departing a towered airport in Class D airspace, you must establish and maintain two-way radio communication with the tower. ATC can authorize a deviation from that."
+          ]
+        },
+        {
+          "heading": "Answering the tower",
+          "paragraphs": [
+            "Acknowledge each signal by moving the ailerons or rudder by day, or by blinking the landing or navigation lights at night.",
+            "At night you may need the tower's attention first. Turn on a landing light and taxi clear of the active runway, to a spot where the tower can see it. Keep the light on until a signal comes back."
           ],
           "figure": {
             "src": "/assets/explainers/figures/when-the-radio-goes-quiet-light-gun-signals-551a81bb.webp",
             "caption": "Clear of the active runway, the airplane holds its landing light toward the tower until a signal comes back.",
             "alt": "Clear of the active runway, the airplane holds its landing light toward the tower until a signal comes back."
           }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. On final with a dead radio, the tower shows you a flashing green: can you land?",
+            "2. Holding short with a dead radio, you get a flashing green: can you take off?",
+            "3. Circling the field, you get a steady red and then a flashing red: what changed?",
+            "4. At night, with your radio dead, how do you get the tower to see you?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Not yet. It means return for landing, and the steady green that clears you to land follows at the proper time.",
+            "2. No. On the ground, flashing green clears you to taxi, and only a steady green clears you for takeoff.",
+            "3. Steady red meant give way to other aircraft and continue circling. Flashing red says the airport itself is unsafe, so do not land there.",
+            "4. Turn on a landing light and taxi clear of the active runway, to where the tower can see it. Keep the light on until a signal comes back."
+          ]
         }
       ],
       "related": []
