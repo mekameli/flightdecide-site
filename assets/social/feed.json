@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T01:50:03+00:00",
+  "generated": "2026-10-08T20:02:12+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -3523,6 +3523,114 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
+          ]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "sys-gravity-fuel",
+      "slug": "how-fuel-reaches-the-engine-in-a-high-wing-trainer",
+      "page": "/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer/",
+      "title": "How fuel reaches the engine in a high-wing trainer",
+      "headline": "Gravity brings your fuel down from the wings.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "How fuel reaches the engine in a high-wing trainer: an illustrated diagram for pilots. Gravity brings your fuel down from the wings.",
+      "image": "/assets/social/sys-gravity-fuel.webp",
+      "image_full": "/assets/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer.webp",
+      "image_px": 1003,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "On high-wing airplanes the fuel tanks are in the wings, and a gravity-feed system uses gravity to move the fuel from the tanks to the engine.",
+        "The tanks are vented to the outside to keep atmospheric pressure inside them.",
+        "Before the fuel reaches the carburetor it passes through a strainer that removes moisture and other sediment."
+      ],
+      "intent": "Gravity does the pumping in a high-wing trainer, so the tank vents and the strainer are what keep clean fuel flowing to the engine.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "OPEN TO OUTSIDE AIR",
+          "points_at": "The open end of the short curved vent tube at the outer left end of the left tank."
+        },
+        {
+          "label": "FUEL RUNS DOWNHILL",
+          "points_at": "The line running down from under the right tank into the right side of the selector valve."
+        },
+        {
+          "label": "MOISTURE AND SEDIMENT CAUGHT HERE",
+          "points_at": "The round strainer bowl directly below the selector valve."
+        }
+      ],
+      "short": "fuel-reaches",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "In a high-wing trainer, gravity moves the fuel from the tanks in the wings down to the engine. Each tank has a vent open to the outside air. On the way down, a strainer cleans the fuel, and you drain that strainer before every flight."
+          ]
+        },
+        {
+          "heading": "Why the fuel runs downhill",
+          "paragraphs": [
+            "Stand under a high-wing trainer's wing and the fuel is over your head. The carburetor, which meters fuel into the air headed for the cylinders, sits below the tanks on the engine. Fuel leaving the tanks runs downhill to it, and that is a gravity-feed system.",
+            "A low-wing airplane shows why that height matters. Its tanks sit below the carburetor, so gravity can't deliver the fuel. It carries two pumps instead, one engine-driven and one electric for starting and backup.",
+            "In the high wing, both tank lines meet at the fuel selector valve, which picks the tank that feeds the engine. On a common type, LEFT or RIGHT feeds from one tank, BOTH from the pair, and the fourth position is OFF."
+          ]
+        },
+        {
+          "heading": "Why each tank breathes outside air",
+          "paragraphs": [
+            "The vent keeps the pressure inside the tank at atmospheric pressure, the pressure of the air around the airplane. As fuel runs out, outside air comes in to take its place.",
+            "The vent may be part of the filler cap, the lid over the filling hole on top of the wing. Or it may be a tube through the wing's surface.",
+            "Each tank also has an overflow drain, which lets fuel expand as it warms without damaging the tank. After a fill on a hot day, seeing fuel come out of it is not unusual."
+          ]
+        },
+        {
+          "heading": "What the strainer catches",
+          "paragraphs": [
+            "The strainer sits in the line below the selector valve, so all the fuel passes through it before the carburetor. It removes moisture and other sediment, the grit and dirt carried along in the fuel.",
+            "Gravity does a second job here. Water and sediment are heavier than the fuel, so they sink and gather at the bottom of the strainer. That low point is called a sump, and a fuel tank can have one too.",
+            "Your airplane may have a sump, a strainer and tank drains, with some sharing one spot. Systems vary, so learn where each drain is on the airplane you fly."
+          ]
+        },
+        {
+          "heading": "Four fuel mistakes worth avoiding",
+          "paragraphs": [
+            "Look at every fuel sample you drain for water and dirt. In cold weather, water left in the sump can freeze and block the fuel lines. In warm weather it can flow into the carburetor and stop the engine.",
+            "Keep draining when a sample shows water. Water in the sump means more is probably in the tanks, so drain them until none shows. Don't take off until the system is clear of water and sediment.",
+            "Set the fuel selector as its placard, the printed limits on tank use, tells you. On the selector the FAA handbook shows, LEFT and RIGHT each read 19 gal and LEVEL FLIGHT ONLY. BOTH reads 38 GAL with TAKEOFF, LANDING and ALL FLIGHT ATTITUDES.",
+            "Watch your fuel burn so no tank runs completely dry. Running a tank dry stops the engine, and the air it can let into the system makes a restart difficult. Long stretches on one tank also unbalance the fuel load."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Just after a hot-day fill, fuel runs from the overflow drain, so what is happening?",
+            "2. Your strainer sample shows water, so what do you do before takeoff?",
+            "3. Your high-wing trainer's tanks feed by gravity, so why does a low-wing airplane carry fuel pumps?",
+            "4. Before takeoff the selector is on LEFT, under a placard reading LEVEL FLIGHT ONLY, so where do you set it?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Most likely it's fuel expanding as it warms, which the overflow drain lets out so the tank isn't damaged.",
+            "2. Drain the strainer and the tanks until no water shows, since water in the sump means more is probably in the tanks.",
+            "3. Its wing tanks sit below the carburetor, so gravity can't move the fuel to it. Pumps do that job instead.",
+            "4. Set it to BOTH, if the placard marks BOTH for takeoff and landing as the handbook's does. LEFT is for level flight only."
           ]
         }
       ],

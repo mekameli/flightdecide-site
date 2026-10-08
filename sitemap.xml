@@ -702,5 +702,13 @@
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer.webp</image:loc>
+    </image:image>
+  </url>
   <!-- explainers:end -->
 </urlset>
