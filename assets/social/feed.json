@@ -1,7 +1,116 @@
 {
-  "generated": "2026-10-09T18:30:16+00:00",
+  "generated": "2026-10-09T18:36:00+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "airspace-flight-following",
+      "slug": "what-flight-following-does-not-do",
+      "page": "/explainers/what-flight-following-does-not-do/",
+      "title": "What flight following does not do",
+      "headline": "With flight following on, the lookout is still yours.",
+      "pillar": "airspace",
+      "topic": "Airspace",
+      "alt": "What flight following does not do: an illustrated diagram for pilots. With flight following on, the lookout is still yours. The picture shows a small radar antenna on a far hilltop at the left edge with five or six thin pale lines fanning out to the right; the lowest radar line grazing the crest of a substantial ridge just right of centre; a lee valley on the ridge's right side in deep shadow, below the lowest radar line, with no line entering it; the solid house aircraft upper right of centre, nose right, wings level, inside the radar lines. Flight training explainer from FlightDecide.",
+      "image": "/assets/social/airspace-flight-following.webp",
+      "image_full": "/assets/explainers/what-flight-following-does-not-do.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/p/DeSKkrxGFc4/",
+      "posted": "2026-10-09",
+      "caption": [
+        "Does flight following mean ATC will call out every airplane near you?",
+        "Radar limits and a busy controller both cut the traffic calls you hear, as do heavy traffic and a crowded frequency. A quiet frequency is no proof of an empty sky. Seeing and avoiding other aircraft stays with you.",
+        "Full explainer, and the FAA sources, at the link in our bio."
+      ],
+      "teaches": [
+        "Radar traffic information can be limited by the radar itself, the volume of traffic, controller workload and frequency congestion.",
+        "The service does not relieve the pilot of the responsibility to see and avoid other aircraft."
+      ],
+      "intent": "Flight following is a second set of eyes that can blink, so the lookout is still yours.",
+      "citations": [
+        {
+          "ref": "AIM 4-1-15",
+          "title": "Aeronautical Information Manual, paragraph 4-1-15",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_1.html",
+          "kind": "aim",
+          "note": "Aeronautical Information Manual",
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "RADAR CAN'T SEE HERE",
+          "points_at": "The shadowed wedge of the lee valley on the ridge's right side, just below the lowest radar line."
+        },
+        {
+          "label": "NO TRAFFIC CALL",
+          "points_at": "The ghost of the house aircraft climbing out of the shadowed lee valley."
+        },
+        {
+          "label": "SEE AND AVOID, STILL YOURS",
+          "points_at": "The house aircraft's windscreen."
+        }
+      ],
+      "short": "flight-following",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Flight following is radar traffic advice that ATC gives a VFR pilot who asks for it. The controller tells you about targets close enough to your position or route to deserve a look. Some targets may never get a call, for reasons you can't see from the cockpit. Keep watching for other aircraft and keep clear of them yourself, all flight, because the service never takes that over."
+          ]
+        },
+        {
+          "heading": "Why a traffic call may never come",
+          "paragraphs": [
+            "Picture a long, quiet stretch on frequency while you cruise with flight following. Nothing may be near you, or a call may have had no way to reach you.",
+            "Many things could stop a call. Among them are the radar's own limits, the volume of traffic, the controller's workload and a crowded frequency. A controller tied up with other airplanes, or a frequency with no gap to speak in, can leave your call unsaid.",
+            "The controller alone decides whether they can give the service, or keep giving it. They needn't tell you the reason, so the quiet doesn't tell you which case you're in.",
+            "Some traffic may not show on the screen at all. If part of the radar is out of service, ATC normally says so. Then the display shows only aircraft reporting through a transponder or ADS-B, and anything without them in use can't be called."
+          ]
+        },
+        {
+          "heading": "Why the clock position can be off",
+          "paragraphs": [
+            "A call tells you where to look, on the 12-hour clock around your airplane. A typical one is traffic 10 o'clock, 3 miles, westbound, with distance in nautical miles. Type and altitude follow only if known.",
+            "The controller sees only your track, the path over the ground, and never your heading, where the nose points. When you crab, angling the nose into the wind to hold your track, the two differ. Your clock turns with the nose, but the call's clock stays lined up with the track.",
+            "In the AIM's example, traffic called at 12 o'clock would appear at 2 o'clock to one pilot and 10 o'clock to another. A call of 2 o'clock would appear at 3 o'clock to a third.",
+            "A fourth pilot, needing no wind correction, would see the traffic right where it was called, at 11 o'clock. Turning just as a call comes in can throw it off the same way.",
+            "Altitude has its own gap. Radar gives none unless the other airplane has Mode C, the transponder feature that reports altitude, and the facility can display it."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-flight-following-does-not-do-3a9f4af5.webp",
+            "caption": "The call is set to your track, so with the nose crabbed left, traffic called at 12 o'clock sits at 2 o'clock through the windscreen.",
+            "alt": "The call is set to your track, so with the nose crabbed left, traffic called at 12 o'clock sits at 2 o'clock through the windscreen."
+          }
+        },
+        {
+          "heading": "Three mistakes with flight following",
+          "paragraphs": [
+            "Keep scanning the whole sky after a call, well beyond the spot it named. A call covers one target the controller saw and had time to report, and others may be nearby with no call at all.",
+            "Treat a called altitude as a lead to confirm with your eyes. It may come from Mode C that nobody has checked against what that pilot reports.",
+            "Choose your own way to keep clear once you see the traffic. The service gives no vector, a heading to fly away from traffic, unless you ask for one. Even then, the controller gives it only as far as they can."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. On a busy frequency, flight following has gone a long stretch without a traffic call, so can you treat the sky as clear?",
+            "2. You're crabbing with the nose left of your track when ATC calls traffic at 12 o'clock, so where should you look first?",
+            "3. ATC calls traffic with an altitude taken from its Mode C, so can you count on that altitude being right?",
+            "4. Traffic the controller called is in sight and closing, so should you hold your heading until ATC turns you?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. No. A busy frequency is one of the things that can stop calls, and the controller needn't tell you why, so keep scanning.",
+            "2. Look right of the nose. The call's clock is set to your track, and your track runs right of where the nose points.",
+            "3. No. It may be unverified, so find the traffic and judge its height yourself.",
+            "4. No. Act to keep clear yourself as soon as you need to, because ATC won't turn you away from traffic on its own."
+          ]
+        }
+      ],
+      "related": []
+    },
     {
       "id": "sys-gravity-fuel",
       "slug": "how-fuel-reaches-the-engine-in-a-high-wing-trainer",
@@ -3635,111 +3744,6 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
-          ]
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": "airspace-flight-following",
-      "slug": "what-flight-following-does-not-do",
-      "page": "/explainers/what-flight-following-does-not-do/",
-      "title": "What flight following does not do",
-      "headline": "With flight following on, the lookout is still yours.",
-      "pillar": "airspace",
-      "topic": "Airspace",
-      "alt": "What flight following does not do: an illustrated diagram for pilots. With flight following on, the lookout is still yours.",
-      "image": "/assets/social/airspace-flight-following.webp",
-      "image_full": "/assets/explainers/what-flight-following-does-not-do.webp",
-      "image_px": 1003,
-      "permalink": null,
-      "posted": "",
-      "caption": [],
-      "teaches": [
-        "Radar traffic information can be limited by the radar itself, the volume of traffic, controller workload and frequency congestion.",
-        "The service does not relieve the pilot of the responsibility to see and avoid other aircraft."
-      ],
-      "intent": "Flight following is a second set of eyes that can blink, so the lookout is still yours.",
-      "citations": [
-        {
-          "ref": "AIM 4-1-15",
-          "title": "Aeronautical Information Manual, paragraph 4-1-15",
-          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_1.html",
-          "kind": "aim",
-          "note": "Aeronautical Information Manual",
-          "book_url": null
-        }
-      ],
-      "figure_key": [
-        {
-          "label": "RADAR CAN'T SEE HERE",
-          "points_at": "The shadowed wedge of the lee valley on the ridge's right side, just below the lowest radar line."
-        },
-        {
-          "label": "NO TRAFFIC CALL",
-          "points_at": "The ghost of the house aircraft climbing out of the shadowed lee valley."
-        },
-        {
-          "label": "SEE AND AVOID, STILL YOURS",
-          "points_at": "The house aircraft's windscreen."
-        }
-      ],
-      "short": "flight-following",
-      "article": [
-        {
-          "heading": "The short version",
-          "paragraphs": [
-            "Flight following is radar traffic advice that ATC gives a VFR pilot who asks for it. The controller tells you about targets close enough to your position or route to deserve a look. Some targets may never get a call, for reasons you can't see from the cockpit. Keep watching for other aircraft and keep clear of them yourself, all flight, because the service never takes that over."
-          ]
-        },
-        {
-          "heading": "Why a traffic call may never come",
-          "paragraphs": [
-            "Picture a long, quiet stretch on frequency while you cruise with flight following. Nothing may be near you, or a call may have had no way to reach you.",
-            "Many things could stop a call. Among them are the radar's own limits, the volume of traffic, the controller's workload and a crowded frequency. A controller tied up with other airplanes, or a frequency with no gap to speak in, can leave your call unsaid.",
-            "The controller alone decides whether they can give the service, or keep giving it. They needn't tell you the reason, so the quiet doesn't tell you which case you're in.",
-            "Some traffic may not show on the screen at all. If part of the radar is out of service, ATC normally says so. Then the display shows only aircraft reporting through a transponder or ADS-B, and anything without them in use can't be called."
-          ]
-        },
-        {
-          "heading": "Why the clock position can be off",
-          "paragraphs": [
-            "A call tells you where to look, on the 12-hour clock around your airplane. A typical one is traffic 10 o'clock, 3 miles, westbound, with distance in nautical miles. Type and altitude follow only if known.",
-            "The controller sees only your track, the path over the ground, and never your heading, where the nose points. When you crab, angling the nose into the wind to hold your track, the two differ. Your clock turns with the nose, but the call's clock stays lined up with the track.",
-            "In the AIM's example, traffic called at 12 o'clock would appear at 2 o'clock to one pilot and 10 o'clock to another. A call of 2 o'clock would appear at 3 o'clock to a third.",
-            "A fourth pilot, needing no wind correction, would see the traffic right where it was called, at 11 o'clock. Turning just as a call comes in can throw it off the same way.",
-            "Altitude has its own gap. Radar gives none unless the other airplane has Mode C, the transponder feature that reports altitude, and the facility can display it."
-          ],
-          "figure": {
-            "src": "/assets/explainers/figures/what-flight-following-does-not-do-3a9f4af5.webp",
-            "caption": "The call is set to your track, so with the nose crabbed left, traffic called at 12 o'clock sits at 2 o'clock through the windscreen.",
-            "alt": "The call is set to your track, so with the nose crabbed left, traffic called at 12 o'clock sits at 2 o'clock through the windscreen."
-          }
-        },
-        {
-          "heading": "Three mistakes with flight following",
-          "paragraphs": [
-            "Keep scanning the whole sky after a call, well beyond the spot it named. A call covers one target the controller saw and had time to report, and others may be nearby with no call at all.",
-            "Treat a called altitude as a lead to confirm with your eyes. It may come from Mode C that nobody has checked against what that pilot reports.",
-            "Choose your own way to keep clear once you see the traffic. The service gives no vector, a heading to fly away from traffic, unless you ask for one. Even then, the controller gives it only as far as they can."
-          ]
-        },
-        {
-          "heading": "Check yourself",
-          "paragraphs": [
-            "1. On a busy frequency, flight following has gone a long stretch without a traffic call, so can you treat the sky as clear?",
-            "2. You're crabbing with the nose left of your track when ATC calls traffic at 12 o'clock, so where should you look first?",
-            "3. ATC calls traffic with an altitude taken from its Mode C, so can you count on that altitude being right?",
-            "4. Traffic the controller called is in sight and closing, so should you hold your heading until ATC turns you?"
-          ]
-        },
-        {
-          "heading": "Answers",
-          "paragraphs": [
-            "1. No. A busy frequency is one of the things that can stop calls, and the controller needn't tell you why, so keep scanning.",
-            "2. Look right of the nose. The call's clock is set to your track, and your track runs right of where the nose points.",
-            "3. No. It may be unverified, so find the traffic and judge its height yourself.",
-            "4. No. Act to keep clear yourself as soon as you need to, because ATC won't turn you away from traffic on its own."
           ]
         }
       ],
