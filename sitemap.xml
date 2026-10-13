@@ -491,9 +491,18 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/going-around-power-first/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/going-around-power-first.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/what-flight-following-does-not-do/</loc>
@@ -718,14 +727,6 @@
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/going-around-power-first/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/going-around-power-first.webp</image:loc>
     </image:image>
   </url>
   <!-- explainers:end -->
