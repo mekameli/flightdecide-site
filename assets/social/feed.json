@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T17:45:03+00:00",
+  "generated": "2026-10-13T17:50:05+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -117,9 +117,9 @@
             "So treat a rapid or large airspeed gain near convective weather, meaning showers and storms, as a possible sign of a coming loss. It may be reason enough to break off the approach."
           ],
           "figure": {
-            "src": "/assets/explainers/figures/microburst-on-final-final.webp",
-            "caption": "Flying one approach through it: the headwind can float you above the glide path, the downdraft pushes you down, and the tailwind takes airspeed just as you are lowest.",
-            "alt": "Side view of an approach through a microburst. A Cessna 172 is shown three times: above the dashed normal glide path where the headwind meets it, crossing below that path under the downdraft, and low and short of the runway in the tailwind."
+            "src": "/assets/explainers/figures/microburst-on-final-ae183ded.webp",
+            "caption": "The headwind's airspeed gain tempts you to take off power and lower the nose, so when the tailwind takes that airspeed away you sink below the approach path and land short of the runway.",
+            "alt": "The headwind's airspeed gain tempts you to take off power and lower the nose, so when the tailwind takes that airspeed away you sink below the approach path and land short of the runway."
           }
         },
         {
