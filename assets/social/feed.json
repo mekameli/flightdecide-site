@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T18:36:00+00:00",
+  "generated": "2026-10-13T00:19:31+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -3744,6 +3744,110 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
+          ]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "aero-go-around-power",
+      "slug": "going-around-power-first",
+      "page": "/explainers/going-around-power-first/",
+      "title": "Going around: power first",
+      "headline": "The moment you go around, power comes first.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "Going around: power first: an illustrated diagram for pilots. The moment you go around, power comes first.",
+      "image": "/assets/social/aero-go-around-power.webp",
+      "image_full": "/assets/explainers/going-around-power-first.webp",
+      "image_px": 1003,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "A go-around rests on three cardinal principles: power, attitude and configuration.",
+        "Power is the first concern: the instant you decide to go around, apply full power smoothly and without hesitation.",
+        "The added power raises the nose and yaws the airplane left, so expect forward pressure and right rudder to hold a safe attitude."
+      ],
+      "intent": "In a go-around power comes first, because it is what stops the sink; attitude and configuration follow.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+          "kind": "handbook",
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "FULL POWER, NO HESITATION",
+          "points_at": "The propeller disc of the solid house aircraft."
+        },
+        {
+          "label": "NOSE RISES, YAWS LEFT",
+          "points_at": "The nose and spinner of the solid house aircraft."
+        },
+        {
+          "label": "FORWARD PRESSURE, RIGHT RUDDER",
+          "points_at": "The tail of the solid house aircraft, where the rudder and elevator meet."
+        }
+      ],
+      "short": "going-around",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "A go-around, abandoning a landing to climb away, rests on three principles, which are power, attitude and configuration. The instant you decide, push in full power smoothly and without hesitation, and hold it until flying speed and control are back.",
+            "As the nose tries to rise and swing left, hold a safe attitude, its position against the horizon, with forward pressure and right rudder. The configuration, here the flaps, changes last, once the descent has stopped."
+          ]
+        },
+        {
+          "heading": "Why the throttle moves before the yoke",
+          "paragraphs": [
+            "A sinking airplane has inertia, a tendency to keep moving the way it already is, and it takes enough power to overcome it. Pitching up alone raises the angle of attack, the angle at which the wing meets the oncoming air, and bleeds off airspeed. The result is a faster sink, a stall close to the ground, or both.",
+            "Below stall speed an airplane cannot fly, and below minimum power required speed, where level flight takes the least power, it cannot climb. So resist pitching up for the climb until the airspeed is there, and in some cases lower the nose briefly to gain speed.",
+            "Full power here means full or maximum allowable takeoff power, put in positively. In some airplanes a jab at the throttle makes the engine falter, so keep the push smooth. If yours has carburetor heat, turn it off for maximum power."
+          ]
+        },
+        {
+          "heading": "Holding the nose once the power is in",
+          "paragraphs": [
+            "Expect to push hard to hold the nose level or in a safe climb attitude. Your trim, which takes the load off the controls, is still set for the slow approach. If the nose rises too early in a low go-around, the stall that follows could be unrecoverable.",
+            "The swing to the left comes from torque and P-factor, the left-turning effects of the engine and propeller under full power. Use as much right rudder as it takes to cancel them.",
+            "Once the speed is right and the climb pitch is set, give it a rough trim, a quick setting that eases the pressure. Fine-tune the trim when things have settled."
+          ]
+        },
+        {
+          "heading": "Bringing the flaps up without losing lift",
+          "paragraphs": [
+            "Fly the airplane before you reach for the flap handle. In airplanes with heavy control pressures at maximum power, reach for it with caution, because control comes first.",
+            "Bring the landing flaps partway up first, or to the takeoff setting, as the manufacturer recommends. Depending on height and speed, it is wise to raise them in small steps, giving the airplane time to speed up. Pulling them all up at once could take away lift and settle the airplane onto the ground."
+          ]
+        },
+        {
+          "heading": "Two mistakes that spoil a go-around",
+          "paragraphs": [
+            "Go around the moment the landing looks uncertain. The maneuver is not dangerous in itself, only when it is delayed unduly or flown badly. Delay normally comes from expecting the landing to work out, or from pride that treats going around as failure.",
+            "Don't trust the cushion of air you feel just above the runway. Near the ground the wing makes less induced drag, the drag that comes with making lift, and that is ground effect. That help is borrowed and repaid as you climb out. Climb too soon and you may not be able to climb, or even hold altitude, at full power."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. You decide to go around over the threshold with the airplane sinking, so why does power go in before you pull back?",
+            "2. Low and slow with full power just in, you feel the nose climbing by itself, so how do you respond?",
+            "3. How should full flaps come up once the descent has stopped and your climb is set?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. It takes power to overcome the sinking airplane's inertia. Pulling back alone bleeds speed toward a faster sink, a low stall, or both.",
+            "2. Push firmly forward to hold the nose level or in a safe climb attitude, with right rudder to keep straight. Letting it rise early this low risks an unrecoverable stall.",
+            "3. Partway up or to the manufacturer's takeoff setting first, then in small steps as speed builds. All at once could cost lift and settle you onto the ground."
           ]
         }
       ],
