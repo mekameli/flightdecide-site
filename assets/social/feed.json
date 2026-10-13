@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T00:25:43+00:00",
+  "generated": "2026-10-13T16:00:16+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -3852,6 +3852,164 @@
             "The handbook's worked case is a sea level field with an altimeter setting of 29.7. Its table gives a correction of 205 feet, so the pressure altitude is 205 feet.",
             "Next you correct that for temperature. A flight computer does it from pressure altitude and outside air temperature. The density altitude chart in chapter 11 does the same job on paper.",
             "There is no rule of thumb or chart for humidity. On a warm, damp day, expect less performance than your dry-air numbers show."
+          ]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "wx-microburst",
+      "slug": "microburst-on-final",
+      "page": "/explainers/microburst-on-final/",
+      "title": "A microburst on final",
+      "headline": "Your headwind on entry becomes a tailwind on exit.",
+      "pillar": "weather",
+      "topic": "Weather",
+      "alt": "A microburst on final: an illustrated diagram for pilots. Your headwind on entry becomes a tailwind on exit.",
+      "image": "/assets/social/wx-microburst.webp",
+      "image_full": "/assets/explainers/microburst-on-final.webp",
+      "image_px": 1003,
+      "permalink": null,
+      "posted": "",
+      "caption": [],
+      "teaches": [
+        "A microburst produces a headwind gain on entry followed by a downdraft and then a tailwind on exit.",
+        "The initial airspeed increase is the warning, and reducing power to correct it removes the margin needed moments later."
+      ],
+      "intent": "The same microburst gives a performance-increasing headwind first and a performance-losing tailwind second.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-28 ch 22",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 22",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 22",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 22
+        },
+        {
+          "ref": "FAA-H-8083-28 ch 19",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 19",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 19",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 19
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "HEADWIND ON ENTRY, AIRSPEED UP",
+          "points_at": "The ghost aircraft's nose, where the left-running outflow meets it head-on."
+        },
+        {
+          "label": "DO NOT REDUCE POWER",
+          "points_at": "The crest of the dotted flight-path trace, where it bulges highest above the glidepath."
+        },
+        {
+          "label": "TAILWIND ON EXIT, AIRSPEED FALLING",
+          "points_at": "The solid aircraft's tail, where the right-running outflow overtakes it."
+        }
+      ],
+      "short": "microburst-final",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "A microburst on final gives you a headwind that raises your airspeed, then a downdraft, then a tailwind that takes it away. That early gain is the warning. Don't reduce power to fix it, and be ready to go around. The margin you would trim off is the margin you need moments later."
+          ]
+        },
+        {
+          "heading": "What a microburst does to the wind",
+          "paragraphs": [
+            "Picture a column of air dropping out of a shower or thunderstorm and spreading outward in all directions when it reaches the ground. That is a microburst, the most severe kind of wind shear, meaning a sudden change in wind speed or direction over a small area.",
+            "Going in, the outflow, the air racing away from the center, meets you as a headwind. In the middle the air pushes you down, and coming out the outflow runs your way as a tailwind.",
+            "Vertical winds usually peak more than 500 ft above the ground. In the center of a strong microburst, the downdraft can exceed 3,000 fpm (feet per minute). How hard it hits you depends on your height and how near the center you pass."
+          ],
+          "table": {
+            "caption": "The size and strength of a typical microburst.",
+            "columns": [
+              "Measure",
+              "Typical microburst"
+            ],
+            "rows": [
+              [
+                "Width",
+                "Less than 2.5 mi"
+              ],
+              [
+                "Depth",
+                "1,000 ft (nominal)"
+              ],
+              [
+                "Lifespan",
+                "5 to 15 minutes"
+              ],
+              [
+                "Downdraft",
+                "Up to 6,000 fpm"
+              ],
+              [
+                "Headwind gained or lost",
+                "30 to 90 kt"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/microburst-on-final-what.webp",
+            "caption": "A microburst: a small, intense downdraft falls from the cloud and spreads out along the ground in every direction.",
+            "alt": "A dense rain column falls from a dark storm cloud onto farmland near an airfield and spreads outward at the ground. A blue arrow down the column is labelled downdraft, and arrows along the ground each way are labelled outflow."
+          }
+        },
+        {
+          "heading": "Why the airspeed gain is a trap",
+          "paragraphs": [
+            "A rising headwind lifts your indicated airspeed and performance. The nose tends to pitch up as the airplane works back to its trim speed, leaving you fast and high.",
+            "Correcting that with less power and a lower nose sets up what comes next. The tailwind arrives and takes away airspeed and performance, and it finds you nose low with the power back. Recovery from there is harder, and the airplane can stall or land short of the runway.",
+            "So treat a rapid or large airspeed gain near convective weather, meaning showers and storms, as a possible sign of a coming loss. It may be reason enough to break off the approach."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/microburst-on-final-final.webp",
+            "caption": "Flying one approach through it: the headwind can float you above the glide path, the downdraft pushes you down, and the tailwind takes airspeed just as you are lowest.",
+            "alt": "Side view of an approach through a microburst. A Cessna 172 is shown three times: above the dashed normal glide path where the headwind meets it, crossing below that path under the downdraft, and low and short of the runway in the tailwind."
+          }
+        },
+        {
+          "heading": "When the warning never comes",
+          "paragraphs": [
+            "A microburst's outflow can be symmetric, the same on every side, but it is often asymmetric, stronger on some sides than others. Depending on your path, the gain going in may never appear, or may be much smaller than the loss coming out.",
+            "An intense rain shaft at the surface can mark a microburst. Sometimes the only visible clue is virga, rain streaks that never reach the ground, or a ring of blowing dust. If you've met or seen one, watch for another, since the same weather system can produce more than one."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/microburst-on-final-spot.webp",
+            "caption": "Virga and a ring of blowing dust can be the only signs a microburst gives.",
+            "alt": "Grey streaks of virga hang from a dark cloud base over an airfield, fading before they reach the ground, and a ring of blowing dust spreads along the fields below. Both are labelled."
+          }
+        },
+        {
+          "heading": "Three easy mistakes in a microburst",
+          "paragraphs": [
+            "Go around at the first sign of a microburst. Only 5 to 15 seconds may be available to recognize it and recover. At low altitude, recovery may be impossible.",
+            "Hold the nose at its normal pitch or higher as the airspeed falls, and accept the slower speed. The airplane's natural response to low airspeed is to pitch down, and letting it go there adds to the height you lose.",
+            "Fly a stabilized approach, holding one steady speed and path, so a bad trend stands out early. Feeding in power bit by bit may mask the first drop in airspeed."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. What should a sudden jump well above your target airspeed on final near a shower tell you?",
+            "2. Can you rule out a microburst near the airport if you see virga below the cloud base but no rain at the surface?",
+            "3. How should you handle pitch when the airspeed starts falling partway down final and the nose wants to drop?",
+            "4. If you fly into a microburst's outflow and feel no airspeed gain at all, can you expect a gentle exit?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. It may be a microburst's headwind, with a tailwind loss to follow. Keep the power in and be ready to go around.",
+            "2. No. Virga or a ring of blowing dust is sometimes the only visible sign of a microburst.",
+            "3. Hold pitch at normal or higher and accept the lower airspeed. Letting the nose drop to chase speed costs height you can't spare.",
+            "4. No. In an asymmetric microburst the gain going in may be small or missing, and the loss coming out much larger."
           ]
         }
       ],
