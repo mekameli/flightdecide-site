@@ -88,6 +88,7 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
    than two logos competing with the footer links above them. */
 .social-instagram:hover, .social-instagram:focus-visible { color: #E1306C; }
 .social-facebook:hover, .social-facebook:focus-visible { color: #1877F2; }
+.social-youtube:hover, .social-youtube:focus-visible { color: #FF0000; }
 .social-link:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) {
   .social-link { transition: color 0.2s, border-color 0.2s, background 0.2s; }
