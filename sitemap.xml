@@ -496,6 +496,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/microburst-on-final/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/microburst-on-final.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/going-around-power-first/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -727,14 +736,6 @@
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/microburst-on-final/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/microburst-on-final.webp</image:loc>
     </image:image>
   </url>
   <!-- explainers:end -->
