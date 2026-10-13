@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T16:10:02+00:00",
+  "generated": "2026-10-13T17:45:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -243,7 +243,12 @@
           "paragraphs": [
             "Fly the airplane before you reach for the flap handle. In airplanes with heavy control pressures at maximum power, reach for it with caution, because control comes first.",
             "Bring the landing flaps partway up first, or to the takeoff setting, as the manufacturer recommends. Depending on height and speed, it is wise to raise them in small steps, giving the airplane time to speed up. Pulling them all up at once could take away lift and settle the airplane onto the ground."
-          ]
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/going-around-power-first-98c69b3a.webp",
+            "caption": "What each of the three principles asks of your hands and feet, from the decision until the flaps are up.",
+            "alt": "What each of the three principles asks of your hands and feet, from the decision until the flaps are up."
+          }
         },
         {
           "heading": "Two mistakes that spoil a go-around",
