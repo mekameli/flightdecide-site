@@ -1,7 +1,150 @@
 {
-  "generated": "2026-10-13T17:50:05+00:00",
+  "generated": "2026-10-14T15:45:08+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-inst-compass-errors",
+      "slug": "magnetic-compass-errors",
+      "page": "/explainers/magnetic-compass-errors/",
+      "title": "Magnetic compass errors",
+      "headline": "Turning toward north, roll out before the compass shows north.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "Magnetic compass errors: an illustrated diagram for pilots. Turning toward north, roll out before the compass shows north.",
+      "image": "/assets/social/lesson-inst-compass-errors.webp",
+      "image_full": "/assets/explainers/magnetic-compass-errors.webp",
+      "image_px": 1003,
+      "permalink": "https://www.facebook.com/reel/1338873621514683/",
+      "posted": "2026-10-14",
+      "caption": [],
+      "teaches": [
+        "The magnetic compass reads correctly only while its card is horizontal; in a bank the card tilts with the airplane, and the dip of Earth's magnetic field then turns it.",
+        "In the Northern Hemisphere, turning toward north the reading falls behind the real heading (the handbooks say the card leads), so stop the turn before the compass reaches north; turning toward south the reading runs ahead (the card lags), so let the compass pass south first.",
+        "One rule of thumb is 15 degrees plus half the latitude, early toward north and late toward south: near 40 degrees north that is 15 + 20 = 35 degrees.",
+        "On an easterly or westerly heading, accelerating shows a turn toward north and decelerating a turn toward south (ANDS); on a north or south heading, a change of airspeed causes no error.",
+        "The float and card tilt freely to about 18 degrees of bank, and the compass reads erratically in a steeper bank; after a roll-out the card swings around the heading before it settles, so use the average of the swings."
+      ],
+      "intent": "Steering by the magnetic compass alone, its reading is only right while the card is level. Near north it falls behind a turn and near south it runs ahead, so you stop early toward north and late toward south.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 8",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 8",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 8",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 8
+        },
+        {
+          "ref": "FAA-H-8083-15 ch 5",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 5",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": "see Chapter 5",
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-15 ch 7",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 7",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 7
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "035: roll out",
+          "points_at": "The compass, whose card still reads about 035 while the aircraft's nose is already on north."
+        },
+        {
+          "label": "Latitude 40° N",
+          "points_at": "The scenario: the turn is flown near 40 degrees north latitude."
+        },
+        {
+          "label": "N",
+          "points_at": "The arrow showing north, the heading the aircraft has already reached."
+        },
+        {
+          "label": "Yellow arrow",
+          "points_at": "Where the compass says the nose points, about 035, while the white dashed line shows the nose really on north."
+        }
+      ],
+      "short": "magnetic-compass",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Steering by the magnetic compass in the Northern Hemisphere, stop a turn to north before the compass reaches north. On a turn to south, let the compass pass south before you stop. Near 40 degrees north, one rule of thumb makes each allowance about 35 degrees."
+          ]
+        },
+        {
+          "heading": "Why the card reads wrong in a bank",
+          "paragraphs": [
+            "Magnets on a float line it up with Earth's field. A card on the float carries the headings, read at the lubber line.",
+            "Earth's magnetic field runs level with the ground only at the magnetic equator. Nearer the magnetic north pole it slopes down into the ground, and that angle is called dip.",
+            "The float sits on a pivot and is weighted below it, so it hangs like a pendulum, too heavy for dip to tip. In a coordinated bank it hangs toward the airplane's own floor, so the card tilts with the airplane, and dip starts to turn it.",
+            "Turning toward north, dip swings the tilted card the same way you turn, so the lubber line's number falls behind your real heading. Turning toward south, the card is held back and the number runs ahead. The handbooks say it from the card's side: the card leads toward north and lags toward south."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/magnetic-compass-errors-drag.webp",
+            "caption": "Banked left toward north, the card tilts with the airplane and dip drags it the same way you turn, so its reading falls behind.",
+            "alt": "Seen from behind, a high-wing trainer banks left over farmland below a tilted compass card drawn as a dark disc. Magenta arrows show Earth's field dipping into the ground, and labels read Northern Hemisphere, Magnetic dip, Tilted card, and 035 Falls behind."
+          }
+        },
+        {
+          "heading": "Sizing the roll-out for your latitude",
+          "paragraphs": [
+            "The error grows nearer the magnetic poles, so the allowance depends on latitude. The FAA's Pilot's Handbook of Aeronautical Knowledge offers one rule of thumb: 15 degrees plus half your latitude.",
+            "The Instrument Flying Handbook gives a second method for compass turns at a 15 to 18 degree bank. Turning to north, start the roll-out about your latitude before north, plus the few degrees you normally allow for rolling out. Turning to south, start it once the compass has passed south by about your latitude, minus those few degrees. Its example, from east at 30 degrees north in a 15 degree bank, starts the roll-out at 037 for north and 203 for south.",
+            "The two give different numbers because both are rough. Whichever you use, roll out, let the card settle, then correct with small turns.",
+            "With the first rule, flying east near 40 degrees north, that is 15 + 20 = 35 degrees. Turning left to north, stop the turn when the compass reads 035, and the card settles on north. Turning right to south, let it pass south and stop the turn at 215."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/magnetic-compass-errors-recap.webp",
+            "caption": "Near 40 degrees north the rule of thumb gives 35 degrees both ways: stop the turn at 035 turning from east to north, and at 215 turning from east to south.",
+            "alt": "Two trainers seen from above, side by side. Under East to N, a compass reads 035 and the label says Early: 035. Under East to S, a compass reads 215 and the label says Late: 215. Below them: Undershoot N, overshoot S."
+          }
+        },
+        {
+          "heading": "False turns on the compass",
+          "paragraphs": [
+            "Start a turn from a northerly heading and the reading at first falls behind, and may even show a turn the other way. Start one from a southerly heading and the reading runs ahead, showing more turn than you have made.",
+            "On an east or west heading, speed up and the compass swings toward north with your wings level. Slow down and it swings south. The memory aid is ANDS, Acceleration North, Deceleration South.",
+            "On a north or south heading, changing speed, climbing or diving causes no error."
+          ]
+        },
+        {
+          "heading": "Three mistakes on a compass turn",
+          "paragraphs": [
+            "Keep the bank under about 18 degrees in a compass turn. The float and card tilt freely only to about that angle, and in a steeper bank the readings turn erratic.",
+            "Read the average of the swings after you roll out, because the card swings around your heading before it settles.",
+            "Change attitude and airspeed smoothly, because abrupt changes set the card swinging erratically and make it very hard to read."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Flying east near 40 degrees north, you turn left toward north, so at what compass reading do you stop the turn?",
+            "2. Using 15 plus half the latitude near 30 degrees north, how far past south should the compass go before you stop the turn?",
+            "3. On a steady westerly heading, the compass swings toward north as you speed up, so should you bank to correct it?",
+            "4. Flying north, you roll into a right turn and the compass briefly shows a turn to the left, so is the compass faulty?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. At about 035, because 15 plus half of 40 is 35, and the card then settles on north.",
+            "2. By 30 degrees, because half of 30 is 15, and 15 plus 15 is 30.",
+            "3. No, keep the wings level. That swing is acceleration error, the A in ANDS, not a turn.",
+            "4. No. Starting a turn from a northerly heading, the reading falls behind at first and can briefly show a turn the other way."
+          ]
+        }
+      ],
+      "related": []
+    },
     {
       "id": "wx-microburst",
       "slug": "microburst-on-final",
