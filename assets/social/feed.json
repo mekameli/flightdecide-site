@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T18:20:04+00:00",
+  "generated": "2026-10-15T23:50:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -662,6 +662,211 @@
             "2. Look right of the nose. The call's clock is set to your track, and your track runs right of where the nose points.",
             "3. No. It may be unverified, so find the traffic and judge its height yourself.",
             "4. No. Act to keep clear yourself as soon as you need to, because ATC won't turn you away from traffic on its own."
+          ]
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "lesson-airspace-class-g-ceiling",
+      "slug": "where-class-g-ends",
+      "page": "/explainers/where-class-g-ends/",
+      "title": "Where Class G ends",
+      "headline": "Rising ground can lift Class E's floor above you.",
+      "pillar": "airspace",
+      "topic": "Airspace",
+      "alt": "A forested ridge under a blue Class E floor that follows the ground, 1,200 ft AGL above the crest. A Cessna holding 3,500 feet MSL is 1,000 ft AGL over the crest, below the floor, in Class G. Printed above is the subtraction 3,500 minus 2,500 equals 1,000 ft. Not to scale.",
+      "image": "/assets/social/lesson-airspace-class-g-ceiling.webp",
+      "image_full": "/assets/explainers/where-class-g-ends.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DeQSz3Gjl4X/",
+      "posted": "2026-10-09",
+      "caption": [],
+      "teaches": [
+        "Class G is the uncontrolled airspace not designated Class A, B, C, D or E, and it runs from the surface up to the base of the overlying Class E, which is 1,200 feet AGL unless the chart designates otherwise.",
+        "A floor set in feet AGL rises and falls with the terrain; over a 1,500-foot MSL valley a 1,200-foot AGL floor lies at 2,700 feet MSL, and over a 2,500-foot MSL crest at 3,700 feet MSL, so an airplane holding 3,500 feet MSL passes from Class E into Class G where no Class B, C or D is designated.",
+        "Under 14 CFR 91.155 an airplane in Class G at or below 1,200 feet above the surface needs 1 statute mile and clear of clouds by day; by night it needs 3 statute miles and 500 feet below, 1,000 feet above and 2,000 feet horizontally from clouds, as in Class E below 10,000 feet MSL; at night in a traffic pattern within 1/2 mile of the runway it may instead fly clear of clouds with at least 1 statute mile.",
+        "Class G more than 1,200 feet above the surface and below 10,000 feet MSL needs 1 statute mile by day and 3 statute miles by night, with 500 feet below, 1,000 feet above and 2,000 feet horizontally from clouds; under 14 CFR 91.155(e) an aircraft operating at the base altitude of a Class E area is considered to be within the airspace directly below it.",
+        "Near airports with an approved instrument procedure, Class E transition areas, for aircraft transitioning to and from the terminal or en route environment, often begin at 700 feet AGL, marked by a magenta vignette, and they remain in effect continuously, regardless of airport operating hours or surface area status.",
+        "A Class E surface area, drawn with a magenta dashed line, brings Class E down to the surface; a surface area operating less than continuously is indicated by a note on the sectional, the airport's Chart Supplement page gives its status, and a part-time surface area may become Class G while it is not in effect.",
+        "A blue vignette marks floors other than 700 feet that border Class G, a 700-foot floor keeps its magenta vignette where it borders Class G, differing floors above 700 feet carry a symbol and a number, and some Class E begins at an MSL altitude that stays level; except where Class E is designated lower, it begins at 14,500 feet MSL and extends up to, but not including, 18,000 feet MSL, so there Class G reaches up to 14,500 feet MSL; that Class E leaves out the air less than 1,500 feet above the surface."
+      ],
+      "intent": "Hold one altitude over rising ground and you can pass from Class E into Class G without touching the controls, because Class E's floor is measured from the ground.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 15",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 15",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 15",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 15
+        },
+        {
+          "ref": "AIM 3-2-6",
+          "title": "Aeronautical Information Manual, paragraph 3-2-6",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html",
+          "kind": "aim",
+          "note": "Aeronautical Information Manual",
+          "book_url": null
+        },
+        {
+          "ref": "AIM 3-3-1",
+          "title": "Aeronautical Information Manual, paragraph 3-3-1",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_3.html",
+          "kind": "aim",
+          "note": "Aeronautical Information Manual",
+          "book_url": null
+        },
+        {
+          "ref": "14 CFR 71.71",
+          "title": "14 CFR 71.71",
+          "url": "https://www.ecfr.gov/current/title-14/section-71.71",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "14 CFR 91.155",
+          "title": "14 CFR 91.155",
+          "url": "https://www.ecfr.gov/current/title-14/section-91.155",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "FAA Chart Users Guide p17",
+          "title": "FAA Aeronautical Chart Users' Guide (VFR Terms and Symbols), page 17",
+          "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/",
+          "kind": "guide",
+          "note": "how the FAA's charts draw each airspace",
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "1,200 ft AGL",
+          "points_at": "The Class E floor, 1,200 feet above the ridge's crest."
+        },
+        {
+          "label": "1,000 ft AGL",
+          "points_at": "The airplane's height above the ridge's crest."
+        },
+        {
+          "label": "Class G",
+          "points_at": "The airspace around the airplane, under the floor that rose with the ridge."
+        },
+        {
+          "label": "3,500 – 2,500 = 1,000 ft",
+          "points_at": "How the 1,000 feet is worked out, the airplane's altitude minus the crest's elevation."
+        }
+      ],
+      "short": "where-class-2",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Where no Class B, C or D is designated, uncontrolled Class G runs from the surface up to the base of controlled Class E. Unless the sectional shows otherwise, that base is 1,200 feet AGL, above ground level. So it rises and falls with the terrain. Check the class wherever the ground changes, and fly that class's weather minimums."
+          ]
+        },
+        {
+          "heading": "Why the floor rises with the ground",
+          "paragraphs": [
+            "A floor set in feet AGL is measured from the ground directly below it. Picture the ground's profile copied and raised 1,200 feet, and you have the floor.",
+            "Start over a valley at 1,500 feet MSL, above mean sea level. The Class E floor sits at 2,700 feet MSL there, so an airplane level at 3,500 feet MSL is above it, in Class E.",
+            "Hold that altitude toward a ridge whose crest is 2,500 feet MSL. The floor climbs the slope with the ground and reaches 3,700 feet MSL over the crest. You are now 200 feet below it and, with no Class B, C or D designated, in Class G. Same altitude, new airspace."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/where-class-g-ends-terrain2.webp",
+            "caption": "A floor set at 1,200 feet AGL sits 1,200 feet above the valley, the slope and the crest alike, so it climbs where the ground climbs. Not to scale.",
+            "alt": "A valley and a ridge under a blue Class E floor that follows the terrain, with 1,200 ft AGL marked over the valley, the slope and the crest, under the title \"AGL floors follow the terrain\". Not to scale."
+          }
+        },
+        {
+          "heading": "What crossing the floor changes",
+          "paragraphs": [
+            "Under visual flight rules (VFR), your minimums, the least visibility and cloud clearance allowed, depend on the airspace class and your altitude. Over the ridge you are 1,000 feet above the crest, so the table's first row applies by day.",
+            "The night row for low Class G matches Class E below 10,000 feet MSL, apart from one traffic-pattern exception. So over this ridge, the crossing changes your minimums only by day."
+          ],
+          "table": {
+            "caption": "Weather minimums for airplanes below 10,000 feet MSL. Class G is more than 1,200 feet above the ground only under a higher floor, such as where it reaches 14,500 feet MSL.",
+            "columns": [
+              "Airspace",
+              "Flight visibility",
+              "Distance from clouds"
+            ],
+            "rows": [
+              [
+                "Class G, 1,200 ft or less above the surface, day",
+                "1 statute mile",
+                "Clear of clouds"
+              ],
+              [
+                "Class G, 1,200 ft or less above the surface, night",
+                "3 statute miles",
+                "500 ft below, 1,000 ft above, 2,000 ft horizontal"
+              ],
+              [
+                "Class G, 1,200 ft or less above the surface, night, in a traffic pattern within 1/2 mile of the runway",
+                "1 statute mile",
+                "Clear of clouds"
+              ],
+              [
+                "Class G, more than 1,200 ft above the surface and less than 10,000 ft MSL, day",
+                "1 statute mile",
+                "500 ft below, 1,000 ft above, 2,000 ft horizontal"
+              ],
+              [
+                "Class G, more than 1,200 ft above the surface and less than 10,000 ft MSL, night",
+                "3 statute miles",
+                "500 ft below, 1,000 ft above, 2,000 ft horizontal"
+              ],
+              [
+                "Class E, less than 10,000 ft MSL",
+                "3 statute miles",
+                "500 ft below, 1,000 ft above, 2,000 ft horizontal"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "How the sectional marks each floor",
+          "paragraphs": [
+            "Near an airport with an approved instrument procedure, Class E often comes down to 700 feet AGL. That lower layer is a transition area, for traffic moving between the airport and en route flight.",
+            "Class E's edges are drawn as vignettes, narrow shaded bands, or as a dashed magenta line. A magenta vignette marks a floor of 700 feet AGL, and a blue one marks any other floor where it borders Class G. The dashed magenta line encloses a Class E surface area, which starts at the ground.",
+            "Where a floor above 700 feet differs from the one beside it, a symbol and a number give its height. Some Class E begins at an MSL altitude printed on the chart, and that floor stays level whatever the ground does.",
+            "Where no lower Class E is designated at all, Class G reaches up to 14,500 feet MSL. Class E runs from there up to, but not including, 18,000 feet MSL, leaving out the air less than 1,500 feet above the surface."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/where-class-g-ends-seven.webp",
+            "caption": "Near an airport with an instrument approach, the floor often comes down to 700 feet AGL, and the sectional marks it with a magenta vignette. Not to scale.",
+            "alt": "Farmland around an airport with a magenta layer labelled 700 ft AGL below the 1,200 ft AGL floor, and a round sectional inset showing the magenta vignette. Not to scale."
+          }
+        },
+        {
+          "heading": "Three mistakes about where Class G ends",
+          "paragraphs": [
+            "Plan for Class E's minimums near an AGL floor. Over changing ground you can cross it without noticing. For weather minimums only, 14 CFR 91.155(e) counts an airplane exactly at the floor's altitude as in the airspace below.",
+            "Check the airport's page in the Chart Supplement before counting on a Class E surface area. Some run part-time, and the sectional marks those with a note. While one is off, its airspace can be Class G.",
+            "Expect a 700-foot transition area to be in force at any hour. Unlike a part-time surface area, it stays in effect whatever the airport's hours or the surface area's status."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. By day, 1,000 feet above a ridge under a 1,200-foot AGL floor, what visibility and cloud clearance does Class G require?",
+            "2. Holding 3,500 feet MSL over the 2,500-foot crest, how far below the Class E floor are you?",
+            "3. Back over the 1,500-foot valley at 3,500 feet MSL by day, what flight visibility do you need?",
+            "4. An airport in a magenta vignette has its part-time Class E surface area off, so how high does Class G go over the airport?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. You need 1 statute mile of flight visibility and must stay clear of clouds. At 1,000 feet above the ridge you are 1,200 feet or less above the surface.",
+            "2. 200 feet. The floor there is 2,500 plus 1,200, or 3,700 feet MSL.",
+            "3. You need 3 statute miles. The floor there is 2,700 feet MSL, so at 3,500 feet you're in Class E, below 10,000 feet MSL.",
+            "4. To 700 feet AGL. The transition area the vignette marks stays in effect even while the surface area is off, so Class E still starts there."
           ]
         }
       ],

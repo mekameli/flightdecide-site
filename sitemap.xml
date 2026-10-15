@@ -541,6 +541,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/where-class-g-ends/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/where-class-g-ends.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
