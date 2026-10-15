@@ -1,7 +1,146 @@
 {
-  "generated": "2026-10-14T16:15:03+00:00",
+  "generated": "2026-10-15T18:20:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-inst-compass-ands",
+      "slug": "compass-acceleration-error",
+      "page": "/explainers/compass-acceleration-error/",
+      "title": "Compass acceleration error",
+      "headline": "Speed up heading east and the compass shows a turn toward north.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "Compass acceleration error: an illustrated diagram for pilots. Speed up heading east and the compass shows a turn toward north.",
+      "image": "/assets/social/lesson-inst-compass-ands.webp",
+      "image_full": "/assets/explainers/compass-acceleration-error.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DehlBgDjvb0/",
+      "posted": "2026-10-15",
+      "caption": [],
+      "teaches": [
+        "On an easterly or westerly heading, accelerating makes the magnetic compass indicate a turn toward north, and decelerating a turn toward south; the memory aid is ANDS, Acceleration North, Deceleration South.",
+        "The error comes from the magnetic dip and the inertia of the pendulous card: accelerating tips the aft end of the card up and decelerating tips it down, and the dip acts on the tilted card.",
+        "On a north or south heading, diving, climbing or changing airspeed causes no compass error.",
+        "The compass indicates correctly only while its card is horizontal, so the swing during a speed change on an east or west heading is an error, not a turn; read the compass again once the speed is steady.",
+        "This is the Northern Hemisphere behaviour, where Earth's magnetic field dips down into the ground, more steeply nearer the Magnetic North Pole."
+      ],
+      "intent": "A change of speed on an east or west heading makes the magnetic compass show a turn that isn't happening. Here is why, and what to do about it.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 8",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 8",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 8",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 8
+        },
+        {
+          "ref": "FAA-H-8083-15 ch 7",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 7",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 7
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "Speeding up",
+          "points_at": "The aircraft flying east along the road, gaining speed with its wings level."
+        },
+        {
+          "label": "Shows north",
+          "points_at": "The compass, whose card has swung toward north although the nose has not moved."
+        },
+        {
+          "label": "Compass",
+          "points_at": "The yellow arrow showing where the compass says the nose points, left of the road toward north."
+        },
+        {
+          "label": "N",
+          "points_at": "The arrow showing north."
+        }
+      ],
+      "short": "compass-acceleration",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "On an east or west heading, the compass shows a turn toward north as you gain speed and toward south as you lose it. Pilots carry it as ANDS, Acceleration North, Deceleration South.",
+            "That swing is an error, so keep the wings level and take a fresh reading once the airspeed stops changing."
+          ]
+        },
+        {
+          "heading": "How the compass card hangs",
+          "paragraphs": [
+            "Inside the compass, two small magnets ride on a metal float, sealed in a bowl of clear fluid much like kerosene. The card is a scale wrapped around the float. You read it through a window against the lubber line, a fixed mark across the glass.",
+            "Its letters mark north, east, south and west, with a number every 30° between them and the last zero left off. So 3 means 30°, 6 means 60° and 33 means 330°.",
+            "The float hangs from a pivot with its centre of gravity below it, like a pendulum. Earth's magnetic field runs level with the ground only at the Magnetic Equator, halfway between the magnetic poles. Everywhere else it tilts, and that tilt against the ground is called magnetic dip.",
+            "Because the float hangs low and is heavy, the field's downward pull is too weak to tip it, so the card stays level. This hanging, or pendulous, mounting is what lets one compass work at all latitudes away from the poles without a correction for dip."
+          ]
+        },
+        {
+          "heading": "Why a speed change tips the card",
+          "paragraphs": [
+            "Picture yourself eastbound, pushing the power up. The float has inertia, the tendency of a mass to resist a change in its motion, so it lags behind as the airplane gathers speed. That lag tips the aft end of the card up, so its front tips down. Slowing down tips it the other way.",
+            "Now the card is no longer level, and the compass reads correctly only while it is. On the tilted card, the field's downward pull drags the magnet's north end down, and that turns the card so the reading swings toward north.",
+            "That rotation of the card is acceleration error. The reading moves although your heading hasn't, and it stops once a steady speed lets the card hang level again.",
+            "Everything here is the Northern Hemisphere case. There the field dips downward toward the north, and the dip grows steeper as you near the Magnetic North Pole."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/compass-acceleration-error-shows.webp",
+            "caption": "Speeding up eastbound, the card's front tips down, and the dip pulls it so the reading swings toward north.",
+            "alt": "A high-wing trainer seen from the side over farmland, below a compass card drawn as a tilted dark disc with labels Front down and Magnetic dip, magenta arrows sloping into the ground, Northern Hemisphere above, and a compass reading between E and 6 labelled Speeding up and Shows north."
+          }
+        },
+        {
+          "heading": "Which headings show the error",
+          "paragraphs": [
+            "Point the nose north or south and a speed change brings no compass error. Climbing and diving on those headings bring none either.",
+            "East and west are where it shows. Eastbound, a false turn toward north makes the heading numbers fall, and westbound it makes them rise. Slowing down reverses both."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/compass-acceleration-error-north.webp",
+            "caption": "Heading north, the same speed change leaves the compass on N.",
+            "alt": "A trainer seen from above flying north along a road, labelled Speeding up, beside a compass reading N with the label No swing."
+          }
+        },
+        {
+          "heading": "Three easy mistakes with a power change",
+          "paragraphs": [
+            "Hold the wings level and let the card swing. Turning to chase the reading back steers you off a heading you never left.",
+            "Set the heading indicator, the gyro instrument you line up with the compass, only in steady flight. Set it during a speed change and it copies the error. If the card still wobbles once you're steady, use the average of its swings.",
+            "Make power changes smoothly and read the compass only once the airspeed has settled, not when the throttle stops moving. Abrupt changes of speed or attitude send the card moving erratically and make it very hard to read."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/compass-acceleration-error-steady.webp",
+            "caption": "Hold the wings level through the swing: the red airplane chased it and ended off its heading.",
+            "alt": "A trainer seen from above flying west along a road with the label Speed steady and a compass reading W, and a red airplane turned off the road below it, labelled Off heading, with its own compass."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. What has your heading done if, flying east, the reading creeps from E toward 6 while the speed builds after you add power?",
+            "2. Are you turning if, heading west with the wings level, the reading slides from W toward 24 as you slow down?",
+            "3. Should the compass swing when you're flying north and the airspeed rises after you add power?",
+            "4. Should you set the heading indicator to the compass while flying east with the speed still building?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. It hasn't changed. That swing is acceleration error, and 6 means 60°, on the north side of E.",
+            "2. No. 24 sits on the south side of W, which is exactly where slowing down drags the reading on a west heading.",
+            "3. No. North is one of the two headings where a change of airspeed brings no compass error.",
+            "4. No. Wait until the speed is steady, or you set the heading indicator to the false turn toward north."
+          ]
+        }
+      ],
+      "related": []
+    },
     {
       "id": "lesson-inst-compass-errors",
       "slug": "magnetic-compass-errors",
