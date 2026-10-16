@@ -1,7 +1,181 @@
 {
-  "generated": "2026-10-15T23:50:03+00:00",
+  "generated": "2026-10-16T23:00:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-poc-stall-inlet",
+      "slug": "how-the-stall-horn-works",
+      "page": "/explainers/how-the-stall-horn-works/",
+      "title": "How the stall horn works",
+      "headline": "A slot in the left wing, a tube and a reed horn that runs on air.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "An X-ray view of a white Cessna 172 with the stall warning tube, drawn in gold, running from the cabin along the left wing to the slot in its leading edge, where red arrows labelled AIR OUT leave it. Not to scale.",
+      "image": "/assets/social/lesson-poc-stall-inlet.webp",
+      "image_full": "/assets/explainers/how-the-stall-horn-works.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DekTZ17j6RM/",
+      "posted": "2026-10-16",
+      "caption": [],
+      "teaches": [
+        "The Cessna 172P's stall warning is pneumatic, with an inlet in the leading edge of the left wing, an air-operated horn near the upper left corner of the windshield, and the plumbing between them.",
+        "At a low angle of attack the airflow virtually stops at a stagnation point close to the leading edge, where the stall warning inlet sits.",
+        "As the airplane approaches a stall, the point where the air splits moves under the leading edge, the low pressure on the upper surface moves forward around the leading edge, and the differential pressure draws air through the warning horn.",
+        "The horn sounds 5 to 10 knots above the stall in all flight conditions; it doesn't read airspeed, and stall warning devices alert the pilot when approaching the critical angle of attack, the angle at which a wing stalls regardless of airspeed.",
+        "Power off at 2,400 lb with flaps up, the 172P stalls at about 44 KIAS wings level and about 62 KIAS in a level 60-degree bank (POH Figure 5-3, approximate values); in that bank the load factor is 2, and the stall speed rises with the square root of the load factor.",
+        "On the preflight, check the stall warning opening for stoppage, then place a clean handkerchief over the opening and apply suction; a sound from the warning horn confirms the system works."
+      ],
+      "intent": "The Cessna 172P warns you of a stall with no wire and no switch.",
+      "citations": [
+        {
+          "ref": "Cessna 172P POH stall warning",
+          "title": "Cessna 172P POH stall warning",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 4",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 4",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 4",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 4
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 5",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 5",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 5",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/06_afh_ch5.pdf",
+          "kind": "handbook",
+          "note": "Chapter 5 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 5
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "AIR OUT",
+          "points_at": "Air leaving the slot in the left wing, pulled from the cabin through the horn (the bell at the upper left) and along the tube, shown in gold with red pulses."
+        }
+      ],
+      "short": "stall-horn",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "The 172P's stall horn is pneumatic, and air drawn through it makes the sound. It reacts to angle of attack, the angle at which the wing meets the oncoming air, and it doesn't measure airspeed.",
+            "That is why it sounds 5 to 10 knots above the stall in all flight conditions, steep turns included. Test it on every walkaround with suction through a clean handkerchief over its opening."
+          ]
+        },
+        {
+          "heading": "Where the inlet and the horn sit",
+          "paragraphs": [
+            "Walk to the left wing and look at its leading edge, the rounded front edge that meets the air first. The small opening there is the stall warning inlet.",
+            "Plumbing runs from that inlet to an air-operated horn near the upper left corner of the windshield. The wing end senses the stall coming, and the horn makes the sound."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-the-stall-horn-works-ident.webp",
+            "caption": "The stall warning inlet is the small slot in the left wing's leading edge, seen in the circle. The pictures on this page are frames of the reel, not to scale. 3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+            "alt": "A white Cessna 172P seen from above over farmland, labelled CESSNA 172P and LEFT WING ONLY, with a magnified circle on the left wing's leading edge showing the dark inlet slot."
+          }
+        },
+        {
+          "heading": "What the air does at the inlet",
+          "paragraphs": [
+            "At a low angle of attack the air meets the wing at a stagnation point. That is a spot close to the leading edge where the flow virtually stops. The inlet sits there, so the air just pushes in and the horn stays quiet.",
+            "Raise the nose and slow down. As the angle grows, the point where the air splits slides lower, under the leading edge. The low pressure on the upper surface moves forward around the leading edge, over the inlet.",
+            "The inlet now sits in lower pressure than the cabin air at the horn. That difference pulls cabin air in through the horn, along the tube and out of the slot. The reed sounds."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-the-stall-horn-works-low.webp",
+            "caption": "Nose up, the air now splits at the white dot, under the leading edge, and the blue dashes mark where it split at the slot in normal flight. The low pressure on top wraps forward over the gold slot. Not to scale.",
+            "alt": "A cross-section of the wing's leading edge at a high angle of attack, with dashed airflow lines curving around it and a red band labelled LOW PRESSURE wrapping forward over the gold slot."
+          }
+        },
+        {
+          "heading": "Why it still warns in a steep turn",
+          "paragraphs": [
+            "For a given flap setting the 172P always stalls at the same angle of attack. Weight and bank angle don't change that angle.",
+            "The stall speed does change. Roll into a level 60-degree bank and the load factor, the load on the wing compared with straight-and-level flight, becomes 2. To hold altitude you add angle of attack, so the wing reaches its stall angle at a higher speed.",
+            "A load factor of 2 multiplies the stall speed by the square root of 2, about 1.41, a 41 percent rise. At 2,400 lb with flaps up and power off, that takes the stall from about 44 KIAS, knots of indicated airspeed, to about 62 KIAS.",
+            "The horn doesn't read airspeed. It answers the low pressure at the inlet, which follows the angle."
+          ],
+          "table": {
+            "caption": "Cessna 172P power-off stall speeds in KIAS (POH Figure 5-3) at 2,400 lb and the most rearward center of gravity, approximate as the POH gives them. At the most forward center of gravity the flaps 10° speeds are 2 to 3 knots higher.",
+            "columns": [
+              "Bank angle",
+              "Flaps up",
+              "Flaps 10° (rearward CG)",
+              "Flaps 30°"
+            ],
+            "rows": [
+              [
+                "0°",
+                "44",
+                "35",
+                "33"
+              ],
+              [
+                "30°",
+                "47",
+                "38",
+                "35"
+              ],
+              [
+                "45°",
+                "52",
+                "42",
+                "39"
+              ],
+              [
+                "60°",
+                "62",
+                "49",
+                "47"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Three mistakes the horn invites",
+          "paragraphs": [
+            "Check the stall warning opening for stoppage on every walkaround. It is item 3 of the left wing's leading edge check. Put a clean handkerchief over it before you apply suction, and a sound from the horn confirms the system works.",
+            "Ease the nose down when the horn sounds while you maneuver, whatever the airspeed indicator shows. In a steep turn it can sound at a speed that would feel comfortable wings level. Less angle of attack silences it. Then roll the wings level and add power. The POH notes that a stall recovery may lose as much as 230 feet.",
+            "Keep reading the wing's own cues when the horn stays quiet. A stall warning system can fail. Aerodynamic buffet, loss of roll authority or a descent you cannot stop still point to a stall."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. In a 172P at 2,400 lb, flaps up and power off, roughly what is the stall speed in a level 60-degree bank?",
+            "2. Why does a horn that doesn't read airspeed still sound before the stall in that steep turn?",
+            "3. You apply suction through a handkerchief over the stall warning opening and hear nothing, so what has the check told you?",
+            "4. Which cue do you trust when the airframe buffets and the ailerons lose authority but the horn stays quiet?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. About 62 KIAS. A load factor of 2 multiplies the 44 KIAS wings-level stall by the square root of 2, about 1.41. The horn sounds 5 to 10 knots above that.",
+            "2. It reacts to the low pressure reaching the inlet, which follows angle of attack. The wing stalls at the same angle in the turn, only at a higher speed.",
+            "3. Nothing proves it works yet. Check the opening for stoppage, seal the handkerchief and try again. If it stays silent, the stall warning isn't working, so have it fixed before you fly.",
+            "4. Trust the buffet and the weak ailerons. A stall warning system can fail, and those cues still tell you a stall is close, so lower the angle of attack."
+          ]
+        }
+      ],
+      "related": []
+    },
     {
       "id": "lesson-inst-compass-ands",
       "slug": "compass-acceleration-error",
