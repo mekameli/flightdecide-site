@@ -1,7 +1,175 @@
 {
-  "generated": "2026-10-16T23:00:04+00:00",
+  "generated": "2026-10-18T21:20:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-sys-pitot-tube",
+      "slug": "how-the-pitot-tube-works",
+      "page": "/explainers/how-the-pitot-tube-works/",
+      "title": "How the pitot tube works",
+      "headline": "Block the tube's front with its drain clear and the needle reads zero. Seal the drain too and it acts like an altimeter.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "The 172P's airspeed indicator over a Cessna 172 climbing in grey cloud. The needle points at 158 on the red line, which is ringed in white, beside the gold label 158 KT and RED LINE, while a glowing cyan outline needle labelled 70 KT marks the airplane's real speed. Not to scale.",
+      "image": "/assets/social/lesson-sys-pitot-tube.webp",
+      "image_full": "/assets/explainers/how-the-pitot-tube-works.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Depn46TCP0b/",
+      "posted": "2026-10-18",
+      "caption": [],
+      "teaches": [
+        "On the Cessna 172P the pitot tube is mounted on the lower surface of the left wing and the static port on the lower left side of the forward fuselage, and the airspeed indicator needs both.",
+        "Pressure from the pitot tube fills a diaphragm inside the airspeed indicator, the case around it is kept at static (outside) pressure from the static port, and the needle shows the difference, the dynamic pressure that grows with speed.",
+        "Moisture including ice, dirt or insects can block the tube; at Brisbane Airport, mud-nesting keyhole wasps fully blocked 3D-printed replica pitot probes 93 times in 39 months, and the first mud in a probe is enough to upset the airspeed reading.",
+        "With the front opening and the drain hole both blocked, the pressure in the tube is trapped and, with the static port clear, the airspeed indicator works like an altimeter: it reads higher in a climb and lower in a descent, whatever the real speed.",
+        "Computed in the standard atmosphere, a tube sealed at 70 KIAS at 3,000 ft reads about 158 KIAS after a 1,000 ft climb with no change in real speed; 158 KIAS is the 172P's red line."
+      ],
+      "intent": "Your airspeed needle is only as honest as a tube under the left wing and a small hole in the side of the fuselage.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 8",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 8",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 8",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 8
+        },
+        {
+          "ref": "FAA-H-8083-15 ch 5",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 5",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": "see Chapter 5",
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 6",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 6",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/07_afh_ch6.pdf",
+          "kind": "handbook",
+          "note": "Chapter 6 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 6
+        },
+        {
+          "ref": "Cessna 172P POH pitot-static system",
+          "title": "Cessna 172P POH pitot-static system",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "House, Ring and Shaw (2020), keyhole wasps and pitot probes, PLOS ONE 15(11) e0242063",
+          "title": "House, Ring and Shaw (2020), keyhole wasps and pitot probes, PLOS ONE 15(11) e0242063",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "158 KT",
+          "points_at": "What the needle reads, 158 KIAS, after a 1,000 ft climb with the tube and its drain hole sealed at 70 KIAS (computed in the standard atmosphere)."
+        },
+        {
+          "label": "RED LINE",
+          "points_at": "The 172P's red line at 158 knots; the dial's printed red mark is ringed in white."
+        },
+        {
+          "label": "70 KT",
+          "points_at": "The airplane's real speed, 70 KIAS, unchanged through the climb, drawn as a glowing cyan outline needle that no real instrument has. The climb in cloud is shortened in time and the picture is not to scale."
+        }
+      ],
+      "short": "pitot-tube",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "The airspeed indicator compares two pressures. Air rammed into the pitot tube under the left wing fills a diaphragm, and outside air from a static port fills the case around it. The needle shows the difference between them.",
+            "Block the tube's front with its drain hole clear and the needle falls to zero. Block the drain too and the needle follows altitude. Sealed at 70 KIAS (knots indicated airspeed), a 1,000 ft climb reads about 158, the 172P's red line."
+          ]
+        },
+        {
+          "heading": "How the needle reads two pressures",
+          "paragraphs": [
+            "On the Cessna 172P, the pitot tube hangs under the left wing. A pitot tube has a front opening and a small drain hole for moisture. The static port is a small hole low on the left side of the forward fuselage.",
+            "The front opening catches ram air at total pressure, the outside air's static pressure plus dynamic pressure, the extra pressure from motion.",
+            "A line carries it into a thin diaphragm inside the airspeed indicator. The case around it holds static pressure from the port, so the static part cancels and only dynamic pressure pushes. Fly faster and it grows. The diaphragm swells, and a linkage turns the needle."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-the-pitot-tube-works-cutaway.webp",
+            "caption": "Inside the airspeed indicator. Ram air (gold) fills the diaphragm, static air (light blue) fills the case around it, and the needle shows the difference. The cutaway follows the FAA handbook's generic airspeed indicator, not a Cessna parts drawing.",
+            "alt": "A cutaway of an airspeed indicator: a gold line labelled Ram air feeds a gold diaphragm inside a case filled light blue and labelled Static air, a linkage runs to the needle on the 172P's dial, and a banner above reads RAM minus STATIC to AIRSPEED."
+          }
+        },
+        {
+          "heading": "A blocked front reads zero",
+          "paragraphs": [
+            "Ice, dirt or insects can block a pitot tube. A nest in the front can leave the drain hole as the only opening. The air inside vents through the drain to outside pressure. Both sides of the diaphragm match, so the needle reads zero.",
+            "At Brisbane Airport, 3D-printed replica probes, not the airplanes' real ones, were watched for 39 months. Mud-nesting keyhole wasps fully blocked them 93 times, the first within two weeks. Even the first mud upsets the airspeed reading."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-the-pitot-tube-works-nest.webp",
+            "caption": "An X-ray of the tube's front. The mud nest (red) stops the ram air (gold arrows), and the needle rests at zero. The drain hole (the light-blue disc) is drawn larger so it shows. Not to scale.",
+            "alt": "An X-ray of the pitot tube's cone in gold with a red mud plug labelled Mud nest in its front opening, gold arrows of ram air stopped at the plug, light-blue outside air inside the tube, a glowing light-blue drain hole underneath and an airspeed indicator inset at zero."
+          }
+        },
+        {
+          "heading": "Ice on both holes makes an altimeter",
+          "paragraphs": [
+            "In visible moisture, ice can seal the drain hole as well as the front. The air in the tube is then trapped, and speed changes no longer reach the needle.",
+            "Now climb. The static pressure in the case falls while the trapped pressure stays, so the diaphragm swells and the needle rises. Descend and it falls. It now works like an altimeter.",
+            "In the standard atmosphere, a 1,000 ft climb from 3,000 ft lowers the case pressure by about an inch of mercury. The trapped pressure stays put, and the diaphragm reads that extra inch as speed.",
+            "That 158 assumes a perfect seal and trapped air that keeps its temperature. Sealed at sea level, the same climb reads about 164, and from 6,000 ft about 152. Let the trapped air cool by 1 °C and it reads about 152.",
+            "The 172P POH's inadvertent icing checklist starts with pitot heat on (if installed), then turn back or change altitude. Heat keeps the tube working in possible icing conditions, but the POH prohibits flight into icing conditions."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-the-pitot-tube-works-ice.webp",
+            "caption": "Rime ice building over the tube's front opening in cloud. Pitot heat, where installed, is there to keep the tube working in possible icing conditions, and the POH prohibits flight into icing conditions. Not to scale.",
+            "alt": "A close view from below of the pitot tube's cone in grey cloud, with white rime ice built up over its front opening and a red label Ice pointing at it."
+          }
+        },
+        {
+          "heading": "Three mistakes a blocked tube punishes",
+          "paragraphs": [
+            "Remove the pitot tube cover and check the tube's front opening and drain hole on every preflight. A cover keeps bugs out of a parked airplane's tube.",
+            "Check the static source opening too. A blocked static port makes the airspeed read low above the altitude where it blocked, and high below it. The altimeter freezes and the vertical speed indicator reads zero. Some 172Ps have an alternate static source valve below the throttle, and POH Section 5 gives its effect on airspeed.",
+            "Watch the airspeed rise as the takeoff roll begins. At rest, a blocked tube reads zero too. A needle still at zero on the roll is abnormal, and the Airplane Flying Handbook says abnormal situations can require rejecting the takeoff while still on the runway."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-the-pitot-tube-works-ident.webp",
+            "caption": "The pitot tube is the small tube under the left wing, ringed and magnified here. The pictures on this page are frames of the reel, not to scale. Reel credits: 3D model “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Engine sound “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified.",
+            "alt": "A white Cessna 172P on the ramp, labelled CESSNA 172P, with the pitot tube under its left wing ringed in gold and labelled Pitot tube, and a magnified circle showing the tube."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. The airspeed stays at zero as your takeoff roll begins, so which blockage fits?",
+            "2. Sealed at 70 KIAS at 3,000 ft, what does the needle read after a 1,000 ft climb at the same speed?",
+            "3. You add power in level flight and the needle holds a normal-looking speed without moving, so which blockage fits?",
+            "4. Which openings do you check on the preflight so the airspeed indicator works?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. The tube's front opening, whether or not its drain hole is clear, because no ram air reaches the diaphragm.",
+            "2. About 158 KIAS, the red line, because the case pressure falls while the trapped pressure stays.",
+            "3. Both of the tube's openings. Trapped pressure ignores speed, and level flight holds the altitude too.",
+            "4. The tube's front opening and drain hole, with the cover off, and the static source opening."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/how-the-stall-horn-works/",
+        "/aircraft/"
+      ]
+    },
     {
       "id": "lesson-poc-stall-inlet",
       "slug": "how-the-stall-horn-works",
