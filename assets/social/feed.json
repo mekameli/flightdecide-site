@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T15:32:21+00:00",
+  "generated": "2026-10-20T17:45:02+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -184,12 +184,7 @@
             "Thin air takes power from the engine, because the engine takes in less air. It takes thrust from the propeller and lift from the wing.",
             "You can't detect the effect on the airspeed indicator. You lift off, climb and land at the usual indicated airspeeds, but your true airspeed and groundspeed are higher. So you need more runway to get airborne, and the lost power and thrust add still more. At a given indicated airspeed you climb at a shallower angle, and the landing roll is longer too.",
             "Take an average small airplane that needs 1,000 feet to take off at sea level on a standard day. At an operational altitude of 5,000 feet, it needs about 2,000."
-          ],
-          "figure": {
-            "src": "/assets/explainers/figures/density-altitude-explained-effect.webp",
-            "caption": "The same runway, two takeoffs: at a high density altitude the roll is about twice as long and the climb is shallower. The angles are exaggerated so they read.",
-            "alt": "A runway seen from the side. A dashed white path labelled LOW DENSITY ALTITUDE leaves the runway early and climbs steeply, with a faint Cessna 172 on it. An amber path labelled HIGH DENSITY ALTITUDE leaves much further along and climbs at a shallower angle, with a solid Cessna 172 on it. An amber bracket under the runway marks the EXTRA ROLL."
-          }
+          ]
         },
         {
           "heading": "Working it out",
