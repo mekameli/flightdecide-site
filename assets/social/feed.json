@@ -1,7 +1,131 @@
 {
-  "generated": "2026-10-20T17:45:02+00:00",
+  "generated": "2026-10-20T22:10:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-sys-magnetos",
+      "slug": "how-magnetos-work",
+      "page": "/explainers/how-magnetos-work/",
+      "title": "How magnetos work",
+      "headline": "Two engine-driven magnetos fire two plugs in every cylinder. OFF only works through a ground wire, so a broken one leaves a magneto live.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "An X-ray view of the back of a Cessna 172P's Lycoming engine, its cylinders and wiring in grey, with the two gold magnetos ringed and labelled Magnetos and their spark-plug leads running forward.",
+      "image": "/assets/social/lesson-sys-magnetos.webp",
+      "image_full": "/assets/explainers/how-magnetos-work.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DeuynPaAbQE/",
+      "posted": "2026-10-20",
+      "caption": [],
+      "teaches": [
+        "The Cessna 172P's Lycoming O-320-D2J gets its sparks from two engine-driven magnetos on the rear of the engine, and a magneto makes its current independently of the airplane's electrical system, so the engine keeps running with the master switch off.",
+        "Inside a magneto a rotating magnet builds current in a coil; when the breaker points open, the coil sends a high-voltage pulse that jumps a spark plug's gap.",
+        "Each cylinder has two spark plugs and each magneto fires one of them, so if one magneto fails the other keeps every cylinder firing.",
+        "On the run-up check at 1,700 RPM the engine slows a little on one magneto because one spark plug per cylinder burns the mixture more slowly; the 172P allows a drop of up to 125 RPM on either magneto and up to 50 RPM between them.",
+        "Ignition OFF stops a magneto by grounding it through its own wire, the P-lead; if that wire breaks, OFF cannot stop that magneto and moving the propeller by hand can start the engine, and no RPM drop on the check may mean faulty grounding."
+      ],
+      "intent": "Your engine makes its own sparks, which is why it keeps running with the master off and why a propeller is never safe to touch.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        },
+        {
+          "ref": "FAA-H-8083-32B ch 4",
+          "title": "FAA-H-8083-32, Chapter 4",
+          "url": null,
+          "kind": "handbook",
+          "note": "see Chapter 4",
+          "book_url": null,
+          "chapter": 4
+        },
+        {
+          "ref": "Cessna 172P POH engine, ignition system and run-up",
+          "title": "Cessna 172P POH engine, ignition system and run-up",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "Magnetos",
+          "points_at": "The two engine-driven magnetos on the rear of the 172P's Lycoming O-320, each ringed in gold, drawn glowing because each one makes its own current."
+        }
+      ],
+      "short": "magnetos-work",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "A piston engine like the Cessna 172P's makes its own sparks. Two magnetos, driven by the engine, fire two spark plugs in every cylinder, and they need nothing from the battery or the alternator. That is why the engine keeps running with the master switch off.",
+            "The ignition switch stops a magneto by grounding it through a wire. If that wire breaks, OFF no longer stops that magneto, so you treat every propeller as if the engine could start."
+          ]
+        },
+        {
+          "heading": "How a magneto makes a spark",
+          "paragraphs": [
+            "The 172P's Lycoming O-320 carries its two magnetos on the back of the engine, where the engine turns them. Inside each one a magnet spins past a coil and builds up current in its first winding.",
+            "A small switch called the breaker points then snaps open, and that current stops all at once. The magnetic field through the coil flips fast, and a second winding of thousands of turns, wound over the first, turns that change into a high-voltage pulse. A rotating distributor sends each pulse down the lead to the right spark plug, where it jumps the plug's gap.",
+            "The magneto makes all of this itself, so once the engine runs, the battery and the alternator play no part in the sparks. The battery still matters for starting, because the starter only cranks the engine with the master switch on."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-magnetos-work-points.webp",
+            "caption": "The breaker points, the small switch inside a magneto, drawn as a simplified schematic and shown open. Opening them is what makes the coil fire a spark.",
+            "alt": "A close view inside a see-through magneto: a small hinged steel arm swung away from its contact, labelled Points open, beside the spinning shaft, with gold magneto parts around it."
+          }
+        },
+        {
+          "heading": "Two plugs in every cylinder",
+          "paragraphs": [
+            "Each of the four cylinders has two spark plugs, eight in all. On the 172P the right magneto fires the lower right and upper left plugs, and the left magneto fires the lower left and upper right plugs.",
+            "So each magneto fires one plug in every cylinder. If one magneto quits, the other keeps all four cylinders firing. That is the point of having two. Two flame fronts also burn the mixture faster than one, which is why the engine slows a little when only one plug fires in each cylinder."
+          ]
+        },
+        {
+          "heading": "Three mistakes with the ignition switch",
+          "paragraphs": [
+            "Skipping the return to BOTH. The 172P's Pilot's Operating Handbook (POH) makes the magneto check at 1,700 RPM, engine revolutions per minute. Select R and note the RPM, then go back to BOTH to clear the other set of plugs. Then select L, note the RPM, and return to BOTH. The drop should not exceed 125 RPM on either magneto or 50 RPM between them.",
+            "Ignoring a check with no drop at all, which feels like good news but isn't. Turning the key to OFF connects each magneto to the airplane's metal frame through its own wire, the P-lead, which stops its sparks. Selecting one magneto grounds the other the same way. So if nothing changes when you select one magneto, the one you tried to switch off may still be firing. The POH treats an absent drop as a sign of faulty grounding, or of timing set to fire the sparks earlier than specified.",
+            "Trusting OFF on the ramp. If a P-lead breaks, OFF cannot silence that magneto. It stays live: it can still produce sparks when the propeller is turned, even with the key OFF. Moving the propeller by hand can then start the engine with fuel left in a cylinder. The POH says to treat the propeller as if the ignition switch were on and to stay out of its arc. A normal shutdown does not rely on the key alone. The POH pulls the mixture to IDLE CUT-OFF first, which stops the fuel and so the engine, then turns the ignition switch OFF."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-magnetos-work-hotmag.webp",
+            "caption": "The key is at OFF, but this magneto's ground wire (green) is broken at the red mark, so the magneto can still produce sparks when the propeller is turned. The wire's route is illustrative; only its ends are sourced. Reel credits: 3D model “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Engine sound “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified.",
+            "alt": "A gold magneto with its green ground wire running down toward the cockpit, a red ring labelled Break where the wire is broken at the magneto, and an inset of the ignition key turned to OFF."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. You turn the master switch off in flight, so does the engine stop?",
+            "2. Why does the engine slow a little when you select one magneto?",
+            "3. On the run-up the RPM does not change at all when you select L, so what could that mean?",
+            "4. The key is OFF and in your pocket, so is the propeller safe to turn by hand?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. No. The magnetos make their own current, so the engine keeps running. You lose the airplane's electrical power, not the ignition.",
+            "2. With one magneto, only one plug fires in each cylinder, so the mixture takes longer to burn.",
+            "3. The right magneto may not be grounding, so it may still be firing. That is a fault to get fixed before flight.",
+            "4. No. A broken P-lead leaves a magneto live, so treat every propeller as if the engine could start."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/how-the-pitot-tube-works/",
+        "/explainers/how-the-stall-horn-works/",
+        "/aircraft/"
+      ]
+    },
     {
       "id": "perf-density-altitude-explained",
       "slug": "density-altitude-explained",

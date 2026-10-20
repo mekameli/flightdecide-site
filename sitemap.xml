@@ -496,6 +496,15 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/how-magnetos-work/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/how-magnetos-work.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/density-altitude-explained/</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
