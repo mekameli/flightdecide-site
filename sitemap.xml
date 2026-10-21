@@ -491,9 +491,18 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/how-gyro-instruments-work/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/how-gyro-instruments-work.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/how-magnetos-work/</loc>

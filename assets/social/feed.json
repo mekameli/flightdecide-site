@@ -1,7 +1,149 @@
 {
-  "generated": "2026-10-20T22:10:03+00:00",
+  "generated": "2026-10-21T16:35:03+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-sys-gyro-instruments",
+      "slug": "how-gyro-instruments-work",
+      "page": "/explainers/how-gyro-instruments-work/",
+      "title": "How gyro instruments work",
+      "headline": "Two air-driven gyros share one engine pump; the turn coordinator runs on electricity, so it is the one to believe when the suction gauge reads low.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "An X-ray view through the see-through instrument panel of a banking Cessna 172P: inside the attitude indicator's case a gold spinning wheel in two silver rings stays level, and the blue and brown horizon on the face stays level with it.",
+      "image": "/assets/social/lesson-sys-gyro-instruments.webp",
+      "image_full": "/assets/explainers/how-gyro-instruments-work.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Dew1JqoEdxy/",
+      "posted": "2026-10-21",
+      "caption": [],
+      "teaches": [
+        "The attitude indicator's horizon stays level because its gyro, a heavy wheel spinning at about 18,000 RPM in two gimbal rings, holds its plane in space while the airplane pitches and rolls around it.",
+        "The heading indicator's gyro spins on its edge in a vertical plane, and its compass card, geared to the gyro, holds its direction while the airplane turns around it; it drifts slowly, so it is checked against the magnetic compass about every 15 minutes.",
+        "On the Cessna 172P one engine-driven vacuum pump draws air through a filter and across the rotors' buckets to spin both the attitude and heading indicators, and the suction gauge shows the suction, 4.5 to 5.4 inches of mercury in the 172P.",
+        "If that pump fails, both gyros slowly spin down and wander, and the 172P has no low-vacuum warning light, so a level airplane can look as if it is turning.",
+        "The turn coordinator runs on electricity and shows the rate of turn through precession: the turn's force on its rotor acts 90 degrees later in the direction of rotation and leans the gyro against a spring, more for a faster turn; with low suction, believe it rather than the attitude indicator."
+      ],
+      "intent": "Three of the six instruments in front of you hold a spinning wheel, and knowing what spins each one tells you which to trust when one fails.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 8",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 8",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 8",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 8
+        },
+        {
+          "ref": "FAA-H-8083-15B ch 5",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 5",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": "see Chapter 5",
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-15B ch 11",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 11",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": "see Chapter 11",
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 11
+        },
+        {
+          "ref": "Cessna 172P POH vacuum system and instruments",
+          "title": "Cessna 172P POH vacuum system and instruments",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "Gyro instruments",
+          "points_at": null
+        }
+      ],
+      "short": "gyro-instruments",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Three of the six instruments in front of you in a Cessna 172P hold a gyro, a heavy wheel spinning very fast. In the attitude and heading indicators it resists being tilted, so the airplane moves around it. The turn coordinator uses a different trick, precession.",
+            "Two of them, the attitude indicator and the heading indicator, are spun by air from one vacuum pump on the engine. The third, the turn coordinator, is electric. So if the suction gauge reads low, believe the turn coordinator, not the attitude indicator."
+          ]
+        },
+        {
+          "heading": "Why the horizon and the heading hold still",
+          "paragraphs": [
+            "Inside the attitude indicator a rotor spins at about 18,000 RPM, revolutions per minute. That speed, with most of its weight at the rim, makes it hold its plane in space.",
+            "The rotor hangs in two hinged rings, called gimbals, one inside the other. When you bank or pitch, the airplane and the case turn around the rotor while the rotor stays put. The horizon bar is fixed to the gyro, so it stays level with the real horizon, and to you the horizon picture tilts in the case.",
+            "Just below, the heading indicator's rotor spins on its edge, in a vertical plane. Its compass card is geared to the gyro, so the card holds its direction while the nose swings around it.",
+            "It has no magnets, and a little friction in its bearings makes it precess, so it drifts slowly. Check and reset it against the magnetic compass about every 15 minutes."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-gyro-instruments-work-gimbals.webp",
+            "caption": "The attitude indicator's gyro in its two gimbal rings (white), drawn see-through. The rings let the airplane pitch and roll around the wheel without tilting it.",
+            "alt": "A close view inside a see-through attitude indicator case: a gold spinning wheel held in two white rings, one inside the other, on a dark grid."
+          }
+        },
+        {
+          "heading": "One pump spins both",
+          "paragraphs": [
+            "On the 172P a vacuum pump on the engine pulls air out of both instrument cases and vents it overboard. That draws cabin air in through a filter on the firewall and across little buckets cut into each rotor's rim, spinning it like a water wheel. A relief valve keeps the suction from going too high.",
+            "The suction gauge on the panel's left shows the suction. The 172P's handbook wants 4.5 to 5.4 inches of mercury. Outside that range, it says, the attitude and heading indicators should not be considered reliable.",
+            "If the pump fails, both gyros slowly spin down and wander. The 172P has no low-vacuum warning light, only the gauge, so a level airplane can look as if it is turning."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-gyro-instruments-work-vacuum.webp",
+            "caption": "The vacuum system drawn see-through: the engine-driven pump, the filter and the air (light blue) on its way to both gyros. The hose routing is simplified. In the 172P, air comes in through the filter, spins both gyros and goes on to the engine-driven pump, with a relief valve on that line.",
+            "alt": "An X-ray view behind a Cessna 172P panel: the attitude and heading indicators with gold rotors, light-blue arrows of air at the black hoses, a white filter labelled Filter below and a labelled vacuum pump on the engine."
+          }
+        },
+        {
+          "heading": "Why the turn coordinator is electric",
+          "paragraphs": [
+            "The turn coordinator is the third gyro. On the 172P it runs on the electrical system, so one failure cannot take all three. Its face says D.C. ELEC. In another airplane, check the handbook for what powers each gyro.",
+            "Its gimbal is angled up about 30 degrees, so it senses roll as well as yaw. When the airplane turns, it pushes on the spinning rotor's rim, and the rotor reacts 90 degrees further around, in the direction it spins. That tilts the gimbal against a spring, more for a faster turn. The little airplane shows your rate of turn, not your bank angle, and gives no pitch information."
+          ]
+        },
+        {
+          "heading": "Three mistakes with the gyros",
+          "paragraphs": [
+            "Trusting the vacuum gyros after the suction drops. Once the rotors slow down, the attitude and heading indicators wander, and the little horizon can show a bank that isn't there. Use the turn coordinator for turns and the magnetic compass for heading. Take pitch from the outside horizon, or from airspeed, altitude and vertical speed.",
+            "Waiting for a warning. Many small airplanes have no vacuum failure warning, so the suction gauge is your alarm. Check it in your scan.",
+            "Resetting the heading indicator in a turn or a climb. Set it on the ground, stopped or taxiing straight, or in straight and level flight at a steady speed. Otherwise the compass's own errors get copied in."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Why does the attitude indicator's horizon stay level when you bank?",
+            "2. What spins the heading indicator's gyro in a 172P?",
+            "3. The suction gauge reads 2 inches of mercury, the attitude indicator shows a gentle left bank, and the turn coordinator's little airplane is level. Which do you trust, and what else has failed?",
+            "4. Why is the turn coordinator electric?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Its gyro holds its plane in space and the horizon bar is fixed to it, so the airplane rolls around it.",
+            "2. Air from the engine-driven vacuum pump, the same pump that spins the attitude indicator.",
+            "3. Trust the turn coordinator. With suction that low, the attitude indicator and the heading indicator are both unreliable.",
+            "4. So a vacuum pump failure cannot take all three gyros at once."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/how-magnetos-work/",
+        "/explainers/how-the-pitot-tube-works/",
+        "/aircraft/"
+      ]
+    },
     {
       "id": "lesson-sys-magnetos",
       "slug": "how-magnetos-work",
