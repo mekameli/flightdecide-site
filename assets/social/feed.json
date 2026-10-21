@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T16:35:03+00:00",
+  "generated": "2026-10-21T16:40:05+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -100,7 +100,7 @@
           ],
           "figure": {
             "src": "/assets/explainers/figures/how-gyro-instruments-work-vacuum.webp",
-            "caption": "The vacuum system drawn see-through: the engine-driven pump, the filter and the air (light blue) on its way to both gyros. The hose routing is simplified. In the 172P, air comes in through the filter, spins both gyros and goes on to the engine-driven pump, with a relief valve on that line.",
+            "caption": "The vacuum system drawn see-through: the engine-driven pump, the filter and the air (light blue) on its way to both gyros. The hose routing is simplified. In the 172P, air comes in through the filter, spins both gyros and goes on to the engine-driven pump, with a relief valve on that line. Reel credits: 3D model “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Engine sound “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified.",
             "alt": "An X-ray view behind a Cessna 172P panel: the attitude and heading indicators with gold rotors, light-blue arrows of air at the black hoses, a white filter labelled Filter below and a labelled vacuum pump on the engine."
           }
         },
