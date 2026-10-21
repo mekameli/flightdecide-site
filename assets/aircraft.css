@@ -71,6 +71,19 @@ td.c-ext { background: rgba(148,163,184,0.10); }
 .perf-key .k-int { background: rgba(59,130,246,0.30); }
 .perf-key .k-ext { background: rgba(148,163,184,0.35); }
 
+/* FD-805: a climb cell with no figure shows a dash. Hatched grey where the
+   handbook leaves the cell blank (its own grey shading), plain where the
+   handbook prints nothing there. */
+td.c-blank {
+  color: var(--text-dim);
+  background: repeating-linear-gradient(135deg, rgba(148,163,184,0.22) 0 3px, transparent 3px 7px);
+}
+td.c-none { color: var(--text-dim); }
+.perf-key .k-blank {
+  background: repeating-linear-gradient(135deg, rgba(148,163,184,0.50) 0 2px, transparent 2px 4px);
+}
+.perf-key .k-none { color: var(--text-dim); margin-right: 2px; }
+
 .perf-note {
   margin: 10px 0; font-size: 0.86rem; color: var(--text-muted);
 }
@@ -89,6 +102,11 @@ td.c-ext { background: rgba(148,163,184,0.10); }
   td.c-ext b::after { content: " *"; font-weight: 400; }
   table.perf-table td i.sep { display: inline; }
   table.perf-table td span { display: inline; }
+}
+
+/* FD-805: keep the hatch on paper, so a handbook blank still reads as one. */
+@media print {
+  td.c-blank, .perf-key .k-blank { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* FD-715: a cell the handbook itself prints in gray ("may not be achievable"). */
