@@ -491,9 +491,27 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/what-is-parasite-drag/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/what-is-parasite-drag.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/how-a-carburetor-works/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/how-a-carburetor-works.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/how-gyro-instruments-work/</loc>

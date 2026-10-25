@@ -1,7 +1,332 @@
 {
-  "generated": "2026-10-21T16:40:05+00:00",
+  "generated": "2026-10-25T18:55:02+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-aero-parasite-drag",
+      "slug": "what-is-parasite-drag",
+      "page": "/explainers/what-is-parasite-drag/",
+      "title": "What is parasite drag",
+      "headline": "Why a blunt wheel, a rough skin and a wing root all slow an airplane down.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "A see-through Cessna 172 seen low from the side, with the teardrop cover over a main wheel labelled Wheel fairing and a pink parasite-drag arrow trailing behind it through cyan air lines.",
+      "image": "/assets/social/lesson-aero-parasite-drag.webp",
+      "image_full": "/assets/explainers/what-is-parasite-drag.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/De7XfWuki1K/",
+      "posted": "2026-10-25",
+      "caption": [],
+      "teaches": [
+        "Parasite drag is the drag not associated with making lift; it is called parasite because it in no way functions to aid flight, and there are three types: form drag, interference drag and skin friction (PHAK ch 5 p 5-6).",
+        "Form drag comes from the airplane's shape and the airflow around it: the air separates to move around a body and rejoins behind it, and how quickly and smoothly it rejoins is representative of the resistance; it is the easiest kind to reduce when designing an aircraft, by streamlining as many parts as possible (PHAK p 5-6, Fig 5-7, the sphere with a fairing). A blunt body has higher pressure on its front, where the air piles up, than in the separated, low-pressure wake behind it, and the integrated pressure difference resolved in the drag direction is the form drag (AFH glossary).",
+        "The Cessna 172R's optional speed fairings, the wheel and brake fairings, increase its cruise speeds by approximately 2 knots; without them, cruise speeds are 2 knots lower (172R POH (1996) Section 1 Performance-Specifications, Fig 5-8 note, Section 6 equipment list). Wheel pants are covers used to reduce aerodynamic drag (AFH ch 2).",
+        "Skin friction drag is the resistance due to moving air in contact with the airplane's surface; every surface is rough under a microscope; the air in contact with the surface is virtually motionless and each layer above moves slightly faster until it moves at the speed of the air around the aircraft, a layer called the boundary layer (PHAK p 5-6). The boundary layer starts as smooth laminar flow and some distance back from the leading edge breaks down into turbulent flow with swirls or eddies; laminar flow creates less skin friction drag than turbulent flow (PHAK p 5-46). Designers use flush mount rivets, remove irregularities that protrude above the wing surface and use a smooth, glossy finish; dirt disrupts the free flow of air and increases drag, so keep the surfaces clean and waxed (PHAK p 5-7).",
+        "Interference drag comes from the intersection of airstreams that creates eddy currents, turbulence or restricts smooth airflow; the wing root has significant interference drag, as air flowing around the fuselage collides with air flowing over the wing; the most is observed where two surfaces meet at perpendicular angles; with two identical wing tanks the overall drag is greater than the sum of the individual tanks; fairings and distance between lifting surfaces and external components reduce it (PHAK p 5-6).",
+        "Parasite drag increases as the square of the airspeed: if the speed doubles, parasite drag increases four times (GFH ch 3 p 3-5; PHAK p 5-8), as from 100 to 200 knots it becomes four times as great (PHAK ch 11 p 11-5). Induced drag varies inversely with the square of the airspeed: at twice the speed it is one-fourth (PHAK p 5-8, 11-6). Arithmetic: D proportional to V^2, (2)^2 = 4.",
+        "Frost, snow and ice on the leading edge or upper surface of the wing no thicker or rougher than a piece of coarse sandpaper can reduce lift by 30 percent and increase drag up to 40 percent (Aviation Weather Handbook FAA-H-8083-28 ch 20 p 20-7); frost disrupts the airflow over the wing, reduces lift and increases drag, and an aircraft must be thoroughly cleaned and free of frost before beginning a flight (PHAK ch 12, Dew and Frost)."
+      ],
+      "intent": "Parasite drag is all the drag that does not come from making lift: it does nothing to help the airplane fly, it comes as form drag, skin friction and interference drag, each shown on the Cessna 172, and it grows with the square of the airspeed, which is why a Cessna 172R's optional teardrop wheel covers are worth about 2 knots and why frost comes off before flight.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 5",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 11",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 11",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 11",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 11
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 12",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 12",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 12",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 12
+        },
+        {
+          "ref": "FAA-H-8083-28 ch 20",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 20",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": "see Chapter 20",
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 20
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 2",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 2",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/03_afh_ch2.pdf",
+          "kind": "handbook",
+          "note": "Chapter 2 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 2
+        },
+        {
+          "ref": "FAA-H-8083-13B ch 3 p 3-5 parasite drag",
+          "title": "FAA-H-8083-13, Chapter 3",
+          "url": null,
+          "kind": "handbook",
+          "note": "see Chapter 3",
+          "book_url": null,
+          "chapter": 3
+        },
+        {
+          "ref": "Cessna 172R POH (1996) sec 1, 5 and 6 speed fairings",
+          "title": "Cessna 172R POH (1996) sec 1, 5 and 6 speed fairings",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "Parasite drag",
+          "points_at": null
+        }
+      ],
+      "short": "parasite-drag",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Parasite drag is all the drag that does not come from making lift. It does nothing to help the airplane fly, and it comes in three kinds: form drag, skin friction and interference drag.",
+            "Every blunt shape, rough patch and joint adds some, and all of it grows quickly with speed."
+          ]
+        },
+        {
+          "heading": "Form drag comes from shape",
+          "paragraphs": [
+            "Form drag comes from an object's shape and the way the air flows around it.",
+            "A bare wheel is blunt.",
+            "Air piles up against its front at higher pressure, then tears away behind it into a churning, low-pressure wake. With more pressure pushing on the front than on the back, the wheel is pushed backward, and that push is form drag.",
+            "Form drag is the easiest kind for a designer to reduce, by streamlining. A teardrop cover around the wheel, called a wheel fairing or wheel pant, lets the air close in smoothly behind it, so the wake shrinks and so does the drag. On a Cessna 172R, the optional teardrop covers on the wheels are worth about 2 knots of cruise speed."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-is-parasite-drag-wake.webp",
+            "caption": "A cross-section of the bare wheel's flow, drawn flat and two-dimensional: the air piles up in front at higher pressure (amber) and tears away into a churning, low-pressure wake (light blue). The pink arrow is the drag.",
+            "alt": "A Cessna 172 main wheel seen from the side, with cyan air lines flowing past it, an amber glow in front labelled Higher pressure, a light-blue churning wake behind labelled Lower pressure, and a pink drag arrow pointing aft."
+          }
+        },
+        {
+          "heading": "Skin friction and the boundary layer",
+          "paragraphs": [
+            "Skin friction is the drag of moving air in contact with the airplane's surface.",
+            "The air touching the skin is almost still. Each layer above it moves a little faster, until the air moves at the speed of the air flowing around the airplane. That thin region is the boundary layer, and as its layers slide over each other they rub.",
+            "Near the leading edge the boundary layer flows smoothly, which is called laminar flow. Some way back it breaks down into swirls and eddies, which is turbulent flow, and turbulent flow makes more skin friction than laminar flow.",
+            "So designers use flush rivets, remove anything that sticks up above the wing surface and give the airplane a smooth, glossy finish."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-is-parasite-drag-skin.webp",
+            "caption": "The boundary layer (lime), drawn much thicker than it really is. Each arrow's length is the air's speed at that height, zero at the skin. Near the leading edge (left) the profile is laminar; farther back the layers break into swirls, and the turbulent profile (right) is fuller close to the skin, so it rubs harder.",
+            "alt": "A magnified circle on the top of a Cessna 172 wing with three columns of lime arrows, short at the skin and longer above: a laminar profile on the left under the label Laminar, small swirls in the middle, and a fuller turbulent profile on the right under the label Turbulent."
+          }
+        },
+        {
+          "heading": "Interference drag where parts meet",
+          "paragraphs": [
+            "Interference drag comes from airstreams meeting, which sets up eddies and turbulence or blocks the smooth flow. The wing root makes a lot of it. There, air flowing around the fuselage collides with air flowing over the wing.",
+            "It is worst where two surfaces meet at a right angle, and the joined parts make more drag than the same parts would apart.",
+            "Smooth, curved fairings at the joints reduce it, and so does more distance between a lifting surface and anything hung near it."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-is-parasite-drag-joint.webp",
+            "caption": "Where the air along the cabin meets the air over the wing, it churns (the curls). A smooth, curved fairing (white) along the joint keeps that churn small.",
+            "alt": "The root of a Cessna 172 wing where it meets the cabin top, with cyan air lines from the fuselage and the wing, small orange curls beside the joint, and a curved white fairing labelled Fairing along it."
+          }
+        },
+        {
+          "heading": "Two mistakes that add drag, and speed",
+          "paragraphs": [
+            "The first mistake is taking off with frost on the wings, tail or any other surface, however thin. Frost, snow or ice on the leading edge or top of the wing, even no thicker or rougher than coarse sandpaper, can cut lift by as much as 30 percent and add up to 40 percent more drag.",
+            "The second is flying a dirty airplane. Dirt disrupts the smooth flow of air over the surface and adds drag, so keep it clean and waxed.",
+            "All three kinds grow with the square of the airspeed. Double an airplane's airspeed, from 60 to 120 knots say, and its parasite drag becomes four times as great.",
+            "Induced drag, the drag that comes with making lift, does the opposite. In level flight at the same weight, at twice the speed it is about a quarter of what it was."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-is-parasite-drag-speed.webp",
+            "caption": "At twice the speed the parasite drag (pink) is four times as long and the induced drag (violet) a quarter as long. Each solid arrow is to scale with its own dashed before-arrow, not with the other one, and not in pounds.",
+            "alt": "A see-through Cessna 172 with doubled cyan air streaks, a long pink arrow under it marked 4x beside a dashed ghost of its shorter length, and a short violet arrow above the wing, labelled Induced drag, beside a dashed ghost of its longer length."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. At the same altitude you fly twice as fast, so how much bigger does the parasite drag get?",
+            "2. Why does a teardrop cover make less drag than a bare wheel?",
+            "3. Why do designers use flush rivets and a smooth, glossy finish?",
+            "4. A thin layer of frost as rough as coarse sandpaper covers the wing before a morning flight, so what do you do?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. About four times bigger, because parasite drag grows with the square of the airspeed.",
+            "2. The air closes in smoothly behind it, so the low-pressure wake shrinks and so does the form drag.",
+            "3. Anything that sticks up or roughens the skin adds skin friction drag.",
+            "4. Clean every bit of it off before the flight, because even that much frost adds drag and cuts lift."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/what-causes-induced-drag/",
+        "/explainers/ground-effect-in-the-flare/",
+        "/explainers/stall-speed-rising-with-bank-angle/"
+      ]
+    },
+    {
+      "id": "lesson-sys-carburetor",
+      "slug": "how-a-carburetor-works",
+      "page": "/explainers/how-a-carburetor-works/",
+      "title": "How a carburetor works",
+      "headline": "A venturi drops the air's pressure so the bowl's higher pressure pushes fuel in; that drop and the evaporating fuel can chill the air up to 70 °F, so ice can form on a 100 °F day, and carb heat clears it.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "A see-through cutaway of the up-draft carburetor under a Cessna 172P's engine: cyan air streaks speeding up through the narrow throat, a green fuel passage from the float bowl to the nozzle, and white frost crusting the throttle plate and the throat.",
+      "image": "/assets/social/lesson-sys-carburetor.webp",
+      "image_full": "/assets/explainers/how-a-carburetor-works.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/De1nY-GjX4q/",
+      "posted": "2026-10-23",
+      "caption": [],
+      "teaches": [
+        "In the 172P's up-draft carburetor, air speeds up through a narrow throat, the venturi, and its pressure drops; the float bowl beside it is vented, so its higher pressure pushes fuel up a passage and out of the discharge nozzle into the throat.",
+        "The throttle is a butterfly plate above the nozzle: opening it lets more air through, and more fuel comes with it.",
+        "As the airplane climbs the air gets thinner while the carburetor meters about the same fuel, so the mixture turns too rich; the 172P's handbook keeps it rich in the climb below 3,000 feet and leans above it; leaning with the red mixture knob cuts the fuel back to match, and full out (idle cut-off) stops the fuel to shut the engine down; in cruise the 172P's handbook leans until the RPM peaks, then further until it drops 25-50 RPM (POH p 4-16).",
+        "The venturi's pressure drop and the fuel's evaporation can cool the air by up to about 70 °F, so ice can form in the throat and on the throttle plate on days as warm as 100 °F; a nearly closed throttle in a descent is the most sensitive; PHAK ch 7: carburetor ice 'is most likely to occur when temperatures are below 70 degrees Fahrenheit ... and the relative humidity is above 80 percent' (an outside air temperature, unlike the 70 °F of cooling).",
+        "In a 172 with a fixed-pitch propeller the first sign is an unexplained drop in RPM; full carb heat brings warm air from a shroud around an exhaust pipe, the RPM dips at first because warm air is less dense, then rises as the ice melts, and the 172P's handbook clears it with full throttle and full heat; it calls for full heat as required in the descent and full heat before reducing power for landing, and PHAK ch 7 says: 'If carburetor icing conditions are suspected and closed-throttle operation anticipated, adjust the carburetor heat to the full ON position before closing the throttle'; with the throttle closed 'the engine cools rapidly' and 'is more susceptible to carburetor icing'."
+      ],
+      "intent": "The carburetor under an older Cessna 172's engine meters fuel with nothing but air pressure, and the same pressure drop that makes it work can freeze it on a hot day, so knowing how it works tells you when to use the mixture knob and carb heat.",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": "see Chapter 7",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        },
+        {
+          "ref": "FAA-H-8083-32B ch 2",
+          "title": "FAA-H-8083-32, Chapter 2",
+          "url": null,
+          "kind": "handbook",
+          "note": "see Chapter 2",
+          "book_url": null,
+          "chapter": 2
+        },
+        {
+          "ref": "AC 00-6B carburetor icing",
+          "title": "Advisory Circular 00-6B, Aviation Weather",
+          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-6B.pdf",
+          "kind": "advisory-circular",
+          "note": "FAA advisory circular",
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 172P POH carburetor, induction and engine controls",
+          "title": "Cessna 172P POH carburetor, induction and engine controls",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [
+        {
+          "label": "Carburetor",
+          "points_at": null
+        }
+      ],
+      "short": "carburetor-works",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "An older Cessna 172, like the 172P, has a carburetor under its engine. Gravity feeds it fuel, and a difference in air pressure pushes that fuel into the airflow.",
+            "You manage it with three knobs: the throttle, the red mixture knob and carb heat, which clears ice that can form inside it even on a hot day."
+          ]
+        },
+        {
+          "heading": "How the carburetor meters fuel",
+          "paragraphs": [
+            "As the pistons draw air in, outside air comes through a filter and up into the bottom of the 172P's up-draft carburetor. On the way it squeezes through a narrow throat called the venturi. It speeds up to get through, and its pressure drops.",
+            "Beside the throat sits the float bowl, where a float holds the fuel at a steady level. The bowl is vented, so the air above its fuel stays at a higher pressure than the air in the throat. That difference pushes fuel up a passage and out of the discharge nozzle into the airstream, where it breaks up and evaporates.",
+            "Above the nozzle, the throttle knob turns a flat butterfly plate. Push the knob in and the plate turns toward edge-on. More air flows, the pressure drop grows, and more fuel comes with it."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-carburetor-works-venturi.webp",
+            "caption": "The carburetor cut open: air (cyan) speeds up through the throat, the venturi, where its pressure drops (violet). The higher pressure on the fuel in the float bowl (white arrows) pushes it up the passage and out of the nozzle (green).",
+            "alt": "A cutaway of a carburetor: on the left the narrow throat with cyan streaks and a violet dashed line, a green fuel passage curving from the bottom of a float bowl up into the throat, and on the right the bowl with green fuel, a float and white arrows pressing down on the fuel."
+          }
+        },
+        {
+          "heading": "Why you lean the mixture up high",
+          "paragraphs": [
+            "The engine burns fuel by the weight of air it gets, but the venturi meters the volume of air. As you climb, each cubic foot of air weighs less, yet it still draws about the same fuel. The mixture turns rich, too much fuel for the air, and the engine can run rough.",
+            "Pulling the red mixture knob out turns a valve in the carburetor that cuts the fuel back, which leans the mixture. The 172P's handbook keeps it rich in the climb below 3,000 feet and leans for best RPM above that. In cruise it leans past peak RPM until the RPM drops 25 to 50. Pulled full out to idle cut-off, the knob stops the fuel to shut the engine down.",
+            "Coming down from altitude, push it back in. Too lean a mixture can run rough and overheat the engine."
+          ]
+        },
+        {
+          "heading": "Why it can ice on a hot day",
+          "paragraphs": [
+            "The venturi's pressure drop chills the air. The fuel evaporating into it cools it further, by up to about 70 °F. If the air is humid, its water vapor can freeze onto the throat and the throttle plate, even on a 100 °F day.",
+            "The risk is worst with the throttle nearly closed in a descent. The air gets past the plate only through a small gap at its edge, and a little ice can block it.",
+            "The 172P's propeller is fixed-pitch, so lost power shows as lower RPM. The first sign is a drop in RPM with the throttle where you left it, then roughness. Pull the carb heat knob all the way out. It swaps the filtered air for unfiltered air warmed by a shroud around an exhaust pipe. The 172P's emergency checklist adds full throttle, then turns the heat off once the engine runs smoothly."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-carburetor-works-ice.webp",
+            "caption": "Ice (white) on the throttle plate and the throat wall, drawn exaggerated, with the air (cyan) still flowing past. Reel credits: 3D model “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Engine sound “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified.",
+            "alt": "A close view inside a cut-open carburetor: the round throttle plate on its shaft, crusted with thick white frost, with white rime on the wall behind it and cyan streaks of air around it, under the words BELOW FREEZING."
+          }
+        },
+        {
+          "heading": "Three mistakes with carb ice",
+          "paragraphs": [
+            "Pushing the knob back in at the first dip. Warm air is less dense, so the RPM drops first, then rises slowly as the ice melts.",
+            "Waiting for a symptom before a descent. A throttled-back engine cools quickly, which makes icing more likely. When icing is possible, put full carb heat on before you close the throttle. The 172P's handbook does so before reducing power to land.",
+            "Waiting for freezing weather. It is most likely with outside air below about 70 °F and humidity above 80 percent. Other airplanes differ, so follow the handbook for yours."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. What pushes the fuel into the venturi?",
+            "2. Why does the mixture get richer as you climb?",
+            "3. In cruise, the RPM slowly drops though you haven't touched the throttle. What do you do, and what will the RPM do next?",
+            "4. Why put carb heat on before you close the throttle for a descent?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. The higher air pressure in the vented float bowl, against the lower pressure in the venturi's throat.",
+            "2. The venturi meters air by volume, so thinner air draws about the same fuel but brings less weight of air.",
+            "3. Pull full carb heat. The RPM dips first, because warm air is less dense, then rises as the ice melts.",
+            "4. A little ice can block the small gap at the nearly closed plate, and a throttled-back engine cools, inviting ice."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/carburettor-ice-on-a-warm-day/",
+        "/explainers/how-magnetos-work/",
+        "/explainers/how-gyro-instruments-work/"
+      ]
+    },
     {
       "id": "lesson-sys-gyro-instruments",
       "slug": "how-gyro-instruments-work",
