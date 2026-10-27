@@ -1114,26 +1114,6 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
 }
 .explainer-table thead th { background: rgba(255,255,255,0.04); font-weight: 600; }
 .explainer-table figcaption { margin-top: 8px; font-size: 0.9rem; opacity: 0.78; }
-/* On a phone a row becomes label/value pairs: three 110px columns broke
-   every cell into four-word lines (Claude page review, 2026-10-27). */
-@media (max-width: 480px) {
-  .prose .explainer-table table, .prose .explainer-table tbody,
-  .prose .explainer-table tr, .prose .explainer-table td { display: block; width: 100%; }
-  .prose .explainer-table thead { display: none; }
-  .prose .explainer-table tr { border-top: 1px solid var(--border); padding: 8px 0; }
-  .prose .explainer-table tr:last-child { border-bottom: 1px solid var(--border); }
-  .prose .explainer-table td { border: 0; padding: 2px 0; }
-  .prose .explainer-table td::before {
-    content: attr(data-label);
-    display: block;
-    color: var(--text-muted);
-    font-size: 12px;
-    font-weight: 650;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-  .prose .explainer-table td:first-child { font-weight: 650; }
-}
 .explainer-inline { margin: 22px 0 26px; }
 .explainer-inline img {
   display: block;
@@ -1149,14 +1129,6 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
   opacity: 0.78;
 }
 .explainer-figure { margin: 0 0 28px; }
-/* The main picture is portrait (4:5) or square. At the full 800px column a
-   desktop showed nothing but the picture and put the short version below
-   the fold (Gemini page review, 2026-10-27), so above a phone's width it
-   stops at 560px, centred, its key under it at the same width. */
-@media (min-width: 720px) {
-  .explainer-figure { max-width: 560px; margin-left: auto; margin-right: auto; }
-}
-.explainer-hero h1, .explainer-hero .page-sub { text-wrap: balance; }
 .explainer-figure img {
   display: block;
   width: 100%;
@@ -1174,22 +1146,18 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
 }
 .prose p.explainer-product a { color: var(--text); font-weight: 650; }
 .explainer-sources { font-size: 15px; }
-.explainer-sources li { margin-bottom: 10px; }
+.explainer-sources li, .explainer-teaches li { margin-bottom: 10px; }
 .prose p.fk-intro { color: var(--text-muted); font-size: 15px; margin: -6px 0 14px; }
-/* The picture's key is its caption (2026-10-27): no heading of its own, so
-   the article's answer follows the picture. Scoped under .prose, whose list
-   rules (0,1,1) would otherwise indent it. */
-.prose .explainer-figkey ul { list-style: none; margin: 12px 0 0; padding: 0; }
-.prose .explainer-figkey li {
+.explainer-figkey { list-style: none; padding: 0; margin: 0 0 26px; }
+.explainer-figkey li {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px 12px;
+  gap: 4px 12px;
   align-items: baseline;
-  margin: 0;
-  padding: 8px 0;
+  padding: 10px 0;
   border-top: 1px solid var(--border);
 }
-.prose .explainer-figkey li:last-child { border-bottom: 1px solid var(--border); }
+.explainer-figkey li:last-child { border-bottom: 1px solid var(--border); }
 .fk-label {
   flex: 0 0 auto;
   font-family: ui-monospace, "IBM Plex Mono", SFMono-Regular, Menlo, monospace;
@@ -1198,7 +1166,7 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
   color: var(--accent-amber, var(--text));
   text-transform: uppercase;
 }
-.fk-points { flex: 1 1 240px; color: var(--text-muted); font-size: 14px; line-height: 1.5; }
+.fk-points { flex: 1 1 260px; color: var(--text-muted); font-size: 15px; }
 .src-note { display: block; color: var(--text-muted); font-size: 13.5px; margin-top: 2px; }
 /* The end of the page: where the post lives, what to read next, the app.
    Under one phone screen since 2026-09-24; it used to take nearly two. */
@@ -1298,9 +1266,6 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
 /* .prose p (higher specificity) paints the fine print as body text; the
    shared .advisory-note rule wants it dim. */
 .prose p.explainer-note { color: var(--text-dim); }
-/* The credits follow the fine print as one more line of it, not a second
-   ruled-off block. */
-.prose p.explainer-credits { border-top: 0; margin-top: 8px; padding-top: 0; }
 /* On a phone the related links stack into one grouped list, the way a
    settings screen stacks its rows, and the app banner puts its words
    under the icon instead of squeezing them beside it. */
