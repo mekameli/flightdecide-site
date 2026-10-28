@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T01:05:28+00:00",
+  "generated": "2026-10-28T01:08:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -2253,7 +2253,7 @@
             "caption": "Every figure here comes from the handbook's spin section, in the order a spin unfolds.",
             "columns": [
               "Point in the spin",
-              "What the handbook gives"
+              "Figure"
             ],
             "rows": [
               [
@@ -3193,7 +3193,7 @@
             "caption": "Where icing reports cluster, from the Aviation Weather Handbook, chapter 20.",
             "columns": [
               "Band",
-              "What the handbook reports"
+              "Icing"
             ],
             "rows": [
               [
@@ -4240,7 +4240,7 @@
             "caption": "Four figures from the handbook for a long flight that runs into the night.",
             "columns": [
               "Height or time",
-              "What the handbook says happens"
+              "What can happen"
             ],
             "rows": [
               [
@@ -4774,7 +4774,7 @@
             "caption": "Figures the handbook gives for mountain downdrafts and for severe wind shear",
             "columns": [
               "What is measured",
-              "Figure in the handbook"
+              "Figure"
             ],
             "rows": [
               [
