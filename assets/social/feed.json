@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T22:05:44+00:00",
+  "generated": "2026-10-28T01:05:28+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -56,21 +56,21 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "wake-turbulence",
       "article": [
         {
           "heading": "The short version",
           "paragraphs": [
-            "Every wing that makes lift trails two vortices that spin opposite ways, from the moment the airplane rotates until it touches down. Behind a larger airplane they can roll yours harder than your ailerons can counter, and low down even a moment in one could be catastrophic.",
+            "Every wing that makes lift trails two vortices that spin opposite ways, from rotation until touchdown. Behind a larger airplane they can roll yours harder than your ailerons can counter, and low down even a moment in one could be catastrophic.",
             "So stay at or above a larger airplane's path, land beyond its touchdown point and lift off before its rotation point."
           ]
         },
         {
           "heading": "How it forms, and whose is worst",
           "paragraphs": [
-            "Lift comes from lower pressure over the wing and higher pressure under it. That difference rolls the air up at the rear of the wing into swirling air behind the wingtips. The wake becomes two counter-rotating vortices, with most of their energy within a few feet of each core. Seen from ahead or behind, the air turns outward, upward and around each tip.",
-            "Weight, speed, wingspan and wing shape set the strength. It grows as weight goes up and as speed comes down. A dirty configuration makes the wake decay sooner. So the strongest wake comes from an airplane that is heavy, clean and slow.",
+            "Lift comes from lower pressure over the wing and higher pressure under it. That difference rolls the air up behind the wingtips into two counter-rotating vortices, with most of their energy within a few feet of each core. Seen from ahead or behind, the air turns outward, upward and around each tip.",
+            "Weight, speed, wingspan and wing shape set the strength. It grows as weight rises and speed falls. A dirty configuration makes the wake decay sooner. So the strongest wake comes from an airplane that is heavy, clean and slow.",
             "How well you fight the roll depends mostly on your wingspan and how quickly your controls respond. The shorter your wingspan next to the larger airplane's, the harder the roll is to counter. A helicopter departing or landing in forward flight trails a strong pair too."
           ],
           "figure": {
@@ -82,8 +82,8 @@
         {
           "heading": "Where the wake goes",
           "paragraphs": [
-            "Flight tests show the vortices from larger airplanes sink at several hundred feet per minute, slowing and weakening with time and distance. Higher than a wingspan above the ground they stay a bit less than a wingspan apart and drift with the wind.",
-            "Within 100 to 200 feet of the ground they tend to move sideways at 2 or 3 knots. A crosswind slows the upwind vortex and speeds the downwind one. So 1 to 5 knots across the runway can hold the upwind vortex in the touchdown zone for a while. A tailwind can move the wake forward into the touchdown zone. The light quartering tailwind needs maximum caution, because it can leave the wake along much of the final approach. Be particularly alert in calm wind, too. A wake can also drift in from a nearby runway, or sink into your path from a crossing runway or into the traffic pattern."
+            "The vortices from larger airplanes sink at several hundred feet per minute, slowing and weakening with time and distance. Higher than a wingspan above the ground they stay a bit less than a wingspan apart and drift with the wind.",
+            "Within 100 to 200 feet of the ground they tend to move sideways at 2 or 3 knots. A crosswind slows the upwind vortex and speeds the downwind one. So 1 to 5 knots of crosswind can hold the upwind vortex in the touchdown zone for a while. A tailwind can move the wake forward into the touchdown zone. A light quartering tailwind needs maximum caution, since it can leave the wake along much of final. Be particularly alert in calm wind, too. A wake can also drift in from a nearby runway, or sink into your path from a crossing runway or into the traffic pattern."
           ],
           "figure": {
             "src": "/assets/explainers/figures/wake-turbulence-explained-where.webp",
@@ -94,7 +94,7 @@
         {
           "heading": "Landing and departing behind one",
           "paragraphs": [
-            "Landing behind a larger airplane, stay at or above its final approach path. Note its touchdown point and land beyond it, with enough runway left to stop. With a parallel runway closer than 2,500 feet, expect drift to yours and fly the same way. Landing behind one that is taking off, note its rotation point and land well before it.",
+            "Landing behind a larger airplane, stay at or above its final approach path. Note its touchdown point and land beyond it, leaving room to stop. With a parallel runway closer than 2,500 feet, expect drift to yours and fly the same way. Landing behind one that is taking off, note its rotation point and land well before it.",
             "Departing behind one, rotate before its rotation point and climb above its path until you turn clear of its wake. Then avoid headings that cross below and behind it. After a larger airplane's low approach, missed approach or touch-and-go, wait at least 2 minutes before you take off or land. Stay at least three rotor diameters from a hovering helicopter."
           ],
           "figure": {
@@ -108,7 +108,7 @@
           "paragraphs": [
             "Avoid the wake yourself, warning or not. A caution from tower is information, and accepting a visual approach or an instruction to follow traffic makes the wake avoidance yours.",
             "Ask for time before you taxi onto the runway, instead of taking a clearance that comes too soon. You may request extra separation of 2 minutes. A takeoff clearance does not mean the wake has gone.",
-            "Move aside, preferably upwind, when a larger airplane passes above you on your track, because its wake can sink to VFR traffic 500 feet below. If you meet persistent wake turbulence, a slight climb and a move upwind should take you clear of it. Tell ATC about any wake encounter."
+            "Move aside, preferably upwind, when a larger airplane passes above you on your track, because its wake can sink to VFR traffic 500 feet below. In persistent wake turbulence, a slight climb and a move upwind should take you clear. Tell ATC about any wake encounter."
           ]
         },
         {
@@ -124,9 +124,9 @@
           "heading": "Answers",
           "paragraphs": [
             "1. Beyond those markers, staying at or above its approach path and leaving enough runway to stop.",
-            "2. The upwind vortex can stay in the touchdown zone for a while, and the downwind one drifts away faster.",
+            "2. The upwind vortex can stay in the touchdown zone for a while.",
             "3. Ask for more time, such as 2 minutes, before you taxi onto the runway.",
-            "4. Stay holding short and ask for at least 2 minutes. Its vortices settle and move sideways near the ground, so they can sit along the runway."
+            "4. Stay holding short and ask for at least 2 minutes. Its vortices can still be sitting on the runway."
           ]
         }
       ],
@@ -203,8 +203,8 @@
         }
       ],
       "figure_key": [],
-      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sound: “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal (polyhaven.com), CC0.",
-      "credits_label": "Reel credits",
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal (polyhaven.com), CC0.",
+      "credits_label": "Picture credits",
       "short": "parasite-drag",
       "article": [
         {
@@ -337,12 +337,13 @@
           "chapter": 2
         },
         {
-          "ref": "AC 00-6B carburetor icing",
-          "title": "Advisory Circular 00-6B, Aviation Weather",
-          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-6B.pdf",
-          "kind": "advisory-circular",
+          "ref": "FAA-H-8083-28 ch 20",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 20",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
           "note": null,
-          "book_url": null
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 20
         },
         {
           "ref": "Cessna 172P POH carburetor, induction and engine controls",
@@ -354,8 +355,8 @@
         }
       ],
       "figure_key": [],
-      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sound: “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal (polyhaven.com), CC0.",
-      "credits_label": "Reel credits",
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal (polyhaven.com), CC0.",
+      "credits_label": "Picture credits",
       "short": "carburetor-works",
       "article": [
         {
@@ -482,8 +483,8 @@
         }
       ],
       "figure_key": [],
-      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sound: “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal (polyhaven.com), CC0.",
-      "credits_label": "Reel credits",
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal (polyhaven.com), CC0.",
+      "credits_label": "Picture credits",
       "short": "gyro-instruments",
       "article": [
         {
@@ -607,8 +608,8 @@
         }
       ],
       "figure_key": [],
-      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sound: “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified.",
-      "credits_label": "Reel credits",
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
       "short": "magnetos-work",
       "article": [
         {
@@ -747,7 +748,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "density-altitude-2",
       "article": [
         {
@@ -897,8 +898,8 @@
         }
       ],
       "figure_key": [],
-      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sound: “1978 Cessna 172 Departure” by Wingspan Adventures & Flight (youtube.com), CC BY 3.0, modified.",
-      "credits_label": "Reel credits",
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
       "short": "pitot-tube",
       "article": [
         {
@@ -1035,8 +1036,8 @@
         }
       ],
       "figure_key": [],
-      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sound: “Propeller Plane In Flight Ambience Sound” by Played N Faved (youtube.com), CC BY 3.0, modified. Sound: “Cockpit Cam CFI Landing a Cessna 172 at KPDK 21L” by JackFliesGA (youtube.com), CC BY 3.0, modified.",
-      "credits_label": "Reel credits",
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
       "short": "stall-horn",
       "article": [
         {
@@ -1184,7 +1185,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Reel credits",
+      "credits_label": "Picture credits",
       "short": "compass-acceleration",
       "article": [
         {
@@ -1306,7 +1307,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Reel credits",
+      "credits_label": "Picture credits",
       "short": "magnetic-compass",
       "article": [
         {
@@ -1417,7 +1418,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "microburst-final",
       "article": [
         {
@@ -1557,7 +1558,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "going-around",
       "article": [
         {
@@ -1655,7 +1656,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "flight-following",
       "article": [
         {
@@ -1794,7 +1795,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Reel credits",
+      "credits_label": "Picture credits",
       "short": "where-class-2",
       "article": [
         {
@@ -1941,7 +1942,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "fuel-reaches",
       "article": [
         {
@@ -2054,7 +2055,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "radio-goes",
       "article": [
         {
@@ -2193,7 +2194,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "stall-that",
       "article": [
         {
@@ -2202,14 +2203,14 @@
             "You're slow, the nose is high, and the wing quits. That is a stall, and it comes from too much angle of attack, the angle between the wing and the air meeting it. If the nose stays pointed straight ahead, lowering that angle gets the wing flying again.",
             "Now let the nose swing left or right just as the wing quits. That sideways swing is yaw. A spin starts when at least one wing is stalled while yaw acts on the airplane, at the stall or beyond it.",
             "Once it starts, each wing is making different lift and drag. The airplane rotates around its vertical axis, the up-and-down line the nose swings about when it yaws. It descends, rolling, yawing and pitching along a corkscrew path.",
-            "The FAA's Airplane Flying Handbook calls a spin an aggravated stall, one that can follow once a stall has happened. Poor yaw control during the stall makes a spin entry more likely. Since a spin needs both the stall and the yaw, keeping the yaw out leaves the stall as just a stall."
+            "A spin is an aggravated stall, one that can follow once a stall has happened. Poor yaw control during the stall makes a spin entry more likely. Since a spin needs both the stall and the yaw, keeping the yaw out leaves the stall as just a stall."
           ]
         },
         {
           "heading": "Where the yaw comes from",
           "paragraphs": [
             "Misused rudder is the obvious source of yaw, and it is only one of several. Moving the ailerons creates adverse yaw, a sideways swing of the nose that comes from the aileron deflection itself. The engine and propeller add yaw of their own.",
-            "Wind shear can yaw the airplane too, and the handbook counts wake turbulence from other aircraft as part of that. None of these come from your feet.",
+            "Wind shear can yaw the airplane too, and so can wake turbulence from other aircraft. None of these come from your feet.",
             "Yaw you cause with the wrong rudder has its own trap. You may not notice the wing has stalled until the airplane yaws out of control toward the dropping wing.",
             "In a slipping or skidding turn, the rudder and ailerons are out of balance. A stall there can start a spin in the direction of the rudder you're holding, whichever wingtip is raised.",
             "So the defense starts before any recovery does. Use the right amount of rudder to keep the nose from yawing and the wings from banking."
@@ -2221,8 +2222,8 @@
             "You're on base with a tailwind you haven't noticed. Your groundspeed is higher than you think, so you turn late or too shallow and overshoot the runway centerline.",
             "The fix feels obvious. You steepen the bank, pull back, and push too much rudder toward the inside of the turn to swing the nose onto the runway. That inside push is called bottom rudder, and it makes the turn a skidding one.",
             "Each input feeds the next. The difference in lift between the two wings grows, so the bank keeps steepening without you asking for it. The nose slices down through the horizon, and the natural reaction may be to pull back, raising the angle of attack toward the stall.",
-            "The handbook calls this a skidding cross-control stall, and it names this turn as the most likely place for one. Cross-control means aileron pressure in one direction and rudder pressure in the other. If the wing stalls with those inputs held, the airplane may rapidly enter a spin.",
-            "The safest answer to an overshoot is a go-around. At that low height, the handbook says to be reluctant to bank past 30 degrees, and not to skid the turn as a correction."
+            "This is a skidding cross-control stall, and this turn is the most likely place for one. Cross-control means aileron pressure in one direction and rudder pressure in the other. If the wing stalls with those inputs held, the airplane may rapidly enter a spin.",
+            "The safest answer to an overshoot is a go-around. At that low height, be reluctant to bank past 30 degrees, and don't skid the turn as a correction."
           ]
         },
         {
@@ -2244,7 +2245,7 @@
           "heading": "What a spin costs once it starts",
           "paragraphs": [
             "A spin has four phases, named entry, incipient, developed and recovery. The incipient phase, the early part, runs from the stall and the start of rotation until the spin is fully developed. In the developed phase, rotation, airspeed and descent rate have settled into a nearly vertical path.",
-            "For most airplanes the incipient phase can take two to four turns. The handbook says to start recovery before 360 degrees of rotation, with full rudder opposite the rotation.",
+            "For most airplanes the incipient phase can take two to four turns. Start recovery before 360 degrees of rotation.",
             "In typical single-engine airplanes the rudder tends to be the most important recovery control. Apply it briskly. Slow, overly cautious rudder can let the airplane keep spinning even with recovery inputs in.",
             "The first turn of a spin loses about 1,000 feet, and each turn after it loses about half that. Intentional spins should start high enough to finish recovering at or above 1,500 feet above ground level, or AGL. The turn from base to final is flown at a relatively low height."
           ],
@@ -2340,7 +2341,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "three-different",
       "article": [
         {
@@ -2479,14 +2480,14 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "attitude-indicator",
       "article": [
         {
           "heading": "Why a failing attitude indicator looks normal",
           "paragraphs": [
             "You're in cloud, with no outside horizon to look at. Your best picture of pitch, whether the nose is up or down, and bank, how far the wings tilt, comes from one instrument.",
-            "That instrument is the attitude indicator. Its face shows a miniature aircraft set against a horizon bar. The handbook calls it reliable and the most realistic flight instrument on the panel.",
+            "That instrument is the attitude indicator. Its face shows a miniature aircraft set against a horizon bar. With a working vacuum system it is reliable, and it is the most realistic flight instrument on the panel.",
             "That trust is what makes a failed vacuum pump, the engine-driven pump that supplies this instrument's suction, so dangerous. When it quits, the instrument can show a wrong picture without looking broken.",
             "An unsuspecting pilot who follows that picture can be led into a dangerous unusual attitude, a pitch or bank far from what was intended. Getting out of it then takes a partial panel recovery, flown on whatever instruments are still working."
           ]
@@ -2506,7 +2507,7 @@
             "That suction comes from the vacuum pump, which is driven mechanically off the engine. Occasionally a pump fails, and with it go the attitude indicator and the heading indicator, the gyro instrument showing which way you're pointed.",
             "The gyros don't stop dead. Once the vacuum system stops making enough suction to hold their speed, they begin to slow down.",
             "As a gyro slows, it is pushed off its plane of spin more easily. It can precess, which means it creeps away from the position it was holding. It is no longer spinning fast enough to keep its alignment.",
-            "That is why the handbook says these instruments can fail progressively. As the gyros slow, the attitude picture and the heading may wander, and an autopilot connected to them can move the airplane wrongly.",
+            "That is why these instruments can fail progressively. As the gyros slow, the attitude picture and the heading may wander, and an autopilot connected to them can move the airplane wrongly.",
             "In the handbook's figure of a vacuum failure, the airplane is level at 2,000 feet above mean sea level. A pilot who misses the off or failed flags, the warnings on the instrument faces, may still read a left turn. Rolling out of a turn that isn't happening puts a level airplane into a bank."
           ],
           "figure": {
@@ -2577,7 +2578,7 @@
             "Then fly on the instruments that still work. Covering the failed attitude and heading indicators may help, because a wrong picture you can't see can't lead you anywhere.",
             "Look for a fix next. Check the power source, switch to a backup or alternate system if there is one, and reset the instrument if you can.",
             "Then tell air traffic control what has happened. If you need to, declare an emergency early, while the situation is still within your ability to recover.",
-            "The handbook calls it important to practice instrument flight without the attitude and heading indicators. Do that, and partial panel flying won't be new to you when a pump quits for real."
+            "Practice instrument flight without the attitude and heading indicators. Do that, and partial panel flying won't be new to you when a pump quits for real."
           ]
         }
       ],
@@ -2627,15 +2628,15 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "upsloping-runway",
       "article": [
         {
           "heading": "What an upsloping runway makes you feel",
           "paragraphs": [
             "On an upsloping runway, the far end sits higher than the end you touch down on. The ground under your approach may rise toward it as well.",
-            "An upsloping runway, upsloping terrain, or both can give you the illusion of being higher than you really are. The FAA's pilot handbook, FAA-H-8083-25, files this among the optical illusions it ties mainly to landing.",
-            "The pilot handbook calls it the runway and terrain slopes illusion.",
+            "An upsloping runway, upsloping terrain, or both can give you the illusion of being higher than you really are. It is one of the optical illusions that come mainly with landing.",
+            "Its formal name is the runway and terrain slopes illusion.",
             "Downsloping runways and downsloping approach terrain can have the opposite effect. They can make you feel lower than you are, which leads to a higher approach."
           ],
           "table": {
@@ -2671,7 +2672,7 @@
             "On a stabilized approach, one held at a constant angle toward a chosen point on the runway, the trapezoid keeps its shape. It only grows as you close in.",
             "On a shallow approach the runway seems to shorten and widen. On a steep one it seems to stretch longer and narrower.",
             "You also watch the aiming point, the spot on the ground your descent line points at. On a constant-angle path it seems to stay still, and its distance below the horizon doesn't change.",
-            "Every one of these cues comes through your eyes. The pilot handbook warns that the surface below and the air around you on landing can create illusions of being on the wrong approach path."
+            "Every one of these cues comes through your eyes. On landing, the surface below and the air around you can create illusions of being on the wrong approach path."
           ],
           "figure": {
             "src": "/assets/explainers/figures/upsloping-runway-and-a-low-approach-2960a6db.webp",
@@ -2685,27 +2686,27 @@
             "An upslope distorts those cues, and you end up believing you're higher than you are.",
             "When you feel high on final, the natural move is to come down. Over an upsloping runway that move fixes a problem you don't have. A pilot who doesn't recognize the illusion will fly a lower approach than normal.",
             "The runway width illusion ends the same way. A runway narrower than usual can also make you feel high and lead you into a lower approach.",
-            "For that case the pilot handbook names the risks of flying low. They are striking objects along the approach path and landing short.",
+            "Flying that low risks striking objects along the approach path, or landing short.",
             "The same chapter says illusions are among the most often cited contributors to fatal aviation accidents."
           ]
         },
         {
           "heading": "Learning the slope before you arrive",
           "paragraphs": [
-            "The first defense the pilot handbook lists is to expect visual illusions on approaches to unfamiliar airports. It singles out approaches at night or in adverse weather.",
+            "The first defense is to expect visual illusions on approaches to unfamiliar airports. It singles out approaches at night or in adverse weather.",
             "Before you go, read the airport diagram and the Chart Supplement U.S., the publication formerly called the Airport/Facility Directory. The pilot handbook sends you to both for runway slope, terrain and lighting.",
             "Check the ground on the approach path as well as the runway itself. Upsloping terrain can create the same illusion, alone or together with an upsloping runway.",
-            "If you can, fly over an unfamiliar airport and look at it before you land. The pilot handbook calls this an aerial visual inspection."
+            "If you can, fly over an unfamiliar airport and look at it before you land. This is called an aerial visual inspection."
           ]
         },
         {
           "heading": "Cross-checking the view on final",
           "paragraphs": [
             "On final, don't fly the picture alone. Refer to the altimeter often on every approach, by day and by night.",
-            "Use a Visual Approach Slope Indicator (VASI) or a Precision Approach Path Indicator (PAPI) whenever one is available. The pilot handbook lists both as a visual reference, alongside an electronic glideslope, the vertical guidance on some instrument approaches.",
+            "Use a Visual Approach Slope Indicator (VASI) or a Precision Approach Path Indicator (PAPI) whenever one is available. Both give you a visual reference, and so does an electronic glideslope, the vertical guidance on some instrument approaches.",
             "It also points to the visual descent point (VDP), a point marked on many nonprecision instrument approach charts. Those are approaches flown without an electronic glideslope.",
             "At the end of an instrument approach you switch from instruments to outside cues for the landing. That switch is why the pilot handbook wants you alert to these illusions.",
-            "Watch for distraction as well. The pilot handbook warns that an emergency or anything else pulling you from usual procedures raises your chance of an approach accident."
+            "Watch for distraction as well. An emergency, or anything else that pulls you from your usual procedures, raises your chance of an approach accident."
           ]
         },
         {
@@ -2761,7 +2762,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "centre-gravity",
       "article": [
         {
@@ -2769,7 +2770,7 @@
           "paragraphs": [
             "The center of gravity, or CG, is the one point where your loaded airplane would balance if you hung it from a single hook.",
             "The CG doesn't have to stay in one place. Where it sits depends on how the weight is spread through the airplane, so it shifts when load is moved or used up. A heavy bag moved aft takes the CG aft with it.",
-            "Balance side to side counts too, but the FAA's handbook treats the fore-and-aft position as the one that matters most. With the CG too far forward, the airplane is nose heavy. Too far aft, it's tail heavy.",
+            "Balance side to side counts too, but the fore-and-aft position matters most. With the CG too far forward, the airplane is nose heavy. Too far aft, it's tail heavy.",
             "The manufacturer sets a forward limit and an aft limit for the CG. The distance between them is the CG range, and the CG must sit inside it during flight."
           ]
         },
@@ -2787,15 +2788,15 @@
           "paragraphs": [
             "Fly into turbulence and a bump knocks the nose up. A stable airplane then rights itself, with the nose settling back where it was. That ability to right itself in pitch, nose up and nose down, is longitudinal stability.",
             "As the CG moves aft, that ability shrinks. The airplane becomes less stable, and less able to right itself after turbulence or after you maneuver.",
-            "The handbook calls the effect of tail-heavy loading on longitudinal stability serious. The less the airplane corrects by itself, the more correcting is left to you.",
-            "At the far end, the handbook says it's possible the pilot could not control an airplane whose CG made it unstable. Extreme control difficulty is also on its list of possible effects of a CG aft of the range."
+            "Tail-heavy loading has a serious effect on longitudinal stability. The less the airplane corrects by itself, the more correcting is left to you.",
+            "At the far end, a pilot might not be able to control an airplane whose CG made it unstable. Extreme control difficulty is also on its list of possible effects of a CG aft of the range."
           ]
         },
         {
           "heading": "How stalls and spins change",
           "paragraphs": [
             "Now suppose the tail-heavy airplane stalls, or enters a spin. Tail-heavy loading reduces your capability to recover from either one. In a stall, the elevator has less authority to lower the nose.",
-            "The stall itself may be worse too. Among the possible effects of a CG aft of the allowable range, the handbook lists violent stall characteristics.",
+            "The stall itself may be worse too. One possible effect of a CG aft of the allowable range is violent stall characteristics.",
             "Both of these come from the same tail-heavy load as the loss of stability. On one flight, the airplane is less able to right itself and you're less able to recover it from a stall or spin."
           ]
         },
@@ -2803,7 +2804,7 @@
           "heading": "Why very light controls are a hazard",
           "paragraphs": [
             "In a tail-heavy airplane it takes very little push or pull on the controls to move them. That push or pull is the control force, and tail-heavy loading makes it very light.",
-            "Light controls sound pleasant, but the handbook counts them as another undesirable trait. With so little force needed, it's easy to overstress the airplane, loading its structure beyond what it's built for, without meaning to.",
+            "Light controls sound pleasant, but they are another undesirable trait. With so little force needed, it's easy to overstress the airplane, loading its structure beyond what it's built for, without meaning to.",
             "When the airplane is out of balance fore and aft, the natural fix is a trim change that takes away the pressure you're holding. Too much trim costs you something, though. It makes the airplane less efficient in the air, and it shortens the travel the control has left in the direction you trimmed.",
             "Flying an airplane that's out of balance can also leave you more tired. That fatigue has its own cost to the safety and efficiency of the flight."
           ]
@@ -2875,7 +2876,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "room-vfr",
       "article": [
         {
@@ -3054,7 +3055,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "gust-front",
       "article": [
         {
@@ -3079,7 +3080,7 @@
           "heading": "What the gust front is",
           "paragraphs": [
             "Seen from above, the outflow fans out across the ground from under the cell. Its front edge forms an arc, bowed out ahead of the storm.",
-            "That arc is the gust front, the front line of the cool air the storm has pushed out. The handbook likens it to a small cold front, and its glossary says it may also be called an outflow boundary.",
+            "That arc is the gust front, the front line of the cool air the storm has pushed out. It behaves like a small cold front, and it may also be called an outflow boundary.",
             "The comparison fits. A gust front is the edge of a body of cool air shoving into the air ahead, and air gets lifted along that edge. That lift can set off new cells, sometimes well ahead of the one that made the outflow."
           ],
           "figure": {
@@ -3091,7 +3092,7 @@
         {
           "heading": "What the gust front can look like",
           "paragraphs": [
-            "Sometimes a gust front brings a low cloud along its edge, which gives you something to see. The handbook names two, the shelf cloud and the roll cloud.",
+            "Sometimes a gust front brings a low cloud along its edge, which gives you something to see. Two such clouds are the shelf cloud and the roll cloud.",
             "A shelf cloud is a low wedge of cloud lying level, still joined to the base of the storm cloud above it. It's the more familiar of the two.",
             "A roll cloud is a low tube of cloud lying on its side. It sits completely apart from the storm's base, and that gap is what tells it from a shelf cloud. Roll clouds are relatively rare.",
             "The word that matters here is sometimes. A gust front doesn't always bring either cloud, so clear air ahead of a storm doesn't show you where its wind stops."
@@ -3105,10 +3106,10 @@
         {
           "heading": "Why you can't judge the outflow by eye",
           "paragraphs": [
-            "Not every thunderstorm holds every hazard, but the handbook says you can't tell which ones a storm holds by looking. The handbook's list of storm hazards includes adverse winds and turbulence.",
+            "Not every thunderstorm holds every hazard, but you can't tell which ones a storm holds by looking. The handbook's list of storm hazards includes adverse winds and turbulence.",
             "So don't read a missing rain shaft as a missing outflow. The life cycle explains where a downdraft comes from. It isn't a test you can run by eye from a distance.",
             "A dying cell isn't harmless either. Its last stage, called dissipating, is marked by a strong downdraft inside the area of rain. Sinking air takes over the whole cloud, and the rain tapers off and ends.",
-            "The handbook also warns that rain and dust between the cloud base and the ground can cut visibility. And the outflow spreads along the surface, so it's the air you fly through close to the ground.",
+            "Rain and dust between the cloud base and the ground can also cut visibility. And the outflow spreads along the surface, so it's the air you fly through close to the ground.",
             "The handbook's rule is to treat any weather you recognize as a thunderstorm as hazardous. With the outflow in mind, that has to mean the storm's wind as well as its cloud."
           ]
         },
@@ -3117,8 +3118,8 @@
           "paragraphs": [
             "The handbook asks you to think of a thunderstorm as something happening, not a thing parked in the sky. Air rises, rains out and sinks, while cells form and die.",
             "Almost all storms are multicell, a cluster of cells at different stages of life. A cluster can last several hours or more, so the 30 minutes belongs to one cell and not the storm.",
-            "A storm moves in two ways at once. Its cells drift with the average wind through the depth of the cloud, which the handbook calls advection. Old cells dying and new ones forming is the other way, called propagation.",
-            "New cells set off by a gust front are part of that propagation. When one forms well ahead of the parent, the storm has spread that way without any cell drifting there. The handbook warns that storm motion can differ a lot from the motion of its cells."
+            "A storm moves in two ways at once. Its cells drift with the average wind through the depth of the cloud, a motion called advection. Old cells dying and new ones forming is the other way, called propagation.",
+            "New cells set off by a gust front are part of that propagation. When one forms well ahead of the parent, the storm has spread that way without any cell drifting there. Storm motion can differ a lot from the motion of its cells."
           ]
         }
       ],
@@ -3155,19 +3156,11 @@
           "note": null,
           "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
           "chapter": 20
-        },
-        {
-          "ref": "AC 00-6",
-          "title": "Advisory Circular 00-6B, Aviation Weather",
-          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-6B.pdf",
-          "kind": "advisory-circular",
-          "note": null,
-          "book_url": null
         }
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "freezing-level",
       "article": [
         {
@@ -3197,10 +3190,10 @@
             "So the first degrees past the freezing level are clear ice territory. The handbooks call this general guidance, since drop size, water content and the aircraft itself change the result."
           ],
           "table": {
-            "caption": "Where icing reports cluster, as FAA-H-8083-28 and AC 00-6B give them",
+            "caption": "Where icing reports cluster, from the Aviation Weather Handbook, chapter 20.",
             "columns": [
               "Band",
-              "What the handbooks report"
+              "What the handbook reports"
             ],
             "rows": [
               [
@@ -3302,17 +3295,18 @@
           "chapter": 7
         },
         {
-          "ref": "AC 00-6",
-          "title": "Advisory Circular 00-6B, Aviation Weather",
-          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-6B.pdf",
-          "kind": "advisory-circular",
+          "ref": "FAA-H-8083-28 ch 20",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapter 20",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
           "note": null,
-          "book_url": null
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "chapter": 20
         }
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "carburettor-ice",
       "article": [
         {
@@ -3333,10 +3327,9 @@
         {
           "heading": "How much colder the carburetor gets",
           "paragraphs": [
-            "The FAA's Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25, chapter 7) puts the temperature drop at as much as 60 to 70 Fahrenheit degrees. Read that as a difference on the scale, not a temperature of 70 °F.",
+            "Inside the carburetor the air can drop by as much as 60 to 70 Fahrenheit degrees. That is a difference on the scale, not a temperature of 70 °F.",
             "That is a drop of about 39 Celsius degrees.",
-            "Now run the handbook's own example. Air at 100 °F (38 °C) that loses 70 Fahrenheit degrees is at 30 °F (-1 °C) inside the carburetor. That carburetor air is below freezing, 32 °F (0 °C), on a day you would call hot.",
-            "The FAA's weather handbook, AC 00-6B, gives a similar figure. It says carburetion, the mixing of fuel and air, can cool the incoming air by as much as 33 °C."
+            "Air at 100 °F (38 °C) that loses 70 Fahrenheit degrees is at 30 °F (-1 °C) inside the carburetor. That carburetor air is below freezing, 32 °F (0 °C), on a day you would call hot."
           ],
           "figure": {
             "src": "/assets/explainers/figures/carburettor-ice-on-a-warm-day-a35624c1.webp",
@@ -3349,47 +3342,17 @@
           "paragraphs": [
             "Cold air on its own makes no ice. Water vapor, the water carried invisibly in the air, has to condense into liquid while the carburetor is at or below freezing. When it does, ice may form on the surfaces inside, the throttle valve among them.",
             "So the day's moisture matters too. Relative humidity tells you how close the air is to saturation, the point where it can hold no more water vapor. At 100 percent the air is saturated.",
-            "The Pilot's Handbook rates ice most likely below 70 °F (21 °C) with relative humidity above 80 percent. Because the cooling is so sharp, it also says icing can happen with outside air as hot as 100 °F (38 °C). Humidity on such a day can be as low as 50 percent.",
-            "The weather handbook agrees. It says ice can form even under clear skies, with outside air as warm as 33 °C (90 °F) and relative humidity of 50 percent or more.",
-            "The Pilot's Handbook charts these conditions from 20 °F (-7 °C) to 100 °F (38 °C). Its caption still warns that icing is possible in conditions the chart does not show."
-          ],
-          "table": {
-            "caption": "Where the two FAA handbooks place carburetor icing, by outside air temperature and relative humidity.",
-            "columns": [
-              "Source",
-              "Outside air temperature",
-              "Relative humidity",
-              "Carburetor ice"
-            ],
-            "rows": [
-              [
-                "FAA-H-8083-25",
-                "Below 70 °F (21 °C)",
-                "Above 80 percent",
-                "Most likely"
-              ],
-              [
-                "FAA-H-8083-25",
-                "As high as 100 °F (38 °C)",
-                "As low as 50 percent",
-                "Can occur"
-              ],
-              [
-                "AC 00-6B, clear skies",
-                "As high as 33 °C (90 °F)",
-                "50 percent or more",
-                "Possible"
-              ]
-            ]
-          }
+            "Ice is most likely below 70 °F (21 °C) with relative humidity above 80 percent. Because the cooling is so sharp, icing can happen with outside air as hot as 100 °F (38 °C) and humidity as low as 50 percent.",
+            "The FAA's carburetor icing chart covers 20 °F (-7 °C) to 100 °F (38 °C), and its caption still warns that icing is possible in conditions the chart does not show."
+          ]
         },
         {
           "heading": "Why low power raises the risk",
           "paragraphs": [
             "The ice builds where the cold is, around the throttle valve and in the venturi throat. It narrows the path for the fuel-air mixture, and the engine loses power. If enough builds up, the engine may stop.",
-            "Reduced power makes this worse. Close the throttle in flight and the engine cools quickly, and the fuel vaporizes less completely than it would in a warm engine. The Pilot's Handbook says the engine is more prone to carburetor ice in that state.",
+            "Reduced power makes this worse. Close the throttle in flight and the engine cools quickly, and the fuel vaporizes less completely than it would in a warm engine. In that state the engine is more prone to carburetor ice.",
             "Ice can form in any phase of flight. A descent at reduced power is when it is particularly dangerous. Under some conditions it can build unnoticed there and show itself only when you add power.",
-            "Size is no comfort either. The weather handbook says even a small amount of carburetor ice costs power and may make the engine run rough."
+            "Carburetor ice restricts the flow of the fuel-air mixture and reduces power. If enough builds up, the engine may stop running."
           ]
         },
         {
@@ -3444,7 +3407,7 @@
         "Full explainer, and the FAA sources, at the link in our bio."
       ],
       "teaches": [],
-      "related_text": "Forward acceleration can produce a false sensation of a nose-up pitch attitude. Without outside visual references the pilot may lower the nose toward the surface, so pitch must be flown on the flight instruments rather than on what the body reports.",
+      "related_text": "Forward acceleration can produce a false sensation of a nose-up pitch attitude. Without outside visual references the pilot may lower the nose toward the surface, so pitch must be flown on the flight instruments rather than on what the body reports. Before flying in marginal visibility (less than 3 miles) or where a visible horizon is not evident, such as over open water at night, obtain training and maintain proficiency in aircraft control by reference to instruments.",
       "intent": "On a dark night takeoff, acceleration pushes the inner ear the same way a nose-up pitch would, and the instinct is to push down. Hold the attitude on your instruments instead.",
       "citations": [
         {
@@ -3467,7 +3430,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "acceleration-that",
       "article": [
         {
@@ -3484,7 +3447,7 @@
             "Your inner ear holds the otolith organs. They are the part of your balance system that senses which way gravity and acceleration are pulling on your head.",
             "Tilt your head backwards and the otolith organs register the change. A hard shove forward, like the one you get on a takeoff roll, stimulates them in the same way. From that signal alone, your brain cannot tell the two apart.",
             "So it reports the familiar story. You feel yourself tilting back, which in an airplane means nose-up. This false sense of a raised nose from speeding up is called the somatogravic illusion.",
-            "The handbook uses takeoff as its example, because that is where a rapid acceleration is part of every flight. You meet the conditions for it every time you open the throttle."
+            "Takeoff is the classic example, because that is where a rapid acceleration is part of every flight. You meet the conditions for it every time you open the throttle."
           ],
           "figure": {
             "src": "/assets/explainers/figures/acceleration-that-feels-like-a-climb-fig1.webp",
@@ -3496,7 +3459,7 @@
           "heading": "Why a dark night makes it worse",
           "paragraphs": [
             "In daylight your eyes settle the question. You glance out, see the horizon where it should be, and know the nose is where you put it.",
-            "The illusion is most likely when visual references are poor. Over open water at night, black water meets black sky with no seam, and there is nothing to check the feeling against. The handbook names that exact case as flight without a visible horizon.",
+            "The illusion is most likely when visual references are poor. Over open water at night, black water meets black sky with no seam, and there is nothing to check the feeling against. That is exactly what flight without a visible horizon means.",
             "It lumps marginal visibility in with it, meaning visibility of less than 3 miles. In either case the inner ear becomes the loudest voice left in the cockpit.",
             "Seat of the pants flying will not save you here. That means judging attitude from the pressure you feel through your seat, skin and muscles. Acceleration forces can overpower gravity, and then those signals go false as well."
           ]
@@ -3504,7 +3467,7 @@
         {
           "heading": "What the wrong correction does",
           "paragraphs": [
-            "Convinced the nose is high, a disoriented pilot pushes forward. The handbook says this can put the airplane into a nose-low attitude, or into a dive.",
+            "Convinced the nose is high, a disoriented pilot pushes forward. This can put the airplane into a nose-low attitude, or into a dive.",
             "Just after takeoff you have very little height to give away. Lowering the nose there points the airplane at the surface you just left, while your body still insists you are climbing.",
             "The illusion also runs in reverse. Pull the throttle back quickly and the rapid slowdown can have the opposite effect. The disoriented pilot then pulls the nose up, toward a nose-high attitude or a stall."
           ],
@@ -3532,7 +3495,7 @@
         {
           "heading": "How to feel it safely with an instructor",
           "paragraphs": [
-            "You can meet this illusion on purpose. The handbook describes a demonstration called climbing while accelerating.",
+            "You can meet this illusion on purpose. One demonstration is called climbing while accelerating.",
             "You close your eyes. Your instructor holds approach speed, straight and level, for several seconds. Then they speed up while keeping the airplane straight and level, and the usual sensation is that you are climbing.",
             "A second exercise gets the same feeling from a turn. The instructor rolls slowly into a coordinated turn of about 1.5 positive G, approximately 50° of bank, and holds it for 90°. G is the load pressing you into your seat, and here it reads as a climb too.",
             "Both exercises prove the same point. Your body's sense of attitude is often wrong, while the instruments are not fooled. Do them only at a safe height, with an instructor or a suitable safety pilot aboard."
@@ -3543,7 +3506,7 @@
           "paragraphs": [
             "Take pitch from the flight instruments, and treat what your body reports as noise. On a dark takeoff, set the attitude you want on the panel and hold it there. If the nose feels like it is climbing away, check the instruments before you touch the stick.",
             "The false feeling is normal, and no amount of training makes it go away completely. What training does is teach you to override it. The more instrument flying you do, the less these illusions pull on you.",
-            "Get that training before you need it. The handbook says to get it before flying in visibility under 3 miles. The same goes for anywhere without a visible horizon, such as over open water at night.",
+            "Get that training before you fly in visibility under 3 miles. The same goes for anywhere without a visible horizon, such as over open water at night.",
             "Keep your head still during the takeoff, since sudden head movement is on the handbook's list of things to avoid. Arrive rested, too. Illness, medication, alcohol, fatigue, lost sleep and mild hypoxia, a shortage of oxygen, all make you easier to fool."
           ]
         }
@@ -3588,7 +3551,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "rotor-cloud",
       "article": [
         {
@@ -3734,7 +3697,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "fuel-cannot",
       "article": [
         {
@@ -3836,7 +3799,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "ground-effect",
       "article": [
         {
@@ -3965,7 +3928,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "narrow-runway",
       "article": [
         {
@@ -3973,13 +3936,13 @@
           "paragraphs": [
             "Most of your landings have been at one airport, on one runway. Today you're on final somewhere new, and the strip ahead is clearly narrower than the one you know.",
             "A runway narrower than you're used to can make you feel higher above the ground than you really are. The FAA calls this the runway width illusion.",
-            "The FAA's Pilot's Handbook of Aeronautical Knowledge says the effect is strongest when the two runways' length-to-width relationships are comparable. Nothing about the view looks wrong. It just tells you that you have height to spare."
+            "The effect is strongest when the two runways' length-to-width relationships are comparable. Nothing about the view looks wrong. It just tells you that you have height to spare."
           ]
         },
         {
           "heading": "Why feeling high makes you fly low",
           "paragraphs": [
-            "If you think you're high, you fix it the way you were taught. The Airplane Flying Handbook says you steepen an approach that looks too high by cutting power and lowering the nose.",
+            "If you think you're high, you fix it the way you were taught. You steepen an approach that looks too high by cutting power and lowering the nose.",
             "Except you weren't high. Once you've corrected for height you never had, you're on a lower-than-normal approach path, the line your airplane is really flying down toward the runway.",
             "The AIM is firm about the outcome. A pilot who doesn't recognize the illusion will fly a lower approach. The word that matters is recognize, because the pilots it catches are the ones who aren't expecting it."
           ]
@@ -3987,16 +3950,16 @@
         {
           "heading": "What a low approach puts in your way",
           "paragraphs": [
-            "A low path brings you closer to everything short of the runway. The AIM names two risks. You can hit objects along the approach path, or you can land short, touching down before the runway begins.",
-            "If you find yourself low and undershooting, the handbook says to raise the nose and add power to level off, holding the correct airspeed. When you reach the glide path you want, reduce power and lower the nose to stay on it.",
-            "Trying to stretch the approach by raising the nose without adding power is almost always a bad idea, the handbook warns. If you're very low, you may not manage a stabilized approach at all, meaning one flown at a constant angle toward a chosen point. Then the normal answer is a go-around."
+            "A low path brings you closer to everything short of the runway. That carries two risks. You can hit objects along the approach path, or you can land short, touching down before the runway begins.",
+            "If you find yourself low and undershooting, raise the nose and add power to level off, holding the correct airspeed. When you reach the glide path you want, reduce power and lower the nose to stay on it.",
+            "Never try to stretch the approach by raising the nose without adding power. If you're very low, you may not manage a stabilized approach at all, meaning one flown at a constant angle toward a chosen point. Then the normal answer is a go-around."
           ]
         },
         {
           "heading": "A wide runway fools you the other way",
           "paragraphs": [
             "The same illusion runs in reverse. A runway wider than you're used to can make you feel lower than you are.",
-            "The FAA's runway illusion figure says this leads to a higher approach. The AIM lists what goes wrong next. You may level off too high and land hard, or overshoot the runway.",
+            "This leads to a higher approach. From there you may level off too high and land hard, or overshoot the runway.",
             "Knowing both directions helps. Every new airport gets measured against your home runway, whether you want it to or not."
           ],
           "table": {
@@ -4043,7 +4006,7 @@
             "Expect illusions before you arrive at an unfamiliar airport, especially at night or in bad weather. Look at the airport diagram and the Chart Supplement U.S., the FAA's airport directory, for runway slope, terrain and lighting. If you can, look the airport over from the air before you land.",
             "On every approach, day or night, check the altimeter often. Use a Visual Approach Slope Indicator (VASI) or Precision Approach Path Indicator (PAPI) whenever one is there. Both are lighting systems that give you a visual reference for the descent.",
             "On an instrument approach, use the electronic glideslope if there is one. On nonprecision approaches, use the visual descent point (VDP) printed on many charts. None of these depends on how wide the runway looks.",
-            "Watch out for distraction as well. The handbook says the chance of an approach accident goes up when an emergency or some other task pulls you away from your usual routine."
+            "Watch out for distraction as well. The chance of an approach accident goes up when an emergency or some other task pulls you away from your usual routine."
           ]
         }
       ],
@@ -4095,7 +4058,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "black-hole",
       "article": [
         {
@@ -4111,7 +4074,7 @@
           "heading": "Why you feel higher than you are",
           "paragraphs": [
             "Normally the ground around the runway helps you judge how high you are and how far you have to go. Part of that comes from peripheral cues, the things you notice at the edge of your vision.",
-            "Without those cues, the handbook says, orientation is difficult. Your eyes still hand you an answer, and it tends to be wrong. With nothing around the runway to compare against, the airplane seems higher than it is.",
+            "Without those cues, orientation is difficult. Your eyes still hand you an answer, and it tends to be wrong. With nothing around the runway to compare against, the airplane seems higher than it is.",
             "Water is the classic case, but it is not the only one. Unlit land does the same, and so does terrain left blank by snow. What matters is that there is nothing on the ground to read.",
             "The runway itself can look out of place as well. It can seem to slope down away from you, or slope up toward you."
           ]
@@ -4129,7 +4092,7 @@
           "heading": "When bright runway lights push you high",
           "paragraphs": [
             "The lights around a runway can bend the error the other way. Say the runway has bright edge and approach lights, with very few lights on the ground around it.",
-            "Bright lights make a runway look closer than it is. The handbook says this setup can create the illusion of being lower, or of having less distance to go. A pilot who misses it tends to fly a higher approach.",
+            "Bright lights make a runway look closer than it is. This setup can create the illusion of being lower, or of having less distance to go. A pilot who misses it tends to fly a higher approach.",
             "Now change the ground under you. Flying over terrain with only a few lights makes the runway seem to recede, or look farther away. Here the tendency is a lower than normal approach.",
             "A city in the distance on higher ground beyond the runway also tends to pull you low. So the same dark night can push you high or low, depending on what is lit in front of you. Neither error is safe to assume."
           ],
@@ -4172,10 +4135,10 @@
           "heading": "What to fly by instead of the view",
           "paragraphs": [
             "Since the view is what misleads you, judge the slope with something that does not depend on it. If there is an electronic glide slope, a descent path you follow on your instruments rather than by eye, use it.",
-            "If the runway has a visual approach slope indicator, or VASI, use that as well. It is a lighting aid at the runway that gives you a visual reference for the slope, and the handbook says to use it whenever one is available.",
+            "If the runway has a visual approach slope indicator, or VASI, use that as well. It is a lighting aid at the runway that gives you a visual reference for the slope, so use it whenever one is available.",
             "Where neither exists, your flight instruments help you keep your orientation and fly a normal approach. The handbook's wider advice on illusions is to rely on the instruments over what your senses report.",
             "If at any point you doubt your altitude or your position relative to the runway, do not press on. The handbook's instruction is to go around.",
-            "Practice is part of it too. The handbook recommends keeping night currency and proficiency, flying both cross-country and local operations at a range of airfields."
+            "Practice is part of it too. Keep your night currency and proficiency, flying both cross-country and local operations at a range of airfields."
           ]
         }
       ],
@@ -4229,7 +4192,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "attention-narrowing",
       "article": [
         {
@@ -4366,7 +4329,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "stall-speed",
       "article": [
         {
@@ -4374,7 +4337,7 @@
           "paragraphs": [
             "You're holding altitude at a steady airspeed when you roll into a 60-degree bank. The airspeed has not changed. Yet the airplane is now closer to a stall than it was a moment ago.",
             "The reason is the extra work the wing is doing. In a level turn it has to hold up the airplane's weight and pull it around the corner at the same time. The steeper the bank, the harder the wing works.",
-            "That extra work has a name, load factor, and the stall speed rises with it. At 60 degrees of bank, the FAA's Airplane Flying Handbook puts the rise at 41 percent over the wings level stall speed."
+            "That extra work has a name, load factor, and the stall speed rises with it. At 60 degrees of bank, the stall speed is 41 percent above the wings level stall speed."
           ]
         },
         {
@@ -4425,7 +4388,7 @@
             "To make that extra lift at the same airspeed, you raise the angle of attack. Angle of attack is the angle at which the wing's chord, a straight line from leading to trailing edge, meets the oncoming air.",
             "As that angle grows, lift grows and so does drag. Each wing has a limit to that angle. Beyond it, the airflow separates from the top surface, lift drops and drag climbs. That is a stall.",
             "The handbook is firm here. A stall comes from exceeding that limiting angle, not from a lack of airspeed. Stall speed is only the airspeed at which you reach the limit under one set of conditions.",
-            "In a 2G turn you are already holding a higher angle of attack than you did wings level. You sit closer to the limit, and so closer to the higher stall speed. That is why the handbook says you can stall at any airspeed, in any attitude and at any power setting.",
+            "In a 2G turn you are already holding a higher angle of attack than you did wings level. You sit closer to the limit, and so closer to the higher stall speed. That is why you can stall at any airspeed, in any attitude and at any power setting.",
             "Load factor is one of several things that set stall speed. Gross weight, center of gravity and flap setting move it too. Stall speed is not a constant, and the handbook wants you to understand what moves it."
           ]
         },
@@ -4442,7 +4405,7 @@
           "heading": "What the airplane tells you first",
           "paragraphs": [
             "A stall warning comes before the stall itself. It shows up as buffet, a shaking you feel through the airframe, or as the stall horn sounding.",
-            "The handbook says to react to and correct for any stall indication. A stall can lead to loss of control if the angle of attack is not reduced.",
+            "React to and correct for any stall indication. A stall can lead to loss of control if the angle of attack is not reduced.",
             "The stall speeds you learn for your airplane are 1G figures for one weight and configuration. In a steep level turn, the warning arrives at a speed that would give you room to spare wings level. Knowing why keeps it from being a surprise.",
             "The aim, in slow flight and in turns, is to maneuver without setting off the stall warning at all. Knowing that 60 degrees of bank means 2G and a 41 percent higher stall speed is what lets you do it."
           ]
@@ -4472,7 +4435,7 @@
         "One sentence worth carrying down final: the speed sagged because the air changed, and the airplane is already going low."
       ],
       "teaches": [],
-      "related_text": "A decreasing headwind with descent produces a momentary loss of indicated airspeed. The aircraft sinks below the intended path, and getting the airspeed back does not by itself return it to the path. The pilot must recover the path, promptly adding power and adjusting pitch to correct for the wind's effect on the descent.",
+      "related_text": "A decreasing headwind with descent produces a momentary loss of indicated airspeed. The aircraft sinks below the intended path, and getting the airspeed back does not by itself return it to the path. The pilot must recover the path, promptly adding power and adjusting pitch to correct for the wind's effect on the descent. Wind shear is one of the reasons to discontinue a landing approach, and when there is doubt about the outcome of the approach, the pilot should execute a go-around. Non-convective low-level wind shear is defined as a wind shear of 10 kt or more per 100 ft in a layer more than 200 ft thick that occurs within 2,000 ft of the surface, and it is commonly associated with passing frontal systems, temperature inversions and strong upper-level winds (greater than 25 kt). Some references define severe wind shear as a wind shear that exceeds the performance capability of the aircraft, or one producing airspeed changes greater than 15 kt or vertical speed changes greater than 500 fpm.",
       "intent": "Descending out of a stronger headwind into a weaker one costs airspeed, and the aircraft sinks below the path while it recovers.",
       "citations": [
         {
@@ -4496,7 +4459,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "losing-headwind",
       "article": [
         {
@@ -4514,13 +4477,13 @@
             "Your wing only responds to the air flowing over it. Indicated airspeed, the speed on your airspeed indicator, measures that flow. It says nothing about your speed over the ground.",
             "In a strong headwind, the air is streaming toward you as you fly into it. Descend into a layer where that stream is slower, and the airplane at first carries its old motion. Less air now meets the wing, so indicated airspeed drops.",
             "Nothing is wrong with the engine or the trim. The airplane has not caught up with the new air yet. That lag is why the loss is momentary.",
-            "The Aviation Weather Handbook notes that shear causes abrupt changes in an airplane's horizontal movement. On final, a weakening headwind is one of those changes, and you feel it as lost airspeed."
+            "Shear causes abrupt changes in an airplane's horizontal movement. On final, a weakening headwind is one of those changes, and you feel it as lost airspeed."
           ]
         },
         {
           "heading": "Why getting the speed back is not enough",
           "paragraphs": [
-            "While the speed is low, the wing makes less lift than it did a moment before. The airplane sinks faster than your planned descent. The handbooks tie slow airspeed and too little lift directly to an airplane settling.",
+            "While the speed is low, the wing makes less lift than it did a moment before. The airplane sinks faster than your planned descent. Slow airspeed and too little lift lead directly to an airplane settling.",
             "Your glidepath, the planned line from you down to the aiming point, stays where it was. The airplane has dropped under it. As the airplane settles into the new air, the airspeed returns.",
             "Getting that speed back does not lift you back to the line. You come out of the sag at the right speed and the wrong height. The gap stays until you fix it.",
             "This is why the timing matters. Low level shear is especially hazardous because the airplane is close to the ground. On final there is very little height left to lose."
@@ -4535,16 +4498,16 @@
           "heading": "How to get back on the path",
           "paragraphs": [
             "The recovery is about the height as much as the speed. Add power promptly, and adjust pitch to correct for what the wind did to your descent. Waiting for the speed to return by itself leaves you low.",
-            "Pitch alone will not do it. The Airplane Flying Handbook explains that when you are slow, raising the nose cuts airspeed further and greatly steepens the descent. Raise it too far and the airplane settles rapidly on too little lift.",
-            "The same handbook warns never to try to stretch a glide to reach a spot. Pulling back to hold the path without adding power is exactly that stretch.",
-            "It helps to know your margin. In its accuracy approaches, the handbook uses 1.3 VSO on final, where VSO is the stall speed with the airplane configured to land. A sag in airspeed comes straight out of that margin.",
-            "Correcting the wind's effect on your descent is the real goal. The airspeed is only the first thing the shear took from you."
+            "Pitch alone will not do it. When you are slow, raising the nose cuts airspeed further and greatly steepens the descent. Raise it too far and the airplane settles rapidly on too little lift.",
+            "Never try to stretch a glide to reach a spot. Pulling back to hold the path without adding power is exactly that stretch.",
+            "Correcting the wind's effect on your descent is the real goal. The airspeed is only the first thing the shear took from you.",
+            "Wind shear is also one of the reasons to break off a landing approach. If you doubt how the approach will end, go around."
           ]
         },
         {
           "heading": "What makes the wind change near the ground",
           "paragraphs": [
-            "Wind that changes sharply at low height has many sources. The handbook lists terrain, temperature inversions, sea breezes, frontal systems and strong surface winds.",
+            "Wind that changes sharply at low height has many sources. They include terrain, temperature inversions, sea breezes, frontal systems and strong surface winds.",
             "A temperature inversion is a layer where the air gets warmer with height instead of cooler. Inversions often sit in the lowest few thousand feet after the ground cools overnight. Strong wind shear often forms across them.",
             "Thunderstorms add their own version. The gust front, the leading edge of wind flowing out from a storm, often runs as far as 15 mi ahead of the rain. It changes the surface wind rapidly and sometimes drastically.",
             "A line of dust or debris along the ground, or spray across water, often marks where the gust front is at the surface."
@@ -4553,8 +4516,8 @@
         {
           "heading": "How big a change counts as shear",
           "paragraphs": [
-            "The handbook puts numbers on low level wind shear that does not come from storms. It is a change of 10 kt or more for every 100 ft of height.",
-            "That change has to happen in a layer more than 200 ft thick, within 2,000 ft of the surface. The handbook's practice patterns begin at approximately 1,000 feet above the ground, so your whole final sits inside that band.",
+            "Low level wind shear that does not come from storms is a change of 10 kt or more for every 100 ft of height.",
+            "That change has to happen in a layer more than 200 ft thick, within 2,000 ft of the surface. Your whole final approach sits inside that band.",
             "This kind of shear is commonly tied to passing fronts, temperature inversions and strong upper-level winds, meaning greater than 25 kt. Some references also use the term severe wind shear, with thresholds of their own.",
             "Severe wind shear can also mean shear that exceeds what the airplane is able to do. Wind shear can affect a flight at any altitude. Near the ground, it has long been counted a serious hazard on takeoff and approach."
           ],
@@ -4639,7 +4602,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "temperature-inversion",
       "article": [
         {
@@ -4654,7 +4617,7 @@
           "heading": "Why air usually gets colder with height",
           "paragraphs": [
             "Air that rises moves into lower pressure, so it expands. Expanding air cools, even though no heat has left it. Air that sinks does the opposite, getting squeezed and warmer as the pressure grows.",
-            "This warming and cooling from pressure change alone is called adiabatic heating and cooling. The rate at which temperature drops with height is called the lapse rate. The handbook puts the average at 2 °C (3.5 °F) per 1,000 feet.",
+            "This warming and cooling from pressure change alone is called adiabatic heating and cooling. The rate at which temperature drops with height is called the lapse rate. On average it is 2 °C (3.5 °F) per 1,000 feet.",
             "A parcel of air, a single blob you imagine lifting, cools at its own rate as it rises. Dry air cools faster than moist air. The rates sit side by side in the table below."
           ],
           "table": {
@@ -4696,7 +4659,7 @@
           "paragraphs": [
             "Now take the extreme case. In an inversion, the air gets warmer as you climb instead of colder, up to a certain height. That height is the top of the inversion.",
             "Lift a parcel into that layer and it cools while the air around it warms. It ends up colder and denser than its surroundings, so it sinks back. The handbook files inversions under absolute stability, where every lifted parcel returns to its level.",
-            "This is why the ride is smooth. Vertical mixing, the up and down stirring of air that you feel as bumps, has nothing to drive it. The handbook describes these layers as commonly shallow, smooth and sitting close to the ground."
+            "This is why the ride is smooth. Vertical mixing, the up and down stirring of air that you feel as bumps, has nothing to drive it. These layers are commonly shallow, smooth and close to the ground."
           ]
         },
         {
@@ -4721,7 +4684,7 @@
           "heading": "What it means when you fly in it",
           "paragraphs": [
             "Inside the layer, expect the ride to be smooth and the view to be poor. They are one state of the air showing up two ways. Treat a glassy ride as a prompt to look hard at visibility.",
-            "The top of the inversion is where things change. Climb above the lid and the haze lies below you as a level sheet. The reduced visibility the handbook describes belongs to the layer beneath.",
+            "The top of the inversion is where things change. Climb above the lid and the haze lies below you as a level sheet. The reduced visibility belongs to the layer beneath.",
             "Coming back down means descending into it again. Landmarks you picked out from above can fade once you sink under the lid, even though the air stays smooth the whole way."
           ]
         }
@@ -4768,7 +4731,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "lee-side",
       "article": [
         {
@@ -4777,17 +4740,17 @@
             "A steady wind blows across a long ridge. The ridge forces that air up its windward face, the side the wind meets first. Once the air clears the crest, it heads back down the other side.",
             "Why it comes back down is about stability. In stable air, air that has been lifted ends up heavier than the air around it. Gravity then pulls it back toward the level it came from.",
             "It does not stop neatly at that level. Its momentum carries it too far, and on the way down it is warmed by compression until it is lighter than its surroundings. So it rises again, overshoots again, and keeps swinging up and down until the motion dies out.",
-            "That repeating up and down is a mountain wave, a wave in the air set up by the terrain. The handbook says a wave forms when the wind is strong enough and the air is stable. In unstable air with enough moisture, the same lift builds deep clouds or thunderstorms instead."
+            "That repeating up and down is a mountain wave, a wave in the air set up by the terrain. A wave forms when the wind is strong enough and the air is stable. In unstable air with enough moisture, the same lift builds deep clouds or thunderstorms instead."
           ]
         },
         {
           "heading": "Why the lee side sinks so hard",
           "paragraphs": [
             "The downwind side of a ridge is called the lee side. When the wind blows roughly at right angles to the ridge, the air is pushed up and then sped up as it crosses the crest and runs down the lee slopes.",
-            "So on the lee side you are not in still air with a little sink in it. You are in air that is traveling downhill, and traveling fast. The handbook warns that these downdrafts can be faster than an aircraft can climb.",
+            "So on the lee side you are not in still air with a little sink in it. You are in air that is traveling downhill, and traveling fast. These downdrafts can be faster than an aircraft can climb.",
             "It singles out airplanes with high wing loading and high power loading. Wing loading is the weight each part of the wing has to carry. Power loading is the weight each unit of engine power has to lift.",
             "How big the wave gets depends on the terrain and the wind. Its amplitude, how far the air is pushed up and down, is larger when the range stands higher above the land around it. A stronger wind across the ridge at mountaintop level also makes it larger.",
-            "Big mountains are not required. The handbook says even very modest terrain can produce appreciable wave activity when conditions are right."
+            "Big mountains are not required. When conditions are right, even very modest terrain can produce appreciable wave activity."
           ]
         },
         {
@@ -4802,10 +4765,10 @@
         {
           "heading": "How strong the downdrafts get",
           "paragraphs": [
-            "The handbook gives figures for takeoff and landing near mountains in strong wind. Downdrafts greater than 1,500 fpm are possible. So are localized gusts in excess of 50 kt.",
+            "Taking off or landing near mountains in strong wind, you can meet downdrafts greater than 1,500 fpm. Localized gusts in excess of 50 kt are possible too.",
             "It also quotes a yardstick that some references use for severe wind shear. One version is wind shear that exceeds what the aircraft can do. Another is a vertical speed change greater than 500 fpm, or an airspeed change greater than 15 kt.",
             "Put those side by side. A 1,500 fpm downdraft is three times the 500 fpm vertical change that already counts as severe by that yardstick.",
-            "Being low makes it worse. The handbook calls wind shear near the ground especially hazardous because the aircraft is so close to the terrain."
+            "Being low makes it worse. Wind shear near the ground is especially hazardous because the aircraft is so close to the terrain."
           ],
           "table": {
             "caption": "Figures the handbook gives for mountain downdrafts and for severe wind shear",
@@ -4834,19 +4797,19 @@
           }
         },
         {
-          "heading": "What the handbook tells you to do",
+          "heading": "What to do in a mountain wave",
           "paragraphs": [
-            "When your route crosses air flowing in a mountain wave, the handbook gives two pieces of advice. Fly at turbulence penetration speed. Stay away from flying over terrain that drops away abruptly.",
+            "When your route crosses air flowing in a mountain wave, do two things. Fly at turbulence penetration speed. Stay away from flying over terrain that drops away abruptly.",
             "Turbulence penetration speed is a speed chosen for flying through rough air.",
             "The terrain advice follows from how the wave works. The air follows the lee slopes downhill and speeds up as it goes. Flying over a sharp drop puts you straight into that descending flow.",
-            "The handbook adds that wind shear, a sudden change in wind speed or direction, is greatly intensified in mountain wave conditions. That holds for shear in the vertical and in the horizontal."
+            "Wind shear, a sudden change in wind speed or direction, is also greatly intensified in mountain wave conditions. That holds for shear in the vertical and in the horizontal."
           ]
         },
         {
           "heading": "Why a clear sky proves nothing",
           "paragraphs": [
             "The classic sign of a wave is lenticular cloud. These are smooth lens or airfoil shaped clouds that sit still downwind of a range, in bands parallel to it with clear gaps between. Rotor clouds and blowing dust are other signs.",
-            "Whether any cloud forms depends on the moisture in the air upwind. The handbook says these waves frequently occur with no cloud at all. It warns that extremely severe wind events can arrive with little or no visual warning.",
+            "Whether any cloud forms depends on the moisture in the air upwind. A mountain wave may have no cloud to mark it, and extremely severe wind events can arrive with little or no visual warning.",
             "So the advice holds with or without lenticulars. A blue sky over a ridge on a windy day is not evidence that the air behind it is calm.",
             "The effects are not confined to low levels. Wave effects can reach far above the peaks, at times beyond 60,000 ft. The most severe mountain wind events usually come from late autumn to early spring, when the large-scale winds are strongest."
           ]
@@ -4904,7 +4867,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "wind-correction",
       "article": [
         {
@@ -4920,7 +4883,7 @@
           "paragraphs": [
             "To fly a straight line over the ground, you angle the nose into the wind. Point far enough upwind and the sideways push is canceled. Your track then runs straight to where you want to go.",
             "Three things set the size of that angle. They are the wind speed, the angle between the wind and your longitudinal axis (the line from nose to tail), and your airspeed. More wind needs a bigger angle, and more airspeed needs a smaller one.",
-            "The handbook gives a worked pair. At 100 knots with 20 knots of wind straight from the side, you turn 12° into the wind. Halve the wind to 10 knots and the correction halves to six degrees.",
+            "At 100 knots with 20 knots of wind straight from the side, you turn 12° into the wind. Halve the wind to 10 knots and the correction halves to six degrees.",
             "A boat crossing a river works the same way. The captain angles the bow upstream so the boat's own motion matches the current pushing it downstream. A slower boat or a faster river needs a bigger angle."
           ],
           "table": {
@@ -4957,7 +4920,7 @@
           "paragraphs": [
             "The crab method, holding your heading off into the wind, puts the wind correction angle to work directly. You turn toward the wind until your wings-level ground track lines up with the runway centerline. The nose now sits off to the upwind side while you track straight down the extended centerline.",
             "The wind rarely stays the same all the way down. Make small heading changes as needed to keep that alignment. You are flying the track, and the heading is whatever it takes to hold it.",
-            "The handbook calls the crab the easier method to keep up on final. The price comes at the bottom. Taking the crab out needs judgment and precise timing."
+            "The crab is the easier method to keep up on final. The price comes at the bottom. Taking the crab out needs judgment and precise timing."
           ]
         },
         {
@@ -4971,7 +4934,7 @@
         {
           "heading": "The wing-low method holds both together",
           "paragraphs": [
-            "The handbook recommends the wing-low method, also called a sideslip, in most cases. It keeps your track and your longitudinal axis on the centerline all the way to the ground. There is no heading change to time at the last moment.",
+            "The wing-low method, also called a sideslip, is recommended in most cases. It keeps your track and your longitudinal axis on the centerline all the way to the ground. There is no heading change to time at the last moment.",
             "First you use rudder to line the heading up with the runway. That leaves you in an uncorrected crosswind, so you start to drift. You then bank into the wind with aileron, just enough to cancel the drift.",
             "More bank moves you upwind and less lets you slide downwind. Adjust both controls until you are tracking the centerline with the nose already straight. On a long final you can crab first and change smoothly to wing-low before the round out.",
             "Keep the upwind wing down through the round out. Level the wings and the drift comes back, so you touch down moving sideways. Done well, the upwind main wheel touches first.",
@@ -5032,7 +4995,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "density-altitude",
       "article": [
         {
@@ -5202,7 +5165,7 @@
       ],
       "figure_key": [],
       "credits": "",
-      "credits_label": "Credits",
+      "credits_label": "Picture credits",
       "short": "which-way",
       "article": [
         {
