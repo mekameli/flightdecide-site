@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T01:08:04+00:00",
+  "generated": "2026-10-28T03:10:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -296,6 +296,171 @@
       "related": [
         "/explainers/what-causes-induced-drag/",
         "/explainers/ground-effect-in-the-flare/",
+        "/explainers/stall-speed-rising-with-bank-angle/"
+      ]
+    },
+    {
+      "id": "lesson-aero-induced-drag",
+      "slug": "what-causes-induced-drag",
+      "page": "/explainers/what-causes-induced-drag/",
+      "title": "What causes induced drag",
+      "headline": "Induced drag is the price of lift. It gives the power curve its back side, and losing some of it near the ground is why a fast flare floats.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "A see-through Cessna 172 in level flight: a green lift arrow leaning back from a dashed vertical, a short violet arrow closing it at the top, and a violet wingtip vortex trailing back from the near wingtip.",
+      "image": "/assets/social/lesson-aero-induced-drag.webp",
+      "image_full": "/assets/explainers/what-causes-induced-drag.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/De5FzfHAB-I/",
+      "posted": "2026-10-24",
+      "caption": [],
+      "teaches": [],
+      "related_text": "A wing making lift has higher pressure on its lower surface than on its upper surface; air moves from high pressure toward low, and the path of least resistance is toward the tips, so air flows spanwise outward under the wing, inward toward the fuselage over it, and spills up round each tip into a vortex (PHAK ch 5 p 5-7/5-8). Seen from behind, the vortices turn counterclockwise about the right tip and clockwise about the left (PHAK p 5-7). The vortices induce an upward flow beyond the tips and a downwash behind the wing that extends forward to its trailing edge and over the top of the wing (PHAK p 4-9; p 5-8: 'This downwash over the top of the airfoil at the tip has the same effect as bending the lift vector rearward'); the downwash points the average relative wind down from the flight path, and lift, which is always perpendicular to the relative wind, tilts aft. Its rearward component is induced drag (PHAK p 5-7/5-8; PHAK ch 4 p 4-9; GFH ch 3 Fig 3-6). Induced drag is inseparable from lift: it is present whenever a wing makes lift (PHAK p 5-7). The lower the airspeed, the higher the angle of attack needed for lift equal to the weight, the stronger the vortices and the greater the induced drag; it varies inversely with the square of the airspeed, so in level flight at the same weight and altitude half the airspeed gives four times the induced drag (PHAK p 5-8). Arithmetic: D_i = W^2 / (q pi b^2 e) with q = rho V^2 / 2, so (V / (V/2))^2 = 4. A heavier airplane needs more lift at the same speed, so a higher angle of attack and more induced drag; vortex strength is directly proportional to weight and inversely proportional to wingspan and speed (PHAK p 5-9), and at the same airspeed, altitude and wing the induced drag goes with the weight squared: a Cessna 172P from an illustrative 1,900 lb to its 2,400 lb maximum takeoff weight (POH p 1-5, Takeoff, Normal Category: 2400 lbs.) is about 26 percent heavier ((2400/1900) = 1.263, about a quarter) and carries about 60 percent more induced drag ((2400/1900)^2 = 1.596). Parasite drag increases as the square of the airspeed, so near the stall total drag rises mainly because of the sharp rise in induced drag, and induced drag predominates at low speed (PHAK p 5-8, 5-11); flight speeds below the speed for maximum endurance (the lowest point on the power curve) require more power with a decrease in airspeed: the region of reversed command, the back side of the power curve (PHAK ch 11 p 11-11, Fig 11-14; AFH glossary). On a low, slow approach, merely lowering the nose without power gives a rapid sink and loss of altitude, and applying power may reduce or stop the descent; but even full power may not let the airplane climb or hold altitude, and then the only recourse is to lower the pitch attitude to regain airspeed, which inevitably costs altitude (PHAK p 11-12). Ground effect normally occurs up to a height of one wingspan above the surface (AFH); the surface restricts the vertical airflow, reducing the downwash, the wingtip vortices, the induced angle of attack and the induced drag: 1.4 percent less at a height equal to the span, 23.5 percent less at a quarter of the span (PHAK p 5-11); with the reduced drag and the lack of power-off deceleration, excess speed at the flare can mean a considerable float (PHAK p 5-12). A Cessna 172S's wing span is 36 ft 1 in (POH Fig 1-1). An increase in aspect ratio decreases the drag, especially at high angles of attack (PHAK p 5-21); a high-performance glider's wing has a high aspect ratio, 39:1 on an 86.9 ft span in the GFH's Fig 3-10, with minimal induced drag, and winglets reduce induced drag by altering the airflow near the tips (GFH ch 3; PHAK ch 4 p 4-9), but they are not a means to decrease the wake vortex hazard: studies on approach and landing show no discernible difference with or without them (AC 90-23G par 14). The Cessna 172's wing (36 ft 1 in, 174 sq ft) has an aspect ratio of about 7.5 (36.08^2 / 174 = 7.48). Every aircraft in flight generates wake vortices; they are strongest when the generating aircraft is heavy, clean (flaps up) and slow, and behind a large aircraft they sink several hundred feet per minute; fly at or above the larger aircraft's flight path, use a slight lateral change (preferably upwind) to clear persistent turbulence, and when landing behind it on the same runway stay at or above its final approach path, note its touchdown point and land beyond it (AC 90-23G par 3, 5a, 7b, 7c, 8e, 8f; PHAK p 5-9).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapters 4, 5 and 11",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "refs": [
+            "FAA-H-8083-25 ch 5",
+            "FAA-H-8083-25 ch 11",
+            "FAA-H-8083-25C ch 4 p 4-9 tip vortex and winglets"
+          ]
+        },
+        {
+          "ref": "FAA-H-8083-13B ch 3 induced drag, ground effect, aspect ratio, winglets",
+          "title": "Glider Flying Handbook (FAA-H-8083-13), Chapter 3",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/glider_handbook",
+          "chapter": 3
+        },
+        {
+          "ref": "FAA-H-8083-3C slow flight, ground effect and glossary",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3)",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook"
+        },
+        {
+          "ref": "AC 90-23G aircraft wake turbulence",
+          "title": "AC 90-23",
+          "url": null,
+          "kind": "advisory-circular",
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 172P POH p 1-5 weights",
+          "title": "Cessna 172P Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 172S POH sec 1 and 4 landing",
+          "title": "Cessna 172S Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal (polyhaven.com), CC0.",
+      "credits_label": "Picture credits",
+      "short": "causes-induced",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Induced drag is the drag that comes with making lift. The wingtip vortices tilt the air the wing meets downward, the lift leans back with it, and its backward part is induced drag.",
+            "It grows as you slow down. In level flight, half the airspeed means four times the induced drag."
+          ]
+        },
+        {
+          "heading": "Where the wingtip vortices come from",
+          "paragraphs": [
+            "A wing making lift has higher air pressure under it than on top. Air moves from high pressure toward low, and the easiest way around the wing is past its tips.",
+            "Under the wing the air slides outward, away from the fuselage, while on top it slides inward. At each tip the air from below curls up and over the top and sets up a whirlpool called a wingtip vortex.",
+            "Seen from behind, the vortex turns counterclockwise at the right tip and clockwise at the left. Both trail behind the airplane whenever the wing makes lift."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-causes-induced-drag-rollup.webp",
+            "caption": "The air under the wing (amber) curls up round the tip and rolls into a wingtip vortex (violet), drawn exaggerated and slowed.",
+            "alt": "A see-through Cessna 172 wing seen from behind and above, light blue on top, with amber lines sliding out under it and violet coils rolling up behind the right wingtip."
+          }
+        },
+        {
+          "heading": "How the vortices tilt the lift back",
+          "paragraphs": [
+            "The vortices push air up beyond the tips and down behind the wing, and that downwash reaches forward over the wing itself. So the relative wind, the local air the wing meets, arrives tilted slightly down from the flight path.",
+            "Lift always acts at a right angle to the relative wind. When the relative wind tilts down, the lift leans back by the same small angle.",
+            "Split the leaning lift in two. The upward part holds the airplane up, and the rearward part, pulling against the direction of flight, is induced drag."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-causes-induced-drag-downwash.webp",
+            "caption": "The vortices bend the air across and behind the wing downward (cyan), so the wing meets air tilted slightly downhill.",
+            "alt": "A side view of a see-through Cessna 172 with cyan streaks arriving level ahead of the wing and bending down over it and behind it."
+          }
+        },
+        {
+          "heading": "Why slow and heavy make more of it",
+          "paragraphs": [
+            "To hold altitude at a lower speed, the wing needs a higher angle of attack, its angle to the relative wind. The vortices get stronger and the lift leans back further.",
+            "Induced drag varies inversely with the square of the airspeed.",
+            "Weight makes more of it too, because more weight needs more lift at the same speed. At one airspeed the induced drag grows with the weight squared. Load a 172P from 1,900 lb to its 2,400 lb maximum takeoff weight, about a quarter heavier, and its induced drag rises about 60 percent.",
+            "Parasite drag, from pushing the airplane through the air, grows with the square of the airspeed instead. So at low speed induced drag takes over. Below the best-endurance speed, the bottom of the power curve, flying slower takes more power. That is the back side.",
+            "Wing shape matters too. A high-performance glider's long, narrow wing, with an aspect ratio of 39 to 1 against a 172's 7.5, makes little of it. Winglets reduce it too, but they do not noticeably weaken a jet's wake."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-causes-induced-drag-triangle.webp",
+            "caption": "The lift (green) stands square to the local air (cyan), so it leans back from the vertical. Its backward part, along the flight path, is the induced drag (violet), drawn larger than life.",
+            "alt": "A wing section on a white dashed flight-path line, a cyan arrow of local air arriving tilted down, a green lift arrow leaning back from a dashed vertical and a short violet arrow labelled INDUCED DRAG at its top."
+          }
+        },
+        {
+          "heading": "Three mistakes near the ground and behind jets",
+          "paragraphs": [
+            "The first mistake is arriving at the flare fast. Within about one wingspan of the runway, 36 feet for a 172, the ground restricts the downwash and the vortices. Induced drag drops, by 23.5 percent at a quarter of the span, so extra speed carries you far down the runway.",
+            "The second is letting a low, slow approach get slower. On the back side it keeps slowing unless you act. Add power early. Lowering the nose alone makes you sink fast, but when full power is not enough, it is the only way to regain speed, even near the ground.",
+            "The third is flying below a big jet's flight path. Its vortices are strongest when it is heavy and slow with its flaps up, and they sink several hundred feet per minute. If a big jet passes above you on the same track, move sideways, preferably upwind. Landing behind it, land beyond its touchdown point."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-causes-induced-drag-ground.webp",
+            "caption": "In the flare the ground restricts the downwash, so the induced drag (violet) shrinks from the dotted length it had higher up to the solid arrow.",
+            "alt": "A see-through Cessna 172 low over a runway with its markings, cyan streaks passing over and behind the wing, a green lift arrow leaning back from a dashed vertical, and at its top a violet arrow shorter than the dotted violet line that marks its length higher up."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. In level flight at the same weight, what happens to induced drag when you cut your airspeed in half?",
+            "2. Why does the lift lean back on a wing that trails wingtip vortices?",
+            "3. You reach the flare with extra speed. Why does the airplane keep floating?",
+            "4. A heavy airliner has just landed ahead of you on the same runway. Where do you touch down?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. It gets four times bigger, because induced drag varies inversely with the square of the airspeed.",
+            "2. The vortices tilt the relative wind down, and lift stays at a right angle to the relative wind.",
+            "3. Close to the ground the downwash and vortices shrink, so induced drag drops and the airplane slows down less.",
+            "4. Beyond its touchdown point, after staying at or above its approach path. It made vortices until its wheels touched."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/ground-effect-in-the-flare/",
+        "/explainers/region-of-reverse-command/",
         "/explainers/stall-speed-rising-with-bank-angle/"
       ]
     },

@@ -514,6 +514,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/what-causes-induced-drag/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/what-causes-induced-drag.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/how-a-carburetor-works/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
