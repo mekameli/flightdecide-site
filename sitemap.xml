@@ -847,6 +847,14 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/thunderstorm-life-cycle-explained/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/thunderstorm-life-cycle-explained.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/which-way-the-trim-tab-moves/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
