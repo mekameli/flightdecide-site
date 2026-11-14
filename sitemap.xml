@@ -491,9 +491,18 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/imsafe-and-pave-explained/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/imsafe-and-pave-explained.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/thunderstorm-life-cycle-explained/</loc>
@@ -853,14 +862,6 @@
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://flightdecide.com/assets/explainers/density-altitude.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://flightdecide.com/explainers/imsafe-and-pave-explained/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://flightdecide.com/assets/explainers/imsafe-and-pave-explained.webp</image:loc>
     </image:image>
   </url>
   <url>
