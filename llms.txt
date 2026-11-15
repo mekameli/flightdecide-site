@@ -167,6 +167,8 @@ result" button writes such a link.
   onboarding to daily go/no-go habits.
 - [Interactive Demo](https://flightdecide.com/demo.html): in-browser sample
   briefing showing a scored verdict.
+- [FlightDecide Monthly](https://flightdecide.com/magazine/): a monthly
+  magazine for student and private pilots. Issue 01 is free.
 - [Support / FAQ](https://flightdecide.com/support.html): how it works,
   supported aircraft, data sources, IFR use, privacy.
 - [Press Kit](https://flightdecide.com/press.html): brand assets and facts.

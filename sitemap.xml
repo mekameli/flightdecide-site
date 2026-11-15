@@ -192,6 +192,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://flightdecide.com/magazine/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- aircraft:start (managed by scripts/gen_aircraft_pages.py — do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/aircraft/</loc>

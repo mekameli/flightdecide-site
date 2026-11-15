@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- Built by scripts/build_site.py from site/content/magazine__index.html.j2. Edit that file, not this one (FD-748). -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlightDecide Monthly, the Pilot Magazine</title>
+  <meta name="description" content="A monthly magazine for student and private pilots: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Issue 01 is free." />
+  <link rel="canonical" href="https://flightdecide.com/magazine/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FlightDecide" />
+  <meta property="og:title" content="FlightDecide Monthly, the Pilot Magazine" />
+  <meta property="og:description" content="A monthly magazine for student and private pilots: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Issue 01 is free." />
+  <meta property="og:url" content="https://flightdecide.com/magazine/" />
+  <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FlightDecide: an advisory go/no-go second opinion for GA pilots" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FlightDecide Monthly, the Pilot Magazine" />
+  <meta name="twitter:description" content="A monthly magazine for student and private pilots: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Issue 01 is free." />
+  <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
+  <link rel="stylesheet" href="/assets/pages.css" />
+  <style>
+    /* Only what this page does differently; everything else comes from
+       /assets/pages.css. Same family as /partners/. Shop links go to the
+       Fourthwall shop tagged utm_campaign=magazine-issue01. */
+    :root { --max-content: 900px; }
+    nav { -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); background: rgba(15,23,42,0.9); border-bottom: 1px solid var(--border); height: 60px; position: sticky; top: 0; z-index: 100; }
+    h1 { font-size: 40px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 14px; }
+    section { margin-bottom: 56px; }
+    .section-label { color: var(--text-muted); display: block; font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 18px; text-transform: uppercase; }
+    h2 { color: var(--text); font-size: 24px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 16px; }
+    h3 { color: var(--text); font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+    p { color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; }
+    p:last-child { margin-bottom: 0; }
+    strong { color: var(--text); }
+    a { color: var(--link); text-decoration-color: var(--link-underline); text-decoration-thickness: 1px; text-decoration: underline; text-underline-offset: 3px; transition: color 0.15s ease, text-decoration-color 0.15s ease; }
+    a:hover { color: var(--link-hover); text-decoration-color: currentColor; }
+    a.btn-primary, a.btn-primary:hover { color: #02200C; text-decoration: none; }
+    .issue { align-items: start; display: grid; gap: 32px; grid-template-columns: 300px 1fr; }
+    .issue img { border-radius: 10px; border: 1px solid var(--border); display: block; height: auto; width: 100%; }
+    .issue ul { color: var(--text-muted); display: flex; flex-direction: column; gap: 6px; line-height: 1.55; margin: 0 0 22px; padding-left: 20px; }
+    .issue .fineprint { color: var(--text-dim); font-size: 14px; margin-top: 12px; }
+    .pages { display: grid; gap: 24px 14px; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; padding: 0; }
+    .pages a { color: var(--text); display: block; text-decoration: none; }
+    .pages img { border-radius: 8px; border: 1px solid var(--border); display: block; height: auto; transition: border-color 0.2s, transform 0.2s; width: 100%; }
+    .pages a:hover img { border-color: rgba(34,197,94,0.35); transform: translateY(-2px); }
+    .pages span { color: var(--text-muted); display: block; font-size: 14px; line-height: 1.4; margin-top: 8px; }
+    .plans { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+    .plan { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); display: flex; flex-direction: column; padding: 22px; }
+    .plan .price { color: var(--text); font-size: 28px; font-variant-numeric: tabular-nums; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2; margin-bottom: 10px; }
+    .plan .price small { color: var(--text-muted); font-size: 15px; font-weight: 600; letter-spacing: 0; }
+    .plan p { flex: 1; font-size: 16px; line-height: 1.6; }
+    .plan .btn-primary { margin-top: 16px; text-align: center; }
+    .plan .soon { color: var(--text-dim); font-size: 14px; margin-top: 16px; }
+    .btn-soon { border-radius: 10px; border: 1px dashed var(--border); color: var(--text-muted); display: block; font-size: 15px; font-weight: 600; margin-top: 16px; padding: 12px 16px; text-align: center; }
+    .note { font-size: 15px; margin-top: 14px; }
+    .nowrap { white-space: nowrap; }
+    .rules { display: flex; flex-direction: column; gap: 10px; list-style: none; margin: 0; padding: 0; }
+    .rules li { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); color: var(--text-muted); font-size: 16px; line-height: 1.65; padding: 16px 22px; }
+    .rules li strong { display: block; margin-bottom: 2px; }
+    .faq { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+    .faq div { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); padding: 20px 22px; }
+    .faq p { font-size: 16px; line-height: 1.65; }
+    .cta-band .plain { color: var(--text-muted); font-size: 14px; margin: 12px auto 0; }
+    @media (max-width: 760px) {
+      .issue { grid-template-columns: 1fr; }
+      .issue img { max-width: 320px; }
+      .pages { grid-template-columns: repeat(2, 1fr); }
+      .plans, .faq { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 30px; }
+      .page-wrap { padding: 40px 20px 80px; }
+      .page-hero h1 { letter-spacing: -1.5px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pages img { transition: none; }
+      .pages a:hover img { transform: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://flightdecide.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Magazine",
+        "item": "https://flightdecide.com/magazine/"
+      }
+    ]
+  }
+  </script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "052aa7e70649434e9da87205a8d1898e"}'></script>
+<script defer src="/assets/meta-pixel.js"></script>
+</head>
+<body>
+
+  <nav aria-label="Navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2a1.5 1.5 0 0 0-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="white"/></svg>
+        </span>
+        FlightDecide
+      </a>
+      <!-- site-nav:start -->
+      <a href="/aircraft/" class="nav-site">Aircraft</a>
+      <a href="/explainers/" class="nav-site">Explainers</a>
+      <!-- site-nav:end -->
+      <a href="/" class="nav-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-label">Magazine</span>
+    <h1>FlightDecide Monthly</h1>
+    <p class="page-sub">A monthly magazine for student and private pilots. Each issue takes our most-watched lessons and opens them up with deep-dive pages, charts and real photos. It ends with Hangar talk, what pilots argued about that month, and a short quiz. About 20 pages, as a PDF for your phone, tablet or printer.</p>
+  </div>
+
+  <div class="page-wrap">
+
+    <section>
+      <span class="section-label">Issue 01 &middot; December 2026</span>
+      <div class="issue">
+        <img src="/assets/magazine/issue-01-cover.jpg" alt="Cover of FlightDecide Monthly Issue 01: a high-altitude jet over mountains, headlined The Coffin Corner" width="720" height="900">
+        <div>
+          <h2>Issue 01 is free</h2>
+          <p>Read the whole first issue before you decide anything. It costs nothing.</p>
+          <ul>
+            <li>The coffin corner: where a jet's stall speed meets its Mach limit</li>
+            <li>The stall warning that runs on air</li>
+            <li>Why losing the left engine is worse</li>
+            <li>Carburetor ice on a hot day</li>
+            <li>Engine out at 400 feet: the turn back</li>
+            <li>Hangar talk: what pilots argued about</li>
+            <li>Eight questions to check yourself, with the answers</li>
+          </ul>
+          <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026-free?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Get Issue 01 free</a>
+          <p class="fineprint">21 pages &middot; PDF, 13 MB &middot; 8 by 10 inch pages that print on US Letter</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span class="section-label">Look inside</span>
+      <h2>Four pages from Issue 01</h2>
+      <ul class="pages">
+        <li><a href="/assets/magazine/issue-01-p02-full.jpg"><img src="/assets/magazine/issue-01-p02.jpg" alt="Issue 01 contents page" width="540" height="675" loading="lazy"><span>The contents</span></a></li>
+        <li><a href="/assets/magazine/issue-01-p05-full.jpg"><img src="/assets/magazine/issue-01-p05.jpg" alt="Cover story page: how each edge of a jet's speed window moves, with a chart" width="540" height="675" loading="lazy"><span>Cover story: the speed window</span></a></li>
+        <li><a href="/assets/magazine/issue-01-p08-full.jpg"><img src="/assets/magazine/issue-01-p08.jpg" alt="Feature page: Lose the left one, a Diamond DA42 flying on one engine" width="540" height="675" loading="lazy"><span>Feature: why losing the left engine is worse</span></a></li>
+        <li><a href="/assets/magazine/issue-01-p18-full.jpg"><img src="/assets/magazine/issue-01-p18.jpg" alt="Hangar talk page: every airport on hold, with air traffic controllers at work" width="540" height="675" loading="lazy"><span>Hangar talk: every airport on hold</span></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <span class="section-label">Every issue</span>
+      <h2>Subscribe, or buy one issue</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Monthly</h3>
+          <div class="price">US$2.99 <small>a month</small></div>
+          <p>Every new issue the day it comes out, and every back issue while you are a member. Renews every month until you cancel.</p>
+          <span class="btn-soon">Opens 3 January</span>
+        </div>
+        <div class="plan">
+          <h3>Yearly</h3>
+          <div class="price">US$28.70 <small>a year</small></div>
+          <p>Everything in monthly, for 20% less than a year of monthly payments. Renews every year until you cancel, and we email you a week before.</p>
+          <span class="btn-soon">Opens 3 January</span>
+        </div>
+        <div class="plan">
+          <h3>One issue</h3>
+          <div class="price">US$4.99</div>
+          <p>A single issue, yours to keep. Each issue goes on sale a week after members get it.</p>
+          <p class="soon">Issue 02 goes on sale 10 January.</p>
+        </div>
+      </div>
+      <p class="note"><strong>From January, a new issue comes out on the first Sunday of every month.</strong> Membership opens on Sunday 3 January, the day Issue 02 comes out, so nobody pays before there is a new issue to send. <a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026-free?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Get Issue 01 now</a> and tick the box at checkout, and we will email you when Issue 02 is out.</p>
+      <p class="note">Prices are in US dollars. Sales tax or VAT is added at checkout where it applies, and you see it before you pay. Already a FlightDecide subscriber on Facebook? Every issue is part of your subscription, in the subscriber group on the day it comes out.</p>
+    </section>
+
+    <section>
+      <span class="section-label">Our promise</span>
+      <h2>Plain terms</h2>
+      <ul class="rules">
+        <li><strong>A full refund within 30 days.</strong>Not what you expected? Email us within 30 days of paying and we refund you in full, no questions asked.</li>
+        <li><strong>Cancel online, any time.</strong>Cancel from your account on our shop. You keep your membership until the end of the period you paid for, so if you only want one year, you can cancel the day you join.</li>
+        <li><strong>No surprise renewals.</strong>Yearly members get an email a week before they renew, and everyone gets 30 days' notice before any price change.</li>
+        <li><strong>A charge you will recognize.</strong>Our shop and checkout run on Fourthwall, which also handles sales tax. Card statements show <span class="nowrap">FW * FlightDecide</span>.</li>
+        <li><strong>Honest about what is inside.</strong>Each issue starts from our free explainers and reels, redesigned for reading and expanded with new deep-dive pages, charts and real photos. Hangar talk and the quiz are only in the magazine.</li>
+        <li><strong>Checked, and corrected in the open.</strong>Every lesson is checked against the FAA handbooks and, when it is about one aircraft, that aircraft's own manual. If we get something wrong, the next issue says so, and so does this page.</li>
+        <li><strong>Your email, used for your order.</strong>It delivers what you bought, and members get a notice when each new issue is posted. Anything else, like news of an upcoming issue, comes only if you tick the box at checkout. We never sell your address.</li>
+      </ul>
+      <p class="note"><strong>Corrections:</strong> none so far.</p>
+    </section>
+
+    <section>
+      <span class="section-label">Questions</span>
+      <h2>Before you buy</h2>
+      <div class="faq">
+        <div>
+          <h3>What do I get?</h3>
+          <p>A PDF of about 20 pages. The pages are 8 by 10 inches: easy to read on a tablet, and they print on US Letter. On a phone, zoom in to read. It downloads right after checkout.</p>
+        </div>
+        <div>
+          <h3>How do members get each issue?</h3>
+          <p>On release day the new issue is posted in the members area of our shop with the PDF attached, and members get a notice that it is up.</p>
+        </div>
+        <div>
+          <h3>When do new issues come out?</h3>
+          <p>On the first Sunday of every month, starting with Issue 02 on Sunday 3 January. Members get it that day, and it goes on sale as a single issue a week later.</p>
+        </div>
+        <div>
+          <h3>What happens if I cancel?</h3>
+          <p>The members area closes at the end of the period you paid for. PDFs you already downloaded are yours to keep.</p>
+        </div>
+        <div>
+          <h3>Is it the same as your free explainers?</h3>
+          <p>Partly, and we say so. Each lesson starts from one of our explainers or reels, then gets more pages, charts and photos. Hangar talk and the quiz are new in every issue.</p>
+        </div>
+        <div>
+          <h3>Can I share it?</h3>
+          <p>Each copy is for the person who bought it. Run a flight school or a club? <a href="mailto:support@flightdecide.com?subject=Magazine%20license%20for%20a%20school">Email us</a> about a license for your students.</p>
+        </div>
+        <div>
+          <h3>Does it replace my training?</h3>
+          <p>No. It is for learning and review. Your aircraft's handbook and your instructor come first.</p>
+        </div>
+        <div>
+          <h3>Anything else?</h3>
+          <p>Email <a href="mailto:support@flightdecide.com?subject=Magazine%20question">support@flightdecide.com</a> and a person from the FlightDecide team will answer.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <h2>Start with Issue 01</h2>
+      <p>The whole first issue, free. Then decide.</p>
+      <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026-free?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Get Issue 01 free</a>
+      <p class="plain">Questions first? support@flightdecide.com</p>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/learn/">Pilot Guides</a></li>
+      <li><a href="/explainers/">Explainers</a></li>
+      <li><a href="/aircraft/">Aircraft</a></li>
+      <li><a href="/guide.html">App Guide</a></li>
+      <li><a href="/support.html">Support</a></li>
+      <li><a href="/press.html">Press</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+      <li><a href="/disclaimer.html">Disclaimer</a></li>
+    </ul>
+    <!-- social-links:start -->
+    <ul class="social-links" role="list">
+      <li>
+        <a class="social-link social-instagram" href="https://www.instagram.com/flightdecide/"
+           target="_blank" rel="me noopener"
+           aria-label="FlightDecide on Instagram (opens in a new tab)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" fill="currentColor"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="social-link social-facebook" href="https://www.facebook.com/flightdecide"
+           target="_blank" rel="me noopener"
+           aria-label="FlightDecide on Facebook (opens in a new tab)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 011.141.195v3.325a8.623 8.623 0 00-.653-.036 26.805 26.805 0 00-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 00-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647z" fill="currentColor"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="social-link social-youtube" href="https://www.youtube.com/@FlightDecide"
+           target="_blank" rel="me noopener"
+           aria-label="FlightDecide on YouTube (opens in a new tab)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="currentColor"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <!-- social-links:end -->
+    <p class="footer-copy">2026 FlightDecide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

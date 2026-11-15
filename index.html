@@ -435,6 +435,57 @@
       line-height: 1.6;
     }
 
+    /* MAGAZINE BAND: a one-line pointer to /magazine/, between the hero and the
+       proof bar. Everything here is scoped to .mag-band. */
+    .mag-band {
+      border-top: 1px solid var(--border);
+      background: linear-gradient(90deg, rgba(34,197,94,0.08) 0%, rgba(59,130,246,0.08) 100%);
+      padding: 14px 40px;
+    }
+
+    .mag-band-inner {
+      max-width: var(--max-content);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+    }
+
+    .mag-band-text {
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .mag-band-text strong { color: var(--text); font-weight: 700; }
+
+    .mag-band-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      background: rgba(34,197,94,0.14);
+      border: 1px solid rgba(34,197,94,0.45);
+      border-radius: 100px;
+      color: var(--accent-green);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .mag-band-link:hover { background: rgba(34,197,94,0.22); border-color: rgba(34,197,94,0.65); }
+
+    @media (max-width: 640px) {
+      .mag-band { padding: 16px 20px; }
+      .mag-band-text { font-size: 14px; }
+      .mag-band-link { min-height: 44px; padding: 0 20px; }
+    }
+
     /* PROOF BAR */
     .proof-bar {
       border-top: 1px solid var(--border);
@@ -2019,6 +2070,19 @@
         </div>
       </div>
     </section>
+
+    <!-- MAGAZINE BAND -->
+    <aside class="mag-band" aria-label="FlightDecide Monthly magazine">
+      <div class="mag-band-inner">
+        <p class="mag-band-text"><strong>New: FlightDecide Monthly.</strong> A monthly magazine for student and private pilots. Issue 01 is free.</p>
+        <a href="/magazine/" class="mag-band-link">
+          See the magazine
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </aside>
 
     <!-- PROOF BAR -->
     <div class="proof-bar" role="complementary" aria-label="Key stats">
