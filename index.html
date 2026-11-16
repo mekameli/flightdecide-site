@@ -97,7 +97,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 36px;
+      gap: 28px;
       list-style: none;
     }
 
@@ -121,7 +121,7 @@
       letter-spacing: 0.2px;
     }
 
-    /* Right-side group (CTA pill + hamburger) shown only when the full nav collapses (<=900px).
+    /* Right-side group (CTA pill + hamburger) shown only when the full nav collapses (<=1180px).
        Hidden on desktop so nav-inner's space-between keeps logo left / nav-links right. */
     .nav-right { display: none; align-items: center; gap: 12px; }
     .nav-cta-mobile { text-decoration: none; }
@@ -1585,14 +1585,16 @@
     }
 
     /* RESPONSIVE */
-    /* The full menu is ten items and a pill. It needs about 1,070px at a 20px
-       gap and about 1,210px at the 36px desktop gap, so the gap tightens below
-       1280 and the menu collapses to the hamburger below 1100. Both were sized
-       for nine items before the Explainers link (1024 and 900). */
+    /* The full menu is ten links and a pill. With a Mac's fonts it needs about
+       1,240px at the 28px desktop gap (the nav is at most 1,280px wide) and
+       about 1,160px at 20px, so the gap tightens below 1281 and the menu
+       collapses to the hamburger below 1181. Before the Magazine link the gap
+       was 36px, which eleven items no longer fit at any width, and the menu
+       collapsed below 1101. */
     @media (max-width: 1280px) {
       .nav-links { gap: 20px; }
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1180px) {
       .nav-links { display: none; }
       .nav-right { display: flex; }
       .nav-hamburger { display: block; }
@@ -1942,6 +1944,7 @@
         <!-- site-nav:start -->
         <li><a href="/aircraft/">Aircraft</a></li>
         <li><a href="/explainers/">Explainers</a></li>
+        <li><a href="/magazine/">Magazine</a></li>
         <!-- site-nav:end -->
         <li><a href="guide.html">Pilot Guide</a></li>
         <li><a href="#download" class="nav-cta">Download</a></li>
@@ -1968,6 +1971,7 @@
         <!-- site-nav:start -->
         <a href="/aircraft/">Aircraft</a>
         <a href="/explainers/">Explainers</a>
+        <a href="/magazine/">Magazine</a>
         <!-- site-nav:end -->
         <a href="guide.html">Pilot Guide</a>
         <a href="#download">Download</a>
@@ -2074,7 +2078,7 @@
     <!-- MAGAZINE BAND -->
     <aside class="mag-band" aria-label="FlightDecide Magazine">
       <div class="mag-band-inner">
-        <p class="mag-band-text"><strong>New: FlightDecide Magazine.</strong> For pilots, from student to commercial. Members get Issue 01 free.</p>
+        <p class="mag-band-text"><strong>New: FlightDecide Magazine.</strong> For pilots, from student to commercial. Members get Issue 01 free, from&nbsp;US$1.99&nbsp;a&nbsp;month.</p>
         <a href="/magazine/" class="mag-band-link">
           See the magazine
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -2678,6 +2682,7 @@
       <li><a href="/learn/">Pilot Guides</a></li>
       <li><a href="/explainers/">Explainers</a></li>
       <li><a href="/aircraft/">Aircraft</a></li>
+      <li><a href="/magazine/">Magazine</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
       <li><a href="/press.html">Press</a></li>
