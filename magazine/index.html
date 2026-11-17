@@ -72,6 +72,8 @@
     .faq { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
     .faq div { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); padding: 20px 22px; }
     .faq p { font-size: 16px; line-height: 1.65; }
+    /* With an odd number of questions, the last card spans the row instead of leaving a gap. */
+    .faq div:last-child:nth-child(odd) { grid-column: 1 / -1; }
     .cta-band .plain { color: var(--text-muted); font-size: 14px; margin: 12px auto 0; }
     /* The three plan cards sit side by side only at full width: "Start your
        free month" needs about 200px inside a card, and narrower cards wrap it. */
@@ -154,7 +156,7 @@
         <img src="/assets/magazine/issue-01-cover.jpg" alt="Cover of FlightDecide Magazine Issue 01: a high-altitude jet over mountains, headlined The Coffin Corner" width="720" height="900">
         <div>
           <h2>Your first month is free, with Issue 01</h2>
-          <p>Join monthly and your first month costs nothing: Issue 01, our lesson sheets and a Checkride question set are in your members area right away. Then US$1.99 a month. Cancel before the month ends and you pay nothing.</p>
+          <p>Join monthly and your first month costs nothing: Issue 01 and our lesson sheets are in your members area right away. Then US$1.99 a month. Cancel before the month ends and you pay nothing.</p>
           <ul>
             <li>The coffin corner: where a jet's stall speed meets its Mach limit</li>
             <li>The stall warning that runs on air</li>
@@ -208,7 +210,7 @@
           <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01</a>
         </div>
       </div>
-      <p class="note"><strong>Membership is open.</strong> The monthly plan's first month is free, so Issue 01, the lesson sheets and the Checkride questions cost nothing to start. We charge US$1.99 when the free month ends unless you cancel first. Issue 02 is planned for early December. Both buttons open our shop, where you pick monthly or yearly.</p>
+      <p class="note"><strong>Membership is open.</strong> The monthly plan's first month is free, so Issue 01 and the lesson sheets cost nothing to start. We charge US$1.99 when the free month ends unless you cancel first. Issue 02 is planned for early December. Both buttons open our shop, where you pick monthly or yearly.</p>
       <p class="note">Prices are in US dollars. Sales tax or VAT is added at checkout where it applies, and you see it before you pay. Already a FlightDecide subscriber on Facebook? Every issue is part of your subscription, in the subscriber group on the day it comes out.</p>
     </section>
 
@@ -220,7 +222,7 @@
         <li><strong>Cancel online, any time.</strong>Cancel from your account on our shop. You keep your membership until the end of your current month or year, so if you only want one year, you can cancel the day you join.</li>
         <li><strong>A free first month means free.</strong>Cancel online before your free month ends and you are never charged.</li>
         <li><strong>No surprise renewals.</strong>Yearly members get an email a week before they renew, and everyone gets 30 days' notice before any price change.</li>
-        <li><strong>A charge you will recognize.</strong>Our shop and checkout run on Fourthwall, which also handles sales tax. Card statements show <span class="nowrap">FW * FlightDecide</span>.</li>
+        <li><strong>A charge you will recognize.</strong>Our shop and checkout run on Fourthwall, which also handles sales tax. Card statements show a charge that starts with <span class="nowrap">FW * FlightDecide</span>.</li>
         <li><strong>Honest about what is inside.</strong>Each issue starts from our free explainers and reels, redesigned for reading and expanded with new deep-dive pages, charts and real photos. Hangar talk and the quiz are only in the magazine.</li>
         <li><strong>Checked, and corrected in the open.</strong>Every lesson is checked against the FAA handbooks and, when it is about one aircraft, that aircraft's own manual. If we get something wrong, the next issue says so, and so does this page.</li>
         <li><strong>Your email, used for your order.</strong>It delivers what you bought, and members get a notice when each new issue is posted. We don't add you to a mailing list, and we never sell your address.</li>
@@ -232,6 +234,10 @@
       <span class="section-label">Questions</span>
       <h2>Before you buy</h2>
       <div class="faq">
+        <div>
+          <h3>Is this the FlightDecide app?</h3>
+          <p>No. The FlightDecide app is our flight decision tool on the App Store. FlightDecide Magazine is a separate PDF magazine from the same team, sold through our own shop.</p>
+        </div>
         <div>
           <h3>What do I get?</h3>
           <p>A PDF of about 20 pages. The pages are 8 by 10 inches: easy to read on a tablet, and they print on US Letter. On a phone, zoom in to read. It downloads right after checkout.</p>
