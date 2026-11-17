@@ -1,15 +1,16 @@
 # FlightDecide
 
 > FlightDecide is an AI-assisted go/no-go preflight decision-support app for
-> general aviation pilots (iOS; Android coming soon). It reads live METARs,
-> TAFs, winds aloft, SIGMETs, PIREPs, and NOTAMs for the planned flight
-> window, computes fuel requirements (14 CFR Part 91 VFR/IFR reserves),
-> weight and balance, and takeoff/landing performance from curated POH data,
-> then produces a scored GO / CAUTION / NO GO advisory across 8 risk
-> categories plus a plain-language AI briefing that pilots can verify
-> against the raw data. It is advisory decision support, not an official
-> weather briefing; the pilot in command retains final authority (14 CFR
-> 91.3). Not for Part 135/121 operations.
+> general aviation pilots (iOS). It reads live METARs, TAFs, winds aloft,
+> SIGMETs, PIREPs, and NOTAMs for the planned flight window, computes fuel
+> requirements (14 CFR Part 91 VFR/IFR reserves), weight and balance, and
+> takeoff/landing performance from curated POH data, then produces a scored
+> GO / CAUTION / NO GO advisory across 8 risk categories, laid out by area
+> (weather, terrain, airspace, aircraft, fuel) with the deciding area named,
+> plus a plain-language AI briefing that pilots can verify against the raw
+> data. It is advisory decision support, not an official weather briefing;
+> the pilot in command retains final authority (14 CFR 91.3). Not for
+> Part 135/121 operations.
 
 Key facts:
 - Platform: iPhone (iOS 17+). App Store: https://apps.apple.com/app/flightdecide/id6761793626

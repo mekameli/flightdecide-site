@@ -91,15 +91,14 @@
       z-index: 201;
     }
 
+    /* The app icon's mark (assets/brand/logo-mark.svg, traced from the App Store icon). */
     .nav-logo-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 7px;
-      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
+      display: block;
+      flex: none;
     }
 
     .nav-links {
@@ -1074,9 +1073,7 @@
   <nav aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="FlightDecide home">
-        <span class="nav-logo-icon">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2a1.5 1.5 0 0 0-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="white"/></svg>
-        </span>
+        <img class="nav-logo-icon" src="/assets/brand/logo-mark.svg" width="30" height="30" alt="" />
         FlightDecide
       </a>
       <ul class="nav-links" role="list">
