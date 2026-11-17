@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FlightDecide Magazine, for Pilots</title>
-  <meta name="description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Your first month is free." />
+  <meta name="description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Members also get lesson posters. Your first month is free, then US$1.99 a month." />
   <link rel="canonical" href="https://flightdecide.com/magazine/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="FlightDecide" />
   <meta property="og:title" content="FlightDecide Magazine, for Pilots" />
-  <meta property="og:description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Your first month is free." />
+  <meta property="og:description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Members also get lesson posters. Your first month is free, then US$1.99 a month." />
   <meta property="og:url" content="https://flightdecide.com/magazine/" />
   <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <meta property="og:image:width" content="1200" />
@@ -23,77 +23,226 @@
   <meta property="og:image:alt" content="FlightDecide: an advisory go/no-go second opinion for GA pilots" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FlightDecide Magazine, for Pilots" />
-  <meta name="twitter:description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Your first month is free." />
+  <meta name="twitter:description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Members also get lesson posters. Your first month is free, then US$1.99 a month." />
   <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <link rel="stylesheet" href="/assets/pages.css" />
   <style>
     /* Only what this page does differently; everything else comes from
-       /assets/pages.css. Same family as /partners/. Shop links go to the
-       Fourthwall shop tagged utm_campaign=magazine-issue01 (Issue 01) or
-       utm_campaign=magazine-membership (the Join buttons). */
-    :root { --max-content: 900px; }
+       /assets/pages.css. Laid out like a magazine store's product page
+       (Pocketmags, Mehdi 2026-11-16): the cover and a purchase panel on top,
+       then what membership includes, the issue, and back issues. Shop links
+       go to the Fourthwall shop tagged utm_campaign=magazine-membership (both
+       plans) or utm_campaign=magazine-issue01 (Issue 01). */
+    :root { --max-content: 980px; }
     nav { -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); background: rgba(15,23,42,0.9); border-bottom: 1px solid var(--border); height: 60px; position: sticky; top: 0; z-index: 100; }
-    h1 { font-size: 40px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 14px; }
-    section { margin-bottom: 56px; }
-    .section-label { color: var(--text-muted); display: block; font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 18px; text-transform: uppercase; }
-    h2 { color: var(--text); font-size: 24px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 16px; }
+    h1 { font-size: 44px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.08; }
+    h2 { color: var(--text); font-size: 26px; font-weight: 750; letter-spacing: -0.5px; line-height: 1.25; margin-bottom: 8px; }
     h3 { color: var(--text); font-size: 17px; font-weight: 700; margin-bottom: 6px; }
-    p { color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; }
+    p { color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; }
     p:last-child { margin-bottom: 0; }
     strong { color: var(--text); }
     a { color: var(--link); text-decoration-color: var(--link-underline); text-decoration-thickness: 1px; text-decoration: underline; text-underline-offset: 3px; transition: color 0.15s ease, text-decoration-color 0.15s ease; }
     a:hover { color: var(--link-hover); text-decoration-color: currentColor; }
     a.btn-primary, a.btn-primary:hover { color: #02200C; text-decoration: none; }
-    .issue { align-items: start; display: grid; gap: 32px; grid-template-columns: 300px 1fr; }
-    .issue img { border-radius: 10px; border: 1px solid var(--border); display: block; height: auto; width: 100%; }
-    .issue ul { color: var(--text-muted); display: flex; flex-direction: column; gap: 6px; line-height: 1.55; margin: 0 0 22px; padding-left: 20px; }
-    .issue .buyone { font-size: 15px; margin: 14px 0 0; }
-    .issue .fineprint { color: var(--text-dim); font-size: 14px; margin-top: 12px; }
+    [id] { scroll-margin-top: 76px; }
+    .sr-only { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; white-space: nowrap; width: 1px; }
+    .nowrap { white-space: nowrap; }
+    .wrap { margin: 0 auto; max-width: calc(var(--max-content) + 80px); padding: 0 40px; }
+    .sect { padding: 64px 0; }
+    .tint { background: rgba(255,255,255,0.025); border-bottom: 1px solid var(--border); border-top: 1px solid var(--border); }
+    .section-label { color: var(--text-muted); display: block; font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 14px; text-transform: uppercase; }
+    .sect-sub { font-size: 16px; margin-bottom: 26px; max-width: 640px; }
+    .check-list li::before { background: rgba(34,197,94,0.15) url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%2322C55E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center; border-radius: 50%; border: 1px solid rgba(34,197,94,0.3); content: ''; flex-shrink: 0; height: 18px; margin-top: 3px; width: 18px; }
+
+    /* THE PRODUCT BLOCK: cover left, title and purchase panel right. On phones
+       the two columns dissolve (display: contents) into one grid: a cover
+       thumbnail beside the title, then the panel, then the notes. */
+    .product { background: radial-gradient(ellipse 60% 90% at 75% 0%, rgba(34,197,94,0.07) 0%, transparent 60%), var(--bg); border-bottom: 1px solid var(--border); padding: 52px 0 64px; }
+    .pb { align-items: start; display: grid; gap: 56px; grid-template-columns: 360px minmax(0, 1fr); }
+    .pb-media { display: flex; flex-direction: column; gap: 16px; }
+    /* One link: the cover and its "Look inside" pill. The pill sits under the
+       cover so it hides none of the cover lines; on a phone's thumbnail it
+       rides on the cover instead. */
+    .cover { align-items: center; display: flex; flex-direction: column; gap: 14px; position: relative; text-decoration: none; }
+    .cover-img { border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 24px 60px rgba(0,0,0,0.45); display: block; overflow: hidden; width: 100%; }
+    .cover-img img { display: block; height: auto; width: 100%; }
+    .cover:focus-visible { outline: none; }
+    .cover:focus-visible .cover-img { outline: 2px solid var(--link); outline-offset: 3px; }
+    .look-inside { align-items: center; background: var(--bg-card); border-radius: 100px; border: 1px solid var(--border-bright); color: var(--text); display: inline-flex; font-size: 14px; font-weight: 650; gap: 8px; line-height: 1.2; min-height: 44px; padding: 10px 20px; transition: border-color 0.15s, background 0.15s; white-space: nowrap; }
+    .cover:hover .look-inside { background: var(--bg-card-hover); border-color: rgba(34,197,94,0.6); }
+    .pb-notes { display: flex; flex-direction: column; gap: 8px; }
+    .pb-note { align-items: flex-start; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border); display: flex; font-size: 14px; gap: 10px; line-height: 1.5; margin: 0; padding: 12px 14px; }
+    .pb-note svg { color: var(--text-muted); flex: none; margin-top: 2px; }
+    .pb-tagline { color: var(--text); font-size: 19px; font-weight: 600; line-height: 1.4; margin: 12px 0 6px; }
+    .pb-issue { color: var(--text-muted); font-size: 14px; margin-bottom: 0; }
+    .pb-desc { font-size: 16px; line-height: 1.65; margin: 16px 0 24px; }
+
+    /* THE PURCHASE PANEL. Native radios in a fieldset, so arrow keys, focus
+       and labels work as in any form. CSS :has() shows the button and the
+       renewal line of the checked option: no script, and the button follows
+       the radio even when the browser restores it on Back. A browser without
+       :has() keeps the fallback below: no radios, a plain link in each card,
+       every renewal line under the cards. */
+    .buy-options { border: 0; display: flex; flex-direction: column; gap: 10px; margin: 0; min-width: 0; padding: 0; }
+    .opt { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border-bright); }
+    .opt-card { align-items: center; display: grid; gap: 4px 16px; grid-template-columns: minmax(0, 1fr) auto; padding: 16px 18px; }
+    .opt input { display: none; }
+    .opt-name { align-items: center; color: var(--text); display: flex; flex-wrap: wrap; font-size: 17px; font-weight: 700; gap: 4px 10px; line-height: 1.35; }
+    .opt-badge { background: rgba(34,197,94,0.14); border-radius: 100px; border: 1px solid rgba(34,197,94,0.45); color: var(--accent-green); font-size: 12px; font-weight: 700; line-height: 1.4; padding: 2px 10px; white-space: nowrap; }
+    .opt-sub { color: var(--text-muted); display: block; font-size: 14px; line-height: 1.45; margin-top: 3px; }
+    .opt-price { color: var(--text); font-size: 22px; font-variant-numeric: tabular-nums; font-weight: 800; letter-spacing: -0.4px; line-height: 1.15; text-align: right; white-space: nowrap; }
+    .opt-price small { color: var(--text-muted); display: block; font-size: 13px; font-weight: 600; letter-spacing: 0; margin-top: 2px; }
+    .buy .opt-link { font-size: 14px; margin: 0 18px 16px; padding: 9px 16px; }
+    .buy .cta { display: none; font-size: 16px; justify-content: center; margin-top: 16px; min-height: 52px; padding: 14px 22px; width: 100%; }
+    .cta svg { transition: transform 0.15s; }
+    .cta:hover svg { transform: translateX(3px); }
+    .buy-fine { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
+    .buy-fine p { font-size: 14px; line-height: 1.55; margin: 0; }
+    .buy-fine .fine-tax { color: var(--text-dim); font-size: 13px; }
+    @supports selector(:has(*)) {
+      .opt { transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s; }
+      .opt:hover { border-color: rgba(255,255,255,0.3); }
+      .opt-card { cursor: pointer; grid-template-columns: auto minmax(0, 1fr) auto; }
+      .opt input { -webkit-appearance: none; appearance: none; background: transparent; border-radius: 50%; border: 2px solid rgba(255,255,255,0.4); cursor: pointer; display: grid; height: 22px; margin: 0; place-content: center; width: 22px; }
+      .opt input::before { background: var(--accent-green); border-radius: 50%; content: ''; height: 10px; transform: scale(0); transition: transform 0.12s ease; width: 10px; }
+      .opt input:checked { border-color: var(--accent-green); }
+      .opt input:checked::before { transform: scale(1); }
+      .opt input:focus { outline: none; }
+      .opt:has(input:checked) { background: rgba(34,197,94,0.08); border-color: var(--accent-green); box-shadow: inset 0 0 0 1px var(--accent-green); }
+      .opt:has(input:checked) .opt-price { color: var(--accent-green); }
+      .opt:has(input:focus-visible) { outline: 2px solid var(--link); outline-offset: 3px; }
+      .buy .opt-link, .buy .fine-plan, .fine-name { display: none; }
+      .buy:has(#plan-monthly:checked) .cta-monthly, .buy:has(#plan-yearly:checked) .cta-yearly, .buy:has(#plan-single:checked) .cta-single { display: flex; }
+      .buy:has(#plan-monthly:checked) .fine-monthly, .buy:has(#plan-yearly:checked) .fine-yearly, .buy:has(#plan-single:checked) .fine-single { display: block; }
+    }
+    @media (forced-colors: active) {
+      .opt input { -webkit-appearance: auto; appearance: auto; }
+    }
+
+    /* MEMBERSHIP INCLUDES: four items in one strip, like a store's trust row. */
+    .includes { background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border); display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; padding: 0; }
+    .includes li { align-items: flex-start; display: flex; gap: 14px; padding: 22px 20px; }
+    .includes li + li { border-left: 1px solid var(--border); }
+    .inc-icon { background: rgba(34,197,94,0.12); border-radius: 50%; color: var(--accent-green); display: grid; flex: none; height: 40px; place-items: center; width: 40px; }
+    .includes strong { display: block; font-size: 16px; line-height: 1.35; margin-bottom: 4px; }
+    .includes .inc-sub { color: var(--text-muted); display: block; font-size: 14px; line-height: 1.5; }
+
+    /* LESSON POSTERS: three in a row; on phones a row that scrolls sideways. */
+    .posters { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); list-style: none; margin: 0; padding: 0; }
+    .posters a { border-radius: 10px; border: 1px solid var(--border); display: block; overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
+    .posters a:hover { border-color: rgba(34,197,94,0.4); transform: translateY(-2px); }
+    .posters img { display: block; height: auto; width: 100%; }
+    .posters strong { display: block; font-size: 16px; line-height: 1.35; margin-top: 12px; }
+    .posters .cap { color: var(--text-muted); display: block; font-size: 14px; line-height: 1.45; margin-top: 2px; }
+
+    /* INSIDE ISSUE 01 */
+    .contents { column-gap: 40px; columns: 2; list-style: none; margin: 14px 0 40px; padding: 0; }
+    .contents li { border-bottom: 1px solid var(--border); break-inside: avoid; color: var(--text); font-size: 16px; line-height: 1.5; padding: 11px 0 11px 24px; position: relative; }
+    .contents li::before { background: var(--accent-green); border-radius: 50%; content: ''; height: 7px; left: 4px; position: absolute; top: 20px; width: 7px; }
+    .pages-head { color: var(--text); font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+    .pages-sub { font-size: 15px; margin-bottom: 16px; }
     .pages { display: grid; gap: 24px 14px; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; padding: 0; }
     .pages a { color: var(--text); display: block; text-decoration: none; }
     .pages img { border-radius: 8px; border: 1px solid var(--border); display: block; height: auto; transition: border-color 0.2s, transform 0.2s; width: 100%; }
     .pages a:hover img { border-color: rgba(34,197,94,0.35); transform: translateY(-2px); }
     .pages span { color: var(--text-muted); display: block; font-size: 14px; line-height: 1.4; margin-top: 8px; }
-    .plans { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
-    .plan { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); display: flex; flex-direction: column; padding: 22px; }
-    .plan .price { color: var(--text); font-size: 28px; font-variant-numeric: tabular-nums; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2; margin-bottom: 10px; }
-    .plan .price small { color: var(--text-muted); font-size: 15px; font-weight: 600; letter-spacing: 0; }
-    .plan-head { align-items: center; display: flex; flex-wrap: wrap; gap: 4px 10px; margin-bottom: 6px; }
-    .plan-head h3 { margin-bottom: 0; }
-    .plan-badge { background: rgba(34,197,94,0.14); border-radius: 100px; border: 1px solid rgba(34,197,94,0.45); color: var(--accent-green); font-size: 12px; font-weight: 700; line-height: 1.4; padding: 2px 10px; white-space: nowrap; }
-    .plan p { flex: 1; font-size: 16px; line-height: 1.6; }
-    .plan .btn-primary { justify-content: center; margin-top: 16px; text-align: center; }
-    .plan .soon { color: var(--text-dim); font-size: 14px; margin-top: 16px; }
-    .note { font-size: 15px; margin-top: 14px; }
-    .nowrap { white-space: nowrap; }
+
+    /* BACK ISSUES: one card per issue, rendered from the back_issues list. */
+    .issues { display: grid; gap: 28px 18px; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); list-style: none; margin: 0; padding: 0; }
+    .issue-card { position: relative; }
+    .issue-card img { border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 10px 24px rgba(0,0,0,0.35); display: block; height: auto; transition: border-color 0.2s, transform 0.2s; width: 100%; }
+    .issue-card:hover img { border-color: rgba(34,197,94,0.45); transform: translateY(-2px); }
+    .issue-tag { color: var(--accent-green); display: block; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; line-height: 1.4; margin-top: 12px; text-transform: uppercase; }
+    .issue-name { color: var(--text); display: block; font-size: 15px; font-weight: 700; line-height: 1.35; margin-top: 12px; }
+    .issue-tag + .issue-name { margin-top: 3px; }
+    .issue-row { align-items: center; display: flex; gap: 10px; justify-content: space-between; margin-top: 6px; }
+    .issue-price { color: var(--text-muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+    a.issue-buy { background: rgba(34,197,94,0.12); border-radius: 100px; border: 1px solid rgba(34,197,94,0.45); color: var(--accent-green); font-size: 14px; font-weight: 700; padding: 5px 14px; text-decoration: none; }
+    /* The whole card opens the issue; the Buy link is its one tab stop. */
+    a.issue-buy::after { content: ''; inset: 0; position: absolute; }
+    a.issue-buy:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+    /* PLAIN TERMS AND QUESTIONS */
     .rules { display: flex; flex-direction: column; gap: 10px; list-style: none; margin: 0; padding: 0; }
     .rules li { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); color: var(--text-muted); font-size: 16px; line-height: 1.65; padding: 16px 22px; }
     .rules li strong { display: block; margin-bottom: 2px; }
+    .note { font-size: 15px; margin-top: 14px; }
     .faq { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
     .faq div { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); padding: 20px 22px; }
     .faq p { font-size: 16px; line-height: 1.65; }
     /* With an odd number of questions, the last card spans the row instead of leaving a gap. */
     .faq div:last-child:nth-child(odd) { grid-column: 1 / -1; }
-    .cta-band .plain { color: var(--text-muted); font-size: 14px; margin: 12px auto 0; }
-    /* The three plan cards sit side by side only at full width: "Start your
-       free month" needs about 200px inside a card, and narrower cards wrap it. */
+
+    /* THE CTA BAND follows the panel's choice, by the same :has() rule. */
+    .sect.end { padding-top: 0; }
+    .cta-band { margin-top: 0; }
+    .cta-band .btn-primary { font-size: 16px; padding: 14px 26px; }
+    .cta-band .plain { color: var(--text-muted); font-size: 14px; margin: 14px auto 0; max-width: 560px; }
+    .end-plan { display: none; }
+    .end-monthly { display: block; }
+    @supports selector(:has(*)) {
+      .mag:has(#plan-yearly:checked) .end-monthly, .mag:has(#plan-single:checked) .end-monthly { display: none; }
+      .mag:has(#plan-yearly:checked) .end-yearly, .mag:has(#plan-single:checked) .end-single { display: block; }
+    }
+
     @media (max-width: 899px) {
-      .plans { grid-template-columns: 1fr; }
+      .pb { gap: 36px; grid-template-columns: 260px minmax(0, 1fr); }
+      h1 { font-size: 36px; letter-spacing: -1px; }
+      .includes { grid-template-columns: repeat(2, 1fr); }
+      .includes li + li { border-left: 0; }
+      .includes li:nth-child(even) { border-left: 1px solid var(--border); }
+      .includes li:nth-child(n+3) { border-top: 1px solid var(--border); }
     }
     @media (max-width: 760px) {
-      .issue { grid-template-columns: 1fr; }
-      .issue img { max-width: 320px; }
       .pages { grid-template-columns: repeat(2, 1fr); }
       .faq { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      h1 { font-size: 30px; }
-      .page-wrap { padding: 40px 20px 80px; }
-      .page-hero h1 { letter-spacing: -1.5px; }
+      .wrap { padding: 0 20px; }
+      .sect { padding: 48px 0; }
+      .product { padding: 24px 0 44px; }
+      .pb { gap: 16px; grid-template-areas: "cover head" "desc desc" "buy buy" "notes notes"; grid-template-columns: 124px minmax(0, 1fr); }
+      .pb-media, .pb-info { display: contents; }
+      .cover { align-self: start; grid-area: cover; }
+      .cover-img { border-radius: 8px; box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
+      .pb-head { align-self: center; grid-area: head; }
+      .pb-desc { grid-area: desc; margin: 0; }
+      .buy { grid-area: buy; min-width: 0; }
+      .pb-notes { grid-area: notes; margin-top: 8px; }
+      .look-inside { -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); background: rgba(15,23,42,0.85); border-color: rgba(255,255,255,0.22); bottom: 8px; font-size: 12px; gap: 5px; left: 50%; min-height: 0; padding: 5px 10px; position: absolute; transform: translateX(-50%); }
+      .look-inside svg { height: 13px; width: 13px; }
+      .pb-issue .sep { display: none; }
+      .pb-issue span { display: block; }
+      h1 { font-size: 27px; letter-spacing: -0.8px; line-height: 1.12; }
+      h2 { font-size: 22px; }
+      .pb-tagline { font-size: 15px; margin: 6px 0 4px; }
+      .pb-issue { font-size: 13px; line-height: 1.45; }
+      .opt-card { gap: 4px 12px; padding: 14px; }
+      .opt-name { font-size: 16px; }
+      .opt-price { font-size: 19px; }
+      .buy .opt-link { margin: 0 14px 14px; }
+      .contents { columns: 1; }
+      .posters { grid-auto-columns: 64%; grid-auto-flow: column; grid-template-columns: none; margin: 0 -20px; overflow-x: auto; overscroll-behavior-x: contain; padding: 0 20px 6px; scroll-padding: 0 20px; scroll-snap-type: x mandatory; gap: 14px; }
+      .posters li { scroll-snap-align: start; }
+      .issues { grid-template-columns: repeat(2, 1fr); gap: 24px 14px; }
+      .rules li { padding: 14px 18px; }
+      .cta-band { padding: 26px 20px; }
+    }
+    @media (max-width: 560px) {
+      .includes { grid-template-columns: 1fr; }
+      .includes li:nth-child(even) { border-left: 0; }
+      .includes li + li { border-top: 1px solid var(--border); }
+      .includes li { padding: 18px; }
+    }
+    @media (max-width: 380px) {
+      .pb { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; }
+      h1 { font-size: 25px; }
+      .opt-card { gap: 4px 10px; padding: 14px 12px; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .pages img { transition: none; }
-      .pages a:hover img { transform: none; }
+      html { scroll-behavior: auto; }
+      .opt, .opt input::before, .cta svg, .posters a, .pages img, .issue-card img { transition: none; }
+      .posters a:hover, .pages a:hover img, .issue-card:hover img, .cta:hover svg { transform: none; }
     }
   </style>
   <script type="application/ld+json">
@@ -142,97 +291,165 @@
     </div>
   </nav>
 
-  <div class="page-hero">
-    <span class="page-label">Magazine</span>
-    <h1>FlightDecide Magazine</h1>
-    <p class="page-sub">A magazine for pilots, from student to commercial. Each issue takes our most-watched lessons and opens them up with deep-dive pages, charts and real photos. It ends with Hangar talk, what pilots argued about lately, and a short quiz. About 20 pages, as a PDF for your phone, tablet or printer.</p>
-  </div>
+  <main class="mag">
 
-  <div class="page-wrap">
-
-    <section>
-      <span class="section-label">Issue 01 &middot; December 2026</span>
-      <div class="issue">
-        <img src="/assets/magazine/issue-01-cover.jpg" alt="Cover of FlightDecide Magazine Issue 01: a high-altitude jet over mountains, headlined The Coffin Corner" width="720" height="900">
-        <div>
-          <h2>Your first month is free, with Issue 01</h2>
-          <p>Join monthly and your first month costs nothing: Issue 01 and our lesson sheets are in your members area right away. Then US$1.99 a month. Cancel before the month ends and you pay nothing.</p>
-          <ul>
-            <li>The coffin corner: where a jet's stall speed meets its Mach limit</li>
-            <li>The stall warning that runs on air</li>
-            <li>Why losing the left engine is worse</li>
-            <li>Carburetor ice on a hot day</li>
-            <li>Engine out at 400 feet: the turn back</li>
-            <li>Hangar talk: what pilots argued about</li>
-            <li>Eight questions to check yourself, with the answers</li>
-          </ul>
-          <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Start your free month</a>
-          <p class="buyone"><a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Or buy Issue 01 on its own for US$2.99</a></p>
-          <p class="fineprint">21 pages &middot; PDF, 13 MB &middot; 8 by 10 inch pages that print on US Letter</p>
+  <section class="product" aria-label="FlightDecide Magazine Issue 01">
+    <div class="wrap pb">
+      <div class="pb-media">
+        <a class="cover" href="#inside">
+          <span class="cover-img"><img src="/assets/magazine/issue-01-cover.jpg" alt="Cover of FlightDecide Magazine Issue 01: a high-altitude jet over mountains, headlined The Coffin Corner" width="720" height="900" fetchpriority="high"></span>
+          <span class="look-inside"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg>Look inside</span>
+        </a>
+        <div class="pb-notes">
+          <p class="pb-note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Already a member? <a href="https://flightdecide-shop.fourthwall.com/supporters/sign_in">Log in on our shop</a></span></p>
+          <p class="pb-note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.5" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c1-3.5 3.5-5.5 6.5-5.5s5.5 2 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c1.7.8 2.9 2.5 3.5 5.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Already a FlightDecide subscriber on Facebook? Every issue is part of your subscription, in the subscriber group the day it comes out.</span></p>
         </div>
       </div>
-    </section>
 
-    <section>
-      <span class="section-label">Look inside</span>
-      <h2>Four pages from Issue 01</h2>
+      <div class="pb-info">
+        <div class="pb-head">
+          <h1>FlightDecide Magazine</h1>
+          <p class="pb-tagline">For pilots, from student to commercial</p>
+          <p class="pb-issue"><span>Issue 01 &middot; December 2026</span><span class="sep"> &middot; </span><span>21 pages &middot; PDF</span></p>
+        </div>
+        <p class="pb-desc">Each issue takes our most-watched lessons and opens them up with deep-dive pages, charts and real photos. It ends with Hangar talk and a short quiz.</p>
+
+        <div class="buy" id="buy">
+          <fieldset class="buy-options" role="radiogroup">
+            <legend class="sr-only">Choose how to buy</legend>
+            <div class="opt">
+              <label class="opt-card" for="plan-monthly">
+                <input type="radio" name="plan" id="plan-monthly" value="monthly" checked aria-describedby="fine-monthly">
+                <span class="opt-text">
+                  <span class="opt-name">Monthly <span class="opt-badge">First month free</span></span>
+                  <span class="opt-sub">Full membership, <span class="nowrap">month to month</span></span>
+                </span>
+                <span class="opt-price">US$1.99 <small>a month</small></span>
+              </label>
+              <a class="btn-primary opt-link" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Start your free month</a>
+            </div>
+            <div class="opt">
+              <label class="opt-card" for="plan-yearly">
+                <input type="radio" name="plan" id="plan-yearly" value="yearly" aria-describedby="fine-yearly">
+                <span class="opt-text">
+                  <span class="opt-name">Yearly <span class="opt-badge">Save 17%</span></span>
+                  <span class="opt-sub">17% less than 12 <span class="nowrap">monthly payments</span></span>
+                </span>
+                <span class="opt-price">US$19.82 <small>a year</small></span>
+              </label>
+              <a class="btn-primary opt-link" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Join yearly</a>
+            </div>
+            <div class="opt">
+              <label class="opt-card" for="plan-single">
+                <input type="radio" name="plan" id="plan-single" value="single" aria-describedby="fine-single">
+                <span class="opt-text">
+                  <span class="opt-name">This issue only</span>
+                  <span class="opt-sub">Issue 01 as a PDF, <span class="nowrap">yours to keep</span></span>
+                </span>
+                <span class="opt-price">US$2.99 <small>one time</small></span>
+              </label>
+              <a class="btn-primary opt-link" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01</a>
+            </div>
+          </fieldset>
+          <a class="btn-primary cta cta-monthly" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Start your free month <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn-primary cta cta-yearly" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Join yearly <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn-primary cta cta-single" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="buy-fine">
+            <p class="fine-plan fine-monthly" id="fine-monthly"><strong class="fine-name">Monthly: </strong>Renews monthly; cancel any time. A card is needed, and US$1.99 is charged when your free month ends unless you cancel.</p>
+            <p class="fine-plan fine-yearly" id="fine-yearly"><strong class="fine-name">Yearly: </strong>Issue 01 is included. On our shop, choose the yearly plan. It renews yearly, and we email you a week before.</p>
+            <p class="fine-plan fine-single" id="fine-single"><strong class="fine-name">This issue only: </strong>One payment, and nothing renews. The PDF downloads right after checkout.</p>
+            <p class="fine-tax">Prices in US dollars. Tax or VAT is added at checkout where it applies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect tint" aria-labelledby="includes-h">
+    <div class="wrap">
+      <h2 id="includes-h">Membership includes</h2>
+      <p class="sect-sub">Monthly and yearly members get the same things.</p>
+      <ul class="includes">
+        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M9 15l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Every issue, the day it's out</strong><span class="inc-sub">A week before it goes on sale.</span></span></li>
+        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 12.5l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Every back issue</strong><span class="inc-sub">For as long as you're a member.</span></span></li>
+        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 7h7M8.5 11h7M8.5 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><strong>Lesson posters</strong><span class="inc-sub">One page per lesson, to print or keep on a tablet.</span></span></li>
+        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="7" width="19" height="10" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="7.5" cy="12" r="2.6" fill="currentColor"/></svg></span><span><strong>Cancel online, any time</strong><span class="inc-sub">From your account on our shop.</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sect" aria-labelledby="posters-h">
+    <div class="wrap">
+      <h2 id="posters-h">Lesson posters</h2>
+      <p class="sect-sub">Here are three. Open one to see it full size.</p>
+      <ul class="posters">
+        <li><a href="/assets/magazine/poster-magnetos-full.jpg"><img src="/assets/magazine/poster-magnetos.jpg" alt="Lesson poster on magnetos: a labelled view of the engine from above, how a spark is made in four steps, and the run-up check" width="600" height="776" loading="lazy"></a><strong>Magnetos</strong><span class="cap">How your engine makes its own sparks</span></li>
+        <li><a href="/assets/magazine/poster-spin-autorotation-full.jpg"><img src="/assets/magazine/poster-spin-autorotation.jpg" alt="Lesson poster on the spin: why autorotation keeps it turning, the base-to-final trap, and spin recovery in a Cessna 172" width="600" height="776" loading="lazy"></a><strong>Spin and autorotation</strong><span class="cap">How a stall turns into a spin</span></li>
+        <li><a href="/assets/magazine/poster-compass-errors-full.jpg"><img src="/assets/magazine/poster-compass-errors.jpg" alt="Lesson poster on compass turns: rolling out early toward north and late toward south, the dip, acceleration errors and three mistakes to avoid" width="600" height="776" loading="lazy"></a><strong>Compass errors</strong><span class="cap">Undershoot north, overshoot south</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sect tint" id="inside" aria-labelledby="inside-h">
+    <div class="wrap">
+      <h2 id="inside-h">Inside Issue 01</h2>
+      <ul class="contents">
+        <li>The coffin corner: where a jet's stall speed meets its Mach limit</li>
+        <li>The stall warning that runs on air</li>
+        <li>Why losing the left engine is worse</li>
+        <li>Carburetor ice on a hot day</li>
+        <li>Engine out at 400 feet: the turn back</li>
+        <li>Hangar talk: what pilots argued about</li>
+        <li>Eight questions to check yourself, with the answers</li>
+      </ul>
+      <h3 class="pages-head">Look inside</h3>
+      <p class="pages-sub">Four pages from the issue. Open a page to see it full size.</p>
       <ul class="pages">
         <li><a href="/assets/magazine/issue-01-p02-full.jpg"><img src="/assets/magazine/issue-01-p02.jpg" alt="Issue 01 contents page" width="540" height="675" loading="lazy"><span>The contents</span></a></li>
         <li><a href="/assets/magazine/issue-01-p05-full.jpg"><img src="/assets/magazine/issue-01-p05.jpg" alt="Cover story page: how each edge of a jet's speed window moves, with a chart" width="540" height="675" loading="lazy"><span>Cover story: the speed window</span></a></li>
         <li><a href="/assets/magazine/issue-01-p08-full.jpg"><img src="/assets/magazine/issue-01-p08.jpg" alt="Feature page: Lose the left one, a Diamond DA42 flying on one engine" width="540" height="675" loading="lazy"><span>Feature: why losing the left engine is worse</span></a></li>
         <li><a href="/assets/magazine/issue-01-p18-full.jpg"><img src="/assets/magazine/issue-01-p18.jpg" alt="Hangar talk page: every airport on hold, with air traffic controllers at work" width="540" height="675" loading="lazy"><span>Hangar talk: every airport on hold</span></a></li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <span class="section-label">Every issue</span>
-      <h2>Subscribe, or buy one issue</h2>
-      <div class="plans">
-        <div class="plan">
-          <div class="plan-head">
-            <h3>Monthly</h3>
-            <span class="plan-badge">First month free</span>
-          </div>
-          <div class="price">US$1.99 <small>a month</small></div>
-          <p>Your first month is free. Then every issue the day it is out, plus lesson sheets between issues and every back issue while you are a member. Renews every month until you cancel.</p>
-          <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Start your free month</a>
-        </div>
-        <div class="plan">
-          <h3>Yearly</h3>
-          <div class="price">US$19.82 <small>a year</small></div>
-          <p>Issue 01 included. Everything in monthly, for 17% less than 12 monthly payments. Renews every year until you cancel, and we email you a week before.</p>
-          <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Join yearly</a>
-        </div>
-        <div class="plan">
-          <h3>One issue</h3>
-          <div class="price">US$2.99</div>
-          <p>A single issue, yours to keep. Each issue goes on sale a week after members get it.</p>
-          <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01</a>
-        </div>
-      </div>
-      <p class="note"><strong>Membership is open.</strong> The monthly plan's first month is free, so Issue 01 and the lesson sheets cost nothing to start. We charge US$1.99 when the free month ends unless you cancel first. Issue 02 is planned for early December. Both buttons open our shop, where you pick monthly or yearly.</p>
-      <p class="note">Prices are in US dollars. Sales tax or VAT is added at checkout where it applies, and you see it before you pay. Already a FlightDecide subscriber on Facebook? Every issue is part of your subscription, in the subscriber group on the day it comes out.</p>
-    </section>
+  <section class="sect" id="back-issues" aria-labelledby="back-h">
+    <div class="wrap">
+      <h2 id="back-h">Back issues</h2>
+      <p class="sect-sub">Back issues appear here as new issues come out. Members get every one.</p>
+      <ul class="issues">
+        <li class="issue-card">
+          <img src="/assets/magazine/issue-01-cover.jpg" alt="Issue 01 cover" width="720" height="900" loading="lazy">
+          <span class="issue-tag">Latest</span>
+          <span class="issue-name">Issue 01 &middot; <span class="nowrap">December 2026</span></span>
+          <span class="issue-row"><span class="issue-price">US$2.99</span><a class="issue-buy" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy<span class="sr-only"> Issue 01</span></a></span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <section>
+  <section class="sect tint" aria-labelledby="terms-h">
+    <div class="wrap">
       <span class="section-label">Our promise</span>
-      <h2>Plain terms</h2>
+      <h2 id="terms-h">Plain terms</h2>
       <ul class="rules">
         <li><strong>A full refund within 30 days.</strong>Not what you expected? Email us within 30 days of paying and we refund you in full, no questions asked.</li>
-        <li><strong>Cancel online, any time.</strong>Cancel from your account on our shop. You keep your membership until the end of your current month or year, so if you only want one year, you can cancel the day you join.</li>
+        <li><strong>Cancel online, any time.</strong>You keep your membership until the end of your current month or year, so if you only want one year, you can cancel the day you join.</li>
         <li><strong>A free first month means free.</strong>Cancel online before your free month ends and you are never charged.</li>
         <li><strong>No surprise renewals.</strong>Yearly members get an email a week before they renew, and everyone gets 30 days' notice before any price change.</li>
         <li><strong>A charge you will recognize.</strong>Our shop and checkout run on Fourthwall, which also handles sales tax. Card statements show a charge that starts with <span class="nowrap">FW * FlightDecide</span>.</li>
-        <li><strong>Honest about what is inside.</strong>Each issue starts from our free explainers and reels, redesigned for reading and expanded with new deep-dive pages, charts and real photos. Hangar talk and the quiz are only in the magazine.</li>
+        <li><strong>Honest about what is inside.</strong>Each issue starts from our free explainers and reels, redesigned for reading and expanded with new pages. Hangar talk and the quiz are only in the magazine.</li>
         <li><strong>Checked, and corrected in the open.</strong>Every lesson is checked against the FAA handbooks and, when it is about one aircraft, that aircraft's own manual. If we get something wrong, the next issue says so, and so does this page.</li>
         <li><strong>Your email, used for your order.</strong>It delivers what you bought, and members get a notice when each new issue is posted. We don't add you to a mailing list, and we never sell your address.</li>
       </ul>
       <p class="note"><strong>Corrections:</strong> none so far.</p>
-    </section>
+    </div>
+  </section>
 
-    <section>
+  <section class="sect" aria-labelledby="faq-h">
+    <div class="wrap">
       <span class="section-label">Questions</span>
-      <h2>Before you buy</h2>
+      <h2 id="faq-h">Before you buy</h2>
       <div class="faq">
         <div>
           <h3>Is this the FlightDecide app?</h3>
@@ -240,7 +457,7 @@
         </div>
         <div>
           <h3>What do I get?</h3>
-          <p>A PDF of about 20 pages. The pages are 8 by 10 inches: easy to read on a tablet, and they print on US Letter. On a phone, zoom in to read. It downloads right after checkout.</p>
+          <p>A PDF of about 20 pages; Issue 01 has 21 pages and is 13 MB. The pages are 8 by 10 inches: easy to read on a tablet, and they print on US Letter. On a phone, zoom in to read.</p>
         </div>
         <div>
           <h3>How do members get each issue?</h3>
@@ -248,7 +465,7 @@
         </div>
         <div>
           <h3>When do new issues come out?</h3>
-          <p>When each issue is ready, not on a fixed monthly date. Issue 02 is planned for early December. Members get each issue the day it is out, plus lesson sheets between issues, and single issues go on sale a week later.</p>
+          <p>When each issue is ready, not on a fixed monthly date. Issue 02 is planned for early December, and new lesson posters come out between issues.</p>
         </div>
         <div>
           <h3>What happens if I cancel?</h3>
@@ -256,7 +473,7 @@
         </div>
         <div>
           <h3>Is it the same as your free explainers?</h3>
-          <p>Partly, and we say so. Each lesson starts from one of our explainers or reels, then gets more pages, charts and photos. Hangar talk and the quiz are new in every issue.</p>
+          <p>Partly, and we say so. Each lesson starts from one of our explainers or reels, then gets more pages, charts and photos.</p>
         </div>
         <div>
           <h3>Can I share it?</h3>
@@ -271,16 +488,34 @@
           <p>Email <a href="mailto:support@flightdecide.com?subject=Magazine%20question">support@flightdecide.com</a> and a person from the FlightDecide team will answer.</p>
         </div>
       </div>
-    </section>
-
-    <div class="cta-band">
-      <h2>Start with Issue 01</h2>
-      <p>Your first month is free, then US$1.99 a month. Cancel any time.</p>
-      <a class="btn-primary" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Start your free month</a>
-      <p class="plain"><a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Or buy Issue 01 for US$2.99</a>. Questions first? support@flightdecide.com</p>
     </div>
+  </section>
 
-  </div>
+  <section class="sect end" aria-labelledby="end-h">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2 id="end-h">Start with Issue 01</h2>
+        <div class="end-plan end-monthly">
+          <p>Your first month is free, then US$1.99 a month. Cancel any time.</p>
+          <a class="btn-primary cta" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Start your free month <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join yearly for US$19.82</a>, or <a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">buy Issue 01 for US$2.99</a>.</p>
+        </div>
+        <div class="end-plan end-yearly">
+          <p>US$19.82 a year, 17% less than 12 monthly payments. Issue 01 is included.</p>
+          <a class="btn-primary cta" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Join yearly <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">start with a free month</a> (then <span class="nowrap">US$1.99 a month</span>), or <a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">buy Issue 01 for US$2.99</a>.</p>
+        </div>
+        <div class="end-plan end-single">
+          <p>Issue 01 as a PDF for US$2.99, yours to keep.</p>
+          <a class="btn-primary cta" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">start with a free month</a> (then <span class="nowrap">US$1.99 a month</span>), or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join yearly for US$19.82</a>.</p>
+        </div>
+        <p class="plain">Questions first? <a href="mailto:support@flightdecide.com?subject=Magazine%20question">support@flightdecide.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  </main>
 
   <footer class="site-footer">
     <ul class="footer-links">
