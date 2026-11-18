@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FlightDecide Magazine, for Pilots</title>
-  <meta name="description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Members also get lesson sheets. Membership from US$1.99 a month, Issue 01 included." />
+  <meta name="description" content="Membership brings every issue of FlightDecide Magazine, plus a one-page lesson sheet for every new lesson." />
   <link rel="canonical" href="https://flightdecide.com/magazine/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/favicon-48.png" />
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="FlightDecide" />
   <meta property="og:title" content="FlightDecide Magazine, for Pilots" />
-  <meta property="og:description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Members also get lesson sheets. Membership from US$1.99 a month, Issue 01 included." />
+  <meta property="og:description" content="Membership brings every issue of FlightDecide Magazine, plus a one-page lesson sheet for every new lesson." />
   <meta property="og:url" content="https://flightdecide.com/magazine/" />
   <meta property="og:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <meta property="og:image:width" content="1200" />
@@ -23,14 +23,17 @@
   <meta property="og:image:alt" content="FlightDecide: an advisory go/no-go second opinion for GA pilots" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FlightDecide Magazine, for Pilots" />
-  <meta name="twitter:description" content="A magazine for pilots, from student to commercial: our most-watched lessons opened up with deep-dive pages, charts and real photos, plus Hangar talk. Members also get lesson sheets. Membership from US$1.99 a month, Issue 01 included." />
+  <meta name="twitter:description" content="Membership brings every issue of FlightDecide Magazine, plus a one-page lesson sheet for every new lesson." />
   <meta name="twitter:image" content="https://flightdecide.com/assets/brand/og-image.png" />
   <link rel="stylesheet" href="/assets/pages.css" />
   <style>
     /* Only what this page does differently; everything else comes from
        /assets/pages.css. Laid out like a magazine store's product page
        (Pocketmags, Mehdi 2026-11-16): the cover and a purchase panel on top,
-       then what membership includes, the issue, and back issues. Shop links
+       then what membership includes, the issue, and back issues. Membership
+       is two things, every issue and a lesson sheet for every new lesson
+       (Mehdi 2026-11-17), so the top says both before any price and
+       "Membership includes" previews both side by side. Shop links
        go to the Fourthwall shop tagged utm_campaign=magazine-membership (both
        plans) or utm_campaign=magazine-issue01 (Issue 01). */
     :root { --max-content: 980px; }
@@ -61,8 +64,7 @@
     .pb { align-items: start; display: grid; gap: 56px; grid-template-columns: 360px minmax(0, 1fr); }
     .pb-media { display: flex; flex-direction: column; gap: 16px; }
     /* One link: the cover and its "Look inside" pill. The pill sits under the
-       cover so it hides none of the cover lines; on a phone's thumbnail it
-       rides on the cover instead. */
+       cover so it hides none of the cover lines, on a phone's thumbnail too. */
     .cover { align-items: center; display: flex; flex-direction: column; gap: 14px; position: relative; text-decoration: none; }
     .cover-img { border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 24px 60px rgba(0,0,0,0.45); display: block; overflow: hidden; width: 100%; }
     .cover-img img { display: block; height: auto; width: 100%; }
@@ -75,7 +77,11 @@
     .pb-note svg { color: var(--text-muted); flex: none; margin-top: 2px; }
     .pb-tagline { color: var(--text); font-size: 19px; font-weight: 600; line-height: 1.4; margin: 12px 0 6px; }
     .pb-issue { color: var(--text-muted); font-size: 14px; margin-bottom: 0; }
-    .pb-desc { font-size: 16px; line-height: 1.65; margin: 16px 0 24px; }
+    .pb-desc { margin: 18px 0 24px; }
+    .pb-desc p { font-size: 16px; line-height: 1.65; margin-bottom: 10px; }
+    /* The key line: what membership brings, said before any price. */
+    .pb-desc .pb-key { border-left: 3px solid var(--accent-green); color: var(--text); font-size: 20px; font-weight: 650; line-height: 1.45; margin-bottom: 14px; padding-left: 14px; }
+    .pb-desc p:last-child { margin-bottom: 0; }
 
     /* THE PURCHASE PANEL. Native radios in a fieldset, so arrow keys, focus
        and labels work as in any form. CSS :has() shows the button and the
@@ -119,21 +125,27 @@
       .opt input { -webkit-appearance: auto; appearance: auto; }
     }
 
-    /* MEMBERSHIP INCLUDES: four items in one strip, like a store's trust row. */
-    .includes { background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border); display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; padding: 0; }
-    .includes li { align-items: flex-start; display: flex; gap: 14px; padding: 22px 20px; }
-    .includes li + li { border-left: 1px solid var(--border); }
+    /* MEMBERSHIP INCLUDES: its two halves side by side, each with a preview:
+       the magazine (the cover and a page) and the lesson sheets (three). The
+       columns run 1 : 1.41 so two 4:5 pages and three sheets come out the
+       same height. Below 761px the halves stack. */
+    .halves { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.41fr); }
+    .half { background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border); display: flex; flex-direction: column; padding: 24px; }
+    .prev { display: grid; gap: 12px; list-style: none; margin: 0 0 22px; padding: 0; }
+    .prev-mag { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .prev-sheets { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .prev a { border-radius: 8px; border: 1px solid var(--border); display: block; overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
+    .prev a:hover { border-color: rgba(34,197,94,0.4); transform: translateY(-2px); }
+    .prev a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    .prev img { display: block; height: auto; width: 100%; }
+    .prev .cap { color: var(--text-muted); display: block; font-size: 13px; line-height: 1.4; margin-top: 8px; }
+    .half h3 { align-items: center; display: flex; font-size: 20px; gap: 12px; letter-spacing: -0.2px; margin-bottom: 10px; }
     .inc-icon { background: rgba(34,197,94,0.12); border-radius: 50%; color: var(--accent-green); display: grid; flex: none; height: 40px; place-items: center; width: 40px; }
-    .includes strong { display: block; font-size: 16px; line-height: 1.35; margin-bottom: 4px; }
-    .includes .inc-sub { color: var(--text-muted); display: block; font-size: 14px; line-height: 1.5; }
-
-    /* LESSON SHEETS: three in a row; on phones a row that scrolls sideways. */
-    .sheets { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); list-style: none; margin: 0; padding: 0; }
-    .sheets a { border-radius: 10px; border: 1px solid var(--border); display: block; overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
-    .sheets a:hover { border-color: rgba(34,197,94,0.4); transform: translateY(-2px); }
-    .sheets img { display: block; height: auto; width: 100%; }
-    .sheets strong { display: block; font-size: 16px; line-height: 1.35; margin-top: 12px; }
-    .sheets .cap { color: var(--text-muted); display: block; font-size: 14px; line-height: 1.45; margin-top: 2px; }
+    .half .half-lead { color: var(--text); font-size: 16px; line-height: 1.55; margin-bottom: 14px; }
+    .check-list { display: flex; flex-direction: column; gap: 8px; list-style: none; margin: 0; padding: 0; }
+    .check-list li { color: var(--text-muted); display: flex; font-size: 15px; gap: 10px; line-height: 1.5; }
+    .half .half-more { font-size: 15px; margin-top: auto; padding-top: 16px; }
+    .includes-foot { font-size: 15px; margin-top: 18px; }
 
     /* INSIDE ISSUE 01 */
     .contents { column-gap: 40px; columns: 2; list-style: none; margin: 14px 0 40px; padding: 0; }
@@ -188,14 +200,14 @@
     @media (max-width: 899px) {
       .pb { gap: 36px; grid-template-columns: 260px minmax(0, 1fr); }
       h1 { font-size: 36px; letter-spacing: -1px; }
-      .includes { grid-template-columns: repeat(2, 1fr); }
-      .includes li + li { border-left: 0; }
-      .includes li:nth-child(even) { border-left: 1px solid var(--border); }
-      .includes li:nth-child(n+3) { border-top: 1px solid var(--border); }
+      .half { padding: 20px; }
     }
     @media (max-width: 760px) {
       .pages { grid-template-columns: repeat(2, 1fr); }
       .faq { grid-template-columns: 1fr; }
+      .halves { gap: 14px; grid-template-columns: minmax(0, 1fr); }
+      /* Stacked, the two pages would grow taller than the three sheets. */
+      .prev-mag { max-width: 440px; }
     }
     @media (max-width: 640px) {
       .wrap { padding: 0 20px; }
@@ -209,8 +221,10 @@
       .pb-desc { grid-area: desc; margin: 0; }
       .buy { grid-area: buy; min-width: 0; }
       .pb-notes { grid-area: notes; margin-top: 8px; }
-      .look-inside { -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); background: rgba(15,23,42,0.85); border-color: rgba(255,255,255,0.22); bottom: 8px; font-size: 12px; gap: 5px; left: 50%; min-height: 0; padding: 5px 10px; position: absolute; transform: translateX(-50%); }
-      .look-inside svg { height: 13px; width: 13px; }
+      .cover { gap: 8px; }
+      .look-inside { font-size: 13px; gap: 6px; justify-content: center; min-height: 36px; padding: 7px 10px; width: 100%; }
+      .look-inside svg { height: 14px; width: 14px; }
+      .pb-desc .pb-key { font-size: 17px; padding-left: 12px; }
       .pb-issue .sep { display: none; }
       .pb-issue span { display: block; }
       h1 { font-size: 27px; letter-spacing: -0.8px; line-height: 1.12; }
@@ -222,27 +236,25 @@
       .opt-price { font-size: 19px; }
       .buy .opt-link { margin: 0 14px 14px; }
       .contents { columns: 1; }
-      .sheets { grid-auto-columns: 64%; grid-auto-flow: column; grid-template-columns: none; margin: 0 -20px; overflow-x: auto; overscroll-behavior-x: contain; padding: 0 20px 6px; scroll-padding: 0 20px; scroll-snap-type: x mandatory; gap: 14px; }
-      .sheets li { scroll-snap-align: start; }
+      .half { padding: 18px 16px; }
+      .half h3 { font-size: 19px; }
+      .prev { gap: 10px; margin-bottom: 18px; }
+      .prev .cap { font-size: 12px; margin-top: 6px; }
+      .check-list li { font-size: 14px; }
       .issues { grid-template-columns: repeat(2, 1fr); gap: 24px 14px; }
       .rules li { padding: 14px 18px; }
       .cta-band { padding: 26px 20px; }
     }
-    @media (max-width: 560px) {
-      .includes { grid-template-columns: 1fr; }
-      .includes li:nth-child(even) { border-left: 0; }
-      .includes li + li { border-top: 1px solid var(--border); }
-      .includes li { padding: 18px; }
-    }
     @media (max-width: 380px) {
       .pb { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; }
+      .look-inside { font-size: 12px; gap: 5px; padding: 7px 6px; }
       h1 { font-size: 25px; }
       .opt-card { gap: 4px 10px; padding: 14px 12px; }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .opt, .opt input::before, .cta svg, .sheets a, .pages img, .issue-card img { transition: none; }
-      .sheets a:hover, .pages a:hover img, .issue-card:hover img, .cta:hover svg { transform: none; }
+      .opt, .opt input::before, .cta svg, .prev a, .pages img, .issue-card img { transition: none; }
+      .prev a:hover, .pages a:hover img, .issue-card:hover img, .cta:hover svg { transform: none; }
     }
   </style>
   <script type="application/ld+json">
@@ -310,7 +322,10 @@
           <p class="pb-tagline">For pilots, from student to commercial</p>
           <p class="pb-issue"><span>Issue 01 &middot; December 2026</span><span class="sep"> &middot; </span><span>21 pages &middot; PDF</span></p>
         </div>
-        <p class="pb-desc">Each issue takes our most-watched lessons and opens them up with deep-dive pages, charts and real photos. It ends with Hangar talk and a short quiz.</p>
+        <div class="pb-desc">
+          <p class="pb-key">Membership brings every issue of FlightDecide Magazine, plus a <span class="nowrap">one-page</span> lesson sheet for every new lesson.</p>
+          <p>Each issue takes our most-watched lessons and opens them up with deep-dive pages, charts and real photos. It ends with Hangar talk and a short quiz.</p>
+        </div>
 
         <div class="buy" id="buy">
           <fieldset class="buy-options" role="radiogroup">
@@ -320,7 +335,7 @@
                 <input type="radio" name="plan" id="plan-monthly" value="monthly" checked aria-describedby="fine-monthly">
                 <span class="opt-text">
                   <span class="opt-name">Monthly <span class="opt-badge">Issue 01 included</span></span>
-                  <span class="opt-sub">Full membership, <span class="nowrap">month to month</span></span>
+                  <span class="opt-sub">Every issue, plus a lesson sheet for every new lesson.</span>
                 </span>
                 <span class="opt-price">US$1.99 <small>a month</small></span>
               </label>
@@ -330,8 +345,8 @@
               <label class="opt-card" for="plan-yearly">
                 <input type="radio" name="plan" id="plan-yearly" value="yearly" aria-describedby="fine-yearly">
                 <span class="opt-text">
-                  <span class="opt-name">Yearly <span class="opt-badge">Save 17%</span></span>
-                  <span class="opt-sub">17% less than 12 <span class="nowrap">monthly payments</span></span>
+                  <span class="opt-name">Yearly <span class="opt-badge">Save 17%</span> <span class="opt-badge">Issue 01 included</span></span>
+                  <span class="opt-sub">Every issue, plus a lesson sheet for every new lesson.</span>
                 </span>
                 <span class="opt-price">US$19.82 <small>a year</small></span>
               </label>
@@ -342,7 +357,7 @@
                 <input type="radio" name="plan" id="plan-single" value="single" aria-describedby="fine-single">
                 <span class="opt-text">
                   <span class="opt-name">This issue only</span>
-                  <span class="opt-sub">Issue 01 as a PDF, <span class="nowrap">yours to keep</span></span>
+                  <span class="opt-sub">Issue 01 as a PDF, <span class="nowrap">yours to keep.</span> Lesson sheets come with membership.</span>
                 </span>
                 <span class="opt-price">US$2.99 <small>one time</small></span>
               </label>
@@ -354,7 +369,7 @@
           <a class="btn-primary cta cta-single" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="buy-fine">
             <p class="fine-plan fine-monthly" id="fine-monthly"><strong class="fine-name">Monthly: </strong>Renews monthly. Cancel any time from your account.</p>
-            <p class="fine-plan fine-yearly" id="fine-yearly"><strong class="fine-name">Yearly: </strong>Issue 01 is included. On our shop, choose the yearly plan. It renews yearly, and we email you a week before.</p>
+            <p class="fine-plan fine-yearly" id="fine-yearly"><strong class="fine-name">Yearly: </strong>17% less than 12 monthly payments. On our shop, choose the yearly plan. It renews yearly, and we email you a week before.</p>
             <p class="fine-plan fine-single" id="fine-single"><strong class="fine-name">This issue only: </strong>One payment, and nothing renews. The PDF downloads right after checkout.</p>
             <p class="fine-tax">Prices in US dollars. Tax or VAT is added at checkout where it applies.</p>
           </div>
@@ -363,28 +378,40 @@
     </div>
   </section>
 
-  <section class="sect tint" aria-labelledby="includes-h">
+  <section class="sect" aria-labelledby="includes-h">
     <div class="wrap">
       <h2 id="includes-h">Membership includes</h2>
-      <p class="sect-sub">Monthly and yearly members get the same things.</p>
-      <ul class="includes">
-        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M9 15l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Every issue, the day it's out</strong><span class="inc-sub">A week before it goes on sale.</span></span></li>
-        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 12.5l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Every back issue</strong><span class="inc-sub">For as long as you're a member.</span></span></li>
-        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 7h7M8.5 11h7M8.5 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><strong>Lesson sheets</strong><span class="inc-sub">One page per lesson, to print or keep on a tablet.</span></span></li>
-        <li><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="7" width="19" height="10" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="7.5" cy="12" r="2.6" fill="currentColor"/></svg></span><span><strong>Cancel online, any time</strong><span class="inc-sub">From your account on our shop.</span></span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="sect" aria-labelledby="sheets-h">
-    <div class="wrap">
-      <h2 id="sheets-h">Lesson sheets</h2>
-      <p class="sect-sub">A one-page poster for each lesson, to print or keep on your tablet. Members get every one.</p>
-      <ul class="sheets">
-        <li><a href="/assets/magazine/poster-magnetos-full.jpg"><img src="/assets/magazine/poster-magnetos.jpg" alt="Lesson sheet on magnetos: a labelled view of the engine from above, how a spark is made in four steps, and the run-up check" width="600" height="776" loading="lazy"></a><strong>Magnetos</strong><span class="cap">How your engine makes its own sparks</span></li>
-        <li><a href="/assets/magazine/poster-spin-autorotation-full.jpg"><img src="/assets/magazine/poster-spin-autorotation.jpg" alt="Lesson sheet on the spin: why autorotation keeps it turning, the base-to-final trap, and spin recovery in a Cessna 172" width="600" height="776" loading="lazy"></a><strong>Spin and autorotation</strong><span class="cap">How a stall turns into a spin</span></li>
-        <li><a href="/assets/magazine/poster-compass-errors-full.jpg"><img src="/assets/magazine/poster-compass-errors.jpg" alt="Lesson sheet on compass turns: rolling out early toward north and late toward south, the dip, acceleration errors and three mistakes to avoid" width="600" height="776" loading="lazy"></a><strong>Compass errors</strong><span class="cap">Undershoot north, overshoot south</span></li>
-      </ul>
+      <p class="sect-sub">Monthly and yearly members get the magazine and the lesson sheets.</p>
+      <div class="halves">
+        <div class="half">
+          <ul class="prev prev-mag">
+            <li><a href="/assets/magazine/issue-01-cover.jpg"><img src="/assets/magazine/issue-01-cover.jpg" alt="Cover of Issue 01, headlined The Coffin Corner" width="720" height="900" loading="lazy"></a><span class="cap">Issue 01</span></li>
+            <li><a href="/assets/magazine/issue-01-p05-full.jpg"><img src="/assets/magazine/issue-01-p05.jpg" alt="Cover story page: how each edge of a jet's speed window moves, with a chart" width="540" height="675" loading="lazy"></a><span class="cap">A page inside</span></li>
+          </ul>
+          <h3><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 12.5l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>The magazine</h3>
+          <p class="half-lead">Every issue of FlightDecide Magazine, Issue&nbsp;01 included.</p>
+          <ul class="check-list">
+            <li>Each new issue the day it's out, a week before it goes on sale</li>
+            <li>Every back issue, for as long as you're a&nbsp;member</li>
+          </ul>
+          <p class="half-more"><a href="#inside">See inside Issue 01</a></p>
+        </div>
+        <div class="half">
+          <ul class="prev prev-sheets">
+            <li><a href="/assets/magazine/poster-magnetos-full.jpg"><img src="/assets/magazine/poster-magnetos.jpg" alt="Lesson sheet on magnetos: a labelled view of the engine from above, how a spark is made in four steps, and the run-up check" width="600" height="776" loading="lazy"></a><span class="cap">Magnetos</span></li>
+            <li><a href="/assets/magazine/poster-spin-autorotation-full.jpg"><img src="/assets/magazine/poster-spin-autorotation.jpg" alt="Lesson sheet on the spin: why autorotation keeps it turning, the base-to-final trap, and spin recovery in a Cessna 172" width="600" height="776" loading="lazy"></a><span class="cap">Spin and autorotation</span></li>
+            <li><a href="/assets/magazine/poster-compass-errors-full.jpg"><img src="/assets/magazine/poster-compass-errors.jpg" alt="Lesson sheet on compass turns: rolling out early toward north and late toward south, the dip, acceleration errors and three mistakes to avoid" width="600" height="776" loading="lazy"></a><span class="cap">Compass turns</span></li>
+          </ul>
+          <h3><span class="inc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 7h7M8.5 11h7M8.5 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>Lesson sheets</h3>
+          <p class="half-lead">A <span class="nowrap">one-page</span> summary of each new lesson, to print or keep on your tablet.</p>
+          <ul class="check-list">
+            <li>A new sheet with every new lesson</li>
+            <li>Every sheet so far, for as long as you're a&nbsp;member</li>
+            <li>A PDF that prints on US Letter, in the members area of our shop</li>
+          </ul>
+        </div>
+      </div>
+      <p class="includes-foot">Cancel online, any time, from your account on our&nbsp;shop.</p>
     </div>
   </section>
 
@@ -435,7 +462,7 @@
         <li><strong>Cancel online, any time.</strong>You keep your membership until the end of your current month or year, so if you only want one year, you can cancel the day you join.</li>
         <li><strong>No surprise renewals.</strong>Yearly members get an email a week before they renew, and everyone gets 30 days' notice before any price change.</li>
         <li><strong>A charge you will recognize.</strong>Our shop and checkout run on Fourthwall, which also handles sales tax. Card statements show a charge that starts with <span class="nowrap">FW * FlightDecide</span>.</li>
-        <li><strong>Honest about what is inside.</strong>Each issue starts from our free explainers and reels, redesigned for reading and expanded with new pages. Hangar talk and the quiz are only in the magazine.</li>
+        <li><strong>Honest about what is inside.</strong>Each issue starts from the explainers and reels we post for everyone, redesigned for reading and expanded with new pages. Hangar talk and the quiz are only in the magazine.</li>
         <li><strong>Checked, and corrected in the open.</strong>Every lesson is checked against the FAA handbooks and, when it is about one aircraft, that aircraft's own manual. If we get something wrong, the next issue says so, and so does this page.</li>
         <li><strong>Your email, used for your order.</strong>It delivers what you bought, and members get a notice when each new issue is posted. We don't add you to a mailing list, and we never sell your address.</li>
       </ul>
@@ -453,7 +480,19 @@
           <p>No. The FlightDecide app is our flight decision tool on the App Store. FlightDecide Magazine is a separate PDF magazine from the same team, sold through our own shop.</p>
         </div>
         <div>
-          <h3>What do I get?</h3>
+          <h3>What do I get as a member?</h3>
+          <p>Every issue of FlightDecide Magazine, Issue&nbsp;01 included, plus a <span class="nowrap">one-page</span> lesson sheet for every new lesson. New issues arrive the day they're out, and every back issue and every sheet so far stay open to you while you're a&nbsp;member.</p>
+        </div>
+        <div>
+          <h3>What are lesson sheets?</h3>
+          <p>A <span class="nowrap">one-page</span> summary of each new lesson, to print or keep on your tablet. Our lessons are the short reels we post, each with an explainer on our site. Each new lesson's sheet goes up in the members area of our shop as a PDF that prints on US Letter.</p>
+        </div>
+        <div>
+          <h3>Does a single issue come with lesson&nbsp;sheets?</h3>
+          <p>No. Issue&nbsp;01 on its own is US$2.99. Lesson sheets come with membership.</p>
+        </div>
+        <div>
+          <h3>What is an issue like?</h3>
           <p>A PDF of about 20 pages; Issue 01 has 21 pages and is 13 MB. The pages are 8 by 10 inches: easy to read on a tablet, and they print on US Letter. On a phone, zoom in to read.</p>
         </div>
         <div>
@@ -462,15 +501,15 @@
         </div>
         <div>
           <h3>When do new issues come out?</h3>
-          <p>When each issue is ready, not on a fixed monthly date. Issue 02 is planned for early December, and new lesson sheets come out between issues.</p>
+          <p>When each issue is ready, not on a fixed date. Issue 02 is planned for early December. Lesson sheets don't wait for an issue: each new lesson brings its own sheet.</p>
         </div>
         <div>
           <h3>What happens if I cancel?</h3>
           <p>The members area closes at the end of your current month or year. PDFs you already downloaded are yours to keep.</p>
         </div>
         <div>
-          <h3>Is it the same as your free explainers?</h3>
-          <p>Partly, and we say so. Each lesson starts from one of our explainers or reels, then gets more pages, charts and photos.</p>
+          <h3>Is it the same as your explainers?</h3>
+          <p>Partly, and we say so. Each feature starts from one of our lessons and its explainer, then gets more pages, charts and photos.</p>
         </div>
         <div>
           <h3>Can I share it?</h3>
@@ -493,19 +532,19 @@
       <div class="cta-band">
         <h2 id="end-h">Start with Issue 01</h2>
         <div class="end-plan end-monthly">
-          <p>US$1.99 a month, Issue 01 included. Cancel any time.</p>
+          <p>Every issue, plus a lesson sheet for every new lesson. US$1.99 a month, Issue&nbsp;01 included. Cancel any time.</p>
           <a class="btn-primary cta" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Join monthly <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join yearly for US$19.82</a>, or <a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">buy Issue 01 for US$2.99</a>.</p>
+          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join yearly for&nbsp;US$19.82</a>, or <a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">buy Issue&nbsp;01 for&nbsp;US$2.99</a>.</p>
         </div>
         <div class="end-plan end-yearly">
-          <p>US$19.82 a year, 17% less than 12 monthly payments. Issue 01 is included.</p>
+          <p>Every issue, plus a lesson sheet for every new lesson. US$19.82 a year, 17% less than 12 monthly payments. Issue&nbsp;01 is included.</p>
           <a class="btn-primary cta" href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">Join yearly <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join monthly for <span class="nowrap">US$1.99 a month</span></a>, or <a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">buy Issue 01 for US$2.99</a>.</p>
+          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join monthly for <span class="nowrap">US$1.99 a month</span></a>, or <a href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">buy Issue&nbsp;01 for&nbsp;US$2.99</a>.</p>
         </div>
         <div class="end-plan end-single">
-          <p>Issue 01 as a PDF for US$2.99, yours to keep.</p>
+          <p>Issue&nbsp;01 on its own is US$2.99. Lesson sheets come with membership.</p>
           <a class="btn-primary cta" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join monthly for <span class="nowrap">US$1.99 a month</span></a>, or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join yearly for US$19.82</a>.</p>
+          <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join monthly for <span class="nowrap">US$1.99 a month</span></a>, or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join yearly for&nbsp;US$19.82</a>.</p>
         </div>
         <p class="plain">Questions first? <a href="mailto:support@flightdecide.com?subject=Magazine%20question">support@flightdecide.com</a></p>
       </div>
