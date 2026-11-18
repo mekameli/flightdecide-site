@@ -280,7 +280,7 @@
     <p>Many AWOS/ASOS broadcasts announce density altitude directly ("density altitude two thousand eight hundred") whenever it is well above field elevation. Listen for it at the end of the broadcast. If it isn't announced, pull the two numbers you need from the METAR: the altimeter setting (the group starting with "A", so <code>A2992</code> is 29.92 inHg) and the temperature (the first half of the temperature/dew-point group, so <code>25/12</code> is 25 °C). Combine those with field elevation in the calculator above and you have it in seconds.</p>
 
     <h2>Bonus: the cloud base estimate</h2>
-    <p>Because this calculator already has the temperature and dew point, it shows the classic cumulus cloud-base estimate when you enter both: a rising parcel cools at about 3 &deg;C per 1,000 ft while its dew point falls much more slowly, so the temperature/dew-point spread closes at about 2.5 &deg;C per 1,000 ft and <strong>base AGL &asymp; spread &divide; 2.5 &times; 1,000</strong>. A 25 &deg;C day with a 13 &deg;C dew point suggests bases near 4,800 ft AGL. It only works for convective (cumuliform) cloud, and it is an estimate; the METARs and PIREPs win.</p>
+    <p>Because this calculator already has the temperature and dew point, it shows the classic cumulus cloud-base estimate when you enter both: a rising parcel cools at about 3 &deg;C per 1,000 ft while its dew point falls much more slowly, so the temperature/dew-point spread closes at about 4.4 &deg;F (2.4 &deg;C) per 1,000 ft and <strong>base AGL &asymp; spread in &deg;F &divide; 4.4 &times; 1,000</strong>. A 25 &deg;C day with a 13 &deg;C dew point suggests bases near 4,900 ft AGL. It only works for convective (cumuliform) cloud, and it is an estimate; the METARs and PIREPs win.</p>
 
     <h2>Rules of thumb per 1,000 ft of density altitude</h2>
     <p>Exact numbers belong to your POH, but these directional effects hold for typical normally aspirated GA airplanes:</p>
@@ -530,9 +530,9 @@
 
         const cloudTile = $('tile-cloud');
         if (!isNaN(dew) && dew <= oat) {
-          // convective cloud base: spread converges ~2.5 °C per 1,000 ft (the CX-3 uses 4.4 °F)
+          // convective cloud base: the spread closes 4.4 °F per 1,000 ft (FAA PHAK ch. 12, the CX-3 and the app)
           cloudTile.style.display = '';
-          $('cloud-val').textContent = fmt(Math.max((oat - dew) / 2.5 * 1000, 0));
+          $('cloud-val').textContent = fmt(Math.max((oat - dew) * 1.8 / 4.4 * 1000, 0));
         } else {
           cloudTile.style.display = 'none';
         }
