@@ -66,17 +66,15 @@
       font-weight: 700;
       font-size: 15px;
     }
-    /* The app icon's mark (assets/brand/logo-mark.svg, traced from the App Store icon). */
     .nav-logo-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 7px;
-      box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
-      display: block;
-      flex: none;
-    }
-    @media (max-width: 360px) {
-      .nav-logo-icon { width: 24px; height: 24px; border-radius: 6px; }
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
     }
     .nav-back {
       color: var(--text-muted);
@@ -283,22 +281,17 @@
 .nav-site:hover, .nav-site:focus-visible { color: var(--text); }
 /* Only the first link takes the free space; the rest sit beside it. */
 .nav-site + .nav-site { margin-left: 0; }
-/* Phones and small tablets: the logo, three site links and the longest back
-   label ("All Comparisons") need about 580px with a Mac's fonts, and two site
-   links about 490px. Below that the bar drops the last ones and keeps the
-   first; the footer and the home menu still carry the others. */
-@media (max-width: 600px) {
-  .nav-site ~ .nav-site ~ .nav-site { display: none; }
-}
-@media (max-width: 500px) {
-  .nav-site ~ .nav-site { display: none; }
-}
-/* Narrow phones: the longest back label wrapped at 360px. Tighter type and
-   padding keep it on one line down to 360. */
+/* Narrow phones: three items now share the bar, and the longest back label
+   ("All Comparisons") wrapped at 360px. Tighter type and padding keep it on
+   one line down to 360. */
 @media (max-width: 400px) {
   .nav-inner { padding: 0 16px; }
   .nav-site { margin-right: 12px; font-size: 13px; }
   .nav-back { font-size: 13px; white-space: nowrap; }
+  /* A second site link does not fit beside the logo and the back link on a
+     360px screen. The bar keeps the first; the footer and the home menu still
+     carry the other. */
+  .nav-site ~ .nav-site { display: none; }
 }
 /* site-nav:end */
   </style>
@@ -412,13 +405,14 @@
   <nav aria-label="Navigation">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <img class="nav-logo-icon" src="/assets/brand/logo-mark.svg" width="28" height="28" alt="" />
+        <span class="nav-logo-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2a1.5 1.5 0 0 0-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="white"/></svg>
+        </span>
         FlightDecide
       </a>
       <!-- site-nav:start -->
       <a href="/aircraft/" class="nav-site">Aircraft</a>
       <a href="/explainers/" class="nav-site">Explainers</a>
-      <a href="/magazine/" class="nav-site">Magazine</a>
       <!-- site-nav:end -->
       <a href="/" class="nav-back">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
@@ -671,7 +665,6 @@
       <li><a href="/learn/">Pilot Guides</a></li>
       <li><a href="/explainers/">Explainers</a></li>
       <li><a href="/aircraft/">Aircraft</a></li>
-      <li><a href="/magazine/">Magazine</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
       <li><a href="/press.html">Press</a></li>

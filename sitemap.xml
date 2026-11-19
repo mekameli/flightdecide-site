@@ -192,12 +192,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://flightdecide.com/magazine/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
   <!-- aircraft:start (managed by scripts/gen_aircraft_pages.py — do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/aircraft/</loc>
@@ -497,9 +491,18 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/what-are-left-turning-tendencies/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/what-are-left-turning-tendencies.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/imsafe-and-pave-explained/</loc>

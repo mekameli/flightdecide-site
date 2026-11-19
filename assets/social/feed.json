@@ -1,7 +1,163 @@
 {
-  "generated": "2026-11-14T15:07:44+00:00",
+  "generated": "2026-11-19T20:10:07+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-aero-left-turning",
+      "slug": "what-are-left-turning-tendencies",
+      "page": "/explainers/what-are-left-turning-tendencies/",
+      "title": "What are left-turning tendencies",
+      "headline": "Why a Cessna's nose swings left at full power, and what your right foot does about it.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "A Cessna 172 on the runway seen from behind and above, with cyan corkscrew lines of the propeller's slipstream wrapping around the fuselage to the left side of the vertical fin.",
+      "image": "/assets/social/lesson-aero-left-turning.webp",
+      "image_full": "/assets/explainers/what-are-left-turning-tendencies.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Df70MFngqFg/",
+      "posted": "2026-11-19",
+      "caption": [],
+      "teaches": [],
+      "related_text": "To the pilot, torque (the left turning tendency of the airplane) is made up of four elements: torque reaction from engine and propeller, the corkscrewing effect of the slipstream, gyroscopic action of the propeller and asymmetric loading of the propeller (P-factor) (PHAK ch 5 p 5-30). Gyroscopic action is considered more prominent in tailwheel-type aircraft and most often occurs when the tail is being raised during the takeoff roll (PHAK p 5-32). Most United States built aircraft engines rotate the propeller clockwise, as viewed from the pilot's seat (PHAK p 5-31). The high-speed rotation of the propeller gives a corkscrew or spiraling rotation to the slipstream; at high propeller speeds and low forward speed, as in takeoffs and approaches to power-on stalls, the spiral is very compact and exerts a strong sideward force on the vertical tail surface; it strikes the left side of the vertical fin and causes a yawing moment about the vertical axis; as forward speed increases the spiral elongates and becomes less effective (PHAK p 5-31 Corkscrew Effect; PHAK glossary, Spiraling slipstream). P-factor: at a high angle of attack the bite of the downward-moving blade, the right side of the propeller disc seen from the flight deck, is greater than the bite of the upward-moving blade; this moves the center of thrust to the right of the prop disc area and yaws the nose to the left; as pitch attitude is increased in the climb the center of thrust moves to the right; the unbalanced thrust reaches zero when the propeller shaft is exactly horizontal in relation to the moving air (PHAK p 5-32; AFH ch 3 Climbs). Torque reaction: as the engine parts and propeller revolve one way, an equal force tries to rotate the aircraft the other way; airborne, it acts around the longitudinal axis and tends to roll the airplane to the left (PHAK p 5-31; AFH ch 3). With the wheels on the ground during the takeoff roll, the left side is forced down, more weight is placed on the left main landing gear, which makes more ground friction, or drag, on the left tire than on the right, and a further turning moment to the left (PHAK p 5-31). The Cessna 172S engine is rated 180 BHP at 2,700 rpm (172S POH Section 1); torque in lb-ft = hp x 5,252 / rpm = 180 x 5,252 / 2,700 = 350.1, about 350 lb-ft at rated power, the same as 175 lb on the end of a 2 ft bar (175 x 2 = 350). The compensating factors are generally permanently set so that they compensate for the left-turning force at cruising speed, since most of the aircraft's operating time is at that speed (PHAK p 5-31). During glides the slipstream and P-factor effects disappear but the design compensation remains, so slight left rudder pressure is likely to be required to maintain coordinated flight (AFH ch 3 Glides). In propeller-driven airplanes at slow flight, torque, slipstream effect and P-factor may produce a strong left yaw, which requires right rudder input to maintain coordinated flight; the closer the airplane is to the 1G stall, the more right rudder pressure is required (AFH ch 5 Slow Flight). On the takeoff, the effects of engine torque and P-factor at the initial speeds tend to pull the nose to the left, and the pilot uses whatever rudder pressure is needed to correct for them; common errors are failure to anticipate the left turning tendency on initial acceleration and inadequate compensation for torque/P-factor during the initial climb, resulting in a sideslip (AFH ch 6). On the go-around the pilot applies right rudder pressure to counteract torque and P-factor (AFH ch 6). Coordinated flight is the nose yawed directly into the relative wind with the ball centered in the slip/skid indicator (AFH); with the nose yawing left uncorrected, wings level, the ball slides right and right rudder centres it. A spin occurs when at least one wing exceeds the critical angle of attack (stall) with a sideslip or yaw acting on the airplane at, or beyond, the actual stall; engine and propeller effects, including P-factor, torque, spiraling slipstream and gyroscopic precession, are among the causes of that yaw (AFH ch 5 Spins).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 3",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapters 3, 5 and 6",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "kind": "handbook",
+          "note": null,
+          "book_url": null,
+          "refs": [
+            "FAA-H-8083-3 ch 3",
+            "FAA-H-8083-3 ch 5",
+            "FAA-H-8083-3 ch 6"
+          ],
+          "parts": [
+            {
+              "label": "Chapter 3",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/04_afh_ch3.pdf"
+            },
+            {
+              "label": "Chapter 5",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/06_afh_ch5.pdf"
+            },
+            {
+              "label": "Chapter 6",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/07_afh_ch6.pdf"
+            }
+          ]
+        },
+        {
+          "ref": "Cessna 172S POH sec 1 engine and propeller",
+          "title": "Cessna 172S Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified. Sky: Kloofendal 38d Partly Cloudy (Pure Sky) by Greg Zaal, and the grass and asphalt textures (polyhaven.com), CC0.",
+      "credits_label": "Picture credits",
+      "short": "left-turning",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Push the throttle in on a Cessna 172 and hold the controls still, and the nose swings left. Pilots call it torque, but it is really four effects of the turning propeller: the spiralling slipstream, P-factor, torque reaction and gyroscopic precession.",
+            "Together they pull hardest when the power is high and the speed is low. That is when you hold right rudder to keep the nose straight.",
+            "Gyroscopic precession matters most in a tailwheel airplane as the tail comes up on the takeoff roll. It hardly shows in a nosewheel trainer like the 172, so this page follows the other three."
+          ]
+        },
+        {
+          "heading": "The corkscrew slipstream hits the tail",
+          "paragraphs": [
+            "Seen from your seat, the propeller turns clockwise, as on most US-built airplanes. It throws its air back in a corkscrew that wraps around the fuselage and strikes the left side of the vertical fin.",
+            "That sideways push sends the tail right and the nose left.",
+            "The spiral is tightest, and pushes hardest, at high propeller speed and low forward speed, as on the takeoff roll. As the airplane speeds up, the spiral stretches out and pushes less."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-are-left-turning-tendencies-slip.webp",
+            "caption": "The corkscrew of air (cyan) reaches the left side of the fin, where it builds higher pressure (amber). The amber arrow is its push on the fin, toward the airplane's right.",
+            "alt": "The tail of a Cessna 172 on the runway seen from behind and to the left, with cyan spiral lines around the fuselage, an amber glow on the left face of the vertical fin labelled Higher pressure, and an amber arrow pushing the fin toward the right."
+          }
+        },
+        {
+          "heading": "P-factor shows up in the climb",
+          "paragraphs": [
+            "Raise the nose for the climb, and the propeller disc tilts up against the air.",
+            "The blade coming down on the right side, seen from the seat, now meets the air at a bigger angle. So it takes a bigger bite than the blade going up on the left, like paddling harder on the right side of a canoe.",
+            "That moves the centre of thrust to the right of the hub, and the nose yaws left. The imbalance shrinks as the nose comes down and is zero once the propeller shaft lines up exactly with the oncoming air."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-are-left-turning-tendencies-pfactor.webp",
+            "caption": "The propeller disc seen from behind and above, nose up in the climb. The gold arrows are each blade's bite; the one on the down-going right blade is longer, and the centre of thrust (gold dot) sits right of the hub.",
+            "alt": "A see-through Cessna 172 seen from behind and above, its propeller disc drawn as a dashed circle with two gold forward arrows, the right one longer, and a gold dot to the right of the hub labelled Centre of thrust."
+          }
+        },
+        {
+          "heading": "Torque twists the airplane back",
+          "paragraphs": [
+            "The engine twists the propeller one way, and the airplane gets the same twist back the other way.",
+            "At the 172S's rated 180 horsepower and 2,700 rpm, the twist is about 350 pound-feet. That is the same as a 175-pound person standing on the end of a two-foot bar.",
+            "In the air, it tries to roll the airplane left.",
+            "On the takeoff roll the wheels stop that roll, so the twist presses the left side down instead. The left main wheel carries more weight, its tyre makes more drag than the right one, and the nose turns further left."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-are-left-turning-tendencies-runway.webp",
+            "caption": "On the runway, seen from behind and to the left: the white arrows are the load on each main wheel, longer on the left, and the short orange arrow is the left tyre's extra drag, pointing back toward us.",
+            "alt": "A Cessna 172 on the runway seen from behind and to the left, with a long white downward arrow over the left main wheel labelled Left wheel, a short one over the right main wheel, and a small orange arrow at the left tyre pointing back, labelled Extra drag."
+          }
+        },
+        {
+          "heading": "The built-in correction and two mistakes",
+          "paragraphs": [
+            "Designers build in a correction for this left pull, set for cruise, where an airplane spends most of its time. At high power and low speed it is not enough: the takeoff, the climb, slow flight and the go-around.",
+            "The first mistake is not expecting the swing as the airplane starts to accelerate. On the runway, keep the nose on the centreline with whatever rudder it takes.",
+            "The second is too little right rudder in the climb, which leaves the airplane in a sideslip. With the wings level and the nose yawing left, the ball in the slip/skid indicator slides right, so press right rudder until it is centred. The closer to the stall, the more rudder it takes, and a stall with the nose yawing is how a spin begins, here to the left.",
+            "In a power-off glide it is the other way round. The slipstream and P-factor fade but the correction stays, so a touch of left rudder may be needed to stay coordinated."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-are-left-turning-tendencies-ball.webp",
+            "caption": "In the climb over farmland, right rudder (green: the rudder's push on the tail, to the left, which swings the nose right) has brought the ball back between the two lines of the slip/skid indicator (the inset). The violet arrow is the nose's pull to the left.",
+            "alt": "A Cessna 172 climbing over farmland, seen from behind and above, with a violet arrow ahead pointing left, a green arrow at the tail pointing left labelled Right rudder, and a round inset of the slip/skid indicator showing a black ball centred between two lines in a curved white tube."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Climbing out with the wings level, the ball sits right of centre, so which rudder centres it?",
+            "2. Why does P-factor grow when you raise the nose for the climb?",
+            "3. On the takeoff roll the wheels stop the airplane from rolling, so how does torque reaction still turn the nose left?",
+            "4. In a power-off glide, which rudder may you need to stay coordinated?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Right rudder, pressed until the ball is back between the lines.",
+            "2. The down-going right blade meets the air at a bigger angle, so it takes a bigger bite and the thrust moves right.",
+            "3. It presses the left side down, so the left main wheel carries more weight and makes more drag than the right.",
+            "4. A touch of left rudder, because the built-in correction stays while the slipstream and P-factor fade."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/stall-that-turns-into-a-spin/",
+        "/explainers/going-around-power-first/",
+        "/explainers/what-is-parasite-drag/"
+      ]
+    },
     {
       "id": "adm-imsafe-pave",
       "slug": "imsafe-and-pave-explained",
