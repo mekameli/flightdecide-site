@@ -92,12 +92,13 @@
   <nav class="site-nav" aria-label="Main">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <span class="nav-logo-icon">✈</span>
+        <img class="nav-logo-icon" src="/assets/brand/logo-mark.svg" width="28" height="28" alt="" />
         FlightDecide
       </a>
       <!-- site-nav:start -->
       <a href="/aircraft/" class="nav-site">Aircraft</a>
       <a href="/explainers/" class="nav-site">Explainers</a>
+      <a href="/magazine/" class="nav-site">Magazine</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -303,6 +304,7 @@
       <li><a href="/learn/">Pilot Guides</a></li>
       <li><a href="/explainers/">Explainers</a></li>
       <li><a href="/aircraft/">Aircraft</a></li>
+      <li><a href="/magazine/">Magazine</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
       <li><a href="/press.html">Press</a></li>
@@ -348,7 +350,9 @@
   <script>
     (function () {
       const $ = (id) => document.getElementById(id);
-      const A0 = 661.4788, P0 = 29.92126, T0 = 288.15;
+      const A0 = 661.4788, T0 = 288.15;
+      // ASA's CX-3 troposphere, as the app: n = gM/(RL), T0/L in feet, P0 1,013.25 mb at 1 inHg = 1,000/29.53 mb.
+      const N = 9.80665 * 0.0289644 / (8.31432 * 0.0065), H0 = 288.15 / 0.0065 / 0.3048, P0 = 1013.25 * 29.53 / 1000;
 
       function compute() {
         const cas = parseFloat($('cas').value);
@@ -375,12 +379,12 @@
         }
 
         // pressure altitude (exact standard-atmosphere form)
-        const palt = ialt + 145442.16 * (1 - Math.pow(baro / P0, 0.190263));
+        const palt = ialt + H0 * (1 - Math.pow(baro / P0, 1 / N));
         // pressure ratio, density ratio, density altitude
-        const delta = Math.pow(1 - 6.87535e-6 * palt, 5.2559);
+        const delta = Math.pow(1 - palt / H0, N);
         const T = oat + 273.15;
         const sigma = delta / (T / T0);
-        const dalt = 145442.16 * (1 - Math.pow(sigma, 0.234969));
+        const dalt = H0 * (1 - Math.pow(sigma, 1 / (N - 1)));
         // compressible CAS -> Mach -> TAS
         const qc = P0 * (Math.pow(1 + 0.2 * Math.pow(cas / A0, 2), 3.5) - 1);
         const mach = Math.sqrt(5 * (Math.pow(qc / (delta * P0) + 1, 2 / 7) - 1));

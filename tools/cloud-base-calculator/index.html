@@ -51,7 +51,7 @@
             "name": "How do you calculate cloud base from temperature and dew point?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Estimated cumulus cloud base in feet AGL = (temperature − dew point in °C) ÷ 2.5 × 1000, which is the same as multiplying the spread by 400. A 22 °C temperature with a 9 °C dew point gives a 13 °C spread, so the estimated base is about 5,200 ft AGL. Add field elevation to get the base in MSL."
+              "text": "Estimated cumulus cloud base in feet AGL = (temperature − dew point in °F) ÷ 4.4 × 1000, the FAA's rule; in °C, multiply the spread by 409. A 22 °C temperature with a 9 °C dew point gives a 13 °C (23.4 °F) spread, so the estimated base is about 5,300 ft AGL. Add field elevation to get the base in MSL."
             }
           },
           {
@@ -108,12 +108,13 @@
   <nav class="site-nav" aria-label="Main">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <span class="nav-logo-icon">✈</span>
+        <img class="nav-logo-icon" src="/assets/brand/logo-mark.svg" width="28" height="28" alt="" />
         FlightDecide
       </a>
       <!-- site-nav:start -->
       <a href="/aircraft/" class="nav-site">Aircraft</a>
       <a href="/explainers/" class="nav-site">Explainers</a>
+      <a href="/magazine/" class="nav-site">Magazine</a>
       <!-- site-nav:end -->
       <a href="/tools/" class="nav-back">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -228,15 +229,15 @@
       <script type="application/json" id="fd-tool-params">{"slug":"cloud-base-calculator","event":"cloud-base-calculator","params":[{"name":"temp","field":"temp","type":"temperature","min":-60,"max":60},{"name":"dew","field":"dew","type":"temperature","min":-60,"max":40},{"name":"elev","field":"elev","type":"number","min":-1500,"max":15000}]}</script>
     </div>
 
-    <p class="lede"><strong>Estimated cumulus base (ft AGL) = temperature/dew point spread in °C ÷ 2.5 × 1000.</strong> A 22 °C afternoon with a 9 °C dew point has a 13 °C spread, so cumulus bases form near 5,200 ft AGL. The rule works for convective cloud built by surface heating; it says nothing about stratus, frontal cloud, or what the METAR is reporting right now.</p>
+    <p class="lede"><strong>Estimated cumulus base (ft AGL) = temperature/dew point spread in °F ÷ 4.4 × 1000.</strong> In °C, multiply the spread by 409. A 22 °C afternoon with a 9 °C dew point has a 13 °C spread, so cumulus bases form near 5,300 ft AGL. The rule works for convective cloud built by surface heating; it says nothing about stratus, frontal cloud, or what the METAR is reporting right now.</p>
 
     <h2>How the estimate works</h2>
-    <p>A parcel of air rising from the surface cools at the dry adiabatic rate, about 3 °C per 1,000 ft, while its dew point falls much more slowly, about 0.5 °C per 1,000 ft. The two converge at roughly 2.5 °C per 1,000 ft, and where they meet, the parcel saturates and cloud forms. That gives the rule:</p>
+    <p>A parcel of air rising from the surface cools at the dry adiabatic rate, about 5.4 °F (3 °C) per 1,000 ft, while its dew point falls much more slowly, about 1 °F per 1,000 ft. The two converge at about 4.4 °F (2.4 °C) per 1,000 ft, the convergence rate in the FAA's Pilot's Handbook of Aeronautical Knowledge, and where they meet, the parcel saturates and cloud forms. That gives the rule:</p>
     <ul>
-      <li><strong>Base (ft AGL)</strong> = (T &minus; T<sub>d</sub>) ÷ 2.5 × 1000, which is the spread × 400</li>
+      <li><strong>Base (ft AGL)</strong> = (T &minus; T<sub>d</sub>, in °F) ÷ 4.4 × 1000; in °C, the spread × 409</li>
       <li><strong>Base (ft MSL)</strong> = base AGL + field elevation</li>
     </ul>
-    <p>Worked example: temperature 22 °C, dew point 9 °C, field elevation 500 ft. Spread 13 °C, so the base is 13 × 400 = 5,200 ft AGL, or about 5,700 ft MSL.</p>
+    <p>Worked example: temperature 22 °C, dew point 9 °C, field elevation 500 ft. Spread 13 °C (23.4 °F), so the base is 23.4 ÷ 4.4 × 1000 = 5,300 ft AGL, or about 5,800 ft MSL.</p>
 
     <h2>Where the rule works, and where it lies to you</h2>
     <p>The formula assumes the cloud you care about is being built by thermals rising off the surface into well-mixed air. That's a fair-weather cumulus afternoon. It is <em>not</em>:</p>
@@ -248,7 +249,7 @@
     <p>Use the estimate to anticipate where cumulus will pop on a cross-country afternoon and whether you'll fit underneath. For the actual ceiling at an airport, read the METAR and the TAF; our <a href="/learn/how-to-read-a-taf/">TAF guide</a> covers the forecast groups that matter.</p>
 
     <h2>AGL vs. MSL: don't mix the two</h2>
-    <p>The spread formula produces a height above the ground under the rising air. Reported ceilings in a METAR are AGL at that station; cloud bases you plan a cruise altitude around are MSL. This calculator prints both so the conversion mistake never happens at 8,500 ft over rising terrain, where a 5,200 ft AGL base over a 500 ft valley floor becomes a much closer number over a 3,000 ft plateau.</p>
+    <p>The spread formula produces a height above the ground under the rising air. Reported ceilings in a METAR are AGL at that station; cloud bases you plan a cruise altitude around are MSL. This calculator prints both so the conversion mistake never happens at 8,500 ft over rising terrain, where a 5,300 ft AGL base over a 500 ft valley floor becomes a much closer number over a 3,000 ft plateau.</p>
 
     <h2>The freezing level, and why it's on this page</h2>
     <p>The same lapse-rate arithmetic gives a quick freezing-level estimate: the standard atmosphere cools about 2 °C per 1,000 ft, so the 0 °C level sits near <strong>surface temperature ÷ 2 × 1,000 ft above the field</strong>. A 10 °C surface puts it near 5,000 ft above field elevation. If your estimated cloud base is at or above the estimated freezing level, the cloud tops you'd climb through hold structural icing risk. Confirm against the winds and temperatures aloft forecast; real lapse rates wander a long way from standard.</p>
@@ -308,6 +309,7 @@
       <li><a href="/learn/">Pilot Guides</a></li>
       <li><a href="/explainers/">Explainers</a></li>
       <li><a href="/aircraft/">Aircraft</a></li>
+      <li><a href="/magazine/">Magazine</a></li>
       <li><a href="/guide.html">App Guide</a></li>
       <li><a href="/support.html">Support</a></li>
       <li><a href="/press.html">Press</a></li>
@@ -413,7 +415,8 @@
         }
 
         const spread = t - d;
-        const agl = spread / 2.5 * 1000;
+        // FAA PHAK ch. 12: the spread closes 4.4 °F per 1,000 ft (the CX-3 and the app use the same rule).
+        const agl = spread * 1.8 / 4.4 * 1000;
         const msl = agl + e;
         $('spread-val').textContent = (Math.round(spread * 10) / 10) + ' °C';
         $('agl-val').textContent = fmt(agl) + ' ft';

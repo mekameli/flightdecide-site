@@ -1,15 +1,16 @@
 # FlightDecide
 
 > FlightDecide is an AI-assisted go/no-go preflight decision-support app for
-> general aviation pilots (iOS; Android coming soon). It reads live METARs,
-> TAFs, winds aloft, SIGMETs, PIREPs, and NOTAMs for the planned flight
-> window, computes fuel requirements (14 CFR Part 91 VFR/IFR reserves),
-> weight and balance, and takeoff/landing performance from curated POH data,
-> then produces a scored GO / CAUTION / NO GO advisory across 8 risk
-> categories plus a plain-language AI briefing that pilots can verify
-> against the raw data. It is advisory decision support, not an official
-> weather briefing; the pilot in command retains final authority (14 CFR
-> 91.3). Not for Part 135/121 operations.
+> general aviation pilots (iOS). It reads live METARs, TAFs, winds aloft,
+> SIGMETs, PIREPs, and NOTAMs for the planned flight window, computes fuel
+> requirements (14 CFR Part 91 VFR/IFR reserves), weight and balance, and
+> takeoff/landing performance from curated POH data, then produces a scored
+> GO / CAUTION / NO GO advisory across 8 risk categories, laid out by area
+> (weather, terrain, airspace, aircraft, fuel) with the deciding area named,
+> plus a plain-language AI briefing that pilots can verify against the raw
+> data. It is advisory decision support, not an official weather briefing;
+> the pilot in command retains final authority (14 CFR 91.3). Not for
+> Part 135/121 operations.
 
 Key facts:
 - Platform: iPhone (iOS 17+). App Store: https://apps.apple.com/app/flightdecide/id6761793626
@@ -167,6 +168,7 @@ result" button writes such a link.
   onboarding to daily go/no-go habits.
 - [Interactive Demo](https://flightdecide.com/demo.html): in-browser sample
   briefing showing a scored verdict.
+- [FlightDecide Magazine](https://flightdecide.com/magazine/): a magazine for pilots, from student to commercial. Every issue, plus a lesson sheet for every new lesson, from US$1.99 a month.
 - [Support / FAQ](https://flightdecide.com/support.html): how it works,
   supported aircraft, data sources, IFR use, privacy.
 - [Press Kit](https://flightdecide.com/press.html): brand assets and facts.
