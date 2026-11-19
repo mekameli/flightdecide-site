@@ -249,7 +249,7 @@
       <script type="application/json" id="fd-tool-params">{"slug":"density-altitude-calculator","event":"density-altitude-calculator","params":[{"name":"elev","field":"elev","type":"number","min":-1000,"max":15000},{"name":"altim","field":"altim","type":"altimeter","min":27,"max":32},{"name":"temp","field":"oat","type":"temperature","min":-60,"max":60},{"name":"dew","field":"dew","type":"temperature","min":-60,"max":40}]}</script>
     </div>
 
-    <p class="lede"><strong>Pressure altitude ≈ field elevation + (29.92 − altimeter setting) × 1,000 (this calculator uses the exact standard-atmosphere form). Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to a density altitude around 8,000 ft. Your airplane takes off and climbs as if the airport moved 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
+    <p class="lede"><strong>Pressure altitude ≈ field elevation + (29.92 − altimeter setting) × 1,000 (this calculator uses the exact standard-atmosphere form). Density altitude ≈ pressure altitude + 120 × (OAT − ISA temperature).</strong> A 5,000-ft airport at 30 °C with the altimeter at 29.92 works out to about 8,000 ft by the rule of thumb, 7,802 ft computed exactly. Your airplane takes off and climbs as if the airport sat nearly 3,000 feet higher. Run your numbers below, then check the POH at the density altitude, not the field elevation.</p>
 
     <h2>What density altitude actually is</h2>
     <p>Density altitude is pressure altitude corrected for non-standard temperature: the altitude in the standard atmosphere at which the air would be as thin as it is right now at your airport. Your wing, propeller, and normally aspirated engine do not care about the number painted on the airport sign; they care about air density. When the air is hot, the airplane performs as if the airport were much higher, even though your altimeter still reads field elevation on the ramp.</p>
@@ -258,16 +258,16 @@
       <li><strong>Pressure altitude</strong> ≈ field elevation + (29.92 − altimeter setting) × 1,000, roughly 1,000 ft per inch. A low-pressure day (29.42) adds about 500 ft; a high-pressure day (30.42) subtracts about 500 ft. This calculator uses the exact standard-atmosphere form, which stays within about a hundred feet of the rule of thumb across the normal altimeter range.</li>
       <li><strong>Density altitude</strong> ≈ pressure altitude + 120 × (OAT − ISA temp), where <strong>ISA temp</strong> = 15 − 2 × (pressure altitude ÷ 1,000) °C. Every degree warmer than standard adds roughly 120 ft.</li>
     </ul>
-    <p>The density-altitude step above is the standard rule-of-thumb formula from the FAA handbooks (120 ft per degree). For pressure altitude this calculator uses the exact standard-atmosphere equation rather than the 1,000-ft-per-inch approximation, so it agrees with the <a href="/tools/true-airspeed-calculator/">true airspeed calculator</a> and the app. A Koch chart or E6B may still read slightly differently, so treat the density-altitude number as a close estimate, not a precise answer.</p>
+    <p>The density-altitude step above is the standard rule-of-thumb formula from the FAA handbooks (120 ft per degree), good for mental math. This calculator computes density altitude exactly, from the air density, as an E6-B flight computer does, and the exact standard-atmosphere equation for pressure altitude too, so its answer can differ from the rule of thumb by a few hundred feet, lower on hot days.</p>
 
     <h2>Worked example: 5,000 ft and 30 °C</h2>
     <p>Say you're departing a 5,000-ft-elevation airport on a summer afternoon: altimeter 29.92, temperature 30 °C.</p>
     <ul>
       <li>Pressure altitude = 5,000 + (29.92 − 29.92) × 1,000 = <strong>5,000 ft</strong></li>
       <li>ISA temp at 5,000 ft = 15 − 2 × 5 = <strong>+5 °C</strong></li>
-      <li>Density altitude ≈ 5,000 + 120 × (30 − 5) = 5,000 + 3,000 ≈ <strong>8,000 ft</strong></li>
+      <li>Density altitude ≈ 5,000 + 120 × (30 − 5) = 5,000 + 3,000 ≈ <strong>8,000 ft</strong> (computed exactly, 7,802 ft)</li>
     </ul>
-    <p>The airplane you flight-planned for a 5,000-ft airport is actually operating around 8,000 ft, and a chart or E6B will put it a few hundred feet higher still. If your POH takeoff table stops looking comfortable at that line, that is your answer.</p>
+    <p>The airplane you flight-planned for a 5,000-ft airport is actually operating near 8,000 ft; computed exactly, as an E6-B does, it is 7,802 ft. If your POH takeoff table stops looking comfortable at that line, that is your answer.</p>
 
     <h2>Why hot, high, and humid kills climb performance</h2>
     <p>Thin air hits you three ways at once. The engine develops less power because each intake stroke pulls in fewer air molecules (a normally aspirated engine loses power on the order of a few percent per 1,000 ft of density altitude). The propeller is a rotating wing, so it produces less thrust in the same thin air. And the wing needs a higher true airspeed (meaning a longer ground roll) to produce the same lift. Humidity piles on quietly: water vapor is lighter than dry air, so muggy air is less dense still and the engine loses additional power. The rule-of-thumb formula ignores humidity entirely, which is one more reason to leave margin on hot, humid days.</p>
@@ -490,9 +490,15 @@
           return;
         }
 
-        const pa = elev + 145442.16 * (1 - Math.pow(altim / 29.92126, 0.190263));
+        // FD-1057: ASA's CX-3 troposphere, as the app: n = gM/(RL), T0/L in feet, P0 1,013.25 mb at 1 inHg =
+        // 1,000/29.53 mb. Density altitude by the density ratio; the 120 ft per °C rule in the text is the mental-math
+        // shortcut.
+        const N = 9.80665 * 0.0289644 / (8.31432 * 0.0065), H0 = 288.15 / 0.0065 / 0.3048, P0 = 1013.25 * 29.53 / 1000;
+        const pa = elev + H0 * (1 - Math.pow(altim / P0, 1 / N));
         const isa = 15 - 2 * (pa / 1000);
-        const da = pa + 120 * (oat - isa);
+        const deltaP = Math.pow(1 - pa / H0, N);
+        const sigma = deltaP / ((oat + 273.15) / 288.15);
+        const da = H0 * (1 - Math.pow(sigma, 1 / (N - 1)));
         const delta = da - elev;
 
         const fmt = (n) => Math.round(n).toLocaleString('en-US');
