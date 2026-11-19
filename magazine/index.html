@@ -57,12 +57,13 @@
     .sect-sub { font-size: 16px; margin-bottom: 26px; max-width: 720px; }
     .check-list li::before { background: rgba(34,197,94,0.15) url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%2322C55E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center; border-radius: 50%; border: 1px solid rgba(34,197,94,0.3); content: ''; flex-shrink: 0; height: 18px; margin-top: 3px; width: 18px; }
 
-    /* THE PRODUCT BLOCK: cover left, title and purchase panel right. On phones
-       the two columns dissolve (display: contents) into one grid: a cover
-       thumbnail beside the title, then the panel, then the notes. */
+    /* THE PRODUCT BLOCK: the member card and the cover left, title and purchase
+       panel right. On phones the two columns dissolve (display: contents) into
+       one grid: a cover thumbnail beside the title, then the member card, then
+       the panel. */
     .product { background: radial-gradient(ellipse 60% 90% at 75% 0%, rgba(34,197,94,0.07) 0%, transparent 60%), var(--bg); border-bottom: 1px solid var(--border); padding: 52px 0 64px; }
     .pb { align-items: start; display: grid; gap: 56px; grid-template-columns: 360px minmax(0, 1fr); }
-    .pb-media { display: flex; flex-direction: column; gap: 16px; }
+    .pb-media { display: flex; flex-direction: column; gap: 14px; }
     /* One link: the cover and its "Look inside" pill. The pill sits under the
        cover so it hides none of the cover lines, on a phone's thumbnail too. */
     .cover { align-items: center; display: flex; flex-direction: column; gap: 14px; position: relative; text-decoration: none; }
@@ -72,9 +73,6 @@
     .cover:focus-visible .cover-img { outline: 2px solid var(--link); outline-offset: 3px; }
     .look-inside { align-items: center; background: var(--bg-card); border-radius: 100px; border: 1px solid var(--border-bright); color: var(--text); display: inline-flex; font-size: 14px; font-weight: 650; gap: 8px; line-height: 1.2; min-height: 44px; padding: 10px 20px; transition: border-color 0.15s, background 0.15s; white-space: nowrap; }
     .cover:hover .look-inside { background: var(--bg-card-hover); border-color: rgba(34,197,94,0.6); }
-    .pb-notes { display: flex; flex-direction: column; gap: 8px; }
-    .pb-note { align-items: flex-start; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border); display: flex; font-size: 14px; gap: 10px; line-height: 1.5; margin: 0; padding: 12px 14px; }
-    .pb-note svg { color: var(--text-muted); flex: none; margin-top: 2px; }
     .pb-tagline { color: var(--text); font-size: 19px; font-weight: 600; line-height: 1.4; margin: 12px 0 6px; }
     .pb-issue { color: var(--text-muted); font-size: 14px; margin-bottom: 0; }
     .pb-desc { margin: 18px 0 24px; }
@@ -82,6 +80,27 @@
     /* The key line: what membership brings, said before any price. */
     .pb-desc .pb-key { border-left: 3px solid var(--accent-green); color: var(--text); font-size: 20px; font-weight: 650; line-height: 1.45; margin-bottom: 14px; padding-left: 14px; }
     .pb-desc p:last-child { margin-bottom: 0; }
+
+    /* MEMBERS: the way back in for people who already pay (Mehdi 2026-11-19:
+       "visual elements ... visible for existing members to sign in to FW").
+       The fan is this page's Issue 01 cover in front of two lesson sheets; the
+       button is outlined so it never competes with Join. It sits at the top of
+       the cover column, so the title, the plans and Join keep their place; on
+       phones it comes right after the title. The Facebook line lives here too,
+       so the two ways in are read together. */
+    .member { align-items: center; background: linear-gradient(120deg, rgba(34,197,94,0.10), rgba(34,197,94,0.02) 60%, transparent), var(--bg-card); border-radius: 14px; border: 1px solid rgba(34,197,94,0.35); display: grid; gap: 6px 14px; grid-template-areas: "fan h" "fan btn" "fb fb"; grid-template-columns: auto minmax(0, 1fr); padding: 14px 16px; }
+    .member-fan { grid-area: fan; height: 64px; position: relative; width: 96px; }
+    .member-fan img { border-radius: 4px; border: 1px solid rgba(255,255,255,0.18); box-shadow: 0 5px 12px rgba(0,0,0,0.45); display: block; height: 64px; position: absolute; top: 0; width: auto; }
+    .member-fan img:nth-child(1) { left: 0; transform: rotate(-8deg); }
+    .member-fan img:nth-child(2) { left: 22px; transform: rotate(-2deg); }
+    .member-fan img:nth-child(3) { left: 45px; transform: rotate(5deg); }
+    .member-h { align-self: end; color: var(--text); font-size: 17px; font-weight: 750; grid-area: h; line-height: 1.3; margin: 0; }
+    .member-fb { border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px; grid-area: fb; line-height: 1.5; margin: 4px 0 0; padding-top: 8px; }
+    a.member-btn { align-items: center; align-self: start; border-radius: 100px; border: 1.5px solid var(--accent-green); color: var(--accent-green); display: inline-flex; font-size: 14px; font-weight: 700; gap: 6px; grid-area: btn; justify-content: center; justify-self: start; min-height: 44px; padding: 9px 12px; text-decoration: none; transition: background 0.15s; white-space: nowrap; }
+    a.member-btn:hover { background: rgba(34,197,94,0.12); color: var(--accent-green); }
+    a.member-btn:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+    .member-btn svg { transition: transform 0.15s; }
+    .member-btn:hover svg { transform: translateX(3px); }
 
     /* THE PURCHASE PANEL. Native radios in a fieldset, so arrow keys, focus
        and labels work as in any form. CSS :has() shows the button and the
@@ -199,6 +218,9 @@
 
     @media (max-width: 899px) {
       .pb { gap: 36px; grid-template-columns: 260px minmax(0, 1fr); }
+      /* The cover column is too narrow for the button beside the fan. */
+      .member { grid-template-areas: "fan h" "btn btn" "fb fb"; }
+      a.member-btn { justify-self: stretch; margin-top: 6px; }
       h1 { font-size: 36px; letter-spacing: -1px; }
       .half { padding: 20px; }
     }
@@ -213,18 +235,20 @@
       .wrap { padding: 0 20px; }
       .sect { padding: 48px 0; }
       .product { padding: 24px 0 44px; }
-      .pb { gap: 16px; grid-template-areas: "cover head" "desc desc" "buy buy" "notes notes"; grid-template-columns: 124px minmax(0, 1fr); }
+      .pb { gap: 16px; grid-template-areas: "cover head" "member member" "desc desc" "buy buy"; grid-template-columns: 124px minmax(0, 1fr); }
       .pb-media, .pb-info { display: contents; }
       .cover { align-self: start; grid-area: cover; }
       .cover-img { border-radius: 8px; box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
       .pb-head { align-self: center; grid-area: head; }
       .pb-desc { grid-area: desc; margin: 0; }
       .buy { grid-area: buy; min-width: 0; }
-      .pb-notes { grid-area: notes; margin-top: 8px; }
       .cover { gap: 8px; }
       .look-inside { font-size: 13px; gap: 6px; justify-content: center; min-height: 36px; padding: 7px 10px; width: 100%; }
       .look-inside svg { height: 14px; width: 14px; }
       .pb-desc .pb-key { font-size: 17px; padding-left: 12px; }
+      /* Right after the title: the button beside the fan again, at its own width. */
+      .member { grid-area: member; grid-template-areas: "fan h" "fan btn" "fb fb"; padding: 12px 14px; }
+      a.member-btn { justify-self: start; margin-top: 0; }
       .pb-issue .sep { display: none; }
       .pb-issue span { display: block; }
       h1 { font-size: 27px; letter-spacing: -0.8px; line-height: 1.12; }
@@ -251,10 +275,15 @@
       h1 { font-size: 25px; }
       .opt-card { gap: 4px 10px; padding: 14px 12px; }
     }
+    /* Below the common 360-375px phones the button no longer fits beside the fan. */
+    @media (max-width: 359px) {
+      .member { grid-template-areas: "fan h" "btn btn" "fb fb"; }
+      a.member-btn { justify-self: stretch; margin-top: 6px; }
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .opt, .opt input::before, .cta svg, .prev a, .pages img, .issue-card img { transition: none; }
-      .prev a:hover, .pages a:hover img, .issue-card:hover img, .cta:hover svg { transform: none; }
+      .opt, .opt input::before, .cta svg, .prev a, .pages img, .issue-card img, a.member-btn, .member-btn svg { transition: none; }
+      .prev a:hover, .pages a:hover img, .issue-card:hover img, .cta:hover svg, .member-btn:hover svg { transform: none; }
     }
   </style>
   <script type="application/ld+json">
@@ -306,14 +335,16 @@
   <section class="product" aria-label="FlightDecide Magazine Issue 01">
     <div class="wrap pb">
       <div class="pb-media">
+        <aside class="member" aria-label="For members">
+          <span class="member-fan" aria-hidden="true"><img src="/assets/magazine/member-sheet-spin.webp" alt="" width="130" height="168" decoding="async"><img src="/assets/magazine/member-sheet-magnetos.webp" alt="" width="130" height="168" decoding="async"><img src="/assets/magazine/member-cover.webp" alt="" width="134" height="168" decoding="async"></span>
+          <p class="member-h">Already a member?</p>
+          <a class="member-btn" href="https://flightdecide-shop.fourthwall.com/supporters/sign_in?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-member-signin">Sign in on our shop <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="member-fb">Subscribed on Facebook? Every issue comes to the subscriber group the day it's out.</p>
+        </aside>
         <a class="cover" href="#inside">
           <span class="cover-img"><img src="/assets/magazine/issue-01-cover.jpg" alt="Cover of FlightDecide Magazine Issue 01: a high-altitude jet over mountains, headlined The Coffin Corner" width="720" height="900" fetchpriority="high"></span>
           <span class="look-inside"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg>Look inside</span>
         </a>
-        <div class="pb-notes">
-          <p class="pb-note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Already a member? <a href="https://flightdecide-shop.fourthwall.com/supporters/sign_in">Log in on our shop</a></span></p>
-          <p class="pb-note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.5" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c1-3.5 3.5-5.5 6.5-5.5s5.5 2 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c1.7.8 2.9 2.5 3.5 5.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Already a FlightDecide subscriber on Facebook? Every issue is part of your subscription, in the subscriber group the day it comes out.</span></p>
-        </div>
       </div>
 
       <div class="pb-info">
@@ -497,7 +528,7 @@
         </div>
         <div>
           <h3>How do members get each issue?</h3>
-          <p>On release day the new issue is posted in the members area of our shop with the PDF attached, and members get a notice that it is up.</p>
+          <p>On release day the new issue is posted in the members area of our shop with the PDF attached, and members get a notice that it is up. To read it, <a href="https://flightdecide-shop.fourthwall.com/supporters/sign_in?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-member-signin">sign in on our shop</a>.</p>
         </div>
         <div>
           <h3>When do new issues come out?</h3>
@@ -546,6 +577,7 @@
           <a class="btn-primary cta" href="https://flightdecide-shop.fourthwall.com/products/issue-01-december-2026?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-issue01">Buy Issue 01 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <p class="plain">Or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join monthly for <span class="nowrap">US$1.99 a month</span></a>, or <a href="https://flightdecide-shop.fourthwall.com/supporters/pricing?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-membership">join yearly for&nbsp;US$19.82</a>.</p>
         </div>
+        <p class="plain">Already a member? <a href="https://flightdecide-shop.fourthwall.com/supporters/sign_in?utm_source=flightdecide.com&amp;utm_medium=website&amp;utm_campaign=magazine-member-signin">Sign in on our shop</a>.</p>
         <p class="plain">Questions first? <a href="mailto:support@flightdecide.com?subject=Magazine%20question">support@flightdecide.com</a></p>
       </div>
     </div>
