@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T21:30:16+00:00",
+  "generated": "2026-11-21T22:05:08+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -543,6 +543,153 @@
         }
       ],
       "related": []
+    },
+    {
+      "id": "lesson-aero-tailplane-icing",
+      "slug": "how-full-flaps-can-stall-an-iced-tail",
+      "page": "/explainers/how-full-flaps-can-stall-an-iced-tail/",
+      "title": "How full flaps can stall an iced tail",
+      "headline": "Ice on the tail and a fresh full-flap setting can stall the tail and drop the nose. A tail stall's recovery is partly the opposite of a wing stall's.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "A see-through Cessna 172 in gray icing weather with its horizontal tail glowing red and broken airflow swirling around it, labeled Tail stall.",
+      "image": "/assets/social/lesson-aero-tailplane-icing.webp",
+      "image_full": "/assets/explainers/how-full-flaps-can-stall-an-iced-tail.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Dfk5E0ZkR2L/",
+      "posted": "2026-11-10",
+      "caption": [],
+      "teaches": [],
+      "related_text": "Most aircraft have a nose-down pitching moment from the wings because the CG is ahead of the center of pressure; it is the role of the tailplane to counteract this moment by providing a downward force (downward lift), so the tail works at a negative angle of attack, its air meeting it from above (IFH ch 4; AC 91-74B 3-7). Extending the flaps changes the direction of the wing's wake airflow (downwash) at the tail (172S POH sec 3) and may increase the negative angle of attack of the tail, as may increasing speed (actions which move the wing away from stall, such as deployment of flaps or increasing speed, may increase the negative AOA of the tail): deployment of flaps lets the wing fly at a less positive angle of attack, decreasing the probability of a wing stall, while the angle of attack at the tailplane is more negative (IFH ch 4; AC 91-74B 5-12). Since the tailplane is ordinarily thinner than the wing, it is a more efficient collector of ice, and on most aircraft it is not visible to the pilot (IFH ch 4; AC 91-74B 3-7); a relatively small ice accretion can significantly reduce the maximum lift coefficient and the angle of attack at which the surface stalls (IFH ch 4); an ice-contaminated tailplane stall occurs when a tailplane with accumulated ice is placed at a sufficiently negative angle of attack (AC 91-74B 5-12). With ice on the tailplane, it may stall after full or partial deployment of flaps, and the nose pitches down (IFH ch 4); it rarely occurs until the flaps are fully extended on susceptible airplanes, and there are no known incidents in cruise (AC 91-74B 5-11, 5-12); with a severe ice build-up on the horizontal tail, the change in wing wake airflow direction caused by flap extension could result in a loss of elevator effectiveness (172S POH sec 3). Symptoms that, singly or in combination, may warn of tailplane icing include elevator control pulsing, oscillations or vibrations, an abnormal nose-down trim change, unusual pitch anomalies, a reduction or loss of elevator effectiveness, a sudden change in elevator force (the control would move nose-down if unrestrained) and a sudden uncommanded nose-down pitch (IFH ch 4). The tailplane stall recovery: immediately retract the flaps to the previous setting and apply appropriate nose-up elevator pressure; increase airspeed appropriately for the reduced flap extension setting; apply sufficient power for the aircraft configuration and conditions (high power settings may adversely affect the response at high airspeed in some designs; observe the manufacturer's recommendations) (IFH ch 4); these procedures are in some respects opposite from a wing stall recovery, and applying the incorrect procedure can seriously compound the upset (AC 91-74B 5-13). Since most icing accidents have been attributed to wing stall, a pilot should always suspect a wing stall with any vibration or buffet if full flaps have not just been deployed, and a wing stall recovery reduces the angle of attack by reducing the aircraft pitch (AC 91-74B 5-12, 5-13). Pilots of airplanes not certificated for flight in icing, such as the Cessna 172, must avoid icing conditions and immediately exit icing if inadvertently encountered (AC 91-74B 3-13); the 172S POH's inadvertent icing procedure turns the pitot heat on and turns back or changes altitude, and with ice on board it says to leave the wing flaps retracted for the landing, to approach at 65 to 75 KIAS depending upon the amount of accumulation, and to be prepared for a significantly higher stall speed and a longer landing roll (172S POH sec 3); limited or no flaps will likely mean a higher-than-normal approach speed, and longer runways may be necessary (AC 91-74B 5-12).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-15 ch 4",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 4",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 4
+        },
+        {
+          "ref": "AC 91-74B",
+          "title": "AC 91-74",
+          "url": null,
+          "kind": "advisory-circular",
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 172S POH sec 3 inadvertent icing encounter",
+          "title": "Cessna 172S Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "full-flaps",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Your horizontal tail holds the nose up by lifting downward. Lowering the flaps makes the air meet it more steeply. With ice on the tail, full flaps can push it past its own stall, and the nose drops.",
+            "To recover, put the flaps back where they were and hold back pressure. Then fly the speed that flap setting needs, with only the power it takes."
+          ]
+        },
+        {
+          "heading": "Why the tail pushes down",
+          "paragraphs": [
+            "Most airplanes balance on a center of gravity, their balance point, that sits ahead of the wing's center of pressure, where its lift acts. With the weight ahead of the lift, the nose tries to drop.",
+            "The horizontal tail holds against it. Its air meets it from above, at a negative angle of attack, the angle between a surface and the air meeting it. So it works like a small wing lifting downward."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-flaps-can-stall-an-iced-tail-tailpush.webp",
+            "caption": "Air meeting the tail from above (cyan) makes it push down (green arrow), which holds the nose up.",
+            "alt": "A tail airfoil drawn over a see-through Cessna 172 in gray weather, with cyan airflow lines meeting it from above, a label Air from above and a green arrow labeled Pushes down."
+          }
+        },
+        {
+          "heading": "What flaps and speed do to the tail",
+          "paragraphs": [
+            "Lower the flaps and the wing throws its air down harder. That downwash, the air the wing pushes down behind it, now reaches the tail at a steeper angle.",
+            "The tail's negative angle of attack grows, bringing it closer to its own stall. The flaps do the opposite for the wing, which can now fly at a smaller angle of attack, farther from a wing stall.",
+            "More speed does the same to the tail as flaps do. At higher speed the wing needs a smaller angle of attack, so the nose sits lower and the tail meets its air more from above. So lowering the nose to gain speed steepens the tail's angle, which is why a tail stall's fix differs from a wing stall's."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-flaps-can-stall-an-iced-tail-flaps2.webp",
+            "caption": "The lowered flap (lower left) bends the wing's air (cyan) down toward the tail, which is drawn large at the top.",
+            "alt": "A wing section with its flap drooped at the lower left, cyan airflow bending down from it toward the tail, the same tail drawn large at the top, and the label Flaps down."
+          }
+        },
+        {
+          "heading": "How ice brings the tail's stall closer",
+          "paragraphs": [
+            "The tail is thinner than the wing, so it collects ice faster. On most airplanes you can't see it from the seat.",
+            "Even a little ice can cut a surface's maximum lift and lower the angle of attack at which it stalls. On the tail, that moves the stall closer to where the tail already works.",
+            "So a tail stall usually comes right after the flaps go to full, and there are no known cases in cruise."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-flaps-can-stall-an-iced-tail-stallline.webp",
+            "caption": "Ice (violet) lowers the tail's stall angle (red line). With full flaps, the air (cyan) now meets the tail steeply enough to reach that line.",
+            "alt": "A tail airfoil with violet ice on its leading edge, a red stall line at the front, cyan airflow lines meeting it steeply and the chip Ice plus full flaps: tail stall risk."
+          }
+        },
+        {
+          "heading": "How a tail stall feels",
+          "paragraphs": [
+            "Right after the flaps go down, hints can come first. Watch for a pulsing yoke, an abnormal nose-down trim change or odd pitch bobbing.",
+            "When the tail stalls, the airflow breaks away from it and its downward push fades. The nose pitches down on its own, and the elevator gets weak or stops working.",
+            "The control force changes suddenly, and left alone, the yoke would move forward, nose-down. A wing stall can come at any flap setting and may shake the airframe with buffet, the shudder as its airflow breaks away. With ice, that warning can come late or not at all."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-flaps-can-stall-an-iced-tail-tug.webp",
+            "caption": "The yoke tugs forward in your hands as the tail's push fades.",
+            "alt": "A see-through cockpit with two control yokes, an arrow showing the pull on them and the label Felt: forward tug."
+          }
+        },
+        {
+          "heading": "Four mistakes in an iced airplane",
+          "paragraphs": [
+            "Get out of icing at once in a 172, which isn't approved for flight in icing. Turn on the pitot heat, which keeps the airspeed probe clear, then turn back or change altitude.",
+            "Land an iced 172 with the flaps up, because flaps with ice on the tail can cost elevator control. Approach at 65 to 75 knots indicated, faster with more ice, and expect a higher stall speed and a longer landing roll.",
+            "Bring the flaps back up to their previous setting at once, rather than leaving them down, and resist the yoke's forward pull. Then fly the airspeed that setting needs, with enough power for it, making any nose-down change slowly. High power can make it worse in some designs, so follow your airplane's manual.",
+            "Treat a buffet as a wing stall unless you have just lowered full flaps. Most icing accidents have been wing stalls, and their recovery lowers the nose. Using the wrong recovery can seriously worsen the upset."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-flaps-can-stall-an-iced-tail-compare.webp",
+            "caption": "The two stalls side by side, each with its clue and its first move.",
+            "alt": "A see-through Cessna 172 over icy farmland with a two-column card: Wing stall, buffet, no fresh full flaps, lower nose; Tail stall, fresh full flaps, forward tug, flaps back, back pressure."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. What do you do first if the yoke tugs forward and the nose drops just after you lower full flaps with ice aboard?",
+            "2. Which stall do you suspect when you feel a buffet in icing with the flaps still up?",
+            "3. Why might the tail carry more ice than the wing you can see from your seat?",
+            "4. How do you set the flaps and the approach speed for landing a 172 with ice on board?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Put the flaps back to the previous setting and hold back pressure. Then fly the speed that setting needs, with the power for it.",
+            "2. A wing stall, since you haven't just lowered full flaps. Lower the nose.",
+            "3. The tail is thinner, so it collects ice faster, and on most airplanes you can't see it.",
+            "4. Flaps up, and approach at 65 to 75 knots, faster with more ice. Expect a longer landing roll."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/stall-that-turns-into-a-spin/",
+        "/explainers/which-way-the-trim-tab-moves/",
+        "/explainers/freezing-level-inside-a-cloud-layer/"
+      ]
     },
     {
       "id": "wx-thunderstorm-life-cycle",

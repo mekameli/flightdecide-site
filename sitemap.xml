@@ -529,6 +529,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/how-full-flaps-can-stall-an-iced-tail/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/how-full-flaps-can-stall-an-iced-tail.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/thunderstorm-life-cycle-explained/</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
