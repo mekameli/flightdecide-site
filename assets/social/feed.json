@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T04:20:26+00:00",
+  "generated": "2026-11-22T04:30:44+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1112,6 +1112,176 @@
         }
       ],
       "related": []
+    },
+    {
+      "id": "lesson-sys-c172-engine-exploded",
+      "slug": "inside-the-172-engine-and-what-low-oil-pressure-means",
+      "page": "/explainers/inside-the-172-engine-and-what-low-oil-pressure-means/",
+      "title": "Inside the 172 engine and what low oil pressure means",
+      "headline": "If the oil pressure drops in flight, check the oil temperature. A normal one may point to the gauge, a rising one to a failing engine. Land either way.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "The front of a Cessna 172 with its cowling lifted away, labeled Upper cowl and Lycoming O-320, with oil temperature and pressure gauges above.",
+      "image": "/assets/social/lesson-sys-c172-engine-exploded.webp",
+      "image_full": "/assets/explainers/inside-the-172-engine-and-what-low-oil-pressure-means.webp",
+      "image_px": 900,
+      "permalink": "https://www.instagram.com/reel/Dfqc7Y5CXdZ/",
+      "posted": "2026-11-13",
+      "caption": [],
+      "teaches": [],
+      "related_text": "The 1981 Cessna 172P's engine is a Lycoming O-320-D2J: horizontally opposed, four cylinders, air cooled, carburetor equipped, rated 160 BHP at 2,700 RPM (172P POH sec 1 and 7); it is a direct drive engine, the propeller driven straight off the crankshaft (Lycoming O-320 Operator's Manual 1-1). In a reciprocating engine the valves, spark plugs and pistons are in the cylinders and the crankshaft and connecting rods in the crankcase; on the power stroke the burning fuel-air mixture forces the piston down, creating the power that turns the crankshaft (PHAK ch 7). The O-320's camshaft is located above and parallel to the crankshaft and actuates hydraulic tappets, which operate the valves through push rods and valve rockers (Lycoming O-320 Operator's Manual 1-1). Engine oil lubricates the moving parts and also cools, by reducing friction and removing heat from the cylinders (PHAK ch 7). In the 172P, oil is drawn from the sump through a suction strainer screen into the engine-driven pump; a bypass valve sends cold oil straight to the full-flow filter and hot oil out to the oil cooler and back to the filter; a pressure relief valve regulates oil pressure by letting excess oil return to the sump while the rest is circulated to the engine parts; residual oil returns to the sump by gravity (172P POH sec 7). Pressure oil is fed to the main oil gallery and on to the crankshaft's main bearings and rod journals, the camshaft and hydraulic tappets, and through the hollow push rods to the valve mechanism (Lycoming O-320 Operator's Manual 1-2). The 172P's oil pressure gauge, fed by a direct pressure oil line from the engine, is marked: minimum idling pressure 25 PSI (red line), normal operating range 60 to 90 PSI (green arc), maximum 115 PSI (red line); the oil temperature gauge beside it is marked green 100 to 245 degrees F, red line 245 degrees F (172P POH sec 7). With low oil pressure and normal oil temperature there is a possibility the oil pressure gauge or relief valve is malfunctioning; a leak in the line to the gauge is not necessarily cause for an immediate precautionary landing, because an orifice in this line prevents a sudden loss of oil from the sump, but a landing at the nearest airport is advisable to inspect the source of trouble (172P POH sec 3). If a total loss of oil pressure is accompanied by a rise in oil temperature, there is good reason to suspect an engine failure is imminent: reduce engine power immediately, select a suitable forced landing field and use only the minimum power required to reach the desired touchdown spot (172P POH sec 3). Unlike oil pressure, changes in oil temperature occur more slowly (PHAK ch 7), so a normal temperature soon after a pressure drop does not clear the engine and the pilot keeps watching it on the way to the airport (an inference from that lag, stated as such).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        },
+        {
+          "ref": "Cessna 172P POH (1981) sec 1, 3 and 7",
+          "title": "Cessna 172P Pilot's Operating Handbook (1981)",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        },
+        {
+          "ref": "Lycoming O-320 Operator's Manual 60297-30",
+          "title": "Lycoming O-320 Operator's Manual 60297-30",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "inside-172",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "If the oil pressure in your 172 drops below its green arc, the normal range, in flight, check the oil temperature. A normal temperature may point to the gauge, its line or the relief valve, but it doesn't prove the engine is fine. Land at the nearest airport.",
+            "If the pressure is gone and the temperature is climbing, the engine may fail soon. Reduce power now, pick a landing spot and use only the power you need to reach it."
+          ]
+        },
+        {
+          "heading": "How the engine turns the propeller",
+          "paragraphs": [
+            "The 172P's Lycoming O-320 has four cylinders, laid flat in two opposed pairs and cooled by air. It is rated 160 horsepower at 2,700 revolutions per minute. Other 172 models have other engines and gauge markings, so check your own airplane's handbook.",
+            "In each cylinder, the burning fuel and air push a piston, a sliding plug, toward the crankshaft, the engine's main turning shaft. Its connecting rod pushes on an offset part of the crankshaft, which turns the push into rotation. The engine is direct drive, so the crankshaft turns the propeller itself.",
+            "Above the crankshaft runs the camshaft. Through hollow tubes called pushrods, it opens each cylinder's valves, which let the fuel and air in and the burned gas out."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/inside-the-172-engine-and-what-low-oil-pressure-means-crank.webp",
+            "caption": "The crankshaft and one of its connecting rods, inside the see-through crankcase.",
+            "alt": "A see-through engine with a steel crankshaft labeled Crankshaft and a rod below it labeled Connecting rod."
+          }
+        },
+        {
+          "heading": "Where the oil goes",
+          "paragraphs": [
+            "Two of oil's jobs matter here. It lubricates the moving parts, and it carries heat away from the cylinders.",
+            "The engine-driven pump draws it from the sump, the oil reservoir at the bottom of the engine, through a screen. Cold oil goes straight to the filter, and hot oil goes through the cooler first.",
+            "A relief valve limits the pressure by spilling the extra oil back to the sump. The rest flows into the main oil gallery, the engine's main oil passage. From there it reaches the bearings, the smooth supports for the turning shafts, the camshaft and, through the hollow pushrods, the valves.",
+            "Then it drains back to the sump by gravity. So if the oil stops flowing, the parts rub, the heat stays in the engine and the temperature climbs."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/inside-the-172-engine-and-what-low-oil-pressure-means-gallery.webp",
+            "caption": "Oil (tan) in the main oil gallery and the passages that feed the bearings, with the oil pressure gauge (right) in its green arc.",
+            "alt": "Tan oil passages running through a see-through crankcase, labeled Oil gallery and Bearings, below two small gauges labeled Oil press."
+          }
+        },
+        {
+          "heading": "What the two oil gauges tell you",
+          "paragraphs": [
+            "The oil pressure gauge reads straight from the engine through a line. It shows pressure, not how much oil is left. The oil temperature gauge beside it is your cross-check.",
+            "With a normal temperature, a faulty gauge can read low falsely, or a faulty relief valve can make the pressure really low. A leak in the gauge line isn't necessarily a reason to land at once. An orifice, a narrow restriction in that line, lets so little oil through that a leak can't drain the sump quickly.",
+            "If the pressure is gone and the temperature is rising, an engine failure may be close."
+          ],
+          "table": {
+            "caption": "Cessna 172P oil gauge markings, in pounds per square inch (PSI) and degrees Fahrenheit",
+            "columns": [
+              "Gauge",
+              "Marking",
+              "Value"
+            ],
+            "rows": [
+              [
+                "Oil pressure",
+                "Minimum for idling (red line)",
+                "25 PSI"
+              ],
+              [
+                "Oil pressure",
+                "Normal range (green arc)",
+                "60 to 90 PSI"
+              ],
+              [
+                "Oil pressure",
+                "Maximum (red line)",
+                "115 PSI"
+              ],
+              [
+                "Oil temperature",
+                "Normal range (green arc)",
+                "100 to 245 °F"
+              ],
+              [
+                "Oil temperature",
+                "Maximum (red line)",
+                "245 °F"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/inside-the-172-engine-and-what-low-oil-pressure-means-gauge.webp",
+            "caption": "Low indicated oil pressure (right) with a normal temperature (left). Only a mechanic can tell a false reading from a real loss.",
+            "alt": "Two round gauges, oil temperature and oil pressure, over a faint see-through engine with a valve labeled Relief valve and a line labeled Gauge line."
+          }
+        },
+        {
+          "heading": "Three mistakes with low oil pressure",
+          "paragraphs": [
+            "Keep watching the temperature after a normal first reading. Oil temperature changes more slowly than pressure, so a normal reading soon after the drop doesn't clear the engine.",
+            "Reduce power at once if the temperature climbs with the pressure gone, and get ready to land without engine power.",
+            "Land at the nearest airport even when the gauge looks like the culprit. Treat any abnormal reading as a reason to cut the flight short."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/inside-the-172-engine-and-what-low-oil-pressure-means-rising.webp",
+            "caption": "With no oil pressure showing and the oil temperature rising, the engine may fail soon.",
+            "alt": "A see-through Cessna 172 over farmland under the oil temperature and oil pressure gauges, with a red label reading Temp rising."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. How can a faulty gauge and a faulty relief valve each show low oil pressure?",
+            "2. What does the orifice in the oil pressure gauge line do?",
+            "3. Why doesn't a normal oil temperature right after a pressure drop clear the engine?",
+            "4. What do you do when the oil pressure is gone and the temperature is climbing?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. A faulty gauge can read low when the pressure is fine, and a faulty relief valve can make the pressure really low.",
+            "2. It lets so little oil through that a leaking gauge line can't drain the sump quickly.",
+            "3. Oil temperature changes more slowly than pressure, so keep watching it.",
+            "4. Reduce power now, pick a field and use only enough power to reach it."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/how-a-carburetor-works/",
+        "/explainers/how-magnetos-work/",
+        "/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer/"
+      ]
     },
     {
       "id": "lesson-aero-tailplane-icing",
