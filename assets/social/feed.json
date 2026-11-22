@@ -1,7 +1,212 @@
 {
-  "generated": "2026-11-22T05:10:08+00:00",
+  "generated": "2026-11-22T17:05:06+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-sys-turboprop-vs-piston",
+      "slug": "how-a-turboprop-works-compared-with-your-172-s-engine",
+      "page": "/explainers/how-a-turboprop-works-compared-with-your-172-s-engine/",
+      "title": "How a turboprop works, compared with your 172's engine",
+      "headline": "Your 172 does its four engine jobs in turns, about 80 fires a second at cruise. A turboprop does all four at once, with one steady flame.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "The see-through nose of a TBM 930 in flight above the clouds, with its turboprop engine glowing inside and the labels No mixture knob and No magnetos.",
+      "image": "/assets/social/lesson-sys-turboprop-vs-piston.webp",
+      "image_full": "/assets/explainers/how-a-turboprop-works-compared-with-your-172-s-engine.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DgDSgZGAei4/",
+      "posted": "2026-11-22",
+      "caption": [],
+      "teaches": [],
+      "related_text": "Both engines do the same four jobs: intake, compression, combustion and exhaust (suck, squeeze, burn and blow). In a reciprocating engine all four take place in the same combustion chamber, so each must have the chamber to itself in turn, and in a four-cylinder engine each cylinder operates on a different stroke; a gas turbine engine has a separate section for each job and performs all of them simultaneously without interruption, four continuous and constant events (AMT ch 1 p 1-36, p 1-58; PHAK ch 7 p 7-4). The Cessna 172P's O-320-D2J is a horizontally-opposed, four-cylinder, direct-drive engine of 160 BHP at 2,700 rpm with a fixed-pitch propeller (172P POH p 1-3). On the intake stroke the piston moves away from the cylinder head (in toward the crankshaft in a flat engine, whose cylinder heads sit outboard) and draws in the fuel-air mixture; on compression it moves back toward the head and squeezes it; the spark ignites it and the expanding gas forces the piston back in, the power stroke; on exhaust it moves out again and pushes the burned gases out (PHAK ch 7 p 7-4, Figure 7-5). Each cylinder fires once every two turns of the crankshaft (AMT ch 1 p 1-25), so the four fire twice a turn (computed: 4 / 2 = 2). Engine ignition is provided by two engine-driven magnetos and two spark plugs in each cylinder (172P POH section 7), and the pilot leans the mixture with the mixture control (PHAK ch 7). The intake stroke begins when the intake valve opens and the fuel-air mixture is drawn in; the compression stroke begins when the intake valve closes; the exhaust stroke begins when the exhaust valve opens (PHAK ch 7 p 7-4). A fixed-pitch propeller's blade angle cannot be changed in flight (its pitch is fixed). At 2,400 rpm, a cruise setting the 172P POH's cruise table lists at every altitude from 2,000 to 12,000 feet (172P POH Fig 5-7, p 5-16), two fires a turn make 4,800 a minute, about 80 a second (computed: 2 x 2,400 = 4,800; 4,800 / 60 = 80). The TBM 930's PT6A-66D is a free-turbine, reverse-flow engine with 2 turbine sections, its combustion chamber annular, ring-shaped (PIM p 1.3.1); compressed air and fuel are mixed and sprayed into the combustion chamber by fuel nozzles, and the mixture 'is first ignited by two spark igniter plugs, then combustion continues as a result of air-fuel mixture flow' (PIM p 7.6.1): lit at start-up, it keeps burning with no spark while the fuel-air mixture flows, a continuous combustion cycle (AMT ch 1 p 1-58), though a flameout, one of the operational considerations common to all turbine engines, can still put it out (PHAK ch 7 p 7-23). The PT6A-66D is one model of the PT6A-67 series of the PT6A family (EASA TCDS IM.E.008); the PIM gives its engine type as 'Free turbine, reverse flow' (PIM p 1.3.1): it takes its air in at its rear end and lets the gas out near its front (PIM p 7.6.1, p 7.6.10), so inside the engine the air moves from back to front. In the TBM the air enters the cowling at its front lower section, under the spinner, and is driven through a duct in the engine casing before entering the engine through a protective screen (PIM p 7.6.10); the engine's own air intake is an annular casing at its rear, ahead of the accessory gearbox, which is located rearward of the engine (PIM p 7.6.1, Fig 7.6.1 item 8); so the duct carries the air back to the engine's rear end (inferred from the two places). The PT6A-66D's compressor has four axial stages, rows of spinning blades, and one centrifugal stage (PIM p 1.3.1, p 7.6.1); each consecutive pair of rotor and stator blades is a pressure stage (AMT ch 1 p 1-40), and the centrifugal wheel accelerates the air outward, perpendicular to the engine's axis (PHAK ch 7 p 7-20; AMT ch 1 p 1-38). In a reverse-flow combustor the air from the compressor enters the combustor outer case and reverses its direction as it flows into the inner liner, and again before it flows through the turbine; reverse-flow combustors are used where engine length is critical (AMT ch 1 p 1-46); in the PT6 the liner's location reduces the overall length and weight of the engine (208 POH p 7-37, the PT6A-114A, a sister engine of the same layout). In the PT6 (208 POH p 7-37, the PT6A-114A of the same layout): the compressed air passes through diffuser ducts which turn it 90 degrees in direction and is routed into the combustion chamber; the flow of air changes direction to enter the combustion chamber liner, where it reverses direction and mixes with fuel; the gases expand from the liner, reverse direction and pass to the compressor turbine; the still expanding gases pass forward to drive the power turbine. The location of the liner eliminates the need for a long shaft between the compressor and the compressor turbine, reducing the overall length and weight of the engine. With the compressor behind the chamber and the exhaust near the front, the air heads forward through the compressor (inferred from the layout). The first turbine, the gas generator (compressor) turbine, drives the compressor and the accessories (PIM p 7.6.1, Fig 7.6.1 item 11); the major part of the combustion energy is needed at the turbine stages that drive the compressor, and the remaining energy passes through the remaining turbine stages, which drive the propeller (AMT ch 1 p 1-43); in a turboprop the rest of the available energy exits the exhaust as thrust (AMT ch 1 p 1-37). The page gives no share of the energy. The two power turbines, independent from the first, drive the propeller shaft through a reduction gearbox (PIM p 7.6.1); the free turbine has only an air link from the gas generator to the power turbines, with no mechanical link from the propeller to the gas generator (AMT ch 1 p 1-54): two shafts, end to end, not joined, so only hot gas links the two turbines. The hot gases leave through two exhaust stubs, one on each side, forward on the engine cowling, just behind the propeller (PIM p 7.6.1): the engine takes its air in at its back and lets it out near its front, so the engine (not the airplane) breathes backwards. The cockpit displays both speeds separately: propeller speed in RPM (PROP RPM) and generator rotation speed in percent, Ng (PIM p 7.6.7). The PT6A-66D's reduction gearbox has 2 stages (TCDS IM.E.008 p 7); reduction gearing is necessary in turboprop engines because optimum propeller performance is achieved at much slower speeds than the engine's operating rpm (PHAK ch 7 p 7-21); the TBM's engine is rated 850 SHP at a propeller speed of 2,000 rpm (PIM p 1.3.1). No source gives the -66D's gear ratio. In the 172P the propeller bolts straight to the crankshaft: the O-320-D2J is a direct-drive engine with a fixed-pitch propeller (172P POH p 1-3), so the propeller turns at engine rpm and the tachometer is the indicator of engine power (PHAK ch 7 p 7-5). SHP, shaft horsepower, is the power delivered to the propeller shaft (850 SHP at 2000 RPM, PIM p 1.3.1). The TBM 930 has no mixture control (a hydro-mechanical fuel control unit meters the fuel, TCDS p 7) and no magnetos (two spark igniter plugs light it, the IGNITION switch normally in AUTO, PIM p 7.6.1, p 4.4.5). It has one THROTTLE with two modes, thrust and condition (PIM p 7.6.5); thrust mode modulates engine power up to max power (PIM p 7.6.5); condition mode is CUT OFF, LO-IDLE or HI-IDLE, used to start and stop the engine, and as long as the THROTTLE is in condition mode the propeller is in feather position (PIM p 7.6.6); feathered, the blades are set at 85 degrees at the 30-inch station, nearly edge-on to the passing air, against 19.5 degrees in low pitch (PIM p 1.3.1). A second lever, MAN OVRD, is a manual override used in case of an FCU or THROTTLE failure (PIM p 7.6.6). The propeller has no lever: its governor maintains rotation speed to the nominal value of 2,000 rpm (PIM p 7.6.12). No magnetos are needed because, once lit, combustion continues as a result of air-fuel mixture flow (PIM p 7.6.1); the igniters work during the start (with the IGNITION switch in AUTO, ignition is ensured whenever the STARTER switch is ON, PIM p 4.4.5, p 7.6.8), and the three-position IGNITION switch (OFF, AUTO, ON) can also run them on demand (PIM p 7.6.8). The THROTTLE is moved to the condition side by lifting the knob (PIM p 7.6.6); thrust mode modulates engine power from full reverse to max power (PIM p 7.6.5); idle is at the idle stop, and moving the THROTTLE rearward past it, past the lock using the detent, controls the power in the Beta range from idle to maximum reverse, which may only be selected with the engine running and the propeller turning (PIM p 7.6.5). The governor maintains the 2000 RPM through propeller blade pitch variation (PIM p 7.6.12). A turboprop's power output is measured by the torquemeter; torque is a twisting force applied to a shaft (PHAK ch 7 p 7-22), here the propeller shaft the power turbines drive through the reduction gearbox (PIM p 7.6.1); the TBM pilot sets TRQ, which must never exceed 100 percent (PIM p 5.8.1); engine monitoring is ensured by ITT, the interturbine temperature, read between the turbines, and oil pressure (PIM p 7.6.7, p 1.4.6); the highest temperature in any turbine engine occurs at the turbine inlet, and turbine inlet temperature is therefore usually the limiting factor in turbine engine operation (PHAK ch 7 p 7-23). In a 172 with its fixed-pitch propeller, the throttle sets the rpm and the tachometer shows the engine's power (PHAK ch 7 p 7-5). Turboprop power output is measured by the torquemeter, and torquemeters are calibrated in percentage units, foot-pounds or psi (PHAK ch 7 p 7-22, 7-23); the TBM displays engine torque in percent, TRQ (PIM p 7.6.7). Setting TRQ, three limits apply together (PIM p 5.8.1): the TRQ setting must never exceed 100 %; when setting TRQ, Ng must never exceed 104 %; and the torque must be set at or below the value of the engine operation tables for the local flight level and temperature. ITT has its own limits: takeoff 850 C, maximum climb/cruise 840 C (PIM p 2.3.1). The torque limiter on the reduction gearbox is rated to limit engine torque to 109-110 % at sea level (PIM p 7.6.11), and the engine rated 850 SHP develops a thermodynamic power of 1825 ESHP (PIM p 7.6.1): so near sea level this engine can make more than 100 % torque, and the throttle's forward stop is not a power setting (inferred from the two). The turbine inlet nozzle vanes, directly aft of the combustion chambers and immediately forward of the turbine wheel, meet the highest or hottest temperature that comes in contact with metal components in the engine, and the turbine inlet temperature must be controlled, or damage will occur to the turbine inlet vanes (AMT ch 1 p 1-46). A hot start, when the temperature exceeds its limit, is caused by too much fuel entering the combustion chamber or insufficient turbine rpm, and after one the AFM/POH or a maintenance manual gives the inspection requirements (PHAK ch 7 p 7-24); in the TBM, fuel brought in before the gas generator spins fast enough risks an overtemperature from an excessive accumulation of fuel inside the combustion chamber before ignition (PIM p 4.4.25), and its start temperature limits are counted in seconds (PIM p 2.3.1); too little rpm means the compressor moves too little air for the fuel, and the compressor's air also cools the combustion gases to a temperature the turbine can withstand (AMT ch 1 p 1-43, p 1-44). No start sequence or number is taught on the page: the airplane's own flight manual gives the start, and the page names only Ng as the speed to wait for (the starter turns only the compressor side, so propeller speed says nothing about it) and CUT OFF as the abort's first step. The air entering the combustion chamber is divided into primary air, mixed with the fuel and burned, and secondary or cooling air, which passes between the outer casing and the liner and joins the combustion gases to cool them (AMT ch 1 p 1-44). In the TBM, the start is aborted if the ITT warning lights (max ITT < 870 C for more than 20 seconds, < 1000 C for more than 5 seconds), and the abort's first step is THROTTLE CUT OFF (PIM p 4.4.25). The start ITT limits pair temperatures with seconds (< 870 C for 20 seconds max, < 1000 C for 5 seconds max, PIM p 2.3.1), so after a hot start the peak ITT and how long it lasted say which limit was passed (inferred); a hot start is when the EGT exceeds the safe limit (PHAK ch 7 p 7-24). Starting shows the two shafts at work: the starter generator drives the powerplant (PIM p 7.6.8) through the accessory gearbox on the gas generator (PIM p 7.6.1, Fig 7.6.1 items 4 and 7), so the starter turns only the gas generator, the compressor side; the power turbines are linked to it only by the gas flow (AMT ch 1 p 1-54), so only the gas flowing through the engine turns them. A turboprop engine is a turbine engine that drives a propeller through a reduction gear (PHAK ch 7 p 7-21); a turbine is a disc of blades that the expanding gases spin, converting their velocity energy to mechanical energy to drive the compressor or, through more stages, the propeller (AMT ch 1 p 1-46, p 1-54, p 1-58). The TBM 930 has one engine (PIM p 1.3.1).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        },
+        {
+          "ref": "FAA-H-8083-32B ch 1",
+          "title": "Aviation Maintenance Technician Handbook, Powerplant (FAA-H-8083-32), Chapter 1",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_powerplant_handbook.pdf",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_powerplant_handbook.pdf",
+          "chapter": 1
+        },
+        {
+          "ref": "Daher TBM 930 Pilot's Information Manual (DMJPIPYEE0)",
+          "title": "Daher TBM 930 Pilot's Information Manual (DMJPIPYEE0)",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "EASA TCDS IM.E.008, PT6A-67 series (PT6A-66D)",
+          "title": "EASA TCDS IM.E.008, PT6A-67 series (PT6A-66D)",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 172P POH (1981)",
+          "title": "Cessna 172P Pilot's Operating Handbook (1981)",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 208 Caravan POH (1998)",
+          "title": "Cessna 208 Caravan Pilot's Operating Handbook (1998)",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Daher TBM 930” by helijah (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "turboprop-works",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "A turboprop is a turbine engine that turns a propeller through a gearbox. A turbine is a wheel of blades that hot gas spins.",
+            "Your 172's engine does the same four jobs as a turboprop: take air in, squeeze it, burn it with fuel and push it out. The 172 does them in turns, inside each cylinder. A turboprop does all four at once, each in its own section.",
+            "In a TBM 930, a single-engine turboprop, your power gauge shows torque, the twist on the propeller shaft. You also watch the temperature between its turbines."
+          ]
+        },
+        {
+          "heading": "Four jobs, in turns or at once",
+          "paragraphs": [
+            "In each of the 172P's four cylinders, the intake valve opens and the piston moves in toward the crankshaft, drawing in fuel and air. With the valve shut, it moves back out and squeezes them. A spark lights the mixture, and the burn shoves the piston in. Then the exhaust valve opens, and the piston pushes the burned gas out.",
+            "Each cylinder fires once every two crankshaft turns, so the four fire twice a turn. At a 2,400 rpm cruise, that's about 80 fires a second."
+          ],
+          "table": {
+            "caption": "Where each of the four jobs happens",
+            "columns": [
+              "Job",
+              "Your 172, in each cylinder in turn",
+              "The PT6, all at once"
+            ],
+            "rows": [
+              [
+                "Take air in",
+                "Intake stroke",
+                "The inlet at the engine's rear"
+              ],
+              [
+                "Squeeze it",
+                "Compression stroke",
+                "The compressor"
+              ],
+              [
+                "Burn it with fuel",
+                "Power stroke",
+                "The combustion chamber, whose hot gas spins the turbines"
+              ],
+              [
+                "Push it out",
+                "Exhaust stroke",
+                "Two exhaust stubs near the front"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-turboprop-works-compared-with-your-172-s-engine-jobs.webp",
+            "caption": "Above, a 172 cylinder at its intake job, shown in blue. Below, the turboprop has blue air, amber squeezed air and red hot gas in it at the same moment.",
+            "alt": "A see-through 172 cylinder with its piston and a blue charge inside, above a cutaway turboprop engine with blue, amber and red flow marks along its length, with the chip Four jobs between them."
+          }
+        },
+        {
+          "heading": "A walk through the PT6",
+          "paragraphs": [
+            "The TBM 930 flies with a Pratt & Whitney Canada PT6A-66D. It is a reverse-flow engine: air goes in at the back and leaves near the front.",
+            "Air enters the cowling low at the front, and a duct carries it back to a screen at the engine's rear. Heading forward, four rows of spinning compressor blades squeeze it, then a spinning wheel flings it outward.",
+            "The squeezed air turns into the ring-shaped combustion chamber. There it reverses and mixes with fuel from the nozzles. Two igniter plugs light it at the start, then it keeps burning as fuel and air flow in.",
+            "The hot gas reverses again to spin the compressor turbine, which drives the compressor. Then it flows forward through two power turbine wheels on their own shaft, which turn the propeller through the gearbox.",
+            "This folded path keeps the engine short and light. Only the hot gas links the two turbine shafts, a design called a free turbine. The starter spins only the compressor side, whose speed, Ng, shows in percent."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-turboprop-works-compared-with-your-172-s-engine-path.webp",
+            "caption": "The PT6 cut open on its side, its rear end on the left. Blue air comes in at the back, amber squeezed air wraps around the combustion chamber, and red hot gas flows forward through the turbines.",
+            "alt": "A cutaway turboprop engine lying on its side, with blue flow marks at its rear end, amber marks around its combustion chamber and red marks through its turbines toward the front."
+          }
+        },
+        {
+          "heading": "A gearbox where your 172 has none",
+          "paragraphs": [
+            "A propeller works best much slower than a turbine turns. So a gearbox at the PT6's front steps the speed down in two stages. In the TBM, the propeller turns at 2,000 rpm, and the engine is rated at 850 horsepower at the propeller shaft.",
+            "The 172P's 160-horsepower engine bolts a fixed-pitch propeller, whose blade angle never changes, straight to the crankshaft. So the tachometer, which shows engine rpm, is your power gauge."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-turboprop-works-compared-with-your-172-s-engine-crank.webp",
+            "caption": "Above, the round flange where a 172's propeller bolts straight to the crankshaft. Below, the PT6's power turbine shaft runs forward into its gearbox.",
+            "alt": "The round bolted flange of a see-through 172 engine, above the turboprop's shaft running into a geared housing."
+          }
+        },
+        {
+          "heading": "What changes in the cockpit",
+          "paragraphs": [
+            "The TBM 930 has no mixture control: a fuel control unit measures out the fuel, so there is nothing to lean. It has no magnetos, since once lit the flame needs no spark.",
+            "The throttle sets the power. Lift its knob and it moves to a second range, CUT OFF and two idles, for starting and stopping. There the propeller stays feathered, its blades nearly edge-on to the air.",
+            "The propeller has no lever. A governor, an automatic speed control, holds its 2,000 rpm by changing the blade angle. So the torque gauge, read in percent, is the power gauge.",
+            "You also watch ITT, the interturbine temperature, read between the turbines. The vanes just ahead of the first turbine meet the hottest gas touching metal in the engine, and too much heat damages them. So temperature usually limits a turbine engine."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-turboprop-works-compared-with-your-172-s-engine-gauges.webp",
+            "caption": "TORQUE points at the gearbox, where the twist on the propeller shaft is measured. ITT points into the hot section, where the temperature between the turbines is read.",
+            "alt": "A cutaway turboprop engine standing on end, with the label Torque on the gearbox at the top and the label ITT on the red-hot section below it."
+          }
+        },
+        {
+          "heading": "Mistakes a 172 pilot brings along",
+          "paragraphs": [
+            "Set power by torque, within its limits, never by the tachometer or the throttle's stop. Keep torque at or below the flight manual's table value for your altitude and temperature, and never above 100 percent. Ng must never pass 104 percent, and ITT has its own limit. Near sea level, this engine can make more than 100 percent torque.",
+            "Wait for Ng, not propeller rpm, to reach the flight manual's minimum before you bring in fuel. Fuel too early, or too much, can cause a hot start, when the temperature passes its limit. Only part of the compressor's air burns, and the rest cools the gas. A slow compressor moves too little air for that, so ITT can pass its limit.",
+            "Watch ITT through the whole start. If it passes its start limit, abort as the flight manual sets out. In the TBM, the throttle goes to CUT OFF first.",
+            "After any hot start, note the peak ITT and how many seconds it lasted, since the start limits pair the two. The flight or maintenance manual says what to inspect."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-turboprop-works-compared-with-your-172-s-engine-hot.webp",
+            "caption": "With fuel in too early, the combustion chamber glows and the red ITT bar reaches its limit mark.",
+            "alt": "A cutaway turboprop engine with a bright red combustion chamber, the label Fuel too early below it pointing up at that section, and a tall red temperature bar above it, filled to its limit mark."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Why does fuel brought in before Ng is high enough risk a hot start?",
+            "2. What joins the compressor turbine to the power turbines in a PT6?",
+            "3. Why does a turboprop need a gearbox?",
+            "4. What do you set a TBM 930's power by, and within which limits?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. The slow compressor moves too little air to cool the burning gas, so ITT can pass its limit.",
+            "2. Only the hot gas. The two turbine shafts are not joined.",
+            "3. A propeller works best much slower than a turbine turns.",
+            "4. Torque, at or below the table value and never above 100 percent, with Ng never above 104 percent and ITT within its limit."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/inside-the-172-engine-and-what-low-oil-pressure-means/",
+        "/explainers/how-magnetos-work/",
+        "/explainers/how-a-constant-speed-propeller-holds-its-rpm/"
+      ]
+    },
     {
       "id": "lesson-aero-vmc-roll",
       "slug": "vmc-and-the-engine-out-roll-in-a-twin",
