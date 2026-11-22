@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T03:55:10+00:00",
+  "generated": "2026-11-22T04:20:26+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1616,6 +1616,141 @@
       "related": [
         "/explainers/microburst-on-final/",
         "/explainers/gust-front-ahead-of-a-thunderstorm/"
+      ]
+    },
+    {
+      "id": "lesson-sys-fuel-system",
+      "slug": "how-full-fuel-tanks-can-still-starve-the-engine",
+      "page": "/explainers/how-full-fuel-tanks-can-still-starve-the-engine/",
+      "title": "How full fuel tanks can still starve the engine",
+      "headline": "A 172 with both tanks full can still starve its engine. A clear vent, the fuel selector on BOTH for takeoff and landing, and water-free fuel samples keep it fed.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "A see-through Cessna 172 over farmland with both wing tanks in blue, a red label Starving at the engine and the chip Both tanks full.",
+      "image": "/assets/social/lesson-sys-fuel-system.webp",
+      "image_full": "/assets/explainers/how-full-fuel-tanks-can-still-starve-the-engine.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DfXpBtnAvrK/",
+      "posted": "2026-11-05",
+      "caption": [],
+      "teaches": [],
+      "related_text": "The Cessna 172P's standard fuel system has two removable aluminum tanks, one in each wing, 21.5 US gallons each, 43 total, 40 usable, and fuel flows by gravity from the two wing tanks to a four-position selector valve and through a strainer to the carburetor (172P POH sec 2 and 7). Fuel system venting is essential to system operation: blockage of the system results in decreasing fuel flow and eventual engine stoppage (172P POH sec 7); if the fuel vent is stopped with the engine running, the engine can lose power and eventually stop from fuel starvation (Cessna 172 Service Manual sec 12). The tanks are vented by an overboard vent line in the left tank, which protrudes from the bottom surface of the left wing near the wing strut, an interconnecting line that joins the right tank's air space to the left tank's, and a vented right filler cap (172P POH sec 7; Cessna 172 Service Manual sec 12); the vent's opening is checked on the walkaround. Each tank feeds through a screened outlet at its inboard end, nearest the cabin; when the tanks are 1/4 full or less, prolonged uncoordinated flight such as slips or skids can uncover the fuel tank outlets (172P POH sec 7). Takeoff and landing are made with the fuel selector valve on BOTH, the setting for takeoff, climb, landing and maneuvers that involve prolonged slips or skids (172P POH sec 2 and 7); on BOTH, the other tank keeps feeding; with one tank 1/4 full or less selected, or a tank run dry, slips and skids are kept to 30 seconds or less (172P POH sec 2 fuel limitations and sec 7 note). The selector valve sits beneath the floorboard; inside, a rotor with drilled passages lines up with the left inlet, both inlets, the right inlet or neither (OFF), with a spring-loaded seal at each tank's inlet (Cessna 172 Service Manual sec 12). From the selector the fuel goes to the fuel strainer at the firewall, then to the carburetor; the strainer's screen catches sediment, and water, being heavier than fuel, settles in the bottom of the strainer; water also settles in each tank's sump, the tank's low point (172P POH sec 7; Cessna 172 Service Manual sec 12; PHAK ch 7); water that reaches the carburetor can stop the engine (PHAK ch 7). Before the first flight of the day and after each refueling, fuel is drained from each tank sump into the sampler cup to check for water, sediment and the proper grade, whose color shows it (100LL blue, 100 green), and the strainer drain knob is pulled for about four seconds to clear the strainer of water and sediment, then checked closed (172P POH sec 2 and 4); if water is found, draining continues until no more shows (PHAK ch 7).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "Cessna 172P POH fuel system",
+          "title": "Cessna 172P Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 172 Service Manual 1977-1986 Section 12 fuel system",
+          "title": "Cessna 172 Service Manual 1977-1986 Section 12 fuel system",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "full-fuel",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Fuel can only leave a tank as fast as air gets in to take its place. So in a 172 with both tanks full, a blocked vent can still starve the engine. A slip on a low tank, or water in the fuel, can do the same.",
+            "Check the fuel vent tube under the left wing on every walkaround, and take off and land with the fuel selector on BOTH. Before the day's first flight and after refueling, drain each tank's sump, its lowest point, and the strainer, a filter by the engine."
+          ]
+        },
+        {
+          "heading": "How the tanks breathe",
+          "paragraphs": [
+            "In the carbureted 172P, gravity does the work, with no fuel pump. Other 172 models differ, so check your own airplane's handbook. Fuel runs from an aluminum tank in each wing down to the carburetor, which mixes it with air for the cylinders. On the way it passes the selector valve, which you set to LEFT, RIGHT, BOTH or OFF, then the strainer.",
+            "As fuel leaves a tank, air has to come in behind it. If it can't, the pressure above the fuel drops, and that low pressure holds the fuel back against gravity. The tanks breathe through a vent tube under the left wing, near the strut that braces it.",
+            "A crossover line links the two tanks' air spaces, so the right tank breathes through the same tube. The right filler cap has a small safety vent too, but the tube is the main air inlet.",
+            "Block the vent tube and the flow can fade. The engine loses power and can stop from fuel starvation, with both tanks still full."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-fuel-tanks-can-still-starve-the-engine-blocked.webp",
+            "caption": "Thin blue lines carry fuel from both tanks to the engine, and the white line across the cabin links their air spaces. The red ring marks the blocked vent tube.",
+            "alt": "A see-through Cessna 172 from above with its wing tanks in blue and a red label Blocked at the vent tube under the left wing."
+          }
+        },
+        {
+          "heading": "Why you take off and land on BOTH",
+          "paragraphs": [
+            "The selector valve sits under the floor. Inside, a rotor, a disc the handle turns, lines up its drilled passages for each setting.",
+            "Each tank feeds from a screened outlet at its inboard end, the end nearest the cabin. A slip or skid is flight with the ball in the turn coordinator off center, and the fuel shifts the same way the ball does. At a quarter tank or less, a long one can slide one tank's fuel toward its tip, away from its outlet.",
+            "Both outlets sit near the cabin, so the same shift pushes the other tank's fuel onto its outlet. On BOTH, that tank keeps feeding, one reason you take off and land there. On LEFT or RIGHT with that tank at a quarter or less, keep any slip or skid to 30 seconds or less. The same limit applies whenever either tank is dry, even on BOTH."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-fuel-tanks-can-still-starve-the-engine-outlet.webp",
+            "caption": "The selector is on LEFT and that tank is low. In a slip, its fuel has run out toward the wingtip, leaving the outlet by the cabin uncovered.",
+            "alt": "A see-through Cessna 172 with the fuel selector dial on LEFT and a red label Outlet uncovered at the left tank's inboard end, its fuel out toward the tip."
+          }
+        },
+        {
+          "heading": "Where water hides, and how you drain it",
+          "paragraphs": [
+            "From the selector, fuel passes the strainer on the firewall, the metal wall between the engine and the cabin. Its screen catches dirt. Water is heavier than fuel, so it sinks to the bottom of the strainer's bowl.",
+            "Water that reaches the carburetor can stop the engine. Water from condensation also settles in each tank's sump.",
+            "Drain each sump into the sampler cup. Look for the right color for the grade, 100LL blue or 100 green, with no water and no dirt. Water can show as clear beads or a clear layer at the bottom of the cup, or as cloudy fuel. Then pull the strainer drain for about four seconds, and check that it's closed."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-fuel-tanks-can-still-starve-the-engine-strainer.webp",
+            "caption": "The fuel strainer on the firewall, cut away. Dirt clings to its screen, and water pools at the bottom of the bowl.",
+            "alt": "A cutaway of a fuel strainer's bowl full of blue fuel, with dark bits of dirt on its screen and a bead of water at the bottom labeled Water."
+          }
+        },
+        {
+          "heading": "Three fuel mistakes to avoid",
+          "paragraphs": [
+            "Look at the vent tube's opening under the left wing on every walkaround.",
+            "Take off and land on BOTH, not on LEFT or RIGHT. If you ran on one tank in cruise, set BOTH again before you land.",
+            "Keep draining while the cup shows water. More can sit behind the first sample, so drain the strainer, the sumps and the selector valve's drain until it's gone."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-full-fuel-tanks-can-still-starve-the-engine-sample.webp",
+            "caption": "Pushing the sampler cup's pin into the sump drain catches fuel from the bottom of the tank.",
+            "alt": "A see-through wing from below with a sampler cup, part full of blue fuel, under the sump drain, labeled Sampler cup."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Why can a 172 with both tanks full still lose power from fuel starvation?",
+            "2. What makes BOTH the right setting for takeoff and landing?",
+            "3. With the selector on LEFT and that tank a quarter full, how long may a slip or skid last?",
+            "4. What do you do when the first sample from a sump shows water?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. A blocked vent stops air from replacing the fuel, so the flow fades and the engine can stop.",
+            "2. A long slip with a low tank can uncover its outlet, and on BOTH the other tank keeps feeding.",
+            "3. 30 seconds at most.",
+            "4. Keep draining until no water shows, since more may be in the tank."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer/",
+        "/explainers/fuel-you-cannot-use/",
+        "/explainers/how-a-carburetor-works/"
       ]
     },
     {
