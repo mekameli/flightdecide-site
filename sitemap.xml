@@ -556,6 +556,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/how-a-constant-speed-propeller-holds-its-rpm/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/how-a-constant-speed-propeller-holds-its-rpm.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/wake-turbulence-explained/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>

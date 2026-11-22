@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T01:35:09+00:00",
+  "generated": "2026-11-22T01:40:16+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1042,6 +1042,203 @@
         "/explainers/vmc-and-the-engine-out-roll-in-a-twin/",
         "/explainers/what-are-left-turning-tendencies/",
         "/explainers/stall-that-turns-into-a-spin/"
+      ]
+    },
+    {
+      "id": "lesson-cpl-constant-speed-prop",
+      "slug": "how-a-constant-speed-propeller-holds-its-rpm",
+      "page": "/explainers/how-a-constant-speed-propeller-holds-its-rpm/",
+      "title": "How a constant-speed propeller holds its RPM",
+      "headline": "Flyweights, a spring and engine oil twist the blades to hold your RPM steady, until the blades run out of room.",
+      "pillar": "systems",
+      "topic": "Systems",
+      "alt": "A retractable-gear Cessna over farmland under the chip Constant speed and 2,500 RPM, with a manifold pressure gauge and a tachometer.",
+      "image": "/assets/social/lesson-cpl-constant-speed-prop.webp",
+      "image_full": "/assets/explainers/how-a-constant-speed-propeller-holds-its-rpm.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DfFS0POjElS/",
+      "posted": "2026-10-29",
+      "caption": [],
+      "teaches": [],
+      "related_text": "The propeller control does not set a blade angle directly while the propeller is governing: the pilot controls the engine rpm indirectly by means of a propeller control connected to the propeller governor, and once a specific rpm is selected the governor automatically adjusts the propeller blade angle as necessary to maintain it; the governor is on the engine, geared to the engine crankshaft (AFH ch 12; PHAK ch 7). In the Cessna 172RG the control is a knob labeled PROP RPM, PUSH INCR (172RG POH 7-23); a blue, fluted knob is the standard configuration for the propeller control. The pitch of a fixed-pitch propeller is set by the manufacturer and cannot be changed, and its rpm is regulated by the throttle (PHAK ch 7); with the throttle left alone the propeller has a natural tendency to slow down as the aircraft climbs and to speed up as the aircraft dives, because the load on the engine varies (FAA-H-8083-32 ch 7). An aircraft with a constant-speed propeller has two controls: the throttle controls power output, indicated by the manifold pressure gauge, and the propeller control regulates engine rpm (PHAK ch 7); when the airplane is nosed up into a climb the governor decreases the blade angle just enough to keep the engine speed constant, and when it is nosed down into a dive the governor increases the blade angle (AFH ch 12); a low blade angle keeps the blade angle of attack small and efficient at low speed, and a higher blade angle suits the higher speed (AFH ch 12). 2,500 RPM is the 172RG's normal climb setting (172RG POH 4-9). As airspeed increases the load on the engine is lightened because of the small blade angle; the governor senses this and increases the blade angle (AFH ch 12). The 172RG's normal climb power is 25 inches of manifold pressure and 2,500 RPM (172RG POH 4-9). The governor is sensitive to small changes in engine rpm and changes the blade angle just enough to keep the engine speed constant (AFH ch 12); the reel's 2,630 and 2,390 RPM readings exaggerate the swing so it can be seen. Pushing the 172RG's propeller control in decreases blade pitch, giving a higher RPM (172RG POH 7-23). The propeller control sets the tension of the governor's speeder spring, which opposes two engine-driven flyweights flung outward as they turn; on speed, the force on the flyweights and the spring's tension are balanced; in an underspeed the flyweights tilt inward, and the pilot valve, forced down by the speeder spring, meters oil flow to decrease propeller pitch and raise engine rpm (FAA-H-8083-32 ch 7). In an overspeed, the centrifugal force on the flyweights is greater than the speeder spring force; the flyweights tilt outward and raise the pilot valve, which meters oil flow to increase propeller pitch and lower engine rpm until on speed (FAA-H-8083-32 ch 7); the governor controls engine oil, boosted to high pressure by the governing pump, to or from a piston in the propeller hub, and oil pressure on the piston twists the blades toward high pitch, low RPM (172RG POH 7-23); the oil reaches the hub through a hollow engine shaft (FAA-H-8083-32 ch 7); the constant-speed propellers on almost all single-engine airplanes are of the oil-pressure-to-increase-pitch design (AFH ch 13). When oil pressure to the piston in the propeller hub is relieved, centrifugal force, assisted by an internal spring, twists the blades toward low pitch, high RPM (172RG POH 7-23); the blades have an inherent centrifugal twisting moment that tends to flatten them toward low pitch (AFH ch 12); on speed, the pilot valve is neither directing oil to nor from the propeller's hydraulic cylinder, so the blade angle holds (FAA-H-8083-32 ch 7). Once the propeller blades reach their pitch-stop limit, the engine rpm increases or decreases with changes in airspeed and propeller load similar to a fixed-pitch propeller (AFH ch 12). The Cessna 172RG's McCauley two-blade constant-speed propeller runs from 12.0 degrees low pitch to 26.5 degrees high pitch at the 30-inch station, on an engine rated 180 BHP at 2,700 RPM (172RG POH 1-3), with the tachometer's red line at 2,700 RPM (172RG POH section 2). If a descent is too rapid, the maximum blade angle is not enough to hold the rpm constant and the rpm responds to any change in throttle setting (AFH ch 12). A combination of high manifold pressure and low rpm can induce damaging detonation, so when increasing power, increase the rpm first and then the manifold pressure, and when decreasing power, decrease the manifold pressure first and then the rpm; the cruise power charts in the AFM/POH give the approved combinations (AFH ch 12); for maximum takeoff power the propeller control is moved all the way forward to the low pitch, high rpm position (AFH ch 12); detonation is the uncontrolled, explosive burning of the fuel-air charge (PHAK ch 7).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 12",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapters 12 and 13",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "kind": "handbook",
+          "note": null,
+          "book_url": null,
+          "refs": [
+            "FAA-H-8083-3 ch 12",
+            "FAA-H-8083-3 ch 13"
+          ],
+          "parts": [
+            {
+              "label": "Chapter 12",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/13_afh_ch12.pdf"
+            },
+            {
+              "label": "Chapter 13",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf"
+            }
+          ]
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 7",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 7
+        },
+        {
+          "ref": "FAA-H-8083-32 ch 7",
+          "title": "Aviation Maintenance Technician Handbook, Powerplant (FAA-H-8083-32), Chapter 7",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_powerplant_handbook.pdf",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_powerplant_handbook.pdf",
+          "chapter": 7
+        },
+        {
+          "ref": "Cessna 172RG Cutlass POH (1981)",
+          "title": "Cessna 172RG Cutlass Pilot's Operating Handbook (1981)",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "constant-speed",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "With a constant-speed propeller, the throttle sets the power and the blue propeller knob sets the RPM. The knob doesn't set the blade angle directly. That is the angle each blade makes with the circle it spins in.",
+            "A governor on the engine sets it. It twists the blades steeper, a bigger bite of air each turn, or flatter, a smaller bite. So the RPM holds as you climb and descend, as long as the blades have room to twist."
+          ]
+        },
+        {
+          "heading": "Why a fixed-pitch propeller's RPM wanders",
+          "paragraphs": [
+            "A fixed-pitch propeller has one blade angle, or pitch, set by the manufacturer. That angle is most efficient at only one airspeed and RPM, and you control the RPM with the throttle alone.",
+            "Leave the throttle where it is and the RPM follows the airspeed. Climb and slow down, and the air meets the blades at a bigger angle of attack, the angle between blade and oncoming air. The heavier load drags the RPM down. Lower the nose and speed up, and the RPM rises."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-constant-speed-propeller-holds-its-rpm-fixed.webp",
+            "caption": "The round dial shows a blade seen from its tip, with its path as a dashed line and the air it meets in blue. On a fixed-pitch propeller the blade angle, blade to path, never changes.",
+            "alt": "A Cessna in flight over farmland under the chip Fixed pitch, with a round dial showing a blade from its tip and a tachometer reading 2,500 RPM."
+          }
+        },
+        {
+          "heading": "How the governor holds the RPM",
+          "paragraphs": [
+            "The governor sits on the engine, geared to the crankshaft. Inside it, two small flyweights spin with the engine, and the faster they spin, the harder they swing outward.",
+            "A speeder spring presses against them from the other side. The blue knob sets how hard that spring presses, and pushing the knob in squeezes it harder.",
+            "The flyweights and the spring position a small pilot valve between them. It sends engine oil to the propeller hub or lets oil drain from it. In the 172RG, as in most single-engine airplanes, oil in the hub pushes a piston that twists the blades to a bigger bite. When oil drains, the blades' own spin and a hub spring twist them flatter.",
+            "When the flyweights balance the spring, the propeller is on speed, at the RPM you set. The valve sits centered and the blade angle holds.",
+            "Push the knob in and the spring wins. Oil drains from the hub, the blades flatten and the RPM rises until the flyweights balance the stiffer spring. Pull the knob out and it all runs the other way."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-constant-speed-propeller-holds-its-rpm-governor.webp",
+            "caption": "Inside the governor, the blue speeder spring presses against the two flyweights. The blue line is the cable from the knob, and the yellow line carries oil to the hub.",
+            "alt": "A see-through propeller governor on the engine under the chip Push: RPM up, with a blue coil labeled Speeder spring, two weights labeled Flyweights, a yellow oil line and a tachometer reading 2,500 RPM."
+          }
+        },
+        {
+          "heading": "When the nose goes down and RPM rises",
+          "paragraphs": [
+            "Lower the nose and the airplane speeds up. The faster air meets the blades at a smaller angle of attack, so they load the engine less. The propeller starts to spin faster than the RPM you set, which mechanics call an overspeed condition.",
+            "The flyweights swing outward and move the pilot valve. Engine oil, boosted by the governor's own pump, flows to the hub through the hollow engine shaft.",
+            "This incoming oil pushes the piston, which twists both blades steeper. The extra load slows the propeller, and the RPM settles back where you set it."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-constant-speed-propeller-holds-its-rpm-overspeed.webp",
+            "caption": "Nose down, the flyweights swing out and the governor's pump sends oil up the yellow line toward the hub. The picture exaggerates the rise to 2,630 RPM, which a working governor catches quickly.",
+            "alt": "A see-through governor with a label Pump at its base, arrows along a yellow line labeled Oil running up toward the propeller hub, and a tachometer reading 2,630 RPM."
+          }
+        },
+        {
+          "heading": "When the nose comes up and RPM falls",
+          "paragraphs": [
+            "Raise the nose and the airplane slows. Now the slower air meets the blades at a bigger angle of attack, and the extra load slows the propeller below your RPM. That is an underspeed condition.",
+            "The flyweights fall inward, and the speeder spring pushes the pilot valve the other way. That opens a path for the oil to leave the hub.",
+            "Now the blades twist toward a smaller bite, pushing the piston back and the oil out. The lighter load lets the RPM climb back to the setting."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-a-constant-speed-propeller-holds-its-rpm-underspeed.webp",
+            "caption": "Nose up, the slow air meets the still-steep blade at a big angle, as the dial shows. The hub spring and the blade's spin now twist it flatter. The picture exaggerates the drop to 2,390 RPM, which a working governor catches quickly.",
+            "alt": "A see-through propeller hub and blade with labels Hub spring and Its own spin, the oil line behind it and a tachometer reading 2,390 RPM."
+          }
+        },
+        {
+          "heading": "Mistakes with the throttle and the blue knob",
+          "paragraphs": [
+            "Set power with the manifold pressure gauge as you move the throttle, and cross-check the tachometer. It shows the pressure in the engine's intake, in inches of mercury, and power depends on it and the RPM together.",
+            "Change power in the right order. To add power, raise the RPM first and then the manifold pressure. To reduce it, bring the manifold pressure down first and then the RPM.",
+            "Avoid high manifold pressure at low RPM. It can cause detonation, where the fuel-air charge explodes instead of burning smoothly, and damage the engine. Use the power charts in your Pilot's Operating Handbook (POH).",
+            "Push the knob full forward for takeoff, to the low-pitch, high-RPM setting. In the 172RG the knob is labeled PROP RPM, PUSH INCR.",
+            "Expect the RPM to follow the airspeed at a pitch stop, the end of the blades' travel. There the governor can twist them no further, as with a fixed-pitch propeller."
+          ],
+          "table": {
+            "caption": "The Cessna 172RG's propeller numbers",
+            "columns": [
+              "Item",
+              "Value"
+            ],
+            "rows": [
+              [
+                "Engine rating",
+                "180 horsepower at 2,700 RPM"
+              ],
+              [
+                "Tachometer red line",
+                "2,700 RPM"
+              ],
+              [
+                "Normal climb power",
+                "25 inches of manifold pressure and 2,500 RPM"
+              ],
+              [
+                "Low-pitch stop, the flattest blade angle",
+                "12.0 degrees, measured 30 inches out from the hub center"
+              ],
+              [
+                "High-pitch stop, the steepest blade angle",
+                "26.5 degrees, measured 30 inches out from the hub center"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. With a constant-speed propeller, what did the blades just do if you lowered the nose and the RPM held at 2,500?",
+            "2. What happens to the blade angle and the RPM when you push the blue knob in?",
+            "3. Why could the RPM start falling in a slow climb when you haven't touched the knob?",
+            "4. When adding power with a constant-speed propeller, which do you raise first, the RPM or the manifold pressure?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. They twisted to a bigger bite. In the 172RG the governor sent oil to the hub to keep the propeller from speeding up.",
+            "2. The blades flatten to a smaller angle and the RPM rises.",
+            "3. The blades may have reached their low-pitch stop. From there the RPM follows the airspeed, as with a fixed-pitch propeller.",
+            "4. The RPM first, then the manifold pressure. High manifold pressure at low RPM can cause detonation."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/how-a-carburetor-works/",
+        "/explainers/how-magnetos-work/",
+        "/explainers/what-are-left-turning-tendencies/"
       ]
     },
     {
