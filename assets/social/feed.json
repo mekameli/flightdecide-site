@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T22:05:08+00:00",
+  "generated": "2026-11-22T01:35:09+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -871,6 +871,177 @@
       "related": [
         "/explainers/microburst-on-final/",
         "/explainers/gust-front-ahead-of-a-thunderstorm/"
+      ]
+    },
+    {
+      "id": "lesson-aero-critical-engine",
+      "slug": "what-makes-the-left-engine-critical",
+      "page": "/explainers/what-makes-the-left-engine-critical/",
+      "title": "What makes the left engine critical",
+      "headline": "On a twin whose propellers both turn clockwise, losing the left engine yaws the airplane hardest and takes the most rudder. That makes it the critical engine.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "Two see-through twins over farmland, one above the other: the top one labeled Left engine out with its left engine outlined red, the bottom one labeled Right engine out with its right engine outlined red.",
+      "image": "/assets/social/lesson-aero-critical-engine.webp",
+      "image_full": "/assets/explainers/what-makes-the-left-engine-critical.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DfMy5MxlUER/",
+      "posted": "2026-11-01",
+      "caption": [],
+      "teaches": [],
+      "related_text": "The critical engine is the engine whose failure has the most adverse effect on directional control; on twins with each engine rotating in conventional, clockwise rotation as viewed from the pilot's seat, the critical engine is the left engine (AFH ch 13). Under power at positive angles of attack, as when slow and nose high, the descending propeller blade meets the air at a higher angle of attack and produces more thrust than the ascending blade (P-factor, asymmetric loading); with clockwise rotation as seen from the seat the descending blade is on the right side of each propeller disc, so the center of thrust moves to the right of each propeller's hub (PHAK ch 5; AFH ch 13). In a nose-high attitude the relative wind meets the disc from a little below its axis (the geometry is our inference, stated). The descending blade of the right engine is farther from the center of gravity than the descending blade of the left engine, so it has a longer moment arm; failure of the left engine leaves the most asymmetrical thrust and the most adverse yaw toward the dead engine, and with the right engine failed the left engine's thrust acts on a shorter arm, so there is less yaw to hold (AFH ch 13). Whichever engine fails, the pilot holds the airplane straight primarily with rudder pressure on the side of the airplane with the operating engine ('dead foot, dead engine'), with a small bank of up to 5 degrees toward the operating engine; with the left (critical) engine inoperative the yaw is greatest, so it takes more rudder than with the right engine inoperative (AFH ch 13). After an engine failure the pilot identifies the failed engine ('dead foot, dead engine') and verifies it by retarding that engine's throttle before feathering (AFH ch 13); if the yaw cannot be controlled with full rudder, reducing power on the operating engine and lowering the nose is the recovery (AFH ch 13). Prevention comes first: the airspeed must stay above VMC, and the pitch attitude for VYSE, the blue line, has to be lowered from that of VY (AFH ch 13); verification is that retarding the suspected engine's throttle brings no change in performance (AFH ch 13). As the airplane slows and control effectivity decays, the yawing tendency must be met with additional rudder pressure; the more rudder deflection it takes to hold the airplane straight, the higher the speed at which the rudder runs out of travel, so with the critical engine inoperative directional control is lost first, at the highest speed; VMC, marked with a red radial line on most airspeed indicators, is the minimum speed at which directional control can be maintained after the critical engine suddenly fails with the remaining engine at takeoff power, published for a maximum of 5 degrees of bank toward the operative engine (with the wings level it is significantly higher); and the AFM/POH-published VMC is determined with the critical engine inoperative (AFH ch 13). Many twins have a counter-rotating right engine; on the Piper PA-44-180 Seminole the left engine turns clockwise and the right engine counterclockwise as viewed from the cockpit, which puts each propeller's descending blade on the inboard side, gives balanced thrust and eliminates the critical engine factor: neither engine is worse to lose (AFH ch 13; Seminole POH 7.5, 7.7).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 13",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 13",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf",
+          "kind": "handbook",
+          "note": "Chapter 13 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 13
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
+        },
+        {
+          "ref": "Piper PA-44-180 Seminole POH sec 7 engines and propellers",
+          "title": "Piper PA-44-180 Seminole Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "",
+      "credits_label": "Picture credits",
+      "short": "makes-left",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "On most twins both propellers turn clockwise, seen from the pilot's seat. On those twins, losing the left engine is worse. Slow and nose high, each propeller pulls harder on its right side, an effect called P-factor.",
+            "So the right engine's pull sits farther from the airplane's balance point. Lose the left engine, and that pull swings the nose hardest. That makes the left engine the critical engine, and a twin's VMC, its minimum control speed, is set with it dead."
+          ]
+        },
+        {
+          "heading": "What the critical engine is",
+          "paragraphs": [
+            "The critical engine is the engine whose failure hurts directional control the most. Directional control means keeping the nose pointed where you want it.",
+            "With one engine dead, all the thrust pulls on one side. This one-sided pull is asymmetric thrust, and it yaws, or swings, the nose toward the dead engine. The question is which engine leaves the harder swing."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-makes-the-left-engine-critical-critical.webp",
+            "caption": "Left engine out. The yellow line is the right engine's thrust, and the bracket marks its longer arm, explained below. The violet arrow is the nose swinging left.",
+            "alt": "Top view of a see-through twin on a dark grid under the chip Left engine out, its red left engine labeled Critical engine, a bracket labeled Longer arm on the right side and a violet arrow at the nose pointing left."
+          }
+        },
+        {
+          "heading": "How P-factor moves each engine's thrust",
+          "paragraphs": [
+            "Slow and nose high, each propeller's shaft points a little above the flight path. So the air reaches the propeller disc, the circle the blades sweep, from slightly below.",
+            "As the propeller turns clockwise, the blade on the right side moves down into that upward-slanting air. It meets the air at a bigger angle of attack, the angle between the blade and the oncoming air. The blade going up on the left meets it at a smaller one.",
+            "The descending blade takes the bigger bite and makes more thrust. So each engine's thrust shifts to the right of its hub. This is P-factor, and it is strongest slow and nose high, as right after takeoff."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-makes-the-left-engine-critical-relwind.webp",
+            "caption": "Nose high, the propeller's axis (dashed line) points above the oncoming air, the relative wind (cyan). So that air reaches the propeller from slightly below.",
+            "alt": "A see-through twin from the side on a dark grid under the chip Nose high, with a dashed line labeled Prop axis tilted up and a cyan arrow labeled Relative wind meeting the propeller."
+          }
+        },
+        {
+          "heading": "Why the left engine's loss yaws harder",
+          "paragraphs": [
+            "The arm is the sideways distance from the airplane's center of gravity, its balance point, to the line an engine's thrust acts along. With the thrust shifted right, the right engine's thrust moves outboard, away from the cabin, and the left engine's moves inboard, toward it. So the right engine's arm is longer.",
+            "Lose the left engine, and the right engine's thrust pulls on that longer arm. The pull is the same, but on a longer arm it turns the airplane harder, like a longer wrench. So the nose swings hardest toward the dead engine.",
+            "Lose the right engine instead, and the left engine's thrust works on a shorter arm, with a weaker swing."
+          ],
+          "table": {
+            "caption": "One engine out on a twin whose propellers both turn clockwise",
+            "columns": [
+              "Engine lost",
+              "Remaining thrust",
+              "Swing toward the dead engine",
+              "Rudder needed"
+            ],
+            "rows": [
+              [
+                "Left (critical)",
+                "Right engine, on the longer arm",
+                "Stronger",
+                "More"
+              ],
+              [
+                "Right",
+                "Left engine, on the shorter arm",
+                "Weaker",
+                "Less"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/what-makes-the-left-engine-critical-shorter.webp",
+            "caption": "Right engine out. The left engine's thrust (yellow) sits on the shorter arm, closer to the middle, so the swing toward the dead right engine (violet) is weaker.",
+            "alt": "Top view of a see-through twin under the chip Right engine out, its right engine red, a yellow thrust arrow on the left engine, a bracket labeled Shorter arm and a violet arrow pointing right."
+          }
+        },
+        {
+          "heading": "Why the critical engine sets VMC",
+          "paragraphs": [
+            "Whichever engine fails, you hold the airplane straight mainly with rudder on the good engine's side, plus a small bank toward the good engine.",
+            "The rudder also weakens as the airplane slows. The more rudder the yaw takes, the sooner the rudder reaches its stop. With the critical engine dead, the rudder runs out first, at the highest speed.",
+            "VMC is the slowest speed at which you can keep directional control after the critical engine suddenly fails, with the good engine at takeoff power. Most twins mark it with a red radial line on the airspeed indicator.",
+            "That red line holds only for the conditions it was set under, including up to 5 degrees of bank toward the good engine. Lower the nose promptly to hold the blue line, the best climb speed on one engine. If full rudder can't stop the yaw, reduce power on the good engine and lower the nose further."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-makes-the-left-engine-critical-vmc.webp",
+            "caption": "At the VMC mark, the left-engine-out bar reaches full rudder while the right-engine-out bar has rudder to spare. The green arrow is the rudder's push on the tail, which swings the nose back to the right.",
+            "alt": "Top view of a see-through twin under the chip Set with left engine out, with a panel of two green bars labeled Rudder needed, Left engine out and Right engine out against a Full rudder mark, an airspeed dial labeled VMC and a green arrow at the tail."
+          }
+        },
+        {
+          "heading": "Three mistakes about the critical engine",
+          "paragraphs": [
+            "Stop the yaw with the rudder pedal on the good engine's side. The idle foot then points to the dead engine, which pilots remember as dead foot, dead engine. Close that engine's throttle before you shut anything down. If nothing changes, you found the dead engine. If the airplane sinks or the yaw changes, you closed the good one, so push that throttle back up.",
+            "Bank a few degrees toward the good engine rather than holding the wings level. With the wings level, the real VMC is much higher than the red line.",
+            "Check which way your twin's propellers turn. Some twins, such as the Piper Seminole, turn the right propeller counterclockwise. Each descending blade is then on the inboard side, so the arms match and there is no critical engine."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/what-makes-the-left-engine-critical-seminole.webp",
+            "caption": "A Seminole-style twin with a counter-rotating right propeller. Both descending blades are inboard, the arms are equal, and no engine is critical.",
+            "alt": "Top view of a see-through twin under the chip Seminole-style twin, No critical engine, with a yellow thrust arrow on each engine set inboard of its hub and a bracket labeled Equal arms."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Slow and nose high, which side of a clockwise propeller's disc makes more thrust?",
+            "2. When two identical twins whose propellers both turn clockwise lose opposite engines at the same slow speed, which one needs more rudder?",
+            "3. When your left engine fails in the climb, which rudder pedal do you press?",
+            "4. Does a Seminole, with its right propeller turning counterclockwise, have a critical engine?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. The right side, where the descending blade meets the air at a bigger angle of attack.",
+            "2. The one that lost its left engine, because the right engine's thrust then sits on the longer arm and yaws it harder.",
+            "3. The right pedal, on the good engine's side, so the idle left foot matches the dead left engine.",
+            "4. No, because both descending blades are inboard and the arms match."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/vmc-and-the-engine-out-roll-in-a-twin/",
+        "/explainers/what-are-left-turning-tendencies/",
+        "/explainers/stall-that-turns-into-a-spin/"
       ]
     },
     {

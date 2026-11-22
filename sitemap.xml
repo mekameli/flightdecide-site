@@ -547,6 +547,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/what-makes-the-left-engine-critical/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/what-makes-the-left-engine-critical.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/wake-turbulence-explained/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
