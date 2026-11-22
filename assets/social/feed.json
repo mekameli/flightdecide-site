@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T03:15:09+00:00",
+  "generated": "2026-11-22T03:55:10+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -696,6 +696,224 @@
         "/explainers/density-altitude/",
         "/explainers/how-the-pitot-tube-works/",
         "/explainers/vfr-into-deteriorating-weather/"
+      ]
+    },
+    {
+      "id": "lesson-manoeuvre-emergency-descent",
+      "slug": "emergency-descent-for-an-engine-fire-in-a-172",
+      "page": "/explainers/emergency-descent-for-an-engine-fire-in-a-172/",
+      "title": "The emergency descent for an engine fire in a 172",
+      "headline": "Cut the fuel, then bank 30 to 45 degrees and descend at 100 knots, with a quick Mayday if there's time. Land flaps up at 70 knots.",
+      "pillar": "adm",
+      "topic": "Decision making",
+      "alt": "A Cessna 172 in flight with flames and smoke coming from its engine cowling, under the chip Engine fire.",
+      "image": "/assets/social/lesson-manoeuvre-emergency-descent.webp",
+      "image_full": "/assets/explainers/emergency-descent-for-an-engine-fire-in-a-172.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Df1_TMbkz4y/",
+      "posted": "2026-11-17",
+      "caption": [],
+      "teaches": [],
+      "related_text": "An in-flight engine compartment fire is usually caused by a failure that allows a flammable substance, such as fuel, oil or hydraulic fluid, to come in contact with a hot surface, from a defective induction or exhaust system or a broken line; by the time a pilot becomes aware of it, it usually is well developed (AFH ch 18). Unless the AFM/POH directs otherwise, the first step on discovering a fire is to shut off the fuel supply by placing the mixture in idle cutoff and the fuel selector shutoff valve to OFF, which may starve the engine compartment of fuel and let the fire die naturally (AFH ch 18); the Cessna 172S ENGINE FIRE IN FLIGHT checklist reads 1 Mixture IDLE CUT OFF, 2 Fuel Shutoff Valve Pull Out (OFF), 3 Auxiliary Fuel Pump Switch OFF, 4 Master Switch OFF, 5 Cabin Heat and Air OFF (except overhead vents), 6 Airspeed 100 KIAS, 7 Forced Landing EXECUTE, and its first four items are memory items printed in bold (172S POH sec 3). If the flames are snuffed out, no attempt should be made to restart the engine (AFH ch 18; 172S POH sec 3). An emergency descent is a maneuver for descending as rapidly as possible to a lower altitude or to the ground for an emergency landing, and an uncontrollable fire is one reason for it (AFH ch 18); the 172S fire checklist has no descent steps of its own, so the descent flown is the emergency descent: a bank of approximately 30 to 45 degrees is established to maintain positive load factors (AFH ch 18; ACS PA.IX.A). Pushing the nose straight over reduces the load factor toward zero, at which nothing seems to have weight, so loose objects float (PHAK ch 5); in a 40 degree bank the load factor in level flight is about 1.3 (1 divided by the cosine of 40 degrees, computed). The 172S engine fire airspeed is 100 KIAS, not the 68 KIAS best glide; if the fire is not extinguished, the glide speed is increased to find an airspeed, within airspeed limitations, that gives an incombustible mixture (172S POH sec 3); the descent stays below the never-exceed speed and, in turbulence, below the maneuvering speed (AFH ch 18; 172S POH sec 2). On the FAA private pilot knowledge test, questions on emergency descent airspeed (ACS code PA.IX.A.K3) were missed 73.33 percent of the time from July 1, 2024 to June 30, 2025 (FAA Frequently Missed Knowledge Test ACS Codes). Unless the fire is electrical or a crash landing is imminent, deactivating the electrical system prevents the use of the radios for distress messages, so a quick Mayday goes out first if there is time (AFH ch 18); a distress call is MAYDAY three times, the station addressed, the aircraft identification, the nature of the distress, intentions and position (AIM 6-3-1, 6-3-2). With the master switch off the 172S's electric wing flaps cannot be extended, so the forced landing is flown flaps up at 70 KIAS (172S POH sec 3 and sec 7); its EMERGENCY LANDING WITHOUT ENGINE POWER items include doors unlatched prior to touchdown, touchdown slightly tail low and brakes applied heavily (172S POH sec 3); a forward slip loses extra height (AFH ch 9); the airplane is expendable and the only thing that matters is the safety of those on board (AFH ch 18). Smoke, as from burning insulation in an electrical fire, is another situation that can require an emergency descent, with the engine still running (ACS PA.IX.A.K1; AFH ch 18). The emergency descent is practiced with an instructor: clear the area, reduce power to idle unless prohibited, touch the fuel and mixture controls without moving them in a simulated fire, and level off once stable (ACS PA.IX.A; AFH ch 18).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 18",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapters 9 and 18",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "kind": "handbook",
+          "note": null,
+          "book_url": null,
+          "refs": [
+            "FAA-H-8083-3 ch 18",
+            "FAA-H-8083-3 ch 9"
+          ],
+          "parts": [
+            {
+              "label": "Chapter 9",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf"
+            },
+            {
+              "label": "Chapter 18",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/19_afh_ch18.pdf"
+            }
+          ]
+        },
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
+        },
+        {
+          "ref": "Cessna 172S POH sec 2, 3 and 7",
+          "title": "Cessna 172S Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        },
+        {
+          "ref": "AIM 6-3-1",
+          "title": "Aeronautical Information Manual, paragraph 6-3-1",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap6_section_3.html",
+          "kind": "aim",
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "Private Pilot Airman Certification Standards (FAA-S-ACS-6C)",
+          "title": "Private Pilot Airman Certification Standards (FAA-S-ACS-6C)",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "FAA Frequently Missed Knowledge Test ACS Codes (2nd quarter 2025)",
+          "title": "FAA Frequently Missed Knowledge Test ACS Codes (2nd quarter 2025)",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "emergency-descent",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "In a 172S with an engine fire in flight, cut the fuel first. Make a quick Mayday only if there's time, then switch the master off and close the cabin heat and air, except the overhead vents.",
+            "Get down fast. Fly an emergency descent at 100 knots, banked 30 to 45 degrees, then land flaps up at 70 knots and get out."
+          ]
+        },
+        {
+          "heading": "Fuel first",
+          "paragraphs": [
+            "Most engine fires start when fuel or oil leaks onto something hot, such as the exhaust. By the time you see one, it is usually well developed.",
+            "The first four checklist items are memory items. Idle cutoff, the mixture pulled fully out, stops fuel to the cylinders. The red fuel shutoff knob, pulled out, closes the supply line, and the auxiliary fuel pump goes off. That can starve a fuel-fed fire, though not an oil-fed one.",
+            "The fourth item is the master switch, the main electrical switch. If there's time, make a quick Mayday just before it goes off. Skip the call if the fire is electrical or a crash landing is close. Master off takes the radio, the transponder and the electric flaps.",
+            "Once the fire is out, don't restart the engine. A restart would pump fuel back to the leak, and a fire that seems out can flare up again."
+          ],
+          "table": {
+            "caption": "Engine fire in flight, a summary of the Cessna 172S checklist",
+            "columns": [
+              "Step",
+              "Item",
+              "Setting"
+            ],
+            "rows": [
+              [
+                "1",
+                "Mixture",
+                "Idle cutoff"
+              ],
+              [
+                "2",
+                "Fuel shutoff valve",
+                "Pulled out, off"
+              ],
+              [
+                "3",
+                "Auxiliary fuel pump switch",
+                "Off"
+              ],
+              [
+                "4",
+                "Master switch",
+                "Off"
+              ],
+              [
+                "5",
+                "Cabin heat and air",
+                "Off, except the overhead vents"
+              ],
+              [
+                "6",
+                "Airspeed",
+                "100 knots indicated, higher within limits if the fire still burns"
+              ],
+              [
+                "7",
+                "Forced landing",
+                "Then the checklist for a landing without engine power"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/emergency-descent-for-an-engine-fire-in-a-172-shutoff.webp",
+            "caption": "The red fuel shutoff knob pulled out to off, under the 172S engine fire checklist with its first two steps ticked.",
+            "alt": "A close view of a red knob pulled out of the panel, under the label Fuel shutoff: pull out, beside a card titled 172S engine fire in flight listing seven steps."
+          }
+        },
+        {
+          "heading": "Why you bank on the way down",
+          "paragraphs": [
+            "An emergency descent gets you down as fast as possible, here to land. The 172S fire checklist has no descent steps, so you fly the emergency descent pilots train.",
+            "Roll into a bank of about 30 to 45 degrees and let the nose drop into the turn. The tilted lift curves your path down while the wings stay loaded, with no sharp push forward. Use smooth elevator to hold the speed. The turn also lets you look below for traffic and a field.",
+            "Hold 100 knots, the checklist's speed, not the 68-knot best glide speed, the speed that glides farthest. You want down fast, not far. The extra speed adds drag. If the fire still burns, try a higher speed, within the limits, to put it out. Its heat may weaken the structure, so fly gently and never pass the red line, the never-exceed speed. In turbulence, stay below maneuvering speed, above which full or abrupt control movements can overstress the airplane. In a 172S it is 105 knots at 2,550 pounds, 98 at 2,200 and 90 at 1,900."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/emergency-descent-for-an-engine-fire-in-a-172-bank.webp",
+            "caption": "The descent flown in a bank, the arc showing the bank angle against the dashed horizon line.",
+            "alt": "A Cessna 172 trailing smoke in a steep bank over farmland, with an arc between its wing and a dashed horizon line."
+          }
+        },
+        {
+          "heading": "Landing with the master off",
+          "paragraphs": [
+            "Master off leaves the electric flaps where they are, up for this descent, so the landing is flown flaps up at 70 knots.",
+            "Roll out high near the field, slow from 100 to 70 knots and lose any extra height with a forward slip. That is a bank with opposite rudder, which steepens the glide. Hold 70 knots with the elevator until the flare. Tighten the seat belts and unlatch the doors before touchdown. Touch down main wheels first, nose slightly high, brake hard and get out."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/emergency-descent-for-an-engine-fire-in-a-172-landing.webp",
+            "caption": "Gliding to the field at 70 knots with the flaps already up, under part of the 172S checklist for a landing without engine power.",
+            "alt": "A Cessna 172 gliding low over farmland with a green label reading 70 KT, under a card titled Emergency landing without engine power listing the airspeed, flaps, doors, touchdown and brakes."
+          }
+        },
+        {
+          "heading": "Four mistakes to avoid",
+          "paragraphs": [
+            "Hold 100 knots in the descent, not best glide. On the private pilot knowledge test, emergency descent airspeed questions were missed 73 percent of the time in the year to June 2025.",
+            "Bank into the descent instead of shoving the nose straight down. An abrupt push unloads the airplane toward zero G, where loose items float.",
+            "Use the electrical fire checklist for smoke from burning wiring, since it has its own steps. It can still call for a fast descent, with the engine running.",
+            "Practice it with an instructor, after briefing a recovery altitude and clearing the area. In training, the power goes to idle first, and you touch each fuel control without moving it."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/emergency-descent-for-an-engine-fire-in-a-172-speed100.webp",
+            "caption": "The descent at 100 knots, the 172S checklist's airspeed, with items 1 to 6 ticked and the first four marked as memory items.",
+            "alt": "A Cessna 172 diving in a bank under the 172S Engine Fire in Flight checklist, items 1 to 6 ticked and a Memory 1-4 tag, with 100 KT in green."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. What is the very first thing you do when your 172S's engine catches fire in flight?",
+            "2. Why do you bank 30 to 45 degrees instead of pushing the nose straight down?",
+            "3. Which three things that matter here do you lose when the master switch goes off?",
+            "4. What speed do you fly in the emergency descent, and what speed on final with the flaps up?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Cut the fuel, with the mixture to idle cutoff and the fuel shutoff valve pulled out to off.",
+            "2. A smooth banked entry keeps the wings loaded with no abrupt push, so loose items stay put.",
+            "3. The radio, the transponder and the electric flaps.",
+            "4. 100 knots in the descent, and 70 knots on final with the flaps up."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/impossible-turn-after-an-engine-failure/",
+        "/explainers/stall-speed-rising-with-bank-angle/",
+        "/explainers/how-magnetos-work/"
       ]
     },
     {

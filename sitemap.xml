@@ -538,6 +538,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/emergency-descent-for-an-engine-fire-in-a-172/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/emergency-descent-for-an-engine-fire-in-a-172.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/imsafe-and-pave-explained/</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
