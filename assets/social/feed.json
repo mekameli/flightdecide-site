@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T04:30:44+00:00",
+  "generated": "2026-11-22T04:45:24+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -1921,6 +1921,204 @@
         "/explainers/how-fuel-reaches-the-engine-in-a-high-wing-trainer/",
         "/explainers/fuel-you-cannot-use/",
         "/explainers/how-a-carburetor-works/"
+      ]
+    },
+    {
+      "id": "lesson-aero-coffin-corner-icing",
+      "slug": "how-ice-closes-the-coffin-corner",
+      "page": "/explainers/how-ice-closes-the-coffin-corner/",
+      "title": "How ice closes the coffin corner",
+      "headline": "High enough, a jet's low-speed buffet and high-speed Mach buffet come within a few knots of each other. Ice raises the slow edge, so the two edges meet lower.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "A business jet above the clouds beside an airspeed tape under a Coffin corner chip, its red stall and Mach buffet bands nearly meeting, with an ice label at its foot.",
+      "image": "/assets/social/lesson-aero-coffin-corner-icing.webp",
+      "image_full": "/assets/explainers/how-ice-closes-the-coffin-corner.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DfU4Ljgj1mG/",
+      "posted": "2026-11-04",
+      "caption": [],
+      "teaches": [],
+      "related_text": "At a given indicated (calibrated) airspeed the true airspeed is higher the higher you fly, because the thinner air requires a faster true airspeed to give the same pitot pressure for the same KCAS (PHAK ch 5, Mach Buffet Boundaries); at 41,000 feet in the standard atmosphere, 200 knots calibrated is about Mach 0.687, about 394 knots true (computed). The speed of sound varies with temperature: under standard conditions of 15 degrees C it is 661 knots at sea level, and at 40,000 feet, where the temperature is minus 55 degrees C, it decreases to 574 knots (PHAK ch 5). The Mach number is the ratio of the true airspeed to the speed of sound at flight conditions; up high the airplane's speed limit is a Mach number (MMO), and in a constant Mach number climb the indicated airspeed falls off (PHAK ch 5; AC 61-107B). Critical Mach is the speed at which the airflow over any part of the aircraft first reaches Mach 1.0 (PHAK ch 5); Mach buffet arises when airflow separates on the upper surface of a wing behind a shock wave, and the shock wave strength increases as the local airflow speed ahead of it increases (AFH ch 16). At low-speed cruise the flow has a greater turn to make to follow the wing's upper surface; the air speeds up to do that and may exceed Mach 1 over the upper surface, because the true airspeed is still high, giving low-speed Mach buffet, a prestall buffet, which comes at a higher indicated airspeed as altitude increases (AFH ch 16; PHAK ch 5). If an airplane flew any faster it would exceed MMO, leading to high-speed Mach buffet; any slower and it would need an angle of attack leading to low-speed Mach buffet; this region is known as coffin corner (AFH ch 16), only a few knots below the onset of Mach buffet and a like speed above stall buffet (AWH ch 19). The aerodynamic ceiling, where the edges meet, is higher than the altitude limit in the AFM (AC 61-107B); increasing either gross weight or load factor increases the low-speed buffet speed and decreases the Mach buffet speed, so a bank or turbulence narrows the gap and cruise altitude and speed are chosen to leave margin for maneuvering and turbulence (AC 61-107B). Between 0 and minus 10 degrees C clouds consist mainly of supercooled water droplets, between minus 10 and minus 20 degrees C liquid droplets coexist with ice crystals, and below minus 20 degrees C clouds are generally all ice crystals (AWH ch 20); a jet meets the icing range climbing or descending through cloud, and at 40,000 feet, about minus 55 degrees C (PHAK ch 5), ice picked up on the climb does not melt off. Ice no thicker or rougher than a piece of coarse sandpaper can reduce lift by 30 percent and increase drag up to 40 percent (AWH ch 20); a reduction of the maximum lift coefficient by 30 percent is not unusual (AC 91-74B); since lift grows with the square of airspeed, stall speed varies as one over the square root of the maximum lift coefficient, and 1 divided by the square root of 0.70 is about 1.2, a stall speed about 20 percent higher (computed). A wing contaminated with ice ordinarily stalls at a lower angle of attack, and thus at a higher airspeed, and the stall may occur before stall warning devices activate (AC 91-74B). At high altitudes little excess thrust may be available (AC 61-107B); ice no thicker or rougher than coarse sandpaper can increase drag up to 40 percent and larger accretions far more (AWH ch 20; AC 91-74B), and in many icing events airspeed decreased from cruise to stall in less than 3 minutes (AC 91-74B). Anti-icing systems are to be activated prior to entering icing conditions, while deicing systems are normally activated at the first sign of ice accretion, as the AFM or POH directs; any remaining ice increases the stall speed, so the extra margin the flight manual gives is flown with ice on board, and the pilot exits the icing conditions (AC 91-74B). Anti-ice equipment keeps ice from forming; de-ice equipment removes ice that has formed (AC 91-74B). If the airspeed decays at high altitude, select maximum continuous thrust (MCT) to increase available thrust and stop the decay; if the airspeed still deteriorates, the only option is to descend, and lower down the speed window is wider (AC 61-107B); if the wing stalls or a stall is impending at the slow edge, reducing the angle of attack (nose down) is the priority, until the impending stall indications are eliminated, then thrust as needed and a gentle return to the desired flight path to avoid a secondary stall; at high altitude an extended nose-down recovery may be needed, and the recovery will likely require losing several thousand feet (AC 120-109A); pilots should understand the cause of any buffet in order to respond appropriately, since a buffet at the fast edge is Mach buffet (AFH ch 16). At the slow edge the stall recovery template starts with disconnecting the autopilot and autothrottle, then reducing the angle of attack and rolling the wings level (AC 120-109A); in icing conditions, buffet or shudder is treated as an imminent wing stall (AC 91-74B), and Mach buffet may come from two conditions in cruise, high speed (the fast edge) and low speed (the slow edge) (AFH ch 16); if the speed cannot be held, the pilot descends, declaring an emergency if necessary rather than delaying the recovery for an ATC clearance (AC 120-109A).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 5",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 5",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 5
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 16",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 16",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/17_afh_ch16.pdf",
+          "kind": "handbook",
+          "note": "Chapter 16 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 16
+        },
+        {
+          "ref": "FAA-H-8083-28 ch 19",
+          "title": "Aviation Weather Handbook (FAA-H-8083-28), Chapters 19 and 20",
+          "url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28-aviation-weather-handbook",
+          "refs": [
+            "FAA-H-8083-28 ch 19",
+            "FAA-H-8083-28 ch 20"
+          ]
+        },
+        {
+          "ref": "AC 61-107B",
+          "title": "AC 61-107",
+          "url": null,
+          "kind": "advisory-circular",
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "AC 91-74B",
+          "title": "AC 91-74",
+          "url": null,
+          "kind": "advisory-circular",
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "AC 120-109A",
+          "title": "AC 120-109",
+          "url": null,
+          "kind": "advisory-circular",
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Embraer_ Phenom_300E_AR_v006” by ryan_cd (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "ice-closes",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Climb a jet high enough and its speed limits close in. A few knots slower and the wing shakes, or buffets, on its way to a stall. A few knots faster and shock waves cause high-speed Mach buffet.",
+            "That narrow speed window is the coffin corner. Ice raises the slow edge, so the window shuts at a lower altitude and with less warning."
+          ]
+        },
+        {
+          "heading": "Why speed works differently up high",
+          "paragraphs": [
+            "Thin air pushes less on the airspeed indicator. So your indicated airspeed, the dial's reading, sits far below your true airspeed, your speed through the air. At 41,000 feet on a standard day, 200 knots indicated is almost 400 knots true.",
+            "The fast edge depends on how close you are to the speed of sound. So up high your limit is a Mach number, your true airspeed as a fraction of the speed of sound.",
+            "Hold a constant Mach number in a climb, and the fast edge falls to a lower indicated airspeed."
+          ],
+          "table": {
+            "caption": "Sound travels slower in colder air (standard day)",
+            "columns": [
+              "Altitude",
+              "Temperature",
+              "Speed of sound"
+            ],
+            "rows": [
+              [
+                "Sea level",
+                "15 °C",
+                "661 knots"
+              ],
+              [
+                "40,000 feet",
+                "-55 °C",
+                "574 knots"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/how-ice-closes-the-coffin-corner-tas.webp",
+            "caption": "Left, the dial's reading. Right, the true airspeed. The bar, not to scale, sets that speed against the speed of sound.",
+            "alt": "A business jet above the clouds with two readouts, 200 kt indicated and about 400 kt true, over a bar marked Sound speed."
+          }
+        },
+        {
+          "heading": "The fast edge, high-speed Mach buffet",
+          "paragraphs": [
+            "The air flowing over the top of the wing moves faster than the airplane. Speed up, and that air reaches the speed of sound first. The airplane's Mach number at that moment is its critical Mach number.",
+            "Past it, a shock wave forms on the upper surface, a thin line where the air suddenly slows. As the shock grows, the airflow behind it breaks away and the wing shakes."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-ice-closes-the-coffin-corner-shock.webp",
+            "caption": "Over the wing's top, the air goes faster than sound (blue). A shock wave stands at the back of that region, and behind it the flow separates (red).",
+            "alt": "A wing section on a dark grid with a blue region over its top labeled Supersonic, a line labeled Shock wave and a red mark behind it labeled Separated flow."
+          }
+        },
+        {
+          "heading": "The slow edge, and where they meet",
+          "paragraphs": [
+            "Slow down, and the wing needs a higher angle of attack, the angle between the wing and the oncoming air, to keep its lift. The air then has a sharper turn to make over the top, so it speeds up more.",
+            "Lower down, a wing stalls at about the same indicated airspeed at any height. Up high, true airspeed stays high even at a slow indicated airspeed, so that air can pass Mach 1. The wing then buffets before it stalls, at a higher indicated airspeed the higher you climb.",
+            "Climb on and the edges close in until a few knots separate them, the coffin corner.",
+            "The aerodynamic ceiling, where the edges meet, comes lower as weight rises. A bank or a bump of turbulence loads the wing and narrows the gap. So cruise where your flight manual's buffet data for your weight leaves room to maneuver."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-ice-closes-the-coffin-corner-corner.webp",
+            "caption": "Altitude against indicated airspeed, not to scale. The two edges meet at the top, the coffin corner, with only a narrow gap below it around the jet (white dot).",
+            "alt": "A graph of altitude against indicated airspeed, not to scale, with two red curves meeting at the top under a Coffin corner chip, a label Narrow gap at the apex and a white dot inside."
+          }
+        },
+        {
+          "heading": "What ice does to the window",
+          "paragraphs": [
+            "A jet picks up most of its ice climbing or descending through cloud between 0 °C and -20 °C. At cruise altitude it is far below freezing, so that ice stays on.",
+            "Even a thin layer as rough as coarse sandpaper can cut the wing's maximum lift by as much as 30 percent. Lift grows with the square of airspeed, so the stall speed can rise by about 20 percent.",
+            "The slow edge jumps at every altitude, and the corner moves lower. An iced wing can also stall at a lower angle of attack, before a stall warning set for a clean wing sounds.",
+            "Thin, rough ice can add up to 40 percent more drag, and engines make far less thrust in thin air. Hold altitude once drag passes the thrust, even on the autopilot, and the speed bleeds away. In many icing events, cruise turned to stall in under 3 minutes."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-ice-closes-the-coffin-corner-drops.webp",
+            "caption": "The violet curve is the iced slow edge. The red mark is a speed that was safe on a clean wing and is now a stall.",
+            "alt": "The same altitude and indicated airspeed graph with a violet curve inside the red ones, a red mark labeled Stall and a label Corner drops."
+          }
+        },
+        {
+          "heading": "Four mistakes near the coffin corner",
+          "paragraphs": [
+            "Turn on anti-ice, which keeps ice from forming, before you enter icing. De-ice systems, which remove ice that has formed, are normally used at the first sign of ice.",
+            "Ask air traffic control for a lower altitude while ice is still on the wing, since the clean-wing margins no longer apply. Lower down, keep the extra speed margin your jet's ice speeds call for. If the speed keeps decaying at maximum continuous thrust, the most thrust allowed with no time limit, descend at once. Then tell ATC, declaring an emergency rather than waiting for a clearance.",
+            "Treat any buffet or shudder in icing conditions as a stall about to happen. Outside icing, the trend is a clue to the edge. Speed decaying into a buffet points to the slow edge, and Mach rising into it points to the fast edge.",
+            "If the wing stalls or is about to, disconnect the autopilot and autothrottle, the automatic throttle, while holding the attitude. Then lower the nose until the warning and buffet stop and the speed builds. Roll the wings level, set thrust as needed and retract any speed brakes. Return gently to level flight, below the Mach limit. Expect to lose several thousand feet."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-ice-closes-the-coffin-corner-descend.webp",
+            "caption": "The white dot is the jet after a descent. The white bracket under it is the room left between the iced slow edge (violet) and the fast edge.",
+            "alt": "A business jet above the clouds below an inset of the altitude and airspeed graph with a point lowered inside the curves and the label Descend: wider window."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. At 41,000 feet with 200 knots on the airspeed indicator, roughly how fast are you moving through the air?",
+            "2. Near the coffin corner, which edge are you at when a buffet comes as the airspeed trends down?",
+            "3. Why does ice picked up in cloud at -10 °C still matter once you reach cruise?",
+            "4. High up, with the airspeed still decaying at maximum continuous thrust, what do you do?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Almost 400 knots, about twice what the dial shows.",
+            "2. The slow edge, so recover as from a stall about to happen, then descend gently, below the Mach limit.",
+            "3. It won't melt off up there, so the stall speed stays high.",
+            "4. With the speed still decaying, descend at once and tell ATC, declaring an emergency rather than waiting for a clearance."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/how-full-flaps-can-stall-an-iced-tail/",
+        "/explainers/freezing-level-inside-a-cloud-layer/",
+        "/explainers/stall-that-turns-into-a-spin/"
       ]
     },
     {
