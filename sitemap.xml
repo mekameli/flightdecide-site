@@ -547,6 +547,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/when-the-controller-goes-silent-but-your-radios-work/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/when-the-controller-goes-silent-but-your-radios-work.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/imsafe-and-pave-explained/</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>

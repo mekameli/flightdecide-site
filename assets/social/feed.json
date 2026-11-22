@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T04:45:24+00:00",
+  "generated": "2026-11-22T05:10:08+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -914,6 +914,162 @@
         "/explainers/impossible-turn-after-an-engine-failure/",
         "/explainers/stall-speed-rising-with-bank-angle/",
         "/explainers/how-magnetos-work/"
+      ]
+    },
+    {
+      "id": "lesson-news-national-ground-stop",
+      "slug": "when-the-controller-goes-silent-but-your-radios-work",
+      "page": "/explainers/when-the-controller-goes-silent-but-your-radios-work/",
+      "title": "When the controller goes silent but your radios work",
+      "headline": "On November 13, 2026, a ground network fault made controllers' voices and radar patchy nationwide. If nobody answers, check your radio, call again, then squawk 7600.",
+      "pillar": "airspace",
+      "topic": "Airspace",
+      "alt": "A see-through airliner's belly over a blue sky, its antennas wired to a radio rack inside, with the label No reply, marked Illustration.",
+      "image": "/assets/social/lesson-news-national-ground-stop.webp",
+      "image_full": "/assets/explainers/when-the-controller-goes-silent-but-your-radios-work.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Dfz8Y2wDBDG/",
+      "posted": "2026-11-16",
+      "caption": [],
+      "teaches": [],
+      "related_text": "On November 13, 2026 the FAA issued a nationwide ground stop (ATCSCC Advisory 111, 20:54 UTC), citing communication issues affecting multiple Air Route Traffic Control Centers; approximately 3,500 aircraft were airborne and all landed safely; air traffic resumed as of 8:15 p.m. ET the same day, a little over four hours after the stop (FAA Q&A, November 15, 2026; ATCSCC advisories). A tower controls the runways and the airspace near them, an approach control handles the airspace around busy airports, and Air Route Traffic Control Centers handle the en route airspace between them, split into sectors; the ATC System Command Center in Warrenton, Virginia manages national traffic flow and issues ground stops (FAA; JO 7210.3). A Center controller's voice goes through the Center's voice switch over the FAA's telecommunications network to a remote radio site near the airspace, which transmits on VHF line of sight to the aircraft; a radio site has an antenna, an equipment shelter with network equipment, main and standby radios and backup batteries; sites overlap, and backup radios at another site can take over when a site's main radios or lines fail (JO 6500.28); on the airliner, blade antennas feed VHF radios in the electronics bay; radar and ADS-B put aircraft targets on the controller's display. Officials say the trouble began during routine maintenance switching FAA telecommunication lines from copper to fiber at a remote location, including the deployment of a new router, when data began flooding the FAA's network; the FAA's legacy equipment became unstable at 17 of its 22 Air Route Traffic Control Centers; it was not a full outage, as some frequencies and radar feeds remained reliable; the two suspected source locations were blocked and the network stabilized (FAA Q&A, November 15, 2026). A two-way radio communications failure is when contact can't be restored, whatever the cause; a pilot who loses two-way contact tries to re-establish it, for example on the previously assigned frequency, on 121.5 MHz or through a flight service station, with no priority among the methods and all at once if possible (AIM 6-4-3); the transponder is set to 7600 (AIM 6-4-2), which ATC sees only where radar or ADS-B covers the aircraft. Under 14 CFR 91.185, if the failure occurs in VFR conditions or VFR conditions are met after it, the pilot continues the flight under VFR and lands as soon as practicable (AIM 6-4-1); otherwise the pilot flies the route of the last clearance, or if being radar vectored, direct from the point of failure to the fix, route or airway in the vector clearance; with no assigned route, the route ATC said to expect, and with neither, the route filed; for each route segment, at the highest of the altitude last assigned, the minimum altitude for IFR operations and the altitude ATC said to expect, where a higher expected altitude applies only from the time or fix given with it, and not at all if the failure comes after that time or fix (14 CFR 91.185; AIM 6-4-1). Standard separation that ATC sets up and the pilot keeps by flying the clearance is 1,000 feet vertically at FL350 in RVSM airspace and 5 nautical miles laterally with en route radar (JO 7110.65 4-5-1, 5-5-4); a predictable lost comms flight lets ATC keep it. TCAS II interrogates other aircraft's transponders directly, independent of ground ATC; it can give a traffic advisory and, when needed, a resolution advisory in the vertical, and between two TCAS II aircraft the resolution advisories are coordinated so they complement each other; the pilot follows the RA over an ATC instruction unless doing so would jeopardize safety, and tells ATC as soon as possible; TCAS gives no protection against an aircraft without a working transponder (FAA TCAS II v7.1 booklet; 14 CFR 91.123; AIM 4-4-16).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "14 CFR 91.185",
+          "title": "14 CFR 91.185",
+          "url": "https://www.ecfr.gov/current/title-14/section-91.185",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "14 CFR 91.123",
+          "title": "14 CFR 91.123",
+          "url": "https://www.ecfr.gov/current/title-14/section-91.123",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "AIM 6-4-1",
+          "title": "Aeronautical Information Manual, paragraphs 6-4-1 to 6-4-3",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap6_section_4.html",
+          "kind": "aim",
+          "note": null,
+          "book_url": null,
+          "refs": [
+            "AIM 6-4-1",
+            "AIM 6-4-2",
+            "AIM 6-4-3"
+          ]
+        },
+        {
+          "ref": "FAA, Nationwide Ground Stop: Questions and Answers (November 15, 2026)",
+          "title": "FAA, Nationwide Ground Stop: Questions and Answers (November 15, 2026)",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        },
+        {
+          "ref": "FAA, Introduction to TCAS II Version 7.1",
+          "title": "FAA, Introduction to TCAS II Version 7.1",
+          "url": null,
+          "kind": null,
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Boeing 737 MAX 8” by Dlourine (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "controller-goes",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "A controller's voice reaches you over the Federal Aviation Administration's (FAA's) ground network and a radio site near your airplane. So a fault on the ground can silence the frequency while the radios on board work.",
+            "If nobody answers, check the frequency and volume and call again, trying the last frequency that worked and 121.5, the emergency frequency. If contact stays lost, squawk 7600 and fly the lost communications rules."
+          ]
+        },
+        {
+          "heading": "How a controller's voice reaches you",
+          "paragraphs": [
+            "An Air Route Traffic Control Center, or Center, handles traffic between airport areas. The controller's voice goes through the Center's voice switch, which connects each controller to the radio lines. Then the FAA's telecommunications network carries it to a remote radio site near your airspace.",
+            "That site holds network equipment, main and standby radios and backup batteries. It transmits on very high frequency (VHF) radio, which travels in straight lines, so terrain and the horizon can block it. Your antenna feeds the radio on board. Standby radios and batteries cover a failed radio or a power cut, not a broken network link.",
+            "On November 13, 2026, that ground link became unstable in many places at once. Officials say it began during copper-to-fiber line work, when data from new equipment flooded the FAA's network.",
+            "Voice and radar came and went at 17 of 22 Centers, though some frequencies kept working. The FAA stopped departures nationwide with a ground stop. About 3,500 aircraft were airborne, and all landed safely. Traffic resumed a little over four hours later."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/when-the-controller-goes-silent-but-your-radios-work-site.webp",
+            "caption": "Inside a remote radio site's shelter, with the network router, the main and standby radios and the backup batteries.",
+            "alt": "A see-through equipment shelter with racks labeled Network router and Main plus standby radios, and battery shelves at the left."
+          }
+        },
+        {
+          "heading": "What to do when nobody answers",
+          "paragraphs": [
+            "A quiet frequency is normal, so silence alone is not a failure. If your calls go unanswered, try the last frequency that worked, 121.5 and a flight service station, all at once if you can.",
+            "Still nothing means a two-way radio communications failure, whatever the cause. Squawk 7600, which sets your transponder to the lost communications code. Air traffic control (ATC) sees it only where its radar or ADS-B still reaches the controller.",
+            "On an instrument flight, if you are in VFR conditions or reach them, continue under visual flight rules and land as soon as practicable. Otherwise, fly the route ATC assigned. If you were being vectored, steered by ATC headings, go direct from there to the fix, route or airway named in that vector clearance. With no assigned route, fly the route ATC said to expect, and with neither, the route you filed.",
+            "On each leg, fly the highest of the altitude last assigned, the minimum instrument altitude and any altitude ATC told you to expect. A higher expected altitude starts at the time or fix ATC gave with it, and doesn't apply if contact fails after that."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/when-the-controller-goes-silent-but-your-radios-work-route.webp",
+            "caption": "On an instrument flight in cloud, the white line is the route as cleared. The dashed line is a radar vector, and after a failure you fly straight to its fix.",
+            "alt": "An airliner's path curving toward a fix over the clouds, under the labels Route as cleared and Vectored, direct to fix."
+          }
+        },
+        {
+          "heading": "What TCAS can and cannot do",
+          "paragraphs": [
+            "Flying the rules predictably lets ATC protect your route.",
+            "TCAS II, the Traffic Alert and Collision Avoidance System on airliners, asks other aircraft's transponders directly, so it works without the ground. A traffic advisory warns of nearby traffic, and if needed a resolution advisory gives a command such as climb or descend.",
+            "When two TCAS II jets meet, their units coordinate so their advisories work together. TCAS can't see an aircraft without a working transponder."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/when-the-controller-goes-silent-but-your-radios-work-tcas.webp",
+            "caption": "In this example, the two jets' TCAS units coordinate, so one is told to climb and the other to descend.",
+            "alt": "Two airliners far apart in a gray sky, the upper one under an up arrow labeled Climb, climb and the lower one at the bottom edge labeled Descend, descend, marked Illustration."
+          }
+        },
+        {
+          "heading": "Three mistakes when the radio goes quiet",
+          "paragraphs": [
+            "Call again before deciding your radio has failed. First check the volume and the frequency you dialed.",
+            "Land as soon as practicable, not as soon as possible, after losing radio contact on an instrument flight in VFR conditions. The rule asks for a sensible landing, not a rushed one.",
+            "Follow a TCAS resolution advisory over an ATC instruction unless that would be unsafe, then tell ATC as soon as you can. Follow it promptly, whether or not the other aircraft has TCAS."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/when-the-controller-goes-silent-but-your-radios-work-squawk.webp",
+            "caption": "On an instrument flight with lost radio contact, in VFR conditions you continue under VFR and land as soon as practicable.",
+            "alt": "An airliner from behind over the clouds under green text reading Squawk 7600 and the label VFR conditions."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Why could your frequency go silent when the radios on board work?",
+            "2. Assigned 6,000 feet, with a minimum instrument altitude of 7,000 feet and no expected altitude, what do you fly after losing contact?",
+            "3. On an instrument flight in VFR conditions with no radio contact, how soon should you land?",
+            "4. If a TCAS resolution advisory conflicts with an ATC altitude instruction, which do you follow?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. The break can be on the ground, in the network or the radio site between the controller and you.",
+            "2. In cloud on that leg, 7,000 feet, the highest of the altitudes that apply.",
+            "3. As soon as practicable, continuing under VFR.",
+            "4. The resolution advisory, then tell ATC as soon as you can."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/when-the-radio-goes-quiet-light-gun-signals/",
+        "/explainers/what-flight-following-does-not-do/",
+        "/explainers/wake-turbulence-explained/"
       ]
     },
     {
