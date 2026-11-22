@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T02:30:21+00:00",
+  "generated": "2026-11-22T03:15:09+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -501,6 +501,204 @@
       ]
     },
     {
+      "id": "lesson-inst-altimeter-high-to-low",
+      "slug": "how-low-pressure-and-cold-air-fool-your-altimeter",
+      "page": "/explainers/how-low-pressure-and-cold-air-fool-your-altimeter/",
+      "title": "How low pressure and cold air fool your altimeter",
+      "headline": "Fly into lower pressure without resetting, or into cold air, and you are lower than your altimeter shows. High to low, hot to cold, look out below.",
+      "pillar": "navigation",
+      "topic": "Navigation",
+      "alt": "A Cessna 172 at night just above a snowy mountain ridge under the words So what changed? Tonight, and a green label reading 80 FT.",
+      "image": "/assets/social/lesson-inst-altimeter-high-to-low.webp",
+      "image_full": "/assets/explainers/how-low-pressure-and-cold-air-fool-your-altimeter.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Df5WOh0gfwG/",
+      "posted": "2026-11-18",
+      "caption": [],
+      "teaches": [],
+      "related_text": "The pressure altimeter is an aneroid barometer that measures the pressure of the atmosphere at the level where it is located and presents an altitude indication in feet, against the pressure set in its setting window (PHAK ch 8). If an aircraft is flown from a high pressure area into a low pressure area without adjusting the altimeter, the altimeter shows a constant altitude while the aircraft is actually lower than indicated: 'when flying from a high to a low, look out below' (PHAK ch 8; IFH ch 5); holding a constant reading, the aircraft follows the falling pressure level down. One inch of mercury on the altimeter setting is approximately 1,000 feet of altitude (PHAK ch 8; IFH ch 5), so 30.12 minus 29.62 is 0.50 inch, about 500 feet lower than indicated, and about 10 feet for each 0.01 inch (computed). The pilot should frequently obtain current altimeter settings en route (PHAK ch 8); 14 CFR 91.121 requires the current reported altimeter setting of a station along the route and within 100 nautical miles of the aircraft; dialing the lower setting (29.62) into the window makes the same airplane read lower, from 6,500 to 6,000 for 0.50 inch. Adjustments to compensate for nonstandard pressure do not compensate for nonstandard temperature: since cold air is denser than warm air, when operating in temperatures colder than standard the altitude is lower than the altimeter indication (PHAK ch 8; IFH ch 5); there is no altimeter setting for temperature. If the air is colder than standard it is denser and the pressure levels are closer together (IFH ch 5); the cold temperature error is proportional to the height above the reporting station and to the temperature at the reporting station (IFH ch 5, AIM 7-3-1). The ICAO cold temperature error table (IFH Figure 5-7) gives, for a reported temperature of minus 20 degrees C, a possible error of 420 feet at 3,000 feet above the reporting station and 710 feet at 5,000 feet above it. In a teaching scenario (made up) with a 3,000 foot station, a 5,500 foot ridge, 6,500 feet indicated, a stale setting of 30.12 against 29.62 and minus 20 degrees C at the station (standard there is about plus 9 degrees C, 15 degrees C less 2 degrees per 1,000 feet), the margin over the crest is as little as 1,000 minus 500 minus 420, which is 80 feet (computed, worst case). If terrain or obstacle clearance is a factor in selecting a cruising altitude, particularly in mountainous terrain, a colder-than-standard temperature places the aircraft lower than the altimeter indicates, so a higher indicated altitude may be required to provide adequate terrain clearance (PHAK ch 8). Flown from a low pressure area to a high pressure area without adjustment, or in air warmer than standard, the actual altitude is higher than indicated (PHAK ch 8; IFH ch 5); that errs toward terrain clearance, but the pilot still resets to the current setting (14 CFR 91.121). A memory aid for temperature joins the pressure one: 'from hot to cold, look out below' (PHAK ch 8). Before flight, with the current altimeter setting set, the altimeter should read the field elevation within 75 feet; if it is off by more than 75 feet it should be referred to a certificated instrument repair station for recalibration (AIM 7-2-3; IFH ch 5). At and above 18,000 feet MSL all aircraft use the standard altimeter setting of 29.92 inches of mercury (14 CFR 91.121; IFH ch 5); over high, mountainous terrain certain atmospheric conditions can cause the altimeter to indicate 1,000 feet or more higher than the actual altitude, so a generous margin of altitude should be allowed (PHAK ch 8).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 8",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 8",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 8
+        },
+        {
+          "ref": "FAA-H-8083-15 ch 5",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapter 5",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "chapter": 5
+        },
+        {
+          "ref": "14 CFR 91.121",
+          "title": "14 CFR 91.121",
+          "url": "https://www.ecfr.gov/current/title-14/section-91.121",
+          "kind": "regulation",
+          "note": "the regulation itself, on eCFR",
+          "book_url": null
+        },
+        {
+          "ref": "AIM 7-2-3",
+          "title": "Aeronautical Information Manual, paragraphs 7-2-3 and 7-3-1",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/",
+          "kind": "aim",
+          "note": null,
+          "book_url": null,
+          "refs": [
+            "AIM 7-2-3",
+            "AIM 7-3-1"
+          ],
+          "parts": [
+            {
+              "label": "Paragraph 7-2-3",
+              "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_2.html"
+            },
+            {
+              "label": "Paragraph 7-3-1",
+              "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_3.html"
+            }
+          ]
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "low-pressure",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Your altimeter turns air pressure into feet. Fly from high pressure into a low, an area of lower pressure, without resetting it, and the same reading puts you lower. Cold air does the same, and no setting fixes it.",
+            "Reset to the setting from a nearby airport's weather station as you go. In cold air over high ground, plan a higher altitude."
+          ]
+        },
+        {
+          "heading": "Why a low takes altitude from you",
+          "paragraphs": [
+            "An altimeter is a barometer. It measures the air pressure around the airplane and shows it as altitude, counted from the pressure you set in its window.",
+            "Hold a steady reading, and you fly along one pressure level, a height where the air pressure has one fixed value. Fly into a low without resetting, and that level sits lower, so you sink with it.",
+            "Settings are in inches of mercury, such as 29.92, and each inch is worth about 1,000 feet. Depart in a Cessna 172 with 30.12 set, cruise at 6,500 feet and fly on to where the setting is 29.62. That half inch leaves you about 500 feet lower than you read.",
+            "Below 18,000 feet, get the current setting from a station along your route, within 100 nautical miles, and dial it in. With 29.62 dialed in, the same airplane reads 6,000, so climb back to 6,500. That removes the pressure error, though not the cold-air error in the next section."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-low-pressure-and-cold-air-fool-your-altimeter-lose500.webp",
+            "caption": "Under the low (L), this 172 is about 500 feet lower than its altimeter shows.",
+            "alt": "A Cessna 172 flying past a snowy ridge at night, with a blue letter L for low pressure above and a red label reading 500 FT."
+          }
+        },
+        {
+          "heading": "Why cold air puts you lower still",
+          "paragraphs": [
+            "Setting the pressure does nothing for temperature. Standard air is 15 °C at sea level and cools about 2 °C per 1,000 feet. Colder air is denser, so its pressure levels sit closer together and the column of air below you is shorter.",
+            "Your altimeter still assumes standard spacing, so it shows more height above the station than is really there. The squeeze adds up with height, so the error grows the higher you are above the station and the colder it is there."
+          ],
+          "table": {
+            "caption": "Cold temperature error at a reported minus 20 °C",
+            "columns": [
+              "Height above the reporting station",
+              "Possible error"
+            ],
+            "rows": [
+              [
+                "3,000 ft",
+                "420 ft"
+              ],
+              [
+                "5,000 ft",
+                "710 ft"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/how-low-pressure-and-cold-air-fool-your-altimeter-column.webp",
+            "caption": "The cold air column (left) is shorter than the standard-day one (right). Dashed lines join matching marks, and the gap grows with height, biggest at the top.",
+            "alt": "Two vertical bars over a lit town at night, the left one shorter and labeled Cold air, the right one labeled Standard day. Dashed lines join their matching marks, a red line joins their tops, and the label Station sits below."
+          }
+        },
+        {
+          "heading": "What it adds up to over a ridge",
+          "paragraphs": [
+            "Take the 172 at 6,500 feet on the altimeter over a 5,500-foot ridge, near a reporting station at 3,000 feet. Yesterday that left 1,000 feet. Tonight the setting there is 29.62, you still have 30.12 set, and it is minus 20 °C at the station.",
+            "With the right setting you would read 6,000, which is 3,000 feet above the station, so the table gives up to 420 feet. Worst case for these two errors, that leaves as little as 80 feet over the crest."
+          ],
+          "table": {
+            "caption": "Tonight's margin over the ridge, worst case",
+            "columns": [
+              "Item",
+              "Feet"
+            ],
+            "rows": [
+              [
+                "Margin shown over the 5,500 ft ridge",
+                "1,000"
+              ],
+              [
+                "Taken by the low (30.12 to 29.62)",
+                "-500"
+              ],
+              [
+                "Taken by the cold at 3,000 ft above the station, up to",
+                "-420"
+              ],
+              [
+                "Left over the crest, as little as",
+                "80"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/how-low-pressure-and-cold-air-fool-your-altimeter-cold.webp",
+            "caption": "The low takes this 172 from the 6,500 shown to 6,000, and the cold up to 420 more. The bar's foot, close to the ridge, is where the 172 really is.",
+            "alt": "A tall red bar beside a snowy ridge at night, marked 6,500 at its top and 6,000 partway down, with red labels reading 500 FT and up to 420 FT."
+          }
+        },
+        {
+          "heading": "Three altimeter mistakes to avoid",
+          "paragraphs": [
+            "Check the altimeter on the ground. With the local setting in, it should read within 75 feet of where you stand, usually the field elevation. That is the airport's published elevation above sea level. If it is off by 75 feet or more, have a certificated instrument repair station check it.",
+            "Keep resetting as you fly. Air traffic control tells you when there is a new setting, and on your own you can hear one on a nearby airport's weather broadcast.",
+            "Climb early when it's cold over high ground on a flight under visual flight rules. There is no knob for cold, so add the cold error for your height above the station to the altitude you need. Take it from the full cold temperature error table in the Aeronautical Information Manual, or work it out on a flight computer. Climb to that altitude before the ridge, or turn back."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/how-low-pressure-and-cold-air-fool-your-altimeter-climb.webp",
+            "caption": "The green bar, labeled Early climb, marks this 172's height over the ground, gained by climbing well before the ridge.",
+            "alt": "A Cessna 172 seen from above climbing over snowy forest toward a ridge, with a green line labeled Early climb."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. After flying from 30.12 into a 29.62 area without resetting, are you higher or lower than shown, and by how much?",
+            "2. With minus 20 °C reported at a station 3,000 feet below you and a current setting, can you trust the altimeter for terrain clearance?",
+            "3. What should happen if, before takeoff with the local setting dialed in, your altimeter reads 100 feet off the field elevation?",
+            "4. Flying from a low into a high without resetting, which way is your altimeter wrong?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Lower, by about 500 feet.",
+            "2. Not fully. The cold air puts you lower than shown, so plan a higher altitude.",
+            "3. It should go to a certificated instrument repair station.",
+            "4. You are higher than it shows. That is the safe side for terrain, but reset anyway, because other traffic flies the current setting."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/density-altitude/",
+        "/explainers/how-the-pitot-tube-works/",
+        "/explainers/vfr-into-deteriorating-weather/"
+      ]
+    },
+    {
       "id": "adm-imsafe-pave",
       "slug": "imsafe-and-pave-explained",
       "page": "/explainers/imsafe-and-pave-explained/",
@@ -842,6 +1040,182 @@
         "/explainers/stall-that-turns-into-a-spin/",
         "/explainers/which-way-the-trim-tab-moves/",
         "/explainers/freezing-level-inside-a-cloud-layer/"
+      ]
+    },
+    {
+      "id": "lesson-emerg-impossible-turn",
+      "slug": "impossible-turn-after-an-engine-failure",
+      "page": "/explainers/impossible-turn-after-an-engine-failure/",
+      "title": "The impossible turn after an engine failure",
+      "headline": "At 400 feet, turning back to the runway after an engine failure takes more turning and more height than it seems. Lower the nose and land straight ahead instead.",
+      "pillar": "adm",
+      "topic": "Decision making",
+      "alt": "An illustrative view of farmland with a runway labeled Runway, an airplane at a 400 FT marker just after takeoff, and an orange turn back that reaches the ground at a red X short of the runway.",
+      "image": "/assets/social/lesson-emerg-impossible-turn.webp",
+      "image_full": "/assets/explainers/impossible-turn-after-an-engine-failure.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DfffYLhgk9K/",
+      "posted": "2026-11-08",
+      "caption": [],
+      "teaches": [],
+      "related_text": "After an engine failure on takeoff, altitude and airspeed are seldom sufficient to execute a 180 degree gliding turn necessary to return to the runway (172S POH sec 3, amplified procedures); the AFH calls the turn back 'the impossible turn', which presents many challenges (AFH ch 18). In the AFH's example at 65 knots and a standard-rate turn, the radius of the turn is 2,100 feet, so at the completion of a 180 degree turn the airplane is 4,200 feet to one side of the runway; it needs to turn another 45 degrees to head toward the runway, a total change in direction of 225 degrees, and a turn back may require more than a 180 degree change in direction (AFH ch 18). At the standard rate (3 degrees of change in direction per second) it takes 1 minute to turn 180 degrees, and 225 degrees takes 75 seconds plus a 4-second reaction time (AFH ch 18); the 172S glides about 20 nautical miles from 12,000 feet at 68 KIAS (POH Figure 3-1), about 10 to 1, which is about 690 feet a minute at 68 to 70 knots, so 79 seconds of gliding, the 75-second turn plus the 4-second reaction, costs about 900 feet, more than twice 400 feet (computed); the AFH's example starts at 300 feet AGL, sinks 1,000 feet a minute, takes 79 seconds including the reaction time, loses 1,316 feet and ends 1,016 feet below the runway (AFH ch 18). A turn back, if attempted, requires a turn with a higher bank angle; a standard rate or shallow turn consumes too much time, requires too much distance and generates an unacceptable solution (AFH ch 18). Cessna 172S stall speeds at 2,550 lb, power off, flaps up, in KIAS: 48 at 0 degrees of bank, 52 at 30, 57 at 45 and 68 at 60 (POH Figure 5-3); the engine failure immediately after takeoff checklist's airspeed is 70 KIAS with the flaps up and 65 KIAS with the flaps down (POH sec 3), so in a 60 degree bank the stall speed is just under the glide speed. In a 60 degree level turn the load factor is 2 and the stall speed is about 41 percent higher than in level flight (AFH ch 5). If the pilot does not lower the nose sufficiently during the turn, an accelerated stall and fatal crash may occur; pilots should be alert for and respond appropriately to any stall warning and reduce wing loading during the turn as necessary (AFH ch 18); altitude loss during a stall recovery may be as much as 230 feet (172S POH Figure 5-3, note 1). Prompt lowering of the nose to maintain airspeed and establish a glide attitude is the first response to an engine failure after takeoff; in most cases the landing should be planned straight ahead with only small changes in direction to avoid obstructions, and the checklist ends 'Land, STRAIGHT AHEAD' (172S POH sec 3); continuing straight ahead or making a slight turn gives the pilot time to establish a safe landing attitude, and the landing occurs under control and as slowly as possible, which usually represents the option with the lowest risk (AFH ch 18). The 172S ENGINE FAILURE IMMEDIATELY AFTER TAKEOFF checklist has eight items: airspeed 70 KIAS flaps up (65 flaps down), mixture idle cut off, fuel shutoff valve off, ignition off, wing flaps as required, master switch off, cabin door unlatch, and land straight ahead; it assumes time to secure the fuel and ignition systems before touchdown (172S POH sec 3). A pilot might turn back only if certain the airplane can reach the field from its current position and the pilot has trained and practiced the turn back maneuver, practicing turns in both directions at a safe altitude in the make and model flown with an authorized flight instructor; a turn back at low altitude presents an unacceptable risk for student pilots, low-time pilots and untrained pilots (AFH ch 18).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 18",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapters 5 and 18",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "kind": "handbook",
+          "note": null,
+          "book_url": null,
+          "refs": [
+            "FAA-H-8083-3 ch 18",
+            "FAA-H-8083-3 ch 5"
+          ],
+          "parts": [
+            {
+              "label": "Chapter 5",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/06_afh_ch5.pdf"
+            },
+            {
+              "label": "Chapter 18",
+              "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/19_afh_ch18.pdf"
+            }
+          ]
+        },
+        {
+          "ref": "Cessna 172S POH sec 3 and sec 5",
+          "title": "Cessna 172S Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "impossible-turn",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "If the engine quits 400 feet above the ground just after takeoff, the runway behind you is the hardest place to reach. In this example, a gentle turn back needs about 225 degrees and more than twice your height, and a steep one can stall.",
+            "Lower the nose right away to hold the engine-failure speed, 70 knots in a 172S with the flaps up. Pick a field ahead, keep the turns small and land straight ahead, slow and under control."
+          ]
+        },
+        {
+          "heading": "Why turning back is more than 180 degrees",
+          "paragraphs": [
+            "A turn has width. Even at a slow 65 knots, a standard-rate turn, 3 degrees a second, has a radius of about 2,100 feet.",
+            "So a 180-degree turn leaves you about 4,200 feet to one side of the runway. In this no-wind example, you need about another 45 degrees just to point back at it, a total of about 225 degrees. Reaching the runway and lining up take more."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/impossible-turn-after-an-engine-failure-turn225.webp",
+            "caption": "The dashed line across the circle is the turn's width. After 180 degrees you are off to the side, so in this example pointing back takes about 225 degrees.",
+            "alt": "An aerial view of farmland with an orange turn arc and dashed lines back toward the runway, labeled 225 degrees."
+          }
+        },
+        {
+          "heading": "Why a gentle turn costs too much height",
+          "paragraphs": [
+            "At the standard rate, 180 degrees takes a minute and 225 degrees takes 75 seconds. Add about 4 seconds to react, and you are gliding for 79 seconds.",
+            "A 172S glides about 10 feet forward for every foot it comes down. At 70 knots that is about 700 feet a minute, so 79 seconds of gliding costs over 900 feet. That is more than twice the 400 feet you had.",
+            "That is a straight-glide figure. A banked glide sinks faster, and the glide to the runway after the turn needs more height still."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/impossible-turn-after-an-engine-failure-over2x.webp",
+            "caption": "The white bar is the 400 feet the airplane had. The orange bar is the height a gentle turn back uses at that sink rate, over twice as much.",
+            "alt": "A low view over farmland with a 400 FT marker beside a much taller orange marker labeled Over 2 times, and a red X where a sloping glide path meets the ground."
+          }
+        },
+        {
+          "heading": "Why a steep turn back can stall",
+          "paragraphs": [
+            "So a turn back has to be steep to be quick.",
+            "Banking tilts the wing's lift, so a turn needs more lift, and the stall speed rises, as the table shows for a 172S. Held level at 60 degrees of bank, the wing carries twice the airplane's weight, which raises the stall speed about 41 percent. That puts it at 68 knots, just 2 knots under the 70-knot engine-failure speed.",
+            "With your eyes on the runway, it is easy to pull back on the control wheel to tighten the turn and keep the nose up. That can bring an accelerated stall, when the wing meets the air at too great an angle under the turn's extra load. One wing may drop."
+          ],
+          "table": {
+            "caption": "Cessna 172S stall speeds at 2,550 lb, power off, flaps up, in a level coordinated turn",
+            "columns": [
+              "Bank angle",
+              "Stall speed (knots indicated)"
+            ],
+            "rows": [
+              [
+                "0°",
+                "48"
+              ],
+              [
+                "30°",
+                "52"
+              ],
+              [
+                "45°",
+                "57"
+              ],
+              [
+                "60°",
+                "68"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/impossible-turn-after-an-engine-failure-stall68.webp",
+            "caption": "At 2,550 pounds with the flaps up, this 172S stalls at about 68 knots in a level 60-degree bank. It is flying at 70.",
+            "alt": "A Cessna 172 in a steep bank against the sky, marked 60 degrees, beside a card reading Stall 68 kt, your speed 70 kt."
+          }
+        },
+        {
+          "heading": "What to fly instead",
+          "paragraphs": [
+            "Lower the nose at once. Hold the engine-failure speed, 70 knots with the flaps up or 65 with them down, until the flare. That is the raise of the nose just before touchdown.",
+            "Plan the landing straight ahead, with only small changes in direction to miss obstacles.",
+            "If there is time while you keep flying, pull the mixture to idle cutoff, close the fuel shutoff valve and switch off the ignition. Set the flaps, then turn off the master switch, since the flaps need its power, and unlatch the door. Touch down under control at the slowest speed you can."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/impossible-turn-after-an-engine-failure-checklist.webp",
+            "caption": "Fly first. Nose down to the engine-failure speed, a field ahead with small turns, then straight ahead, slow and in control.",
+            "alt": "A Cessna 172 gliding low over a field below a card reading 172S, nose down, 70 kt, flaps up; field ahead, small turns; straight ahead, slow, in control."
+          }
+        },
+        {
+          "heading": "Three mistakes after an engine failure on takeoff",
+          "paragraphs": [
+            "Lower the nose first, before anything else. It keeps the airspeed you need to glide and stay clear of the stall.",
+            "At the first stall warning in a turn, ease the back pressure until the warning stops, then roll toward wings level. Less load on the wing lowers the stall speed. A stall this close to the ground can drop a wing. With the nose swinging sideways, it can become a spin, with no height left to recover.",
+            "Brief your engine-failure plan before every takeoff, and leave the turn back to pilots who have practiced it. They have practiced it at a safe altitude with an instructor, in that make and model. Even they turn back only when certain of making the runway."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/impossible-turn-after-an-engine-failure-stalled.webp",
+            "caption": "Pulling harder during a turn can stall the wing, and red marks the stalled wing.",
+            "alt": "A see-through Cessna 172 banked steeply over farmland and a river, with red wing surfaces and a label reading Stalled."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. When the engine quits at 400 feet just after takeoff, what is your very first action?",
+            "2. Why doesn't a 180-degree turn leave you pointing at the runway?",
+            "3. Using the table, how far is 70 knots above the stall speed in a 60-degree bank?",
+            "4. Is it fine to make a small turn toward a good field just left of your nose?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Lower the nose to the engine-failure speed, 70 knots indicated with the flaps up.",
+            "2. The turn carries you off to one side, about 4,200 feet at 65 knots, so in this example pointing back takes about 225 degrees.",
+            "3. About 2 knots, which is almost no margin.",
+            "4. Yes. Small changes in direction to reach a field or miss obstacles are part of landing straight ahead."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/stall-speed-rising-with-bank-angle/",
+        "/explainers/stall-that-turns-into-a-spin/",
+        "/explainers/why-a-downwind-turn-does-not-stall-you/"
       ]
     },
     {

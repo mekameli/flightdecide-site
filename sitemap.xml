@@ -529,6 +529,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/how-low-pressure-and-cold-air-fool-your-altimeter/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/how-low-pressure-and-cold-air-fool-your-altimeter.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/imsafe-and-pave-explained/</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -544,6 +553,15 @@
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://flightdecide.com/assets/explainers/how-full-flaps-can-stall-an-iced-tail.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/impossible-turn-after-an-engine-failure/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/impossible-turn-after-an-engine-failure.webp</image:loc>
     </image:image>
   </url>
   <url>
