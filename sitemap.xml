@@ -511,6 +511,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://flightdecide.com/explainers/crosswind-landing-from-final-to-the-rollout/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/crosswind-landing-from-final-to-the-rollout.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://flightdecide.com/explainers/what-are-left-turning-tendencies/</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T01:40:16+00:00",
+  "generated": "2026-11-22T02:30:21+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
     {
@@ -189,6 +189,159 @@
         "/explainers/what-are-left-turning-tendencies/",
         "/explainers/what-is-parasite-drag/",
         "/explainers/stall-that-turns-into-a-spin/"
+      ]
+    },
+    {
+      "id": "lesson-landing-crosswind-aileron",
+      "slug": "crosswind-landing-from-final-to-the-rollout",
+      "page": "/explainers/crosswind-landing-from-final-to-the-rollout/",
+      "title": "Crosswind landing from final to the rollout",
+      "headline": "A crosswind landing gets harder as you slow, right up to the moment the airplane stops.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "A white Cessna 172 rolling down a runway at night with a wind arrow from the left, the chip Slower = more yoke, and a small panel with the yoke turned into the wind.",
+      "image": "/assets/social/lesson-landing-crosswind-aileron.webp",
+      "image_full": "/assets/explainers/crosswind-landing-from-final-to-the-rollout.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/Df91dZRAUwL/",
+      "posted": "2026-11-20",
+      "caption": [],
+      "teaches": [],
+      "related_text": "Crosswind landings use the crab method, the wing-low (sideslip) method or a combination; the wing-low method is recommended in most cases, and on a long final one option is to crab first and smoothly transition to wing-low before the round out (AFH ch 9); the 172S manual says the wing low method gives the best control (172S POH sec 4). With the nose aligned with the runway and no correction, the airplane drifts with the crosswind; a crab is a heading toward the wind that aligns the wings-level ground track with the centerline; touching down crabbed puts a side load on the landing gear, so the crab is removed with rudder just before touchdown, and a change made too early or too late results in a side load or drift (AFH ch 9). In the wing-low method the pilot uses rudder to align the airplane with the runway and ailerons to lower the upwind wing just enough to cancel the drift; banked, the airplane tends to turn, so opposite rudder holds the heading, and the sideslip is adjusted as the crosswind changes (AFH ch 9). If the required bank is such that full opposite rudder does not prevent a turn, the wind is too strong to land safely on that runway, and the landing should be made on a more favorable runway, at that airport or an alternate (AFH ch 9); in a 172S go-around, reduce the flap setting to 20 degrees immediately after full power is applied (172S POH sec 4). The 172S's demonstrated crosswind velocity, 15 knots, is the crosswind component for which adequate control was demonstrated during certification; it is not considered limiting (172S POH sec 1), and the maximum allowable crosswind depends on pilot capability as well as aircraft limitations (172S POH sec 4). In gusty or turbulent air, fly a power-on approach slightly above the normal approach speed for more positive control; pilots often use the normal approach speed plus one-half of the wind gust factor (AFH ch 9), so a 65-knot approach with gusts 10 knots above the wind becomes 70 knots (computed); use partial flaps, the minimum flap setting the field length requires (172S POH sec 4), and retard the throttle to idle only after the main wheels touch (AFH ch 9); through gusts, adjust the correction promptly so the airplane does not drift at touchdown (AFH ch 9). In a 172S, steep slips should be avoided with flap settings greater than 20 degrees because of a slight tendency for the elevator to oscillate (172S POH sec 4). As the airplane slows in the round out the flight controls become less effective, the correction being held becomes inadequate, and the pilot gradually increases the rudder and aileron deflection; the upwind wing is kept down throughout the round out, the initial touchdown is on the upwind main wheel, and although it may appear that the upwind wingtip will strike the ground, it does not (AFH ch 9). As little as 10 degrees of cornering angle, between where a tire points and where it rolls, creates a side load equal to half the weight it supports, and a drifting touchdown's side load can roll a tricycle-gear airplane onto one main wheel, putting a wingtip or the propeller on the ground (AFH ch 9). The 172's nosewheel is steered by the rudder pedals; to prevent swerving in the direction the nosewheel is offset, the corrective rudder pressure is relaxed as the nosewheel touches down (AFH ch 9; 172S POH sec 7). On the rollout, as forward speed decreases the relative wind acts more like a crosswind and lifts the upwind wing harder, while less airflow over the ailerons makes them less effective; with more side area behind the main gear than ahead and the main wheels as a pivot, the airplane tends to weathervane into the wind; more and more aileron is applied, held fully toward the wind as the airplane comes to a stop, with directional control by rudder and nosewheel steering (AFH ch 9) and occasional braking if necessary (172S POH sec 4).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+          "kind": "handbook",
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        },
+        {
+          "ref": "Cessna 172S POH sec 1, 4 and 7",
+          "title": "Cessna 172S Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "3D model: “Cessna172” by KOG_THORNS (sketchfab.com), CC BY 4.0, modified.",
+      "credits_label": "Picture credits",
+      "short": "crosswind-landing",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "In a crosswind, the yoke goes into the wind to stop the drift and the rudder keeps the nose straight. As you slow in the flare, the pitch-up that ends the descent, your controls do less, so you add more of both.",
+            "The landing isn't over at touchdown. Keep turning the yoke into the wind through the rollout, the slowdown on the runway, to full at the stop."
+          ]
+        },
+        {
+          "heading": "Crab or wing-low on final",
+          "paragraphs": [
+            "Point the nose straight down the runway with no correction, and the wind drifts you sideways. One fix is a crab. Turn the nose into the wind until your track, your path over the ground, runs straight along the runway.",
+            "Touch down crabbed, though, and the wheels land at an angle and take a side load. So the crab comes out with rudder just before touchdown. Too early and you drift, too late and you land crabbed.",
+            "The wing-low method, recommended in most cases, holds the nose straight with rudder. You turn the yoke into the wind, which moves the ailerons, to lower the upwind wing just enough to stop the drift. The bank tries to turn you, so you hold opposite rudder.",
+            "The wing-low method is a sideslip, a bank held against opposite rudder. In a 172S, avoid steep slips with more than 20 degrees of flap, because the elevator can oscillate slightly. In a strong crosswind, use the least flap your runway allows."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/crosswind-landing-from-final-to-the-rollout-winglow.webp",
+            "caption": "With the wind from the left, the yoke is turned left to lower that wing just enough to stop the drift. Right rudder keeps the nose straight.",
+            "alt": "A white Cessna 172 on short final at night with one wing lowered, under the label Wing low, beside a panel with a yoke icon, bars for the left and right rudder pedals and a speed bar."
+          }
+        },
+        {
+          "heading": "Why you need more control as you slow",
+          "paragraphs": [
+            "In the flare the airplane slows, and the controls get less effective. The correction you were holding is no longer enough, so add aileron and rudder gradually, all the way down.",
+            "Keep the upwind wing down through the flare, so the upwind main wheel touches first.",
+            "Drift at touchdown does real harm. If a tire's path runs just 10 degrees off the way it points, it takes a side load of half the weight on it. Enough of that can lift one main wheel and put a wingtip or the propeller on the runway."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/crosswind-landing-from-final-to-the-rollout-flare.webp",
+            "caption": "In the flare the speed bar drops, so the inputs held on final now do less. Add more yoke and more rudder, as the labels say.",
+            "alt": "A white Cessna 172 in the flare over a runway at night under the labels More yoke and More rudder, beside the yoke, rudder and speed panel."
+          }
+        },
+        {
+          "heading": "Why the rollout still needs the yoke",
+          "paragraphs": [
+            "As you slow, the headwind from your own motion shrinks. So the wind you feel swings toward the side and lifts the upwind wing harder. Less air over the ailerons makes the same yoke do less.",
+            "The airplane also tends to weathervane. The main wheels act as a pivot with more side area behind them than ahead. The wind pushes the tail around and turns the nose into it.",
+            "So keep adding aileron into the wind, holding it fully over as you stop. Steer with the pedals, which turn the nosewheel, and use a little brake if you need it."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/crosswind-landing-from-final-to-the-rollout-yokefull.webp",
+            "caption": "As you stop with the wind from the left (cyan arrow), it tries to lift the left wing (yellow arrow). Hold the yoke full left.",
+            "alt": "A white Cessna 172 slowing on a runway at night under the label Yoke full left, with a cyan wind arrow from the left, a yellow arrow at the left wing and the yoke, rudder and speed panel."
+          }
+        },
+        {
+          "heading": "Four crosswind mistakes to avoid",
+          "paragraphs": [
+            "Hold the bank right to the ground. The low wingtip looks close but won't hit, and leveling the wings lets the airplane drift as it touches down.",
+            "Go around if full opposite rudder can't stop the turn. The wind is too strong for that runway, so land on one more into the wind. In a 172S go-around with more than 20 degrees of flap, reduce the flaps to 20 degrees right after full power.",
+            "Ease the rudder as the nosewheel touches. Rudder still held for the slip steers the nosewheel the moment it takes weight, and the airplane swerves.",
+            "Fly gusty approaches a little faster. The gust factor is how many knots the gusts run above the steady wind. Unless your POH says otherwise, add half of it to your normal approach speed."
+          ],
+          "table": {
+            "caption": "A gusty approach in a 172S, worked out",
+            "columns": [
+              "Step",
+              "Knots"
+            ],
+            "rows": [
+              [
+                "Normal approach speed (indicated)",
+                "65"
+              ],
+              [
+                "Gusts above the steady wind",
+                "10"
+              ],
+              [
+                "Add half the gust factor",
+                "+5"
+              ],
+              [
+                "Approach speed to fly (indicated)",
+                "70"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/crosswind-landing-from-final-to-the-rollout-swerve.webp",
+            "caption": "Right rudder still held from the slip as the nosewheel touches swerves the airplane right. The red airplane shows where it goes.",
+            "alt": "A white Cessna 172 on a runway at night beside a red copy of it swerving to the side, under the label Swerve."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. With the wind from the right on short final, which wing do you lower?",
+            "2. Why does your crosswind correction run short in the flare, and what do you do about it?",
+            "3. What does it tell you when full opposite rudder can't stop the turn your bank creates?",
+            "4. With a 65-knot normal approach and the wind at 12 knots gusting 20, what speed do you fly?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. The right wing, just enough to stop the drift, with left rudder to keep the nose straight.",
+            "2. The airplane slows in the flare, so the controls do less, and you add aileron and rudder as needed to stop the drift.",
+            "3. The wind is too strong for that runway, so go around and land on one more into the wind.",
+            "4. About 69 knots, since half the 8-knot gust factor added to 65 gives 69."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/wind-correction-angle/",
+        "/explainers/ground-effect-in-the-flare/",
+        "/explainers/going-around-power-first/"
       ]
     },
     {
