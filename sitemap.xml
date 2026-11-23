@@ -497,9 +497,18 @@
   <!-- explainers:start (managed by scripts/gen_social_posts.py, do not edit by hand) -->
   <url>
     <loc>https://flightdecide.com/explainers/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flightdecide.com/explainers/leans-why-a-slow-bank-feels-level/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://flightdecide.com/assets/explainers/leans-why-a-slow-bank-feels-level.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://flightdecide.com/explainers/how-a-turboprop-works-compared-with-your-172-s-engine/</loc>

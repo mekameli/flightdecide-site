@@ -1,7 +1,148 @@
 {
-  "generated": "2026-11-22T17:05:06+00:00",
+  "generated": "2026-11-23T18:15:04+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-hf-the-leans",
+      "slug": "leans-why-a-slow-bank-feels-level",
+      "page": "/explainers/leans-why-a-slow-bank-feels-level/",
+      "title": "The leans: why a slow bank feels level",
+      "headline": "In clouds, a slow bank can feel level, and the quick fix can feel like a bank the other way. Pilots call it the leans.",
+      "pillar": "illusions",
+      "topic": "Visual illusions",
+      "alt": "From the cockpit in clouds, the attitude indicator shows a left bank. Light blue REAL marks follow the bank while red YOU FEEL marks stay level.",
+      "image": "/assets/social/lesson-hf-the-leans.webp",
+      "image_full": "/assets/explainers/leans-why-a-slow-bank-feels-level.webp",
+      "image_px": 1003,
+      "permalink": "https://www.instagram.com/reel/DgF_TFBAJ-d/",
+      "posted": "2026-11-23",
+      "caption": [],
+      "teaches": [],
+      "related_text": "The leans is the most common illusion during flight; it follows a sudden return to level flight after a gradual, prolonged turn the pilot did not notice (PHAK ch 17). A rotational acceleration of 2 degrees per second or lower is below the detection threshold of the semicircular canals (PHAK ch 17). A bank entered too slowly does not set the fluid in the roll canal moving; an abrupt correction does, creating the illusion of a bank the other way (IFH ch 3). The disoriented pilot may roll back into the original bank or, holding level flight, feel compelled to lean (IFH ch 3; AIM 8-1-5). The pilot needs to believe what the flight instruments show about the airplane's attitude regardless of what the natural senses tell (AFH ch 18).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-25 ch 17",
+          "title": "Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25), Chapter 17",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+          "chapter": 17
+        },
+        {
+          "ref": "FAA-H-8083-15 ch 3",
+          "title": "Instrument Flying Handbook (FAA-H-8083-15), Chapters 3 and 7",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "kind": "handbook",
+          "note": null,
+          "book_url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf",
+          "refs": [
+            "FAA-H-8083-15 ch 3",
+            "FAA-H-8083-15 ch 7"
+          ]
+        },
+        {
+          "ref": "FAA-H-8083-3 ch 18",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 18",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/19_afh_ch18.pdf",
+          "kind": "handbook",
+          "note": "Chapter 18 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 18
+        },
+        {
+          "ref": "AIM 8-1-5",
+          "title": "Aeronautical Information Manual, paragraph 8-1-5",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+          "kind": "aim",
+          "note": null,
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "",
+      "credits_label": "Picture credits",
+      "short": "leans-slow",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "In clouds, a wing can drop so slowly that you never feel the bank. When you spot it and roll level quickly, your inner ear feels only that quick roll. So level feels like a bank the other way.",
+            "Believe the attitude indicator, the instrument that shows your bank and pitch, over your body. Cross-check it with the heading indicator and the turn coordinator, which shows when you are turning. Level the wings smoothly on the attitude indicator and keep believing it."
+          ]
+        },
+        {
+          "heading": "How your inner ear feels a roll",
+          "paragraphs": [
+            "Each inner ear holds three semicircular canals, small fluid-filled tubes set at roughly right angles, one each for roll, pitch and yaw. In a small bulge of each canal sits the cupula, a soft gel flap with fine sensory hairs reaching into it.",
+            "When the airplane starts to roll, the roll canal turns with your head while the fluid lags behind. That lag bends the cupula and its hairs, and your brain reads the bend as a roll."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/leans-why-a-slow-bank-feels-level-quick.webp",
+            "caption": "The canal turns faster than its fluid, so the fluid pushes the cupula and its hairs the other way.",
+            "alt": "A cutaway of the roll canal during a quick roll, showing lagging fluid bending the pink cupula over."
+          }
+        },
+        {
+          "heading": "Why a slow bank feels level",
+          "paragraphs": [
+            "A roll that builds gently, at about 2 degrees per second or less, is too faint for your canals to sense. Roll that slowly and the fluid keeps pace with its canal, so the cupula stays upright and you feel level.",
+            "At half a degree a second, a bank reaches 30 degrees in a minute, and you feel none of it. Your seat gives no warning either, because a coordinated turn still presses you straight down into it.",
+            "Clouds are not the only place this happens. A dark night over water or empty land can hide the horizon just as well."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/leans-why-a-slow-bank-feels-level-slow.webp",
+            "caption": "The white lines in the middle show the bank angle building, under 2 degrees a second. The fluid keeps pace, so the cupula stays upright.",
+            "alt": "The roll canal cutaway under the words UNDER ~2°/SEC, with an upright cupula and center lines showing bank angle."
+          }
+        },
+        {
+          "heading": "Why a quick rollout feels like a bank",
+          "paragraphs": [
+            "Sooner or later you spot the bank, on the attitude indicator or in a heading that keeps creeping. If you roll level quickly, that roll sets the fluid moving, so your ear feels it.",
+            "Your brain never felt the roll in, so it counts only the roll out. After a slow bank to the left, level now feels like a bank to the right. The false bank lasts until the illusion fades.",
+            "A long, steady turn sets the same trap. In the canal that senses the turn, friction drags the fluid up to the canal's speed in about 15 to 20 seconds. Then the turn stops feeling like one.",
+            "A level airplane that feels banked is the leans, the most common illusion in flight. To feel upright, you lean toward the old bank in your seat."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/leans-why-a-slow-bank-feels-level-twist.webp",
+            "caption": "After a quick roll out of a left bank, the wings are level, but your inner ear reports a right bank.",
+            "alt": "A Cessna 172 flying wings level at dusk, with a light blue line marked REAL lying level and a red dashed line tipping down to the right."
+          }
+        },
+        {
+          "heading": "Three mistakes the leans sets up",
+          "paragraphs": [
+            "Keep the wings level once the attitude indicator shows them level. Rolling back into the old bank feels like the fix, but it is the danger. In that bank the tilted lift lets the nose drop, and the airplane loses altitude. Pulling back then only tightens a steepening descent, the graveyard spiral. Reduce power if the speed builds, level the wings, then raise the nose smoothly.",
+            "Keep cross-checking the heading indicator and the turn coordinator while the urge to lean passes. A steady heading and a turn coordinator showing no turn, with its ball centered, confirm the wings are level.",
+            "Make small, smooth corrections in clouds. Large, sudden attitude changes set the fluid moving and invite disorientation and loss of control."
+          ]
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. Which do you trust when you feel perfectly level in clouds but the attitude indicator shows a left bank?",
+            "2. What should your hands do when, seconds after a brisk roll back to level, you feel banked to the right?",
+            "3. What has changed inside your ear when a long, steady turn no longer feels like a turn?",
+            "4. Back in level flight after a long left turn, why do you catch yourself leaning hard to the left in your seat?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Trust the instruments, not your body. A heading that keeps changing and a turn coordinator showing a turn confirm a bank that crept in too slowly to feel.",
+            "2. Hold the wings level on the attitude indicator and leave them there. The right bank you feel is only fluid moving in your roll canal, set off by that quick roll.",
+            "3. The fluid caught up with the canal walls. With nothing bending the hairs, your brain stopped getting a signal of a turn.",
+            "4. Your ear is reporting a false bank to the right, set off when you rolled out of the left turn. Leaning left is your body reaching for what feels upright."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/somatogravic-illusion/",
+        "/explainers/black-hole-approach/"
+      ]
+    },
     {
       "id": "lesson-sys-turboprop-vs-piston",
       "slug": "how-a-turboprop-works-compared-with-your-172-s-engine",
