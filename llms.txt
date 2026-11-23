@@ -15,19 +15,20 @@
 Key facts:
 - Platform: iPhone (iOS 17+). App Store: https://apps.apple.com/app/flightdecide/id6761793626
 - Pricing (US dollars; the App Store charges the local equivalent elsewhere):
-  Free (3 analyses/month), Pilot $9.99 USD/mo or $79.99 USD/yr (unlimited,
-  custom aircraft profiles), Pro $19.99 USD/mo or $159.99 USD/yr (adds fleet
-  management).
-- Intro offer: annual Pilot plans started between September 15 and
-  November 30, 2026 cost $49.99 USD for the first year, then renew at
-  $79.99 USD/yr. Pilot only; Pro has no intro offer.
-- Offer codes (redeemable on the App Store, both expire November 30, 2026):
-  FLY50YEAR takes 50% off the first year of Pilot annual, FLY50MONTH takes
-  50% off the first three months of Pilot monthly. An Apple offer code
-  redeems for one product, hence one code per billing period. Both work for
-  new and returning subscribers and replace the intro offer above. Redeem:
-  https://apps.apple.com/redeem?ctx=offercodes&id=6761793626&code=FLY50YEAR
-  and https://apps.apple.com/redeem?ctx=offercodes&id=6761793626&code=FLY50MONTH
+  Free: 3 analyses a month, 1 flight monitor, the built-in aircraft
+  library and custom aircraft profiles; no payment details needed.
+  Tools: $1.99 USD/mo or $19.99 USD/yr (save 16%), first month free (Apple
+  introductory offer, one per Apple ID). It is the app's Tools tab, a
+  collection of aviation tools that works offline: Classic, a full flight
+  computer, and Visual (crosswind with a METAR reader, holding entries,
+  descent and glide, trip planner, weight and balance, conversions).
+  Analyses stay at 3 a month.
+  Pro: $4.99 USD/mo or $44.99 USD/yr (save 25%): unlimited AI analyses, up
+  to 10 flight monitors, Fleet for clubs and partnerships (shared aircraft
+  profiles and history), and Tools included.
+  Pilot and Pro are now one plan, Pro; a Pilot subscription gets Pro.
+  The free browser tools below are separate from the Tools plan and stay
+  free, with no sign-up.
 - Weather/NOTAM sources: aviationweather.gov and the FAA NOTAM system
   (government sources only; NAV CANADA data for Canadian coverage).
 - NOTAM honesty: FlightDecide distinguishes "queried, zero NOTAMs" from

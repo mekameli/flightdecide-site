@@ -19,7 +19,8 @@
   'use strict';
 
   var STORAGE_KEY = 'fd-sale-fall-2026-dismissed';
-  var ENDS_AT = Date.UTC(2026, 10, 30, 23, 59, 59); // 2026-11-30, the last day of the window
+  // FD-1060: pricing v2 went live on 2026-11-23 and the Pilot plan was retired, so the fall Pilot sale ended early.
+  var ENDS_AT = Date.UTC(2026, 10, 22, 23, 59, 59); // 2026-11-22, the last day the sale bar showed
   var TARGET = '/#pricing';
 
   if (Date.now() > ENDS_AT) return;

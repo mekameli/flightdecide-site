@@ -34,6 +34,11 @@
     :root {
       --accent-purple: #A855F7;
       --accent-cyan: #06B6D4;
+      /* A filled green that white text can sit on: 5.3:1. White on the
+         green-to-blue gradient runs from 2.3:1 at the green end to 3.7:1 at the
+         blue end (FD-1060 UX review). It is the app's fdGreenText, so the
+         Recommended badge looks the same on the site and in the app. */
+      --green-fill: #1E7B3C;
       --max-content: 1200px;
       --max-nav: 1280px;
     }
@@ -988,7 +993,7 @@
       top: -12px;
       left: 50%;
       transform: translateX(-50%);
-      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      background: var(--green-fill);
       color: #fff;
       font-size: 11px;
       font-weight: 700;
@@ -1084,7 +1089,7 @@
     }
 
     .pricing-btn-primary {
-      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      background: var(--green-fill);
       color: #fff;
       box-shadow: 0 0 24px rgba(34,197,94,0.25);
     }
@@ -1291,224 +1296,37 @@
       margin-bottom: 4px;
     }
 
-    /* Fall 2026 intro offer (FD-595). Window-neutral copy: the sentence names
-       its own dates, so it is true before, during, and after the window and
-       needs no client-side date logic on a static page. */
-    /* Deliberately quiet. This was a second green box directly beneath the
-       offer box, and two competing green panels left neither one reading as
-       the offer. The sentence still earns its place (it is what a pilot gets
-       without a code) so it stays, as supporting text rather than a panel. */
-    .pricing-offer {
-      font-size: 12px;
-      line-height: 1.55;
-      color: var(--text-muted);
-      padding: 0;
-      margin: 10px 0 4px;
-    }
-
-    /* Sale signalling for the 50% code promo. A visitor can enter at the top,
-       jump to #pricing from the nav, or land on the card, so the hero carries
-       a link and the Pilot card carries the offer itself.
-
-       Design notes, because the first pass got these wrong:
-       - ONE focal point. The card previously had a corner 50% OFF flag fighting
-         the centred Most Popular pill, and the offer box sat next to a second
-         green box for the fall offer. The offer box is now the only green thing
-         in the card and .pricing-offer is quiet text beneath it.
-       - The struck price is an ANCHOR, so it sits on the plan line at readable
-         size rather than shrunk under a label.
-       - Code, Copy and Redeem share one explicit height. They previously had
-         three different intrinsic heights (33 / 29 / 33 px) because a button,
-         an anchor and a span pick up different default box metrics, which read
-         as the row being crooked.
-       Percentages and struck LIST prices only, never the discounted figure:
-       ASC prices these per territory and check_website_prices.sh admits only
-       figures sourced from ios/FlightDecide.storekit. */
-    .hero-sale {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(34,197,94,0.14);
-      border: 1px solid rgba(34,197,94,0.45);
-      border-radius: 100px;
-      padding: 6px 16px;
+    /* FD-1060: the Tools plan's free month, on the card it applies to. */
+    .pricing-trial {
+      display: inline-block;
       font-size: 12px;
       font-weight: 700;
+      letter-spacing: 0.4px;
       color: var(--accent-green);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-decoration: none;
-      margin-bottom: 14px;
-      animation: fadeUp 0.6s ease both;
+      background: rgba(34,197,94,0.12);
+      border: 1px solid rgba(34,197,94,0.3);
+      border-radius: 100px;
+      padding: 3px 10px;
+      margin-top: 8px;
     }
 
-    .hero-sale:hover { background: rgba(34,197,94,0.22); }
+    /* What a plan leaves out, said plainly under its feature list. */
+    .pricing-lacks {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: -14px 0 24px;
+    }
 
-    /* The two hero pills sit on their own lines at every width: side by side (an
-       iPad at 820 px) they were two 33 px links 4 px apart. */
-    .hero-sale, .hero-badge { display: flex; width: fit-content; max-width: 100%; }
+    /* The hero pill sits on its own line at every width. */
+    .hero-badge { display: flex; width: fit-content; max-width: 100%; }
     .nowrap { white-space: nowrap; }
 
     /* Touch screens: a hit area at least 44 px tall without changing the look. The
-       ::after reaches 7 px past each pill's padding box (45 px for the badge), and
-       the 14 px gap between the pills keeps the two areas apart. */
+       ::after reaches 7 px past the pill's padding box (45 px). */
     @media (pointer: coarse) {
-      .hero-sale, a.hero-badge { position: relative; }
-      .hero-sale::after, a.hero-badge::after { content: ''; position: absolute; inset: -7px 0; }
-    }
-
-    .promo {
-      border: 1px solid rgba(34,197,94,0.38);
-      background:
-        linear-gradient(180deg, rgba(34,197,94,0.10) 0%, rgba(34,197,94,0.03) 100%);
-      border-radius: 14px;
-      padding: 14px;
-      margin: 14px 0 10px;
-      text-align: left;
-    }
-
-    .promo-head {
-      display: flex;
-      align-items: baseline;
-      gap: 9px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-
-    .promo-pct {
-      font-size: 19px;
-      font-weight: 800;
-      letter-spacing: -0.4px;
-      color: var(--accent-green);
-      line-height: 1;
-    }
-
-    .promo-until {
-      font-size: 12px;
-      color: var(--text-muted);
-      letter-spacing: 0.2px;
-    }
-
-    .promo-plan-block + .promo-plan-block {
-      margin-top: 10px;
-      padding-top: 10px;
-      border-top: 1px solid rgba(255,255,255,0.07);
-    }
-
-    .promo-plan-top {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 8px;
-      margin-bottom: 7px;
-    }
-
-    .promo-term {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: 0.2px;
-    }
-
-    .promo-was {
-      font-size: 13px;
-      color: var(--text-dim);
-      text-decoration: line-through;
-      white-space: nowrap;
-    }
-
-    /* One explicit height across the three controls: a span, a button and an
-       anchor otherwise resolve to different heights and the row looks crooked. */
-    .promo-row {
-      display: flex;
-      align-items: stretch;
-      gap: 7px;
-      /* Wraps on its own rather than on a viewport breakpoint: this row lives
-         inside a grid column, so its available width is set by the card, not
-         by the screen. Paired with the flex-basis floor on .promo-code below,
-         a row too tight for code + both buttons drops the buttons to a second
-         line instead of letting the code overlap Copy. */
-      flex-wrap: wrap;
-    }
-
-    .promo-code,
-    .promo-copy,
-    .promo-redeem {
-      height: 38px;
-      box-sizing: border-box;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 9px;
-      font-size: 13px;
-    }
-
-    .promo-code {
-      /* 140px floor: never shrink below the width the longest code needs.
-         FLY50MONTH at this size and tracking is about 110px of glyphs. */
-      flex: 1 1 140px;
-      justify-content: flex-start;
-      padding: 0 11px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      color: var(--text);
-      background: rgba(255,255,255,0.07);
-      border: 1px dashed rgba(255,255,255,0.28);
-      user-select: all;
-      -webkit-user-select: all;
-    }
-
-    .promo-copy {
-      flex: 0 0 auto;
-      padding: 0 12px;
-      border: 1px solid var(--border-bright);
-      background: transparent;
-      color: var(--text-muted);
-      font-family: inherit;
-      font-weight: 600;
-      cursor: pointer;
-      transition: color 0.2s, border-color 0.2s;
-    }
-
-    .promo-copy:hover {
-      color: var(--text);
-      border-color: rgba(255,255,255,0.4);
-    }
-
-    .promo-redeem {
-      /* Grows to fill the line. On a wide card that is a few extra pixels; on a
-         narrow one, where the buttons wrap below the code, it stops the primary
-         action sitting stranded in a short pill with dead space beside it. */
-      flex: 1 1 auto;
-      padding: 0 16px;
-      background: var(--accent-green);
-      color: #06240F;
-      font-weight: 700;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: background 0.2s;
-    }
-
-    .promo-redeem:hover { background: #4ADE80; }
-
-    .promo-hint[hidden] { display: none; }
-
-    .promo-hint {
-      font-size: 12px;
-      line-height: 1.55;
-      color: var(--accent-green);
-      background: rgba(34,197,94,0.12);
-      border-radius: 8px;
-      padding: 8px 10px;
-      margin-top: 10px;
-    }
-
-    .promo-fine {
-      font-size: 12px;
-      line-height: 1.5;
-      color: var(--text-muted);
-      margin-top: 10px;
+      a.hero-badge { position: relative; }
+      a.hero-badge::after { content: ''; position: absolute; inset: -7px 0; }
     }
 
     .pricing-anchor {
@@ -1670,11 +1488,11 @@
     }
 
     /* The hero stacks below 901 px. Side by side, an 834 px iPad left the text 426 px
-       beside the 280 px mockup, which wrapped the sale pill and dropped the tools link. */
+       beside the 280 px mockup, which wrapped the hero pill and dropped the tools link. */
     @media (max-width: 900px) {
       .hero-inner { display: flex; flex-direction: column; text-align: center; gap: 40px; }
       .hero-text { max-width: 100%; min-width: 0; }
-      .hero-sale, .hero-badge { margin-left: auto; margin-right: auto; }
+      .hero-badge { margin-left: auto; margin-right: auto; }
       .hero-sub { margin-left: auto; margin-right: auto; }
       .hero-proof { margin-left: auto; margin-right: auto; text-align: left; }
       .hero-actions { justify-content: center; }
@@ -1929,45 +1747,35 @@
             "name": "Free",
             "price": "0",
             "priceCurrency": "USD",
-            "description": "3 flight analyses per month"
+            "description": "3 AI analyses a month and 1 flight monitor"
           },
           {
             "@type": "Offer",
-            "name": "Pilot",
-            "price": "9.99",
+            "name": "Tools",
+            "price": "1.99",
             "priceCurrency": "USD",
-            "description": "Unlimited analyses and custom aircraft profiles, per month"
+            "description": "The Tools tab, a collection of aviation tools that works offline, per month; the first month is free"
           },
           {
             "@type": "Offer",
-            "name": "Pilot Annual",
-            "price": "79.99",
+            "name": "Tools Annual",
+            "price": "19.99",
             "priceCurrency": "USD",
-            "description": "Unlimited analyses and custom aircraft profiles, per year"
-          },
-          {
-            "@type": "Offer",
-            "name": "Pilot Annual first-year intro offer",
-            "price": "49.99",
-            "priceCurrency": "USD",
-            "availabilityStarts": "2026-09-15",
-            "availabilityEnds": "2026-11-30",
-            "priceValidUntil": "2026-11-30",
-            "description": "First year of the annual Pilot plan for subscriptions started between September 15 and November 30, 2026; renews at 79.99 USD per year"
+            "description": "The Tools tab, a collection of aviation tools that works offline, per year; the first month is free"
           },
           {
             "@type": "Offer",
             "name": "Pro",
-            "price": "19.99",
+            "price": "4.99",
             "priceCurrency": "USD",
-            "description": "Everything in Pilot plus fleet management, per month"
+            "description": "Unlimited AI analyses, up to 10 flight monitors, Fleet, and the Tools tab, per month"
           },
           {
             "@type": "Offer",
             "name": "Pro Annual",
-            "price": "159.99",
+            "price": "44.99",
             "priceCurrency": "USD",
-            "description": "Everything in Pilot plus fleet management, per year"
+            "description": "Unlimited AI analyses, up to 10 flight monitors, Fleet, and the Tools tab, per year"
           }
         ]
       }
@@ -1992,7 +1800,7 @@
         <li><a href="#demo">Demo</a></li>
         <li><a href="#why">Why</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li><a href="/tools/">Free Tools</a></li>
+        <li><a href="/tools/">Free Web Tools</a></li>
         <!-- site-nav:start -->
         <li><a href="/aircraft/">Aircraft</a></li>
         <li><a href="/explainers/">Explainers</a></li>
@@ -2019,7 +1827,7 @@
         <a href="#demo">Demo</a>
         <a href="#why">Why</a>
         <a href="#pricing">Pricing</a>
-        <a href="/tools/">Free Tools</a>
+        <a href="/tools/">Free Web Tools</a>
         <!-- site-nav:start -->
         <a href="/aircraft/">Aircraft</a>
         <a href="/explainers/">Explainers</a>
@@ -2047,7 +1855,6 @@
     <section class="hero" aria-label="Hero">
       <div class="hero-inner">
         <div class="hero-text">
-          <a class="hero-sale" href="#pricing">Sale &middot; Pilot is 50% off through November 30, 2026</a>
           <a class="hero-badge" href="#by-area"><span>New in the app &middot; <span class="nowrap">Results by area</span></span></a>
           <h1>Should you fly today? <span class="gradient-text">Get a second opinion.</span></h1>
           <p class="hero-sub">
@@ -2065,7 +1872,7 @@
               Download on the App Store
             </a>
             <a href="/tools/" class="btn-secondary">
-              Try the free tools
+              Try the free web tools
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -2284,12 +2091,12 @@
           <article class="feature-card reveal">
             <div class="feature-icon-wrap">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="4" y="2" width="16" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M8 6h8M8 10h2M12 10h2M16 10h.01M8 14h2M12 14h2M16 14h.01M8 18h2M12 18h2M16 18h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3 class="feature-title">Free E6B Calculator Suite</h3>
-            <p class="feature-desc">Ten flight-planning calculators built into a Tools tab: crosswind, density altitude, true airspeed, time-speed-distance, fuel and endurance, the wind triangle, cross-country planning, weight and balance, descent and glide, and holding entries. Free on every plan, including the free tier, and they work offline. The same tools also run in your browser at <a href="/tools/">flightdecide.com/tools</a>.</p>
+            <h3 class="feature-title">Aviation Tools, Classic and Visual</h3>
+            <p class="feature-desc">The Tools tab is a collection of aviation tools in two modes. Classic is a full flight computer: wind triangle and wind correction, heading and groundspeed, density altitude, true airspeed, fuel, timers, conversions, and weight and balance. Visual covers crosswind with a METAR reader, holding entries, descent and glide, and a trip planner. It all works offline. It comes with the Tools plan, first month free, or with Pro. Many of the same calculations run free in your browser at <a href="/tools/">flightdecide.com/tools</a>.</p>
           </article>
 
         </div>
@@ -2565,96 +2372,61 @@
       <div class="section-inner">
         <span class="section-label reveal">Simple Pricing</span>
         <h2 id="pricing-heading" class="reveal">Fly as much as you want.<br/>Start free, upgrade when you're ready.</h2>
-        <p class="section-sub reveal">Three analyses a month on the free tier. Unlimited on Pilot.</p>
-        <p class="pricing-anchor reveal">ForeFlight has said its plain-English NOTAM AI becomes a Premium feature once the free trial ends this fall. Premium runs $390 USD/yr, which is $130 USD/yr more than Essential (ForeFlight tier pricing checked July 2026). FlightDecide reads the weather, the NOTAMs, and your airplane's real numbers, checks them against your personal minimums, and gives you a straight go/no-go answer.</p>
+        <p class="section-sub reveal">Three analyses a month on the free tier. Unlimited on Pro.</p>
+        <p class="pricing-anchor reveal">ForeFlight's plain-English NOTAM AI moved to Premium on November 4, 2026, when its free trial ended. Premium runs $390 USD/yr, which is $130 USD/yr more than Essential (ForeFlight tier pricing checked July 2026). FlightDecide reads the weather, the NOTAMs, and your airplane's real numbers, checks them against your personal minimums, and gives you a straight go/no-go answer.</p>
 
         <div class="pricing-grid">
 
           <div class="pricing-card reveal">
             <div class="pricing-tier">Free</div>
             <div class="pricing-price">$0</div>
-            <div class="pricing-desc">Get started with no commitment.</div>
+            <div class="pricing-desc">No payment details needed.</div>
             <ul class="pricing-features">
-              <li>3 analyses per month</li>
-              <li>Full built-in aircraft library</li>
+              <li>3 analyses a month</li>
+              <li>1 flight monitor</li>
+              <li>Built-in aircraft library, plus your own aircraft profiles</li>
               <li>Live weather data</li>
               <li>GO / CAUTION / NO GO verdict</li>
               <li>8 category scoring</li>
-              <li>E6B calculator suite (10 tools, offline)</li>
             </ul>
+            <p class="pricing-lacks">Free doesn't include the Tools tab or Fleet, and it stops at 3 analyses a month.</p>
             <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-home" class="pricing-btn pricing-btn-outline">Get Started</a>
           </div>
 
-          <div class="pricing-card featured reveal">
-            <div class="pricing-badge">Most Popular</div>
-            <div class="pricing-tier">Pilot</div>
-            <div class="pricing-price">$6.67 USD<span>/mo</span></div>
-            <div class="pricing-annual">billed annually at $79.99 USD/yr (save 33%), or $9.99 USD/mo with no yearly commitment</div>
-            <div class="promo">
-              <div class="promo-head">
-                <span class="promo-pct">50% OFF</span>
-                <span class="promo-until">ends November 30, 2026</span>
-              </div>
-
-              <div class="promo-plan-block">
-                <div class="promo-plan-top">
-                  <span class="promo-term">Yearly</span>
-                  <span class="promo-was">$79.99 USD/yr</span>
-                </div>
-                <div class="promo-row">
-                  <span class="promo-code" id="promo-code-year">FLY50YEAR</span>
-                  <button class="promo-copy" type="button" data-copy-target="promo-code-year" aria-label="Copy the yearly code FLY50YEAR">Copy</button>
-                  <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50YEAR" aria-label="Redeem FLY50YEAR for yearly Pilot in the App Store">Redeem</a>
-                </div>
-              </div>
-
-              <div class="promo-plan-block">
-                <div class="promo-plan-top">
-                  <span class="promo-term">Monthly</span>
-                  <span class="promo-was">$9.99 USD/mo</span>
-                </div>
-                <div class="promo-row">
-                  <span class="promo-code" id="promo-code-month">FLY50MONTH</span>
-                  <button class="promo-copy" type="button" data-copy-target="promo-code-month" aria-label="Copy the monthly code FLY50MONTH">Copy</button>
-                  <a class="promo-redeem" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761793626&amp;code=FLY50MONTH" aria-label="Redeem FLY50MONTH for monthly Pilot in the App Store">Redeem</a>
-                </div>
-              </div>
-
-              <p class="promo-hint" id="promo-hint" hidden>Redeeming runs through the App Store on your iPhone, so this link does nothing on a computer. Copy the code above, then on your iPhone open the App Store, tap your photo at the top right, and choose Redeem Gift Card or Code.</p>
-              <p class="promo-fine">Half off the first year, or the first three months on monthly. Open to new and returning subscribers. Install FlightDecide first, then redeem.</p>
-            </div>
-
-            <div class="pricing-offer">Fall offer: $49.99 USD for the first year, on annual Pilot plans started between September 15 and November 30, 2026. It renews at $79.99 USD/yr after the first year.</div>
-            <div class="pricing-desc">For pilots who fly regularly and want a go/no-go advisor for every flight.</div>
+          <div class="pricing-card reveal">
+            <div class="pricing-tier">Tools</div>
+            <div class="pricing-price">$1.99 USD<span>/mo</span></div>
+            <div class="pricing-annual">or <span class="nowrap">$19.99 USD/yr</span> (save 16%)</div>
+            <div class="pricing-trial">First month free</div>
+            <div class="pricing-desc">The app's Tools tab: a collection of aviation tools.</div>
             <ul class="pricing-features">
-              <li>Unlimited analyses</li>
-              <li>Full AI narrative briefing</li>
-              <li>Custom aircraft profiles</li>
-              <li>Personal weather minimums</li>
-              <li>Analysis history</li>
-              <li>Corrective actions</li>
-              <li>PDF export</li>
+              <li>Classic: a full flight computer</li>
+              <li>Visual: crosswind with a METAR reader, holding entries, descent and glide, trip planning</li>
+              <li>Weight and balance and unit conversions</li>
+              <li>Works offline</li>
+            </ul>
+            <p class="pricing-lacks">Analyses stay at 3 a month, as on Free.</p>
+            <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-home" class="pricing-btn pricing-btn-outline">Get the App</a>
+          </div>
+
+          <div class="pricing-card featured reveal">
+            <div class="pricing-badge">Recommended</div>
+            <div class="pricing-tier">Pro</div>
+            <div class="pricing-price">$4.99 USD<span>/mo</span></div>
+            <div class="pricing-annual">or <span class="nowrap">$44.99 USD/yr</span> (save 25%), which is <span class="nowrap">$3.75 USD/mo</span> billed yearly</div>
+            <div class="pricing-desc">For pilots who brief every flight, and for clubs and partnerships that share aircraft.</div>
+            <ul class="pricing-features">
+              <li>Unlimited AI analyses</li>
+              <li>Up to 10 flight monitors</li>
+              <li>Fleet for clubs and partnerships: shared aircraft profiles and history</li>
+              <li>Tools included, Classic and Visual</li>
             </ul>
             <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-home" class="pricing-btn pricing-btn-primary">Get the App</a>
           </div>
 
-          <div class="pricing-card reveal">
-            <div class="pricing-tier">Pro</div>
-            <div class="pricing-price">$13.33 USD<span>/mo</span></div>
-            <div class="pricing-annual">billed annually at $159.99 USD/yr (save 33%), or $19.99 USD/mo with no yearly commitment</div>
-            <div class="pricing-desc">For instructors, operators, and fleet managers.</div>
-            <ul class="pricing-features">
-              <li>Everything in Pilot</li>
-              <li>Fleet management</li>
-              <li>Multi-aircraft trip planning</li>
-              <li>Priority product access</li>
-            </ul>
-            <a href="https://apps.apple.com/app/flightdecide/id6761793626?ct=website-home" class="pricing-btn pricing-btn-outline">Get the App</a>
-          </div>
-
         </div>
 
-        <p class="pricing-note">All plans start in the free app. Every price on this page is in US dollars; the App Store charges the equivalent in your own currency, so check the price shown in the app before you buy. Subscriptions are billed through the App Store and can be cancelled anytime in your Apple account settings.</p>
+        <p class="pricing-note">All plans start in the free app. The free month on Tools is Apple's introductory offer, one per Apple ID, and Tools then renews at the price you picked unless you cancel. Every price on this page is in US dollars; the App Store charges the equivalent in your own currency, so check the price shown in the app before you buy. Subscriptions are billed through the App Store and can be cancelled anytime in your Apple account settings.</p>
       </div>
     </section>
 
@@ -2752,7 +2524,7 @@
   <footer class="site-footer">
     <ul class="footer-links">
       <li><a href="/">Home</a></li>
-      <li><a href="/tools/">Free Tools</a></li>
+      <li><a href="/tools/">Free Web Tools</a></li>
       <li><a href="/learn/">Pilot Guides</a></li>
       <li><a href="/explainers/">Explainers</a></li>
       <li><a href="/aircraft/">Aircraft</a></li>
@@ -2823,53 +2595,6 @@
     menuBtn.addEventListener('click', toggleMobileNav);
     document.querySelectorAll('.mobile-nav a').forEach(function(link) {
       link.addEventListener('click', closeMobileNav);
-    });
-
-    // The apps.apple.com/redeem page renders no HTML of its own: it exists only
-    // to bounce the browser to itms-apps://, which nothing outside iOS handles.
-    // On a desktop that lands the visitor on a blank page with no explanation,
-    // so anywhere the handoff cannot work, show the manual steps instead. The
-    // href is left intact for the no-JS case, where the native behaviour is
-    // still the best available.
-    (function () {
-      const handoffWorks = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-      if (handoffWorks) return;
-      document.querySelectorAll('.promo-redeem').forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          event.preventDefault();
-          const hint = document.getElementById('promo-hint');
-          if (hint) hint.hidden = false;
-        });
-      });
-    })();
-
-    // Offer-code copy buttons in the pricing card. The codes are plain,
-    // selectable text as well, so a clipboard failure costs a step, not the
-    // offer. Same fallback chain as the generated /a/<slug>/ pages.
-    document.querySelectorAll('.promo-copy').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const codeEl = document.getElementById(btn.getAttribute('data-copy-target'));
-        if (!codeEl) return;
-        const code = codeEl.textContent.trim();
-        function done() {
-          btn.textContent = 'Copied';
-          setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
-        }
-        function fallback() {
-          const range = document.createRange();
-          range.selectNodeContents(codeEl);
-          const sel = window.getSelection();
-          sel.removeAllRanges();
-          sel.addRange(range);
-          try { document.execCommand('copy'); done(); } catch (err) { /* left selected to copy by hand */ }
-        }
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(code).then(done, fallback);
-        } else {
-          fallback();
-        }
-      });
     });
 
     try {
