@@ -1201,6 +1201,211 @@ footer.site-footer .footer-copy { margin: 0; line-height: 1.7; }
   font-size: 0.9rem;
   opacity: 0.78;
 }
+/* The article's blocks (2026-11-26): the short version in a box, the gist as
+   bullets, a procedure as numbered steps, the numbers to remember as tiles,
+   one line that must not be missed, each mistake as a card, and each answer
+   waiting under its question. All scoped under .prose, whose paragraph and
+   list rules would otherwise space and indent them. */
+.prose .explainer-short {
+  margin: 0 0 30px;
+  padding: 18px 22px 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-green);
+  border-radius: var(--radius-sm);
+}
+.prose .explainer-short h2 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--accent-green);
+}
+.prose .explainer-short .explainer-table,
+.prose .explainer-short ul.explainer-numbers,
+.prose .explainer-short ol.explainer-steps { margin: 4px 0 18px; }
+.prose ul.explainer-points { list-style: none; margin: 0 0 16px; padding: 0; }
+.prose .explainer-points li {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 24px;
+  line-height: 1.55;
+}
+.prose .explainer-points li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-green);
+}
+.prose ol.explainer-steps { list-style: none; margin: 20px 0 24px; padding: 0; counter-reset: es; }
+.prose .explainer-steps li {
+  counter-increment: es;
+  position: relative;
+  margin: 0;
+  padding: 0 0 18px 48px;
+  min-height: 32px;
+}
+.prose .explainer-steps li::before {
+  content: counter(es);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(59,130,246,0.4);
+  background: rgba(59,130,246,0.16);
+  color: var(--link);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+/* The line that joins one step to the next. */
+.prose .explainer-steps li::after {
+  content: "";
+  position: absolute;
+  left: 15.5px;
+  top: 36px;
+  bottom: 4px;
+  width: 1px;
+  background: var(--border-bright);
+}
+.prose .explainer-steps li:last-child { padding-bottom: 0; }
+.prose .explainer-steps li:last-child::after { display: none; }
+.es-step { display: block; padding-top: 4px; font-weight: 650; line-height: 1.35; }
+.es-note { display: block; margin-top: 2px; color: var(--text-muted); font-size: 15px; line-height: 1.5; }
+.prose ul.explainer-numbers {
+  list-style: none;
+  margin: 20px 0 24px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+.prose .explainer-numbers li {
+  margin: 0;
+  padding: 14px 14px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+}
+.en-value {
+  display: block;
+  font-size: 24px;
+  font-weight: 750;
+  letter-spacing: -0.3px;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.en-label { display: block; margin-top: 4px; color: var(--text-muted); font-size: 13.5px; line-height: 1.4; }
+.prose .explainer-callout {
+  margin: 22px 0 26px;
+  padding: 14px 18px;
+  border-left: 3px solid var(--accent-blue);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: rgba(59,130,246,0.08);
+}
+.prose .explainer-callout p { margin: 0; }
+.ec-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--link);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.prose .explainer-callout--caution { border-left-color: var(--accent-amber); background: rgba(234,179,8,0.08); }
+.explainer-callout--caution .ec-label { color: var(--accent-amber); }
+.prose .explainer-callout--never { border-left-color: var(--accent-red); background: rgba(239,68,68,0.08); }
+.explainer-callout--never .ec-label { color: #F87171; }
+.prose .explainer-callout--thumb { border-left-color: var(--accent-green); background: rgba(34,197,94,0.07); }
+.explainer-callout--thumb .ec-label { color: var(--accent-green); }
+.prose ul.explainer-mistakes { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 10px; }
+.prose .explainer-mistakes li {
+  position: relative;
+  margin: 0;
+  padding: 14px 16px 14px 46px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+}
+/* A tick: the card opens on what to do, not on the mistake. */
+.prose .explainer-mistakes li::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 19px;
+  width: 11px;
+  height: 6px;
+  border-left: 2.5px solid var(--accent-green);
+  border-bottom: 2.5px solid var(--accent-green);
+  transform: rotate(-45deg);
+}
+.prose .explainer-mistakes p { margin: 0; }
+.prose ol.explainer-quiz { list-style: none; margin: 0 0 16px; padding: 0; counter-reset: eq; display: grid; gap: 10px; }
+.prose .explainer-quiz li {
+  counter-increment: eq;
+  margin: 0;
+  padding: 14px 16px 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+}
+.prose .explainer-quiz .eq-q { margin: 0; font-weight: 600; }
+.prose .explainer-quiz .eq-q::before { content: counter(eq) ". "; color: var(--text-muted); font-weight: 700; }
+.explainer-quiz summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  color: var(--link);
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.explainer-quiz summary::-webkit-details-marker { display: none; }
+.explainer-quiz summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-top: -3px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+.explainer-quiz details[open] summary::after { margin-top: 4px; transform: rotate(-135deg); }
+.explainer-quiz summary:hover { color: var(--link-hover); }
+.explainer-quiz summary:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 4px; }
+.explainer-quiz details[open] .eq-show, .explainer-quiz details:not([open]) .eq-hide { display: none; }
+.prose .explainer-quiz .eq-a {
+  margin: 0 0 10px;
+  padding: 10px 14px;
+  border-left: 3px solid var(--accent-green);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: rgba(34,197,94,0.07);
+}
+@media (max-width: 480px) {
+  .prose .explainer-short { padding: 16px 16px 2px; }
+  .prose ul.explainer-numbers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  /* Three tiles in two columns: the last one takes the row, not half of it. */
+  .prose .explainer-numbers li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .en-value { font-size: 21px; }
+}
+@media (min-width: 720px) {
+  .explainer-inline--tall { max-width: 520px; margin-left: auto; margin-right: auto; }
+}
 .explainer-figure { margin: 0 0 28px; }
 /* The main picture is portrait (4:5) or square. At the full 800px column a
    desktop showed nothing but the picture and put the short version below
