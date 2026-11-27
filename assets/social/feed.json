@@ -1,7 +1,155 @@
 {
-  "generated": "2026-11-23T18:15:04+00:00",
+  "generated": "2026-11-27T03:21:36+00:00",
   "profile": "https://www.instagram.com/flightdecide/",
   "posts": [
+    {
+      "id": "lesson-landing-go-around-power",
+      "slug": "go-around-power-first-flaps-in-stages",
+      "page": "/explainers/go-around-power-first-flaps-in-stages/",
+      "title": "Go-around: power first, flaps in stages",
+      "headline": "Raise every flap at once just above the runway and a Cessna 172 can settle back down. Power goes in first, then the flaps come up in stages.",
+      "pillar": "performance",
+      "topic": "Performance",
+      "alt": "Seen low from behind at dusk, a Cessna 172 flies low over the airfield, with a second Cessna 172 on the runway ahead of it.",
+      "image": "/assets/social/lesson-landing-go-around-power.webp",
+      "image_full": "/assets/explainers/go-around-power-first-flaps-in-stages.webp",
+      "image_px": 820,
+      "permalink": "https://www.instagram.com/reel/DgNsiGtgAHn/",
+      "posted": "2026-11-26",
+      "caption": [],
+      "teaches": [],
+      "related_text": "A go-around is a normal maneuver, used when approach and landing parameters deviate from expectations or when it is hazardous to continue (AFH ch 9). The go-around is not inherently dangerous; it becomes dangerous only when delayed unduly or executed improperly. Delay normally stems from landing expectancy, the belief that the approach is sure to end in a safe landing, and from pride, the mistaken belief that going around is an admission of failure (AFH ch 9). In the Cessna 172P the balked landing checklist is: throttle full open; carburetor heat cold; wing flaps 20 degrees (immediately); climb speed 55 KIAS; wing flaps 10 degrees until obstacles are cleared; retract after reaching a safe altitude and 60 KIAS (172P POH 4-10; 4-3: Balked Landing, Maximum Power, Flaps 20 degrees, 55 KIAS). Power is the pilot's first concern: full power is applied smoothly, without hesitation, and carburetor heat is turned off to obtain maximum power. The 172P POH reduces the flap setting to 20 degrees immediately after full power is applied (AFH ch 9; 172P POH 4-20). The sudden addition of power tends to raise the nose and causes left yaw. Allowing the nose to rise too early could result in an unrecoverable stall at low altitude, so the pilot anticipates considerable forward elevator pressure to hold the nose level or in a safe climb attitude and applies right rudder pressure. Once the airspeed and climb attitude are set the pilot rough trims, and finer trim follows when conditions have stabilized (AFH ch 9). The 172P's carburetor heat is a knob on the instrument panel, pulled out for heat and pushed full in for none. The before-landing checklist sets it ON, full heat before reducing power, and the descent checklist calls for full heat as required to prevent carburetor icing. Full carburetor heat at full throttle costs approximately 75 to 150 RPM, and the balked landing checklist puts it to COLD (172P POH 4-9, 4-10, 4-11, 7-19). After the descent has been stopped, the landing flaps are partially retracted. It is wise to retract the flaps intermittently in small increments to allow time for the airplane to accelerate progressively as they are raised; a sudden and complete retraction of the flaps could cause a loss of lift resulting in the airplane settling into the ground (AFH ch 9). At 2,400 lb, power off and wings level, at either the most forward or the most rearward CG, the 172P stalls at about 33 KIAS with 30 degrees of flap, about 35 to 37 KIAS with 10 degrees and about 44 KIAS with the flaps up (KIAS values are approximate). Altitude loss during a stall recovery may be as much as 230 feet (172P POH Figure 5-3). Ground effect's apparent cushion of air is borrowed performance, repaid when the airplane climbs out of the ground effect area; an attempt to climb prematurely may leave the airplane unable to climb or even maintain altitude at full power. The pilot should resist any impulse to pitch up for a climb if airspeed is insufficient (AFH ch 9). In an extremely low go-around the airplane may settle onto the runway and bounce. This is not particularly dangerous provided the airplane is kept straight and a constant, safe pitch attitude is maintained; with power applied it attains a safe flying speed rapidly (AFH ch 9). The 172P flap switch lever moves in a slotted panel with mechanical stops at the 10 and 20 degree positions, and a scale and pointer on the left side of the lever indicate flap travel in degrees. Full flaps are 30 degrees (172P POH 7-10, 2-4). The newer, fuel-injected 172S has no carburetor heat step in its balked landing checklist, climbs at 60 KIAS and retracts the flaps after reaching a safe altitude and 65 KIAS, so pilots fly their own airplane's checklist (172S POH 4-17).",
+      "intent": "",
+      "citations": [
+        {
+          "ref": "FAA-H-8083-3 ch 9",
+          "title": "Airplane Flying Handbook (FAA-H-8083-3), Chapter 9",
+          "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+          "kind": "handbook",
+          "note": "Chapter 9 as a PDF",
+          "book_url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+          "chapter": 9
+        },
+        {
+          "ref": "Cessna 172P POH balked landing, stall speeds, flaps and carb heat",
+          "title": "Cessna 172P Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        },
+        {
+          "ref": "Cessna 172S POH sec 4",
+          "title": "Cessna 172S Pilot's Operating Handbook",
+          "url": null,
+          "kind": "poh",
+          "note": "the aircraft's own handbook",
+          "book_url": null
+        }
+      ],
+      "figure_key": [],
+      "credits": "",
+      "credits_label": "Picture credits",
+      "short": "go-around",
+      "article": [
+        {
+          "heading": "The short version",
+          "paragraphs": [
+            "Traffic on the runway, wind shear, a bigger airplane's wake or an unstable approach can each call for a go-around. You give up the landing and climb away. Cessna's checklist calls it a balked landing. A go-around is a normal maneuver. It only turns dangerous when it starts late or is flown wrong.",
+            "In a Cessna 172P go-around, power goes in first. Push the throttle full open, smoothly and without hesitation. The carb heat knob goes full in, to cold, so no heated air reaches the carburetor. Hold the nose with forward pressure and add right rudder.",
+            "Then bring the flaps up to 20 degrees and climb at 55 knots. Next comes 10 degrees until you're clear of obstacles, then all the way up at a safe height and 60 knots."
+          ]
+        },
+        {
+          "heading": "Power first, then hold the nose",
+          "paragraphs": [
+            "Move the throttle smoothly, because a sudden shove can make some engines falter. Leave it full open. The 172P's go-around climb is flown at maximum power.",
+            "Carb heat was on for the approach, to keep ice out of the carburetor. Full heat at full throttle costs about 75 to 150 RPM, power you need now.",
+            "The sudden power tends to raise the nose and swing it left. This close to the ground, letting the nose rise too early could cause a stall you can't recover from.",
+            "So expect considerable forward pressure on the yoke to hold the nose level or in a safe climb attitude. You were trimmed for a slow approach, so the push is firm. Add right rudder to keep it straight.",
+            "Trim takes that pressure off the yoke. Once the speed and climb are set, give it a rough setting, then fine-tune it once things settle."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/go-around-power-first-flaps-in-stages-flaps20.webp",
+            "caption": "Power is the first step. With it in, the flaps come to 20 degrees and the airplane climbs at 55 knots.",
+            "alt": "A Cessna 172 climbs straight away, wings level, against the dusk sky, under three lit step boxes reading Power, Flaps 20 and 55 KT."
+          }
+        },
+        {
+          "heading": "Flaps up in stages, and why",
+          "paragraphs": [
+            "Flaps let the wing fly slower. Below its stall speed an airplane can't keep flying, and that speed is not fixed. Raise the flaps and it goes up, from about 33 knots with full flaps to about 44 with none.",
+            "Raise them all at once, just above the runway, and the sudden loss of lift can settle the airplane into the ground. Raised a little at a time, they give the airplane time to accelerate as each stage comes up.",
+            "Just above the runway, a stall leaves no room. In a 172P, recovering from one can cost as much as 230 feet.",
+            "The flap lever helps you stop at each stage. It has mechanical stops at 10 and 20 degrees.",
+            "A newer, fuel-injected 172S has no carb heat step and climbs at 60 knots. It raises the last flaps at a safe height and 65 knots. Fly your own airplane's checklist."
+          ],
+          "table": {
+            "caption": "A 172P's stall speed at 2,400 pounds, power off, wings level, between its forward and rearward balance limits",
+            "columns": [
+              "Flaps",
+              "Stall speed (knots indicated)"
+            ],
+            "rows": [
+              [
+                "30 degrees (full)",
+                "about 33"
+              ],
+              [
+                "10 degrees",
+                "about 35 to 37"
+              ],
+              [
+                "Up",
+                "about 44"
+              ]
+            ]
+          },
+          "figure": {
+            "src": "/assets/explainers/figures/go-around-power-first-flaps-in-stages-stall.webp",
+            "caption": "With every flap up, the stall speed jumps from about 33 knots to 44, and the airplane sinks toward the 172 on the runway.",
+            "alt": "Seen low from behind at dusk, a Cessna 172 flies low over the airfield near a second Cessna 172 on the runway, under the label Stall speed and the numbers 33 to 44 KT."
+          }
+        },
+        {
+          "heading": "Four go-around mistakes to avoid",
+          "paragraphs": [
+            "Add the power before you touch the flaps. Raise them all with the throttle at idle and the nose pulled up, and the airplane sinks instead of climbing.",
+            "Go around as soon as you need to. A late go-around usually comes from landing expectancy, the belief that the landing will work out, or from pride. Going around is never a failure.",
+            "Let the speed build before you pitch up. Near the ground the wing makes less drag, which is called ground effect. It can feel like a cushion of air, but that help is borrowed. Climb out of it too soon and you may be unable to climb or even hold altitude at full power.",
+            "In a very low go-around the airplane may settle onto the runway and bounce. Keep it straight and hold the pitch steady, rather than pulling the nose up. The power soon gives you a safe flying speed."
+          ],
+          "figure": {
+            "src": "/assets/explainers/figures/go-around-power-first-flaps-in-stages-wrong.webp",
+            "caption": "The wrong move, the flap lever pushed from full flaps straight to UP in one sweep.",
+            "alt": "A finger pushes a Cessna 172's flap lever up to the UP stop, while the flap pointer still reads FULL."
+          }
+        },
+        {
+          "heading": "Check yourself",
+          "paragraphs": [
+            "1. What comes first when you decide to go around in a 172P?",
+            "2. Why can a 172P settle into the ground if all its flaps come up at once?",
+            "3. What speed do you climb at with flaps 20, and when do the last flaps come up?",
+            "4. Why does the carb heat go to cold in a go-around?"
+          ]
+        },
+        {
+          "heading": "Answers",
+          "paragraphs": [
+            "1. Full power, smoothly and without hesitation, with the carb heat to cold.",
+            "2. Its stall speed jumps from about 33 knots to 44, and the loss of lift can settle it before the speed builds.",
+            "3. Climb at 55 knots, set 10 degrees until clear of obstacles, and raise the rest at a safe height and 60 knots.",
+            "4. Full carb heat at full throttle costs about 75 to 150 RPM, power you need for the climb."
+          ]
+        }
+      ],
+      "related": [
+        "/explainers/going-around-power-first/",
+        "/explainers/ground-effect-in-the-flare/",
+        "/explainers/stall-speed-rising-with-bank-angle/"
+      ]
+    },
     {
       "id": "lesson-hf-the-leans",
       "slug": "leans-why-a-slow-bank-feels-level",
